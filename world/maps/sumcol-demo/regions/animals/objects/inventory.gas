@@ -30,6 +30,13 @@
 {
 	[placement]
 	{
-	  p position = 1.64113,-9.53674e-007,1.56255,0xe213e17e;
+	  p position = 1.60861,0,1.81966,0xe213e17e;
+	}
+}
+[t:spell_summon_yellow_spider,n:0x00100010]
+{
+	[placement]
+	{
+	  p position = 2.57365,0,1.8144,0xe213e17e;
 	}
 }
