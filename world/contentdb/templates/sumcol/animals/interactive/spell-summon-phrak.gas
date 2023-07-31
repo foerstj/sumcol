@@ -120,9 +120,9 @@
 	}
 	[spell_summon]
 	{
-		effect_script = "gargoyle_summon";
+		effect_script = "summon";
 		end_script = "un_summon";
-		script_params = "[scale(1.75)]";
+		script_params = "[scale(0.75)]";
 		template_name = phrak_summon;
 		description = "Summoned Creature";
 		caster_description = "Controlling Summoned";
