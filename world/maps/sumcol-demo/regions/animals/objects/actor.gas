@@ -1,0 +1,66 @@
+[t:tretch,n:0x0010000b]
+{
+	[aspect]
+	{
+	  f experience_value = 1.45e+007;
+	  f life = 4800;
+	  f max_life = 4800;
+	}
+	[defend]
+	{
+	  f defense = 1;
+	}
+	[placement]
+	{
+	  p position = 14.7501,5.75741,-50.3376,0x0d2b9eec;
+	}
+}
+[t:phrak_large,n:0x00100005]
+{
+	[placement]
+	{
+	  p position = 14.6699,5.82948,-28.4276,0xc2573f8c;
+	}
+}
+[t:phrak,n:0x00100000]
+{
+	[placement]
+	{
+	  p position = 0.530653,5.60004,-52.1039,0xfbe40209;
+	}
+}
+[t:phrak,n:0x00100001]
+{
+	[placement]
+	{
+	  p position = 1.62723,5.88867,-50.3274,0xfbe40209;
+	}
+}
+[t:phrak,n:0x00100002]
+{
+	[placement]
+	{
+	  p position = 0.503807,5.9068,-50.2221,0xfbe40209;
+	}
+}
+[t:phrak_piercer,n:0x00100003]
+{
+	[placement]
+	{
+	  p position = -1.06001,6.44419,-49.1357,0xfbe40209;
+	}
+}
+[t:phrak_piercer,n:0x00100004]
+{
+	[placement]
+	{
+	  p position = -0.447386,6.71644,-47.3816,0xfbe40209;
+	}
+}
+[t:phrak_piercer_boss_01,n:0x00100006]
+{
+	[placement]
+	{
+	  p position = -4.94722,5.70125,-49.343,0xfbe40209;
+	}
+}

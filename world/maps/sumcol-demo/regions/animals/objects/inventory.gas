@@ -1,0 +1,14 @@
+[t:spell_summon_phrak,n:0x00100007]
+{
+	[placement]
+	{
+	  p position = 0.542819,0,1.77996,0xe213e17e;
+	}
+}
+[t:spell_zap,n:0x0010000a]
+{
+	[placement]
+	{
+	  p position = 1.70513,0,0.492745,0xe213e17e;
+	}
+}
