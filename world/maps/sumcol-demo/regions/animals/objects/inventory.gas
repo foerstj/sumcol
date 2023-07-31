@@ -12,3 +12,17 @@
 	  p position = 1.70513,0,0.492745,0xe213e17e;
 	}
 }
+[t:potion_health_super,n:0x00100009]
+{
+	[placement]
+	{
+	  p position = -2.11983,9.53674e-007,0.444538,0xe213e17e;
+	}
+}
+[t:potion_mana_super,n:0x0010000c]
+{
+	[placement]
+	{
+	  p position = -1.68059,9.53674e-007,0.444538,0xe213e17e;
+	}
+}
