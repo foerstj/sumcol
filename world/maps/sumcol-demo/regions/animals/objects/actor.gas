@@ -22,6 +22,44 @@
 	  p position = 14.6699,5.82948,-28.4276,0xc2573f8c;
 	}
 }
+[t:adwana,n:0x0010000e]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 5.79869,5.94518,-49.5943,0xc2573f8c;
+	}
+}
+[t:mage_trianna_lelaine,n:0x0010000f]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 5.83429,7.05007,-45.8495,0xc2573f8c;
+	}
+}
 [t:phrak,n:0x00100000]
 {
 	[placement]
