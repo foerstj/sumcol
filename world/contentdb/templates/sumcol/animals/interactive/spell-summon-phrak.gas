@@ -1,8 +1,8 @@
-[t:template,n:spell_summon_phrak]
+[t:template,n:spell_summon_phrak] { specializes = spell_summon_phrak_base; }
+[t:template,n:spell_summon_phrak_base]
 {
-	specializes = base_summon_good;
+	specializes = base_spell_sumcol;
 
-	category_name = "magic";
 	doc = "spell Summon Phrak";
 	[aspect]
 	{
@@ -15,14 +15,6 @@
 	[common]
 	{
 		description = "Summons a Phrak to guard the Caster.";
-		[template_triggers]
-		{
-			[*]
-			{
-				action* = call_sfx_script( "nature_spell_sparkle" );
-				condition* = receive_world_message("we_dropped");
-			}
-		}
 	}
 	[gui]
 	{
@@ -31,16 +23,6 @@
 	}
 	[magic]
 	{
-		apply_enchantments = false;
-		cast_range = 10;
-		cast_reload_delay = 1;
-		caster_state_name = "Controlling";
-		is_one_shot = true;
-		requires_line_of_sight = true;
-		speed_bias = 1;
-		target_type_flags = tt_terrain;
-		usage_context_flags = uc_passive;
-
 		effect_duration = 360;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*14-.7;
@@ -120,11 +102,7 @@
 	}
 	[spell_summon]
 	{
-		effect_script = "summon";
-		end_script = "un_summon";
 		script_params = "[scale(0.75)]";
 		template_name = phrak_summon;
-		description = "Summoned Creature";
-		caster_description = "Controlling Summoned";
 	}
 }
