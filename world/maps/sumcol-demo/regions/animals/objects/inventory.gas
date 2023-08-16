@@ -40,3 +40,10 @@
 	  p position = 2.57365,0,1.8144,0xe213e17e;
 	}
 }
+[t:spell_summon_farm_skrubb,n:0x00100011]
+{
+	[placement]
+	{
+	  p position = 2.9883,-9.53674e-007,0.486574,0xe213e17e;
+	}
+}
