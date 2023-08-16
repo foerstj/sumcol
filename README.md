@@ -2,6 +2,7 @@
 Firstie's Summons Collection - a collection of additional summon spells for Dungeon Siege.
 
 Stats are based on numbers of similar original summoning spells.\
+For stationary summons, gold value, duration & mana cost are much lower.\
 All spells are Nature Magic because they deserve more love!
 
 ## Installation
@@ -11,3 +12,5 @@ Put .dsres into DSLOA (or Resources) folder. Spells are added to PContent, which
 - Animals
   - Phraks: Phrak, Phrak Piercer
   - Spiders: Yellow Spider
+  - Stationary:
+    - Skrubbs: Farm Skrubb
