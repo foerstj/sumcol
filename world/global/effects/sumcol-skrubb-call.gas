@@ -1,0 +1,8 @@
+[effect_script*]
+{
+	name	=sumcol_skrubb_farm_call;
+
+	script	=[[
+        sound play s_e_call_skrubb_farm_SED at #TARGET_POSITION dist 4 20;
+    ]];
+}

@@ -89,4 +89,43 @@
     doc = "[summon] skrubb_farm"
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
+
+    [aspect]
+    {
+		[voice]
+		{
+			[cast]			{ * = s_e_attack_skrubb_farm_SED; }
+			[die]			{ priority = high; * = s_e_die_skrubb_farm_SED; }
+			//[enemy_spotted]	{ priority = high; * = s_e_call_skrubb_farm_SED; }  // REMOVED
+			[hit_glance]	{ priority = low; * = s_e_hit_skrubb_SED; }
+		}
+    }
+    [common]
+    {
+		[template_triggers]
+		{
+            // from base:
+			[*]
+			{
+				condition* = receive_world_message("we_anim_sfx",1);
+				action* = call_sfx_script("skrubb_goo");
+			}
+            // ADDED:
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");
+				action* = call_sfx_script("sumcol_skrubb_farm_call");
+			}
+		}
+    }
+    [mind]
+    {
+		jat_startup 							= world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible 							= true
+			&auto_reveal						= true;
+    }
+	[generator_in_object]
+	{
+		spawn_event = WE_ENTERED_WORLD;
+	}
 }
