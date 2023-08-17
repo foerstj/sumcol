@@ -9,4 +9,7 @@ set ds=.
 
 :: Cleanup resources so as not to confuse Siege Editor
 del "%ds%\DSLOA\%res_cs%.dsres"
+del "%ds%\DSLOA\%res_cs% - Animals.dsres"
+del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
 del "%ds%\DSLOA\%map_cs%.dsres"
+del "%ds%\DSLOA\%map_cs%.dsmap"
