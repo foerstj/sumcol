@@ -6,7 +6,9 @@ For stationary summons, gold value, duration & mana cost are much lower.\
 All spells are Nature Magic because they deserve more love!
 
 ## Installation
-Put .dsres into DSLOA (or Resources) folder. Spells are added to PContent, which means they should appear in shops & drops with some probability.
+Put the "Summons Collection.dsres" file into the DSLOA (or Resources) folder.\
+Alternatively, pick from the partial .dsres files, which are split by creature type.\
+Spells are added to PContent, which means they should appear in shops & drops with some probability.
 
 ## Features:
 - Animals
@@ -14,3 +16,5 @@ Put .dsres into DSLOA (or Resources) folder. Spells are added to PContent, which
   - Spiders: Yellow Spider
   - Stationary:
     - Skrubbs: Farm Skrubb
+- Elementals
+  - Gargoyle (melee)
