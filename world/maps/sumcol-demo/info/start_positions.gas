@@ -2,7 +2,7 @@
 {
 	[t:start_group,n:animals]
 	{
-	  b default = false;
+	  b default = true;
 		description = "";
 	  b dev_only = false;
 	  i id = 0;
@@ -25,7 +25,7 @@
 	}
 	[t:start_group,n:elementals]
 	{
-	  b default = true;
+	  b default = false;
 		description = "";
 	  b dev_only = false;
 	  i id = 1699120;
@@ -39,7 +39,7 @@
 			  f azimuth = 0.500000;
 			  f distance = 20.000000;
 			  f orbit = 0.000000;
-				position = 0.000000,0.000000,0.000000,0xAAC2E9E7;
+				position = -0.000429,0.000001,-0.021460,0xAAC2E9E7;
 			}
 		}
 		[world_levels]

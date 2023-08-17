@@ -47,3 +47,10 @@
 	  p position = 2.9883,-9.53674e-007,0.486574,0xe213e17e;
 	}
 }
+[t:scroll_summon_phrak_ballista,n:0x00100015]
+{
+	[placement]
+	{
+	  p position = -1.02924,0,1.19986,0xe213e17e;
+	}
+}
