@@ -34,3 +34,13 @@
 		caster_description = "Controlling Summoned";
 	}
 }
+
+// DUMMY to ensure base_spell_sumcol is not a leaf template and not part of PContent pool!
+[t:template,n:dummy_spell_summon]
+{
+    specializes = base_spell_sumcol;
+
+	aspect:is_visible = false;
+	[common]	{ is_pcontent_allowed = false;	}
+	[gui]		{ is_droppable = false;			}
+}
