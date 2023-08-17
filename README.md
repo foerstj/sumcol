@@ -3,11 +3,12 @@ Firstie's Summons Collection - a collection of additional summon spells for Dung
 
 Stats are based on numbers of similar original summoning spells.\
 For stationary summons, gold value, duration & mana cost are much lower.\
+For miniboss summons, scrolls are used; gold value is much lower & duration is much higher.\
 All spells are Nature Magic because they deserve more love!
 
 ## Installation
 Put the "Summons Collection.dsres" file into the DSLOA (or Resources) folder.\
-Alternatively, pick from the partial .dsres files, which are split by creature type.\
+Alternatively, pick from the partial .dsres files, which are split by creature type (animals / elementals...) or functional type (standard / stationary / miniboss).\
 Spells are added to PContent, which means they should appear in shops & drops with some probability.
 
 ## Features:
@@ -16,5 +17,7 @@ Spells are added to PContent, which means they should appear in shops & drops wi
   - Spiders: Yellow Spider
   - Stationary:
     - Skrubbs: Farm Skrubb
+  - Miniboss:
+    - Phraks: Phrak Ballista
 - Elementals
   - Gargoyle (melee)
