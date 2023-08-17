@@ -149,7 +149,6 @@
 	[magic]
 	{
 		one_use = true;
-		pcontent_level = 0;
 
 		apply_enchantments = false;
 		cast_range = 10;
