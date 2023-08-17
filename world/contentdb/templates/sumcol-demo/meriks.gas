@@ -28,11 +28,6 @@
 		{
 			il_active_primary_spell = spell_zap;
 		}
-		[pcontent]
-		{
-			es_chest 	= bd_ro_un_merik;
-			es_feet 	= bo_bo_le_f_g_c_satin;
-		}
 	}
     [mind]
     {
