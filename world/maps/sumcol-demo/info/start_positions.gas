@@ -1,12 +1,12 @@
 [start_positions]
 {
-	[t:start_group,n:default]
+	[t:start_group,n:animals]
 	{
-	  b default = true;
-		description = "This is the default group.";
+	  b default = false;
+		description = "";
 	  b dev_only = false;
 	  i id = 0;
-		screen_name = "";
+		screen_name = "Animals";
 		[start_position]
 		{
 		  i id = 1;
@@ -17,6 +17,29 @@
 			  f distance = 20.000000;
 			  f orbit = 0.000000;
 				position = 0.000000,0.000000,0.000000,0xE213E17E;
+			}
+		}
+		[world_levels]
+		{
+		}
+	}
+	[t:start_group,n:elementals]
+	{
+	  b default = true;
+		description = "";
+	  b dev_only = false;
+	  i id = 1699120;
+		screen_name = "Elementals";
+		[start_position]
+		{
+		  i id = 1;
+			position = -0.000429,0.000001,-0.021460,0xAAC2E9E7;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = 0.000000,0.000000,0.000000,0xAAC2E9E7;
 			}
 		}
 		[world_levels]

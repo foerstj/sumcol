@@ -1,0 +1,21 @@
+[t:spell_summon_gargoyle_melee,n:0x00200001]
+{
+	[placement]
+	{
+	  p position = 1.28276,3.8147e-006,1.69297,0xaac2e9e7;
+	}
+}
+[t:potion_health_super,n:0x0020000c]
+{
+	[placement]
+	{
+	  p position = -2.86072,0,0.859671,0xaac2e9e7;
+	}
+}
+[t:potion_mana_super,n:0x0020000d]
+{
+	[placement]
+	{
+	  p position = -2.40903,0,1.2499,0xaac2e9e7;
+	}
+}
