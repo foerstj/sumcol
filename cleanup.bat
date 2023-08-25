@@ -8,11 +8,15 @@ set res_cs=Summons Collection
 set ds=.
 
 :: Cleanup resources so as not to confuse Siege Editor
+:: all-in-one dsres
 del "%ds%\DSLOA\%res_cs%.dsres"
+:: by creature type
 del "%ds%\DSLOA\%res_cs% - Animals.dsres"
 del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
+:: by functional type
 del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
 del "%ds%\DSLOA\%res_cs% - Miniboss.dsres"
+:: demo map
 del "%ds%\DSLOA\%map_cs%.dsres"
 del "%ds%\DSLOA\%map_cs%.dsmap"
