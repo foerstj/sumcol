@@ -17,6 +17,9 @@ del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
 del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
 del "%ds%\DSLOA\%res_cs% - Miniboss.dsres"
+:: by DS version
+del "%ds%\DSLOA\%res_cs% - Vanilla.dsres"
+del "%ds%\DSLOA\%res_cs% - LoA.dsres"
 :: demo map
 del "%ds%\DSLOA\%map_cs%.dsres"
 del "%ds%\DSLOA\%map_cs%.dsmap"
