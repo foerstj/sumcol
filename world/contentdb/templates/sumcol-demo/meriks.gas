@@ -76,3 +76,24 @@
 		}
     }
 }
+
+[t:template,n:sumcol_demo_merik_10]
+{
+    specializes = sumcol_demo_base_merik;
+
+	[common]
+	{
+		screen_name = "Merik level 10";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 0.90, 0, 10;
+			dexterity 		= 1.80, 0, 10;
+			intelligence 	= 7.30, 0, 10;
+
+			nature_magic 	= 10,	0,	0;
+		}
+    }
+}

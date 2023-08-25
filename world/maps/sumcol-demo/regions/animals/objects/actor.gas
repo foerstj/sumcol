@@ -143,3 +143,23 @@
 	  p position = -4.94722,5.70125,-49.343,0xfbe40209;
 	}
 }
+[t:sumcol_demo_merik_10,n:0x00100017]
+{
+	[aspect]
+	{
+	  f max_life = 127.4;
+	  f max_mana = 209;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = 17.9811,5.6,-46.2392,0x14b6109e;
+	}
+}

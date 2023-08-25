@@ -6,7 +6,7 @@
 	doc = "spell Summon Island Lizard";
 	[aspect]
 	{
-		gold_value = 20;
+		gold_value = 250;
 	}
 	[common]
 	{
@@ -23,86 +23,86 @@
 	}
 	[spell_summon]
 	{
-		script_params = "[scale(0.75)]";
+		script_params = "[scale(1.25)]";
 		template_name = dsx_bubber_summon;
 	}
 	[magic]
 	{
 		effect_duration = 360;
 		mana_cost = 0;
-		mana_cost_modifier = (#magic+1)*14-.7;
-		required_level = 3;
-		max_level = 23;
+		mana_cost_modifier = (#magic+1)*15-.7;  // from spell_summon_skeleton
+		required_level = 10;
+		max_level = 30;
 
-        // enchantments from spell_summon_dsx_giant_rat (lvl 4, melee)
-        [enchantments]
-        {
-            [*]
-            {
-                alteration = alter_strength;
-                duration = #infinite;
-                value = ((((#magic*0.64)+10)*.46)-#str);
-            }
-            [*]
-            {
-                alteration = alter_dexterity;
-                duration = #infinite;
-                value = ((((#magic*0.27)+10)*1)-#dex);
-            }
-            [*]
-            {
-                alteration = alter_intelligence;
-                duration = #infinite;
-                value = ((((#magic*0.09)+10)*.2)-#int);
-            }
-            [*]
-            {
-                alteration = alter_melee;
-                duration = #infinite;
-                value = ((#magic-1)-#melee);
-            }
-            [*]
-            {
-                alteration = alter_armor;
-                duration = #infinite;
-                value = (((#magic*9)*.3)-#base_defense);
-            }
-            [*]
-            {
-                alteration = alter_max_life;
-                duration = #infinite;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
-            }
-            [*]
-            {
-                alteration = alter_life;
-                duration = 1.0;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
-            }
-            [*]
-            {
-                alteration = alter_max_mana;
-                duration = #infinite;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
-            }
-            [*]
-            {
-                alteration = alter_mana;
-                duration = 1.0;
-                value = (((#magic*19)*0.09)-#mana);
-            }
-            [*]
-            {
-                alteration = alter_melee_damage_min;
-                duration = #infinite;
-                value = ((((#magic*4.2)*.83)-10)*0.9);
-            }
-            [*]
-            {
-                alteration = alter_melee_damage_max;
-                duration = #infinite;
-                value = ((((#magic*4.2)*.83)-10)*1.1);
-            }
-        }
+        // enchantments from spell_summon_skeleton (lvl 10, melee)
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_strength;
+				duration = #infinite;
+				value = ((((#magic*0.64)+10)*1)-#str);
+			}
+			[*]
+			{
+				alteration = alter_dexterity;
+				duration = #infinite;
+				value = ((((#magic*0.27)+10)*.5)-#dex);
+			}
+			[*]
+			{
+				alteration = alter_intelligence;
+				duration = #infinite;
+				value = ((((#magic*0.09)+10)*.1)-#int);
+			}
+			[*]
+			{
+				alteration = alter_melee;
+				duration = #infinite;
+				value = ((#magic-2)-#melee);
+			}
+			[*]
+			{
+				alteration = alter_armor;
+				duration = #infinite;
+				value = (((#magic*9)*1.25)-#base_defense);
+			}
+			[*]
+			{
+				alteration = alter_max_life;
+				duration = #infinite;
+				value = (((#magic*24)*0.9)-#maxlife);
+			}
+			[*]
+			{
+				alteration = alter_life;
+				duration = 1.0;
+				value = (((#magic*24)*0.9));
+			}
+			[*]
+			{
+				alteration = alter_max_mana;
+				duration = #infinite;
+				value = (((#magic*19)*0.02)-#maxmana);
+			}
+			[*]
+			{
+				alteration = alter_mana;
+				duration = 1.0;
+				value = (((#magic*19)*0.02)-#mana);
+			}
+			[*]
+			{
+				alteration = alter_melee_damage_min;
+				duration = #infinite;
+				value = ((((#magic*4.2)*.95)-17)*0.9);
+			}
+			[*]
+			{
+				alteration = alter_melee_damage_max;
+				duration = #infinite;
+				value = ((((#magic*4.2)*.95)-17)*1.1);
+			}
+		}
 	}
 }
