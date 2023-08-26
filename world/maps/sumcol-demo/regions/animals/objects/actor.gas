@@ -181,6 +181,21 @@
 	  p position = 15.0087,5.77104,-40.6643,0x0d2b9eec;
 	}
 }
+[t:pcontent_neener_10_19,n:0x0010001d]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 17.3082,5.60001,-37.814,0x0d2b9eec;
+	}
+}
 [t:phrak_large,n:0x00100005]
 {
 	[placement]
@@ -248,20 +263,5 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 17.9811,5.6,-46.2392,0x14b6109e;
-	}
-}
-[t:pcontent_neener_10_19,n:0x0010001d]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 17.3082,5.60001,-37.814,0x0d2b9eec;
 	}
 }

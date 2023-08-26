@@ -15,6 +15,7 @@ Spells are added to PContent, which means they should appear in shops & drops wi
 - Animals
   - Phraks: Phrak, Phrak Piercer
   - Spiders: Yellow Spider
+  - Manglers: Snapper
   - Stationary:
     - Skrubbs: Farm Skrubb
   - Miniboss:
