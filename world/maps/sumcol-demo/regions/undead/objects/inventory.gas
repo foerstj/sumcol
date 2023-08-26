@@ -1,0 +1,21 @@
+[t:spell_summon_skeleton_archer,n:0x00300001]
+{
+	[placement]
+	{
+	  p position = -0.860155,0,1.91135,0x70290d7a;
+	}
+}
+[t:potion_health_super,n:0x0030000d]
+{
+	[placement]
+	{
+	  p position = -2.44898,0,-0.0370941,0x70290d7a;
+	}
+}
+[t:potion_mana_super,n:0x0030000e]
+{
+	[placement]
+	{
+	  p position = -2.23938,0,0.338413,0x70290d7a;
+	}
+}
