@@ -1,0 +1,108 @@
+[t:template,n:spell_summon_skeleton_guard] { specializes = spell_summon_skeleton_guard_base; }
+[t:template,n:spell_summon_skeleton_guard_base]
+{
+	specializes = base_spell_sumcol;
+
+	doc = "spell Summon Skeleton Guard";
+	[aspect]
+	{
+		gold_value = 300;
+	}
+	[common]
+	{
+		screen_name = "Summon Skeleton Guard";
+	}
+	[common]
+	{
+		description = "Summons a Skeleton Guard to guard the Caster.";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_sp_nm_summon_undead_skeleton_guard;
+		inventory_icon = b_gui_ig_i_ic_sp_nm_summon_undead_skeleton_guard_inv;
+	}
+	[spell_summon]
+	{
+		script_params = "[scale(1.5)]";
+		template_name = skeleton_guard_summon;
+	}
+	[magic]
+	{
+		effect_duration = 300;
+		mana_cost = 0;
+		mana_cost_modifier = (#magic+1)*15-.7;
+		required_level = 12;
+		max_level = 32;
+
+        // enchantments from spell_summon_skeleton (lvl 10, melee)
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_strength;
+				duration = #infinite;
+				value = ((((#magic*0.64)+10)*1)-#str);
+			}
+			[*]
+			{
+				alteration = alter_dexterity;
+				duration = #infinite;
+				value = ((((#magic*0.27)+10)*.5)-#dex);
+			}
+			[*]
+			{
+				alteration = alter_intelligence;
+				duration = #infinite;
+				value = ((((#magic*0.09)+10)*.1)-#int);
+			}
+			[*]
+			{
+				alteration = alter_melee;
+				duration = #infinite;
+				value = ((#magic-2)-#melee);
+			}
+			[*]
+			{
+				alteration = alter_armor;
+				duration = #infinite;
+				value = (((#magic*9)*1.25)-#base_defense);
+			}
+			[*]
+			{
+				alteration = alter_max_life;
+				duration = #infinite;
+				value = (((#magic*24)*0.9)-#maxlife);
+			}
+			[*]
+			{
+				alteration = alter_life;
+				duration = 1.0;
+				value = (((#magic*24)*0.9));
+			}
+			[*]
+			{
+				alteration = alter_max_mana;
+				duration = #infinite;
+				value = (((#magic*19)*0.02)-#maxmana);
+			}
+			[*]
+			{
+				alteration = alter_mana;
+				duration = 1.0;
+				value = (((#magic*19)*0.02)-#mana);
+			}
+			[*]
+			{
+				alteration = alter_melee_damage_min;
+				duration = #infinite;
+				value = ((((#magic*4.2)*.95)-17)*0.9);
+			}
+			[*]
+			{
+				alteration = alter_melee_damage_max;
+				duration = #infinite;
+				value = ((((#magic*4.2)*.95)-17)*1.1);
+			}
+		}
+	}
+}

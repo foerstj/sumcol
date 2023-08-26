@@ -1,0 +1,89 @@
+[t:template,n:skeleton_guard_base]  // = skeleton_guard
+{
+	category_name = "1W_evil_c";
+	doc = "Skeleton guard";
+	specializes = base_skeleton;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  14, 0;
+			intelligence =  2, 0;
+			dexterity =  6, 0;
+			melee =  3,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 20;
+		life = 28;
+		max_life = 28;
+		mana = 4;
+		max_mana = 4;
+		model = m_c_ecm_sk_pos_2;
+	}
+	[attack]
+	{
+		damage_max = 10;
+		damage_min = 8;
+	}
+	[common]
+	{
+		screen_name="Skeleton Guard";
+		membership = skeleton, party_krug_shaman, monster;
+	}
+	[defend] { defense=37; }
+	[inventory]
+	{
+		[pcontent]
+        {
+			[oneof*] { es_shield_hand = sh_m_g_c_r_s_avg; }
+            [oneof*] { es_weapon_hand = ax_d_c_1h1b_avg; }
+
+			[oneof*]
+			{
+				[all*]
+				{
+       				chance = 0.03;
+            	    il_main = #spell/2-4;
+				}
+				[oneof*]
+				{
+					chance = 0.20;
+					il_main = #weapon/10-14;
+					il_main = #armor/5-29;
+				}
+				[gold*]
+				{
+					chance = 0.2;
+					max = 38;
+					min = 20;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_brain					= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party	= true;
+		jat_fidget					= world\ai\jobs\common\job_fidget.skrit;
+	}
+}
+
+[t:template,n:skeleton_guard_summon]
+{
+    specializes = skeleton_guard_base;
+
+	doc = "[summon] Skeleton guard";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [equipment]
+        {
+            es_shield_hand = sh_m_g_c_r_s_avg;
+            es_weapon_hand = ax_d_c_1h1b_avg;
+        }
+        [pcontent] {}
+    }
+}

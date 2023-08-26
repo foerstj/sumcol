@@ -1,3 +1,22 @@
+[t:sumcol_demo_merik_15,n:0x00300011]
+{
+	[aspect]
+	{
+	  f max_life = 196;
+	  f max_mana = 289;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = 1.61194,0,-1.34485,0x70290d7a;
+	}
+}
 [t:skeleton,n:0x00300002]
 {
 	[placement]
@@ -73,24 +92,5 @@
 	[placement]
 	{
 	  p position = 10.9567,6.15943,-29.8681,0xde89abcf;
-	}
-}
-[t:sumcol_demo_merik_15,n:0x00300011]
-{
-	[aspect]
-	{
-	  f max_life = 196;
-	  f max_mana = 289;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = join;
-		}
-	}
-	[placement]
-	{
-	  p position = 1.61194,0,-1.34485,0x70290d7a;
 	}
 }
