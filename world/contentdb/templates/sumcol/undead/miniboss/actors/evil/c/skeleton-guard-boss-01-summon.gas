@@ -1,0 +1,105 @@
+[t:template,n:skeleton_guard_boss_01_base]  // = skeleton_guard_boss_01
+{
+	category_name = "1W_evil_c";
+	doc = "Skeleton guard boss 01";
+	specializes = base_skeleton;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  16, 0;
+			intelligence =  3, 0;
+			dexterity =  7, 0;
+			melee =  5,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 40;
+		life = 68;
+		max_life = 68;
+		mana = 4;
+		max_mana = 4;
+		model = m_c_ecm_sk_pos_2;
+		textures:0 = b_c_ecm_skg-02;
+        scale_base = 1.2;
+	}
+	[attack]
+	{
+		damage_max = 6;
+		damage_min = 3;
+	}
+	[common]
+	{
+		screen_name="Skeleton Captain";
+		membership = skeleton,monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_light_red(sgx)");
+			}
+		}
+	}
+	[defend] { defense=39; }
+	[inventory]
+	{
+		[pcontent]
+        {
+			[oneof*] { es_shield_hand = sh_m_g_c_r_s_avg; }
+            [oneof*] { es_weapon_hand = ax_d_c_1h1b_avg; }
+
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #weapon/14-16;
+					il_main = #body,f/29-35;
+				}
+				[gold*]
+				{
+					max = 60;
+					min = 40;
+					min_pile = 10;
+					piles = 2 - 3;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_fidget			= world\ai\jobs\common\job_fidget.skrit
+			?social				= 0.8
+			&friend_template	= false
+			&friends			= party_skeleton_guard_boss
+			&still				= false;
+
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party	= true
+			&party_template				= "party_skeleton_guard_boss";
+	}
+}
+
+[t:template,n:skeleton_guard_boss_01_summon]
+{
+    specializes = skeleton_guard_boss_01_base;
+
+    doc = "[summon] Skeleton guard boss 01"
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+        [equipment]
+        {
+			es_shield_hand = sh_m_g_c_r_s_avg;
+            es_weapon_hand = ax_d_c_1h1b_avg;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

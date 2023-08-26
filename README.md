@@ -28,3 +28,5 @@ Spells are added to PContent, which means they should appear in shops & drops wi
   - Ice Flies: Ice Fly
 - Undead
   - Skeletons: Skeleton Archer, Skeleton Guard
+  - Miniboss:
+    - Skeletons: Skeleton Captain
