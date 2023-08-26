@@ -19,3 +19,10 @@
 	  p position = -2.40903,0,1.2499,0xaac2e9e7;
 	}
 }
+[t:spell_summon_ice_fly,n:0x0020000f]
+{
+	[placement]
+	{
+	  p position = 0.416825,0,1.85937,0xaac2e9e7;
+	}
+}

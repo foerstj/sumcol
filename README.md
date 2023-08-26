@@ -25,3 +25,4 @@ Spells are added to PContent, which means they should appear in shops & drops wi
     - Lizards: Island Lizard
 - Elementals
   - Gargoyle (melee)
+  - Ice Fly
