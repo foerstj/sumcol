@@ -68,3 +68,10 @@
 	  p position = 3.50346,0,1.3886,0xe213e17e;
 	}
 }
+[t:spell_summon_krug_dog,n:0x0010001f]
+{
+	[placement]
+	{
+	  p position = 17.5571,5.59999,-50.7303,0x14b6109e;
+	}
+}

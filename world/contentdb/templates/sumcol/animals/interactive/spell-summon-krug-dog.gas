@@ -1,0 +1,108 @@
+[t:template,n:spell_summon_krug_dog] { specializes = spell_summon_krug_dog_base; }
+[t:template,n:spell_summon_krug_dog_base]
+{
+	specializes = base_spell_sumcol;
+
+	doc = "spell Summon Krug Dog";
+	[aspect]
+	{
+		gold_value = 50;
+	}
+	[common]
+	{
+		screen_name = "Summon Krug Dog";
+	}
+	[common]
+	{
+		description = "Summons a Krug Dog to guard the Caster.";
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_sp_nm_summon_animal_krug_dog;
+		inventory_icon = b_gui_ig_i_ic_sp_nm_summon_animal_krug_dog_inv;
+	}
+	[spell_summon]
+	{
+		script_params = "[scale(1.25)]";
+		template_name = krug_dog_summon;
+	}
+	[magic]
+	{
+		effect_duration = 360;
+		mana_cost = 0;
+		mana_cost_modifier = (#magic+1)*14-.7;
+		required_level = 5;
+		max_level = 25;
+
+        // enchantments from spell_summon_dsx_giant_rat (lvl 4, melee)
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = ((((#magic*0.64)+10)*.46)-#str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = ((((#magic*0.27)+10)*1)-#dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = ((((#magic*0.09)+10)*.2)-#int);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic-1)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*9)*.3)-#base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (((#magic*19)*0.09)-#mana);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*.83)-10)*0.9);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*.83)-10)*1.1);
+            }
+        }
+	}
+}
