@@ -13,6 +13,7 @@ del "%ds%\DSLOA\%res_cs%.dsres"
 :: by creature type
 del "%ds%\DSLOA\%res_cs% - Animals.dsres"
 del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
+del "%ds%\DSLOA\%res_cs% - Undead.dsres"
 :: by functional type
 del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
