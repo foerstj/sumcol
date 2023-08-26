@@ -14,19 +14,16 @@ Spells are added to PContent, which means they should appear in shops & drops wi
 ## Features:
 - Animals
   - Phraks: Phrak, Phrak Piercer
+    - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider
   - Manglers: Snapper
   - Dogs: Krug Dog
+  - Lizards: Island Lizard (LoA)
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb
-  - Miniboss:
-    - Phraks: Phrak Ballista
-  - LoA:
-    - Lizards: Island Lizard
 - Elementals
   - Gargoyles: Gargoyle (melee)
   - Ice Flies: Ice Fly
 - Undead
   - Skeletons: Skeleton Archer, Skeleton Guard
-  - Miniboss:
-    - Skeletons: Skeleton Captain
+    - Miniboss: Skeleton Captain
