@@ -75,3 +75,10 @@
 	  p position = 17.5571,5.59999,-50.7303,0x14b6109e;
 	}
 }
+[t:spell_summon_black_skrubb,n:0x00100020]
+{
+	[placement]
+	{
+	  p position = 1.03198,0,0.973847,0xe213e17e;
+	}
+}
