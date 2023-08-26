@@ -56,13 +56,6 @@
 	  p position = -4.02313,5.75741,-53.908,0x0d2b9eec;
 	}
 }
-[t:phrak_large,n:0x00100005]
-{
-	[placement]
-	{
-	  p position = 14.6699,5.82948,-28.4276,0xc2573f8c;
-	}
-}
 [t:adwana,n:0x0010000e]
 {
 	[conversation]
@@ -78,8 +71,8 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-5.28297e-008,0,1;
-	  p position = 14.8869,5.94518,-53.9908,0xc2573f8c;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 17.9995,5.60003,-42.9048,0x0d2b9eec;
 	}
 }
 [t:mage_trianna_lelaine,n:0x0010000f]
@@ -97,8 +90,102 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-5.28297e-008,0,1;
-	  p position = 13.4902,7.05007,-53.2173,0xc2573f8c;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 17.9855,5.60004,-40.7567,0x0d2b9eec;
+	}
+}
+[t:conjuror_orkin_umberdeep,n:0x00100018]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.3787,5.60003,-40.7265,0x0d2b9eec;
+	}
+}
+[t:onoc,n:0x00100019]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.3138,5.60003,-43.0512,0x0d2b9eec;
+	}
+}
+[t:pcontent_neener_0_9,n:0x0010001a]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 17.9997,5.60001,-37.7868,0x0d2b9eec;
+	}
+}
+[t:jeriah,n:0x0010001b]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.2399,5.73119,-43.0537,0x0d2b9eec;
+	}
+}
+[t:magician_killean_herne,n:0x0010001c]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.0087,5.77104,-40.6643,0x0d2b9eec;
+	}
+}
+[t:phrak_large,n:0x00100005]
+{
+	[placement]
+	{
+	  p position = 14.6699,5.82948,-28.4276,0xc2573f8c;
 	}
 }
 [t:phrak,n:0x00100000]
@@ -161,5 +248,20 @@
 	{
 	  q orientation = 0,1,0,0;
 	  p position = 17.9811,5.6,-46.2392,0x14b6109e;
+	}
+}
+[t:pcontent_neener_10_19,n:0x0010001d]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 17.3082,5.60001,-37.814,0x0d2b9eec;
 	}
 }
