@@ -44,3 +44,11 @@ Further bonus/minus minutes are given to counter the damage & health/defense val
 
 Level cap: the maximum level (from which on the summon doesn't get stronger anymore) is always the required level + 20.\
 Most originals follow this scheme as well, with a few minor deviations. (The only really odd one out is Summon Clone, by the way, which improves all the way from level 15 to level 65.)
+
+Alterations: All summons use the same alteration formulas to make balancing simple & comprehensible.\
+Damage: based on caster's level with slight variation corresponding to the creature's properties. (Factors 0.9 and 1.1 applied for min and max damage respectively.)\
+Only slight variation here with factors between 0.8 and 1.2 because damage affects XP balancing! Miniboss scrolls get an additional +0.2 damage factor on top of that of their base creature.\
+Defense & Health: based on caster's level with variations corresponding to the creature's properties. Miniboss scrolls get 3x the health of their base creature.\
+Level (melee/ranged/CM): based on caster's level.\
+Strength/Dexterity/Intelligence: based on caster's level.\
+Mana: based on caster's level.
