@@ -36,10 +36,11 @@ Required Level 0-30: gold value = 30 * 10^(required level / 10)\
 Required Level 30+:  gold value = 30 * 10^(required level / 50 + 2.4)\
 Melee summons get 20% discount; stationary summons & miniboss scrolls get 80% discount.
 
-Duration: base duration is 5 minutes.\
-Bonus minutes are given for melee summons and for slow creatures (skeleton guard = 7min), because these factors waste a bit of time.\
+Duration: base duration for standard summons is 5 minutes.\
 Stationary summons have 1 minute, because you'll have to re-summon them frequently anyway.\
-Miniboss scrolls get a full 15 minutes, because they're single-use. Make sure to heal them!
+Miniboss scrolls get a full 15 minutes, because they're single-use. Make sure to heal them!\
+Bonus minutes are given for melee summons and for slow creatures, because these factors waste a bit of time.\
+Further bonus/minus minutes are given to counter the damage & health/defense values a bit.
 
 Level cap: the maximum level (from which on the summon doesn't get stronger anymore) is always the required level + 20.\
 Most originals follow this scheme as well, with a few minor deviations. (The only really odd one out is Summon Clone, by the way, which improves all the way from level 15 to level 65.)
