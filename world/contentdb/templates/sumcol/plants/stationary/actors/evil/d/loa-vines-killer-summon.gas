@@ -148,4 +148,35 @@
     doc = "[summon] dsx_vines_killer"
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
+
+    [aspect]
+    {
+		[voice]
+		{
+	      	[voice]
+		    {
+				[attack]		{ priority = always;	* = s_e_attack_whip;	}
+				[die]			{ priority = high;	* = s_e_die_vines;		}
+				//[enemy_spotted]	{ priority = high; * = s_e_ground_burst_SED;}  // REMOVED
+			}
+		}
+    }
+    [common]
+    {
+		[template_triggers]
+		{
+            // ADDED:
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");
+				action* = call_sfx_script("sumcol_vines_killer_ground_burst");
+			}
+		}
+    }
+    [mind]
+    {
+		jat_startup 							= world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible 							= true
+			&auto_reveal						= true;
+    }
 }
