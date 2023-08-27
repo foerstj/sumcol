@@ -10,7 +10,8 @@ All spells are Nature Magic because they deserve more love!
 ## Installation
 Put the "Summons Collection.dsres" file into the DSLOA (or Resources) folder.\
 Alternatively, pick from the partial .dsres files, which are split by creature type (animals / elementals...) or functional type (standard / stationary / miniboss) or by DS version (vanilla / LoA).\
-Spells are added to PContent, which means they should appear in shops & drops with some probability. Note: unfortunately, scrolls are excluded from PContent, so they won't appear.
+Spells are added to PContent, which means they should appear in shops & drops with some probability.\
+Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
 ## Features:
 - Animals
