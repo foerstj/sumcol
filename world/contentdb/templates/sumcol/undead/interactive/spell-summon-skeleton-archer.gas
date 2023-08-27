@@ -34,92 +34,73 @@
 		required_level = 11;
 		max_level = 31;
 
-        // enchantments from spell_summon_dsx_vile_twisted_mucosa (lvl 10, ranged)
         [enchantments]
         {
             [*]
             {
-                alteration = alter_strength;
+                alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = ((((#magic*0.64)+10)*1)-#str);
+                value = ((((#magic*4.2)*1)*0.9) - #ranged_damage_min);
             }
             [*]
             {
-                alteration = alter_dexterity;
+                alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = ((((#magic*0.27)+10)*.5)-#dex);
-            }
-            [*]
-            {
-                alteration = alter_intelligence;
-                duration = #infinite;
-                value = ((((#magic*0.09)+10)*.1)-#int);
+                value = ((((#magic*4.2)*1)*1.1) - #ranged_damage_max);
             }
             [*]
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*9)*1.25)-#base_defense);
+                value = (((#magic*9)*1) - #base_defense);
             }
             [*]
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*0.9)-#MAXLIFE);
+                value = (((#magic*24)*1) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*0.9)-#MAXLIFE);
+                value = (((#magic*24)*1) - #life);
+            }
+            [*]
+            {
+                alteration = alter_ranged;
+                duration = #infinite;
+                value = ((#magic)-#ranged);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
             }
             [*]
             {
                 alteration = alter_max_mana;
                 duration = #infinite;
-                value = (((#magic*19)*0.02)-#maxmana);
+                value = ((#magic*19) - #maxmana);
             }
             [*]
             {
                 alteration = alter_mana;
                 duration = 1.0;
-                value = (((#magic*19)*0.02)-#mana);
-            }
-            [*]
-            {
-                alteration = alter_melee;
-                duration = #infinite;
-                value = ((#magic-2)-#melee);
-            }
-            [*]
-            {
-                alteration = alter_melee_damage_min;
-                duration = #infinite;
-                value = ((((#magic*4.2)*.95)-17)*0.9);
-            }
-            [*]
-            {
-                alteration = alter_melee_damage_max;
-                duration = #infinite;
-                value = ((((#magic*4.2)*.95)-17)*1.1);
-            }
-            [*]
-            {
-                alteration = alter_combat_magic;
-                duration = #infinite;
-                value = ((#magic)-#combat_magic_level);
-            }
-            [*]
-            {
-                alteration = alter_cmagic_damage_min;
-                duration = #infinite;
-                value = ((((#magic*4.2)*.9)-22)*0.9);
-            }
-            [*]
-            {
-                alteration = alter_cmagic_damage_max;
-                duration = #infinite;
-                value = ((((#magic*4.2)*.9)-22)*1.1);
+                value = ((#magic*19) - #mana);
             }
         }
 	}

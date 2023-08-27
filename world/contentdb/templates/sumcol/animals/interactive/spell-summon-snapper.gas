@@ -34,74 +34,73 @@
 		required_level = 3;
 		max_level = 23;
 
-        // enchantments from spell_summon_dsx_giant_rat (lvl 4, melee)
         [enchantments]
         {
             [*]
             {
-                alteration = alter_strength;
-                duration = #infinite;
-                value = ((((#magic*0.64)+10)*.46)-#str);
-            }
-            [*]
-            {
-                alteration = alter_dexterity;
-                duration = #infinite;
-                value = ((((#magic*0.27)+10)*1)-#dex);
-            }
-            [*]
-            {
-                alteration = alter_intelligence;
-                duration = #infinite;
-                value = ((((#magic*0.09)+10)*.2)-#int);
-            }
-            [*]
-            {
-                alteration = alter_melee;
-                duration = #infinite;
-                value = ((#magic-1)-#melee);
-            }
-            [*]
-            {
-                alteration = alter_armor;
-                duration = #infinite;
-                value = (((#magic*9)*.3)-#base_defense);
-            }
-            [*]
-            {
-                alteration = alter_max_life;
-                duration = #infinite;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
-            }
-            [*]
-            {
-                alteration = alter_life;
-                duration = 1.0;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
-            }
-            [*]
-            {
-                alteration = alter_max_mana;
-                duration = #infinite;
-                value = ((((#MAGIC*12) + (#SPELL_REQ_LEVEL*12))*1.2)-#MAXLIFE);
-            }
-            [*]
-            {
-                alteration = alter_mana;
-                duration = 1.0;
-                value = (((#magic*19)*0.09)-#mana);
-            }
-            [*]
-            {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((#magic*4.2)*.83)-10)*0.9);
+                value = ((((#magic*4.2)*1)*0.9) - #melee_damage_min);
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((#magic*4.2)*.83)-10)*1.1);
+                value = ((((#magic*4.2)*1)*1.1) - #melee_damage_max);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*9)*1) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = (((#magic*24)*1) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*24)*1) - #life);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = ((#magic*19) - #mana);
             }
         }
 	}
