@@ -40,31 +40,31 @@
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((#magic*4.2)*1)*0.9) - #melee_damage_min);
+                value = ((((#magic*4.2)*0.9)*0.9) - #melee_damage_min);
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((#magic*4.2)*1)*1.1) - #melee_damage_max);
+                value = ((((#magic*4.2)*0.9)*1.1) - #melee_damage_max);
             }
             [*]
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*9)*1) - #base_defense);
+                value = (((#magic*9)*1.0) - #base_defense);
             }
             [*]
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = (((#magic*24)*1) - #maxlife);
+                value = (((#magic*24)*0.7) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*24)*1) - #life);
+                value = (((#magic*24)*0.7) - #life);
             }
             [*]
             {
