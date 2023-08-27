@@ -2,7 +2,7 @@
 {
 	[t:start_group,n:animals]
 	{
-	  b default = false;
+	  b default = true;
 		description = "";
 	  b dev_only = false;
 	  i id = 0;
@@ -48,7 +48,7 @@
 	}
 	[t:start_group,n:undead]
 	{
-	  b default = true;
+	  b default = false;
 		description = "";
 	  b dev_only = false;
 	  i id = 1699120;
