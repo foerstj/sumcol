@@ -14,6 +14,7 @@ del "%ds%\DSLOA\%res_cs%.dsres"
 del "%ds%\DSLOA\%res_cs% - Animals.dsres"
 del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
 del "%ds%\DSLOA\%res_cs% - Undead.dsres"
+del "%ds%\DSLOA\%res_cs% - Plants.dsres"
 :: by functional type
 del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"

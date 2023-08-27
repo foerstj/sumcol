@@ -29,7 +29,7 @@ if %errorlevel% neq 0 pause
 :: Compile all-in-one resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *.psd
-for %%C in (common, animals, elementals, undead) do (
+for %%C in (common, animals, elementals, undead, plants) do (
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
@@ -76,12 +76,24 @@ if "%mode%"=="release" (
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Undead.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
+  :: Plants
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_plant_* /S /xf *.psd
+  for %%C in (common, plants) do (
+    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
+    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
+    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
+  )
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*plants-* /S
+  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Plants.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
+  if !errorlevel! neq 0 pause
+
 
   :: Standard
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *_stationary_* /xf *_miniboss_* /xf *.psd
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead) do (
+  for %%C in (animals, elementals, undead, plants) do (
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
   )
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S /xf *-stationary-* /xf *-miniboss-*
@@ -92,7 +104,7 @@ if "%mode%"=="release" (
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_stationary_* /S /xf *.psd
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead) do (
+  for %%C in (animals, elementals, undead, plants) do (
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
   )
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-stationary-* /S
@@ -103,7 +115,7 @@ if "%mode%"=="release" (
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_miniboss_* /S /xf *.psd
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead) do (
+  for %%C in (animals, elementals, undead, plants) do (
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
   )
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-miniboss-* /S
@@ -115,7 +127,7 @@ if "%mode%"=="release" (
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *_loa_* /xf *.psd
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead) do (
+  for %%C in (animals, elementals, undead, plants) do (
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss /xf loa-* /xf *-loa-*
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xf loa-* /xf *-loa-*
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xf loa-* /xf *-loa-*
@@ -128,7 +140,7 @@ if "%mode%"=="release" (
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_loa_* /S /xf *.psd
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead) do (
+  for %%C in (animals, elementals, undead, plants) do (
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" loa-* *-loa-* /S /xd stationary /xd miniboss
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" loa-* *-loa-* /S
     robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" loa-* *-loa-* /S
