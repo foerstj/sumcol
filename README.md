@@ -31,7 +31,12 @@ Spells are added to PContent, which means they should appear in shops & drops wi
 
 ## Balancing
 
-Gold Value is based on a formula reconstructed from original:\
+Gold Value: is based on a formula reconstructed from original:\
 Required Level 0-30: gold value = 30 * 10^(required level / 10)\
 Required Level 30+:  gold value = 30 * 10^(required level / 50 + 2.4)\
 Melee summons get 20% discount; stationary summons & miniboss scrolls get 80% discount.
+
+Duration: base duration is 5 minutes.\
+Bonus minutes are given for melee summons and for slow creatures (skeleton guard = 7min), because these factors waste a bit of time.\
+Stationary summons have 1 minute, because you'll have to re-summon them frequently anyway.\
+Miniboss scrolls get a full 15 minutes, because they're single-use. Make sure to heal them!
