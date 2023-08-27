@@ -1,0 +1,21 @@
+[t:potion_health_super,n:0x0040000d]
+{
+	[placement]
+	{
+	  p position = -3.51757,0,-1.07075,0x89c09cd2;
+	}
+}
+[t:potion_mana_super,n:0x0040000e]
+{
+	[placement]
+	{
+	  p position = -2.86667,0,0.211052,0x89c09cd2;
+	}
+}
+[t:spell_summon_dsx_killer_vines,n:0x0040000f]
+{
+	[placement]
+	{
+	  p position = 0.723852,9.53674e-007,1.79056,0x89c09cd2;
+	}
+}
