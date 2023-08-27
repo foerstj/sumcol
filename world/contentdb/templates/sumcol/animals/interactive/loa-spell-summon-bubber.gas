@@ -6,7 +6,7 @@
 	doc = "spell Summon Island Lizard";
 	[aspect]
 	{
-		gold_value = 250;
+		gold_value = 240;
 	}
 	[common]
 	{

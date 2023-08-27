@@ -6,7 +6,7 @@
 	doc = "scroll Summon Skeleton Captain";
 	[aspect]
 	{
-		gold_value = 60;
+		gold_value = 95;
 	}
 	[common]
 	{

@@ -6,7 +6,7 @@
 	doc = "spell Summon Skeleton Guard";
 	[aspect]
 	{
-		gold_value = 300;
+		gold_value = 380;
 	}
 	[common]
 	{

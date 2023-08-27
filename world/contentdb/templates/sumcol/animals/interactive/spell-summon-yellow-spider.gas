@@ -6,7 +6,7 @@
 	doc = "spell Summon Yellow Spider";
 	[aspect]
 	{
-		gold_value = 20;
+		gold_value = 60;
 	}
 	[common]
 	{
