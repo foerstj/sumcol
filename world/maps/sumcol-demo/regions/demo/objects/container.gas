@@ -1,0 +1,28 @@
+[t:sumcol_demo_barrel_animals,n:0x00100004]
+{
+	[placement]
+	{
+	  p position = -1.68158,0,-2.05572,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_elementals,n:0x00100005]
+{
+	[placement]
+	{
+	  p position = -1.70766,-1.90735e-006,-0.833927,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_plants,n:0x00100006]
+{
+	[placement]
+	{
+	  p position = -1.69095,0,0.537401,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_undead,n:0x00100007]
+{
+	[placement]
+	{
+	  p position = -1.70508,0,2.11136,0xf00cc9f1;
+	}
+}

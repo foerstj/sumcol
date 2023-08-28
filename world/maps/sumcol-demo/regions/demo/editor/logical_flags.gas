@@ -1,5 +1,23 @@
 [logical_flags]
 {
+	[t:lf_snode,n:0x131cc381]
+	{
+		[t:lf_lnode,n:0]
+		{
+			* = lf_human_player;
+			* = lf_computer_player;
+			* = lf_dirt;
+		}
+	}
+	[t:lf_snode,n:0x3a845ae4]
+	{
+		[t:lf_lnode,n:0]
+		{
+			* = lf_human_player;
+			* = lf_computer_player;
+			* = lf_dirt;
+		}
+	}
 	[t:lf_snode,n:0x642caff0]
 	{
 		[t:lf_lnode,n:0]
@@ -13,6 +31,15 @@
 		}
 	}
 	[t:lf_snode,n:0xe0d23e5f]
+	{
+		[t:lf_lnode,n:0]
+		{
+			* = lf_human_player;
+			* = lf_computer_player;
+			* = lf_dirt;
+		}
+	}
+	[t:lf_snode,n:0xf00cc9f1]
 	{
 		[t:lf_lnode,n:0]
 		{

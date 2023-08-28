@@ -1,0 +1,25 @@
+[t:potion_health_super,n:0x00100001]
+{
+	[placement]
+	{
+	  p position = -2.07272,0,-0.475958,0x131cc381;
+	}
+}
+[t:potion_mana_super,n:0x00100002]
+{
+	[placement]
+	{
+	  p position = -2.0982,0,0.148001,0x131cc381;
+	}
+}
+[t:gold,n:0x00100003]
+{
+	[aspect]
+	{
+	  i gold_value = 1337;
+	}
+	[placement]
+	{
+	  p position = -2.82124,0,-0.0992756,0x131cc381;
+	}
+}
