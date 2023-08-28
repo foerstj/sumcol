@@ -33,7 +33,7 @@
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15;
 		required_level = 5;
-		max_level = 25;
+		max_level = 26;
 
         [enchantments]
         {
