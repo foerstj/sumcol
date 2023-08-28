@@ -1,22 +1,8 @@
-[t:spell_summon_phrak,n:0x00100007]
-{
-	[placement]
-	{
-	  p position = 0.542819,0,1.77996,0xe213e17e;
-	}
-}
 [t:potion_health_super,n:0x00100009]
 {
 	[placement]
 	{
 	  p position = -2.11983,9.53674e-007,0.444538,0xe213e17e;
-	}
-}
-[t:spell_zap,n:0x0010000a]
-{
-	[placement]
-	{
-	  p position = 1.70513,0,0.492745,0xe213e17e;
 	}
 }
 [t:potion_mana_super,n:0x0010000c]
@@ -26,101 +12,14 @@
 	  p position = -1.68059,9.53674e-007,0.444538,0xe213e17e;
 	}
 }
-[t:spell_summon_phrak_piercer,n:0x0010000d]
+[t:gold,n:0x00100038]
 {
-	[placement]
+	[aspect]
 	{
-	  p position = 1.60861,0,1.81966,0xe213e17e;
+	  i gold_value = 1337;
 	}
-}
-[t:spell_summon_yellow_spider,n:0x00100010]
-{
 	[placement]
 	{
-	  p position = 2.57365,0,1.8144,0xe213e17e;
-	}
-}
-[t:spell_summon_farm_skrubb,n:0x00100011]
-{
-	[placement]
-	{
-	  p position = 2.9883,-9.53674e-007,0.486574,0xe213e17e;
-	}
-}
-[t:scroll_summon_skeleton_captain,n:0x00100014]
-{
-	[placement]
-	{
-	  p position = -1.27034,0,1.4433,0xe213e17e;
-	}
-}
-[t:scroll_summon_phrak_ballista,n:0x00100015]
-{
-	[placement]
-	{
-	  p position = -1.02924,0,1.19986,0xe213e17e;
-	}
-}
-[t:spell_summon_dsx_bubber,n:0x00100016]
-{
-	[placement]
-	{
-	  p position = -0.566182,0,1.92131,0xe213e17e;
-	}
-}
-[t:spell_summon_snapper,n:0x0010001e]
-{
-	[placement]
-	{
-	  p position = 3.50346,0,1.3886,0xe213e17e;
-	}
-}
-[t:spell_summon_black_skrubb,n:0x00100020]
-{
-	[placement]
-	{
-	  p position = 1.03198,0,0.973847,0xe213e17e;
-	}
-}
-[t:spell_summon_gargoyle_melee,n:0x00100021]
-{
-	[placement]
-	{
-	  p position = 2.22772,0,1.16662,0xe213e17e;
-	}
-}
-[t:spell_summon_ice_fly,n:0x0010002a]
-{
-	[placement]
-	{
-	  p position = 3.74776,9.53674e-007,0.212349,0xe213e17e;
-	}
-}
-[t:spell_summon_dsx_killer_vines,n:0x0010002d]
-{
-	[placement]
-	{
-	  p position = 2.03643,0,2.45567,0xe213e17e;
-	}
-}
-[t:spell_summon_krug_dog,n:0x0010001f]
-{
-	[placement]
-	{
-	  p position = 17.5571,5.59999,-50.7303,0x14b6109e;
-	}
-}
-[t:spell_summon_skeleton_archer,n:0x0010002b]
-{
-	[placement]
-	{
-	  p position = 17.026,5.60001,-50.9739,0x14b6109e;
-	}
-}
-[t:spell_summon_skeleton_guard,n:0x0010002c]
-{
-	[placement]
-	{
-	  p position = 17.7558,5.6,-51.4542,0x14b6109e;
+	  p position = -2.17279,0,0.893038,0xe213e17e;
 	}
 }

@@ -1,0 +1,93 @@
+[t:template,n:barrel_glb_floating_03_base]  // = barrel_glb_floating_03
+{
+	specializes		= base_container_barrel;
+	doc				= "barrel_floating_vertical";
+	category_name	= "container";
+
+	aspect:model		= m_i_glb_barrel-03;
+	aspect:textures:0	= b_i_glb_barrel;
+	[body]
+	{
+		initial_chore =	chore_default;
+		[chore_dictionary]
+		{
+			chore_prefix = a_i_glb;
+			[chore_default]
+			{
+				skrit =	infinite_loop;
+				[anim_files] { 00=barrel-03-float; }
+			}
+		}
+	}
+}
+
+[t:template,n:sumcol_demo_base_barrel]
+{
+    specializes = barrel_glb_floating_03_base;
+
+    aspect:does_block_path = false;
+}
+
+[t:template,n:sumcol_demo_barrel_animals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Animals";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_phrak;
+            il_main = spell_summon_phrak_piercer;
+            il_main = scroll_summon_phrak_ballista;
+            il_main = spell_summon_yellow_spider;
+            il_main = spell_summon_snapper;
+            il_main = spell_summon_krug_dog;
+            il_main = spell_summon_dsx_bubber;
+            il_main = spell_summon_farm_skrubb;
+            il_main = spell_summon_black_skrubb;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_elementals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Elementals";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_gargoyle_melee;
+            il_main = spell_summon_ice_fly;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_undead]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Undead";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_skeleton_archer;
+            il_main = spell_summon_skeleton_guard;
+            il_main = scroll_summon_skeleton_captain;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_plants]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Plants";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_dsx_killer_vines;
+        }
+    }
+}
