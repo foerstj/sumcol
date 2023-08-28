@@ -11,16 +11,19 @@
 			
 			sfx create cylinder #TARGET
 				"rp1(1,0,-1)rp0(1,0,-1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
+                hp1(0,0,0)hp0(2.5,2.5,0)
 				spin(-10)dur(1.5)tin(1.5)delay(.6)[0]";
 				 
 			sfx freeze_targets #PEEK;
 			sfx create cylinder #TARGET
 				"rp1(1,0,-1)rp0(1,0,-1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
+                hp1(0,0,0)hp0(2.5,2.5,0)
 				spin(-10)dur(1.5)tin(1.5)delay(.4)[0]";
 				 
 			sfx freeze_targets #PEEK;
 			sfx create cylinder #TARGET
 				"rp1(1,0,-1)rp0(1,0,-1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
+                hp1(0,0,0)hp0(2.5,2.5,0)
 				spin(-10)dur(1.5)tin(1.5)delay(.2)[0]";
 				 
 			sfx freeze_targets #PEEK;
