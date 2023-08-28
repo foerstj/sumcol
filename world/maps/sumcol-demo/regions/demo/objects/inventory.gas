@@ -47,6 +47,13 @@
 	  p position = 2.9883,-9.53674e-007,0.486574,0xe213e17e;
 	}
 }
+[t:scroll_summon_skeleton_captain,n:0x00100014]
+{
+	[placement]
+	{
+	  p position = -1.27034,0,1.4433,0xe213e17e;
+	}
+}
 [t:scroll_summon_phrak_ballista,n:0x00100015]
 {
 	[placement]
@@ -75,10 +82,45 @@
 	  p position = 1.03198,0,0.973847,0xe213e17e;
 	}
 }
+[t:spell_summon_gargoyle_melee,n:0x00100021]
+{
+	[placement]
+	{
+	  p position = 2.22772,0,1.16662,0xe213e17e;
+	}
+}
+[t:spell_summon_ice_fly,n:0x0010002a]
+{
+	[placement]
+	{
+	  p position = 3.74776,9.53674e-007,0.212349,0xe213e17e;
+	}
+}
+[t:spell_summon_dsx_killer_vines,n:0x0010002d]
+{
+	[placement]
+	{
+	  p position = 2.03643,0,2.45567,0xe213e17e;
+	}
+}
 [t:spell_summon_krug_dog,n:0x0010001f]
 {
 	[placement]
 	{
 	  p position = 17.5571,5.59999,-50.7303,0x14b6109e;
+	}
+}
+[t:spell_summon_skeleton_archer,n:0x0010002b]
+{
+	[placement]
+	{
+	  p position = 17.026,5.60001,-50.9739,0x14b6109e;
+	}
+}
+[t:spell_summon_skeleton_guard,n:0x0010002c]
+{
+	[placement]
+	{
+	  p position = 17.7558,5.6,-51.4542,0x14b6109e;
 	}
 }

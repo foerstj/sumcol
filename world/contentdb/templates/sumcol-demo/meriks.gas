@@ -119,6 +119,27 @@
     }
 }
 
+[t:template,n:sumcol_demo_merik_20]
+{
+    specializes = sumcol_demo_base_merik;
+
+	[common]
+	{
+		screen_name = "Merik level 20";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 1.80, 0, 10;
+			dexterity 		= 3.60, 0, 10;
+			intelligence 	=14.60, 0, 10;
+
+			nature_magic 	= 20,	0,	0;
+		}
+    }
+}
+
 [t:template,n:sumcol_demo_merik_25]
 {
     specializes = sumcol_demo_base_merik;

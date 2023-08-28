@@ -97,16 +97,16 @@
 		}
 }
 
-[t:template,n:pcontent_neener_base]
+[t:template,n:sumcol_demo_pcontent_neener_base]
 {
     specializes = base_neener;
     common:screen_name = "PContent Neener";
     mind:jat_talk = world\ai\jobs\common\job_talk.skrit;
 }
 
-[t:template,n:pcontent_neener_0_9]
+[t:template,n:sumcol_demo_pcontent_neener_0_9]
 {
-    specializes = pcontent_neener_base;
+    specializes = sumcol_demo_pcontent_neener_base;
     common:screen_name = "PContent Neener 0-9";
     [inventory]
     {
@@ -126,9 +126,9 @@
     }
 }
 
-[t:template,n:pcontent_neener_10_19]
+[t:template,n:sumcol_demo_pcontent_neener_10_19]
 {
-    specializes = pcontent_neener_base;
+    specializes = sumcol_demo_pcontent_neener_base;
     common:screen_name = "PContent Neener 10-19";
     [inventory]
     {
@@ -140,6 +140,73 @@
                 [all*]
                 {
                     il_main = #spell/10-19;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_pcontent_neener_20_29]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener 20-29";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #spell/20-29;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_pcontent_neener_30_39]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener 30-39";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #spell/30-39;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+
+[t:template,n:sumcol_demo_pcontent_neener_scrolls_0_39]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener Scrolls 0-39";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #scroll/0-39;
                     max = 256;
                     min = 256;
                 }
