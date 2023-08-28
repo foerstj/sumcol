@@ -15,7 +15,7 @@
 	[placement]
 	{
 	  q orientation = 0,-8.9407e-008,0,1;
-	  p position = -1.64284,0,-3.84587,0xe213e17e;
+	  p position = -2.20325,0,-2.53346,0xe213e17e;
 	}
 }
 [t:sumcol_demo_merik_5,n:0x00100013]
@@ -35,7 +35,7 @@
 	[placement]
 	{
 	  q orientation = 0,5.96046e-008,0,1;
-	  p position = -1.20849,0,-3.87045,0xe213e17e;
+	  p position = -1.7689,0,-2.55804,0xe213e17e;
 	}
 }
 [t:sumcol_demo_merik_10,n:0x00100017]
@@ -54,7 +54,7 @@
 	}
 	[placement]
 	{
-	  p position = -0.714548,0,-3.8913,0xe213e17e;
+	  p position = -1.27495,0,-2.57889,0xe213e17e;
 	}
 }
 [t:sumcol_demo_merik_15,n:0x0010002e]
@@ -74,7 +74,7 @@
 	[placement]
 	{
 	  q orientation = 0,1.66939e-007,0,1;
-	  p position = -0.166557,0,-3.91078,0xe213e17e;
+	  p position = -0.726964,0,-2.59837,0xe213e17e;
 	}
 }
 [t:sumcol_demo_merik_25,n:0x0010002f]
@@ -94,7 +94,7 @@
 	[placement]
 	{
 	  q orientation = 0,1.66939e-007,0,1;
-	  p position = 0.839891,0,-3.88453,0xe213e17e;
+	  p position = 0.279484,0,-2.57212,0xe213e17e;
 	}
 }
 [t:sumcol_demo_merik_20,n:0x00100030]
@@ -113,7 +113,37 @@
 	}
 	[placement]
 	{
-	  p position = 0.337241,0,-3.90074,0xe213e17e;
+	  p position = -0.223166,0,-2.58833,0xe213e17e;
+	}
+}
+[t:mother_zaod,n:0x00100008]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.521,5.60002,-43.7128,0x0d2b9eec;
+	}
+}
+[t:verma,n:0x0010000a]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.6145,5.60001,-44.7992,0x0d2b9eec;
 	}
 }
 [t:tretch,n:0x0010000b]
@@ -134,6 +164,21 @@
 	  p position = -4.02313,5.75741,-53.908,0x0d2b9eec;
 	}
 }
+[t:thayne,n:0x0010000d]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.6011,5.6,-45.8929,0x0d2b9eec;
+	}
+}
 [t:adwana,n:0x0010000e]
 {
 	[conversation]
@@ -150,7 +195,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 17.9995,5.60003,-42.9048,0x0d2b9eec;
+	  p position = 16.7036,5.60003,-41.0998,0x0d2b9eec;
 	}
 }
 [t:mage_trianna_lelaine,n:0x0010000f]
@@ -169,7 +214,82 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 17.9855,5.60004,-40.7567,0x0d2b9eec;
+	  p position = 14.8341,5.80115,-40.9466,0x0d2b9eec;
+	}
+}
+[t:magus_jardaranz,n:0x00100010]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.5187,5.59999,-46.9893,0x0d2b9eec;
+	}
+}
+[t:nonataya,n:0x00100011]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.4037,5.6,-48.0252,0x0d2b9eec;
+	}
+}
+[t:hein,n:0x00100014]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 16.4417,5.6,-49.617,0x0d2b9eec;
+	}
+}
+[t:azunite_priestess_lilyaire_prieve,n:0x00100015]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.0193,5.76925,-44.6753,0x0d2b9eec;
+	}
+}
+[t:wise_woman_ninale,n:0x00100016]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.047,5.76447,-45.8797,0x0d2b9eec;
 	}
 }
 [t:conjuror_orkin_umberdeep,n:0x00100018]
@@ -188,7 +308,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 16.3787,5.60003,-40.7265,0x0d2b9eec;
+	  p position = 14.9749,5.77689,-42.0045,0x0d2b9eec;
 	}
 }
 [t:onoc,n:0x00100019]
@@ -203,7 +323,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 16.3138,5.60003,-43.0512,0x0d2b9eec;
+	  p position = 16.6108,5.60004,-41.9932,0x0d2b9eec;
 	}
 }
 [t:sumcol_demo_pcontent_neener_0_9,n:0x0010001a]
@@ -237,7 +357,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 15.2399,5.73119,-43.0537,0x0d2b9eec;
+	  p position = 16.6046,5.60003,-42.7977,0x0d2b9eec;
 	}
 }
 [t:magician_killean_herne,n:0x0010001c]
@@ -256,7 +376,127 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 15.0087,5.77104,-40.6643,0x0d2b9eec;
+	  p position = 14.9842,5.77531,-43.2038,0x0d2b9eec;
+	}
+}
+[t:shaman_dreven,n:0x0010001e]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.0378,5.76606,-47.2183,0x0d2b9eec;
+	}
+}
+[t:azunite_priestess_challe,n:0x0010001f]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.0832,5.75822,-48.4816,0x0d2b9eec;
+	}
+}
+[t:sorceress_vielle,n:0x00100020]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 15.1316,5.74985,-49.6659,0x0d2b9eec;
+	}
+}
+[t:dsx_kiira,n:0x00100021]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 13.0342,5.93864,-40.8117,0x0d2b9eec;
+	}
+}
+[t:dsx_laeta,n:0x0010002a]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 12.9889,5.9092,-42.4866,0x0d2b9eec;
+	}
+}
+[t:tass,n:0x0010002b]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 13.1509,6.09037,-44.216,0x0d2b9eec;
+	}
+}
+[t:ohna,n:0x0010002c]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 13.2446,6.0754,-46.0816,0x0d2b9eec;
+	}
+}
+[t:neener,n:0x0010002d]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 13.1778,6.07468,-47.597,0x0d2b9eec;
 	}
 }
 [t:sumcol_demo_pcontent_neener_scrolls_0_39,n:0x00100033]
