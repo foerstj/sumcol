@@ -35,7 +35,7 @@
     }
 }
 
-[t:template,n:sumcol_demo_merik_0]
+[t:template,n:sumcol_demo_merik_00]
 {
     specializes = sumcol_demo_base_merik;
 
@@ -56,7 +56,7 @@
     }
 }
 
-[t:template,n:sumcol_demo_merik_5]
+[t:template,n:sumcol_demo_merik_05]
 {
     specializes = sumcol_demo_base_merik;
 

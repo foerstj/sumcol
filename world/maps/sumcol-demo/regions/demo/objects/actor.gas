@@ -348,7 +348,7 @@
 	  p position = -7.5317,-1,-2.31267,0x642caff0;
 	}
 }
-[t:sumcol_demo_merik_0,n:0x00100009]
+[t:sumcol_demo_merik_00,n:0x00100009]
 {
 	[aspect]
 	{
@@ -367,7 +367,7 @@
 	  p position = 3.65208,9.53674e-007,-2.68667,0x3a845ae4;
 	}
 }
-[t:sumcol_demo_merik_5,n:0x0010000b]
+[t:sumcol_demo_merik_05,n:0x0010000b]
 {
 	[aspect]
 	{
