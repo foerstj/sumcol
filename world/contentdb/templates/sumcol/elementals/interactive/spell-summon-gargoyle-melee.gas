@@ -31,8 +31,8 @@
 		effect_duration = 360;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15;
-		required_level = 4;
-		max_level = 24;
+		required_level = 3;
+		max_level = 23;
 
         [enchantments]
         {
