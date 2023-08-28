@@ -26,3 +26,10 @@
 	  p position = -1.70508,0,2.11136,0xf00cc9f1;
 	}
 }
+[t:sumcol_demo_barrel_existing,n:0x00100022]
+{
+	[placement]
+	{
+	  p position = -0.409872,0,-0.18536,0xf00cc9f1;
+	}
+}
