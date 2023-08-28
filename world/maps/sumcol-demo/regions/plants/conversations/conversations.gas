@@ -1,9 +1,0 @@
-[join]
-{
-	[text*]
-	{
-		choice = potential_member;
-		screen_text = "Join?";
-	  f scroll_rate = 10.000000;
-	}
-}
