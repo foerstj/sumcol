@@ -537,3 +537,60 @@
 	  p position = 2.06389,0,0.466299,0xe0d23e5f;
 	}
 }
+[t:sumcol_demo_merik_30,n:0x00100023]
+{
+	[aspect]
+	{
+	  f max_life = 362.6;
+	  f max_mana = 577;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = -3.32085,0,-2.58862,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_merik_35,n:0x00100024]
+{
+	[aspect]
+	{
+	  f max_life = 441;
+	  f max_mana = 682;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = 3.47778,0,-2.6032,0xe4b45244;
+	}
+}
+[t:sumcol_demo_merik_40,n:0x00100025]
+{
+	[aspect]
+	{
+	  f max_life = 490;
+	  f max_mana = 786;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = 2.28495,0,-2.61201,0xe4b45244;
+	}
+}
