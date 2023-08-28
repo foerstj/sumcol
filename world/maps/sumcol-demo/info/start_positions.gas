@@ -1,12 +1,12 @@
 [start_positions]
 {
-	[t:start_group,n:animals]
+	[t:start_group,n:demo]
 	{
 	  b default = true;
 		description = "";
 	  b dev_only = false;
 	  i id = 0;
-		screen_name = "Animals";
+		screen_name = "Demo";
 		[start_position]
 		{
 		  i id = 1;
