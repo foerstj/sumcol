@@ -52,6 +52,7 @@
 			intelligence 	= 0, 0, 10;
 
 			nature_magic 	= 0, 0,	0;
+			combat_magic 	= 0, 0,	0;
 		}
     }
 }
@@ -73,6 +74,7 @@
 			intelligence 	= 3.65, 0, 10;
 
 			nature_magic 	= 5, 0,	0;
+			combat_magic 	= 5, 0,	0;
 		}
     }
 }
@@ -116,6 +118,7 @@
 			intelligence 	=10.95, 0, 10;
 
 			nature_magic 	= 15,	0,	0;
+			combat_magic 	= 15,	0,	0;
 		}
     }
 }
@@ -137,6 +140,7 @@
 			intelligence 	=14.60, 0, 10;
 
 			nature_magic 	= 20,	0,	0;
+			combat_magic 	= 20,	0,	0;
 		}
     }
 }
@@ -158,6 +162,7 @@
 			intelligence 	=18.25, 0, 10;
 
 			nature_magic 	= 25,	0,	0;
+			combat_magic 	= 25,	0,	0;
 		}
     }
 }
