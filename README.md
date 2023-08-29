@@ -1,10 +1,12 @@
 # sumcol
 Firstie's Summons Collection - a collection of additional summon spells for Dungeon Siege.
 
+This collection aims to provide more fun and useful options, esp. ranged summons for nature mages, and to experiment with unusual summons like stationaries & miniboss scrolls.
+
 ## Principles
 Stats are based on numbers of similar original summoning spells. See below for details on balancing.\
 For stationary summons, gold value, duration & mana cost are much lower.\
-For miniboss summons, scrolls are used; gold value is much lower & duration is much higher.\
+For miniboss summons, scrolls are used; gold value is much lower, duration & life is much higher.\
 All spells are Nature Magic because they deserve more love!
 
 ## Installation
@@ -25,13 +27,13 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Skrubbs: Farm Skrubb, Black Skrubb
 - Elementals
   - Gargoyles: Gargoyle (melee)
-  - Ice Flies: Ice Fly
+  - Ice: Ice Fly
 - Undead
   - Skeletons: Skeleton Archer, Skeleton Guard
     - Miniboss: Skeleton Captain
 - Plants
   - Stationary:
-    - Vines: Killer Vines
+    - Vines: Killer Vines (LoA)
 
 ## Balancing
 
