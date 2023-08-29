@@ -7,6 +7,7 @@ This collection aims to provide more fun and useful options, esp. ranged summons
 Stats are based on numbers of similar original summoning spells. See below for details on balancing.\
 For stationary summons, gold value, duration & mana cost are much lower.\
 For miniboss summons, scrolls are used; gold value is much lower, duration & life is much higher.\
+Required level is a few levels higher than the level where players typically first encounter the creature.\
 All spells are Nature Magic because they deserve more love!
 
 ## Installation
@@ -27,7 +28,8 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Skrubbs: Farm Skrubb, Black Skrubb
 - Elementals
   - Gargoyles: Gargoyle (melee)
-  - Ice: Ice Fly
+  - Ice: Ice Warrior, Ice Archer, Ice Fly
+  - Swamp: Swamp Creature, Swamp Slinger
 - Undead
   - Skeletons: Skeleton Archer, Skeleton Guard
     - Miniboss: Skeleton Captain
