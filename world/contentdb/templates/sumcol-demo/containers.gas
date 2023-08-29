@@ -62,6 +62,8 @@
             il_main = spell_summon_ice_fly;
             il_main = spell_summon_ice_warrior;
             il_main = spell_summon_ice_archer;
+            il_main = spell_summon_swamp_creature;
+            il_main = spell_summon_swamp_slinger;
         }
     }
 }
