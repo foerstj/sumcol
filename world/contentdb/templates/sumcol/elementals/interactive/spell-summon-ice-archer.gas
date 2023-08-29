@@ -6,7 +6,7 @@
 	doc = "spell Summon Ice Archer";
 	[aspect]
 	{
-		gold_value = 2400;
+		gold_value = 3000;
 	}
 	[common]
 	{
@@ -31,8 +31,8 @@
 		effect_duration = 240;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15;
-		required_level = 19;
-		max_level = 39;
+		required_level = 20;
+		max_level = 40;
 
         [enchantments]
         {
