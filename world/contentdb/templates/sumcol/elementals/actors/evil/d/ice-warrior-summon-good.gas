@@ -11,5 +11,8 @@
 		{
             es_weapon_hand = sd_un_ice_avg;
 		}
+		[pcontent]
+		{
+		}
 	}
 }
