@@ -60,6 +60,8 @@
         {
             il_main = spell_summon_gargoyle_melee;
             il_main = spell_summon_ice_fly;
+            il_main = spell_summon_ice_warrior;
+            il_main = spell_summon_ice_archer;
         }
     }
 }

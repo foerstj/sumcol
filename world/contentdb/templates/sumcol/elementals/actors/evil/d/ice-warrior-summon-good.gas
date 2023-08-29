@@ -1,0 +1,15 @@
+[t:template,n:ice_warrior_summon_good]
+{
+	specializes = ice_warrior_base;
+
+	doc = "[summon] ice_warrior (good)";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+   	[inventory]
+	{
+    	[equipment]
+		{
+            es_weapon_hand = sd_un_ice_avg;
+		}
+	}
+}
