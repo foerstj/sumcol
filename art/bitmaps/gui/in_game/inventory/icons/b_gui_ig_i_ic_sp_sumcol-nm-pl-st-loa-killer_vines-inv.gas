@@ -1,0 +1,7 @@
+[t:tsd,n:b_gui_ig_i_ic_sp_sumcol-nm-pl-st-loa-killer_vines-inv]
+{
+  b dither = true;
+  b hasalpha = true;
+    layer1texture1 = b_gui_ig_i_ic_sp_sumcol-nm-pl-st-loa-killer_vines-inv;
+  i texturedetail = 0;
+}

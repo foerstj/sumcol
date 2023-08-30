@@ -18,8 +18,8 @@
 	}
 	[gui]
 	{
-		active_icon =   b_gui_ig_i_ic_sp_nm_summon-pl-st-loa-killer_vines;
-		inventory_icon =b_gui_ig_i_ic_sp_nm_summon-pl-st-loa-killer_vines-inv;
+		active_icon =   b_gui_ig_i_ic_sp_sumcol-nm-pl-st-loa-killer_vines;
+		inventory_icon =b_gui_ig_i_ic_sp_sumcol-nm-pl-st-loa-killer_vines-inv;
 	}
 	[spell_summon]
 	{

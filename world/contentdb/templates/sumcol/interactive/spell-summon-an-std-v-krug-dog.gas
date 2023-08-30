@@ -18,8 +18,8 @@
 	}
 	[gui]
 	{
-		active_icon =   b_gui_ig_i_ic_sp_nm_summon-an-std-v-krug_dog;
-		inventory_icon =b_gui_ig_i_ic_sp_nm_summon-an-std-v-krug_dog-inv;
+		active_icon =   b_gui_ig_i_ic_sp_sumcol-nm-an-std-v-krug_dog;
+		inventory_icon =b_gui_ig_i_ic_sp_sumcol-nm-an-std-v-krug_dog-inv;
 	}
 	[spell_summon]
 	{
