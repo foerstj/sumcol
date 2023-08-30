@@ -1,0 +1,108 @@
+[t:template,n:spell_summon_dsx_killer_vines] { specializes = spell_summon_dsx_killer_vines_base; }
+[t:template,n:spell_summon_dsx_killer_vines_base]
+{
+	specializes = base_spell_sumcol;
+
+	doc = "spell Summon Killer Vines";
+	[aspect]
+	{
+		gold_value = 95;
+	}
+	[common]
+	{
+		screen_name = "Summon Killer Vines";
+	}
+	[common]
+	{
+		description = "Summons Killer Vines to guard the Caster.";
+	}
+	[gui]
+	{
+		active_icon =   b_gui_ig_i_ic_sp_nm_summon-pl-st-loa-killer_vines;
+		inventory_icon =b_gui_ig_i_ic_sp_nm_summon-pl-st-loa-killer_vines-inv;
+	}
+	[spell_summon]
+	{
+		script_params = "[scale(1.25)]";
+		template_name = dsx_vines_killer_summon;
+		end_script = "un_summon_vines_killer";  // edited effect with more height
+	}
+	[magic]
+	{
+		effect_duration = 60;
+		mana_cost = 0;
+		mana_cost_modifier = (#magic+1)*3;
+		required_level = 9;
+		max_level = 29;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*1.0)*0.9) - #melee_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*1.0)*1.1) - #melee_damage_max);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*3.5)*1.5) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = (((#magic*24)*1.5) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*24)*1.5) - #life);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = ((#magic*19) - #mana);
+            }
+        }
+	}
+}

@@ -1,0 +1,107 @@
+[t:template,n:spell_summon_ice_warrior] { specializes = spell_summon_ice_warrior_base; }
+[t:template,n:spell_summon_ice_warrior_base]
+{
+	specializes = base_spell_sumcol;
+
+	doc = "spell Summon Ice Warrior";
+	[aspect]
+	{
+		gold_value = 2400;
+	}
+	[common]
+	{
+		screen_name = "Summon Ice Warrior";
+	}
+	[common]
+	{
+		description = "Summons an Ice Warrior to guard the Caster.";
+	}
+	[gui]
+	{
+		active_icon =   b_gui_ig_i_ic_sp_nm_summon-el-std-v-ice_warrior;
+		inventory_icon =b_gui_ig_i_ic_sp_nm_summon-el-std-v-ice_warrior-inv;
+	}
+	[spell_summon]
+	{
+		script_params = "[scale(1.5)]";
+		template_name = ice_warrior_summon_good;
+	}
+	[magic]
+	{
+		effect_duration = 360;
+		mana_cost = 0;
+		mana_cost_modifier = (#magic+1)*15;
+		required_level = 20;
+		max_level = 40;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*1.05)*0.9) - #melee_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*1.05)*1.1) - #melee_damage_max);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*3.5)*2.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = (((#magic*24)*1.2) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*24)*1.2) - #life);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = ((#magic*19) - #mana);
+            }
+        }
+	}
+}

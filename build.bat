@@ -28,13 +28,9 @@ if %errorlevel% neq 0 pause
 
 :: Compile all-in-one resource file
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *.psd
-for %%C in (common, animals, elementals, undead, plants) do (
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-)
-robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-* /S
+robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /xf *.psd /S
+robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
+robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
 if %errorlevel% neq 0 pause
 
@@ -42,110 +38,75 @@ setlocal EnableDelayedExpansion
 if "%mode%"=="release" (
   :: Animals
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_animal_* /S /xf *.psd
-  for %%C in (common, animals) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*animals-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-an-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-an-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-an-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Animals.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
   :: Elementals
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_elemental_* /S /xf *.psd
-  for %%C in (common, elementals) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*elementals-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-el-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-el-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-el-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Elementals.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
   :: Undead
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_undead_* /S /xf *.psd
-  for %%C in (common, undead) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*undead-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-un-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-un-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-un-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Undead.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
   :: Plants
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_plant_* /S /xf *.psd
-  for %%C in (common, plants) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*plants-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-pl-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-pl-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-pl-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Plants.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
 
   :: Standard
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *_stationary_* /xf *_miniboss_* /xf *.psd
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead, plants) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S /xf *-stationary-* /xf *-miniboss-*
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-std-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-std-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-std-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Standard.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
   :: Stationary
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_stationary_* /S /xf *.psd
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead, plants) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-stationary-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-st-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-st-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-st-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Stationary.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
   :: Miniboss
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_miniboss_* /S /xf *.psd
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead, plants) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-miniboss-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-mb-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-mb-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-mb-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Miniboss.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
 
   :: Vanilla
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /S /xf *_loa_* /xf *.psd
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead, plants) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xd stationary /xd miniboss /xf loa-* /xf *-loa-*
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xf loa-* /xf *-loa-*
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" /S /xf loa-* /xf *-loa-*
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S /xf *-loa-*
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-v-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-v-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-v-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Vanilla.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
   :: LoA
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *_loa_* /S /xf *.psd
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\common" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  for %%C in (animals, elementals, undead, plants) do (
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C" "%tmp%\Bits\world\contentdb\templates\%res%" loa-* *-loa-* /S /xd stationary /xd miniboss
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\stationary" "%tmp%\Bits\world\contentdb\templates\%res%" loa-* *-loa-* /S
-    robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%\%%C\miniboss" "%tmp%\Bits\world\contentdb\templates\%res%" loa-* *-loa-* /S
-  )
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" %res%-*-loa-* /S
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-loa-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-loa-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-loa-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - LoA.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 )
