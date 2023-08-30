@@ -1,7 +1,7 @@
 [t:template,n:scroll_summon_skeleton_captain] { specializes = scroll_summon_skeleton_captain_base; }
 [t:template,n:scroll_summon_skeleton_captain_base]
 {
-	specializes = base_scroll_sumcol;
+	specializes = base_scroll_sumcol_nm;
 
 	doc = "scroll Summon Skeleton Captain";
 	[aspect]

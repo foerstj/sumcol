@@ -1,4 +1,4 @@
-[t:template,n:base_spell_sumcol]
+[t:template,n:base_spell_sumcol_nm]
 {
 	specializes = base_summon_good;
 
@@ -35,10 +35,10 @@
 	}
 }
 
-// DUMMY to ensure base_spell_sumcol is not a leaf template and not part of PContent pool!
-[t:template,n:dummy_spell_summon]
+// DUMMY to ensure base_spell_sumcol_nm is not a leaf template and not part of PContent pool!
+[t:template,n:dummy_spell_summon_nm]
 {
-    specializes = base_spell_sumcol;
+    specializes = base_spell_sumcol_nm;
 
 	aspect:is_visible = false;
 	[common]	{ is_pcontent_allowed = false;	}
