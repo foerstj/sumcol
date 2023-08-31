@@ -20,7 +20,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Animals (NM):
   - Phraks: Phrak, Phrak Piercer
     - Miniboss: Phrak Ballista
-  - Spiders: Yellow Spider
+  - Spiders: Yellow Spider, Arakun Spider
   - Manglers: Snapper
   - Dogs: Krug Dog
   - Lizards: Island Lizard (LoA)
