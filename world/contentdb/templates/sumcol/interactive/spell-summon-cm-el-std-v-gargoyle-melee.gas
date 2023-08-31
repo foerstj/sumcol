@@ -6,7 +6,7 @@
 	doc = "spell Summon Gargoyle";
 	[aspect]
 	{
-		gold_value = 60;
+		gold_value = 50;
 	}
 	[common]
 	{

@@ -6,7 +6,7 @@
 	doc = "scroll Summon Phrak Ballista";
 	[aspect]
 	{
-		gold_value = 15;
+		gold_value = 12;
 	}
 	[common]
 	{

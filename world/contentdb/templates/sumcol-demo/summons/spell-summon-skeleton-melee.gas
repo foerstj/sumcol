@@ -7,7 +7,7 @@
 	doc = "spell Summon Skeleton";
 	[aspect]
 	{
-		gold_value = 300;
+		gold_value = 240;
 	}
 	[common]
 	{

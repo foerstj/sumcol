@@ -6,7 +6,7 @@
 	doc = "spell Summon Phrak Piercer";
 	[aspect]
 	{
-		gold_value = 75;
+		gold_value = 50;
 	}
 	[common]
 	{
