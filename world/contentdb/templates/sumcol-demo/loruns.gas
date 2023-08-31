@@ -1,0 +1,224 @@
+[t:template,n:sumcol_demo_base_lorun]
+{
+	specializes = base_pm_dwarf;
+
+	doc = "Lorun";
+	[actor]
+	{
+		portrait_icon = b_gui_ig_i_ic_c_go;
+	}
+	[aspect]
+	{
+		[textures]
+		{
+			0 = b_c_gan_df_skin_05;
+			1 = b_c_pos_a1_032;
+		}
+	}
+	[common]
+	{
+		screen_name = "Lorun";
+	}
+    [conversation] {}
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell = spell_fireshot;
+		}
+	}
+    [mind]
+    {
+        jat_talk = world\ai\jobs\common\job_talk.skrit;
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_00]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 0";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 0, 0, 10;
+			dexterity 		= 0, 0, 10;
+			intelligence 	= 0, 0, 10;
+
+			combat_magic 	= 0, 0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_05]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 5";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 0.65, 0, 10;
+			dexterity 		= 0.85, 0, 10;
+			intelligence 	= 3.50, 0, 10;
+
+			combat_magic 	= 5, 0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_10]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 10";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 1.30, 0, 10;
+			dexterity 		= 1.70, 0, 10;
+			intelligence 	= 7.00, 0, 10;
+
+			combat_magic 	= 10,	0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_15]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 15";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 1.95, 0, 10;
+			dexterity 		= 2.55, 0, 10;
+			intelligence 	=10.50, 0, 10;
+
+			combat_magic 	= 15,	0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_20]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 20";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 2.60, 0, 10;
+			dexterity 		= 3.40, 0, 10;
+			intelligence 	=14.00, 0, 10;
+
+			combat_magic 	= 20,	0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_25]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 25";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 3.25, 0, 10;
+			dexterity 		= 4.25, 0, 10;
+			intelligence 	=17.50, 0, 10;
+
+			combat_magic 	= 25,	0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_30]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 30";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 3.90, 0, 10;
+			dexterity 		= 5.10, 0, 10;
+			intelligence 	=21.00, 0, 10;
+
+			combat_magic 	= 30,	0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_35]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 35";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 4.55, 0, 10;
+			dexterity 		= 5.95, 0, 10;
+			intelligence 	=24.50, 0, 10;
+
+			combat_magic 	= 35,	0,	0;
+		}
+    }
+}
+
+[t:template,n:sumcol_demo_lorun_40]
+{
+    specializes = sumcol_demo_base_lorun;
+
+	[common]
+	{
+		screen_name = "Lorun level 40";
+	}
+    [actor]
+    {
+		[skills]
+		{
+			strength 		= 5.20, 0, 10;
+			dexterity 		= 6.80, 0, 10;
+			intelligence 	=28.00, 0, 10;
+
+			combat_magic 	= 40,	0,	0;
+		}
+    }
+}

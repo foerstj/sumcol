@@ -462,6 +462,243 @@
 	  p position = -2.19163,0,-2.58368,0x3a845ae4;
 	}
 }
+[t:sumcol_demo_merik_30,n:0x00100023]
+{
+	[aspect]
+	{
+	  f max_life = 362.6;
+	  f max_mana = 577;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = -3.32085,0,-2.58862,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_00,n:0x00100026]
+{
+	[aspect]
+	{
+	  f max_life = 49;
+	  f max_mana = 30;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = 3.86034,0,-3.91059,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_05,n:0x00100027]
+{
+	[aspect]
+	{
+	  f max_life = 78.4;
+	  f max_mana = 105;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = 2.56741,0,-3.97018,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_10,n:0x00100028]
+{
+	[aspect]
+	{
+	  f max_life = 156.8;
+	  f max_mana = 210;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = 1.44814,0,-3.82894,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_15,n:0x00100029]
+{
+	[aspect]
+	{
+	  f max_life = 196;
+	  f max_mana = 289;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = 0.213221,0,-3.7877,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_20,n:0x0010002e]
+{
+	[aspect]
+	{
+	  f max_life = 274.4;
+	  f max_mana = 394;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = -0.960732,0,-3.78916,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_25,n:0x0010002f]
+{
+	[aspect]
+	{
+	  f max_life = 343;
+	  f max_mana = 474;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = -2.30864,0,-3.79247,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_lorun_30,n:0x00100030]
+{
+	[aspect]
+	{
+	  f max_life = 392;
+	  f max_mana = 578;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = -3.45172,0,-3.7836,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_merik_35,n:0x00100024]
+{
+	[aspect]
+	{
+	  f max_life = 441;
+	  f max_mana = 682;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = 3.47778,0,-2.6032,0xe4b45244;
+	}
+}
+[t:sumcol_demo_merik_40,n:0x00100025]
+{
+	[aspect]
+	{
+	  f max_life = 490;
+	  f max_mana = 786;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  p position = 2.28495,0,-2.61201,0xe4b45244;
+	}
+}
+[t:sumcol_demo_lorun_35,n:0x00100034]
+{
+	[aspect]
+	{
+	  f max_life = 450.8;
+	  f max_mana = 654;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = 3.38695,0,-3.77493,0xe4b45244;
+	}
+}
+[t:sumcol_demo_lorun_40,n:0x00100035]
+{
+	[aspect]
+	{
+	  f max_life = 529.2;
+	  f max_mana = 759;
+	}
+	[conversation]
+	{
+		[conversations]
+		{
+			* = join;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-3.12407e-007,0,-1;
+	  p position = 2.11791,0,-3.78762,0xe4b45244;
+	}
+}
 [t:sumcol_demo_pcontent_neener_0_9,n:0x0010001a]
 {
 	[conversation]
@@ -535,62 +772,5 @@
 	{
 	  q orientation = 0,-2.98023e-008,0,1;
 	  p position = 2.06389,0,0.466299,0xe0d23e5f;
-	}
-}
-[t:sumcol_demo_merik_30,n:0x00100023]
-{
-	[aspect]
-	{
-	  f max_life = 362.6;
-	  f max_mana = 577;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = join;
-		}
-	}
-	[placement]
-	{
-	  p position = -3.32085,0,-2.58862,0x3a845ae4;
-	}
-}
-[t:sumcol_demo_merik_35,n:0x00100024]
-{
-	[aspect]
-	{
-	  f max_life = 441;
-	  f max_mana = 682;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = join;
-		}
-	}
-	[placement]
-	{
-	  p position = 3.47778,0,-2.6032,0xe4b45244;
-	}
-}
-[t:sumcol_demo_merik_40,n:0x00100025]
-{
-	[aspect]
-	{
-	  f max_life = 490;
-	  f max_mana = 786;
-	}
-	[conversation]
-	{
-		[conversations]
-		{
-			* = join;
-		}
-	}
-	[placement]
-	{
-	  p position = 2.28495,0,-2.61201,0xe4b45244;
 	}
 }
