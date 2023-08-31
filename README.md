@@ -7,7 +7,7 @@ This collection aims to provide more fun and useful options, esp. ranged summons
 Stats are based on numbers of similar original summoning spells. See below for details on balancing.\
 For stationary summons, gold value, duration & mana cost are much lower.\
 For miniboss summons, scrolls are used; gold value is much lower, duration & life is much higher.\
-Required level is a few levels higher than the level where players typically first encounter the creature.\
+Required level is a few levels higher than the level where players typically first encounter the creature, except when existing spells provide a reasonable precedent.\
 Assignment to Nature vs. Combat Magic is done based on the creature, roughly following the shaky logic of the original spells.
 
 ## Installation

@@ -6,7 +6,7 @@
 	doc = "spell Summon Skeleton Archer";
 	[aspect]
 	{
-		gold_value = 380;
+		gold_value = 475;
 	}
 	[common]
 	{
@@ -31,8 +31,8 @@
 		effect_duration = 300;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15;
-		required_level = 6;
-		max_level = 26;
+		required_level = 12;
+		max_level = 32;
 
         [enchantments]
         {

@@ -6,7 +6,7 @@
 	doc = "spell Summon Swamp Creature";
 	[aspect]
 	{
-		gold_value = 26300;
+		gold_value = 41700;
 	}
 	[common]
 	{
@@ -31,8 +31,8 @@
 		effect_duration = 360;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*15;
-		required_level = 32;
-		max_level = 52;
+		required_level = 42;
+		max_level = 62;
 
         [enchantments]
         {
