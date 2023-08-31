@@ -1,0 +1,107 @@
+[t:template,n:lava_beast_base]  // = lava_beast
+{
+	category_name = "1W_evil_d";
+	doc = "lava_beast";
+	specializes = base_rock_beast;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	52, 0;
+			intelligence =  16, 0;
+			dexterity =  	23, 0;
+            melee =  		28,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 130000;
+		life = 1325;
+		material = stone;
+		max_life = 1325;
+		mana = 10;
+		max_mana = 10;
+		textures:0 = b_c_edm_rb-02;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 220;
+		damage_min = 190;
+	}
+	[common] { screen_name="Lava Beast"; }
+	[defend] { defense=800; }
+
+	[physics]
+	gib_gore_good = true;
+	{
+		[break_particulate]
+		{
+			frag_glb_lava_beast_01 = 1;
+			frag_glb_lava_beast_02 = 1;
+			frag_glb_lava_beast_03 = 1;
+			frag_glb_lava_beast_04 = 1;
+			frag_glb_lava_beast_05 = 1;
+			frag_glb_lava_beast_06 = 2;
+			frag_glb_lava_beast_07 = 3;
+			frag_glb_lava_beast_08 = 4;
+		}
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_lava_beast_blast; }
+
+   		[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.45;
+					il_main = #*/88-148;
+					il_main = #armor/66-328;
+	                il_main = #nmagic/55-60;
+	                il_main = #cmagic/55-60;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/144-163;
+	                il_main = #armor/-rare(1)/493-510;
+                    il_main = #*/-rare(1)/144-163;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/144-163;
+	                il_main = #armor/-unique(2)/493-510;
+                    il_main = #*/-unique(2)/144-163;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 31657;
+					min = 24325;
+					min_pile = 4019;
+					piles = 2 - 4;
+				}
+			}
+		}
+	}
+}
+
+[t:template,n:lava_beast_summon]
+{
+	specializes = lava_beast_base;
+
+	doc = "[summon] lava_beast";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+   	[inventory]
+	{
+		[pcontent]
+		{
+		}
+	}
+}

@@ -30,6 +30,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Gargoyles (CM): Gargoyle (melee)
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
   - Swamp (NM): Swamp Creature, Swamp Slinger
+  - Lava (CM): Lava Beast
 - Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard
     - Miniboss: Skeleton Captain

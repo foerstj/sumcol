@@ -65,6 +65,7 @@
             il_main = spell_summon_ice_archer;
             il_main = spell_summon_swamp_creature;
             il_main = spell_summon_swamp_slinger;
+            il_main = spell_summon_lava_beast;
         }
     }
 }
