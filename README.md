@@ -8,7 +8,7 @@ Stats are based on numbers of similar original summoning spells. See below for d
 For stationary summons, gold value, duration & mana cost are much lower.\
 For miniboss summons, scrolls are used; gold value is much lower, duration & life is much higher.\
 Required level is a few levels higher than the level where players typically first encounter the creature.\
-All spells are Nature Magic because they deserve more love!
+Assignment to Nature vs. Combat Magic is done based on the creature, roughly following the shaky logic of the original spells.
 
 ## Installation
 Put the "Summons Collection.dsres" file into the DSLOA (or Resources) folder.\
@@ -17,7 +17,7 @@ Spells are added to PContent, which means they should appear in shops & drops wi
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
 ## Features:
-- Animals
+- Animals (NM):
   - Phraks: Phrak, Phrak Piercer
     - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider
@@ -27,13 +27,13 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb
 - Elementals
-  - Gargoyles: Gargoyle (melee)
-  - Ice: Ice Warrior, Ice Archer, Ice Fly
-  - Swamp: Swamp Creature, Swamp Slinger
-- Undead
+  - Gargoyles (CM): Gargoyle (melee)
+  - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
+  - Swamp (NM): Swamp Creature, Swamp Slinger
+- Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard
     - Miniboss: Skeleton Captain
-- Plants
+- Plants (NM):
   - Stationary:
     - Vines: Killer Vines (LoA)
 
