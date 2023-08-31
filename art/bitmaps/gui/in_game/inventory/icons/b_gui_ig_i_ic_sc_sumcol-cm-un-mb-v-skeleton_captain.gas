@@ -1,0 +1,7 @@
+[t:tsd,n:b_gui_ig_i_ic_sc_sumcol-cm-un-mb-v-skeleton_captain]
+{
+  b dither = true;
+  b hasalpha = true;
+    layer1texture1 = b_gui_ig_i_ic_sc_sumcol-cm-un-mb-v-skeleton_captain;
+  i texturedetail = 0;
+}
