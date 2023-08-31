@@ -41,6 +41,7 @@
             il_main = spell_summon_phrak_piercer;
             il_main = scroll_summon_phrak_ballista;
             il_main = spell_summon_yellow_spider;
+            il_main = spell_summon_arakun_spider;
             il_main = spell_summon_snapper;
             il_main = spell_summon_krug_dog;
             il_main = spell_summon_dsx_bubber;
