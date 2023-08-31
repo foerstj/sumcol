@@ -22,6 +22,9 @@ del "%ds%\DSLOA\%res_cs% - Miniboss.dsres"
 :: by DS version
 del "%ds%\DSLOA\%res_cs% - Vanilla.dsres"
 del "%ds%\DSLOA\%res_cs% - LoA.dsres"
+:: by mage class
+del "%ds%\DSLOA\%res_cs% - Nature Magic.dsres"
+del "%ds%\DSLOA\%res_cs% - Combat Magic.dsres"
 :: demo map
 del "%ds%\DSLOA\%map_cs%.dsres"
 del "%ds%\DSLOA\%map_cs%.dsmap"
