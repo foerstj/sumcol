@@ -30,7 +30,7 @@
 {
 	[placement]
 	{
-	  p position = -0.409872,0,-0.18536,0xf00cc9f1;
+	  p position = 2.79853,0,-1.9157,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_demonics,n:0x00100036]
@@ -38,5 +38,19 @@
 	[placement]
 	{
 	  p position = -1.67603,-9.53674e-007,2.92259,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_original_vanilla,n:0x00100037]
+{
+	[placement]
+	{
+	  p position = 2.86075,0,-0.853841,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_original_loa,n:0x00100038]
+{
+	[placement]
+	{
+	  p position = 2.84871,0,0.0988419,0xf00cc9f1;
 	}
 }

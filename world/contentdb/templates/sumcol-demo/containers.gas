@@ -127,3 +127,78 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_original_vanilla]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Original Vanilla";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_braak_desert;
+            il_main = spell_summon_cave_giant;
+            il_main = spell_summon_darkling;
+            il_main = spell_summon_drake_black;
+            il_main = spell_summon_drake_green;
+            il_main = spell_summon_fire_elemental;
+            il_main = spell_summon_forest_klaw;
+            il_main = spell_summon_furok;
+            il_main = spell_summon_gargoyle;
+            il_main = spell_summon_golem_frost;
+            il_main = spell_summon_hell_boar;
+            il_main = spell_summon_helper;
+            il_main = scroll_summon_helper;
+            il_main = spell_summon_impaler;
+            il_main = spell_summon_killer_gremal;
+            il_main = spell_summon_krug_dog_skeleton;
+            il_main = spell_summon_larch;
+            il_main = spell_summon_lava_spirit;
+            il_main = spell_summon_molten_golem;
+            il_main = spell_summon_mucosa;
+            il_main = spell_summon_mucosa_predator;
+            il_main = spell_summon_picker;
+            il_main = spell_summon_rock_golem;
+            il_main = spell_summon_rock_beast;
+            il_main = spell_summon_scorpion;
+            il_main = spell_summon_skeleton;
+            il_main = spell_summon_skick;
+            il_main = spell_summon_spiked_dweller;
+            il_main = spell_summon_troll_forest;
+            il_main = spell_summon_wolf_black;
+            il_main = spell_summon_wraith;
+            il_main = spell_summon_wraith_archer;
+            il_main = spell_summon_zombie_headless;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_original_loa]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Original LoA";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_dsx_twisted_mucosa;
+            il_main = spell_summon_dsx_vile_twisted_mucosa;
+            il_main = spell_summon_dsx_giant_rat;
+            il_main = spell_summon_dsx_deadly_armor;
+            il_main = spell_summon_dsx_ursae_demonic;
+            il_main = spell_summon_dsx_rune_guardian;
+            il_main = spell_summon_dsx_barkrunner;
+            il_main = spell_summon_dsx_scrub_howler;
+            il_main = spell_summon_dsx_bear;
+            il_main = spell_summon_dsx_zepheryl_dark;
+            il_main = spell_summon_dsx_fleshrender;
+            il_main = spell_summon_dsx_knight_death;
+            il_main = spell_summon_dsx_slithermage;
+            il_main = spell_summon_dsx_chomper;
+            il_main = spell_summon_dsx_troll_masher;
+            il_main = spell_summon_dsx_zepheryl;
+            il_main = spell_summon_clone;
+        }
+    }
+}
+
