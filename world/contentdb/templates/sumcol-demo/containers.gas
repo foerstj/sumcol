@@ -97,6 +97,19 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_demonics]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Demonics";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_rune_fiend;
+        }
+    }
+}
 [t:template,n:sumcol_demo_barrel_existing]
 {
     specializes = sumcol_demo_base_barrel;
