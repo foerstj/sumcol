@@ -47,6 +47,7 @@
             il_main = spell_summon_dsx_bubber;
             il_main = spell_summon_farm_skrubb;
             il_main = spell_summon_black_skrubb;
+            il_main = spell_summon_red_drake;
         }
     }
 }
