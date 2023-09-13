@@ -1,3 +1,31 @@
+[t:chest_grs_03,n:0x00100048]
+{
+	[aspect]
+	{
+	  b does_block_path = false;
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 17.0301,-3,-2.95491,0x642caff0;
+	}
+}
 [t:sumcol_demo_barrel_animals,n:0x00100004]
 {
 	[placement]

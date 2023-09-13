@@ -16,7 +16,7 @@
 {
 	[aspect]
 	{
-	  i gold_value = 1337;
+	  i gold_value = 9999999;
 	}
 	[placement]
 	{
