@@ -110,11 +110,12 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_existing]
+
+[t:template,n:sumcol_demo_barrel_redone]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Existing";
+    common:screen_name = "Redone";
     [inventory]
     {
         [other]

@@ -26,7 +26,7 @@
 	  p position = -1.70733,0,1.84804,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_existing,n:0x00100022]
+[t:sumcol_demo_barrel_redone,n:0x00100022]
 {
 	[placement]
 	{
