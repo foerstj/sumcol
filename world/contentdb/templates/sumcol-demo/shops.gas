@@ -192,6 +192,94 @@
     }
 }
 
+[t:template,n:sumcol_demo_pcontent_neener_40_49]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener 40-49";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #spell/40-49;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_pcontent_neener_50_59]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener 50-59";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #spell/50-59;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_pcontent_neener_60_69]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener 60-69";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #spell/60-69;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_pcontent_neener_70_79]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener 70-79";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #spell/70-79;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
 
 [t:template,n:sumcol_demo_pcontent_neener_scrolls_0_39]
 {
@@ -207,6 +295,28 @@
                 [all*]
                 {
                     il_main = #scroll/0-39;
+                    max = 256;
+                    min = 256;
+                }
+            }
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_pcontent_neener_scrolls_40_79]
+{
+    specializes = sumcol_demo_pcontent_neener_base;
+    common:screen_name = "PContent Neener Scrolls 40-79";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+            full_ratio = 0;
+            [magic]
+            {
+                [all*]
+                {
+                    il_main = #scroll/40-79;
                     max = 256;
                     min = 256;
                 }
