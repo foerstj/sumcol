@@ -126,6 +126,8 @@
             il_main = spell_summon_gargoyle_ranged;  // mine
             il_main = spell_summon_skeleton;  // original
             il_main = spell_summon_skeleton_melee;  // mine
+            il_main = spell_summon_wraith_archer;  // original
+            il_main = spell_summon_wraith_archer_sumcol;  // mine
         }
     }
 }
