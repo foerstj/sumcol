@@ -7,6 +7,7 @@
     physics:explode_when_killed = false;
    	[inventory]
 	{
+		spew_equipped_kill_count = <ignore>;
     	[equipment]
 		{
             es_shield_hand = bw_un_ice_c_m_s_r_avg;
