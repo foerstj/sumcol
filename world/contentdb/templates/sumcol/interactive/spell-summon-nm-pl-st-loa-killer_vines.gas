@@ -71,7 +71,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic)-#melee);
+                value = ((#magic*0.5)-#melee);
             }
             [*]
             {

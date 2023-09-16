@@ -82,13 +82,13 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic)-#melee);
+                value = ((#magic*0.5)-#melee);
             }
             [*]
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic)-#combat_magic_level);
+                value = ((#magic*0.8)-#combat_magic_level);
             }
             [*]
             {
