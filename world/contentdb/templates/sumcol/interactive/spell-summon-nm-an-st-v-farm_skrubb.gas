@@ -23,8 +23,8 @@
     }
     [spell_summon]
     {
-        template_name = skrubb_farm_summon;
         script_params = "[scale(1.0)]";
+        template_name = skrubb_farm_summon;
     }
     [magic]
     {
