@@ -44,7 +44,7 @@
             il_main = spell_summon_arakun_spider;
             il_main = spell_summon_snapper;
             il_main = spell_summon_krug_dog;
-            il_main = spell_summon_dsx_bubber;
+            il_main = spell_summon_bubber;
             il_main = spell_summon_farm_skrubb;
             il_main = spell_summon_black_skrubb;
             il_main = spell_summon_red_drake;
@@ -94,7 +94,7 @@
     {
         [other]
         {
-            il_main = spell_summon_dsx_killer_vines;
+            il_main = spell_summon_killer_vines;
         }
     }
 }
