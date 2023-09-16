@@ -41,13 +41,13 @@
             {
                 alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = (((((#magic*4.2)*0.95)*0.9) - #ranged_damage_min) - 94.0);
+                value = (((((#magic*4.2)*0.7)*0.9) - #ranged_damage_min) - 94.0);
             }
             [*]
             {
                 alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = (((((#magic*4.2)*0.95)*1.1) - #ranged_damage_max) - 110.0);
+                value = (((((#magic*4.2)*0.7)*1.1) - #ranged_damage_max) - 110.0);
             }
             [*]
             {
@@ -59,13 +59,13 @@
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = (((#magic*24)*1.0) - #maxlife);
+                value = (((#magic*24)*0.8) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*24)*1.0) - #life);
+                value = (((#magic*24)*0.8) - #life);
             }
             [*]
             {
