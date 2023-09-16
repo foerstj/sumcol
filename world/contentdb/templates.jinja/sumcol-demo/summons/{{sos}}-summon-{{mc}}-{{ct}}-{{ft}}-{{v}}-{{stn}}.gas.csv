@@ -1,32 +1,32 @@
-sos;stn;ctn;a;csn;scale;mc;ct;ft;v;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;wpn_dmg_min;wpn_dmg_max;armor;life;icon;end_script
-spell;braak_desert;braak_desert;a;Desert Braak;1;cm;hu;std;v;209852;4;69;;;0.9;;;1;1.2;175;
-spell;cave_giant;cave_giant;a;Cave Giant;1.75;nm;hu;std;v;11671;2;30;1.06;;;;;1;3;33;
-spell;darkling;darkling;a;Darkling;1;cm;de;std;v;3443;4;21;;;0.9;;;1;0.8;112;
-spell;drake_black;drake_black;a;Black Drake;1;cm;an;std;v;644957;2;92;1.1;;1.1;;;1.5;1.8;173;
-spell;drake_green;drake_green;a;Green Drake;1.75;nm;an;std;v;489555;2;86;1.09;;1.09;;;1.5;2.5;72;
-spell;fire_elemental;fire_elemental;a;Fire Elemental;1;cm;el;std;v;995916;4;92;;;1.03;;;0.5;1;178;
-spell;forest_klaw;forest_klaw;a;Forest Klaw;1.75;nm;an;std;v;19909;4;35;1.03;;;;;1;1.8;40;
-spell;furok;furok;a;Furok;1.75;nm;an;std;v;4864;2;22;1.2;;;;;1;1.8;28;
-spell;gargoyle;gargoyle_ranged;a;Jade Gargoyle;0.75;cm;el;std;v;65;6;6;;;0.7;;;3;0.4;84;
-spell;golem_frost;golem_frost;a;Frost Golem;1.75;nm;el;std;v;669671;4;92;0.9;;;;;2;0.8;76;
-spell;hell_boar;hell_boar;a;Hell Boar;1.75;cm;an;std;v;29018;6;39;1.1;;;;;1;1;127;
-spell;impaler;impaler;an;Impaler;1;cm;an;std;v;289493;2;75;1.15;;;;;2;1.5;176;
-spell;killer_gremal;gremal_killer;a;Killer Gremal;2.75;nm;an;std;v;108;6;17;0.83;;;;;1;0.8;8;
-spell;krug_dog_skeleton;krug_dog_skeleton;a;Skeleton Krug Dog;1;cm;un;std;v;139456;6;61;0.83;;;;;2;0.5;141;
-spell;larch;larch;a;Larch;1.75;nm;pl;std;v;115232;4;60;1;;;;;2;2.5;66;
-spell;lava_spirit;lava_spirit_magic;a;Lava Spirit;1;cm;el;std;v;439552;4;86;;;0.95;;;2;0.8;172;
-spell;molten_golem;molten_golem;a;Slag;1.75;cm;el;std;v;826541;4;92;0.85;;;;;2;0.8;174;
-spell;mucosa;mucosa;a;Mucosa;1;cm;de;std;v;1384;2;16;1.1;;;;;2;1.5;103;
-spell;mucosa_predator;mucosa_predator;a;Mucosa Predator;1;cm;de;std;v;326512;2;80;;;1.08;;;2;1.2;171;
-spell;picker;picker;a;Picker;1;cm;an;std;v;60002;4;48;0.93;;;;;2;0.8;133;
-spell;rock_golem;rock_golem;a;Rock Golem;1.75;nm;el;std;v;803618;4;92;1.03;;;;;3;0.8;169;
-spell;rock_beast;rock_beast;a;Rock Beast;1.75;nm;el;std;v;1110550;2;92;1.15;;;;;3;3;170;
-spell;scorpion;scorpion;a;Scorpion;1.75;nm;an;std;v;1119;2;15;0.98;;;;;2;1.2;18;
-spell;skeleton;skeleton;a;Skeleton;1;cm;un;std;v;278;4;10;0.95;;;10;16;2;1;91;
-spell;skick;skick;a;Skick;1;cm;an;std;v;11288;2;28;0.8;;;;;2;1;118;
-spell;spiked_dweller;spiked_dweller;a;Spiked Dweller;1.75;nm;an;std;v;61235;6;48;;;1.1;;;1.5;0.8;55;
-spell;troll_forest;troll_forest;a;Forest Troll;1;cm;hu;std;v;14569;4;33;1;;;50;54;1;1;124;
-spell;wolf_black;wolf_black;a;Black Wolf;1.75;nm;an;std;v;35124;6;40;0.75;;;;;1;0.8;46;
-spell;wraith;wraith;a;Wraith;1;cm;un;std;v;84987;4;53;1;;;;;2;0.8;136;
-spell;wraith_archer;wraith_archer;a;Wraith Archer;1;cm;un;std;v;109797;6;57;;0.7;;94;110;2;0.8;139;
-spell;zombie_headless;zombie_headless;a;Zombie;1;cm;un;std;v;40812;5;43;0.7;;;;;0.8;1;130;
+sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;wpn_dmg_min;wpn_dmg_max;armor;life;icon
+spell;braak_desert;braak_desert;summon;a;Desert Braak;1;cm;hu;std;v;209852;4;69;;;0.9;;;1;1.2;175
+spell;cave_giant;cave_giant;summon;a;Cave Giant;1.75;nm;hu;std;v;11671;2;30;1.06;;;;;1;3;33
+spell;darkling;darkling;summon;a;Darkling;1;cm;de;std;v;3443;4;21;;;0.9;;;1;0.8;112
+spell;drake_black;drake_black;summon;a;Black Drake;1;cm;an;std;v;644957;2;92;1.1;;1.1;;;1.5;1.8;173
+spell;drake_green;drake_green;summon;a;Green Drake;1.75;nm;an;std;v;489555;2;86;1.09;;1.09;;;1.5;2.5;72
+spell;fire_elemental;fire_elemental;;a;Fire Elemental;1;cm;el;std;v;995916;4;92;;;1.03;;;0.5;1;178
+spell;forest_klaw;forest_klaw;summon;a;Forest Klaw;1.75;nm;an;std;v;19909;4;35;1.03;;;;;1;1.8;40
+spell;furok;furok;summon;a;Furok;1.75;nm;an;std;v;4864;2;22;1.2;;;;;1;1.8;28
+spell;gargoyle;gargoyle_ranged;summon;a;Jade Gargoyle;0.75;cm;el;std;v;65;6;6;;;0.7;;;3;0.4;84
+spell;golem_frost;golem_frost;summon;a;Frost Golem;1.75;nm;el;std;v;669671;4;92;0.9;;;;;2;0.8;76
+spell;hell_boar;hell_boar;summon;a;Hell Boar;1.75;cm;an;std;v;29018;6;39;1.1;;;;;1;1;127
+spell;impaler;impaler;summon;an;Impaler;1;cm;an;std;v;289493;2;75;1.15;;;;;2;1.5;176
+spell;killer_gremal;gremal_killer;summon;a;Killer Gremal;2.75;nm;an;std;v;108;6;17;0.83;;;;;1;0.8;8
+spell;krug_dog_skeleton;krug_dog_skeleton;summon;a;Skeleton Krug Dog;1;cm;un;std;v;139456;6;61;0.83;;;;;2;0.5;141
+spell;larch;larch;summon;a;Larch;1.75;nm;pl;std;v;115232;4;60;1;;;;;2;2.5;66
+spell;lava_spirit;lava_spirit_magic;summon;a;Lava Spirit;1;cm;el;std;v;439552;4;86;;;0.95;;;2;0.8;172
+spell;molten_golem;molten_golem;;a;Slag;1.75;cm;el;std;v;826541;4;92;0.85;;;;;2;0.8;174
+spell;mucosa;mucosa;summon;a;Mucosa;1;cm;de;std;v;1384;2;16;1.1;;;;;2;1.5;103
+spell;mucosa_predator;mucosa_predator;summon;a;Mucosa Predator;1;cm;de;std;v;326512;2;80;;;1.08;;;2;1.2;171
+spell;picker;picker;summon;a;Picker;1;cm;an;std;v;60002;4;48;0.93;;;;;2;0.8;133
+spell;rock_golem;rock_golem;;a;Rock Golem;1.75;nm;el;std;v;803618;4;92;1.03;;;;;3;0.8;169
+spell;rock_beast;rock_beast;summon;a;Rock Beast;1.75;nm;el;std;v;1110550;2;92;1.15;;;;;3;3;170
+spell;scorpion;scorpion;summon;a;Scorpion;1.75;nm;an;std;v;1119;2;15;0.98;;;;;2;1.2;18
+spell;skeleton;skeleton;summon;a;Skeleton;1;cm;un;std;v;278;4;10;0.95;;;10;16;2;1;91
+spell;skick;skick;summon;a;Skick;1;cm;an;std;v;11288;2;28;0.8;;;;;2;1;118
+spell;spiked_dweller;spiked_dweller;summon;a;Spiked Dweller;1.75;nm;an;std;v;61235;6;48;;;1.1;;;1.5;0.8;55
+spell;troll_forest;troll_forest;summon;a;Forest Troll;1;cm;hu;std;v;14569;4;33;1;;;50;54;1;1;124
+spell;wolf_black;wolf_black;summon;a;Black Wolf;1.75;nm;an;std;v;35124;6;40;0.75;;;;;1;0.8;46
+spell;wraith;wraith;summon;a;Wraith;1;cm;un;std;v;84987;4;53;1;;;;;2;0.8;136
+spell;wraith_archer;wraith_archer;summon;a;Wraith Archer;1;cm;un;std;v;109797;6;57;;0.7;;94;110;2;0.8;139
+spell;zombie_headless;zombie_headless;summon;a;Zombie;1;cm;un;std;v;40812;5;43;0.7;;;;;0.8;1;130

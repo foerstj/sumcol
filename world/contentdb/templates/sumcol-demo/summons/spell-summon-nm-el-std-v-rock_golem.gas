@@ -24,7 +24,7 @@
     }
     [spell_summon]
     {
-        template_name = rock_golem_summon;
+        template_name = rock_golem;
         script_params = "[scale(1.75)]";
     }
     [magic]

@@ -24,11 +24,8 @@
     }
     [spell_summon]
     {
-        template_name = {{ctn}}_summon;
+        template_name = {{ctn}}{% if ctn_suffix %}_{{ctn_suffix}}{% endif %};
         script_params = "[scale({{scale | float}})]";
-        {% if end_script %}
-        end_script = "{{end_script}}";
-        {% endif %}
     }
     [magic]
     {

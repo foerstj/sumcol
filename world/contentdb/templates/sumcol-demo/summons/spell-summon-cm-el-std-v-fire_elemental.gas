@@ -24,7 +24,7 @@
     }
     [spell_summon]
     {
-        template_name = fire_elemental_summon;
+        template_name = fire_elemental;
         script_params = "[scale(1.0)]";
     }
     [magic]
