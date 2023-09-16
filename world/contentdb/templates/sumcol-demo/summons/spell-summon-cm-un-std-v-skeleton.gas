@@ -7,7 +7,7 @@
     doc = "spell Summon Skeleton (SumCol Demo)";
     [aspect]
     {
-        gold_value = 240;
+        gold_value = 278;
     }
     [common]
     {
@@ -25,11 +25,11 @@
     [spell_summon]
     {
         template_name = skeleton_summon;
-        script_params = "[scale(1.5)]";
+        script_params = "[scale(1.0)]";
     }
     [magic]
     {
-        effect_duration = 360;
+        effect_duration = 240;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*15;
         required_level = 10;
