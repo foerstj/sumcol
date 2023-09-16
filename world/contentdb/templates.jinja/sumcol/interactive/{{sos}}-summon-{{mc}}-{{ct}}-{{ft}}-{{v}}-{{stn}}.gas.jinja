@@ -25,6 +25,9 @@
     {
         script_params = "[scale({{scale | float}})]";
         template_name = {{ctn}}_summon;
+        {% if end_script %}
+        end_script = "{{end_script}}";
+        {% endif %}
     }
     [magic]
     {

@@ -25,7 +25,7 @@
     {
         script_params = "[scale(1.25)]";
         template_name = dsx_vines_killer_summon;
-        end_script = "un_summon_vines_killer";  // edited effect with more height
+        end_script = "un_summon_vines_killer";
     }
     [magic]
     {
