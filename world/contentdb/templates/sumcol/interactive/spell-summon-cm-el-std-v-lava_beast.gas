@@ -23,8 +23,8 @@
     }
     [spell_summon]
     {
-        script_params = "[scale(2.5)]";
         template_name = lava_beast_summon;
+        script_params = "[scale(2.5)]";
     }
     [magic]
     {

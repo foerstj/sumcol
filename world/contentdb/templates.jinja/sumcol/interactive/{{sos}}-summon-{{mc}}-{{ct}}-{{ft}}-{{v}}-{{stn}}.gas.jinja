@@ -23,8 +23,8 @@
     }
     [spell_summon]
     {
-        script_params = "[scale({{scale | float}})]";
         template_name = {{ctn}}_summon;
+        script_params = "[scale({{scale | float}})]";
         {% if end_script %}
         end_script = "{{end_script}}";
         {% endif %}

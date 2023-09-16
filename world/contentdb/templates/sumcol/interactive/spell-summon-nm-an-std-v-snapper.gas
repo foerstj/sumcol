@@ -23,8 +23,8 @@
     }
     [spell_summon]
     {
-        script_params = "[scale(1.0)]";
         template_name = snapper_summon;
+        script_params = "[scale(1.0)]";
     }
     [magic]
     {

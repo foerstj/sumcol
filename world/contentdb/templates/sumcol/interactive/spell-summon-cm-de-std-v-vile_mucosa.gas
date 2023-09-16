@@ -23,8 +23,8 @@
     }
     [spell_summon]
     {
-        script_params = "[scale(1.5)]";
         template_name = mucosa_small_summon;
+        script_params = "[scale(1.5)]";
     }
     [magic]
     {

@@ -23,8 +23,8 @@
     }
     [spell_summon]
     {
-        script_params = "[scale(2.0)]";
         template_name = drake_red_summon;
+        script_params = "[scale(2.0)]";
     }
     [magic]
     {
