@@ -1,0 +1,159 @@
+[t:template,n:{{sos}}_summon_{{stn}}] { specializes = {{sos}}_summon_{{stn}}_base; }
+[t:template,n:{{sos}}_summon_{{stn}}_base]
+{
+    specializes = base_{{sos}}_sumcol_{{mc}};
+    [common]    { is_pcontent_allowed = false;    }
+
+    doc = "{{sos}} Summon {{csn}}";
+    [aspect]
+    {
+        gold_value = {{gold}};
+    }
+    [common]
+    {
+        screen_name = "Summon {{csn}}";
+    }
+    [common]
+    {
+        description = "Summons {{ [a, csn] | join(' ') | trim }} to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   {{icon}};
+        inventory_icon ={{icon}}-inv;
+    }
+    [spell_summon]
+    {
+        template_name = {{ctn}}_summon;
+        script_params = "[scale({{scale | float}})]";
+        {% if end_script %}
+        end_script = "{{end_script}}";
+        {% endif %}
+    }
+    [magic]
+    {
+        effect_duration = {{dur_min * 60}};
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*{% if ft == 'st' %}3{% else %}15{% endif %};
+        required_level = {{req_lvl}};
+        max_level = {{ req_lvl + 20 }};
+
+        [enchantments]
+        {
+            {% if dmg_m %}
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_m | float}})*0.9) - #melee_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_m | float}})*1.1) - #melee_damage_max);
+            }
+            {% endif %}
+            {% if dmg_r %}
+            [*]
+            {
+                alteration = alter_ranged_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_r | float}})*0.9) - #ranged_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_ranged_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_r | float}})*1.1) - #ranged_damage_max);
+            }
+            {% endif %}
+            {% if dmg_c %}
+            [*]
+            {
+                alteration = alter_cmagic_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_c | float}})*0.9) - #cmagic_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_cmagic_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_c | float}})*1.1) - #cmagic_damage_max);
+            }
+            {% endif %}
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*3.5)*{{armor | float}}) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = (((#magic*24)*{{life | float}}) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*24)*{{life | float}}) - #life);
+            }
+            {% if dmg_m %}
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic)-#melee);
+            }
+            {% endif %}
+            {% if dmg_r %}
+            [*]
+            {
+                alteration = alter_ranged;
+                duration = #infinite;
+                value = ((#magic)-#ranged);
+            }
+            {% endif %}
+            {% if dmg_c %}
+            [*]
+            {
+                alteration = alter_combat_magic;
+                duration = #infinite;
+                value = ((#magic)-#combat_magic_level);
+            }
+            {% endif %}
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = ((#magic*19) - #mana);
+            }
+        }
+    }
+}

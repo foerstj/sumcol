@@ -1,0 +1,4 @@
+sos;stn;ctn;a;csn;scale;mc;ct;ft;v;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;armor;life;icon;end_script
+spell;gargoyle_ranged;gargoyle_ranged;a;Jade Gargoyle;0.75;cm;el;std;v;95;5;6;;;0.85;3;0.4;b_gui_ig_i_ic_sp_sumcol-cm-el-std-v-gargoyle_melee;
+spell;skeleton_melee;skeleton;a;Skeleton;1.5;cm;un;std;v;240;6;10;1;;;2;1;b_gui_ig_i_ic_sp_sumcol-cm-un-std-v-skeleton_archer;
+spell;wraith_archer_sumcol;wraith_archer;a;Wraith Archer (SumCol);1.5;cm;un;std;v;109797;6;57;;0.95;;2;1;b_gui_ig_i_ic_sp_sumcol-cm-un-std-v-skeleton_archer;
