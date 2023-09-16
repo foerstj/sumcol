@@ -1,4 +1,4 @@
-sos;stn;ctn;good;a;csn;scale;mc;ct;ft;v;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;armor;life;end_script
+sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;armor;life;end_script
 spell;phrak;phrak;;a;Phrak;0.75;nm;an;std;v;30;6;1;0.85;;;2;0.4;
 spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;50;6;2;;;0.8;2;0.4;
 spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;40;7;2;0.9;;;1;0.6;
