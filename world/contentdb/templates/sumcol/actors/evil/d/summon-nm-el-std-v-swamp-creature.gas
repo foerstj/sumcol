@@ -1,4 +1,4 @@
-[t:template,n:swamp_creature_summon_good]
+[t:template,n:swamp_creature_good_summon]
 {
 	specializes = swamp_creature_base;
 

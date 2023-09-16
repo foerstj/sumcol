@@ -1,4 +1,4 @@
-[t:template,n:ice_warrior_summon_good]
+[t:template,n:ice_warrior_good_summon]
 {
 	specializes = ice_warrior_base;
 

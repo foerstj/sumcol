@@ -24,7 +24,7 @@
     [spell_summon]
     {
         script_params = "[scale(1.5)]";
-        template_name = swamp_slinger_summon_good;
+        template_name = swamp_slinger_good_summon;
     }
     [magic]
     {

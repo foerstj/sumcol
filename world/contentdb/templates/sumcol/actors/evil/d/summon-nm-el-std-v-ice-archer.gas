@@ -1,4 +1,4 @@
-[t:template,n:ice_archer_summon_good]
+[t:template,n:ice_archer_good_summon]
 {
 	specializes = ice_archer_base;
 

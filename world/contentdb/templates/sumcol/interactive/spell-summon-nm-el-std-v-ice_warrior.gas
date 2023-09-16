@@ -24,7 +24,7 @@
     [spell_summon]
     {
         script_params = "[scale(1.5)]";
-        template_name = ice_warrior_summon_good;
+        template_name = ice_warrior_good_summon;
     }
     [magic]
     {
