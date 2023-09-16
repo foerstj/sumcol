@@ -4,7 +4,7 @@
     specializes = base_spell_sumcol_cm;
     [common]    { is_pcontent_allowed = false;    }
 
-    doc = "spell Summon Wraith Archer";
+    doc = "spell Summon Wraith Archer (SumCol)";
     [aspect]
     {
         gold_value = 109797;
@@ -15,7 +15,7 @@
     }
     [common]
     {
-        description = "Summons a Wraith Archer to guard the Caster.";
+        description = "Summons a Wraith Archer (SumCol) to guard the Caster.";
     }
     [gui]
     {
