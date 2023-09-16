@@ -23,7 +23,7 @@
     }
     [spell_summon]
     {
-        template_name = {{ctn}}_summon;
+        template_name = {{ctn}}{% if good %}_good{% endif %}_summon;
         script_params = "[scale({{scale | float}})]";
         {% if end_script %}
         end_script = "{{end_script}}";
