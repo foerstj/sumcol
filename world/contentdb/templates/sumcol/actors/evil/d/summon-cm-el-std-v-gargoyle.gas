@@ -1,25 +1,3 @@
-[t:template,n:gargoyle_base]  // = gargoyle
-{
-	category_name = "1W_evil_d";
-	doc = "gargoyle";
-	specializes = base_gargoyle;
-
-	[common]
-	{
-		membership = gargoyle,gargoyle_friend,monster;
-	}
-	[mind]
-	{
-		jat_brain							= world\ai\jobs\common\brain_hero.skrit
-			?get_friends 					= true
-			&friends	 					= gargoyle_friend
-			&form_party_on_getting_friends	= true
-			&actor_creates_own_party		= true
-			&actor_joins_existing_party		= true
-			&party_template					= "party_gargoyle";
-	}
-}
-
 [t:template,n:gargoyle_summon]
 {
     specializes = gargoyle_base;
