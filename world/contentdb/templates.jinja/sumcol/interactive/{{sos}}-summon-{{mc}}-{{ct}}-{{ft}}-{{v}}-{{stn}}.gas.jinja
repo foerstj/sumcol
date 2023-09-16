@@ -41,13 +41,13 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((#magic*4.2)*{{dmg_c}})*0.9) - #cmagic_damage_min);
+                value = ((((#magic*4.2)*{{dmg_c | float}})*0.9) - #cmagic_damage_min);
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((#magic*4.2)*{{dmg_c}})*1.1) - #cmagic_damage_max);
+                value = ((((#magic*4.2)*{{dmg_c | float}})*1.1) - #cmagic_damage_max);
             }
             {% endif %}
             {% if dmg_m %}
@@ -55,32 +55,32 @@
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((#magic*4.2)*{{dmg_m}})*0.9) - #melee_damage_min);
+                value = ((((#magic*4.2)*{{dmg_m | float}})*0.9) - #melee_damage_min);
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((#magic*4.2)*{{dmg_m}})*1.1) - #melee_damage_max);
+                value = ((((#magic*4.2)*{{dmg_m | float}})*1.1) - #melee_damage_max);
             }
             {% endif %}
             [*]
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*3.5)*{{armor}}) - #base_defense);
+                value = (((#magic*3.5)*{{armor | float}}) - #base_defense);
             }
             [*]
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = (((#magic*24)*{{life}}) - #maxlife);
+                value = (((#magic*24)*{{life | float}}) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*24)*{{life}}) - #life);
+                value = (((#magic*24)*{{life | float}}) - #life);
             }
             {% if dmg_c %}
             [*]
