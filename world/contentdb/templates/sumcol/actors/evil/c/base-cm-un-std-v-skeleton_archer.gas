@@ -72,21 +72,3 @@
 	}
 
 }
-
-[t:template,n:skeleton_archer_summon]
-{
-    specializes = skeleton_archer_base;
-
-	doc = "[summon] Skeleton archer";
-	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
-    [inventory]
-    {
-		spew_equipped_kill_count = <ignore>;
-        [equipment]
-        {
-            es_shield_hand = bw_g_c_s_s_r_avg;
-        }
-        [pcontent] {}
-    }
-}
