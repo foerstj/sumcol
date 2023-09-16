@@ -113,21 +113,46 @@
     }
 }
 
-[t:template,n:sumcol_demo_barrel_redone]
+[t:template,n:sumcol_demo_barrel_redone_vanilla]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Redone";
+    common:screen_name = "Redone Vanilla";
     [inventory]
     {
         [other]
         {
-            il_main = spell_summon_gargoyle;
+            il_main = spell_summon_braak_desert_sumcol_demo;
+            il_main = spell_summon_cave_giant_sumcol_demo;
+            il_main = spell_summon_darkling_sumcol_demo;
+            il_main = spell_summon_drake_black_sumcol_demo;
+            il_main = spell_summon_drake_green_sumcol_demo;
+            il_main = spell_summon_fire_elemental_sumcol_demo;
+            il_main = spell_summon_forest_klaw_sumcol_demo;
+            il_main = spell_summon_furok_sumcol_demo;
             il_main = spell_summon_gargoyle_sumcol_demo;
-            il_main = spell_summon_skeleton;
+            il_main = spell_summon_golem_frost_sumcol_demo;
+            il_main = spell_summon_hell_boar_sumcol_demo;
+            il_main = spell_summon_impaler_sumcol_demo;
+            il_main = spell_summon_killer_gremal_sumcol_demo;
+            il_main = spell_summon_krug_dog_skeleton_sumcol_demo;
+            il_main = spell_summon_larch_sumcol_demo;
+            il_main = spell_summon_lava_spirit_sumcol_demo;
+            il_main = spell_summon_molten_golem_sumcol_demo;
+            il_main = spell_summon_mucosa_sumcol_demo;
+            il_main = spell_summon_mucosa_predator_sumcol_demo;
+            il_main = spell_summon_picker_sumcol_demo;
+            il_main = spell_summon_rock_golem_sumcol_demo;
+            il_main = spell_summon_rock_beast_sumcol_demo;
+            il_main = spell_summon_scorpion_sumcol_demo;
             il_main = spell_summon_skeleton_sumcol_demo;
-            il_main = spell_summon_wraith_archer;
+            il_main = spell_summon_skick_sumcol_demo;
+            il_main = spell_summon_spiked_dweller_sumcol_demo;
+            il_main = spell_summon_troll_forest_sumcol_demo;
+            il_main = spell_summon_wolf_black_sumcol_demo;
+            il_main = spell_summon_wraith_sumcol_demo;
             il_main = spell_summon_wraith_archer_sumcol_demo;
+            il_main = spell_summon_zombie_headless_sumcol_demo;
         }
     }
 }
