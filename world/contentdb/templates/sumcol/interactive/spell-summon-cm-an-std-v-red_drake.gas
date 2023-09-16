@@ -38,18 +38,6 @@
         {
             [*]
             {
-                alteration = alter_cmagic_damage_min;
-                duration = #infinite;
-                value = ((((#magic*4.2)*1.1)*0.9) - #cmagic_damage_min);
-            }
-            [*]
-            {
-                alteration = alter_cmagic_damage_max;
-                duration = #infinite;
-                value = ((((#magic*4.2)*1.1)*1.1) - #cmagic_damage_max);
-            }
-            [*]
-            {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
                 value = ((((#magic*4.2)*1.1)*0.9) - #melee_damage_min);
@@ -59,6 +47,18 @@
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
                 value = ((((#magic*4.2)*1.1)*1.1) - #melee_damage_max);
+            }
+            [*]
+            {
+                alteration = alter_cmagic_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*1.1)*0.9) - #cmagic_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_cmagic_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*1.1)*1.1) - #cmagic_damage_max);
             }
             [*]
             {
@@ -80,15 +80,15 @@
             }
             [*]
             {
-                alteration = alter_combat_magic;
-                duration = #infinite;
-                value = ((#magic)-#combat_magic_level);
-            }
-            [*]
-            {
                 alteration = alter_melee;
                 duration = #infinite;
                 value = ((#magic)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_combat_magic;
+                duration = #infinite;
+                value = ((#magic)-#combat_magic_level);
             }
             [*]
             {

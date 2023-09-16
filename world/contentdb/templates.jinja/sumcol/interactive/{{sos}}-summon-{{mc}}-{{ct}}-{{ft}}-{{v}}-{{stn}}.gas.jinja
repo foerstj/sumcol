@@ -36,20 +36,6 @@
 
         [enchantments]
         {
-            {% if dmg_c %}
-            [*]
-            {
-                alteration = alter_cmagic_damage_min;
-                duration = #infinite;
-                value = ((((#magic*4.2)*{{dmg_c | float}})*0.9) - #cmagic_damage_min);
-            }
-            [*]
-            {
-                alteration = alter_cmagic_damage_max;
-                duration = #infinite;
-                value = ((((#magic*4.2)*{{dmg_c | float}})*1.1) - #cmagic_damage_max);
-            }
-            {% endif %}
             {% if dmg_m %}
             [*]
             {
@@ -62,6 +48,34 @@
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
                 value = ((((#magic*4.2)*{{dmg_m | float}})*1.1) - #melee_damage_max);
+            }
+            {% endif %}
+            {% if dmg_r %}
+            [*]
+            {
+                alteration = alter_ranged_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_r | float}})*0.9) - #ranged_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_ranged_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_r | float}})*1.1) - #ranged_damage_max);
+            }
+            {% endif %}
+            {% if dmg_c %}
+            [*]
+            {
+                alteration = alter_cmagic_damage_min;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_c | float}})*0.9) - #cmagic_damage_min);
+            }
+            [*]
+            {
+                alteration = alter_cmagic_damage_max;
+                duration = #infinite;
+                value = ((((#magic*4.2)*{{dmg_c | float}})*1.1) - #cmagic_damage_max);
             }
             {% endif %}
             [*]
@@ -82,20 +96,28 @@
                 duration = 1.0;
                 value = (((#magic*24)*{{life | float}}) - #life);
             }
-            {% if dmg_c %}
-            [*]
-            {
-                alteration = alter_combat_magic;
-                duration = #infinite;
-                value = ((#magic)-#combat_magic_level);
-            }
-            {% endif %}
             {% if dmg_m %}
             [*]
             {
                 alteration = alter_melee;
                 duration = #infinite;
                 value = ((#magic)-#melee);
+            }
+            {% endif %}
+            {% if dmg_r %}
+            [*]
+            {
+                alteration = alter_ranged;
+                duration = #infinite;
+                value = ((#magic)-#ranged);
+            }
+            {% endif %}
+            {% if dmg_c %}
+            [*]
+            {
+                alteration = alter_combat_magic;
+                duration = #infinite;
+                value = ((#magic)-#combat_magic_level);
             }
             {% endif %}
             [*]
