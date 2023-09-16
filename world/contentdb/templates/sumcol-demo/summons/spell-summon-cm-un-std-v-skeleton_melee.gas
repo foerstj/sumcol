@@ -24,8 +24,8 @@
     }
     [spell_summon]
     {
-        script_params = "[scale(1.5)]";
         template_name = skeleton_summon;
+        script_params = "[scale(1.5)]";
     }
     [magic]
     {
