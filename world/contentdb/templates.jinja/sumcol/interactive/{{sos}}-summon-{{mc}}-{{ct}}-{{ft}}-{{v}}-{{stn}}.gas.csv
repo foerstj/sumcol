@@ -4,6 +4,8 @@ spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;50;6;2;;;0.8
 spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;40;7;2;0.9;;;;;1;0.6;
 spell;yellow_spider;spider_adolescent_yellow;;a;Yellow Spider;0.75;nm;an;std;v;30;7;1;0.8;;;;;2;0.4;
 spell;farm_skrubb;skrubb_farm;;a;Farm Skrubb;1;nm;an;st;v;10;1;2;;;0.9;;;1.5;0.8;
+spell;ice_grub;dsx_grub;;an;Ice Grub;1;nm;an;std;loa;30;8;1;0.8;;;;;1;0.4;
+spell;ice_moth;dsx_moth;;an;Ice Moth;1.5;nm;an;std;loa;50;5;2;;;0.8;;;2;0.3;
 spell;gargoyle_melee;gargoyle;;a;Gargoyle;0.75;cm;el;std;v;50;6;3;0.9;;;;;3;0.4;
 spell;krug_dog;krug_dog;;a;Krug Dog;1.25;nm;an;std;v;50;6;3;1;;;;;1;0.8;
 scroll;phrak_ballista;phrak_piercer_boss_01;;a;Phrak Ballista;1;nm;an;mb;v;12;14;3;;;1;;;2;1.2;

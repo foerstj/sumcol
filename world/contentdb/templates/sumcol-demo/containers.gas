@@ -39,14 +39,16 @@
         {
             il_main = spell_summon_phrak;
             il_main = spell_summon_phrak_piercer;
-            il_main = scroll_summon_phrak_ballista;
-            il_main = spell_summon_yellow_spider;
-            il_main = spell_summon_arakun_spider;
             il_main = spell_summon_snapper;
-            il_main = spell_summon_krug_dog;
-            il_main = spell_summon_bubber;
+            il_main = spell_summon_yellow_spider;
             il_main = spell_summon_farm_skrubb;
+            il_main = spell_summon_ice_grub;
+            il_main = spell_summon_ice_moth;
+            il_main = spell_summon_krug_dog;
+            il_main = scroll_summon_phrak_ballista;
             il_main = spell_summon_black_skrubb;
+            il_main = spell_summon_arakun_spider;
+            il_main = spell_summon_bubber;
             il_main = spell_summon_red_drake;
         }
     }
