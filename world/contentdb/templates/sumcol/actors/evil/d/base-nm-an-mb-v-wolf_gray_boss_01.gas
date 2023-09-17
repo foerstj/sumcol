@@ -1,0 +1,80 @@
+[t:template,n:wolf_gray_boss_01_base]  // = wolf_gray_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "wolf_gray boss 01";
+	specializes = base_wolf;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  5, 0;
+			intelligence =  2, 0;
+			dexterity =  8, 0;
+            melee =  2,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 20;
+		life = 30;
+        max_life = 30;
+        mana = 2;
+        max_mana = 2;
+        textures:0 = b_c_edm_wf-04;
+        scale_base = 0.9;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 11;
+		damage_min = 8;
+	}
+
+	[defend] { defense=32; }
+	[common]
+	{
+		screen_name="Alpha Wolf";
+		membership = monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* 	= receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* 	= call_sfx_script("unique_ray_blue(sgx)");
+				action* 	= call_sfx_script("unique_light_blue(sgx)");
+			}
+
+		}
+
+	}
+
+	[inventory]
+	{
+		[pcontent]
+		{
+			[all*]
+			{
+				[gold*]
+				{
+					  max = 40;
+					  min = 30;
+				}
+			}
+		}
+	}
+
+
+	[mind]
+	{
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+			?still							= false;
+
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&form_party_on_friend_entered_OCZ	= true
+			&form_party_on_friend_entered_ICZ	= true
+			&party_template						= "party_wolf_gray_boss";
+	}
+}

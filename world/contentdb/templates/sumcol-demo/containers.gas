@@ -46,9 +46,12 @@
             il_main = spell_summon_ice_moth;
             il_main = spell_summon_krug_dog;
             il_main = scroll_summon_phrak_ballista;
+            il_main = spell_summon_gray_wolf;
+            il_main = scroll_summon_alpha_wolf;
             il_main = spell_summon_black_skrubb;
             il_main = spell_summon_arakun_spider;
             il_main = spell_summon_bubber;
+            il_main = spell_summon_white_wolf;
             il_main = spell_summon_red_drake;
         }
     }
@@ -81,9 +84,10 @@
     {
         [other]
         {
-            il_main = spell_summon_skeleton_archer;
             il_main = spell_summon_skeleton_guard;
+            il_main = spell_summon_skeleton_archer;
             il_main = scroll_summon_skeleton_captain;
+            il_main = scroll_summon_dark_wolf;
         }
     }
 }

@@ -1,0 +1,8 @@
+[t:template,n:wolf_white_summon]
+{
+    specializes = wolf_white_base;
+
+    doc = "[summon] wolf_white";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

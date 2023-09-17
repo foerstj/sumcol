@@ -1,0 +1,15 @@
+[t:template,n:wolf_gray_boss_01_summon]
+{
+    specializes = wolf_gray_boss_01_base;
+
+    doc = "[summon] wolf_gray_boss_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}
