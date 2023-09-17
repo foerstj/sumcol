@@ -1,0 +1,36 @@
+[t:sign_glb_01,n:0x00200074]
+{
+	[common]
+	{
+		screen_name = "Veteran Skeleton Mercenary Archers";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = -0.734417,0,3.92057,0x13ef2af4;
+	}
+}
+[t:sign_glb_01,n:0x00200065]
+{
+	[common]
+	{
+		screen_name = "Regular Skeleton Mercenary Archers";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.28896,0,1.90547,0x922ef3a6;
+	}
+}
+[t:sign_glb_01,n:0x00200079]
+{
+	[common]
+	{
+		screen_name = "Groups representing progressive Biomes";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 3.30373,0,1.90907,0x61930255;
+	}
+}
