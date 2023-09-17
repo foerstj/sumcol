@@ -2,7 +2,7 @@
 {
     specializes = spider_adolescent_base;
 
-    doc = "[summon] spider_pink"
+    doc = "[summon] spider_pink";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 }

@@ -2,7 +2,7 @@
 {
     specializes = phrak_piercer_base;
 
-    doc = "[summon] phrak piercer"
+    doc = "[summon] phrak piercer";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 }

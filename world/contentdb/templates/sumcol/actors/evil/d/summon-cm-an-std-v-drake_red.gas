@@ -2,7 +2,7 @@
 {
     specializes = drake_red_base;
 
-    doc = "[summon] drake_red"
+    doc = "[summon] drake_red";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
     [inventory]

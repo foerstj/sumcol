@@ -2,7 +2,7 @@
 {
     specializes = krug_dog_base;
 
-    doc = "[summon] krug_dog"
+    doc = "[summon] krug_dog";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 }

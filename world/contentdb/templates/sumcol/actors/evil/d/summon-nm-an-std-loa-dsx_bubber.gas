@@ -2,7 +2,7 @@
 {
     specializes = dsx_bubber_base;
 
-    doc = "[summon] dsx_bubber"
+    doc = "[summon] dsx_bubber";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 }

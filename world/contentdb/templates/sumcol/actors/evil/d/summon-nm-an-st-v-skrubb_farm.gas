@@ -2,7 +2,7 @@
 {
     specializes = skrubb_farm_base;
 
-    doc = "[summon] skrubb_farm"
+    doc = "[summon] skrubb_farm";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 

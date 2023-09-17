@@ -2,7 +2,7 @@
 {
     specializes = mucosa_small_base;
 
-    doc = "[summon] mucosa small"
+    doc = "[summon] mucosa small";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 	[generator_in_object]

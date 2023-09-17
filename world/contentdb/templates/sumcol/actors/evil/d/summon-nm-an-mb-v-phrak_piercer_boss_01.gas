@@ -2,7 +2,7 @@
 {
     specializes = phrak_piercer_boss_01_base;
 
-    doc = "[summon] phrak piercer boss"
+    doc = "[summon] phrak piercer boss";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 	[inventory]
