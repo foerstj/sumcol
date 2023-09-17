@@ -31,6 +31,8 @@
 	}
     [mind]
     {
+        movement_orders = mo_free;
+        combat_orders = co_free;
         jat_talk = world\ai\jobs\common\job_talk.skrit;
     }
 }
