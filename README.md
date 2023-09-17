@@ -22,8 +22,13 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider, Arakun Spider
   - Manglers: Snapper
+  - Worms: Ice Grub (LoA)
+  - Moths: Ice Moth (LoA)
+  - Wolves: Gray Wolf, White Wolf
+    - Miniboss: Alpha Wolf
   - Dogs: Krug Dog
   - Lizards: Island Lizard (LoA)
+  - Drakes: Red Drake (CM)
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb
 - Elementals
@@ -34,9 +39,13 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard
     - Miniboss: Skeleton Captain
+  - Wolf Miniboss: Dark Wolf
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines (LoA)
+- Demonics (CM):
+  - Mucosa: Vile Mucosa
+  - Rune: Rune Fiend (LoA)
 
 ## Balancing
 
