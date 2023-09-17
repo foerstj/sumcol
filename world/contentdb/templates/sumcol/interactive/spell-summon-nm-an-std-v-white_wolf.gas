@@ -6,7 +6,7 @@
     doc = "spell Summon White Wolf";
     [aspect]
     {
-        gold_value = 950;
+        gold_value = 960;
     }
     [common]
     {

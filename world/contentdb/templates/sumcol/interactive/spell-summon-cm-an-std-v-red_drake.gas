@@ -6,7 +6,7 @@
     doc = "spell Summon Red Drake";
     [aspect]
     {
-        gold_value = 131000;
+        gold_value = 130000;
     }
     [common]
     {

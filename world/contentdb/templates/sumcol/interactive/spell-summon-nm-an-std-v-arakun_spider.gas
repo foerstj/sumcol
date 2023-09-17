@@ -6,7 +6,7 @@
     doc = "spell Summon Arakun Spider";
     [aspect]
     {
-        gold_value = 95;
+        gold_value = 96;
     }
     [common]
     {

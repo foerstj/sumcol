@@ -6,7 +6,7 @@
     doc = "spell Summon Swamp Creature";
     [aspect]
     {
-        gold_value = 41700;
+        gold_value = 42000;
     }
     [common]
     {

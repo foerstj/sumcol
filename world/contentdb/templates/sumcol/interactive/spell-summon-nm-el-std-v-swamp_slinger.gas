@@ -6,7 +6,7 @@
     doc = "spell Summon Swamp Slinger";
     [aspect]
     {
-        gold_value = 52100;
+        gold_value = 52000;
     }
     [common]
     {

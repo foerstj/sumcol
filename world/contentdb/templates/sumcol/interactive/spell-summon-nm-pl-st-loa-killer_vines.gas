@@ -6,7 +6,7 @@
     doc = "spell Summon Killer Vines";
     [aspect]
     {
-        gold_value = 40;
+        gold_value = 38;
     }
     [common]
     {

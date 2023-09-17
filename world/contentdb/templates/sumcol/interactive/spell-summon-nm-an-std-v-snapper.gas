@@ -6,7 +6,7 @@
     doc = "spell Summon Snapper";
     [aspect]
     {
-        gold_value = 40;
+        gold_value = 38;
     }
     [common]
     {

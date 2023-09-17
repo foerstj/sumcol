@@ -6,7 +6,7 @@
     doc = "spell Summon Krug Dog";
     [aspect]
     {
-        gold_value = 50;
+        gold_value = 48;
     }
     [common]
     {

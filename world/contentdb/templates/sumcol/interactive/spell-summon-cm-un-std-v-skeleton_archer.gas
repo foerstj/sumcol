@@ -6,7 +6,7 @@
     doc = "spell Summon Skeleton Archer";
     [aspect]
     {
-        gold_value = 475;
+        gold_value = 480;
     }
     [common]
     {
