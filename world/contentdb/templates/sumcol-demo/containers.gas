@@ -201,6 +201,34 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_redone_loa]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Redone LoA";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_dsx_twisted_mucosa_sumcol_demo;
+            il_main = spell_summon_dsx_vile_twisted_mucosa_sumcol_demo;
+            il_main = spell_summon_dsx_giant_rat_sumcol_demo;
+            il_main = spell_summon_dsx_deadly_armor_sumcol_demo;
+            il_main = spell_summon_dsx_ursae_demonic_sumcol_demo;
+            il_main = spell_summon_dsx_rune_guardian_sumcol_demo;
+            il_main = spell_summon_dsx_barkrunner_sumcol_demo;
+            il_main = spell_summon_dsx_scrub_howler_sumcol_demo;
+            il_main = spell_summon_dsx_bear_sumcol_demo;
+            il_main = spell_summon_dsx_zepheryl_dark_sumcol_demo;
+            il_main = spell_summon_dsx_fleshrender_sumcol_demo;
+            il_main = spell_summon_dsx_knight_death_sumcol_demo;
+            il_main = spell_summon_dsx_slithermage_sumcol_demo;
+            il_main = spell_summon_dsx_chomper_sumcol_demo;
+            il_main = spell_summon_dsx_troll_masher_sumcol_demo;
+            il_main = spell_summon_dsx_zepheryl_sumcol_demo;
+        }
+    }
+}
 [t:template,n:sumcol_demo_barrel_original_loa]
 {
     specializes = sumcol_demo_base_barrel;
@@ -230,4 +258,3 @@
         }
     }
 }
-

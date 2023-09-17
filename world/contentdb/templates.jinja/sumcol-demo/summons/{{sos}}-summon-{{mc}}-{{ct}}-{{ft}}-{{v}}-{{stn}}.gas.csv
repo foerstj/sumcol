@@ -30,3 +30,19 @@ spell;wolf_black;wolf_black;summon;a;Black Wolf;1.75;nm;an;std;v;35124;6;40;0.75
 spell;wraith;wraith;summon;a;Wraith;1;cm;un;std;v;84987;4;53;1;;;;;2;0.8;136
 spell;wraith_archer;wraith_archer;summon;a;Wraith Archer;1;cm;un;std;v;109797;6;57;;0.7;;94;110;2;0.8;139
 spell;zombie_headless;zombie_headless;summon;a;Zombie;1;cm;un;std;v;40812;5;43;0.7;;;;;0.8;1;130
+spell;dsx_twisted_mucosa;dsx_twisted_mucosa;summon;a;Twisted Mucosa;2;cm;de;std;loa;133;6;10;0.95;;0.7;;;2;1.5;221
+spell;dsx_vile_twisted_mucosa;dsx_vile_twisted_mucosa;summon;a;Vile Twisted Mucosa;2;cm;de;std;loa;288;4;15;0.95;;0.9;;;2;1.2;222
+spell;dsx_giant_rat;dsx_giant_rat;summon;a;Giant Rat;1.75;nm;an;std;loa;51;6;5;0.83;;;;;1;0.8;250
+spell;dsx_deadly_armor;dsx_deadly_armor;summon;a;Deadly Armor;1;cm;un;std;loa;23219;4;36;1;;;;;3;1;215
+spell;dsx_ursae_demonic;dsx_ursae_demonic;summon;an;Ursae;3;cm;un;std;loa;7292;5;30;0.7;;;;;0.8;2;217
+spell;dsx_rune_guardian;dsx_rune_guardian;summon;a;Rune Guardian;2;cm;de;std;loa;190238;4;75;0.83;;;;;1;1.2;219
+spell;dsx_barkrunner;dsx_barkrunner;summon;a;Barkrunner;2.25;nm;pl;std;loa;2392;4;20;1.2;;;;;2;1.5;247
+spell;dsx_scrub_howler;dsx_scrub_howler;summon;a;Scrub Howler;2.25;nm;hu;std;loa;23874;2;42;1.03;;;74;90;1;1.5;251
+spell;dsx_bear;dsx_bear;summon;a;Cave Bear;3;nm;an;std;loa;301;4;3;0.83;;;;;1;1.8;248
+spell;dsx_zepheryl_dark;dsx_zepheryl_dark;summon;a;Dark Zepheryl;3;nm;el;std;loa;7592;4;35;;;0.9;;;0.5;1;252
+spell;dsx_fleshrender;dsx_fleshrender;summon;a;Fleshrender;1.25;cm;de;std;loa;60838;2;61;0.93;;;;;1;1;218
+spell;dsx_knight_death;dsx_knight_death;summon;a;Death Knight;1.25;cm;un;std;loa;2842;6;25;1.1;;;68;78;2;1;216
+spell;dsx_slithermage;dsx_slithermage;summon;a;Slithermage;2.4;cm;de;std;loa;519721;2;91;;;1.08;;;1;1.2;220
+spell;dsx_chomper;dsx_chomper;summon;a;Chomper;1.5;nm;an;std;loa;837;2;14;0.98;;;;;1;1;249
+spell;dsx_troll_masher;dsx_troll_masher;summon;a;Troll Masher;1.5;nm;hu;std;loa;378257;2;73;0.9;;;;;1;2;253
+spell;dsx_zepheryl;dsx_zepheryl;summon;a;Zepheryl;1.5;nm;el;std;loa;5198;6;30;;;0.9;;;0.5;0.8;271

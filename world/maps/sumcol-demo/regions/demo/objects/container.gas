@@ -8,16 +8,16 @@
 	{
 		[other]
 		{
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
 		}
 	}
 	[placement]
@@ -58,7 +58,7 @@
 {
 	[placement]
 	{
-	  p position = 2.79853,0,-1.9157,0xf00cc9f1;
+	  p position = 1.74723,0,-0.834198,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_demonics,n:0x00100036]
@@ -80,5 +80,12 @@
 	[placement]
 	{
 	  p position = 2.84871,0,0.0988419,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_redone_loa,n:0x00100049]
+{
+	[placement]
+	{
+	  p position = 1.79007,0,0.174832,0xf00cc9f1;
 	}
 }
