@@ -4,7 +4,7 @@ spell;cave_giant;cave_giant;summon;a;Cave Giant;1.75;nm;hu;std;v;24000;2;30;1.05
 spell;darkling;darkling;summon;a;Darkling;1;cm;de;std;v;3800;4;21;;;0.9;;;1;0.8;112
 spell;drake_black;drake_black;summon;a;Black Drake;1;cm;an;std;v;520000;2;92;1.1;;1.1;;;1.5;1.8;173
 spell;drake_green;drake_green;summon;a;Green Drake;1.75;nm;an;std;v;400000;2;86;1.1;;1.1;;;1.5;2.5;72
-spell;fire_elemental;fire_elemental;;a;Fire Elemental;1;cm;el;std;v;420000;4;92;;;1;;;0.5;1;178
+spell;fire_elemental;fire_elemental;;a;Fire Elemental;1;cm;el;std;v;420000;4;92;1;;;;;0.5;1;178
 spell;forest_klaw;forest_klaw;summon;a;Forest Klaw;1.75;nm;an;std;v;30000;4;35;1.05;;;;;1;1.8;40
 spell;furok;furok;summon;a;Furok;1.75;nm;an;std;v;3800;2;22;1.1;;;;;1;1.8;28
 spell;gargoyle;gargoyle_ranged;summon;a;Jade Gargoyle;0.75;cm;el;std;v;120;6;6;;;0.85;;;3;0.4;84
