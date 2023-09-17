@@ -7,7 +7,7 @@
     doc = "spell Summon Cave Bear (SumCol Demo)";
     [aspect]
     {
-        gold_value = 301;
+        gold_value = 48;
     }
     [common]
     {

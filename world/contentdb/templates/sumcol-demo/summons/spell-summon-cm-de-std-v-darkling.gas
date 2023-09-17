@@ -7,7 +7,7 @@
     doc = "spell Summon Darkling (SumCol Demo)";
     [aspect]
     {
-        gold_value = 3443;
+        gold_value = 3800;
     }
     [common]
     {

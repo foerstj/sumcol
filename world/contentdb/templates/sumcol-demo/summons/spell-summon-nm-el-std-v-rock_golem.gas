@@ -7,7 +7,7 @@
     doc = "spell Summon Rock Golem (SumCol Demo)";
     [aspect]
     {
-        gold_value = 803618;
+        gold_value = 420000;
     }
     [common]
     {

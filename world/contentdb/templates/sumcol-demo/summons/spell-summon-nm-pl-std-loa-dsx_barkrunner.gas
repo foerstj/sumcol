@@ -7,7 +7,7 @@
     doc = "spell Summon Barkrunner (SumCol Demo)";
     [aspect]
     {
-        gold_value = 2392;
+        gold_value = 2400;
     }
     [common]
     {

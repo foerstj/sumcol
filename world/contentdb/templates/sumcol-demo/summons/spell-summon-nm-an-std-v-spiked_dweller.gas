@@ -7,7 +7,7 @@
     doc = "spell Summon Spiked Dweller (SumCol Demo)";
     [aspect]
     {
-        gold_value = 61235;
+        gold_value = 69000;
     }
     [common]
     {

@@ -7,7 +7,7 @@
     doc = "spell Summon Jade Gargoyle (SumCol Demo)";
     [aspect]
     {
-        gold_value = 65;
+        gold_value = 120;
     }
     [common]
     {

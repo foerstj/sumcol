@@ -7,7 +7,7 @@
     doc = "spell Summon Mucosa (SumCol Demo)";
     [aspect]
     {
-        gold_value = 1384;
+        gold_value = 960;
     }
     [common]
     {

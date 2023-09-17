@@ -7,7 +7,7 @@
     doc = "spell Summon Deadly Armor (SumCol Demo)";
     [aspect]
     {
-        gold_value = 23219;
+        gold_value = 32000;
     }
     [common]
     {

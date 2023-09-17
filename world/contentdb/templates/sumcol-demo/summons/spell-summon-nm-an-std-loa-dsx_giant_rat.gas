@@ -7,7 +7,7 @@
     doc = "spell Summon Giant Rat (SumCol Demo)";
     [aspect]
     {
-        gold_value = 51;
+        gold_value = 76;
     }
     [common]
     {

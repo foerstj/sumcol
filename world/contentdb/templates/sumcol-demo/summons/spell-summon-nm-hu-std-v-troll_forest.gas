@@ -7,7 +7,7 @@
     doc = "spell Summon Forest Troll (SumCol Demo)";
     [aspect]
     {
-        gold_value = 14569;
+        gold_value = 28000;
     }
     [common]
     {

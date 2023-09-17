@@ -7,7 +7,7 @@
     doc = "spell Summon Slag (SumCol Demo)";
     [aspect]
     {
-        gold_value = 826541;
+        gold_value = 420000;
     }
     [common]
     {

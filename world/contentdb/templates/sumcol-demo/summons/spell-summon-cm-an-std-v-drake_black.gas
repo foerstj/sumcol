@@ -7,7 +7,7 @@
     doc = "spell Summon Black Drake (SumCol Demo)";
     [aspect]
     {
-        gold_value = 644957;
+        gold_value = 520000;
     }
     [common]
     {

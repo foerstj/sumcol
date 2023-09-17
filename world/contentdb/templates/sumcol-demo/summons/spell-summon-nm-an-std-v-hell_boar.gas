@@ -7,7 +7,7 @@
     doc = "spell Summon Hell Boar (SumCol Demo)";
     [aspect]
     {
-        gold_value = 29018;
+        gold_value = 36000;
     }
     [common]
     {

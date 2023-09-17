@@ -7,7 +7,7 @@
     doc = "spell Summon Skick (SumCol Demo)";
     [aspect]
     {
-        gold_value = 11288;
+        gold_value = 15000;
     }
     [common]
     {

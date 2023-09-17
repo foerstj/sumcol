@@ -7,7 +7,7 @@
     doc = "spell Summon Frost Golem (SumCol Demo)";
     [aspect]
     {
-        gold_value = 669671;
+        gold_value = 420000;
     }
     [common]
     {

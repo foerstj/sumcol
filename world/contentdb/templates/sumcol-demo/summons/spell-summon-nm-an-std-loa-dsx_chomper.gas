@@ -7,7 +7,7 @@
     doc = "spell Summon Chomper (SumCol Demo)";
     [aspect]
     {
-        gold_value = 837;
+        gold_value = 600;
     }
     [common]
     {

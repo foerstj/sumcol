@@ -7,7 +7,7 @@
     doc = "spell Summon Vile Twisted Mucosa (SumCol Demo)";
     [aspect]
     {
-        gold_value = 288;
+        gold_value = 950;
     }
     [common]
     {

@@ -7,7 +7,7 @@
     doc = "spell Summon Zombie (SumCol Demo)";
     [aspect]
     {
-        gold_value = 40812;
+        gold_value = 44000;
     }
     [common]
     {

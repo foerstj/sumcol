@@ -7,7 +7,7 @@
     doc = "spell Summon Picker (SumCol Demo)";
     [aspect]
     {
-        gold_value = 60002;
+        gold_value = 55000;
     }
     [common]
     {

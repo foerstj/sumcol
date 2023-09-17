@@ -7,7 +7,7 @@
     doc = "spell Summon Scrub Howler (SumCol Demo)";
     [aspect]
     {
-        gold_value = 23874;
+        gold_value = 42000;
     }
     [common]
     {

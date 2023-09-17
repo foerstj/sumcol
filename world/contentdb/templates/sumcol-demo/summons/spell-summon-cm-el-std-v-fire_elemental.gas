@@ -7,7 +7,7 @@
     doc = "spell Summon Fire Elemental (SumCol Demo)";
     [aspect]
     {
-        gold_value = 995916;
+        gold_value = 420000;
     }
     [common]
     {

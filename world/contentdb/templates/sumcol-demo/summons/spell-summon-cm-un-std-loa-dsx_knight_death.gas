@@ -7,7 +7,7 @@
     doc = "spell Summon Death Knight (SumCol Demo)";
     [aspect]
     {
-        gold_value = 2842;
+        gold_value = 7600;
     }
     [common]
     {

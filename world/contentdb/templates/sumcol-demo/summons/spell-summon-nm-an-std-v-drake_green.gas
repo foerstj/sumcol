@@ -7,7 +7,7 @@
     doc = "spell Summon Green Drake (SumCol Demo)";
     [aspect]
     {
-        gold_value = 489555;
+        gold_value = 400000;
     }
     [common]
     {

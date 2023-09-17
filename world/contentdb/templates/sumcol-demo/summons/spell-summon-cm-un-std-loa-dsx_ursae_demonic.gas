@@ -7,7 +7,7 @@
     doc = "spell Summon Ursae (SumCol Demo)";
     [aspect]
     {
-        gold_value = 7292;
+        gold_value = 24000;
     }
     [common]
     {

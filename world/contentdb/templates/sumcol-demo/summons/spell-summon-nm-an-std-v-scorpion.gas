@@ -7,7 +7,7 @@
     doc = "spell Summon Scorpion (SumCol Demo)";
     [aspect]
     {
-        gold_value = 1119;
+        gold_value = 760;
     }
     [common]
     {

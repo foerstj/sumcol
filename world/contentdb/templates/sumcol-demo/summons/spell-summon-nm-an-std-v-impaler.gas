@@ -7,7 +7,7 @@
     doc = "spell Summon Impaler (SumCol Demo)";
     [aspect]
     {
-        gold_value = 289493;
+        gold_value = 190000;
     }
     [common]
     {

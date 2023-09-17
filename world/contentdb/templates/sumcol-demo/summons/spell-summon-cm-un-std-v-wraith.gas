@@ -7,7 +7,7 @@
     doc = "spell Summon Wraith (SumCol Demo)";
     [aspect]
     {
-        gold_value = 84987;
+        gold_value = 69000;
     }
     [common]
     {

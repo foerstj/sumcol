@@ -7,7 +7,7 @@
     doc = "spell Summon Desert Braak (SumCol Demo)";
     [aspect]
     {
-        gold_value = 209852;
+        gold_value = 180000;
     }
     [common]
     {

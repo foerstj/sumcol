@@ -7,7 +7,7 @@
     doc = "spell Summon Troll Masher (SumCol Demo)";
     [aspect]
     {
-        gold_value = 378257;
+        gold_value = 170000;
     }
     [common]
     {

@@ -7,7 +7,7 @@
     doc = "spell Summon Mucosa Predator (SumCol Demo)";
     [aspect]
     {
-        gold_value = 326512;
+        gold_value = 300000;
     }
     [common]
     {

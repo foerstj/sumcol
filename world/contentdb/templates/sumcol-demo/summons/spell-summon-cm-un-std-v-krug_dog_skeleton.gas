@@ -7,7 +7,7 @@
     doc = "spell Summon Skeleton Krug Dog (SumCol Demo)";
     [aspect]
     {
-        gold_value = 139456;
+        gold_value = 100000;
     }
     [common]
     {

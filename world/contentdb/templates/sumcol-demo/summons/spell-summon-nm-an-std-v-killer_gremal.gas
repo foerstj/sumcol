@@ -7,7 +7,7 @@
     doc = "spell Summon Killer Gremal (SumCol Demo)";
     [aspect]
     {
-        gold_value = 108;
+        gold_value = 1200;
     }
     [common]
     {

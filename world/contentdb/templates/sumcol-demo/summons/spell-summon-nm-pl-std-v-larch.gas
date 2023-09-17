@@ -7,7 +7,7 @@
     doc = "spell Summon Larch (SumCol Demo)";
     [aspect]
     {
-        gold_value = 115232;
+        gold_value = 96000;
     }
     [common]
     {

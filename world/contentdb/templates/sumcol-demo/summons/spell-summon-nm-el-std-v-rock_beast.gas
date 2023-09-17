@@ -7,7 +7,7 @@
     doc = "spell Summon Rock Beast (SumCol Demo)";
     [aspect]
     {
-        gold_value = 1110550;
+        gold_value = 520000;
     }
     [common]
     {

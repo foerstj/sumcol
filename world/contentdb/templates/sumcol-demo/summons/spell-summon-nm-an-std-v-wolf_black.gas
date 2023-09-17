@@ -7,7 +7,7 @@
     doc = "spell Summon Black Wolf (SumCol Demo)";
     [aspect]
     {
-        gold_value = 35124;
+        gold_value = 38000;
     }
     [common]
     {

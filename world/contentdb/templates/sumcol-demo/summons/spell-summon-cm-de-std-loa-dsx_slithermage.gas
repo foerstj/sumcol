@@ -7,7 +7,7 @@
     doc = "spell Summon Slithermage (SumCol Demo)";
     [aspect]
     {
-        gold_value = 519721;
+        gold_value = 500000;
     }
     [common]
     {

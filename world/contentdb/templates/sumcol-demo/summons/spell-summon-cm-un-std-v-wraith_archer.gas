@@ -7,7 +7,7 @@
     doc = "spell Summon Wraith Archer (SumCol Demo)";
     [aspect]
     {
-        gold_value = 109797;
+        gold_value = 100000;
     }
     [common]
     {

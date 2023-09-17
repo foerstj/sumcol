@@ -7,7 +7,7 @@
     doc = "spell Summon Fleshrender (SumCol Demo)";
     [aspect]
     {
-        gold_value = 60838;
+        gold_value = 100000;
     }
     [common]
     {

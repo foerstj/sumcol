@@ -7,7 +7,7 @@
     doc = "spell Summon Dark Zepheryl (SumCol Demo)";
     [aspect]
     {
-        gold_value = 7592;
+        gold_value = 38000;
     }
     [common]
     {

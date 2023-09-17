@@ -7,7 +7,7 @@
     doc = "spell Summon Lava Spirit (SumCol Demo)";
     [aspect]
     {
-        gold_value = 439552;
+        gold_value = 400000;
     }
     [common]
     {
