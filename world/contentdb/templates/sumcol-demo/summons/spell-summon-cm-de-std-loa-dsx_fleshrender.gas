@@ -65,7 +65,7 @@
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*24)*1.0) - #life);
+                value = ((#magic*24)*1.0);
             }
             [*]
             {
@@ -101,7 +101,7 @@
             {
                 alteration = alter_mana;
                 duration = 1.0;
-                value = ((#magic*19) - #mana);
+                value = (#magic*19);
             }
         }
     }
