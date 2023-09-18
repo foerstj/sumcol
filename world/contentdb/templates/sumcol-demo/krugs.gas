@@ -1,0 +1,216 @@
+[t:template,n:base_sumcol_krug_dummy]
+{
+    specializes = base_krug;
+
+	category_name = "1W_evil_a";
+	doc = "krug dummy";
+	[common]
+	{
+		screen_name = "Dummy Krug";
+		membership = krug, monster;
+	}
+}
+
+// ~ Gray Wolf
+[t:template,n:sumcol_krug_dummy_10]
+{
+    specializes = base_sumcol_krug_dummy;
+
+    common:screen_name = "Dummy Krug 10/2 20/50 ~ Gray Wolf";
+	[actor]
+	{
+		[skills]
+		{
+			strength = 5, 0;
+			dexterity = 5, 0;
+			intelligence = 5, 0;
+			melee = 2,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 50;
+		max_life = 50;
+		mana = 5;
+		max_mana = 5;
+	}
+	[attack]
+	{
+		damage_max = 10;
+		damage_min = 10;
+	}
+	[defend]
+	{
+		defense = 20;
+	}
+}
+
+// ~ Mucosa
+[t:template,n:sumcol_krug_dummy_20]
+{
+    specializes = base_sumcol_krug_dummy;
+
+    common:screen_name = "Dummy Krug 20/5 50/100 ~ Mucosa";
+	[actor]
+	{
+		[skills]
+		{
+			strength = 10, 0;
+			dexterity = 10, 0;
+			intelligence = 10, 0;
+			melee = 5,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 100;
+		max_life = 100;
+		mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		damage_max = 20;
+		damage_min = 20;
+	}
+	[defend]
+	{
+		defense = 50;
+	}
+}
+
+// ~ dsx skeleton 02
+[t:template,n:sumcol_krug_dummy_50]
+{
+    specializes = base_sumcol_krug_dummy;
+
+    common:screen_name = "Dummy Krug 50/10 100/200 ~ dsx skeleton 2";
+	[actor]
+	{
+		[skills]
+		{
+			strength = 10, 0;
+			dexterity = 10, 0;
+			intelligence = 10, 0;
+			melee = 10,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 200;
+		max_life = 200;
+		mana = 20;
+		max_mana = 20;
+	}
+	[attack]
+	{
+		damage_max = 50;
+		damage_min = 50;
+	}
+	[defend]
+	{
+		defense = 100;
+	}
+}
+
+// ~ Wasped
+[t:template,n:sumcol_krug_dummy_100]
+{
+    specializes = base_sumcol_krug_dummy;
+
+    common:screen_name = "Dummy Krug 100/20 200/500 ~ Wasped";
+	[actor]
+	{
+		[skills]
+		{
+			strength = 10, 0;
+			dexterity = 10, 0;
+			intelligence = 10, 0;
+			melee = 20,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 500;
+		max_life = 500;
+		mana = 50;
+		max_mana = 50;
+	}
+	[attack]
+	{
+		damage_max = 100;
+		damage_min = 100;
+	}
+	[defend]
+	{
+		defense = 200;
+	}
+}
+
+// ~ Mucosa Raider
+[t:template,n:sumcol_krug_dummy_200]
+{
+    specializes = base_sumcol_krug_dummy;
+
+    common:screen_name = "Dummy Krug 200/25 200/1000 ~ Mucosa Raider";
+	[actor]
+	{
+		[skills]
+		{
+			strength = 30, 0;
+			dexterity = 30, 0;
+			intelligence = 30, 0;
+			melee = 25,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 1000;
+		max_life = 1000;
+		mana = 100;
+		max_mana = 100;
+	}
+	[attack]
+	{
+		damage_max = 200;
+		damage_min = 200;
+	}
+	[defend]
+	{
+		defense = 500;
+	}
+}
+
+// ~ Veteran Maljin Stalker
+[t:template,n:sumcol_krug_dummy_300]
+{
+    specializes = base_sumcol_krug_dummy;
+
+    common:screen_name = "Dummy Krug 300/60 1000/2000 ~ Veteran Maljin Stalker";
+	[actor]
+	{
+		[skills]
+		{
+			strength = 50, 0;
+			dexterity = 50, 0;
+			intelligence = 50, 0;
+			melee = 60,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 2000;
+		max_life = 2000;
+		mana = 200;
+		max_mana = 200;
+	}
+	[attack]
+	{
+		damage_max = 300;
+		damage_min = 300;
+	}
+	[defend]
+	{
+		defense = 1000;
+	}
+}

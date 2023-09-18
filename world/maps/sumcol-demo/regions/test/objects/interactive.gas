@@ -2,7 +2,7 @@
 {
 	[common]
 	{
-		screen_name = "Veteran Skeleton Mercenary Archers";
+		screen_name = "Dummy Krugs";
 	}
 	[placement]
 	{
@@ -14,7 +14,7 @@
 {
 	[common]
 	{
-		screen_name = "Regular Skeleton Mercenary Archers";
+		screen_name = "Reg+Vet Skeleton Rangers";
 	}
 	[placement]
 	{
