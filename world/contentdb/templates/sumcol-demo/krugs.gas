@@ -214,3 +214,73 @@
 		defense = 1000;
 	}
 }
+
+[t:template,n:sumcol_gen_base]
+{
+	specializes = generator_base_generic_bush;
+
+	[aspect]
+	{
+	    [textures] { 0 = b_i_grs_bush-rhod; }
+	}
+
+	[generator_advanced_a2]
+	{
+        num_children_incubating = 1000;
+	}
+}
+
+[t:template,n:sumcol_gen-sumcol_krug_dummy_10]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_10;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_20]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_20;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_50]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_50;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_100]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_100;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_200]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_200;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_300]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_300;
+    }
+}
