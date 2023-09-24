@@ -70,7 +70,7 @@
             {
                 alteration = alter_ranged;
                 duration = #infinite;
-                value = ((#magic)-#ranged);
+                value = ((#magic*1.0)-#ranged);
             }
             [*]
             {
