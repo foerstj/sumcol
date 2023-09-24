@@ -59,13 +59,13 @@
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = (((#magic*24)*3.0) - #maxlife);
+                value = ((((#magic*12)+(#spell_req_level*12))*3.0) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = ((#magic*24)*3.0);
+                value = (((#magic*12)+(#spell_req_level*12))*3.0);
             }
             [*]
             {
