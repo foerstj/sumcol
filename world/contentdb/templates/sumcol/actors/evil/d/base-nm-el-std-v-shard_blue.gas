@@ -1,0 +1,67 @@
+[t:template,n:shard_blue_base]  // = shard_blue
+{
+	category_name = "1W_evil_d";
+	doc = "shard_blue";
+	specializes = base_shard;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength =  15, 0;
+			intelligence =  5, 0;
+			dexterity =  6, 0;
+            nature_magic =  11,  0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = 0.3;
+		[textures] { 0 = b_i_cav_gems-04-static; }
+		experience_value = 513;
+		life = 162;
+        max_life = 162;
+        mana = 40;
+        max_mana = 40;
+        [voice]
+		{
+			[cast]			{ * = s_e_attack_shard; }
+			[die]			{ priority = high; * = s_e_die_shard_large; }
+			[enemy_spotted]	{ priority = high; * = s_e_call_gargoyle; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 59;
+		damage_min = 41;
+	}
+	[defend] { defense=195; }
+
+
+  	[common] { screen_name = "Blue Shard"; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_shard_zap_blue; }
+	}
+	[mind]
+	{
+		on_enemy_entered_ocz_flee 	= true;
+		on_enemy_entered_ocz_attack = false;
+		on_enemy_entered_icz_flee 	= true;
+		on_enemy_entered_icz_attack = false;
+		flee_count 					= 1;
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_shard_blue_01 = 1;
+			frag_glb_shard_blue_02 = 1;
+			frag_glb_shard_blue_03 = 2;
+			frag_glb_shard_blue_04 = 3;
+			frag_glb_shard_blue_05 = 3;
+		}
+	}
+}

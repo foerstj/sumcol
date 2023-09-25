@@ -1,0 +1,58 @@
+[t:template,n:shard_green_base]  // = shard_green
+{
+	category_name = "1W_evil_d";
+	doc = "shard_green";
+	specializes = base_shard;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  13, 0;
+			intelligence =  4, 0;
+			dexterity =  6, 0;
+            nature_magic =  9,  0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = 0.2;
+		[textures] { 0 = b_i_cav_gems-03-static; }
+		experience_value = 391;
+		life = 138;
+        max_life = 138;
+        mana = 33;
+        max_mana = 33;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 56;
+		damage_min = 48;
+	}
+	[defend] { defense=220; }
+  	[common] { screen_name = "Green Shard"; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_shard_zap_green; }
+	}
+	[mind]
+	{
+		on_enemy_entered_ocz_flee 	= true;
+		on_enemy_entered_ocz_attack = false;
+		on_enemy_entered_icz_flee 	= true;
+		on_enemy_entered_icz_attack = false;
+		flee_count 					= 1;
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_shard_green_01 = 1;
+			frag_glb_shard_green_02 = 1;
+			frag_glb_shard_green_03 = 2;
+			frag_glb_shard_green_04 = 3;
+			frag_glb_shard_green_05 = 3;
+		}
+	}
+}

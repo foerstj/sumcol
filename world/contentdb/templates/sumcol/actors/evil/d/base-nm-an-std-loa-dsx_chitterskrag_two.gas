@@ -1,0 +1,146 @@
+[t:template,n:dsx_chitterskrag_two_base]  // = dsx_chitterskrag_two
+//balanced to Level 13
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_chitterskrag_two";
+	specializes = dsx_chitterskrag_base;
+	[actor]
+		{
+		[skills]
+		{
+			strength 		= 14, 0;
+			intelligence 	= 8, 0;
+			dexterity 		= 10, 0;
+			ranged 			= 11, 0;
+			combat_magic	= 11, 0;
+			nature_magic	= 11, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 406;
+		life             = 313;
+		max_life         = 313;
+		mana             = 50;
+		max_mana         = 50;
+		model = m_c_edm_chs_pos_2;
+		scale_base = 1.0;
+		textures:0 = b_c_edm_chs-03;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 56; 
+		damage_min = 40;
+	}
+	[common]
+	{
+		screen_name = "Spewing Chitterskrag"; //--
+		membership = monster; //--
+	}
+	[defend] { defense = 105; }
+	[body]
+	{
+		avg_move_velocity = 2.5;
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_chs_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] 
+				{ 
+				00=rl; //alternate //01=wl;  
+				}
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]{ 00=mg; }
+			}
+		}
+	}
+	[mind]
+	{
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true;
+		
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+		
+		personal_space_range = 0.75;
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_chitterskrag_poison; }
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 16, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 331;
+					max = 658;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/33-44;
+					il_main = #armor/13-100;
+					il_main = #*/33-44;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/36-49;
+					il_main = #armor/-rare(1)/62-146;
+					il_main = #*/-rare(1)/36-49;
+				}
+				
+			}
+		}
+	}
+
+}

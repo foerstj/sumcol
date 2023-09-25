@@ -1,0 +1,82 @@
+[t:template,n:gargoyle_bronze_base]  // = gargoyle_bronze
+{
+	category_name = "1W_evil_d";
+	doc = "gargoyle_bronze";
+	specializes = base_gargoyle;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  24, 0;
+			intelligence =  5, 0;
+			dexterity =  11, 0;
+            combat_magic = 13, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2201;
+		life = 170;
+		max_life = 170;
+        Mana = 10;
+   		max_mana = 10;
+   		scale_base = 1.25;
+   		[textures] { 0 = b_c_edm_ga-03; }
+	}
+	[attack]
+	{
+		attack_range = .5;
+		damage_max = 102;
+		damage_min = 91;
+	}
+	[body]
+	{
+		min_move_velocity = 2.0;
+	}
+   	[common]
+	{
+		screen_name="Bronze Gargoyle";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				action* = call_sfx_script("gargoyle_eye_glow_bronze");
+
+			}
+		}
+	}
+
+
+    [defend] { defense=260; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_gargoyle_zap_bronze; }
+	}
+	[mind]
+	{
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit
+			?meander	= true
+			&still		= false;
+
+
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_gargoyle_bronze_01 = 1;
+			frag_glb_gargoyle_bronze_02 = 1;
+			frag_glb_gargoyle_bronze_03 = 1;
+			frag_glb_gargoyle_bronze_04 = 1;
+			frag_glb_gargoyle_bronze_05 = 1;
+			frag_glb_gargoyle_bronze_06 = 1;
+		}
+	}
+}

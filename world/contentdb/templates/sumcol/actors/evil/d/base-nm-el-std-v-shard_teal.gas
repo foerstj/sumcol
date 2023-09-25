@@ -1,0 +1,39 @@
+[t:template,n:shard_teal_base]  // = shard_teal
+{
+	category_name = "1W_evil_d";
+	doc = "shard_teal";
+	specializes = base_shard;
+  	[common] { screen_name = "Teal Shard"; }
+	[actor]
+	{
+		[skills]
+		{
+			strength =  12, 0;
+			intelligence =  4, 0;
+			dexterity =  5, 0;
+            nature_magic =  8,  0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = 0.15;
+		[textures] { 0 = b_i_cav_gems-01-static; }
+		experience_value = 342;
+		life = 114;
+        max_life = 114;
+        mana = 30;
+        max_mana = 30;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 45;
+		damage_min = 38;
+	}
+	[defend] { defense=175; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_shard_zap_teal; }
+	}
+}

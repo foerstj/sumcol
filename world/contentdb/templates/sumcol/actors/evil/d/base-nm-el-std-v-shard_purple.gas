@@ -1,0 +1,57 @@
+[t:template,n:shard_purple_base]  // = shard_purple
+{
+	category_name = "1W_evil_d";
+	doc = "shard_purple";
+	specializes = base_shard;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  18, 0;
+			intelligence =  7, 0;
+			dexterity =  6, 0;
+            nature_magic =  12,  0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = 0.6;
+		[textures] { 0 = b_i_cav_gems-02-static; }
+		experience_value = 892;
+		life = 567;
+        max_life = 567;
+        mana = 155;
+        max_mana = 155;
+        [voice]
+		{
+			[cast]			{ * = s_e_attack_shard; }
+			[die]			{ priority = high; * = s_e_die_shard_large; }
+			[enemy_spotted]	{ priority = high; * = s_e_call_gargoyle; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 68;
+		damage_min = 54;
+	}
+	[defend] { defense=275; }
+
+  	[common] { screen_name = "Purple Shard"; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_shard_zap_purple; }
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_shard_purple_01 = 1;
+			frag_glb_shard_purple_02 = 1;
+			frag_glb_shard_purple_03 = 2;
+			frag_glb_shard_purple_04 = 3;
+			frag_glb_shard_purple_05 = 3;
+		}
+	}
+}

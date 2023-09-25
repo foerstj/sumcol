@@ -1,0 +1,42 @@
+[t:template,n:mangler_base]  // = mangler
+{
+	doc = "mangler";
+	specializes = base_mangler;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		16, 0;
+			intelligence = 	5, 0;
+			dexterity = 	9, 0;
+			melee =  		12,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1300;
+		life = 360;
+		max_life = 360;
+		mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 100;
+		damage_min = 90;
+	}
+	[common] { screen_name="Mangler"; }
+	[defend] { defense=173; }
+	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				chance = 0.2;
+				il_main = #*/59-71;
+			}
+		}
+	}
+}

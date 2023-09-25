@@ -1,0 +1,87 @@
+[t:template,n:dsx_chitterskrag_baby_base]  // = dsx_chitterskrag_baby
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_chitterskrag_baby";
+	specializes = dsx_chitterskrag_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =     14, 0;
+			intelligence = 8, 0;
+			dexterity =    10, 0;
+			melee =        11, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 262;
+		life             = 157;
+		max_life         = 157;
+		mana             = 50;
+		max_mana         = 50;
+		model = m_c_edm_chs_pos_1;
+		scale_base = 0.35;
+		[voice]
+		{
+			[die]			{ priority = high;	* = s_e_die_baby_chitterskrag_SED;		}
+			[enemy_spotted]	{ priority = high; * = s_e_call_baby_chitterskrag_SED; }
+		}
+		textures:0 = b_c_edm_chs;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 53;
+		damage_min = 47;
+	}
+	[common]
+	{
+		screen_name = "Immature Chitterskrag"; //--
+		membership = monster; //--
+	}
+	[defend] { defense = 90; }
+	[body]
+	{
+		avg_move_velocity = 5;
+	}
+	[inventory]
+	{
+		drop_at_use_point = true;
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 15, Weak */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 268;
+					max = 533;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.1;
+					il_main = #weapon/28-41;
+					il_main = #armor/11-90;
+					il_main = #*/28-41;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-rare(1)/25-44;
+					il_main = #armor/-rare(1)/53-90;
+					il_main = #*/-rare(1)/25-44;
+				}
+				
+			}
+		}
+	}
+}

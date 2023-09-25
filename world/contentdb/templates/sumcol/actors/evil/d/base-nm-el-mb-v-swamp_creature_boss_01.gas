@@ -1,0 +1,103 @@
+[t:template,n:swamp_creature_boss_01_base]  // = swamp_creature_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "swamp creature boss";
+	specializes = base_larch;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  24, 0;
+			intelligence =  9, 0;
+			dexterity =  9, 0;
+            melee =  	20,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 4852;
+		life = 1152;
+		max_life = 1152;
+		mana = 10;
+		max_mana = 10;
+		textures:0 = b_c_edm_la-05;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 145;
+		damage_min = 135;
+		reload_delay = 0;
+	}
+	[common]
+	{
+		screen_name	="Swamp Abomination";
+		membership=monster,party_swamp_slinger,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_green(sgx)");
+			}
+		}
+	}
+   	[defend] { defense=312; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/75-80;
+					il_main = #armor/255-290;
+	                il_main = #weapon/75-80;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/82-96;
+	                il_main = #armor/-rare(1)/266-310;
+                    il_main = #*/-rare(1)/82-96;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/82-96;
+	                il_main = #armor/-unique(2)/266-310;
+                    il_main = #*/-unique(2)/82-96;
+	            }
+				[gold*]
+				{
+					max = 4655;
+					min = 2211;
+					min_pile = 225;
+					piles = 5 - 7;
+				}
+			}
+		}
+	}
+   	[mind]
+	{
+		jat_fidget			= world\ai\jobs\common\job_fidget.skrit
+			?social				= 1.0
+			&friend_template	= false
+			&friends			= party_swamp_creature_boss
+			&still				= false;
+
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&form_party_on_friend_entered_OCZ	= true
+			&form_party_on_friend_entered_ICZ	= true
+			&party_template						= "party_swamp_creature_boss";
+
+		melee_engage_range = 14;
+		personal_space_range = 1.0; //0.7
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+}
