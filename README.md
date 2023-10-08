@@ -21,8 +21,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Phraks: Phrak, Phrak Piercer
     - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider, Arakun Spider, Emerald Spider (LoA)
-  - Gremals:
-    - Miniboss: Hulking Gremal
+  - Gremal Miniboss: Hulking Gremal
   - Manglers: Snapper, Angler (LoA)
   - Worms: Ice Grub (LoA)
   - Moths: Ice Moth (LoA)
@@ -33,6 +32,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Boars: Snow Boar (LoA)
   - Drakes: Red Drake (CM)
   - Klaws: Klaw
+  - Chitterskrag Miniboss: Giant Chitterskrag
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb, Jungle Skrubb (LoA)
     - Worms: Mine Worm
@@ -46,6 +46,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Skeletons: Skeleton Archer, Skeleton Guard
     - Miniboss: Skeleton Captain
   - Wolf Miniboss: Dark Wolf
+  - Wraiths: Wraith Mage
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines (LoA)

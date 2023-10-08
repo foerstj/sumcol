@@ -61,6 +61,7 @@
             il_main = spell_summon_mine_worm;
             il_main = spell_summon_white_wolf;
             il_main = spell_summon_klaw;
+            il_main = scroll_summon_giant_chitterskrag;
             il_main = spell_summon_red_drake;
         }
     }
@@ -98,6 +99,7 @@
             il_main = spell_summon_skeleton_archer;
             il_main = scroll_summon_skeleton_captain;
             il_main = scroll_summon_dark_wolf;
+            il_main = spell_summon_wraith_mage;
         }
     }
 }
