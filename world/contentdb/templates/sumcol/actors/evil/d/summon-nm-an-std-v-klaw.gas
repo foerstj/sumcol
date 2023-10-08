@@ -1,0 +1,15 @@
+[t:template,n:klaw_summon]
+{
+    specializes = klaw_base;
+
+	doc = "[summon] klaw";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

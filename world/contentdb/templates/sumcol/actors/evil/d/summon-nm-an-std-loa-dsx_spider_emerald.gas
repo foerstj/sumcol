@@ -1,0 +1,15 @@
+[t:template,n:dsx_spider_emerald_summon]
+{
+    specializes = dsx_spider_emerald_base;
+
+	doc = "[summon] dsx_spider_emerald";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

@@ -1,0 +1,47 @@
+[t:template,n:dsx_skrubb_jungle_summon]
+{
+    specializes = dsx_skrubb_jungle_base;
+
+	doc = "[summon] dsx_skrubb_jungle";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+
+    [aspect]
+    {
+		[voice]
+		{
+			[cast]			{ * = s_e_attack_skrubb; }
+			[die]			{ priority = high; * = s_e_die_skrubb; }
+			//[enemy_spotted]	{ priority = high; * = s_e_call_skrubb_small_SED; }  // REMOVED
+			[hit_glance]	{ priority = low; * = s_e_hit_skrubb_SED; }
+		}
+    }
+    [common]
+    {
+		[template_triggers]
+		{
+            // from base:
+			[*]
+			{
+				condition* = receive_world_message("we_anim_sfx",1);
+				action* = call_sfx_script("skrubb_goo");
+			}
+            // ADDED:
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");
+				action* = call_sfx_script("sumcol_skrubb_jungle_call");
+			}
+		}
+    }
+    [mind]
+    {
+		jat_startup 							= world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible 							= true
+			&auto_reveal						= true;
+    }
+	[generator_in_object]
+	{
+		spawn_event = WE_ENTERED_WORLD;
+	}
+}

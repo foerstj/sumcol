@@ -1,0 +1,15 @@
+[t:template,n:horrid_summon]
+{
+    specializes = horrid_base;
+
+	doc = "[summon] horrid";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

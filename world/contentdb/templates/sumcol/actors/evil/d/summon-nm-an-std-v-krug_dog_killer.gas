@@ -1,0 +1,8 @@
+[t:template,n:krug_dog_killer_summon]
+{
+    specializes = krug_dog_killer_base;
+
+	doc = "[summon] Krug_dog_killer";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

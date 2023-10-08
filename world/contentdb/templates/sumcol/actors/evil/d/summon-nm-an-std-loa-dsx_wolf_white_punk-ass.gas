@@ -1,0 +1,8 @@
+[t:template,n:dsx_wolf_white_punk-ass_summon]
+{
+    specializes = dsx_wolf_white_punk-ass_base;
+
+	doc = "[summon] dsx_wolf_white_punk-ass";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}
