@@ -1,0 +1,8 @@
+[effect_script*]
+{
+	name	=sumcol_skrubb_jungle_call;
+
+	script	=[[
+        sound play s_e_call_skrubb_small_SED at #TARGET_POSITION dist 4 20;
+    ]];
+}
