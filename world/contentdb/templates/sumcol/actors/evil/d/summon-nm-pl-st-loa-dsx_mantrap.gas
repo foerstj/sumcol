@@ -1,0 +1,58 @@
+[t:template,n:dsx_mantrap_summon]
+{
+    specializes = dsx_mantrap_base;
+
+	doc = "[summon] dsx_mantrap";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+
+    [aspect]
+    {
+		[voice]
+		{
+			[cast]			{ * = s_e_attack_mantrap_SED; }
+			[die]			{ priority = high;	* = s_e_die_mantrap;		}
+			//[enemy_spotted]	{ priority = high; * = s_e_ground_burst_SED; }  // REMOVED
+		}
+    }
+    [common]
+    {
+		[template_triggers]
+		{
+            // from base:
+			[*]
+			{
+				action* = call_sfx_script("mine_worm_dust");
+				condition* = receive_world_message("we_anim_sfx",1);
+			}
+			[*]
+			{
+				action* = call_sfx_script("mine_worm_die_dust");
+				condition* = receive_world_message("we_anim_die");
+			}
+            // ADDED:
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");
+				action* = call_sfx_script("sumcol_mantrap_ground_burst");
+			}
+		}
+    }
+    [mind]
+    {
+		jat_startup 							= world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible 							= true
+			&auto_reveal						= true;
+    }
+	[generator_in_object]
+	{
+		spawn_event = WE_ENTERED_WORLD;
+	}
+}
