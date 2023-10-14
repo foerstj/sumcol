@@ -25,6 +25,9 @@
     {
         template_name = {{ctn}}{% if ctn_suffix %}_{{ctn_suffix}}{% endif %}_summon;
         script_params = "[scale({{scale | float}})]";
+        {% if effect_script %}
+        effect_script = "{{effect_script}}";
+        {% endif %}
         {% if end_script %}
         end_script = "{{end_script}}";
         {% endif %}
