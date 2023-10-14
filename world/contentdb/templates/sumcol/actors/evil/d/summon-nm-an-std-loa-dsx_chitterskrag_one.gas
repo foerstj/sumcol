@@ -1,0 +1,15 @@
+[t:template,n:dsx_chitterskrag_one_summon]
+{
+    specializes = dsx_chitterskrag_one_base;
+
+	doc = "[summon] dsx_chitterskrag_one";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

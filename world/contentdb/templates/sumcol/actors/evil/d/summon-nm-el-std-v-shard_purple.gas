@@ -1,0 +1,42 @@
+[t:template,n:shard_purple_summon]
+{
+    specializes = shard_purple_base;
+
+	doc = "[summon] shard_purple";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+
+    [aspect]
+    {
+		[voice]
+		{
+			[cast]			{ * = s_e_attack_shard; }
+			[die]			{ priority = high; * = s_e_die_shard_large; }
+			//[enemy_spotted]	{ priority = high; * = s_e_call_gargoyle; }  // REMOVED
+		}
+    }
+    [common]
+    {
+		[template_triggers]
+		{
+            // ADDED:
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");
+				action* = call_sfx_script("sumcol_shard_call");
+			}
+		}
+    }
+    [mind]
+    {
+		actor_auto_fidgets = true;
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit?auto_reveal=true;
+    }
+}

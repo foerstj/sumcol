@@ -63,6 +63,9 @@
             il_main = spell_summon_klaw;
             il_main = spell_summon_thunder_lizard;
             il_main = spell_summon_rending_mhulliq;
+            il_main = spell_summon_chitterskrag_baby;
+            il_main = spell_summon_chitterskrag;
+            il_main = spell_summon_chitterskrag_spew;
             il_main = scroll_summon_giant_chitterskrag;
             il_main = spell_summon_red_drake;
         }
@@ -80,10 +83,14 @@
             il_main = spell_summon_gargoyle_melee;
             il_main = spell_summon_frost_golem;
             il_main = spell_summon_ice_fly;
-            il_main = spell_summon_ice_warrior;
             il_main = spell_summon_ice_archer;
-            il_main = spell_summon_swamp_creature;
+            il_main = spell_summon_teal_shard;
+            il_main = spell_summon_ice_warrior;
+            il_main = spell_summon_green_shard;
+            il_main = spell_summon_blue_shard;
+            il_main = spell_summon_purple_shard;
             il_main = spell_summon_swamp_slinger;
+            il_main = spell_summon_swamp_creature;
             il_main = spell_summon_lava_beast;
         }
     }
