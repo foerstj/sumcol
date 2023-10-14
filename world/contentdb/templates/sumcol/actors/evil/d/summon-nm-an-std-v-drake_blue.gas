@@ -1,0 +1,12 @@
+[t:template,n:drake_blue_summon]
+{
+    specializes = drake_blue_base;
+
+    doc = "[summon] drake_blue";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}

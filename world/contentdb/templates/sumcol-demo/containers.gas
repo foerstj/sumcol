@@ -64,9 +64,11 @@
             il_main = spell_summon_thunder_lizard;
             il_main = spell_summon_rending_mhulliq;
             il_main = spell_summon_chitterskrag_baby;
+            il_main = spell_summon_frost_drake;
             il_main = spell_summon_chitterskrag;
             il_main = spell_summon_chitterskrag_spew;
             il_main = scroll_summon_giant_chitterskrag;
+            il_main = spell_summon_blue_drake;
             il_main = spell_summon_red_drake;
         }
     }

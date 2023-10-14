@@ -30,7 +30,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Dogs: Krug Dog, Krug Killer Dog
   - Lizards: Island Lizard (LoA), Thunder Lizard (LoA)
   - Boars: Snow Boar (LoA), Rending Mhulliq (LoA)
-  - Drakes: Red Drake (CM)
+  - Drakes: Frost Drake, Blue Drake, Red Drake (CM)
   - Klaws: Klaw
   - Chitterskrags: Immature Chitterskrag, Chitterskrag, Spewing Chitterskrag
     - Miniboss: Giant Chitterskrag
