@@ -28,11 +28,12 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Wolves: Gray Wolf, White Wolf, Varg (LoA)
     - Miniboss: Alpha Wolf
   - Dogs: Krug Dog, Krug Killer Dog
-  - Lizards: Island Lizard (LoA)
-  - Boars: Snow Boar (LoA)
+  - Lizards: Island Lizard (LoA), Thunder Lizard (LoA)
+  - Boars: Snow Boar (LoA), Rending Mhulliq (LoA)
   - Drakes: Red Drake (CM)
   - Klaws: Klaw
-  - Chitterskrag Miniboss: Giant Chitterskrag
+  - Chitterskrags: Immature Chitterskrag, Chitterskrag, Spewing Chitterskrag
+    - Miniboss: Giant Chitterskrag
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb, Jungle Skrubb (LoA)
     - Worms: Mine Worm
@@ -40,6 +41,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Gargoyles (CM): Gargoyle (melee)
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
   - Frost (NM): Frost Golem (LoA)
+  - Shards (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
   - Swamp (NM): Swamp Creature, Swamp Slinger
   - Lava (CM): Lava Beast
 - Undead (CM):
@@ -50,10 +52,12 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines (LoA)
+    - Mantraps: Mantrap (LoA)
 - Demonics (CM):
   - Mucosa: Vile Mucosa
   - Rune: Rune Fiend (LoA)
   - Horrids: Horrid
+  - Eyes: Whelnar's Eyes (LoA)
 
 ## Balancing
 
