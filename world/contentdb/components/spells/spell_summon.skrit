@@ -62,7 +62,7 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 	}
 	if( ( e$ == WE_EXPLODED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
 	{
-		this.CreateTimer( 2, .1 );
+		this.CreateTimer( 2, 3 );
 	}
 }
 
