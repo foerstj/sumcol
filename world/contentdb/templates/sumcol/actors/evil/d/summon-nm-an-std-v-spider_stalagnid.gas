@@ -10,8 +10,56 @@
         [pcontent] {}
     }
 
+	[body]
+	{
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_sn_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=at; }
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_misc]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files]
+				{
+					slep = ds;
+					wake = rv;
+				}
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }  // EDITED
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
     [mind]
     {
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit?auto_reveal=true;
+		actor_auto_fidgets = true;  // Together with "dsf" fidget anim, this prevents the stalagnid to revert to its static position and then ignore its surroundings
     }
 }
