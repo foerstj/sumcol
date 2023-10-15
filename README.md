@@ -41,6 +41,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Elementals
   - Gargoyles (CM): Gargoyle (melee)
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
+    - Miniboss: Frost Warrior, Frost Archer
   - Frost (NM): Frost Golem (LoA)
   - Rock (NM): Marble Golem (LoA)
   - Crystal (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard

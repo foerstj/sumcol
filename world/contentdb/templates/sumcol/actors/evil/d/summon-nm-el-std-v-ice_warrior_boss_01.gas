@@ -1,0 +1,17 @@
+[t:template,n:ice_warrior_boss_01_summon]
+{
+    specializes = ice_warrior_boss_01_base;
+
+    doc = "[summon] ice_warrior_boss_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+    	[equipment]
+		{
+            es_weapon_hand = sd_un_ice_avg;
+		}
+        [pcontent] {}
+    }
+}

@@ -91,7 +91,9 @@
             il_main = spell_summon_teal_shard;
             il_main = spell_summon_ice_warrior;
             il_main = spell_summon_green_shard;
+            il_main = scroll_summon_frost_archer;
             il_main = spell_summon_blue_shard;
+            il_main = scroll_summon_frost_warrior;
             il_main = spell_summon_marble_golem;
             il_main = spell_summon_purple_shard;
             il_main = spell_summon_swamp_slinger;
