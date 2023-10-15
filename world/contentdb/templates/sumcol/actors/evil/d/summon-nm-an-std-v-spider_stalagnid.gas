@@ -1,0 +1,17 @@
+[t:template,n:spider_stalagnid_summon]
+{
+    specializes = spider_stalagnid_base;
+
+    doc = "[summon] spider_stalagnid";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+
+    [mind]
+    {
+		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit?auto_reveal=true;
+    }
+}

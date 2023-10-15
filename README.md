@@ -20,11 +20,12 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Animals (NM):
   - Phraks: Phrak, Phrak Piercer
     - Miniboss: Phrak Ballista
-  - Spiders: Yellow Spider, Arakun Spider, Emerald Spider (LoA)
+  - Spiders: Yellow Spider, Arakun Spider, Emerald Spider (LoA), Stalagnid
   - Gremal Miniboss: Hulking Gremal
   - Manglers: Snapper, Angler (LoA)
   - Worms: Ice Grub (LoA)
   - Moths: Ice Moth (LoA)
+  - Midges: Swirling Midges (LoA)
   - Wolves: Gray Wolf, White Wolf, Varg (LoA)
     - Miniboss: Alpha Wolf
   - Dogs: Krug Dog, Krug Killer Dog
@@ -41,7 +42,8 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Gargoyles (CM): Gargoyle (melee)
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
   - Frost (NM): Frost Golem (LoA)
-  - Shards (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
+  - Rock (NM): Marble Golem (LoA)
+  - Crystal (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
   - Swamp (NM): Swamp Creature, Swamp Slinger
   - Lava (CM): Lava Beast
 - Undead (CM):
