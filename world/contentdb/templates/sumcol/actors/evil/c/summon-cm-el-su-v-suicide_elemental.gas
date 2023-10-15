@@ -1,0 +1,15 @@
+[t:template,n:suicide_elemental_good_summon]
+{
+    specializes = suicide_elemental_base;
+
+    doc = "[summon] suicide_elemental (good)";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

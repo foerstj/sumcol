@@ -118,6 +118,7 @@
             il_main = spell_summon_bronze_gargoyle;
             il_main = spell_summon_swamp_creature;
             il_main = scroll_summon_swamp_abomination;
+            il_main = spell_summon_blazing_elemental;
             il_main = spell_summon_lava_spirit_melee;
             il_main = spell_summon_lava_beast;
             il_main = scroll_summon_magma_beast;
