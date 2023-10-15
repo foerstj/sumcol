@@ -20,6 +20,7 @@ del "%ds%\DSLOA\%res_cs% - Demonics.dsres"
 del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
 del "%ds%\DSLOA\%res_cs% - Miniboss.dsres"
+del "%ds%\DSLOA\%res_cs% - Explosive.dsres"
 :: by DS version
 del "%ds%\DSLOA\%res_cs% - Vanilla.dsres"
 del "%ds%\DSLOA\%res_cs% - LoA.dsres"

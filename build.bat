@@ -110,6 +110,15 @@ if "%mode%"=="release" (
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Miniboss.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
   if !errorlevel! neq 0 pause
 
+  :: Explosive
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-ex-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" base-* *-ex-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-ex-* /S
+  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Explosive.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
+  if !errorlevel! neq 0 pause
+
 
   :: Vanilla
   rmdir /S /Q "%tmp%\Bits"
