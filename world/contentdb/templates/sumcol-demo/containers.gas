@@ -55,6 +55,8 @@
             il_main = spell_summon_klaw;
             il_main = spell_summon_frost_drake;
             il_main = spell_summon_stalagnid;
+            il_main = spell_summon_swamp_stinger;
+            il_main = spell_summon_mangler;
             il_main = spell_summon_blue_drake;
             il_main = spell_summon_red_drake;
         }
@@ -109,7 +111,9 @@
             il_main = spell_summon_marble_golem;
             il_main = spell_summon_purple_shard;
             il_main = spell_summon_swamp_slinger;
+            il_main = spell_summon_bronze_gargoyle;
             il_main = spell_summon_swamp_creature;
+            il_main = scroll_summon_swamp_abomination;
             il_main = spell_summon_lava_beast;
         }
     }
@@ -142,6 +146,7 @@
         {
             il_main = spell_summon_killer_vines;
             il_main = spell_summon_mantrap;
+            il_main = spell_summon_tretch;
         }
     }
 }

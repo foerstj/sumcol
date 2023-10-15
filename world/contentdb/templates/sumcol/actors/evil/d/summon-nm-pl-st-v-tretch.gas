@@ -1,0 +1,12 @@
+[t:template,n:tretch_summon]
+{
+    specializes = tretch_base;
+
+    doc = "[summon] tretch";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}

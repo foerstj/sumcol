@@ -18,11 +18,11 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ## Features:
 - Animals (NM):
-  - Phraks: Phrak, Phrak Piercer
+  - Phraks: Phrak, Phrak Piercer, Swamp Stinger
     - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider, Arakun Spider, Emerald Spider (LoA), Stalagnid
   - Gremal Miniboss: Hulking Gremal
-  - Manglers: Snapper, Angler (LoA)
+  - Manglers: Snapper, Angler (LoA), Mangler
   - Worms: Ice Grub (LoA)
   - Moths: Ice Moth (LoA)
   - Midges: Swirling Midges (LoA)
@@ -39,13 +39,14 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Skrubbs: Farm Skrubb, Black Skrubb, Jungle Skrubb (LoA)
     - Worms: Mine Worm
 - Elementals
-  - Gargoyles (CM): Gargoyle (melee)
+  - Gargoyles (CM): Gargoyle (melee), Bronze Gargoyle
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
     - Miniboss: Frost Warrior, Frost Archer
   - Frost (NM): Frost Golem (LoA)
   - Rock (NM): Marble Golem (LoA)
   - Crystal (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
   - Swamp (NM): Swamp Creature, Swamp Slinger
+    - Miniboss: Swamp Abomination
   - Lava (CM): Lava Beast
 - Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard
@@ -56,6 +57,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Stationary:
     - Vines: Killer Vines (LoA)
     - Mantraps: Mantrap (LoA)
+    - Trees: Tretch
 - Demonics (CM):
   - Mucosa: Vile Mucosa
   - Rune: Rune Fiend (LoA)

@@ -1,0 +1,12 @@
+[t:template,n:mangler_summon]
+{
+    specializes = mangler_base;
+
+    doc = "[summon] mangler";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}
