@@ -18,12 +18,12 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ## Features:
 - Animals (NM):
-  - Phraks: Phrak, Phrak Piercer, Swamp Stinger
+  - Phraks: Phrak, Phrak Piercer, Swamp Stinger, Forest Phrak
     - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider, Arakun Spider, Emerald Spider (LoA), Stalagnid
   - Gremal Miniboss: Hulking Gremal
-  - Manglers: Snapper, Angler (LoA), Mangler
-  - Worms: Ice Grub (LoA)
+  - Manglers: Snapper, Angler (LoA), Mangler, Sea Mangler
+  - Worms: Ice Grub (LoA), Googore Grub
   - Moths: Ice Moth (LoA)
   - Midges: Swirling Midges (LoA)
   - Wolves: Gray Wolf, White Wolf, Varg (LoA)
@@ -37,7 +37,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Miniboss: Giant Chitterskrag
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb, Jungle Skrubb (LoA)
-    - Worms: Mine Worm
+    - Worms: Mine Worm, Googore
 - Elementals
   - Gargoyles (CM): Gargoyle (melee), Bronze Gargoyle
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
@@ -47,13 +47,15 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Crystal (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
   - Swamp (NM): Swamp Creature, Swamp Slinger
     - Miniboss: Swamp Abomination
-  - Lava (CM): Lava Beast
+  - Lava (CM): Lava Beast, Lava Spirit (melee)
+    - Miniboss: Magma Beast
 - Undead (CM):
-  - Skeletons: Skeleton Archer, Skeleton Guard
+  - Skeletons: Skeleton Archer, Skeleton Guard, Skeleton Ranger, Skeleton Mercenary
     - Miniboss: Skeleton Captain
   - Wolf Miniboss: Dark Wolf
   - Wraiths: Wraith Mage
 - Plants (NM):
+  - Larch Miniboss: Infested Larch
   - Stationary:
     - Vines: Killer Vines (LoA)
     - Mantraps: Mantrap (LoA)
@@ -61,8 +63,9 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Demonics (CM):
   - Mucosa: Vile Mucosa
   - Rune: Rune Fiend (LoA)
-  - Horrids: Horrid
-  - Eyes: Whelnar's Eyes (LoA)
+  - Horrid
+  - Whelnar's Eyes (LoA)
+  - Synged
 
 ## Balancing
 
