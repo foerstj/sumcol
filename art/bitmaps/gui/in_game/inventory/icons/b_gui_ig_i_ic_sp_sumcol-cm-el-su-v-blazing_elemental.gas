@@ -1,0 +1,7 @@
+[t:tsd,n:b_gui_ig_i_ic_sp_sumcol-cm-el-su-v-blazing_elemental]
+{
+  b dither = true;
+  b hasalpha = true;
+    layer1texture1 = b_gui_ig_i_ic_sp_sumcol-cm-el-su-v-blazing_elemental;
+  i texturedetail = 0;
+}
