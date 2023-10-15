@@ -1,0 +1,12 @@
+[t:template,n:googore_grub_summon]
+{
+    specializes = googore_grub_base;
+
+    doc = "[summon] googore_grub";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}

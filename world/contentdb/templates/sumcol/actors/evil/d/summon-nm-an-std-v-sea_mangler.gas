@@ -1,0 +1,12 @@
+[t:template,n:sea_mangler_summon]
+{
+    specializes = sea_mangler_base;
+
+    doc = "[summon] sea_mangler";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}

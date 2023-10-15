@@ -1,0 +1,107 @@
+[t:template,n:scroll_summon_infested_larch] { specializes = scroll_summon_infested_larch_base; }
+[t:template,n:scroll_summon_infested_larch_base]
+{
+    specializes = base_scroll_sumcol_nm;
+
+    doc = "scroll Summon Infested Larch";
+    [aspect]
+    {
+        gold_value = 19000;
+    }
+    [common]
+    {
+        screen_name = "Summon Infested Larch";
+    }
+    [common]
+    {
+        description = "Summons an Infested Larch to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-nm-pl-mb-v-infested_larch;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-nm-pl-mb-v-infested_larch-inv;
+    }
+    [spell_summon]
+    {
+        template_name = larch_boss_01_summon;
+        script_params = "[scale(2.0)]";
+    }
+    [magic]
+    {
+        effect_duration = 780;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*15;
+        required_level = 60;
+        max_level = 80;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*1.35)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*1.35)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*3.5)*2.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*7.5) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*7.5);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic*0.8)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}

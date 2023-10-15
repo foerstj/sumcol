@@ -57,6 +57,10 @@
             il_main = spell_summon_stalagnid;
             il_main = spell_summon_swamp_stinger;
             il_main = spell_summon_mangler;
+            il_main = spell_summon_forest_phrak;
+            il_main = spell_summon_googore_grub;
+            il_main = spell_summon_sea_mangler;
+            il_main = spell_summon_googore;
             il_main = spell_summon_blue_drake;
             il_main = spell_summon_red_drake;
         }
@@ -114,7 +118,9 @@
             il_main = spell_summon_bronze_gargoyle;
             il_main = spell_summon_swamp_creature;
             il_main = scroll_summon_swamp_abomination;
+            il_main = spell_summon_lava_spirit_melee;
             il_main = spell_summon_lava_beast;
+            il_main = scroll_summon_magma_beast;
         }
     }
 }
@@ -132,6 +138,8 @@
             il_main = scroll_summon_skeleton_captain;
             il_main = scroll_summon_dark_wolf;
             il_main = spell_summon_wraith_mage;
+            il_main = spell_summon_skeleton_ranger;
+            il_main = spell_summon_skeleton_mercenary;
         }
     }
 }
@@ -147,6 +155,7 @@
             il_main = spell_summon_killer_vines;
             il_main = spell_summon_mantrap;
             il_main = spell_summon_tretch;
+            il_main = scroll_summon_infested_larch;
         }
     }
 }
@@ -163,6 +172,7 @@
             il_main = spell_summon_vile_mucosa;
             il_main = spell_summon_horrid;
             il_main = spell_summon_whelnars_eyes;
+            il_main = spell_summon_synged;
         }
     }
 }

@@ -1,0 +1,12 @@
+[t:template,n:larch_boss_01_summon]
+{
+    specializes = larch_boss_01_base;
+
+    doc = "[summon] larch_boss_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}

@@ -1,0 +1,12 @@
+[t:template,n:phrak_forest_summon]
+{
+    specializes = phrak_forest_base;
+
+    doc = "[summon] phrak_forest";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}
