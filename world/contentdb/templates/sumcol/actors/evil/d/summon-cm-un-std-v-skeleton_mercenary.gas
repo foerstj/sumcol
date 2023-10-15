@@ -1,8 +1,8 @@
-[t:template,n:skeleton_mercenary_summon]
+[t:template,n:skeleton_mercenary_good_summon]
 {
     specializes = skeleton_mercenary_base;
 
-    doc = "[summon] skeleton_mercenary";
+    doc = "[summon] skeleton_mercenary (good)";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
     [inventory]

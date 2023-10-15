@@ -1,8 +1,8 @@
-[t:template,n:sea_mangler_summon]
+[t:template,n:mangler_sea_summon]
 {
-    specializes = sea_mangler_base;
+    specializes = mangler_sea_base;
 
-    doc = "[summon] sea_mangler";
+    doc = "[summon] mangler_sea";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
     [inventory]
