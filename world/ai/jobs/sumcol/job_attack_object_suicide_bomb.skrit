@@ -100,7 +100,7 @@ state Exploding$
 	event OnEnterState$
 	{
 		Physics.ExplodeGoWithDamage( m_Go$.Goid, m_Go$.Goid, m_Go$.Goid );
-        PostWorldMessage ( WE_KILLED, m_Go$.Goid, m_Go$.Goid, 0 );
+        //PostWorldMessage ( WE_KILLED, m_Go$.Goid, m_Go$.Goid, 0 );
 	}
 }
 
