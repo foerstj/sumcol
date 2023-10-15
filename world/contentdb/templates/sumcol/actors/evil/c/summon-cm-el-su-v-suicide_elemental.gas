@@ -13,6 +13,10 @@
 		}
 	}
 
+    [mind]
+    {
+		jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
+    }
 	[self_destruct] 
 	{
 		delete_time = -1;  // Disabling automatic explosion after 15s.
