@@ -7,6 +7,13 @@
     physics:explode_when_killed = false;
     [inventory]
     {
-        [pcontent] {}
+        [pcontent]
+        {
+			[all*]
+			{
+				es_shield_hand = bw_g_c_c_l_4_avg;
+				es_chest = #body,r/-no_mod/95-122;
+			}
+        }
     }
 }
