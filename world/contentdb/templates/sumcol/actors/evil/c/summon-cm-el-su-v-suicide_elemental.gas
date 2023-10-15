@@ -12,4 +12,9 @@
             // ERASED
 		}
 	}
+
+	[self_destruct] 
+	{
+		delete_time = -1;  // Disabling automatic explosion after 15s.
+	}
 }
