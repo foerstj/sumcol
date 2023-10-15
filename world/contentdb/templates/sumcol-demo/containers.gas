@@ -28,11 +28,11 @@
     aspect:does_block_path = false;
 }
 
-[t:template,n:sumcol_demo_barrel_animals]
+[t:template,n:sumcol_demo_barrel_animals_vanilla]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Animals";
+    common:screen_name = "Animals Vanilla";
     [inventory]
     {
         [other]
@@ -42,36 +42,48 @@
             il_main = spell_summon_snapper;
             il_main = spell_summon_yellow_spider;
             il_main = spell_summon_farm_skrubb;
-            il_main = spell_summon_ice_grub;
-            il_main = spell_summon_ice_moth;
             il_main = spell_summon_krug_dog;
             il_main = scroll_summon_phrak_ballista;
-            il_main = spell_summon_varg;
             il_main = spell_summon_gray_wolf;
-            il_main = spell_summon_snow_boar;
             il_main = scroll_summon_alpha_wolf;
             il_main = spell_summon_black_skrubb;
             il_main = spell_summon_arakun_spider;
-            il_main = spell_summon_bubber;
-            il_main = spell_summon_angler;
             il_main = spell_summon_krug_killer_dog;
-            il_main = spell_summon_emerald_spider;
             il_main = scroll_summon_hulking_gremal;
-            il_main = spell_summon_jungle_skrubb;
             il_main = spell_summon_mine_worm;
             il_main = spell_summon_white_wolf;
             il_main = spell_summon_klaw;
+            il_main = spell_summon_frost_drake;
+            il_main = spell_summon_stalagnid;
+            il_main = spell_summon_blue_drake;
+            il_main = spell_summon_red_drake;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_animals_loa]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Animals LoA";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_ice_grub;
+            il_main = spell_summon_ice_moth;
+            il_main = spell_summon_varg;
+            il_main = spell_summon_snow_boar;
+            il_main = spell_summon_bubber;
+            il_main = spell_summon_angler;
+            il_main = spell_summon_emerald_spider;
+            il_main = spell_summon_jungle_skrubb;
             il_main = spell_summon_thunder_lizard;
             il_main = spell_summon_rending_mhulliq;
             il_main = spell_summon_chitterskrag_baby;
             il_main = spell_summon_swirling_midges;
-            il_main = spell_summon_frost_drake;
-            il_main = spell_summon_stalagnid;
             il_main = spell_summon_chitterskrag;
             il_main = spell_summon_chitterskrag_spew;
             il_main = scroll_summon_giant_chitterskrag;
-            il_main = spell_summon_blue_drake;
-            il_main = spell_summon_red_drake;
         }
     }
 }
