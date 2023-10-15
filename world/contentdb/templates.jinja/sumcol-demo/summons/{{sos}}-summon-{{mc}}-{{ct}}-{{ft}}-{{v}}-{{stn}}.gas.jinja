@@ -31,7 +31,7 @@
     {
         effect_duration = {{dur_min * 60}};
         mana_cost = 0;
-        mana_cost_modifier = (#magic+1)*{% if ft == 'st' %}3{% else %}{% if ft == 'su' %}1{% else %}15{% endif %}{% endif %};
+        mana_cost_modifier = (#magic+1)*{% if ft == 'st' %}3{% else %}{% if ft == 'ex' %}1{% else %}15{% endif %}{% endif %};
         required_level = {{req_lvl}};
         max_level = {{ req_lvl + 20 }};
 
