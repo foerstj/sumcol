@@ -4,7 +4,7 @@
 
     doc = "[summon] suicide_elemental (good)";
 	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
+    //physics:explode_when_killed = false;
 	[inventory]
 	{
 		[pcontent]
