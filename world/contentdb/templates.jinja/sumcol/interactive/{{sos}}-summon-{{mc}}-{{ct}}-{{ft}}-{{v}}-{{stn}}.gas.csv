@@ -4,8 +4,8 @@ spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;48;6;2;;;0.8
 spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;38;7;2;0.9;;;;;1;0.6;;
 spell;yellow_spider;spider_adolescent_yellow;;a;Yellow Spider;0.75;nm;an;std;v;30;7;1;0.8;;;;;2;0.4;;
 spell;farm_skrubb;skrubb_farm;;a;Farm Skrubb;1;nm;an;st;v;10;1;2;;;0.9;;;1.5;0.8;;
-spell;ice_grub;dsx_grub;;an;Ice Grub;1;nm;an;std;loa;30;8;1;0.8;;;;;1;0.4;;
-spell;ice_moth;dsx_moth;;an;Ice Moth;1.5;nm;an;std;loa;48;5;2;;;0.8;;;2;0.3;;
+spell;ice_grub;dsx_grub;;an;Ice Grub;1;nm;an;std;loa;30;9;1;0.8;;;;;1;0.4;;
+spell;ice_moth;dsx_moth;;an;Ice Moth;1.5;nm;an;std;loa;48;6;2;;;0.8;;;2;0.3;;
 spell;gargoyle_melee;gargoyle;;a;Gargoyle;0.75;cm;el;std;v;48;6;3;0.9;;;;;3;0.4;;
 spell;krug_dog;krug_dog;;a;Krug Dog;1.25;nm;an;std;v;48;6;3;1;;;;;1;0.8;;
 scroll;phrak_ballista;phrak_piercer_boss_01;;a;Phrak Ballista;1;nm;an;mb;v;12;14;3;;;1;;;2;1.2;;
@@ -13,7 +13,7 @@ spell;varg;dsx_wolf_white_punk-ass;;a;Varg;1;nm;an;std;loa;48;6;3;0.95;;;;;1;0.6
 spell;gray_wolf;wolf_gray;;a;Gray Wolf;1.5;nm;an;std;v;60;6;4;1;;;;;1;0.8;;
 spell;snow_boar;dsx_boar;;a;Snow Boar;1.5;nm;an;std;loa;60;6;4;1;;;;;1;1;;
 scroll;alpha_wolf;wolf_gray_boss_01;;an;Alpha Wolf;1.75;nm;an;mb;v;12;14;4;1.2;;;;;1;2.4;;
-spell;black_skrubb;skrubb_small;;a;Black Skrubb;2;nm;an;st;v;24;1;6;;;1;;;1.5;1.8;;
+spell;black_skrubb;skrubb_small;;a;Black Skrubb;2;nm;an;st;v;24;0.5;6;;;1;;;1.5;1.8;;
 spell;skeleton_guard;skeleton_guard;;a;Skeleton Guard;1.5;cm;un;std;v;300;6;11;1.1;;;14;17;2.5;1;;
 spell;frost_golem;dsx_golem_frost_ranged;;a;Frost Golem;1.25;nm;el;std;loa;95;5;5;1;;1;;;2.5;1;;
 spell;arakun_spider;spider_adolescent;;an;Arakun Spider;1.25;nm;an;std;v;96;7;6;0.9;;;;;2;0.7;;

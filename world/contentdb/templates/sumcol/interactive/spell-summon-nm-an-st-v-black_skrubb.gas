@@ -28,7 +28,7 @@
     }
     [magic]
     {
-        effect_duration = 60;
+        effect_duration = 30.0;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*3;
         required_level = 6;
