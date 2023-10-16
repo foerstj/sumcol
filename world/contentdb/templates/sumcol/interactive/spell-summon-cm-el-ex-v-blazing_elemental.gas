@@ -28,7 +28,7 @@
     }
     [magic]
     {
-        effect_duration = 180;
+        effect_duration = 120;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*1;
         required_level = 63;
@@ -40,7 +40,7 @@
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*3.5)*0.5) - #base_defense);
+                value = (((#magic*3.5)*2.0) - #base_defense);
             }
             [*]
             {

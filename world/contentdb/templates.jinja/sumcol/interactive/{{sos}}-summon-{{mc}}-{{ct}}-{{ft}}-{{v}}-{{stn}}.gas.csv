@@ -32,7 +32,7 @@ spell;white_wolf;wolf_white;;a;White Wolf;1.5;nm;an;std;v;960;6;16;0.95;;;;;1;0.
 spell;ice_fly;ice_fly;;an;Ice Fly;0.75;nm;el;std;v;1900;6;19;0.9;;;;;2;0.4;;
 spell;klaw;klaw;;a;Klaw;1.5;nm;an;std;v;960;6;16;1.05;;;;;1;1.2;;
 spell;horrid;horrid;;a;Horrid;1.75;cm;de;std;v;380;6;12;1.1;;;29;31;1;1.2;;
-spell;whelnars_eyes;dsx_eyes_whelnar;;;Whelnar’s Eyes;0.75;cm;de;std;loa;3800;9;21;;;0.8;;;0.5;0.4;summon_eyes_whelnar;
+spell;whelnars_eyes;dsx_eyes_whelnar;;;Whelnar’s Eyes;0.75;cm;de;std;loa;3800;7;21;;;0.8;;;2;0.4;summon_eyes_whelnar;
 spell;mantrap;dsx_mantrap;;a;Mantrap;2;nm;pl;st;loa;380;0.5;18;0.95;;0.95;;;1;2.5;;
 spell;thunder_lizard;dsx_lizard_thunder;;a;Thunder Lizard;1.5;nm;an;std;loa;15000;7;28;1;;;;;1.5;0.8;;
 spell;rending_mhulliq;dsx_mhulliq_two;;a;Rending Mhulliq;1.5;nm;an;std;loa;4800;6;23;1;;;;;1;1;;
@@ -68,7 +68,7 @@ spell;wraith_mage;wraith_mage;;a;Wraith Mage;1.25;cm;un;std;v;66000;5;47;;;0.95;
 spell;skeleton_ranger;skeleton_mercenary_archer;good;a;Skeleton Ranger;1.5;cm;un;std;v;72000;5;49;;1;;94;110;2.5;1;;
 spell;googore;googore;;a;Googore;2;nm;an;st;v;13000;0.5;47;;;0.9;;;1;2.5;;
 spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;58000;6;49;1.05;;;35;58;2.5;1;;
-spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;22000;3;63;;;;;;0.5;0.8;;
+spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;22000;2;63;;;;;;2;0.8;;
 spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;52000;4;42;1.1;;1.1;;;1.5;2.5;;
 scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;19000;13;60;1.35;;;;;2;7.5;;
 spell;synged;synged;;a;Synged;1;cm;de;std;v;96000;6;60;0.9;;;;;1;0.8;;
