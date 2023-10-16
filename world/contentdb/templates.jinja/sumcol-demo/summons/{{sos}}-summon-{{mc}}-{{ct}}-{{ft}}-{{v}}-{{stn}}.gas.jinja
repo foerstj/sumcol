@@ -1,7 +1,7 @@
 [t:template,n:{{sos}}_summon_{{stn}}_sumcol_demo] { specializes = {{sos}}_summon_{{stn}}_sumcol_demo_base; }
 [t:template,n:{{sos}}_summon_{{stn}}_sumcol_demo_base]
 {
-    specializes = base_{{sos}}_sumcol_{{mc}};
+    specializes = base_{{sos}}_sumcol_{{mc}}{% if ft == 'ex' %}_explosive{% endif %};
     [common]    { is_pcontent_allowed = false;    }
 
     doc = "{{sos}} Summon {{csn}} (SumCol Demo)";
@@ -22,10 +22,16 @@
         active_icon =   b_gui_ig_i_ic_sp_{{'%03d' % icon}};
         inventory_icon =b_gui_ig_i_ic_sp_{{'%03d' % icon}}_inv;
     }
-    [spell_summon]
+    [spell_summon{% if ft == 'ex' %}_explosive{% endif %}]
     {
         template_name = {{ctn}}{% if ctn_suffix %}_{{ctn_suffix}}{% endif %};
         script_params = "[scale({{scale | float}})]";
+        {% if effect_script %}
+        effect_script = "{{effect_script}}";
+        {% endif %}
+        {% if end_script %}
+        end_script = "{{end_script}}";
+        {% endif %}
     }
     [magic]
     {
