@@ -222,6 +222,7 @@
 	[aspect]
 	{
 	    [textures] { 0 = b_i_grs_bush-rhod; }
+        scale_base = 0.5;
 	}
 
 	[generator_advanced_a2]
