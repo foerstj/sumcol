@@ -107,7 +107,11 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.8)-#melee);
+                {% if req_lvl <= 50 %}
+                value = ((#magic*{{ 1 - req_lvl/200 }})-#melee);
+                {% else %}
+                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#melee);
+                {% endif %}
             }
             {% endif %}
             {% if dmg_r %}
@@ -115,7 +119,11 @@
             {
                 alteration = alter_ranged;
                 duration = #infinite;
-                value = ((#magic*1.0)-#ranged);
+                {% if req_lvl <= 50 %}
+                value = ((#magic*{{ 1 - req_lvl/200 }})-#ranged);
+                {% else %}
+                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#ranged);
+                {% endif %}
             }
             {% endif %}
             {% if dmg_c %}
@@ -123,7 +131,11 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.9)-#combat_magic_level);
+                {% if req_lvl <= 50 %}
+                value = ((#magic*{{ 1 - req_lvl/200 }})-#combat_magic_level);
+                {% else %}
+                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#combat_magic_level);
+                {% endif %}
             }
             {% endif %}
             [*]

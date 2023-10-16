@@ -70,7 +70,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.9)-#combat_magic_level);
+                value = ((#magic*0.985)-#combat_magic_level);
             }
             [*]
             {
