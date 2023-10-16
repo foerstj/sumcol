@@ -48,6 +48,9 @@ spell;dsx_chomper;dsx_chomper;summon;a;Chomper;1.5;nm;an;std;loa;600;6;14;0.95;;
 spell;dsx_troll_masher;dsx_troll_masher;summon;a;Troll Masher;1.5;nm;hu;std;loa;170000;6;73;1.15;;;;;;1;2;253
 spell;dsx_zepheryl;dsx_zepheryl;summon;a;Zepheryl;1.5;nm;el;std;loa;30000;5;30;;;0.95;;;;2;0.8;271
 ;;;;;;;;;;;;;;;;;;;;;;
+spell;standard_m_0;wraith;summon;a;Dummy Wraith Fighter (0-20);1;nm;un;std;v;24;6;0;1;;;;;;1;1;136
+spell;standard_r_0;wraith_archer;summon;a;Dummy Wraith Archer (0-20);1;nm;un;std;v;30;5;0;;1;;;94;110;1;1;136
+spell;standard_c_0;wraith_mage_demo;summon;a;Dummy Wraith Mage (0-20);1;nm;un;std;v;30;5;0;;;1;;120;140;1;1;136
 spell;standard_m_10;wraith;summon;a;Dummy Wraith Fighter (10-30);1;nm;un;std;v;240;6;10;1;;;;;;1;1;136
 spell;standard_r_10;wraith_archer;summon;a;Dummy Wraith Archer (10-30);1;nm;un;std;v;300;5;10;;1;;;94;110;1;1;136
 spell;standard_c_10;wraith_mage_demo;summon;a;Dummy Wraith Mage (10-30);1;nm;un;std;v;300;5;10;;;1;;120;140;1;1;136
