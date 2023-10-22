@@ -40,7 +40,7 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*0.8)*1.0)*0.9) - #cmagic_damage_max) - 0.0);
+                value = ((((((#magic*4.2)*0.8)*1.0)*0.9) - #cmagic_damage_min) - 0.0);
             }
             [*]
             {
