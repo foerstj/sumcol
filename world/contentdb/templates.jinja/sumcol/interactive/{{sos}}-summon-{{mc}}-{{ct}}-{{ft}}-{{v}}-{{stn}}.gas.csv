@@ -64,7 +64,7 @@ spell;bronze_gargoyle;gargoyle_bronze;;a;Bronze Gargoyle;0.75;cm;el;std;v;33000;
 spell;swamp_creature;swamp_creature;good;a;Swamp Creature;2.5;nm;el;std;v;42000;6;42;1.1;;;;;;0.8;2.5;;
 scroll;swamp_abomination;swamp_creature_boss_01;;a;Swamp Abomination;2.5;nm;el;mb;v;8300;14;42;1.3;;;;;;0.8;7.5;;
 spell;sea_mangler;mangler_sea;;a;Sea Mangler;1;nm;an;std;v;42000;7;42;0.9;;;;;;1;0.8;;
-spell;wraith_mage;wraith_mage;;a;Wraith Mage;1.25;cm;un;std;v;66000;5;47;;;0.95;;;;2;0.8;;
+spell;wraith_mage;wraith_mage;;a;Wraith Mage;1.25;cm;un;std;v;66000;5;47;;;0.95;;120;140;2;0.8;;
 spell;skeleton_ranger;skeleton_mercenary_archer;good;a;Skeleton Ranger;1.5;cm;un;std;v;72000;5;49;;1;;;94;110;2.5;1;;
 spell;googore;googore;;a;Googore;2;nm;an;st;v;13000;0.5;47;;;0.9;;;;1;2.5;;
 spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;58000;6;49;1.05;;;;35;58;2.5;1;;
