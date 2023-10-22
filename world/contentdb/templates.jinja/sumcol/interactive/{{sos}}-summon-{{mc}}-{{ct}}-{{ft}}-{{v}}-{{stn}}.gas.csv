@@ -68,7 +68,7 @@ spell;wraith_mage;wraith_mage;;a;Wraith Mage;1.25;cm;un;std;v;66000;5;47;;;0.95;
 spell;skeleton_ranger;skeleton_mercenary_archer;good;a;Skeleton Ranger;1.5;cm;un;std;v;72000;5;49;;1;;;94;110;2.5;1;;
 spell;googore;googore;;a;Googore;2;nm;an;st;v;13000;0.5;47;;;0.9;;;;1;2.5;;
 spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;58000;6;49;1.05;;;;35;58;2.5;1;;
-spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;22000;2;63;;;;;;;2;0.8;;
+spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;22000;2;63;1;;;;;;2;0.8;;
 spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;52000;4;42;1.1;;1.1;;;;1.5;2.5;;
 scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;19000;13;60;1.35;;;;;;2;7.5;;
 spell;synged;synged;;a;Synged;1;cm;de;std;v;96000;6;60;0.9;;;;;;1;0.8;;
