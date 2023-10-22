@@ -17,4 +17,10 @@
 	{
 		delete_time = -1;  // Disabling automatic explosion after 15s.
 	}
+	[attack]
+	{
+        // Ten-fold original damage (explosion doesn't take enchantments from summon spell into account)
+		damage_max = 4200;
+		damage_min = 3800;
+	}
 }
