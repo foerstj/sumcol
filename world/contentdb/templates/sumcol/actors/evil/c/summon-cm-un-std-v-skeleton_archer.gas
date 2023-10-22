@@ -14,4 +14,11 @@
         }
         [pcontent] {}
     }
+	[actor]
+	{
+        // actor:skills needs to be defined for the respective enchantments to work!
+		[skills]
+		{
+		}
+	}
 }
