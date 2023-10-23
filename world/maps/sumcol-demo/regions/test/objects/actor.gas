@@ -2734,6 +2734,10 @@
 }
 [t:2w_skeleton_mercenary_archer,n:0x002000cd]
 {
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
 	[placement]
 	{
 	  q orientation = 0,5.96046e-008,0,1;
@@ -2742,6 +2746,10 @@
 }
 [t:2w_skeleton_mercenary_archer,n:0x002000d0]
 {
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
 	[placement]
 	{
 	  q orientation = 0,1,0,5.96046e-008;
@@ -2750,6 +2758,10 @@
 }
 [t:skeleton_mercenary_archer,n:0x002000c7]
 {
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
 	[placement]
 	{
 	  p position = -2.11944,0,-2.04638,0x18e17d96;
@@ -2931,6 +2943,10 @@
 }
 [t:skeleton_mercenary_archer,n:0x002000c6]
 {
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
 	[placement]
 	{
 	  p position = -2.40454,0,1.96012,0xeac47518;

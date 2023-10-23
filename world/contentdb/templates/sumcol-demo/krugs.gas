@@ -116,6 +116,11 @@
 		defense = 100;
 	}
 }
+[t:template,n:sumcol_krug_dummy_50_hold]
+{
+    specializes = sumcol_krug_dummy_50_base;
+    mind:movement_orders = MO_HOLD;
+}
 
 // ~ Wasped
 [t:template,n:sumcol_krug_dummy_100] { specializes = sumcol_krug_dummy_100_base; }
@@ -150,6 +155,11 @@
 	{
 		defense = 200;
 	}
+}
+[t:template,n:sumcol_krug_dummy_100_hold]
+{
+    specializes = sumcol_krug_dummy_100_base;
+    mind:movement_orders = MO_HOLD;
 }
 
 // ~ Mucosa Raider
@@ -186,6 +196,11 @@
 		defense = 500;
 	}
 }
+[t:template,n:sumcol_krug_dummy_200_hold]
+{
+    specializes = sumcol_krug_dummy_200_base;
+    mind:movement_orders = MO_HOLD;
+}
 
 // ~ Veteran Maljin Stalker
 [t:template,n:sumcol_krug_dummy_300] { specializes = sumcol_krug_dummy_300_base; }
@@ -220,6 +235,11 @@
 	{
 		defense = 1000;
 	}
+}
+[t:template,n:sumcol_krug_dummy_300_hold]
+{
+    specializes = sumcol_krug_dummy_300_base;
+    mind:movement_orders = MO_HOLD;
 }
 
 
@@ -266,6 +286,15 @@
         child_template_name = sumcol_krug_dummy_50;
     }
 }
+[t:template,n:sumcol_gen-sumcol_krug_dummy_50_hold]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_50_hold;
+    }
+}
 [t:template,n:sumcol_gen-sumcol_krug_dummy_100]
 {
     specializes = sumcol_gen_base;
@@ -273,6 +302,15 @@
     [generator_advanced_a2]
     {
         child_template_name = sumcol_krug_dummy_100;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_100_hold]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_100_hold;
     }
 }
 [t:template,n:sumcol_gen-sumcol_krug_dummy_200]
@@ -284,6 +322,15 @@
         child_template_name = sumcol_krug_dummy_200;
     }
 }
+[t:template,n:sumcol_gen-sumcol_krug_dummy_200_hold]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_200_hold;
+    }
+}
 [t:template,n:sumcol_gen-sumcol_krug_dummy_300]
 {
     specializes = sumcol_gen_base;
@@ -291,5 +338,14 @@
     [generator_advanced_a2]
     {
         child_template_name = sumcol_krug_dummy_300;
+    }
+}
+[t:template,n:sumcol_gen-sumcol_krug_dummy_300_hold]
+{
+    specializes = sumcol_gen_base;
+
+    [generator_advanced_a2]
+    {
+        child_template_name = sumcol_krug_dummy_300_hold;
     }
 }
