@@ -91,3 +91,7 @@ Defense & Health: based on caster's level with variations corresponding to the c
 Level (melee/ranged/CM): based on caster's level.\
 Strength/Dexterity/Intelligence: based on caster's level.\
 Mana: based on caster's level.
+
+## Attribution
+
+Made by me with lots of testing support from Estaf.
