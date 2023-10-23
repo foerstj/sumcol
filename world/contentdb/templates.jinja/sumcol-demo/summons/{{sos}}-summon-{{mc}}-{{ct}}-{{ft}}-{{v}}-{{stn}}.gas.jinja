@@ -76,7 +76,7 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{abf_c or 1 | float}})*0.9) - #cmagic_damage_max) - {{wpn_dmg_max | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{abf_c or 1 | float}})*0.9) - #cmagic_damage_min) - {{wpn_dmg_min | float}});
             }
             [*]
             {
