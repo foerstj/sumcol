@@ -41,7 +41,7 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*0.9)*1.0)*0.9) - #cmagic_damage_max) - 204.0);
+                value = ((((((#magic*4.2)*0.9)*1.0)*0.9) - #cmagic_damage_min) - 184.0);
             }
             [*]
             {
