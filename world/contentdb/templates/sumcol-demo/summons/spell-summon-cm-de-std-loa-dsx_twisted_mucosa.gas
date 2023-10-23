@@ -51,18 +51,6 @@
             }
             [*]
             {
-                alteration = alter_cmagic_damage_min;
-                duration = #infinite;
-                value = ((((((#magic*4.2)*0.9)*1.0)*0.9) - #cmagic_damage_min) - 0.0);
-            }
-            [*]
-            {
-                alteration = alter_cmagic_damage_max;
-                duration = #infinite;
-                value = ((((((#magic*4.2)*0.9)*1.0)*1.1) - #cmagic_damage_max) - 0.0);
-            }
-            [*]
-            {
                 alteration = alter_armor;
                 duration = #infinite;
                 value = (((#magic*3.5)*2.0) - #base_defense);
@@ -84,12 +72,6 @@
                 alteration = alter_melee;
                 duration = #infinite;
                 value = ((#magic*0.95)-#melee);
-            }
-            [*]
-            {
-                alteration = alter_combat_magic;
-                duration = #infinite;
-                value = ((#magic*0.95)-#combat_magic_level);
             }
             [*]
             {
