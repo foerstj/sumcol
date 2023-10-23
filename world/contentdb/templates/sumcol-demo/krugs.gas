@@ -13,7 +13,8 @@
 }
 
 // ~ Gray Wolf
-[t:template,n:sumcol_krug_dummy_10]
+[t:template,n:sumcol_krug_dummy_10] { specializes = sumcol_krug_dummy_10_base; }
+[t:template,n:sumcol_krug_dummy_10_base]
 {
     specializes = base_sumcol_krug_dummy;
 
@@ -47,7 +48,8 @@
 }
 
 // ~ Mucosa
-[t:template,n:sumcol_krug_dummy_20]
+[t:template,n:sumcol_krug_dummy_20] { specializes = sumcol_krug_dummy_20_base; }
+[t:template,n:sumcol_krug_dummy_20_base]
 {
     specializes = base_sumcol_krug_dummy;
 
@@ -81,7 +83,8 @@
 }
 
 // ~ dsx skeleton 02
-[t:template,n:sumcol_krug_dummy_50]
+[t:template,n:sumcol_krug_dummy_50] { specializes = sumcol_krug_dummy_50_base; }
+[t:template,n:sumcol_krug_dummy_50_base]
 {
     specializes = base_sumcol_krug_dummy;
 
@@ -115,7 +118,8 @@
 }
 
 // ~ Wasped
-[t:template,n:sumcol_krug_dummy_100]
+[t:template,n:sumcol_krug_dummy_100] { specializes = sumcol_krug_dummy_100_base; }
+[t:template,n:sumcol_krug_dummy_100_base]
 {
     specializes = base_sumcol_krug_dummy;
 
@@ -149,7 +153,8 @@
 }
 
 // ~ Mucosa Raider
-[t:template,n:sumcol_krug_dummy_200]
+[t:template,n:sumcol_krug_dummy_200] { specializes = sumcol_krug_dummy_200_base; }
+[t:template,n:sumcol_krug_dummy_200_base]
 {
     specializes = base_sumcol_krug_dummy;
 
@@ -183,7 +188,8 @@
 }
 
 // ~ Veteran Maljin Stalker
-[t:template,n:sumcol_krug_dummy_300]
+[t:template,n:sumcol_krug_dummy_300] { specializes = sumcol_krug_dummy_300_base; }
+[t:template,n:sumcol_krug_dummy_300_base]
 {
     specializes = base_sumcol_krug_dummy;
 
@@ -215,6 +221,7 @@
 		defense = 1000;
 	}
 }
+
 
 [t:template,n:sumcol_gen_base]
 {
