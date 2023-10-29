@@ -50,16 +50,16 @@ spell;dsx_zepheryl;dsx_zepheryl;summon;a;Zepheryl;1.5;nm;el;std;loa;30000;5;30;;
 ;;;;;;;;;;;;;;;;;;;;;;;;
 spell;standard_m_0;wraith;summon;a;Dummy Wraith Fighter (0-20);1;nm;un;std;v;24;6;0;1;;;;;;;;1;1;136
 spell;standard_r_0;wraith_archer;summon;a;Dummy Wraith Archer (0-20);1;nm;un;std;v;30;5;0;;1;;;94;110;;;1;1;136
-spell;standard_c_0;wraith_mage_demo;summon;a;Dummy Wraith Mage (0-20);1;nm;un;std;v;30;5;0;;;1;;;;120;140;1;1;136
+spell;standard_c_0;wraith_mage_demo;summon;a;Dummy Wraith Mage (0-20);1;nm;un;std;v;30;5;0;;;1;0.5;;;120;140;1;1;136
 spell;standard_m_10;wraith;summon;a;Dummy Wraith Fighter (10-30);1;nm;un;std;v;240;6;10;1;;;;;;;;1;1;136
 spell;standard_r_10;wraith_archer;summon;a;Dummy Wraith Archer (10-30);1;nm;un;std;v;300;5;10;;1;;;94;110;;;1;1;136
-spell;standard_c_10;wraith_mage_demo;summon;a;Dummy Wraith Mage (10-30);1;nm;un;std;v;300;5;10;;;1;;;;120;140;1;1;136
+spell;standard_c_10;wraith_mage_demo;summon;a;Dummy Wraith Mage (10-30);1;nm;un;std;v;300;5;10;;;1;0.5;;;120;140;1;1;136
 spell;standard_m_20;wraith;summon;a;Dummy Wraith Fighter (20-40);1;nm;un;std;v;2400;6;20;1;;;;;;;;1;1;136
 spell;standard_r_20;wraith_archer;summon;a;Dummy Wraith Archer (20-40);1;nm;un;std;v;3000;5;20;;1;;;94;110;;;1;1;136
-spell;standard_c_20;wraith_mage_demo;summon;a;Dummy Wraith Mage (20-40);1;nm;un;std;v;3000;5;20;;;1;;;;120;140;1;1;136
+spell;standard_c_20;wraith_mage_demo;summon;a;Dummy Wraith Mage (20-40);1;nm;un;std;v;3000;5;20;;;1;0.5;;;120;140;1;1;136
 spell;standard_m_40;wraith;summon;a;Dummy Wraith Fighter (40-60);1;nm;un;std;v;38000;6;40;1;;;;;;;;1;1;136
 spell;standard_r_40;wraith_archer;summon;a;Dummy Wraith Archer (40-60);1;nm;un;std;v;48000;5;40;;1;;;94;110;;;1;1;136
-spell;standard_c_40;wraith_mage_demo;summon;a;Dummy Wraith Mage (40-60);1;nm;un;std;v;48000;5;40;;;1;;;;120;140;1;1;136
+spell;standard_c_40;wraith_mage_demo;summon;a;Dummy Wraith Mage (40-60);1;nm;un;std;v;48000;5;40;;;1;0.5;;;120;140;1;1;136
 spell;standard_m_60;wraith;summon;a;Dummy Wraith Fighter (60-80);1;nm;un;std;v;96000;6;60;1;;;;;;;;1;1;136
 spell;standard_r_60;wraith_archer;summon;a;Dummy Wraith Archer (60-80);1;nm;un;std;v;120000;5;60;;1;;;94;110;;;1;1;136
-spell;standard_c_60;wraith_mage_demo;summon;a;Dummy Wraith Mage (60-80);1;nm;un;std;v;120000;5;60;;;1;;;;120;140;1;1;136
+spell;standard_c_60;wraith_mage_demo;summon;a;Dummy Wraith Mage (60-80);1;nm;un;std;v;120000;5;60;;;1;0.5;;;120;140;1;1;136
