@@ -1,0 +1,19 @@
+[t:template,n:rock_beast_sumcol]
+{
+	category_name = "1W_evil_d";
+	doc = "[summon] rock_beast (SumCol)";
+	specializes = rock_beast_base;
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_rock_beast_blast_sumcol; }  // EDITED
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+}
