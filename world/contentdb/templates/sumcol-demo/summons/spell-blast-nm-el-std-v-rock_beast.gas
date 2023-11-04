@@ -39,7 +39,7 @@
 	}
 	[magic]
 	{
-		attack_damage_modifier_min = ((#magic)*14)*0.9;
-		attack_damage_modifier_max = ((#magic)*14)*1.1;
+		attack_damage_modifier_min = ((#magic)*20)*0.9;
+		attack_damage_modifier_max = ((#magic)*20)*1.1;
 	}
 }
