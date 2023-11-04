@@ -6,7 +6,7 @@
     doc = "spell Summon Purple Shard";
     [aspect]
     {
-        gold_value = 12000;
+        gold_value = 33000;
     }
     [common]
     {
@@ -31,8 +31,8 @@
         effect_duration = 180;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*15;
-        required_level = 26;
-        max_level = 46;
+        required_level = 32;
+        max_level = 52;
 
         [enchantments]
         {
@@ -70,7 +70,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.87)-#combat_magic_level);
+                value = ((#magic*0.84)-#combat_magic_level);
             }
             [*]
             {
