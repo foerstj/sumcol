@@ -1,0 +1,110 @@
+[t:template,n:spiked_maw_boss_01_base]  // = spiked_maw_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "spiked_maw_boss_01";
+	specializes = base_maw;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  15, 0;
+			intelligence =  8, 0;
+			dexterity =  11, 0;
+			melee =  13,  0;
+			ranged =  11,  0;
+		}
+	}
+	[aspect]
+	{
+		textures:0 = b_c_edm_sm-03;
+		experience_value = 998;
+		life = 238;
+		max_life = 238;
+		mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 69;
+		damage_min = 60;
+	}
+	[common]
+	{
+		screen_name="Rabid Spiked Maw";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_yellow(sgx)");
+			}
+		}
+	}
+	[defend] { defense=241; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_spiked_maw_spikes; }
+
+    	[pcontent]
+		{
+			[all*]
+			{
+				[all*]
+				{
+       				chance = 0.2;
+	                il_main = #nmagic/18-19;
+	                il_main = #cmagic/18-19;
+				}
+				[oneof*]
+				{
+					il_main = #*/52-55;
+					il_main = #armor/180-190;
+				}
+                [oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/60-69;
+	                il_main = #armor/-rare(1)/189-210;
+                    il_main = #*/-rare(1)/60-69;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/60-69;
+	                il_main = #armor/-unique(2)/189-210;
+                    il_main = #*/-unique(2)/60-69;
+	            }
+            }
+		}
+	}
+	[mind]
+	{
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&party_template						= "party_spiked_maw_boss";
+
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit
+			?social				= 0.8
+			&approach_dist		= 1.75
+			&friends			= party_spiked_maw_boss
+			&still				= false;
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		break_effect = blood_mist;
+		[break_particulate]
+		{
+			frag_glb_spiked_maw_01 = 1;
+			frag_glb_spiked_maw_02 = 1;
+			frag_glb_spiked_maw_03 = 1;
+			frag_glb_spiked_maw_04 = 6;
+			frag_glb_spiked_maw_05 = 8;
+		}
+	}
+}

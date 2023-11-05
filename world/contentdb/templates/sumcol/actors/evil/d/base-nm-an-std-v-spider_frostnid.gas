@@ -1,0 +1,32 @@
+[t:template,n:spider_frostnid_sumcol_base]  // = spider_frostnid
+{
+	category_name = "1W_evil_d";
+	doc = "spider_frostnid";
+	specializes = spider_frostnid_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  10, 0;
+			intelligence =  4, 0;
+			dexterity =  15, 0;
+            melee =  8,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 228;
+		life = 177;
+        max_life = 177;
+        mana = 8;
+		max_mana = 8;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 36;
+		damage_min = 30;
+	}
+	[common] { screen_name="Frostnid"; }
+    [defend] { defense=60; }
+}
