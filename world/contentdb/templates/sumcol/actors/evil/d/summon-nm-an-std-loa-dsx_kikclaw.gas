@@ -1,0 +1,15 @@
+[t:template,n:dsx_kikclaw_summon]
+{
+    specializes = dsx_kikclaw_base;
+
+	doc = "[summon] dsx_kikclaw";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

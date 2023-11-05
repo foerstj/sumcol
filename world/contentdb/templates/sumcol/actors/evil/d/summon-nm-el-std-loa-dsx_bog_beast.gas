@@ -1,0 +1,15 @@
+[t:template,n:dsx_bog_beast_summon]
+{
+    specializes = dsx_bog_beast_sumcol_base;
+
+	doc = "[summon] dsx_bog_beast";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

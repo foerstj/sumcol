@@ -1,0 +1,15 @@
+[t:template,n:furok_slasher_summon]
+{
+    specializes = furok_slasher_base;
+
+	doc = "[summon] furok slasher";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

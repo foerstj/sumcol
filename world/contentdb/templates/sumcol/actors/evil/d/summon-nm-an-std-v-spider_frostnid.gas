@@ -1,0 +1,15 @@
+[t:template,n:spider_frostnid_summon]
+{
+    specializes = spider_frostnid_sumcol_base;
+
+	doc = "[summon] spider_frostnid";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

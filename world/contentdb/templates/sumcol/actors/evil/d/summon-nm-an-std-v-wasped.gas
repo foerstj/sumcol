@@ -1,0 +1,15 @@
+[t:template,n:wasped_summon]
+{
+    specializes = wasped_base;
+
+	doc = "[summon] wasped";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

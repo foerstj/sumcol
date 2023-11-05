@@ -1,0 +1,15 @@
+[t:template,n:spiked_maw_summon]
+{
+    specializes = spiked_maw_base;
+
+	doc = "[summon] spiked_maw";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

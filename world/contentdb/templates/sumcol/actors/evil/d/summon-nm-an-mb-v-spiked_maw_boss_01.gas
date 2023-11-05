@@ -1,0 +1,15 @@
+[t:template,n:spiked_maw_boss_01_summon]
+{
+    specializes = spiked_maw_boss_01_base;
+
+	doc = "[summon] spiked_maw_boss_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

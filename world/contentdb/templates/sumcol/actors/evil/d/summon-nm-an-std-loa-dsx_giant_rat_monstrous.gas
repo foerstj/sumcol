@@ -1,0 +1,15 @@
+[t:template,n:dsx_giant_rat_monstrous_summon]
+{
+    specializes = dsx_giant_rat_monstrous_base;
+
+	doc = "[summon] dsx_giant_rat_monstrous";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

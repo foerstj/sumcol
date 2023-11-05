@@ -1,0 +1,15 @@
+[t:template,n:moth_summon]
+{
+    specializes = moth_base;
+
+	doc = "[summon] moth";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

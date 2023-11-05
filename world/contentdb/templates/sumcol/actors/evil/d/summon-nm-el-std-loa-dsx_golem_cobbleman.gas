@@ -1,0 +1,15 @@
+[t:template,n:dsx_golem_cobbleman_summon]
+{
+    specializes = dsx_golem_cobbleman_base;
+
+	doc = "[summon] dsx_golem_cobbleman";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

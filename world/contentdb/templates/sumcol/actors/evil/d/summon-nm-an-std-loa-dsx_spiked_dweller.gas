@@ -1,0 +1,15 @@
+[t:template,n:dsx_spiked_dweller_summon]
+{
+    specializes = dsx_spiked_dweller_base;
+
+	doc = "[summon] dsx_spiked_dweller";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

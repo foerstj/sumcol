@@ -1,0 +1,15 @@
+[t:template,n:furok_boss_01_summon]
+{
+    specializes = furok_boss_01_base;
+
+	doc = "[summon] furok boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

@@ -1,0 +1,15 @@
+[t:template,n:slarg_summon]
+{
+    specializes = slarg_base;
+
+	doc = "[summon] slarg";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

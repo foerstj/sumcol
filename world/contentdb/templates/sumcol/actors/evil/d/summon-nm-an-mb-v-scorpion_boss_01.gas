@@ -1,0 +1,15 @@
+[t:template,n:scorpion_boss_01_summon]
+{
+    specializes = scorpion_boss_01_base;
+
+	doc = "[summon] scorpion boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}
