@@ -2,6 +2,7 @@
 {
 	name	=dsx_skatwyrm_gas_fixed;
 
+    // Same as original dsx_skatwyrm_gas, except I added the missing [0] so that damage is dealt
 	script	=[[
                       	set $velocity 0,3,100;
 			set $accel 0,-30,-10;         		
