@@ -1,0 +1,107 @@
+[t:template,n:spell_summon_lectar] { specializes = spell_summon_lectar_base; }
+[t:template,n:spell_summon_lectar_base]
+{
+    specializes = base_spell_sumcol_nm;
+
+    doc = "spell Summon Lectar";
+    [aspect]
+    {
+        gold_value = 4800;
+    }
+    [common]
+    {
+        screen_name = "Summon Lectar";
+    }
+    [common]
+    {
+        description = "Summons a Lectar to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sp_sumcol-nm-an-std-v-lectar;
+        inventory_icon =b_gui_ig_i_ic_sp_sumcol-nm-an-std-v-lectar-inv;
+    }
+    [spell_summon]
+    {
+        template_name = lectar_summon;
+        script_params = "[scale(1.0)]";
+    }
+    [magic]
+    {
+        effect_duration = 420;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*15;
+        required_level = 23;
+        max_level = 43;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*0.9)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*0.9)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*1.5) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*0.6) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*0.6);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic*0.885)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}
