@@ -3,18 +3,18 @@
 {
     specializes = base_spell_sumcol_nm;
 
-    doc = "spell Summon Cobbleman";
+    doc = "spell Summon Cobble Man";
     [aspect]
     {
         gold_value = 7500;
     }
     [common]
     {
-        screen_name = "Summon Cobbleman";
+        screen_name = "Summon Cobble Man";
     }
     [common]
     {
-        description = "Summons a Cobbleman to guard the Caster.";
+        description = "Summons a Cobble Man to guard the Caster.";
     }
     [gui]
     {
