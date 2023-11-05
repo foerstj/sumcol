@@ -1,0 +1,39 @@
+[t:template,n:dsx_bog_beast_sumcol_base]  // = dsx_bog_beast
+{
+// Balanced for level 12, medium melee
+	category_name = "1W_evil_d";
+	doc = "dsx_bog_beast";
+	specializes = dsx_bog_beast_base;
+	
+	[actor]
+	{
+		[skills]
+		{
+			strength		= 12, 0;
+			intelligence 	= 8, 0;
+			dexterity		= 10, 0;
+			melee			= 9, 0;
+		}
+	}
+	
+	[aspect]
+	{
+		[textures]	{ 0 = b_c_edm_bog_beast; }
+		material = flesh;
+	
+		experience_value 	= 184;
+		life		 	= 245;
+		max_life	 	= 245;
+		mana			= 45;
+		max_mana	 	= 45;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 57; 
+		damage_min = 48; 
+	}
+	[defend] { defense = 105; }
+	}
+// sic!

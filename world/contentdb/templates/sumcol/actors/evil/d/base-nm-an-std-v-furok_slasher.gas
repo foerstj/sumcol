@@ -1,0 +1,82 @@
+[t:template,n:furok_slasher_base]  // = furok_slasher
+{
+	category_name = "1W_evil_d";
+	doc = "furok slasher";
+	specializes = base_furok;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  18, 0;
+			intelligence =  8, 0;
+			dexterity =  10, 0;
+            melee =  10,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 265;
+		life = 313;
+        max_life = 313;
+        mana = 14;
+        max_mana = 14;
+        [textures] { 0 = b_c_edm_fr-02; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 84;
+		damage_min = 70;
+	}
+	[common] { screen_name="Furok Slasher"; }
+	[defend] { defense=78; }
+	[inventory]
+	{
+   		[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+				   chance = 0.05;
+				   il_main = potion_health_small;
+				   il_main = potion_mana_small;
+				}
+				[all*]
+				{
+       				chance = 0.02;
+	                il_main = #spell/7-11;
+				}
+				[oneof*]
+				{
+					chance = 0.4;
+					il_main = #*/34-39;
+					il_main = #armor/16-85;
+	                il_main = #weapon/34-39;
+				}
+				[oneof*]
+				{
+	                   chance = 0.004;
+	                   il_main = #weapon/-rare(1)/38-44;
+	                   il_main = #armor/-rare(1)/67-123;
+                       il_main = #*/-rare(1)/38-44;
+                }
+				[oneof*]
+				{
+                       chance = 0.002;
+	                   il_main = #weapon/-unique(2)/38-44;
+	                   il_main = #armor/-unique(2)/67-123;
+                       il_main = #*/-unique(2)/38-44;
+	            }
+				[gold*]
+				{
+					chance = 0.15;
+					max = 194;
+					min = 151;
+					min_pile = 39;
+					piles = 1 - 3;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+[t:template,n:dsx_kikclaw_base]  // = dsx_kikclaw
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_kikclaw";
+	specializes = kikclaw_base;
+	
+	[actor]
+	{
+		[skills]
+		{
+			strength 	 	=  15, 0;
+			intelligence   	=  8, 0;
+			dexterity 	 	=  10, 0;
+			melee 	 		=  13, 0;
+		}
+	}
+	
+	[attack]
+	{
+		attack_range = 0.5;
+		
+		damage_max = 82;
+		damage_min = 74;
+	}
+	[defend] { defense = 140; }
+	[aspect] 
+	{
+		experience_value = 520;
+		life = 337;
+		max_life = 337;
+		mana = 10;
+		max_mana = 10;
+		model = m_c_edm_kc_pos_1; 
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_kikclaw;  }
+			[enemy_spotted]	{ priority = high; * = s_e_call_kikclaw_SED; }
+			[hit_critical]	{ priority = low; * = s_e_hit_kikclaw_SED;  }
+			[hit_glance]	{ priority = low; * = s_e_hit_kikclaw_SED;  }
+			[hit_solid]		{ priority = low; * = s_e_hit_kikclaw_SED;  }
+		}	
+		scale_base	= 0.7;
+	}
+	
+	[common] { screen_name = "Skitterclaw"; }
+	
+	[guts_manager]
+	{
+		effect_name = melee_hit_2;
+	}
+}

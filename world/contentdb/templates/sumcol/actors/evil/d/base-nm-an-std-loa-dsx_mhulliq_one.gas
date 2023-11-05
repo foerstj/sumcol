@@ -1,0 +1,62 @@
+[t:template,n:dsx_mhulliq_one_base]  // = dsx_mhulliq_one
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_mhulliq_one";
+	specializes = dsx_mhulliq_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =     9, 0;
+			intelligence = 7, 0;
+			dexterity =    8, 0;
+			melee =        4, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 59;
+		life             = 88;
+		max_life         = 88;
+		mana             = 12;
+		max_mana         = 12;
+		textures:0 = b_c_edm_hb-03;
+		material = flesh;
+		[voice]
+		{
+			[die]			{ priority = high;	* = s_e_die_mhulliq_SED;		}
+			[enemy_spotted]	{ priority = high;  * = s_e_call_mhulliq_SED; }
+			[hit_critical]	{ priority = low;	* = s_e_hit_mhulliq_SED;		}
+			[hit_glance]	{ priority = low;	* = s_e_hit_mhulliq_SED;		}
+			[hit_solid]		{ priority = low;	* = s_e_hit_mhulliq_SED;		}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 70; //! Do by hand, on a curve.  For low values, ~==XP (6xp => 6damage; 90xp=> 50damage)
+		damage_min = 60; //! Same as damage_max
+	}
+	[body]
+	{
+		avg_move_velocity = 5;
+	}
+	[common]
+	{
+		screen_name = "Mhulliq"; 
+		membership = monster;
+	}
+	[defend] { defense = 29; }
+	
+	[mind]
+	{
+		jat_brain = world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party	= true;
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit;
+		
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+}
