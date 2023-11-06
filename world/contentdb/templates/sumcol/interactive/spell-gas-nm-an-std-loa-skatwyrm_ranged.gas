@@ -33,5 +33,10 @@
 [t:template,n:dsx_spell_skatwyrm_gas_summon]
 {
     specializes = dsx_spell_skatwyrm_gas_base;
-    spell_fire:effect_script = dsx_skatwyrm_gas_fixed;
+
+    [spell_fire]
+    {
+        effect_script = dsx_skatwyrm_gas_fixed;
+        ignite = false;
+    }
 }
