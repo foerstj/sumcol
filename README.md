@@ -16,40 +16,34 @@ Alternatively, pick from the partial .dsres files, which are split by creature t
 Spells are added to PContent, which means they should appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
-## Features:
+## Features
+
+### Vanilla Creatures:
 - Animals (NM):
   - Phraks: Phrak, Phrak Piercer, Swamp Stinger, Forest Phrak
     - Miniboss: Phrak Ballista
-  - Spiders: Yellow Spider, Arakun Spider, Emerald Spider (LoA), Stalagnid
+  - Spiders: Yellow Spider, Arakun Spider, Stalagnid
   - Gremal Miniboss: Hulking Gremal
-  - Manglers: Snapper, Angler (LoA), Mangler, Sea Mangler
-  - Worms: Ice Grub (LoA), Googore Grub
-  - Moths: Ice Moth (LoA)
-  - Midges: Swirling Midges (LoA)
-  - Wolves: Gray Wolf, White Wolf, Varg (LoA)
+  - Manglers: Snapper, Mangler, Sea Mangler
+  - Worms: Googore Grub
+  - Wolves: Gray Wolf, White Wolf
     - Miniboss: Alpha Wolf
   - Dogs: Krug Dog, Krug Killer Dog
-  - Lizards: Island Lizard (LoA), Thunder Lizard (LoA)
-  - Boars: Snow Boar (LoA), Rending Mhulliq (LoA)
   - Drakes: Frost Drake, Blue Drake, Red Drake (CM)
   - Klaws: Klaw
-  - Chitterskrags: Immature Chitterskrag, Chitterskrag, Spewing Chitterskrag
-    - Miniboss: Giant Chitterskrag
   - Stationary:
-    - Skrubbs: Farm Skrubb, Black Skrubb, Jungle Skrubb (LoA)
+    - Skrubbs: Farm Skrubb, Black Skrubb
     - Worms: Mine Worm, Googore
 - Elementals
   - Gargoyles (CM): Gargoyle (melee), Bronze Gargoyle
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
     - Miniboss: Frost Warrior, Frost Archer
-  - Frost (NM): Frost Golem (LoA)
-  - Rock (NM): Marble Golem (LoA)
   - Crystal (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
   - Swamp (NM): Swamp Creature, Swamp Slinger
     - Miniboss: Swamp Abomination
   - Lava (CM): Lava Beast, Lava Spirit (melee)
     - Miniboss: Magma Beast
-  - Fire Explosive: Blazing Elemental
+  - Fire (CM) Explosive: Blazing Elemental
 - Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard, Skeleton Ranger, Skeleton Mercenary
     - Miniboss: Skeleton Captain
@@ -58,15 +52,36 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Plants (NM):
   - Larch Miniboss: Infested Larch
   - Stationary:
-    - Vines: Killer Vines (LoA)
-    - Mantraps: Mantrap (LoA)
     - Trees: Tretch
 - Demonics (CM):
   - Mucosa: Vile Mucosa
-  - Rune: Rune Fiend (LoA)
   - Horrid
-  - Whelnar's Eyes (LoA)
   - Synged
+
+### LoA Creatures:
+- Animals (NM):
+  - Spiders: Emerald Spider
+  - Manglers: Angler
+  - Worms: Ice Grub
+  - Moths: Ice Moth
+  - Midges: Swirling Midges
+  - Wolves: Varg
+  - Lizards: Island Lizard, Thunder Lizard
+  - Boars: Snow Boar, Rending Mhulliq
+  - Chitterskrags: Immature Chitterskrag, Chitterskrag, Spewing Chitterskrag
+    - Miniboss: Giant Chitterskrag
+  - Stationary:
+    - Skrubbs: Jungle Skrubb
+- Elementals
+  - Frost (NM): Frost Golem
+  - Rock (NM): Marble Golem
+- Plants (NM):
+  - Stationary:
+    - Vines: Killer Vines
+    - Mantraps: Mantrap
+- Demonics (CM):
+  - Rune: Rune Fiend
+  - Whelnar's Eyes
 
 ## Balancing
 
