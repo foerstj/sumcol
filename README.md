@@ -22,7 +22,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Animals (NM):
   - Phraks: Phrak, Phrak Piercer, Swamp Stinger, Forest Phrak
     - Miniboss: Phrak Ballista
-  - Spiders: Yellow Spider, Arakun Spider, Stalagnid
+  - Spiders: Yellow Spider, Arakun Spider, Stalagnid, Frostnid, Frost Spitter
   - Gremal Miniboss: Hulking Gremal
   - Manglers: Snapper, Mangler, Sea Mangler
   - Worms: Googore Grub
@@ -31,6 +31,16 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Dogs: Krug Dog, Krug Killer Dog
   - Drakes: Frost Drake, Blue Drake, Red Drake (CM)
   - Klaws: Klaw
+    - Miniboss: Dark Klaw
+  - Furoks: Furok Slasher
+    - Miniboss: Grizzly Furok
+  - Spikers: Spiked Maw
+    - Miniboss: Rabid Spiked Maw
+  - Scorpion Miniboss: Venom Fiend
+  - Moths: Giant Moth
+  - Wasps: Giant Wasp
+  - Lectars: Lectar
+  - Slargs: Slarg
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb
     - Worms: Mine Worm, Googore
@@ -67,14 +77,20 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Midges: Swirling Midges
   - Wolves: Varg
   - Lizards: Island Lizard, Thunder Lizard
-  - Boars: Snow Boar, Rending Mhulliq
+  - Boars: Snow Boar, Mhulliq, Rending Mhulliq
   - Chitterskrags: Immature Chitterskrag, Chitterskrag, Spewing Chitterskrag
     - Miniboss: Giant Chitterskrag
+  - Spikers: Jungle Spiker
+  - Skitterclaws: Skitterling, Skitterclaw
+  - Rats: Monstrous Rat
+  - Pickers: Swarmling Drone, Swarmling Queen
   - Stationary:
     - Skrubbs: Jungle Skrubb
 - Elementals
   - Frost (NM): Frost Golem
   - Rock (NM): Marble Golem
+  - Swamp (NM): Bog Beast
+  - Rock (NM): Cobble Man
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines
