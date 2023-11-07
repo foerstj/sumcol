@@ -6,24 +6,25 @@
 	script	=[[
 			set $speed 2;
 			set $thick 1;
+            set $up 2;
 
 			sound play s_e_spell_summon_02_cast at #TARGET_POSITION;	
 			
 			sfx create cylinder #TARGET
 				"rp1(1,0,-1)rp0(1,0,-1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
-                hp1(2,2,0)hp0(4.5,4.5,0)
+                offset(0,$up,0)
 				spin(-10)dur(1.5)tin(1.5)delay(.6)[0]";
 				 
 			sfx freeze_targets #PEEK;
 			sfx create cylinder #TARGET
 				"rp1(1,0,-1)rp0(1,0,-1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
-                hp1(2,2,0)hp0(4.5,4.5,0)
+                offset(0,$up,0)
 				spin(-10)dur(1.5)tin(1.5)delay(.4)[0]";
 				 
 			sfx freeze_targets #PEEK;
 			sfx create cylinder #TARGET
 				"rp1(1,0,-1)rp0(1,0,-1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
-                hp1(2,2,0)hp0(4.5,4.5,0)
+                offset(0,$up,0)
 				spin(-10)dur(1.5)tin(1.5)delay(.2)[0]";
 				 
 			sfx freeze_targets #PEEK;
@@ -32,7 +33,8 @@
 			sfx start #POP;
 
 			sfx create cylinder #TARGET
-				"hp1(3,2-$thick,-$speed)hp0(2,0,-$speed)texture(b_sfx_cyl_03)
+				"hp1(1,-$thick,-$speed)hp0(2,0,-$speed)texture(b_sfx_cyl_03)
+                offset(0,$up,0)
 				color0(.25,.25,.61)spin(10)dur(1.5)[0]";
 				 
 
@@ -40,17 +42,20 @@
 			set $master #POP;
 
 			sfx create cylinder #TARGET
-				"hp1(3,2-$thick,-$speed)hp0(4,2,-$speed)texture(b_sfx_cyl_03)
+				"hp1(1,-$thick,-$speed)hp0(2,0,-$speed)texture(b_sfx_cyl_03)
+                offset(0,$up,0)
 				color0(.30,.30,.61)spin(-10)dur(1.5)delay(.2)[0]";
 				 
 			sfx freeze_targets #PEEK;
 			sfx create cylinder #TARGET
-				"hp1(3,2-$thick,-$speed)hp0(4,2,-$speed)texture(b_sfx_cyl_03)
+				"hp1(1,-$thick,-$speed)hp0(2,0,-$speed)texture(b_sfx_cyl_03)
+                offset(0,$up,0)
 				color0(.35,.35,.61)spin(10)dur(1.5)delay(.4)[0]";
 				 
 			sfx freeze_targets #PEEK;
 			sfx create cylinder #TARGET
-				"hp1(3,2-$thick,-$speed)hp0(4,2,-$speed)texture(b_sfx_cyl_03)
+				"hp1(1,-$thick,-$speed)hp0(2,0,-$speed)texture(b_sfx_cyl_03)
+                offset(0,$up,0)
 				color0(.40,.40,.61)spin(-10)dur(1.25)delay(.6)[0]";
 				 
 			sfx freeze_targets #PEEK;
