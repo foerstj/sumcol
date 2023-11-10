@@ -12,7 +12,7 @@ Assignment to Nature vs. Combat Magic is done based on the creature, roughly fol
 
 ## Installation
 Put the "Summons Collection.dsres" file into the DSLOA (or Resources) folder.\
-Alternatively, pick from the partial .dsres files, which are split by creature type (animals / elementals...) or functional type (standard / stationary / miniboss) or by DS version (vanilla / LoA).\
+Alternatively, pick from the partial .dsres files, which are split by creature type (animals / elementals...) or functional type (standard / stationary / miniboss...), by DS version (vanilla / LoA), or by mage class (Nature / Combat).\
 Spells are added to PContent, which means they should appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
@@ -119,7 +119,7 @@ Alterations: All summons use the same alteration formulas to make balancing simp
 Damage: based on caster's level with slight variation corresponding to the creature's properties. (Factors 0.9 and 1.1 applied for min and max damage respectively.)\
 Only slight variation here with factors between 0.8 and 1.2 because damage affects XP balancing! Miniboss scrolls get an additional +0.2 damage factor on top of that of their base creature.\
 Defense & Health: based on caster's level with variations corresponding to the creature's properties. Miniboss scrolls get 3x the health of their base creature.\
-Level (melee/ranged/CM): based on caster's level.\
+Level (melee/ranged/CM): based on caster's level, with a dip around level 50, to match the strength of original summons. (Since LoA, creature level is part of damage calculations.)\
 Strength/Dexterity/Intelligence: based on caster's level.\
 Mana: based on caster's level.
 
