@@ -16,6 +16,11 @@ Alternatively, pick from the partial .dsres files, which are split by creature t
 Spells are added to PContent, which means they should appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
+### Compatibility
+
+- If you play with vanilla DS, use only the vanilla dsres - LoA summons will not work properly.
+- This mod is compatible with Unlimited Summons, except for the explosive summon (Blazing Elemental) which can still only be summoned once at a time.
+
 ## Features
 
 ### Vanilla Creatures:
