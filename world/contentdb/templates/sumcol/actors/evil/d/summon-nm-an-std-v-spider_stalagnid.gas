@@ -47,7 +47,7 @@
 			{
 				chore_stances = 0;
 				skrit = select_fidget;
-				[anim_files] { 00=dsf; }  // EDITED
+				[anim_files] { 00=dff; }  // EDITED
 			}
 			[chore_walk]
 			{
@@ -60,6 +60,6 @@
     [mind]
     {
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit?auto_reveal=true;
-		actor_auto_fidgets = true;  // Together with "dsf" fidget anim, this prevents the stalagnid to revert to its static position and then ignore its surroundings
+		actor_auto_fidgets = true;  // Together with "dff" fidget anim, this prevents the stalagnid to revert to its static position and then ignore its surroundings
     }
 }
