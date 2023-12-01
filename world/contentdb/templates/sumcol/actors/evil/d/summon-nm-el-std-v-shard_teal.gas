@@ -36,6 +36,7 @@
     }
     [mind]
     {
+		actor_auto_fidgets = true;
 		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit?auto_reveal=true;
     }
 }
