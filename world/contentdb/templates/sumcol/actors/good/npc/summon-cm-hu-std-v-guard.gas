@@ -1,0 +1,19 @@
+[t:template,n:guard_summon]
+{
+    specializes = guard_base;
+
+	doc = "[summon] guard";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+    [mind]
+    {
+        jat_talk = jat_none;
+    }
+}
