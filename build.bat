@@ -48,6 +48,7 @@ if "%mode%"=="release" (
   call :build_partial "un" "Undead"
   call :build_partial "pl" "Plants"
   call :build_partial "de" "Demonics"
+  call :build_partial "hu" "Humanoids"
 
   :: by functional type
   call :build_partial "std" "Standard"

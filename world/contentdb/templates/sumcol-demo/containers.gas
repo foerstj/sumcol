@@ -198,6 +198,19 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_guard;
+        }
+    }
+}
 
 [t:template,n:sumcol_demo_barrel_redone_vanilla]
 {

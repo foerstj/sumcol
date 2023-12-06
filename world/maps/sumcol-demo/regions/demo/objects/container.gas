@@ -8,22 +8,22 @@
 	{
 		[other]
 		{
-			il_main = spell_fireball;
-			il_main = spell_explosive_powder;
-			il_main = spell_icefury;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = spell_flash;
 			il_main = spell_iceblast;
 			il_main = spell_bomb;
+			il_main = spell_flash;
+			il_main = potion_health_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = spell_icefury;
+			il_main = spell_explosive_powder;
+			il_main = spell_fireball;
 		}
 	}
 	[placement]
@@ -107,5 +107,12 @@
 	[placement]
 	{
 	  p position = -0.723851,0,-2.03264,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_humanoids,n:0x0010004c]
+{
+	[placement]
+	{
+	  p position = -1.67052,-9.53674e-007,3.81277,0xf00cc9f1;
 	}
 }
