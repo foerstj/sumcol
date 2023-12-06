@@ -9,4 +9,11 @@
     {
         [pcontent] {}
     }
+
+    [mind]
+    {
+		jat_startup 							= world\ai\jobs\common\job_startup_reveal.skrit
+			?invisible 							= true
+            &auto_reveal 						= true;
+    }
 }
