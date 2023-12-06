@@ -3,10 +3,15 @@
     specializes = guard_base;
 
 	doc = "[summon] guard";
-	aspect:experience_value = 0;
+    [aspect]
+    {
+        experience_value = 0;
+        draw_selection_indicator = false;
+    }
     physics:explode_when_killed = false;
 	[inventory]
 	{
+        spew_equipped_kill_count = <ignore>;
 		[pcontent]
 		{
             // ERASED
