@@ -270,6 +270,8 @@
             il_main = spell_summon_braak_mage;
             il_main = spell_summon_braak;
             il_main = scroll_summon_pitiful_braak;
+
+            il_main = spell_summon_guard;
         }
     }
 }
