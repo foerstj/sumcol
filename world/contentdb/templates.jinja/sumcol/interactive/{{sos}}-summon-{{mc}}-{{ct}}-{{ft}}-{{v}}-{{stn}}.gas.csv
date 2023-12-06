@@ -39,7 +39,7 @@ spell;whelnars_eyes;dsx_eyes_whelnar;;;Whelnar’s Eyes;0.75;cm;de;std;loa;3800;7;
 spell;bog_beast;dsx_bog_beast;;a;Bog Beast;2.5;nm;el;std;loa;1500;7;18;1.1;;;;;;;;0.8;1.8;;
 spell;mantrap;dsx_mantrap;;a;Mantrap;2;nm;pl;st;loa;380;0.5;18;0.95;;0.95;0.2;;;40;50;1;2.5;;
 scroll;dark_klaw;klaw_boss_01;;a;Dark Klaw;2;nm;an;mb;v;190;14;16;1.3;;;;;;;;1;3.6;;
-spell;frost_spitter;spider_frostnid_ranged;;a;Frost Spitter;1;nm;an;std;v;1900;6;18;;;0.85;;;;40;44;2;0.8;;
+spell;frost_spitter;spider_frostnid_ranged;;a;Frost Spitter;1;nm;an;std;v;1900;6;18;;;0.85;4;;;40;44;2;0.8;;
 spell;thunder_lizard;dsx_lizard_thunder;;a;Thunder Lizard;1.5;nm;an;std;loa;15000;7;28;1;;;;;;;;1.5;0.8;;
 spell;jungle_spiker;dsx_spiked_dweller;;a;Jungle Spiker;1;nm;an;std;loa;600;5;13;;;0.95;;;;55;70;1.5;0.8;;
 spell;frostnid;spider_frostnid;;a;Frostnid;1;nm;an;std;v;1900;7;19;0.95;;;;;;;;2;0.8;;
