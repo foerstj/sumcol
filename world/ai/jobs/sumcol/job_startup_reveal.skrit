@@ -34,7 +34,6 @@ startup state STARTUP$
 property	bool	auto_reveal$	= false		doc = "automaticaly start to reveal.";
 property	bool	invisible$		= false		doc = "make this actor invisible before revealing.";
 property	float	vis_delay$		= 0.0		doc = "if invisible how long to wait before making the actor visible.";
-property	bool	activate$		= false		doc = "Wait for activate to reveal.";
 property	bool 	try_face$		= true		doc = "Try to face closest enemy when revealing.";
 property	bool	construct_anim$	= false		doc = "Look at the stance of the revealing monster and construct an animation"; 
 
@@ -132,11 +131,6 @@ state Start$
 	{	
 		if ( Sleep$ ) 
 		{
-			if( activate$ )
-			{
-				m_Go$.Actor.SSetAlignment( aa_neutral );
-			}
-			
 			if( invisible$ )
 			{
 				m_Go$.Aspect.AspectHandle.SetHideMeshFlag( true );
@@ -156,26 +150,17 @@ State Sleeping$
 {
 	event OnWorldMessage$( eWorldEvent e$, WorldMessage msg$ )
 	{
-		if( !activate$ )
+		if( e$ == WE_ENEMY_SPOTTED )
 		{
-			if( e$ == WE_ENEMY_SPOTTED )
-			{
-				Attacker$ = MakeGoid( msg$.Data1 );
-				SetState Wakeup$;
-			}
-			if( e$ == WE_DAMAGED )
-			{
-				Attacker$ = MakeGoid( msg$.Data1 );
-				SetState Wakeup$;
-			}
-		} 
-		else 
-		{
-			if( e$ == WE_REQ_ACTIVATE )
-			{
-				SetState Wakeup$;
-			}
+			Attacker$ = MakeGoid( msg$.Data1 );
+			SetState Wakeup$;
 		}
+		if( e$ == WE_DAMAGED )
+		{
+			Attacker$ = MakeGoid( msg$.Data1 );
+			SetState Wakeup$;
+		}
+
 		if( e$ == WE_ANIM_DONE )
 		{
 			if( auto_reveal$ )
@@ -239,12 +224,6 @@ state Wakeup$
 	
 	event OnEnterState$
 	{
-		if( activate$ )
-		{
-			m_Go$.Actor.SSetAlignment( aa_evil );
-			m_Mind$.ResetSensors();
-		}
-		
 		if( try_face$ )
 		{
 			m_Mind$.TempQtColl1.Clear;
