@@ -132,12 +132,6 @@ state Start$
 	{	
 		if ( Sleep$ ) 
 		{
-			//m_Go$.Mind.SetMayAttack( false );
-			//m_Go$.Mind.SetMayBeAttacked( false );
-			
-			//m_Go$.Aspect.SSetIsSelectable( false );
-			//m_Go$.Aspect.SetIsInvincible( true );
-			
 			if( activate$ )
 			{
 				m_Go$.Actor.SSetAlignment( aa_neutral );
@@ -267,11 +261,7 @@ state Wakeup$
 				}
 			}
 		}
-		
-		//m_Go$.Mind.SetMayBeAttacked( true );
-		//m_Go$.Aspect.SSetIsSelectable( true );
-		//m_Go$.Aspect.SetIsInvincible( false );                                
-    	
+
 		if( !invisible$ )
 		{
 			This.CreateTimer( 3, 0 );
@@ -303,8 +293,7 @@ state Wakeup$
 		{
 			MCPManager.MakeRequest( m_Go$.Goid, PL_FACE );
 		}
-		//m_Go$.Mind.SetMayAttack( true );
-		
+
 		m_Mind$.ReqResetSensorsSelfAndVisible();
 	}	
 }
