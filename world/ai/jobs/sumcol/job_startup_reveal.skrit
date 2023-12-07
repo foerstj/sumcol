@@ -31,7 +31,6 @@ startup state STARTUP$
 {
 }
 
-property	bool	auto_reveal$	= false		doc = "automaticaly start to reveal.";
 property	bool	invisible$		= false		doc = "make this actor invisible before revealing.";
 property	float	vis_delay$		= 0.0		doc = "if invisible how long to wait before making the actor visible.";
 property	bool 	try_face$		= true		doc = "Try to face closest enemy when revealing.";
@@ -163,16 +162,7 @@ State Sleeping$
 
 		if( e$ == WE_ANIM_DONE )
 		{
-			if( auto_reveal$ )
-			{
-				SetState Wakeup$;
-				return;
-			}
-			
-			if( !invisible$ )
-			{
-				SetState Sleeping$;
-			}	
+			SetState Wakeup$;
 		}
 	}
 	
