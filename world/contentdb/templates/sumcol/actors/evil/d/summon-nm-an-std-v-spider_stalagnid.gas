@@ -59,7 +59,7 @@
 	}
     [mind]
     {
-		jat_startup = world\ai\jobs\common\job_startup_reveal.skrit?auto_reveal=true;
+		jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
 		actor_auto_fidgets = true;  // Together with "dff" fidget anim, this prevents the stalagnid to revert to its static position and then ignore its surroundings
     }
 }

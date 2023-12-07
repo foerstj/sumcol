@@ -48,9 +48,8 @@
     }
     [mind]
     {
-		jat_startup 							= world\ai\jobs\common\job_startup_reveal.skrit
-			?invisible 							= true
-			&auto_reveal						= true;
+		jat_startup 							= world\ai\jobs\sumcol\job_startup_reveal.skrit
+			?invisible 							= true;
     }
 	[generator_in_object]
 	{
