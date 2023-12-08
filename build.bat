@@ -150,13 +150,7 @@ if "%mode%"=="release" (
   if !errorlevel! neq 0 pause
 
   :: Combat Magic
-  rmdir /S /Q "%tmp%\Bits"
-  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-cm-* /xf *.psd /S
-  robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-cm-* /S
-  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-cm-* /S
-  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - Combat Magic.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
-  if !errorlevel! neq 0 pause
+  call :build_partial "cm" "Combat Magic"
 )
 endlocal
 
@@ -168,3 +162,20 @@ if %errorlevel% neq 0 pause
 
 :: Cleanup
 rmdir /S /Q "%tmp%\Bits"
+
+exit /b %errorlevel%
+
+:: Subroutines
+
+:build_partial
+  set infix=%~1
+  set name=%~2
+  echo build_partial %infix% %name%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix%-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
+  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "CC-BY-SA 2023" -title "%res_cs%" -author "Johannes Förstner"
+  if %errorlevel% neq 0 pause
+exit /b 0
