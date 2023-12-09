@@ -3,18 +3,18 @@
 {
     specializes = base_spell_sumcol_cm;
 
-    doc = "spell Summon Whelnar’s Eyes";
+    doc = "spell Summon Whelnar's Eyes";
     [aspect]
     {
         gold_value = 3800;
     }
     [common]
     {
-        screen_name = "Summon Whelnar’s Eyes";
+        screen_name = "Summon Whelnar's Eyes";
     }
     [common]
     {
-        description = "Summons Whelnar’s Eyes to guard the Caster.";
+        description = "Summons Whelnar's Eyes to guard the Caster.";
     }
     [gui]
     {
