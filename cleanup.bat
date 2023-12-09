@@ -10,6 +10,9 @@ set ds=.
 :: Cleanup resources so as not to confuse Siege Editor
 :: all-in-one dsres
 del "%ds%\DSLOA\%res_cs%.dsres"
+:: translation
+del "%ds%\DSLOA\%res_cs%.de.dsres"
+
 :: by creature type
 del "%ds%\DSLOA\%res_cs% - Animals.dsres"
 del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
@@ -27,6 +30,7 @@ del "%ds%\DSLOA\%res_cs% - LoA.dsres"
 :: by mage class
 del "%ds%\DSLOA\%res_cs% - Nature Magic.dsres"
 del "%ds%\DSLOA\%res_cs% - Combat Magic.dsres"
+
 :: demo map
 del "%ds%\DSLOA\%map_cs%.dsres"
 del "%ds%\DSLOA\%map_cs%.dsmap"
