@@ -3,72 +3,72 @@
 	[0x0000]
 	{
 		from = "Summon Magma Beast";
-		to = "Foobar beschwören";
+		to = "Magmabestie beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Dark Wolf";
-		to = "Foobar beschwören";
+		to = "Dunklen Wolf beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skeleton Captain";
-		to = "Foobar beschwören";
+		to = "Skeletthauptmann beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Giant Chitterskrag";
-		to = "Foobar beschwören";
+		to = "Riesigen Chitterskrag beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Alpha Wolf";
-		to = "Foobar beschwören";
+		to = "Leitwolf beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Dark Klaw";
-		to = "Foobar beschwören";
+		to = "Dunkelklaw beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Grizzly Furok";
-		to = "Foobar beschwören";
+		to = "Grausigen Furok beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Hulking Gremal";
-		to = "Foobar beschwören";
+		to = "Hünenhaften Gremal beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Phrak Ballista";
-		to = "Foobar beschwören";
+		to = "Phrak-Balliste beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Rabid Spiked Maw";
-		to = "Foobar beschwören";
+		to = "Wildes dornenbewehrtes Maul beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Venom Fiend";
-		to = "Foobar beschwören";
+		to = "Giftdämon beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Frost Archer";
-		to = "Foobar beschwören";
+		to = "Frostbogenschütze beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Frost Warrior";
-		to = "Foobar beschwören";
+		to = "Frostkrieger beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swamp Abomination";
-		to = "Foobar beschwören";
+		to = "Sumpfgräuel beschwören";
 	}
 	[0x0000]
 	{
