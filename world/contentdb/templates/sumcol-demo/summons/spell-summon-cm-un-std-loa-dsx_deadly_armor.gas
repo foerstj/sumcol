@@ -15,7 +15,7 @@
     }
     [common]
     {
-        description = "Summons a Deadly Armor to guard the Caster.";
+        description = "Summons Deadly Armor to guard the Caster.";
     }
     [gui]
     {
