@@ -488,486 +488,486 @@
 	[0x0000]
 	{
 		from = "Summons a Magma Beast to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Magmabestie, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Dark Wolf to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Dunklen Wolf, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skeleton Captain to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Skeletthauptmann, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Giant Chitterskrag to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Riesigen Chitterskrag, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Alpha Wolf to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Leitwolf, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Dark Klaw to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Dunkelklaw, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Grizzly Furok to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Grausigen Furok, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Hulking Gremal to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Hünenhaften Gremal, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Phrak Ballista to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Phrak-Balliste, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Rabid Spiked Maw to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Wildes dornenbewehrtes Maul, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Venom Fiend to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Giftdämon, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Frost Archer to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Frostbogenschützen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Frost Warrior to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Frostkrieger, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Swamp Abomination to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Sumpfgräuel, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Infested Larch to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Infizierten Lärchling, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Red Drake to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Roten Drachen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Rune Fiend to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Runendämon, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons Whelnar's Eyes to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört Whelnars Augen, die den Anwender verteidigen.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Horrid to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Fürchterlich, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Synged to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Verkohlt, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Vile Mucosa to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Gemeinen Mucosa, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Blazing Elemental to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Flammendes Elementar, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Bronze Gargoyle to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Wasserspeier aus Bronze, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Gargoyle to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Wasserspeier, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Lava Beast to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Lavaungeheuer, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Lava Spirit Fighter to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Lavageist-Kämpfer, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skeleton Archer to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Skelettbogenschützen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skeleton Guard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Skelettwache, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skeleton Mercenary to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Söldnerskelett, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skeleton Ranger to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Skelettwaldläufer, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Wraith Mage to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Gespenstermagier, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Jungle Skrubb to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Dschungel-Skrubb, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Black Skrubb to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Schwarzen Skrubb, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Farm Skrubb to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Feld-Skrubb, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Googore to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Googore, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Mine Worm to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Grubenwurm, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Angler to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Angler, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Island Lizard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Inselechse, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Chitterskrag to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Chitterskrag, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Immature Chitterskrag to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Unreifen Chitterskrag, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Spewing Chitterskrag to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Spuckenden Chitterskrag, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Emerald Spider to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Smaragdspinne, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Ice Grub to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Eislarve, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Ice Moth to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Eismotte, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Jungle Spiker to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Dschungelnadler, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skitterclaw to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Skitterclaw, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Skitterling to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Skitterling, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Mhulliq to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Mhulliq, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Monstrous Rat to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Monströse Ratte, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Rending Mhulliq to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Reißenden Mhulliq, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Swarmling Drone to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Swarmlingdrohne, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Swarmling Queen to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Swarmlingkönigin, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Snow Boar to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Schneekeiler, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons Swirling Midges to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört Wirbelmücken, die den Anwender verteidigen.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Thunder Lizard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Donnerechse, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Varg to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Varg, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Arakun Spider to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Arakun-Spinne, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Blue Drake to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Blauen Drachen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Forest Phrak to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Wald-Phrak, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Frostnid to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Frostnid, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Frost Drake to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Frostdrachen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Frost Spitter to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Frostnid-Spucker, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Furok Slasher to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Furok Schlitzer, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Giant Moth to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Riesenmotte, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Giant Wasp to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Riesenwespe, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Googore Grub to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Googore-Larve, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Gray Wolf to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Grauwolf, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Klaw to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Klaw, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Krug Dog to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Krug-Hund, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Krug Killer Dog to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Krug-Kampfhund, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Lectar to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Lectar, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Mangler to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Mangler, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Phrak to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Phrak, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Phrak Piercer to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Phrak-Schlitzer, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Sea Mangler to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Seemangler, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Slarg to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Slarg, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Snapper to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Schnapper, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Spiked Maw to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Dornenbewehrtes Maul, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Stalagnid to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Stalagnid, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Swamp Stinger to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Sumpfstecher, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a White Wolf to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Weißen Wolf, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Yellow Spider to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Gelbe Spinne, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Bog Beast to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Schlammbestie, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Cobble Man to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Pflastermann, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Marble Golem to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Marmorgolem, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Blue Shard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Blaue Scherbe, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Green Shard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Grüne Scherbe, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Ice Archer to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Eisbogenschützen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Ice Fly to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Eisfliege, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons an Ice Warrior to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Eiskrieger, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Purple Shard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Rote Scherbe, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Swamp Creature to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört ein Sumpfwesen, das den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Swamp Slinger to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Sumpfschleuder, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Teal Shard to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Tonscherbe, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons Killer Vines to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört Todesranken, die den Anwender verteidigen.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Mantrap to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört eine Menschenfalle, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
 		from = "Summons a Tretch to guard the Caster.";
-		to = "Beschwört eins Foobar, dex den Anwender verteidigt.";
+		to = "Beschwört einen Tretch, der den Anwender verteidigt.";
 	}
 }
