@@ -73,417 +73,417 @@
 	[0x0000]
 	{
 		from = "Summon Infested Larch";
-		to = "Foobar beschwören";
+		to = "Infizierten Lärchling beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Red Drake";
-		to = "Foobar beschwören";
+		to = "Roten Drachen beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Rune Fiend";
-		to = "Foobar beschwören";
+		to = "Runendämon beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Whelnar's Eyes";
-		to = "Foobar beschwören";
+		to = "Whelnars Augen beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Horrid";
-		to = "Foobar beschwören";
+		to = "Fürchterlich beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Synged";
-		to = "Foobar beschwören";
+		to = "Verkohlt beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Vile Mucosa";
-		to = "Foobar beschwören";
+		to = "Gemeinen Mucosa beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Blazing Elemental";
-		to = "Foobar beschwören";
+		to = "Flammendes Elementar beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Bronze Gargoyle";
-		to = "Foobar beschwören";
+		to = "Wasserspeier aus Bronze beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Gargoyle";
-		to = "Foobar beschwören";
+		to = "Wasserspeier beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Lava Beast";
-		to = "Foobar beschwören";
+		to = "Lavaungeheuer beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Lava Spirit Fighter";
-		to = "Foobar beschwören";
+		to = "Lavageist-Kämpfer beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skeleton Archer";
-		to = "Foobar beschwören";
+		to = "Skelettbogenschütze beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skeleton Guard";
-		to = "Foobar beschwören";
+		to = "Skelettwache beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skeleton Mercenary";
-		to = "Foobar beschwören";
+		to = "Söldnerskelett beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skeleton Ranger";
-		to = "Foobar beschwören";
+		to = "Skelettwaldläufer beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Wraith Mage";
-		to = "Foobar beschwören";
+		to = "Gespenstermagier beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Jungle Skrubb";
-		to = "Foobar beschwören";
+		to = "Dschungel-Skrubb beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Black Skrubb";
-		to = "Foobar beschwören";
+		to = "Schwarzen Skrubb beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Farm Skrubb";
-		to = "Foobar beschwören";
+		to = "Feld-Skrubb beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Googore";
-		to = "Foobar beschwören";
+		to = "Googore beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Mine Worm";
-		to = "Foobar beschwören";
+		to = "Grubenwurm beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Angler";
-		to = "Foobar beschwören";
+		to = "Angler beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Island Lizard";
-		to = "Foobar beschwören";
+		to = "Inselechse beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Chitterskrag";
-		to = "Foobar beschwören";
+		to = "Chitterskrag beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Immature Chitterskrag";
-		to = "Foobar beschwören";
+		to = "Unreifen Chitterskrag beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Spewing Chitterskrag";
-		to = "Foobar beschwören";
+		to = "Spuckenden Chitterskrag beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Emerald Spider";
-		to = "Foobar beschwören";
+		to = "Smaragdspinne beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Ice Grub";
-		to = "Foobar beschwören";
+		to = "Eislarve beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Ice Moth";
-		to = "Foobar beschwören";
+		to = "Eismotte beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Jungle Spiker";
-		to = "Foobar beschwören";
+		to = "Dschungelnadler beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skitterclaw";
-		to = "Foobar beschwören";
+		to = "Skitterclaw beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Skitterling";
-		to = "Foobar beschwören";
+		to = "Skitterling beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Mhulliq";
-		to = "Foobar beschwören";
+		to = "Mhulliq beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Monstrous Rat";
-		to = "Foobar beschwören";
+		to = "Monströse Ratte beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Rending Mhulliq";
-		to = "Foobar beschwören";
+		to = "Reißenden Mhulliq beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swarmling Drone";
-		to = "Foobar beschwören";
+		to = "Swarmlingdrohne beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swarmling Queen";
-		to = "Foobar beschwören";
+		to = "Swarmlingkönigin beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Snow Boar";
-		to = "Foobar beschwören";
+		to = "Schneekeiler beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swirling Midges";
-		to = "Foobar beschwören";
+		to = "Wirbelmücken beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Thunder Lizard";
-		to = "Foobar beschwören";
+		to = "Donnerechse beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Varg";
-		to = "Foobar beschwören";
+		to = "Varg beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Arakun Spider";
-		to = "Foobar beschwören";
+		to = "Arakun-Spinne beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Blue Drake";
-		to = "Foobar beschwören";
+		to = "Blauen Drachen beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Forest Phrak";
-		to = "Foobar beschwören";
+		to = "Wald-Phrak beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Frostnid";
-		to = "Foobar beschwören";
+		to = "Frostnid beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Frost Drake";
-		to = "Foobar beschwören";
+		to = "Frostdrachen beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Frost Spitter";
-		to = "Foobar beschwören";
+		to = "Frostnid-Spucker beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Furok Slasher";
-		to = "Foobar beschwören";
+		to = "Furok Schlitzer beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Giant Moth";
-		to = "Foobar beschwören";
+		to = "Riesenmotte beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Giant Wasp";
-		to = "Foobar beschwören";
+		to = "Riesenwespe beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Googore Grub";
-		to = "Foobar beschwören";
+		to = "Googore-Larve beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Gray Wolf";
-		to = "Foobar beschwören";
+		to = "Grauwolf beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Klaw";
-		to = "Foobar beschwören";
+		to = "Klaw beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Krug Dog";
-		to = "Foobar beschwören";
+		to = "Krug-Hund beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Krug Killer Dog";
-		to = "Foobar beschwören";
+		to = "Krug-Kampfhund beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Lectar";
-		to = "Foobar beschwören";
+		to = "Lectar beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Mangler";
-		to = "Foobar beschwören";
+		to = "Mangler beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Phrak";
-		to = "Foobar beschwören";
+		to = "Phrak beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Phrak Piercer";
-		to = "Foobar beschwören";
+		to = "Phrak-Schlitzer beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Sea Mangler";
-		to = "Foobar beschwören";
+		to = "Seemangler beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Slarg";
-		to = "Foobar beschwören";
+		to = "Slarg beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Snapper";
-		to = "Foobar beschwören";
+		to = "Schnapper beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Spiked Maw";
-		to = "Foobar beschwören";
+		to = "Dornenbewehrtes Maul beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Stalagnid";
-		to = "Foobar beschwören";
+		to = "Stalagnid beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swamp Stinger";
-		to = "Foobar beschwören";
+		to = "Sumpfstecher beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon White Wolf";
-		to = "Foobar beschwören";
+		to = "Weißen Wolf beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Yellow Spider";
-		to = "Foobar beschwören";
+		to = "Gelbe Spinne beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Bog Beast";
-		to = "Foobar beschwören";
+		to = "Schlammbestie beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Cobble Man";
-		to = "Foobar beschwören";
+		to = "Pflastermann beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Marble Golem";
-		to = "Foobar beschwören";
+		to = "Marmorgolem beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Blue Shard";
-		to = "Foobar beschwören";
+		to = "Blaue Scherbe beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Green Shard";
-		to = "Foobar beschwören";
+		to = "Grüne Scherbe beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Ice Archer";
-		to = "Foobar beschwören";
+		to = "Eisbogenschütze beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Ice Fly";
-		to = "Foobar beschwören";
+		to = "Eisfliege beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Ice Warrior";
-		to = "Foobar beschwören";
+		to = "Eiskrieger beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Purple Shard";
-		to = "Foobar beschwören";
+		to = "Rote Scherbe beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swamp Creature";
-		to = "Foobar beschwören";
+		to = "Sumpfwesen beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Swamp Slinger";
-		to = "Foobar beschwören";
+		to = "Sumpfschleuder beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Teal Shard";
-		to = "Foobar beschwören";
+		to = "Tonscherbe beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Killer Vines";
-		to = "Foobar beschwören";
+		to = "Todesranken beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Mantrap";
-		to = "Foobar beschwören";
+		to = "Menschenfalle beschwören";
 	}
 	[0x0000]
 	{
 		from = "Summon Tretch";
-		to = "Foobar beschwören";
+		to = "Tretch beschwören";
 	}
 	[0x0000]
 	{
