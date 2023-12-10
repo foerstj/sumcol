@@ -31,6 +31,11 @@
 {
     specializes = spell_frostnid_freeze_base;
 
+	[attack]
+	{
+		damage_max = 440;
+		damage_min = 400;
+	}
     [spell_fire]
     {
         effect_script = frostnid_freeze_sumcol;
