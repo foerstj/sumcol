@@ -34,6 +34,17 @@
 {
     specializes = dsx_spell_skatwyrm_gas_base;
 
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = (((#combat_magic)*4.2)*1.0)*0.9;
+		attack_damage_modifier_max = (((#combat_magic)*4.2)*1.0)*1.1;
+	}
+
     [spell_fire]
     {
         effect_script = dsx_skatwyrm_gas_fixed;
