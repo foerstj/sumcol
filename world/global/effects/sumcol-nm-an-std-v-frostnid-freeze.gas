@@ -14,7 +14,7 @@
 			/////////////////////////////////////////
 			// This is the main trackball for the effect, everything is based off of this.
 			sfx create trackball #TARGET_KB 
-				"must_update()color0(1,.5,.5)invisible()no_collide_objects()
+				"must_update()color0(1,.5,.5)invisible()no_collide()
 				accel(0)scale(1.2)velocity(9)afterlife(1)[1]";
 			set $trackball #POP;
 			sfx rat $trackball;
