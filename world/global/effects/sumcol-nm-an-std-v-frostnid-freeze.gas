@@ -1,0 +1,61 @@
+[effect_script*]
+{
+	name	=frostnid_freeze_sumcol;
+
+	script	=[[
+			set $size .3;
+			
+			sfx create orbiter #TARGET 
+				"must_update()invisible()offset(0,.1,0)iphi(0)radius(0)[1]";
+			set $orb #POP;
+			sfx snap_to_ground $orb;
+			sfx start $orb;
+
+			/////////////////////////////////////////
+			// This is the main trackball for the effect, everything is based off of this.
+			sfx create trackball #TARGET_KB 
+				"must_update()color0(1,.5,.5)invisible()no_collide_objects()
+				accel(0)scale(1.2)velocity(9)afterlife(1)[1]";
+			set $trackball #POP;
+			sfx rat $trackball;
+			sfx target $trackball $orb;
+			sfx position_at $trackball @body_anterior source;
+			sfx offset $trackball v<0 .8 0> source; 
+			sfx offset_bone $trackball v<0 .8 0> target; 
+			
+			sfx create fire #TARGET
+				"must_update()scale(1)count(30)color0(1,.5,.5)color1(0,0,0)alphafade(2)
+				velocity(0,100,0)accel(0,0,0)flamesize(10)max_displace(14)[1]";
+			set $fire2 #POP;
+			sfx rat $fire2;
+			sfx target $fire2 $trackball;
+			sfx start $fire2;
+
+			sfx create fireb #TARGET
+				"must_update()fctrl(1,1,-1)scale(4)count(100)color0(.7,.3,.2)velocity(0,10,0)
+				accel(0,-2,0)flamesize(2)alphafade(.25)[0][1]";
+				 
+			set $sparkle1 #POP;
+			sfx rat $sparkle1;
+			sfx target $sparkle1 $trackball;
+			sfx friendly party $sparkle1;
+			sfx start $sparkle1;
+
+			sfx start $trackball;
+
+			pause 2;
+			
+			sfx finish $sparkle1
+			
+			pause .5;
+			
+			sfx finish $fire2;
+			
+			pause .4;
+			
+			sfx finish $trackball;
+			
+			
+			worldmsg WE_SPELL_SYNC_END #OWNER_GOID #OWNER_GOID #TARGET_GOID;
+			]];
+}
