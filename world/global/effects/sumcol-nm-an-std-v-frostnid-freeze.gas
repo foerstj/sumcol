@@ -14,21 +14,31 @@
 			/////////////////////////////////////////
 			// This is the main trackball for the effect, everything is based off of this.
 			sfx create trackball #TARGET_KB 
-				"must_update()color0(1,.5,.5)invisible()no_collide()
+				"must_update()color0(1,.5,.5)invisible()no_collide_objects()
 				accel(0)scale(1.2)velocity(9)afterlife(1)[1]";
-			set $trackball #POP;
-			sfx rat $trackball;
-			sfx target $trackball $orb;
-			sfx position_at $trackball @body_anterior source;
-			sfx offset $trackball v<0 .8 0> source; 
-			sfx offset_bone $trackball v<0 .8 0> target; 
+			set $trackball1 #POP;
+			sfx rat $trackball1;
+			sfx target $trackball1 $orb;
+			sfx position_at $trackball1 @body_anterior source;
+			sfx offset $trackball1 v<0 .8 0> source; 
+			sfx offset_bone $trackball1 v<0 .8 0> target; 
+			
+			sfx create trackball #TARGET_KB 
+				"must_update()color0(1,.5,.5)invisible()
+				accel(0)scale(1.2)velocity(9)afterlife(1)[1]";
+			set $trackball2 #POP;
+			sfx rat $trackball2;
+			sfx target $trackball2 $orb;
+			sfx position_at $trackball2 @body_anterior source;
+			sfx offset $trackball2 v<0 .8 0> source; 
+			sfx offset_bone $trackball2 v<0 .8 0> target; 
 			
 			//sfx create fire #TARGET
 			//	"must_update()scale(1)count(30)color0(1,.5,.5)color1(0,0,0)alphafade(2)
 			//	velocity(0,100,0)accel(0,0,0)flamesize(10)max_displace(14)[1]";
 			//set $fire2 #POP;
 			//sfx rat $fire2;
-			//sfx target $fire2 $trackball;
+			//sfx target $fire2 $trackball1;
 			//sfx start $fire2;
 
 			sfx create fireb #TARGET
@@ -37,11 +47,12 @@
 				 
 			set $sparkle1 #POP;
 			sfx rat $sparkle1;
-			sfx target $sparkle1 $trackball;
+			sfx target $sparkle1 $trackball1;
 			sfx friendly party $sparkle1;
 			sfx start $sparkle1;
 
-			sfx start $trackball;
+			sfx start $trackball1;
+			sfx start $trackball2;
 
 			pause 2;
 			
@@ -53,7 +64,8 @@
 			
 			pause .4;
 			
-			sfx finish $trackball;
+			sfx finish $trackball1;
+			sfx finish $trackball2;
 			
 			
 			worldmsg WE_SPELL_SYNC_END #OWNER_GOID #OWNER_GOID #TARGET_GOID;
