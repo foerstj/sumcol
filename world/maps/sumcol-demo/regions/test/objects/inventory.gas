@@ -1,0 +1,7 @@
+[t:spell_summon_frost_spitter,n:0x00200092]
+{
+	[placement]
+	{
+	  p position = -3.95313,0,1.90265,0xe8521618;
+	}
+}

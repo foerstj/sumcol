@@ -38,7 +38,7 @@
 	}
 	[placement]
 	{
-	  p position = -2.38408,0,2.18843,0xe634b32d;
+	  p position = -0.298569,0,0.162704,0xe634b32d;
 	}
 }
 [t:sumcol_gen-sumcol_krug_dummy_200,n:0x002000d1]
