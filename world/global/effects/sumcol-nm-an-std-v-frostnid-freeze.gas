@@ -23,13 +23,13 @@
 			sfx offset $trackball v<0 .8 0> source; 
 			sfx offset_bone $trackball v<0 .8 0> target; 
 			
-			sfx create fire #TARGET
-				"must_update()scale(1)count(30)color0(1,.5,.5)color1(0,0,0)alphafade(2)
-				velocity(0,100,0)accel(0,0,0)flamesize(10)max_displace(14)[1]";
-			set $fire2 #POP;
-			sfx rat $fire2;
-			sfx target $fire2 $trackball;
-			sfx start $fire2;
+			//sfx create fire #TARGET
+			//	"must_update()scale(1)count(30)color0(1,.5,.5)color1(0,0,0)alphafade(2)
+			//	velocity(0,100,0)accel(0,0,0)flamesize(10)max_displace(14)[1]";
+			//set $fire2 #POP;
+			//sfx rat $fire2;
+			//sfx target $fire2 $trackball;
+			//sfx start $fire2;
 
 			sfx create fireb #TARGET
 				"must_update()fctrl(1,1,-1)scale(4)count(100)color0(.7,.3,.2)velocity(0,10,0)
@@ -49,7 +49,7 @@
 			
 			pause .5;
 			
-			sfx finish $fire2;
+			//sfx finish $fire2;
 			
 			pause .4;
 			
