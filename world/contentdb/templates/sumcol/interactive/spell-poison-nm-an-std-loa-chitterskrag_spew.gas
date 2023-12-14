@@ -33,6 +33,11 @@
 {
     specializes = spell_chitterskrag_poison_base;
 
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
 	[magic]
 	{
 		cast_reload_delay = 2;
