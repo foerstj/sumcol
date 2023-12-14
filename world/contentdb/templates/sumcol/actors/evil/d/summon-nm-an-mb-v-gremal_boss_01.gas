@@ -12,4 +12,6 @@
             // ERASED
 		}
 	}
+
+    common:is_multi_player = true;
 }
