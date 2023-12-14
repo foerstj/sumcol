@@ -35,11 +35,15 @@
 
 	[attack]
 	{
-		damage_max = 0;
-		damage_min = 0;
+		damage_max = 66;
+		damage_min = 55;
 	}
 	[magic]
 	{
 		cast_reload_delay = 2;
+    }
+	[spell_fire]
+	{
+		effect_script = chitterskrag_poison_test;
     }
 }

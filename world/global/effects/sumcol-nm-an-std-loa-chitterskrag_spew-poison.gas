@@ -1,0 +1,104 @@
+[effect_script*]
+{
+	name	=chitterskrag_poison_test;
+
+	script	=[[
+			sound play s_e_attack_chitterskrag_spell_SED at #SOURCE_POSITION dist 3 30;
+
+			/////////////////////////////////////////
+			// This is the main trackball for the effect, everything is based off of this.
+			sfx create trackball #TARGET_KB 
+				"invisible()must_update()velocity(8)scale(1)color0(0,.66,.61)dur(6)afterlife(2)";
+			set $trackball #POP;
+			sfx position_at $trackball @weapon_bone source;
+			sfx friendly party $trackball;
+
+			sfx create explosion #SOURCE 
+				"must_update()dir(0,.1,1)radius(1)collide()vmin(3)rebound(.2)scale(.5)
+				vmax(3)rvel(2,2,2)dur(1)color0(0,.66,.61)color1(.8,0,0)
+				count(12)";
+			sfx attach_point #PEEK @weapon_bone target;
+			sfx start #POP;
+
+			sfx create explosion #SOURCE 
+				"must_update()omni_dir()radius(1)collide()vmin(3)rebound(.2)scale(.5)
+				vmax(3)rvel(2,2,2)dur(1)color0(0,.66,.61)color1(.8,0,0)srate(.033)
+				count(15)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			sfx start #POP;
+
+			sfx create fire #SOURCE
+				"dark()must_update()count(30)color0(.1,1,.1)velocity(0,0,0)scale(1.75)
+				accel(0,0,0)flamesize(1.33)alphafade(2)max_radius(3)ts(3)fctrl(0,0,0)
+				max_displace(1)min_displace(-1)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			sfx start #POP;
+
+			sfx create fire #SOURCE
+				"must_update()count(10)color0(0,.66,.35)velocity(0,0,0)scale(1.33)
+				accel(0,0,0)flamesize(1)alphafade(2)max_radius(3)ts(3)fctrl(0,0,0)
+				max_displace(1)min_displace(-1)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			sfx start #POP;
+
+			sfx create fire #SOURCE
+				"must_update()count(30)color0(0,.66,.61)color1(.33,0,0)velocity(0,-4,0)accel(0,-4,0)
+				flamesize(2)alphafade(1)max_radius(6)fctrl(0,0,0)ts(1.33)
+				max_displace(1)min_displace(-1)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			sfx start #POP;
+			
+			sfx create lightsource #SOURCE 
+				"must_update()color0(0,.66,.61)tin(.1)tout(.1)radius(2.5)";
+			sfx rat #PEEK;
+			sfx target #PEEK $trackball;
+			sfx start #POP;
+
+			sfx start $trackball;
+
+			waitfor collision $trackball #DEFAULT_TIMEOUT;
+
+			set $collision_type #POP;
+
+			if ( $collision_type != #NO_COLLISION )
+			{
+				get target_position $trackball target;
+				sound play s_e_spell_fire_rain_hit at #POP dist 20 30;
+				
+				get collision point $trackball;
+
+
+				sfx create fire #POP 
+					"dark()instant()count(15)velocity(0,5,0)accel(0,-4,0)
+					offset(0,.2,0)ts(.4)scale(.66)color0(0,.66,.61)color1(0,.8,0)
+					alphafade(.28)max_radius(8)min_displace(-4)flamesize(.33)[1]";
+				sfx friendly party #PEEK;
+				sfx start #POP;
+				
+				get collision point $trackball;
+
+				sfx create fire #POP 
+					"instant()count(15)velocity(0,5,0)accel(0,-4,0)dur(1.2)
+					offset(0,.2,0)ts(.4)scale(.66)color0(0,.66,.61)
+					alphafade(.28)max_radius(8)min_displace(-4)flamesize(.33)fctrl(0,0,0)";
+				sfx start #POP;
+				
+				get collision point $trackball;
+
+				sfx create explosion #POP 
+					"ts(1)color0(.2,1,0)color1(0,.66,.35)radius(0)vmin(2)count(18)
+					vmax(3)rvel(4,2,4)dur(1.2)scale(.5)fade_range(1,1,0)";
+				set $explosion #POP;
+				get collision direction $trackball;
+				sfx direction $explosion #POP;
+				sfx start $explosion;
+			}
+
+			sfx destroy $trackball;
+			worldmsg WE_SPELL_SYNC_END #OWNER_GOID #OWNER_GOID #TARGET_GOID;
+			]];
+}
