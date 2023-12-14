@@ -75,7 +75,7 @@
 				sfx create fire #POP 
 					"dark()instant()count(15)velocity(0,5,0)accel(0,-4,0)
 					offset(0,.2,0)ts(.4)scale(.66)color0(0,.66,.61)color1(0,.8,0)
-					alphafade(.28)max_radius(8)min_displace(-4)flamesize(.33)[1]";
+					alphafade(.28)max_radius(8)min_displace(-4)flamesize(.33)[0][1]";
 				sfx friendly party #PEEK;
 				sfx start #POP;
 				
