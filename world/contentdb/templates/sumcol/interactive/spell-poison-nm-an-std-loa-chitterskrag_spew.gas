@@ -35,18 +35,8 @@
 
 	[attack]
 	{
+        // halved static spell damage (used for fire effect damage) for balancing
 		damage_min = 27;
 		damage_max = 33;
 	}
-	[magic]
-	{
-		//attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.0)*0.4)*0.9;
-		//attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.0)*0.4)*1.1;
-
-		cast_reload_delay = 2;
-    }
-	[spell_fire]
-	{
-		effect_script = chitterskrag_poison_test;
-    }
 }
