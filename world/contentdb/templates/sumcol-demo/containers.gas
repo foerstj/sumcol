@@ -209,6 +209,10 @@
         {
             il_main = spell_summon_kill_bot;
             il_main = spell_summon_hunter;
+            il_main = spell_summon_copter;
+            il_main = spell_summon_perforator;
+            il_main = spell_summon_heater;
+            il_main = spell_summon_blaster;
         }
     }
 }

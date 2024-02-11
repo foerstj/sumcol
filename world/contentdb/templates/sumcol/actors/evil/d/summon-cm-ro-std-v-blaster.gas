@@ -1,0 +1,15 @@
+[t:template,n:blaster_summon]
+{
+    specializes = blaster_base;
+
+	doc = "[summon] robot_blaster";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

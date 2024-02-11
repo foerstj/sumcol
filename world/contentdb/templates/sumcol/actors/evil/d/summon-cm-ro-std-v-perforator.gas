@@ -1,0 +1,15 @@
+[t:template,n:perforator_summon]
+{
+    specializes = perforator_base;
+
+	doc = "[summon] robot_perforator";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

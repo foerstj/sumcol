@@ -1,0 +1,15 @@
+[t:template,n:heater_summon]
+{
+    specializes = heater_base;
+
+	doc = "[summon] robot_heater";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

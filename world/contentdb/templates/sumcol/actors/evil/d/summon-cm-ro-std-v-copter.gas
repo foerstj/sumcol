@@ -1,0 +1,8 @@
+[t:template,n:copter_summon]
+{
+    specializes = copter_base;
+
+	doc = "[summon] robot_copter";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}
