@@ -4,4 +4,5 @@
 
 	doc = "[summon] hunter";
 	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
 }
