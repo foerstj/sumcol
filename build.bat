@@ -43,7 +43,7 @@ if %errorlevel% neq 0 pause
 
 :: Compile translation resource file
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%doc_dsloa%\Bits\language" "%tmp%\Bits\language" %res%.*.gas /S
+robocopy "%doc_dsloa%\Bits\language" "%tmp%\Bits\language" %res%-*.de.gas /S
 %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
