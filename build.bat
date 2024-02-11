@@ -10,7 +10,7 @@ set res=sumcol
 :: name of resources, case-sensitive
 set res_cs=Summons Collection
 :: tank properties
-set year=2023
+set year=2024
 set copyright=CC-BY-SA %year%
 set author=Johannes Förstner
 
@@ -54,6 +54,7 @@ if "%mode%"=="release" (
   call :build_partial "un" "Undead"
   call :build_partial "pl" "Plants"
   call :build_partial "de" "Demonics"
+  call :build_partial "ro" "Robots"
 
   :: by functional type
   call :build_partial "std" "Standard"

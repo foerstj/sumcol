@@ -1,0 +1,7 @@
+[t:template,n:kill_bot_summon]
+{
+    specializes = kill_bot_base;
+
+	doc = "[summon] kill_bot";
+	aspect:experience_value = 0;
+}

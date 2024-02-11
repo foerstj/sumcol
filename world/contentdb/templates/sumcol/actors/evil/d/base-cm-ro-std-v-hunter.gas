@@ -1,0 +1,65 @@
+[t:template,n:hunter_base]  // = hunter
+{
+	category_name = "1W_evil_d";
+	doc = "hunter";
+	specializes = base_picker;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  10, 0;
+			intelligence =  9, 0;
+			dexterity =  11, 0;
+            melee       = 30, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2177;
+		life = 480;
+		max_life = 480;
+		mana = 10;
+		max_mana = 10;
+		textures:0 = b_c_edm_pr-03;
+		material = steel;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_copter; }
+			[enemy_spotted]	{ priority = high; * = s_e_call_mechanoid_small_SED;	}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 130;
+		damage_min = 120;
+		reload_delay = 0;
+	}
+	[common] { screen_name="Hunter"; }
+	[defend] { defense=320; }
+	[mind]
+	{
+		jat_fidget	= world\ai\jobs\common\job_fidget.skrit
+			?curious	= 0.65
+			&interest	= interest
+			&meander	= false
+			&still		= false;
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_hunter_01 = 1;
+			frag_glb_hunter_02 = 1;
+			frag_glb_hunter_03 = 3;
+			frag_glb_hunter_04 = 2;
+			frag_glb_hunter_05 = 3;
+			frag_glb_metal_01 = 3;
+			frag_glb_metal_03 = 1;
+			frag_glb_metal_05 = 3;
+			frag_glb_metal_06 = 4;
+		}
+	}
+}

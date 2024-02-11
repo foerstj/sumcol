@@ -1,0 +1,7 @@
+[t:template,n:hunter_summon]
+{
+    specializes = hunter_base;
+
+	doc = "[summon] hunter";
+	aspect:experience_value = 0;
+}
