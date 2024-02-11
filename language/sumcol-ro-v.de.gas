@@ -1,0 +1,68 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Kill Bot";
+		to = "Bot Töten beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Kill Bot to guard the Caster.";
+		to = "Beschwört einen Bot Töten, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hunter";
+		to = "Jäger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hunter to guard the Caster.";
+		to = "Beschwört einen Jäger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Copter";
+		to = "Copter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Copter to guard the Caster.";
+		to = "Beschwört einen Copter, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Perforator";
+		to = "Durchbohrer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Perforator to guard the Caster.";
+		to = "Beschwört einen Durchbohrer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Heater";
+		to = "Ofen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Heater to guard the Caster.";
+		to = "Beschwört einen Ofen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Blaster";
+		to = "Sprenger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Blaster to guard the Caster.";
+		to = "Beschwört einen Sprenger, der den Anwender verteidigt.";
+	}
+}
