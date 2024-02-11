@@ -36,28 +36,28 @@
 {
 	[placement]
 	{
-	  p position = -1.68158,0,-2.05572,0xf00cc9f1;
+	  p position = -2.25163,0,-2.816,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_elementals,n:0x00100005]
 {
 	[placement]
 	{
-	  p position = -1.70766,-1.90735e-006,-0.833927,0xf00cc9f1;
+	  p position = -1.89861,-1.90735e-006,-1.57357,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_plants,n:0x00100006]
 {
 	[placement]
 	{
-	  p position = -1.69095,0,0.537401,0xf00cc9f1;
+	  p position = -1.8819,0,-0.202239,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_undead,n:0x00100007]
 {
 	[placement]
 	{
-	  p position = -1.70733,0,1.84804,0xf00cc9f1;
+	  p position = -1.89828,0,1.1084,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_redone_vanilla,n:0x00100022]
@@ -71,7 +71,7 @@
 {
 	[placement]
 	{
-	  p position = -1.67603,-9.53674e-007,2.92259,0xf00cc9f1;
+	  p position = -1.86698,-9.53674e-007,2.18295,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_original_vanilla,n:0x00100037]
@@ -106,6 +106,13 @@
 {
 	[placement]
 	{
-	  p position = -0.723851,0,-2.03264,0xf00cc9f1;
+	  p position = -1.2939,0,-2.79292,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_robots,n:0x0010004c]
+{
+	[placement]
+	{
+	  p position = -1.91116,0,3.19504,0xf00cc9f1;
 	}
 }

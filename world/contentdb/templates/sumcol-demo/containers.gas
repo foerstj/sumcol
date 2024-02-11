@@ -198,6 +198,20 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_robots]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Robots";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_kill_bot;
+            il_main = spell_summon_hunter;
+        }
+    }
+}
 
 [t:template,n:sumcol_demo_barrel_redone_vanilla]
 {
