@@ -1,0 +1,21 @@
+[t:template,n:wraith_fighter_dummy_base]  // = wraith
+{
+	category_name = "1W_evil_c";
+	doc = "wraith";
+	specializes = base_battle_wraith;
+}
+
+[t:template,n:wraith_fighter_demo_summon]
+{
+    specializes = wraith_fighter_dummy_base;
+
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent]
+		{
+		}
+	}
+	mind:jat_brain						= world\ai\jobs\common\brain_hero.skrit;
+}

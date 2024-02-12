@@ -1,0 +1,26 @@
+[t:template,n:wraith_archer_dummy_base]  // = wraith_archer
+{
+	category_name = "1W_evil_c";
+	doc = "wraith_archer";
+	specializes = wraith_archer_base;
+}
+
+[t:template,n:wraith_archer_demo_summon]
+{
+    specializes = wraith_archer_dummy_base;
+
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		spew_equipped_kill_count = ;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[pcontent]
+		{
+			[oneof*]
+			{
+				es_shield_hand = bw_g_c_c_l_4_avg;
+			}
+		}
+	}
+	mind:jat_brain						= world\ai\jobs\common\brain_hero.skrit;
+}
