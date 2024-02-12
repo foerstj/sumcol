@@ -249,7 +249,7 @@
 {
     specializes = base_sumcol_krug_dummy;
 
-    common:screen_name = "Dummy Krug 200/25 200/1000 ~ Mucosa Raider";
+    common:screen_name = "Dummy Krug 200/25 500/1000 ~ Mucosa Raider";
 	[actor]
 	{
 		[skills]
