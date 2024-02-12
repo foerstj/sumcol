@@ -1,0 +1,20 @@
+[t:template,n:gobbot_minigun_summon]
+{
+    specializes = gobbot_minigun_base;
+
+	doc = "[summon] gobbot_minigun";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = minigun_dragon;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}
