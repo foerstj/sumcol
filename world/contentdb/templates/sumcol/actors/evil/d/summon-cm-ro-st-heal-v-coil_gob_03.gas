@@ -8,6 +8,8 @@
 
 	[mind]
 	{
-		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit
+            ?heal_when_idle                     = true
+            &heal_chance                        = 1.0;
     }
 }
