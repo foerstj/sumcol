@@ -47,13 +47,13 @@
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_m | float}})*0.9) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
+                value = ((((((#magic*4.2)*{{dmg_m | float}})*1.0) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_m | float}})*1.1) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
+                value = ((((((#magic*4.2)*{{dmg_m | float}})*1.0) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
             }
             {% endif %}
             {% if dmg_r %}
@@ -61,13 +61,13 @@
             {
                 alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = (((((#magic*4.2)*{{dmg_r | float}})*0.9) - #ranged_damage_min) - {{wpn_dmg_min | float}});
+                value = (((((#magic*4.2)*{{dmg_r | float}})*1.0) - #ranged_damage_min) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = (((((#magic*4.2)*{{dmg_r | float}})*1.1) - #ranged_damage_max) - {{wpn_dmg_max | float}});
+                value = (((((#magic*4.2)*{{dmg_r | float}})*1.0) - #ranged_damage_max) - {{wpn_dmg_max | float}});
             }
             {% endif %}
             {% if dmg_c %}
@@ -75,13 +75,13 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*0.9) - #cmagic_damage_min) - {{spl_dmg_min | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*1.0) - #cmagic_damage_min) - {{spl_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*1.1) - #cmagic_damage_max) - {{spl_dmg_max | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*1.0) - #cmagic_damage_max) - {{spl_dmg_max | float}});
             }
             {% endif %}
             [*]
