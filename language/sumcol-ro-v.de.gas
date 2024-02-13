@@ -65,4 +65,70 @@
 		from = "Summons a Blaster to guard the Caster.";
 		to = "Beschwört einen Sprenger, der den Anwender verteidigt.";
 	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Shocker";
+		to = "Gobbot-Schocker beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Shocker to guard the Caster.";
+		to = "Beschwört einen Gobbot-Schocker, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Igniter";
+		to = "Gobbot-Feuerteufel beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Igniter to guard the Caster.";
+		to = "Beschwört einen Gobbot-Feuerteufel, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Gunner";
+		to = "Gobbot-Schützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Gunner to guard the Caster.";
+		to = "Beschwört einen Gobbot-Schützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Grenadier";
+		to = "Gobbot-Grenadier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Grenadier to guard the Caster.";
+		to = "Beschwört einen Gobbot-Grenadier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Proxo";
+		to = "Proxo beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Proxo to guard the Caster.";
+		to = "Beschwört einen Proxo, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Tesla Coil";
+		to = "Teslaspule beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Tesla Coil to guard the Caster.";
+		to = "Beschwört eine Teslaspule, die den Anwender verteidigt.";
+	}
 }
