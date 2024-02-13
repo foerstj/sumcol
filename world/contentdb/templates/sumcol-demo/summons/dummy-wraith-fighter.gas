@@ -5,6 +5,36 @@
 	specializes = base_battle_wraith;
 }
 
+[t:template,n:dg_g_c_dsx_sai_avg_sumcol]
+{
+	doc = "DSX Sai";
+	specializes = dsx_base_dagger;
+	[aspect]
+		{
+			model = m_w_dag_claw_03;
+		}
+	[attack]
+		{
+			attack_range = 0.5;
+			f damage_max = 70;
+			f damage_min = 50;
+			is_two_handed = false;
+			attack_class = ac_beastfu; //punch style
+		}
+	[common]
+		{
+			screen_name = "Sai";
+			is_pcontent_allowed = false;
+		}
+	[gui]
+		{
+      			active_icon = b_gui_ig_i_ic_dg_302;
+			equip_requirements = strength:24;
+			inventory_icon = b_gui_ig_i_w_dgr_302;
+			inventory_height = 2;
+			inventory_width = 1;
+		}
+}
 [t:template,n:wraith_fighter_demo_summon]
 {
     specializes = wraith_fighter_dummy_base;
@@ -13,6 +43,10 @@
 	[inventory]
 	{
 		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = dg_g_c_dsx_sai_avg_sumcol;
+        }
 		[pcontent]
 		{
 		}
