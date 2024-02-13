@@ -217,6 +217,8 @@
             il_main = spell_summon_gobbot_igniter;
             il_main = spell_summon_gobbot_gunner;
             il_main = spell_summon_gobbot_grenadier;
+            il_main = spell_summon_proxo;
+            il_main = spell_summon_tesla_coil;
         }
     }
 }

@@ -1,4 +1,5 @@
 sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;effect_script;end_script;comment
+spell;tesla_coil;coil_gob_01;;a;Tesla Coil;2.5;cm;ro;st;v;7600;0.5;40;;;0.95;;;;2;3;3;1.8;;;
 spell;phrak;phrak;;a;Phrak;0.75;nm;an;std;v;30;6;1;0.85;;;;;;;;2;0.4;;;
 spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;48;6;2;;;0.8;;;;3;5;2;0.4;;;
 spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;38;7;2;0.9;;;;;;;;1;0.6;;;
@@ -63,6 +64,7 @@ spell;chitterskrag;dsx_chitterskrag_one;;a;Chitterskrag;2;nm;an;std;loa;6000;6;2
 spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;9500;5;25;;;1;0.5;;;27;33;2;1.8;;;Spell has trackball + fire dmg
 spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;7500;3;24;1.2;;1.2;;;;;;3;2.5;;;Custom blast spell
 scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;600;12;20;;1.2;;;33;37;;;2;3.6;;;
+spell;proxo;proxo;;a;Proxo;2;cm;ro;ex;v;7600;1;40;1;;;;;;;;2.5;1;;;Custom spell skrit
 spell;blue_shard;shard_blue;;a;Blue Shard;1.25;nm;el;std;v;24000;4;29;;;1;;;;58;64;3;1;;;
 spell;spiked_maw;spiked_maw;;a;Spiked Maw;1;nm;an;std;v;38000;5;35;;;1;;;;75;80;1.5;0.8;;;
 spell;rune_fiend;dsx_rune_guardian_r;;a;Rune Fiend;1.5;cm;de;std;loa;15000;6;27;;;1;;;;44;55;1;1.2;;;

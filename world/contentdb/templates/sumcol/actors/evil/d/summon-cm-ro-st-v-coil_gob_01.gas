@@ -1,0 +1,8 @@
+[t:template,n:coil_gob_01_summon]
+{
+    specializes = coil_gob_01_base;
+
+	doc = "[summon] coil_gob_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

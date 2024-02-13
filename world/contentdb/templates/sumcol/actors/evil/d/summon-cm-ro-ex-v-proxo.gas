@@ -1,0 +1,8 @@
+[t:template,n:proxo_summon]
+{
+    specializes = proxo_base;
+
+	doc = "[summon] robot_proxo";
+	aspect:experience_value = 0;
+    //physics:explode_when_killed = false;
+}
