@@ -22,5 +22,9 @@
 			}
 		}
 	}
-	mind:jat_brain						= world\ai\jobs\common\brain_hero.skrit;
+	[mind]
+	{
+		jat_startup	= jat_none;
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
+	}
 }
