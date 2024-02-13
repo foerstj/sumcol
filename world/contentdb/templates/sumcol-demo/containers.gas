@@ -213,6 +213,10 @@
             il_main = spell_summon_perforator;
             il_main = spell_summon_heater;
             il_main = spell_summon_blaster;
+            il_main = spell_summon_gobbot_shocker;
+            il_main = spell_summon_gobbot_igniter;
+            il_main = spell_summon_gobbot_gunner;
+            il_main = spell_summon_gobbot_grenadier;
         }
     }
 }
