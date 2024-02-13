@@ -219,6 +219,7 @@
             il_main = spell_summon_gobbot_grenadier;
             il_main = spell_summon_proxo;
             il_main = spell_summon_tesla_coil;
+            il_main = spell_summon_tesla_coil_heal;
         }
     }
 }
