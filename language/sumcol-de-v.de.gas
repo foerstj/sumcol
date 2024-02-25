@@ -1,0 +1,34 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Horrid";
+		to = "Fürchterlich beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Synged";
+		to = "Verkohlt beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Vile Mucosa";
+		to = "Gemeinen Mucosa beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Horrid to guard the Caster.";
+		to = "Beschwört einen Fürchterlich, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Synged to guard the Caster.";
+		to = "Beschwört ein Verkohlt, das den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Vile Mucosa to guard the Caster.";
+		to = "Beschwört einen Gemeinen Mucosa, der den Anwender verteidigt.";
+	}
+}
