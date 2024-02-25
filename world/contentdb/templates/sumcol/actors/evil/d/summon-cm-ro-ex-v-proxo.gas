@@ -5,4 +5,11 @@
 	doc = "[summon] robot_proxo";
 	aspect:experience_value = 0;
     //physics:explode_when_killed = false;
+
+	[attack]
+	{
+        // Edited original damage (explosion doesn't take enchantments from summon spell into account)
+		damage_max = 1800;  // = 240 * 7.5
+		damage_min = 1650;  // = 220 * 7.5
+	}
 }
