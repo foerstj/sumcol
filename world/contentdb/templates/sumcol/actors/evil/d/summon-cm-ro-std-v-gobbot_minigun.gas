@@ -10,7 +10,7 @@
 		spew_equipped_kill_count = <ignore>;
         [equipment]
         {
-            es_weapon_hand = minigun_dragon;
+            es_weapon_hand = minigun_dragon_sumcol;
         }
 		[pcontent]
 		{
