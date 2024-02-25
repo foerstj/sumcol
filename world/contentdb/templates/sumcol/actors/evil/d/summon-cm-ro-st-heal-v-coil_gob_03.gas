@@ -8,8 +8,9 @@
 
 	[mind]
 	{
-		jat_brain	= world\ai\jobs\common\brain_hero.skrit
-            ?heal_when_idle                     = true
-            &heal_chance                        = 1.0;
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit;  // reset party-forming
+		jat_cast	    				= world\ai\jobs\common\job_cast.skrit
+			?no_moveturn				= true;
+		jat_fidget = world\ai\jobs\actors\good\job_fidget_fairy.skrit;  // use the heal spell
     }
 }
