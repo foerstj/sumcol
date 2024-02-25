@@ -7,48 +7,8 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Dark Wolf";
-		to = "Dunklen Wolf beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Skeleton Captain";
 		to = "Skeletthauptmann beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Alpha Wolf";
-		to = "Leitwolf beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Dark Klaw";
-		to = "Dunkelklaw beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Grizzly Furok";
-		to = "Grausigen Furok beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Hulking Gremal";
-		to = "Hünenhaften Gremal beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Phrak Ballista";
-		to = "Phrak-Balliste beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Rabid Spiked Maw";
-		to = "Wildes dornenbewehrtes Maul beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Venom Fiend";
-		to = "Giftdämon beschwören";
 	}
 	[0x0000]
 	{
@@ -69,11 +29,6 @@
 	{
 		from = "Summon Infested Larch";
 		to = "Infizierten Lärchling beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Red Drake";
-		to = "Roten Drachen beschwören";
 	}
 	[0x0000]
 	{
@@ -142,156 +97,6 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Black Skrubb";
-		to = "Schwarzen Skrubb beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Farm Skrubb";
-		to = "Feld-Skrubb beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Googore";
-		to = "Googore beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Mine Worm";
-		to = "Grubenwurm beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Arakun Spider";
-		to = "Arakun-Spinne beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Blue Drake";
-		to = "Blauen Drachen beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Forest Phrak";
-		to = "Wald-Phrak beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Frostnid";
-		to = "Frostnid beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Frost Drake";
-		to = "Frostdrachen beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Frost Spitter";
-		to = "Frostnid-Spucker beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Furok Slasher";
-		to = "Furok Schlitzer beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Giant Moth";
-		to = "Riesenmotte beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Giant Wasp";
-		to = "Riesenwespe beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Googore Grub";
-		to = "Googore-Larve beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Gray Wolf";
-		to = "Grauwolf beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Klaw";
-		to = "Klaw beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Krug Dog";
-		to = "Krug-Hund beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Krug Killer Dog";
-		to = "Krug-Kampfhund beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Lectar";
-		to = "Lectar beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Mangler";
-		to = "Mangler beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Phrak";
-		to = "Phrak beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Phrak Piercer";
-		to = "Phrak-Schlitzer beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Sea Mangler";
-		to = "Seemangler beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Slarg";
-		to = "Slarg beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Snapper";
-		to = "Schnapper beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Spiked Maw";
-		to = "Dornenbewehrtes Maul beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Stalagnid";
-		to = "Stalagnid beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Swamp Stinger";
-		to = "Sumpfstecher beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon White Wolf";
-		to = "Weißen Wolf beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Yellow Spider";
-		to = "Gelbe Spinne beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Blue Shard";
 		to = "Blaue Scherbe beschwören";
 	}
@@ -348,48 +153,8 @@
 	}
 	[0x0000]
 	{
-		from = "Summons a Dark Wolf to guard the Caster.";
-		to = "Beschwört einen Dunklen Wolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
 		from = "Summons a Skeleton Captain to guard the Caster.";
 		to = "Beschwört einen Skeletthauptmann, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Alpha Wolf to guard the Caster.";
-		to = "Beschwört einen Leitwolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Dark Klaw to guard the Caster.";
-		to = "Beschwört einen Dunkelklaw, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Grizzly Furok to guard the Caster.";
-		to = "Beschwört einen Grausigen Furok, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Hulking Gremal to guard the Caster.";
-		to = "Beschwört einen Hünenhaften Gremal, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Phrak Ballista to guard the Caster.";
-		to = "Beschwört eine Phrak-Balliste, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Rabid Spiked Maw to guard the Caster.";
-		to = "Beschwört ein Wildes dornenbewehrtes Maul, das den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Venom Fiend to guard the Caster.";
-		to = "Beschwört einen Giftdämon, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
@@ -410,11 +175,6 @@
 	{
 		from = "Summons an Infested Larch to guard the Caster.";
 		to = "Beschwört einen Infizierten Lärchling, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Red Drake to guard the Caster.";
-		to = "Beschwört einen Roten Drachen, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
@@ -480,156 +240,6 @@
 	{
 		from = "Summons a Wraith Mage to guard the Caster.";
 		to = "Beschwört einen Gespenstermagier, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Black Skrubb to guard the Caster.";
-		to = "Beschwört einen Schwarzen Skrubb, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Farm Skrubb to guard the Caster.";
-		to = "Beschwört einen Feld-Skrubb, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Googore to guard the Caster.";
-		to = "Beschwört einen Googore, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Mine Worm to guard the Caster.";
-		to = "Beschwört einen Grubenwurm, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Arakun Spider to guard the Caster.";
-		to = "Beschwört eine Arakun-Spinne, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Blue Drake to guard the Caster.";
-		to = "Beschwört einen Blauen Drachen, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Forest Phrak to guard the Caster.";
-		to = "Beschwört einen Wald-Phrak, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Frostnid to guard the Caster.";
-		to = "Beschwört einen Frostnid, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Frost Drake to guard the Caster.";
-		to = "Beschwört einen Frostdrachen, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Frost Spitter to guard the Caster.";
-		to = "Beschwört einen Frostnid-Spucker, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Furok Slasher to guard the Caster.";
-		to = "Beschwört einen Furok Schlitzer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Giant Moth to guard the Caster.";
-		to = "Beschwört eine Riesenmotte, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Giant Wasp to guard the Caster.";
-		to = "Beschwört eine Riesenwespe, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Googore Grub to guard the Caster.";
-		to = "Beschwört eine Googore-Larve, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Gray Wolf to guard the Caster.";
-		to = "Beschwört einen Grauwolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Klaw to guard the Caster.";
-		to = "Beschwört einen Klaw, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Dog to guard the Caster.";
-		to = "Beschwört einen Krug-Hund, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Killer Dog to guard the Caster.";
-		to = "Beschwört einen Krug-Kampfhund, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Lectar to guard the Caster.";
-		to = "Beschwört einen Lectar, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Mangler to guard the Caster.";
-		to = "Beschwört einen Mangler, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Phrak to guard the Caster.";
-		to = "Beschwört einen Phrak, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Phrak Piercer to guard the Caster.";
-		to = "Beschwört einen Phrak-Schlitzer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Sea Mangler to guard the Caster.";
-		to = "Beschwört einen Seemangler, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Slarg to guard the Caster.";
-		to = "Beschwört einen Slarg, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Snapper to guard the Caster.";
-		to = "Beschwört einen Schnapper, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Spiked Maw to guard the Caster.";
-		to = "Beschwört ein Dornenbewehrtes Maul, das den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Stalagnid to guard the Caster.";
-		to = "Beschwört einen Stalagnid, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swamp Stinger to guard the Caster.";
-		to = "Beschwört einen Sumpfstecher, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a White Wolf to guard the Caster.";
-		to = "Beschwört einen Weißen Wolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Yellow Spider to guard the Caster.";
-		to = "Beschwört eine Gelbe Spinne, die den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
