@@ -36,17 +36,26 @@ void TryHeal$( )
     if( m_Spell$ != NULL )
     {
         m_Mind$.TempQtColl1.Clear;
+        m_Mind$.TempGopColl1.Clear;
         m_Mind$.TempQtColl1.Add( QT_FRIEND );
         m_Mind$.TempQtColl1.Add( QT_ALIVE );
-        Go temp$ = m_Mind$.GetClosestVisible( m_Mind$.TempQtColl1 );
-        if (temp$ != NULL)
+        if( m_Mind$.GetVisible( m_Mind$.TempQtColl1, m_Mind$.TempGopColl1 ) )
         {
-            if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
+            int i$ = 0;
+            int iend$ = m_Mind$.TempGopColl1.size();
+
+            while( i$ < iend$ )
             {
-				if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
-				{
-					m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
-				}
+                Go temp$ = m_Mind$.TempGopColl1.Get( i$ );
+                if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
+                {
+                    if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
+                    {
+                        m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
+                        break;
+                    }
+                }
+                i$ += 1;
             }
         }
     }
