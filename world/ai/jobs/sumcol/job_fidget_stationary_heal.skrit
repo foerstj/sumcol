@@ -37,24 +37,24 @@ void GetSpell$( )
 
 void TryHeal$( )
 {
-	m_Mind$.TempQtColl1.Clear;
-	m_Mind$.TempQtColl1.Add( QT_GOOD );
-	m_Mind$.TempQtColl1.Add( QT_ALIVE_CONSCIOUS );
-	Go temp$ = m_Mind$.GetClosestVisible( m_Mind$.TempQtColl1 );
-	if (temp$ != NULL)
-	{
-		if ( m_Mind$.GetDistance( temp$ ) <= move_distance$ )
-		{
-			if( m_Spell$ != NULL )
-			{
+    if( m_Spell$ != NULL )
+    {
+        m_Mind$.TempQtColl1.Clear;
+        m_Mind$.TempQtColl1.Add( QT_GOOD );
+        m_Mind$.TempQtColl1.Add( QT_ALIVE_CONSCIOUS );
+        Go temp$ = m_Mind$.GetClosestVisible( m_Mind$.TempQtColl1 );
+        if (temp$ != NULL)
+        {
+            if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
+            {
 				if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
 				{
 					m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
 					return;
 				}
-			}
-		}
-	}
+            }
+        }
+    }
 }
 ////////////////////////////////////////////////////////////////////////////////
 
