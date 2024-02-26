@@ -18,6 +18,6 @@
 		jat_brain	= world\ai\jobs\common\brain_hero.skrit;  // reset party-forming
 		jat_cast	    				= world\ai\jobs\common\job_cast.skrit
 			?no_moveturn				= true;
-		jat_fidget = world\ai\jobs\actors\good\job_fidget_fairy.skrit;  // use the heal spell
+		jat_fidget = world\ai\jobs\sumcol\job_fidget_stationary_heal.skrit;  // use the heal spell
     }
 }
