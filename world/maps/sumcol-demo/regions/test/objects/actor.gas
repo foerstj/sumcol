@@ -1178,21 +1178,6 @@
 	  p position = -3.35333,0,1.86105,0x574dfeb0;
 	}
 }
-[t:coil_gob_03,n:0x00200082]
-{
-	[aspect]
-	{
-	  b is_invincible = true;
-	}
-	[mind]
-	{
-	  b actor_may_be_attacked = false;
-	}
-	[placement]
-	{
-	  p position = 0.238182,3.8147e-006,-0.132196,0x00e8c516;
-	}
-}
 [t:goblin_grunt,n:0x00200101]
 {
 	[placement]
@@ -1205,7 +1190,7 @@
 {
 	[placement]
 	{
-	  p position = -0.917244,0,2.73189,0x00e8c516;
+	  p position = 0.238739,0,1.07119,0x00e8c516;
 	}
 }
 [t:blaster,n:0x00200103]
@@ -1253,7 +1238,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -3.03942,0,2.44203,0x00e8c516;
+	  p position = -1.2422,0,-0.576973,0x00e8c516;
 	}
 }
 [t:perforator,n:0x00200109]
