@@ -22,8 +22,6 @@ GoBody  m_Body$;
 Job		m_Job$;
 float	delay_min$;
 float	delay_max$;
-float	move_distance$;
-float	min_distance$;
 
 #include "k_job_c_mcp_fidget_utils"
 	
@@ -72,8 +70,6 @@ event OnJobInitPointers$( Job job$ )
 	m_Body$					= job$.Go.Body;
 	delay_min$				= 10;
 	delay_max$				= 15;
-	move_distance$			= 5;
-	min_distance$			= 3;
 }
 
 event OnJobInit$( Job job$ )
@@ -103,31 +99,6 @@ state Wandering$
 	{
 		This.CreateTimer( 1 , Math.RandomFloat( delay_min$, delay_max$ ) ); 
 		TryHeal$();
-		if( m_Go$.WasInViewFrustumRecently )
-		{
-			if( AIQuery.FindSpotRelativeToSource( 	m_Job$.InitPosition,
-														1,
-														min_distance$,
-														move_distance$,
-														2.0,
-														m_Go$.IsHuded,
-														m_Mind$.TempPos1 ) )
-		   		{
-				if ( m_Mind$.TempPos1.node.IsNodeInAnyFrustum && m_Go$.placement.position.node.IsNodeInAnyFrustum)
-				{
-					if( GetSiegeDistance(m_Mind$.TempPos1, m_Go$.placement.position ) > min_distance$ )
-					{
-						MCPManager.Flush(m_Go$.Goid);
-						eReqRetCode ret$ = MCPManager.MakeRequest( m_Go$.Goid, PL_APPROACH, m_Mind$.TempPos1, 0.2 );
-						if( RequestFailed(ret$) )
-						{
-							InterruptAndStartFidget$();
-						}
-					}
-				}
-			}
-		}
-		
 	}
 	
 	event OnEnterState$
