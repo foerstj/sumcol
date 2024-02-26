@@ -25,6 +25,7 @@ del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
 del "%ds%\DSLOA\%res_cs% - Miniboss.dsres"
 del "%ds%\DSLOA\%res_cs% - Explosive.dsres"
+del "%ds%\DSLOA\%res_cs% - Heal.dsres"
 :: by DS version
 del "%ds%\DSLOA\%res_cs% - Vanilla.dsres"
 del "%ds%\DSLOA\%res_cs% - LoA.dsres"

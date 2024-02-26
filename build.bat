@@ -61,6 +61,7 @@ if "%mode%"=="release" (
   call :build_partial "st" "Stationary"
   call :build_partial "mb" "Miniboss"
   call :build_partial "ex" "Explosive"
+  call :build_partial "heal" "Heal"
 
   :: by DS version
   call :build_partial "v" "Vanilla"
