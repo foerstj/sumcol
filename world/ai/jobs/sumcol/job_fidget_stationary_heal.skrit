@@ -20,11 +20,9 @@ Go		m_Spell$;
 GoMind	m_Mind$;
 GoBody  m_Body$;
 Job		m_Job$;
-float	delay_min$;
-float	delay_max$;
 
 #include "k_job_c_mcp_fidget_utils"
-	
+
 ////////////////////////////////////////////////////////////////////////////////
 // helper functions
 
@@ -48,7 +46,6 @@ void TryHeal$( )
 				if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
 				{
 					m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
-					return;
 				}
             }
         }
@@ -68,16 +65,14 @@ event OnJobInitPointers$( Job job$ )
 	m_Go$					= job$.Go;
 	m_Mind$					= job$.Go.Mind;
 	m_Body$					= job$.Go.Body;
-	delay_min$				= 10;
-	delay_max$				= 15;
 }
 
 event OnJobInit$( Job job$ )
 {
 	OnJobInitPointers$( job$ );
-	
+
 	GetSpell$();
-	
+
 	SetState Wandering$;
 }
 
@@ -87,25 +82,17 @@ state Wandering$
 	{
 		StartFidgetIfRequired$();
 	}
-	
-	trigger OnTimer$( 2 )
-	{
-		This.CreateTimer( 2 , Math.RandomFloat( 1, 2 ) );
-		TryHeal$();
-	}
-	
-	
+
 	trigger OnTimer$( 1 )
 	{
-		This.CreateTimer( 1 , Math.RandomFloat( delay_min$, delay_max$ ) ); 
+		This.CreateTimer( 1 , 1 ); 
 		TryHeal$();
 	}
-	
+
 	event OnEnterState$
 	{
 		StartFidgetIfRequired$();
-		
-		This.CreateTimer( 1 , Math.RandomFloat( delay_min$, delay_max$ ) );
-		This.CreateTimer( 2 , Math.RandomFloat( 3, 5 ) );
+
+		This.CreateTimer( 1 , 1 );
 	}
 }
