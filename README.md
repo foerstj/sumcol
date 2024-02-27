@@ -80,6 +80,18 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Mucosa: Vile Mucosa
   - Horrid
   - Synged
+- Robots (CM):
+  - Pickers: Kill Bot, Hunter
+  - Copter
+  - Perforator
+  - Heater
+  - Blaster
+  - Gobbots: Gobbot Shocker, Gobbot Igniter, Gobbot Gunner, Gobbot Grenadier
+  - Explosive: Proxo
+  - Stationary:
+    - Tesla Coil
+  - Stationary HEAL:
+    - Tesla Heal Coil
 
 ### LoA Creatures:
 - Animals (NM):
