@@ -1,0 +1,24 @@
+[t:template,n:guard_ranged_summon]
+{
+    specializes = guard_ranged_base;
+
+	doc = "[summon] guard_ranged";
+    [aspect]
+    {
+        experience_value = 0;
+        draw_selection_indicator = false;
+    }
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+        spew_equipped_kill_count = <ignore>;
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+    [mind]
+    {
+        jat_talk = jat_none;
+    }
+}

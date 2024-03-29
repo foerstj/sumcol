@@ -272,6 +272,8 @@
             il_main = scroll_summon_pitiful_braak;
 
             il_main = spell_summon_guard;
+            il_main = spell_summon_guard_ranged;
+            il_main = spell_summon_dwarf_legionnaire_guard;
         }
     }
 }
