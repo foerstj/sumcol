@@ -21,4 +21,11 @@
     {
         jat_talk = jat_none;
     }
+	[actor]
+	{
+		[skills]
+		{
+            // missing in base
+		}
+	}
 }
