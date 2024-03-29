@@ -1,0 +1,24 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Legionnaire Guard";
+		to = "Legionswächter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Legionnaire Archer";
+		to = "Bogenschützen der Legion beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Guard to guard the Caster.";
+		to = "Beschwört einen Legionswächter, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Archer to guard the Caster.";
+		to = "Beschwört einen Bogenschützen der Legion, der den Anwender verteidigt.";
+	}
+}
