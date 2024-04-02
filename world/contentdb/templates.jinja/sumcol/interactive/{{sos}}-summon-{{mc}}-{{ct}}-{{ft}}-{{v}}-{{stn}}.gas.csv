@@ -124,6 +124,6 @@ spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;130000;4;62;1.1;;1.1;;
 spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;130000;4;62;1.1;;1.1;;;;160;200;1.5;2.5;;;
 scroll;magma_beast;lava_beast_boss_01;;a;Magma Beast;2.5;cm;el;mb;v;21000;11;62;1.3;;1.3;;;;;;2;9;;;Custom blast spell
 ;;;;;;;;;;;;;;;;;;;;;;;;;;
-spell;guard;guard;;a;Legionnaire Guard;1.5;cm;hu;std;v;2400;6;20;1;;;;0;0;;;2;1;;;
+spell;guard;guard;;a;Legionnaire Guard;1.5;cm;hu;std;v;38000;6;40;1;;;;0;0;;;2;1;;;
 spell;guard_ranged;guard_ranged;;a;Legionnaire Archer;1.5;cm;hu;std;v;30000;5;30;;1;;;0;0;;;2;1;;;
 spell;dwarf_legionnaire_guard;dwarf_legionnaire_guard;;a;Legionnaire Guard;1.5;cm;hu;std;v;38000;6;40;1;;;;0;0;;;2.1;0.9;;;
