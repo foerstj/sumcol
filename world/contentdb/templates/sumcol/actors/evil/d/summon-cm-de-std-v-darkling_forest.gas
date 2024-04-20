@@ -1,0 +1,15 @@
+[t:template,n:darkling_forest_summon]
+{
+    specializes = darkling_forest_base;
+
+	doc = "[summon] darkling_forest";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

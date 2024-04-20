@@ -1,0 +1,15 @@
+[t:template,n:dsx_mummy_summon]
+{
+    specializes = dsx_mummy_base;
+
+	doc = "[summon] dsx_mummy";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

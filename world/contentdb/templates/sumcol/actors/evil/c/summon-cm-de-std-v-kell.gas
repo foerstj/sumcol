@@ -1,0 +1,15 @@
+[t:template,n:kell_summon]
+{
+    specializes = kell_base;
+
+	doc = "[summon] kell";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}
