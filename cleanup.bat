@@ -20,6 +20,7 @@ del "%ds%\DSLOA\%res_cs% - Undead.dsres"
 del "%ds%\DSLOA\%res_cs% - Plants.dsres"
 del "%ds%\DSLOA\%res_cs% - Demonics.dsres"
 del "%ds%\DSLOA\%res_cs% - Robots.dsres"
+del "%ds%\DSLOA\%res_cs% - Humanoids.dsres"
 :: by functional type
 del "%ds%\DSLOA\%res_cs% - Standard.dsres"
 del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
