@@ -1,0 +1,15 @@
+[t:template,n:braak_magic_summon]
+{
+    specializes = braak_magic_base;
+
+    doc = "[summon] braak magic";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

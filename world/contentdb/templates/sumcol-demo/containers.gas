@@ -233,6 +233,21 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_braak_mage;
+            il_main = spell_summon_braak;
+            il_main = scroll_summon_pitiful_braak;
+        }
+    }
+}
 
 [t:template,n:sumcol_demo_barrel_redone_vanilla]
 {

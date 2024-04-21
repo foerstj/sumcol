@@ -1,0 +1,15 @@
+[t:template,n:braak_summon]
+{
+    specializes = braak_base;
+
+    doc = "[summon] braak, melee";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}
