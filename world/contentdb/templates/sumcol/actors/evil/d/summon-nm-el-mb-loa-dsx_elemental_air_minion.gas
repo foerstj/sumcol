@@ -5,4 +5,7 @@
 	doc = "[summon] dsx_elemental_air_minion";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
+
+    mind:jat_startup = jat_none;
+    effect_aftereffect:effect=;  // remove
 }
