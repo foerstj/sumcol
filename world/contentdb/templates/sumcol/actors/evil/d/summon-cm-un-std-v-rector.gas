@@ -1,0 +1,15 @@
+[t:template,n:rector_summon]
+{
+    specializes = rector_base;
+
+    doc = "[summon] rector";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

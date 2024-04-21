@@ -1,0 +1,56 @@
+[t:template,n:rector_base]  // = rector
+{
+	category_name = "1W_evil_d";
+	doc = "rector";
+	specializes = base_rector;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	12, 0;
+			intelligence =  7, 0;
+			dexterity =  	2, 0;
+            combat_magic =  4,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 44;
+		life = 41;
+        max_life = 41;
+        mana = 14;
+        max_mana = 14;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 18;
+		damage_min = 14;
+	}
+	[common] { screen_name="Rector"; }
+	[defend] { defense=25; }
+	[inventory]
+	{
+   		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_rector_burn; }
+
+    	[pcontent]
+		{
+			[oneof*]
+			{
+            	[oneof*]
+				{
+					chance = 0.1;
+					il_main = #ring/12-20;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	            	il_main = #weapon/-rare(1)/19-28;
+	                il_main = #armor/-rare(1)/18-66;
+                    il_main = #*/-rare(1)/19-28;
+                }
+			}
+		}
+	}
+}

@@ -159,11 +159,13 @@
             il_main = spell_summon_skeleton_guard;
             il_main = spell_summon_skeleton_archer;
             il_main = scroll_summon_skeleton_captain;
+            il_main = spell_summon_rector;
             il_main = spell_summon_mummy;
             il_main = scroll_summon_dark_wolf;
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
             il_main = spell_summon_skeleton_mercenary;
+            il_main = spell_summon_ghost;
         }
     }
 }
@@ -198,6 +200,7 @@
             il_main = spell_summon_whelnars_eyes;
             il_main = spell_summon_forest_darkling;
             il_main = spell_summon_synged;
+            il_main = spell_summon_toreck;
             il_main = spell_summon_kell;
         }
     }

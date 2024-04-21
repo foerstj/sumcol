@@ -116,8 +116,8 @@ spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;
 spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;52000;4;42;1.1;;1.1;;;;145;155;1.5;2.5;;;
 scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;19000;13;60;1.35;;;;;;;;2;7.5;;;
 spell;synged;synged;;a;Synged;1;cm;de;std;v;96000;6;60;0.9;;;;;;;;1;0.8;;;
-spell;toreck;toreck;;a;Toreck;1.5;cm;de;std;v;91000;6;59;1;;;;130;150;;;1;1.2;;;
-spell;ghost;ghost;;a;Ghost;1.2;cm;un;std;v;99000;6;56;;;0.8;;;;170;190;2;1;;;
+spell;toreck;toreck;;a;Toreck;1.75;cm;de;std;v;91000;6;59;1;;;;130;150;;;1;1.2;;;
+spell;ghost;ghost;;a;Ghost;1.5;cm;un;std;v;99000;6;56;;;0.8;;;;170;190;2;1;;;
 spell;kell;kell;;a;Kell;2.5;cm;de;std;v;120000;6;60;;;1.1;;;;220;240;1;1.2;;;
 spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;1.25;cm;el;std;v;260000;7;86;1;;;;;;;;2;0.8;;;
 spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;130000;4;62;1.1;;1.1;;;;;;3;2;;;Custom blast spell

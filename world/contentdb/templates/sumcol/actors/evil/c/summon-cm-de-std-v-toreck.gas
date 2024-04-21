@@ -1,0 +1,19 @@
+[t:template,n:toreck_summon]
+{
+    specializes = toreck_base;
+
+    doc = "[summon] toreck";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				es_weapon_hand = st_un_toreck;
+			}
+        }
+    }
+}
