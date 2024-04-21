@@ -5,4 +5,10 @@
 	doc = "[summon] dsx_elemental_earth_minion";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
+
+    [inventory]
+    {
+		[other] { il_active_primary_spell = dsx_spell_earth_elemental_blast_summon; }
+        [pcontent] {}
+    }
 }
