@@ -87,6 +87,7 @@
     {
         [other]
         {
+            il_main = scroll_summon_yellow_eye;
             il_main = spell_summon_ice_grub;
             il_main = spell_summon_ice_moth;
             il_main = spell_summon_varg;
@@ -158,6 +159,7 @@
             il_main = spell_summon_skeleton_guard;
             il_main = spell_summon_skeleton_archer;
             il_main = scroll_summon_skeleton_captain;
+            il_main = spell_summon_mummy;
             il_main = scroll_summon_dark_wolf;
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
@@ -194,7 +196,9 @@
             il_main = spell_summon_vile_mucosa;
             il_main = spell_summon_horrid;
             il_main = spell_summon_whelnars_eyes;
+            il_main = spell_summon_forest_darkling;
             il_main = spell_summon_synged;
+            il_main = spell_summon_kell;
         }
     }
 }
