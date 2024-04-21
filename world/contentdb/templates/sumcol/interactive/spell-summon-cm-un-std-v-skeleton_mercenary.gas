@@ -40,13 +40,13 @@
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*1.05)*0.9) - #melee_damage_min) - #base_damage) - 35.0);
+                value = ((((((#magic*4.2)*1.05)*1.0) - #melee_damage_min) - #base_damage) - 35.0);
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*1.05)*1.1) - #melee_damage_max) - #base_damage) - 58.0);
+                value = ((((((#magic*4.2)*1.05)*1.0) - #melee_damage_max) - #base_damage) - 58.0);
             }
             [*]
             {
