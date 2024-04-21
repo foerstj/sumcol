@@ -95,8 +95,8 @@ spell;bronze_gargoyle;gargoyle_bronze;;a;Bronze Gargoyle;0.75;cm;el;std;v;33000;
 spell;copter;copter;;a;Copter;1;cm;ro;std;v;48000;5;40;;;0.85;;;;82;88;2.5;0.4;summon_copter;;
 spell;swamp_creature;swamp_creature;good;a;Swamp Creature;2.5;nm;el;std;v;42000;6;42;1.1;;;;;;;;0.8;2.5;;;
 scroll;air_elemental_minion;dsx_elemental_air_minion;;an;Air Elemental Minion;2;nm;el;mb;loa;6600;14;37;1.2;;;;;;;;2;3.6;;;
-scroll;earth_elemental_minion;dsx_elemental_earth_minon;;an;Earth Elemental Minion;2.5;nm;el;mb;loa;8300;12;37;1.3;;1.3;;;;;;2;4.5;;;Custom blast spell
-scroll;water_elemental_minion;dsx_elemental_water_minion;;a;Water Elemental Minion;1;nm;el;mb;loa;6600;17;37;1.1;;;;;;;;1;1.8;;;
+scroll;earth_elemental_minion;dsx_elemental_earth_minion;;an;Earth Elemental Minion;3;nm;el;mb;loa;8300;12;37;1.3;;1.3;;;;;;2;4.5;;;Custom blast spell
+scroll;water_elemental_minion;dsx_elemental_water_minion;;a;Water Elemental Minion;1.5;nm;el;mb;loa;6600;17;37;1.1;;;;;;;;1;1.8;;;
 spell;heater;heater;;a;Heater;2.5;cm;ro;std;v;60000;4;45;;;1.1;;;;120;130;2.5;2;;;
 spell;gobbot_grenadier;gobbot_grenade;;a;Gobbot Grenadier;1;cm;ro;std;v;52000;6;42;;1;;;100;109;;;2.5;0.6;;;
 spell;gobbot_gunner;gobbot_minigun;;a;Gobbot Gunner;1;cm;ro;std;v;52000;6;42;;1;;;68;75;;;2.5;0.6;;;
@@ -118,7 +118,7 @@ scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;19000;13;60;
 spell;synged;synged;;a;Synged;1;cm;de;std;v;96000;6;60;0.9;;;;;;;;1;0.8;;;
 spell;toreck;toreck;;a;Toreck;1.75;cm;de;std;v;91000;6;59;1;;;;130;150;;;1;1.2;;;
 spell;ghost;ghost;;a;Ghost;1.5;cm;un;std;v;99000;6;56;;;0.8;;;;170;190;2;1;;;
-spell;kell;kell;;a;Kell;2.5;cm;de;std;v;120000;6;60;;;1.1;;;;220;240;1;1.2;;;
+spell;kell;kell;;a;Kell;2.5;cm;de;std;v;120000;6;60;;;1.1;;;;220;240;1;1.2;;;Multiple spells (220-240, 220-240, 240-280)
 spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;1.25;cm;el;std;v;260000;7;86;1;;;;;;;;2;0.8;;;
 spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;130000;4;62;1.1;;1.1;;;;;;3;2;;;Custom blast spell
 spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;130000;4;62;1.1;;1.1;;;;160;200;1.5;2.5;;;

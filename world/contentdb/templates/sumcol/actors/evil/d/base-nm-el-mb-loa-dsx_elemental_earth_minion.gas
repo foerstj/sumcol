@@ -1,0 +1,143 @@
+[t:template,n:dsx_elemental_earth_minion_base]  // = dsx_elemental_earth_minion
+{
+// Balanced to level 28, hard melee
+	category_name = "1W_evil_d";
+	doc = "dsx_elemental_earth_minion";
+	specializes = dsx_elemental_earth_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =     19, 0;
+			intelligence = 8, 0;
+			dexterity =    12, 0;
+			melee =        20, 0;
+			nature_magic = 20, 0;
+			combat_magic = 20, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2732;
+		life             = 872;
+		max_life         = 872;
+		mana             = 399;
+		max_mana         = 399;
+		model = m_c_edm_ee;
+		textures:0 = b_c_edm_ee;
+		material = stone;
+		[voice]
+		{
+			[die]		{ priority = high;	* = s_e_die_earth_elemental;		}
+			[enemy_spotted]	{ priority = high; * = s_e_attack_rock_beast; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 185; 
+		damage_min = 175;
+	}
+	[body]
+	{
+		avg_move_velocity = 2.5;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine;
+			shield_bone = bip01_l_hand;
+			weapon_bone = bip01_r_hand;
+		}
+		[weapon_scales]
+		{
+			as_single_melee = 1.5, 1.5, 1.5;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_rb_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files]
+				{ 
+					00=dff;
+					02=dff-02;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=mg; }
+			}
+		}
+	}
+	[common]
+	{
+		screen_name = "Earth Elemental Minion"; //--
+		membership = monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+	}
+	[defend] { defense = 275; }	
+	[mind]
+	{
+		jat_brain = world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party	= true;
+		
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit;
+		
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=dsx_spell_earth_elemental_blast; }
+
+	}
+
+[physics]
+	{	
+		[break_particulate]
+		{
+			frag_glb_earth_elemental_02 = 1;
+			frag_glb_earth_elemental_04 = 1;
+			frag_glb_earth_elemental_05 = 1;
+			frag_glb_earth_elemental_06 = 2;
+			frag_glb_earth_elemental_07 = 3;
+			frag_glb_earth_elemental_08 = 4;
+		}
+	}
+}

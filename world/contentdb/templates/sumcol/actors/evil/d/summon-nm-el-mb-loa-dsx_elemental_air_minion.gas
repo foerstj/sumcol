@@ -1,0 +1,8 @@
+[t:template,n:dsx_elemental_air_minion_summon]
+{
+    specializes = dsx_elemental_air_minion_base;
+
+	doc = "[summon] dsx_elemental_air_minion";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}
