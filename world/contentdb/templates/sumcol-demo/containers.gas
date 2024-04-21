@@ -28,6 +28,31 @@
     aspect:does_block_path = false;
 }
 
+[t:template,n:sumcol_demo_barrel_new]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "New";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = scroll_summon_yellow_eye;
+            il_main = spell_summon_rector;
+            il_main = spell_summon_braak_mage;
+            il_main = spell_summon_braak;
+            il_main = scroll_summon_pitiful_braak;
+            il_main = spell_summon_mummy;
+            il_main = scroll_summon_air_elemental_minion;
+            il_main = scroll_summon_earth_elemental_minion;
+            il_main = scroll_summon_water_elemental_minion;
+            il_main = spell_summon_forest_darkling;
+            il_main = spell_summon_toreck;
+            il_main = spell_summon_ghost;
+            il_main = spell_summon_kell;
+        }
+    }
+}
 [t:template,n:sumcol_demo_barrel_animals_vanilla]
 {
     specializes = sumcol_demo_base_barrel;
