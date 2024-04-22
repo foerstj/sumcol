@@ -1,4 +1,5 @@
-[t:template,n:kell_summon]
+[t:template,n:kell_summon] { specializes = kell_summon_base; }
+[t:template,n:kell_summon_base]
 {
     specializes = kell_base;
 
@@ -12,4 +13,41 @@
             // ERASED
 		}
 	}
+}
+
+[t:template,n:kell_shot_summon]
+{
+    specializes = kell_summon_base;
+
+    [inventory]
+    {
+		[other]
+		{
+			il_active_primary_spell = spell_kell_shot;
+		}
+    }
+}
+[t:template,n:kell_blast_summon]
+{
+    specializes = kell_summon_base;
+
+    [inventory]
+    {
+		[other]
+		{
+			il_active_primary_spell = spell_kell_blast;
+		}
+    }
+}
+[t:template,n:kell_bolt_summon]
+{
+    specializes = kell_summon_base;
+
+    [inventory]
+    {
+		[other]
+		{
+			il_active_primary_spell = spell_kell_bolt;
+		}
+    }
 }
