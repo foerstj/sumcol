@@ -8,6 +8,12 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		[other]
+		{
+			il_active_primary_spell = spell_kell_shot;
+			il_spell_1 = spell_kell_blast_summon;
+			il_spell_2 = spell_kell_bolt;
+		}
 		[pcontent]
 		{
             // ERASED
@@ -35,7 +41,7 @@
     {
 		[other]
 		{
-			il_active_primary_spell = spell_kell_blast;
+			il_active_primary_spell = spell_kell_blast_summon;
 		}
     }
 }
