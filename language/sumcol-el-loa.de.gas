@@ -15,6 +15,21 @@
 		from = "Summon Marble Golem";
 		to = "Marmorgolem beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Air Elemental Minion";
+		to = "Luftelementar-Scherge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Earth Elemental Minion";
+		to = "Erdelementar-Scherge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Water Elemental Minion";
+		to = "Wasserelementar-Scherge beschwören";
+	}
 
 	[0x0000]
 	{
@@ -30,5 +45,20 @@
 	{
 		from = "Summons a Marble Golem to guard the Caster.";
 		to = "Beschwört einen Marmorgolem, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons an Air Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Luftelementar-Schergen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons an Earth Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Erdelementar-Schergen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Water Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Wasserelementar-Schergen, der den Anwender verteidigt.";
 	}
 }

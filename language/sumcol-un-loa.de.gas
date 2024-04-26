@@ -1,0 +1,14 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Mummy";
+		to = "Mami beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Mummy to guard the Caster.";
+		to = "Beschwört eine Mami, die den Anwender verteidigt.";
+	}
+}

@@ -30,6 +30,16 @@
 		from = "Summon Wraith Mage";
 		to = "Gespenstermagier beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Ghost";
+		to = "Spuk beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Rector";
+		to = "Rektor beschwören";
+	}
 
 	[0x0000]
 	{
@@ -60,5 +70,15 @@
 	{
 		from = "Summons a Wraith Mage to guard the Caster.";
 		to = "Beschwört einen Gespenstermagier, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Ghost to guard the Caster.";
+		to = "Beschwört einen Spuk, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rector to guard the Caster.";
+		to = "Beschwört einen Rektor, der den Anwender verteidigt.";
 	}
 }

@@ -15,6 +15,21 @@
 		from = "Summon Vile Mucosa";
 		to = "Gemeinen Mucosa beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Forest Darkling";
+		to = "Waldfinsterling beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Toreck";
+		to = "Toreck beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Kell";
+		to = "Kell beschwören";
+	}
 
 	[0x0000]
 	{
@@ -30,5 +45,20 @@
 	{
 		from = "Summons a Vile Mucosa to guard the Caster.";
 		to = "Beschwört einen Gemeinen Mucosa, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Forest Darkling to guard the Caster.";
+		to = "Beschwört einen Waldfinsterling, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Toreck to guard the Caster.";
+		to = "Beschwört einen Toreck, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Kell to guard the Caster.";
+		to = "Beschwört einen Kell, der den Anwender verteidigt.";
 	}
 }
