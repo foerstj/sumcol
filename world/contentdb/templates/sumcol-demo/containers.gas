@@ -50,9 +50,6 @@
             il_main = spell_summon_toreck;
             il_main = spell_summon_ghost;
             il_main = spell_summon_kell;
-            il_main = spell_summon_kell_shot;
-            il_main = spell_summon_kell_blast;
-            il_main = spell_summon_kell_bolt;
         }
     }
 }
