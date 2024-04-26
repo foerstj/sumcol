@@ -40,13 +40,13 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*0.8)*0.333)*1.0) - #cmagic_damage_min) - 19.0);
+                value = ((((((#magic*4.2)*0.85)*0.4)*1.0) - #cmagic_damage_min) - 19.0);
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*0.8)*0.333)*1.0) - #cmagic_damage_max) - 21.0);
+                value = ((((((#magic*4.2)*0.85)*0.4)*1.0) - #cmagic_damage_max) - 21.0);
             }
             [*]
             {
