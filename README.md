@@ -57,7 +57,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb
     - Worms: Mine Worm, Googore
-- Elementals
+- Elementals:
   - Gargoyles (CM): Gargoyle (melee), Bronze Gargoyle
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
     - Miniboss: Frost Warrior, Frost Archer
@@ -72,6 +72,8 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Miniboss: Skeleton Captain
   - Wolf Miniboss: Dark Wolf
   - Wraiths: Wraith Mage
+  - Ghost
+  - Skulls: Rector
 - Plants (NM):
   - Larch Miniboss: Infested Larch
   - Stationary:
@@ -79,7 +81,10 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Demonics (CM):
   - Mucosa: Vile Mucosa
   - Horrid
+  - Darklings: Forest Darkling
   - Synged
+  - Toreck
+  - Kells: Kell
 - Robots (CM):
   - Pickers: Kill Bot, Hunter
   - Copter
@@ -92,6 +97,9 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Tesla Coil
   - Stationary HEAL:
     - Tesla Heal Coil
+- Humanoids:
+  - Braak (NM): Braak, Braak Mage
+    - Miniboss: Pitiful Braak
 
 ### LoA Creatures:
 - Animals (NM):
@@ -109,13 +117,18 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Skitterclaws: Skitterling, Skitterclaw
   - Rats: Monstrous Rat
   - Pickers: Swarmling Drone, Swarmling Queen
+  - Bear Miniboss: Yellow Eye
   - Stationary:
     - Skrubbs: Jungle Skrubb
-- Elementals
+- Elementals:
   - Frost (NM): Frost Golem
-  - Rock (NM): Marble Golem
+  - Earth (NM): Marble Golem, Cobble Man
+    - Miniboss: Earth Elemental Minion
   - Swamp (NM): Bog Beast
-  - Rock (NM): Cobble Man
+  - Air (NM) Miniboss: Air Elemental Minion
+  - Water (NM) Miniboss: Water Elemental Minion
+- Undead (CM):
+  - Zombies: Mummy
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines
