@@ -6,7 +6,7 @@
     doc = "spell Summon Kell";
     [aspect]
     {
-        gold_value = 120000;
+        gold_value = 150000;
     }
     [common]
     {
@@ -31,8 +31,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 60;
-        max_level = 80;
+        required_level = 65;
+        max_level = 85;
 
         [enchantments]
         {
@@ -70,7 +70,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.775)-#combat_magic_level);
+                value = ((#magic*0.7875)-#combat_magic_level);
             }
             [*]
             {
