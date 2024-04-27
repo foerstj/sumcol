@@ -31,7 +31,7 @@
     {
         effect_duration = 300;
         mana_cost = 0;
-        mana_cost_modifier = (#magic+1)*15;
+        mana_cost_modifier = (#magic+1)*(15+0);
         required_level = 80;
         max_level = 100;
 
