@@ -6,7 +6,7 @@
     doc = "scroll Summon Venom Fiend";
     [aspect]
     {
-        gold_value = 150;
+        gold_value = 190;
     }
     [common]
     {
@@ -31,8 +31,8 @@
         effect_duration = 780;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+1);
-        required_level = 15;
-        max_level = 35;
+        required_level = 16;
+        max_level = 36;
 
         [enchantments]
         {
@@ -70,7 +70,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.925)-#melee);
+                value = ((#magic*0.92)-#melee);
             }
             [*]
             {

@@ -6,7 +6,7 @@
     doc = "scroll Summon Frost Archer";
     [aspect]
     {
-        gold_value = 600;
+        gold_value = 760;
     }
     [common]
     {
@@ -31,8 +31,8 @@
         effect_duration = 720;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+1);
-        required_level = 20;
-        max_level = 40;
+        required_level = 21;
+        max_level = 41;
 
         [enchantments]
         {
@@ -70,7 +70,7 @@
             {
                 alteration = alter_ranged;
                 duration = #infinite;
-                value = ((#magic*0.9)-#ranged);
+                value = ((#magic*0.895)-#ranged);
             }
             [*]
             {

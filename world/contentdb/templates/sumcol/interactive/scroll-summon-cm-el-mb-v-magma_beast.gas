@@ -6,7 +6,7 @@
     doc = "scroll Summon Magma Beast";
     [aspect]
     {
-        gold_value = 21000;
+        gold_value = 23000;
     }
     [common]
     {
@@ -31,8 +31,8 @@
         effect_duration = 660;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+1);
-        required_level = 62;
-        max_level = 82;
+        required_level = 64;
+        max_level = 84;
 
         [enchantments]
         {
@@ -82,13 +82,13 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.78)-#melee);
+                value = ((#magic*0.785)-#melee);
             }
             [*]
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.78)-#combat_magic_level);
+                value = ((#magic*0.785)-#combat_magic_level);
             }
             [*]
             {
