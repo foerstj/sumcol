@@ -37,7 +37,7 @@
     {
         effect_duration = {{dur_min * 60}};
         mana_cost = 0;
-        mana_cost_modifier = (#magic+1)*({% if 'st' in ft.split('-') %}3{% else %}{% if ft == 'ex' %}1{% else %}15{% endif %}{% endif %}+{% if ft == 'mb' %}1{% else %}0{% endif %});
+        mana_cost_modifier = (#magic+1)*({% if 'st' in ft.split('-') %}3{% else %}{% if ft == 'ex' %}1{% else %}{% if int %}18{% else %}15{% endif %}{% endif %}{% endif %}+{% if ft == 'mb' %}1{% else %}0{% endif %});
         required_level = {{req_lvl}};
         max_level = {{ req_lvl + 20 }};
 
