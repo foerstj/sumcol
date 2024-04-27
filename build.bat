@@ -48,29 +48,13 @@ robocopy "%doc_dsloa%\Bits\language" "%tmp%\Bits\language" %res%-*.de.gas /S
 if %errorlevel% neq 0 pause
 
 if "%mode%"=="release" (
-  :: by creature type
-  call :build_partial "an" "Animals"
-  call :build_partial "el" "Elementals"
-  call :build_partial "un" "Undead"
-  call :build_partial "pl" "Plants"
-  call :build_partial "de" "Demonics"
-  call :build_partial "ro" "Robots"
-  call :build_partial "hu" "Humanoids"
-
   :: by functional type
   call :build_partial "std" "Standard"
-  call :build_partial "st" "Stationary"
-  call :build_partial "mb" "Miniboss"
-  call :build_partial "ex" "Explosive"
-  call :build_partial "heal" "Heal"
+  call :build_partial_x "std" "Non-Standard"
 
   :: by DS version
   call :build_partial "v" "Vanilla"
   call :build_partial "loa" "LoA"
-
-  :: by mage class
-  call :build_partial "nm" "Nature Magic"
-  call :build_partial "cm" "Combat Magic"
 )
 
 :: Compile demo resource file
@@ -96,6 +80,20 @@ exit /b %errorlevel%
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
+  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  if %errorlevel% neq 0 pause
+exit /b 0
+
+:build_partial_x
+  set infix=%~1
+  set name=%~2
+  echo build_partial_x %infix% %name%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /xf *-%infix%-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /xf *-%infix%-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /xf *-%infix%-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
