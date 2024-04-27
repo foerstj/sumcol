@@ -8,6 +8,10 @@
 	{
 		[other]
 		{
+			il_main = sumcol_ring_mana;
+			il_main = spell_bomb;
+			il_main = spell_iceblast;
+			il_main = potion_mana_super;
 			il_main = spell_explosive_powder;
 			il_main = spell_fireball;
 			il_main = spell_icefury;
@@ -21,9 +25,6 @@
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = spell_iceblast;
-			il_main = spell_bomb;
 		}
 	}
 	[placement]
