@@ -1,0 +1,72 @@
+[t:sumcol_gen-sumcol_krug_dummy_50,n:0x00300000]
+{
+	[placement]
+	{
+	  p position = 2.11092,-7.62939e-006,2.78265,0x5c8277d4;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_50_hold,n:0x00300001]
+{
+	[common]
+	{
+		dev_instance_text = "GENERATOR - MO_HOLD";
+	}
+	[placement]
+	{
+	  p position = -2.44194,0,2.53999,0x5b383bb8;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_100,n:0x00300002]
+{
+	[placement]
+	{
+	  p position = 2.38732,0,-2.21014,0x5c1cfff6;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_100_hold,n:0x00300003]
+{
+	[common]
+	{
+		dev_instance_text = "GENERATOR - MO_HOLD";
+	}
+	[placement]
+	{
+	  p position = 1.87127,-7.62939e-006,2.57166,0x550665df;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_200,n:0x00300004]
+{
+	[placement]
+	{
+	  p position = 1.87595,-7.62939e-006,2.13605,0x2aa733c6;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_200_hold,n:0x00300005]
+{
+	[common]
+	{
+		dev_instance_text = "GENERATOR - MO_HOLD";
+	}
+	[placement]
+	{
+	  p position = -3.93702,0,-0.00596619,0x0aa76278;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_300,n:0x00300006]
+{
+	[placement]
+	{
+	  p position = 2.20558,0,-1.96863,0x4d937798;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_300_hold,n:0x00300007]
+{
+	[common]
+	{
+		dev_instance_text = "GENERATOR - MO_HOLD";
+	}
+	[placement]
+	{
+	  p position = 2.61611,-7.62939e-006,2.45258,0x52774bf3;
+	}
+}

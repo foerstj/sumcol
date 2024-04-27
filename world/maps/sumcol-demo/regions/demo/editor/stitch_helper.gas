@@ -2,13 +2,22 @@
 {
 	source_region_guid = 0x00000001;
 	source_region_name = demo;
+	[t:stitch_editor,n:eval]
+	{
+		dest_region = eval;
+		[node_ids]
+		{
+			0x00300001 = 0x131CC381,6;
+			0x00300002 = 0x131CC381,5;
+		}
+	}
 	[t:stitch_editor,n:test]
 	{
 		dest_region = test;
 		[node_ids]
 		{
-			0x00000001 = 0x131CC381,5;
-			0x00000002 = 0x131CC381,6;
+			0x00200001 = 0x9414169A,6;
+			0x00200002 = 0x9414169A,5;
 		}
 	}
 }
