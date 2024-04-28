@@ -12,27 +12,8 @@ set ds=.
 del "%ds%\DSLOA\%res_cs%.dsres"
 :: translation
 del "%ds%\DSLOA\%res_cs%.de.dsres"
-
-:: by creature type
-del "%ds%\DSLOA\%res_cs% - Animals.dsres"
-del "%ds%\DSLOA\%res_cs% - Elementals.dsres"
-del "%ds%\DSLOA\%res_cs% - Undead.dsres"
-del "%ds%\DSLOA\%res_cs% - Plants.dsres"
-del "%ds%\DSLOA\%res_cs% - Demonics.dsres"
-del "%ds%\DSLOA\%res_cs% - Robots.dsres"
-del "%ds%\DSLOA\%res_cs% - Humanoids.dsres"
-:: by functional type
-del "%ds%\DSLOA\%res_cs% - Standard.dsres"
-del "%ds%\DSLOA\%res_cs% - Stationary.dsres"
-del "%ds%\DSLOA\%res_cs% - Miniboss.dsres"
-del "%ds%\DSLOA\%res_cs% - Explosive.dsres"
-del "%ds%\DSLOA\%res_cs% - Heal.dsres"
-:: by DS version
-del "%ds%\DSLOA\%res_cs% - Vanilla.dsres"
-del "%ds%\DSLOA\%res_cs% - LoA.dsres"
-:: by mage class
-del "%ds%\DSLOA\%res_cs% - Nature Magic.dsres"
-del "%ds%\DSLOA\%res_cs% - Combat Magic.dsres"
+:: partial builds
+del "%ds%\DSLOA\%res_cs% - *.dsres"
 
 :: demo map
 del "%ds%\DSLOA\%map_cs%.dsres"

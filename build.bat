@@ -55,6 +55,10 @@ if "%mode%"=="release" (
   :: by DS version
   call :build_partial "v" "Vanilla"
   call :build_partial "loa" "LoA"
+
+  :: by both
+  call :build_partial "std-v" "Vanilla Standard"
+  call :build_partial "std-loa" "LoA Standard"
 )
 
 :: Compile demo resource file
