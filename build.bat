@@ -48,17 +48,11 @@ robocopy "%doc_dsloa%\Bits\language" "%tmp%\Bits\language" %res%-*.de.gas /S
 if %errorlevel% neq 0 pause
 
 if "%mode%"=="release" (
-  :: by functional type
-  call :build_partial "std" "Standard"
-  call :build_partial_x "std" "Non-Standard"
-
-  :: by DS version
-  call :build_partial "v" "Vanilla"
-  call :build_partial "loa" "LoA"
-
-  :: by both
+  :: by DS version + functional type std/non-std
   call :build_partial "std-v" "Vanilla Standard"
   call :build_partial "std-loa" "LoA Standard"
+  call :build_partial2 "v" "std" "Vanilla Non-Standard"
+  call :build_partial2 "loa" "std" "LoA Non-Standard"
 )
 
 :: Compile demo resource file
@@ -74,6 +68,7 @@ exit /b %errorlevel%
 
 :: Subroutines
 
+:: build partial, including infix
 :build_partial
   set infix=%~1
   set name=%~2
@@ -88,6 +83,7 @@ exit /b %errorlevel%
   if %errorlevel% neq 0 pause
 exit /b 0
 
+:: build partial, excluding infix
 :build_partial_x
   set infix=%~1
   set name=%~2
@@ -98,6 +94,22 @@ exit /b 0
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /xf *-%infix%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /xf *-%infix%-* /S
+  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  if %errorlevel% neq 0 pause
+exit /b 0
+
+:: build partial, including one infix and excluding another
+:build_partial2
+  set infix_incl=%~1
+  set infix_excl=%~2
+  set name=%~3
+  echo build_partial2 %infix_incl% %infix_excl% %name%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /S
   %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
