@@ -1,14 +1,10 @@
-:: This script is supposed to be executed from your DS installation folder.
-:: TankCreator is expected to be in a sibling dir.
-
+chcp 65001
 :: name of map
 set map=sumcol-demo
 :: path of DSLOA documents dir (where Bits are)
 set doc_dsloa=%USERPROFILE%\Documents\Dungeon Siege LoA
 :: path of DS installation
-set ds=.
-:: path of TankCreator
-set tc=..\TankCreator
+set ds=%DungeonSiege%
 
 :: Compile dsmap & dsres files
 call "%doc_dsloa%\Bits\build.bat" %*

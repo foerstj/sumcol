@@ -1,11 +1,10 @@
-:: This script is supposed to be executed from your DS installation folder.
-
+chcp 65001
 :: name of map, case-sensitive
 set map_cs=Summons Collection Demo
 :: name of resources, case-sensitive
 set res_cs=Summons Collection
 :: path of DS installation
-set ds=.
+set ds=%DungeonSiege%
 
 :: Cleanup resources so as not to confuse Siege Editor
 :: all-in-one dsres

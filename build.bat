@@ -1,6 +1,4 @@
-:: This script is supposed to be executed from your DS installation folder.
-:: TankCreator is expected to be in a sibling dir.
-
+chcp 65001
 :: name of map
 set map=sumcol-demo
 :: name of map, case-sensitive
@@ -17,9 +15,9 @@ set author=Johannes Förstner
 :: path of DSLOA documents dir (where Bits are)
 set doc_dsloa=%USERPROFILE%\Documents\Dungeon Siege LoA
 :: path of DS installation
-set ds=.
+set ds=%DungeonSiege%
 :: path of TankCreator
-set tc=..\TankCreator
+set tc=%TankCreator%
 
 :: param
 set mode=%1
@@ -28,7 +26,7 @@ echo %mode%
 :: Compile map file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /S
-%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Compile all-in-one resource file
@@ -38,13 +36,13 @@ robocopy "%doc_dsloa%\Bits\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%"
 robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
 robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
 robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S
-%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Compile translation resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\language" "%tmp%\Bits\language" %res%-*.de.gas /S
-%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 if "%mode%"=="release" (
@@ -58,7 +56,7 @@ if "%mode%"=="release" (
 :: Compile demo resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%-demo" "%tmp%\Bits\world\contentdb\templates\%res%-demo" /S
-%tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Cleanup
@@ -79,7 +77,7 @@ exit /b %errorlevel%
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
-  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
@@ -94,7 +92,7 @@ exit /b 0
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /xf *-%infix%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /xf *-%infix%-* /S
-  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
@@ -110,6 +108,6 @@ exit /b 0
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /S
-  %tc%\RTC.exe -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
