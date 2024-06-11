@@ -37,19 +37,9 @@
     {
         [other]
         {
-            il_main = scroll_summon_yellow_eye;
-            il_main = spell_summon_rector;
-            il_main = spell_summon_braak_mage;
-            il_main = spell_summon_braak;
-            il_main = scroll_summon_pitiful_braak;
-            il_main = spell_summon_mummy;
-            il_main = scroll_summon_air_elemental_minion;
-            il_main = scroll_summon_earth_elemental_minion;
-            il_main = scroll_summon_water_elemental_minion;
-            il_main = spell_summon_forest_darkling;
-            il_main = spell_summon_toreck;
-            il_main = spell_summon_ghost;
-            il_main = spell_summon_kell;
+            il_main = spell_summon_soul_stinger;
+            il_main = spell_summon_giant_lizard;
+            il_main = scroll_summon_ferocious_braak;
         }
     }
 }
@@ -97,8 +87,10 @@
             il_main = spell_summon_googore_grub;
             il_main = spell_summon_sea_mangler;
             il_main = spell_summon_giant_wasp;
+            il_main = spell_summon_soul_stinger;
             il_main = spell_summon_googore;
             il_main = spell_summon_blue_drake;
+            il_main = spell_summon_giant_lizard;
             il_main = spell_summon_red_drake;
         }
     }
@@ -270,6 +262,7 @@
             il_main = spell_summon_braak_mage;
             il_main = spell_summon_braak;
             il_main = scroll_summon_pitiful_braak;
+            il_main = scroll_summon_ferocious_braak;
         }
     }
 }
