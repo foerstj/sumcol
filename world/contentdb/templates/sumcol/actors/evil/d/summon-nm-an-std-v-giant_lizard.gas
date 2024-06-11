@@ -1,0 +1,15 @@
+[t:template,n:giant_lizard_summon]
+{
+    specializes = giant_lizard_base;
+
+	doc = "[summon] giant_lizard";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

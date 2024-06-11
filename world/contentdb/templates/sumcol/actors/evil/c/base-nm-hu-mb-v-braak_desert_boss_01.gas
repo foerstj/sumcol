@@ -1,0 +1,108 @@
+[t:template,n:braak_desert_boss_01_base]  // = braak_desert_boss_01
+{
+	category_name = "1W_evil_c";
+	doc = "braak, melee (desert)boss 01";
+	specializes = base_braak;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	22, 0;
+			intelligence =  11, 0;
+			dexterity =  	17, 0;
+            ranged =  		32,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 74254;
+		life = 2276;
+        max_life = 2276;
+		mana = 10;
+		max_mana = 10;
+		[textures] { 0 = b_c_ecm_bk-04; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 228;
+		damage_min = 172;
+	}
+	[body]
+	{
+		max_move_velocity = 7.0;
+	}
+	[common]
+	{
+		screen_name="Ferocious Braak";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_yellow(sgx)");
+			}
+		}
+	}
+	[defend] { defense=524; }
+	[inventory]
+	{
+    	selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_braak_boulder; }
+		[pcontent]
+		{
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/130-150;
+					il_main = #armor/367-420;
+                }
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/149-163;
+	                il_main = #armor/-rare(1)/422-434;
+                    il_main = #*/-rare(1)/149-163;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/149-163;
+	                il_main = #armor/-unique(2)/422-434;
+                    il_main = #*/-unique(2)/149-163;
+	            }
+				[gold*]
+				{
+					max = 35123;
+					min = 29890;
+					min_pile = 3050;
+					piles = 4 - 6;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_fidget			= world\ai\jobs\common\job_fidget.skrit
+			?social				= 0.7
+			&friend_template 	= false
+			&friends			= party_braak_desert_boss
+			&still				= false;
+
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&party_template						= "party_braak_desert_boss";
+
+		jat_attack_object_melee 			= world\ai\jobs\common\job_attack_object_melee.skrit
+			?run_chance 					= 1.0;
+
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+	}
+}

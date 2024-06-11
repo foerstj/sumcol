@@ -1,0 +1,15 @@
+[t:template,n:braak_desert_boss_01_summon]
+{
+    specializes = braak_desert_boss_01_base;
+
+    doc = "[summon] braak, melee (desert)boss 01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

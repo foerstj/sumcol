@@ -1,0 +1,15 @@
+[t:template,n:soul_stinger_summon]
+{
+    specializes = soul_stinger_base;
+
+	doc = "[summon] soul_stinger";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}
