@@ -1,0 +1,18 @@
+[t:template,n:krug_scout_boss_01_summon]
+{
+    specializes = krug_scout_boss_01_base;
+
+    doc = "[summon] krug scout boss 01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = dg_g_c_1h_fun;
+			}
+        }
+    }
+}

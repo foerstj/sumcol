@@ -1,0 +1,116 @@
+[t:template,n:krug_scavenger_boss_01_base]  // = krug_scavenger_boss_01
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug scavenger boss 01";
+	  specializes = base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 6, 0;
+			  intelligence = 3, 0;
+			  strength = 6, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 10;
+		  life = 24;
+		  mana = 6;
+		  max_life = 24;
+		  max_mana = 6;
+		  scale_base = 1.1;
+		  selection_indicator_scale = 0.85;
+		[textures]
+		{
+			  0 = b_c_eam_ksv-02;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 4;
+		  damage_min = 3;
+	}
+
+	[common]
+	{
+		  screen_name = "Brankar the Scavenger";
+		  membership = krug,monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_light_cyan(sgx)");
+
+			}
+
+		}
+
+	}
+	[defend]
+	{
+		  defense = 32;
+	}
+
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = #club/2-3;
+			}
+    		[all*]
+			{
+				[all*]
+				{
+					[gold*]
+					{
+						max = 30;
+						min = 20;
+						piles = 2 - 3;
+					}
+				}
+				[oneof*]
+				{
+					[all*]
+					{
+        				chance = 0.25;
+	        	   	    il_main = #bow/3-4;
+					}
+					[all*]
+					{
+	            	    il_main = #body/3-5;
+					}
+				}
+
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends 		= true;
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party		= true
+			&party_template					= "party_krug_scavenger_boss";
+	}
+	[physics]
+	{
+		break_sound = s_e_meat_explosion;
+		explosion_magnitude = 1.5;
+		[break_particulate]
+		{
+			  frag_glb_krug_scavenger_01 = 1;
+			  frag_glb_krug_scavenger_02 = 1;
+			  frag_glb_krug_scavenger_03 = 1;
+			  frag_glb_krug_scavenger_04 = 1;
+			  frag_glb_krug_scavenger_05 = 1;
+			  frag_glb_krug_scavenger_06 = 1;
+			  frag_glb_krug_scavenger_07 = 1;
+			  frag_glb_krug_scavenger_08 = 1;
+		}
+	}
+}
