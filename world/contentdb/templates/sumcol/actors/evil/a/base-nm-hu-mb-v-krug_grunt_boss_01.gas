@@ -1,0 +1,88 @@
+[t:template,n:krug_grunt_boss_01_base]  // = krug_grunt_boss_01
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug grunt boss 01";
+	  specializes = base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 8, 0;
+			  intelligence = 6, 0;
+			  melee = 4,  0;
+			  strength = 10, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 90;
+		  life = 56;
+		  mana = 8;
+		  max_life = 56;
+		  max_mana = 8;
+		  selection_indicator_scale = 1.15;
+		[textures]
+		{
+			  0 = b_c_eam_ksc-03;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 17;
+		  damage_min = 15;
+	}
+	[common]
+	{
+		  screen_name = "Futak the Trainer";
+		  membership = krug,monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_red(sgx)");
+
+			}
+
+		}
+
+	}
+	[defend]
+	{
+		  defense = 90;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[all*]
+			{
+				  es_weapon_hand = ax_d_d_1h1b_avg;
+			}
+    		[all*]
+			{
+				[gold*]
+				{
+					max = 40;
+					min = 20;
+					min_pile = 7;
+					piles = 1 - 2;
+				}
+				[all*]
+				{
+       		   	    il_main = sh_w_g_c_r_s_krohar;
+                }
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends		= true;
+
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&party_template						= "party_krug_grunt_boss";
+	}
+}

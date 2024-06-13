@@ -1,0 +1,18 @@
+[t:template,n:krug_grunt_boss_01_summon]
+{
+    specializes = krug_grunt_boss_01_base;
+
+    doc = "[summon] krug grunt boss 01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[all*]
+			{
+				  es_weapon_hand = ax_d_d_1h1b_avg;
+			}
+        }
+    }
+}

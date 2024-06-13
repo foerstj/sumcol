@@ -1,0 +1,98 @@
+[t:template,n:krug_guard_base]  // = krug_guard
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug guard";
+	  specializes = base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 11,  0;
+			  intelligence = 7,  0;
+			  melee = 4,  0;
+			  strength = 13, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 61;
+		  life = 55;
+		  mana = 14;
+		  material = steel;
+		  max_life = 55;
+		  max_mana = 14;
+		  selection_indicator_scale = 0.85;
+		[textures]
+		{
+			  0 = b_c_eam_kr;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 26;
+		  damage_min = 22;
+	}
+	[common]
+	{
+		  screen_name = "Krug Guard";
+		  membership = krug, krug_guard, party_krug_commander, party_krug_shaman, monster;
+	}
+	[defend]
+	{
+		  defense = 57;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = ax_d_c_1h1b_avg;
+			}
+    		[oneof*]
+			{
+				[all*]
+				{
+					[gold*]
+					{
+						  chance = 0.2;
+						  max = 75;
+						  min = 35;
+					}
+				}
+				[all*]
+				{
+       				chance = 0.03;
+   	        	    il_main = #spell/3-8;
+				}
+				[oneof*]
+				{
+	    		    chance = 0.22;
+        	   	    il_main = #weapon/15-25;
+        	   	    il_main = #*/15-25;
+            	    il_main = #armor/11-60;
+    				il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+                [oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/22-35;
+	                il_main = #armor/-rare(1)/28-80;
+                    il_main = #*/-rare(1)/22-35;
+                }
+			}
+		}
+	}
+	[mind]
+	{
+		jat_fidget					= world\ai\jobs\common\job_fidget.skrit
+			?social						= 0.35
+			&still						= false;
+
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		= true;
+
+		on_enemy_spotted_alert_friends	= true;
+	}
+}

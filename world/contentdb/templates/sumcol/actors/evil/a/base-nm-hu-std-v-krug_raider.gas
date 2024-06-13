@@ -1,0 +1,111 @@
+[t:template,n:krug_raider_base]  // = krug_raider
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug raider";
+	  specializes = base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 8,  0;
+			  intelligence = 6,  0;
+			  melee = 3,  0;
+			  strength = 11, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 36;
+		  life = 30;
+		  mana = 12;
+		  max_life = 30;
+		  max_mana = 1;
+		  model = m_c_eam_kr_pos_1;
+		  selection_indicator_scale = 0.85;
+		[textures]
+		{
+			  0 = b_c_eam_kr;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 16;
+		  damage_min = 12;
+	}
+	[common]
+	{
+		  screen_name = "Krug Raider";
+	}
+	[defend]
+	{
+		  defense = 42;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[gold*]
+			{
+				  chance = 0.1;
+				  max = 34;
+				  min = 12;
+			}
+			[oneof*]
+			{
+				  es_weapon_hand = ax_d_c_1h1b_avg;
+			}
+    		[oneof*]
+			{
+				[all*]
+				{
+					[gold*]
+					{
+						  chance = 0.2;
+						  max = 40;
+						  min = 6;
+					}
+				}
+				[all*]
+				{
+       				chance = 0.03;
+   	        	    il_main = #spell/4-7;
+				}
+				[oneof*]
+				{
+                    chance = 0.002;
+                    il_main = #weapon/-rare(1)/15-18;
+                    il_main = #armor/-rare(1)/30-40;
+                }
+				[oneof*]
+				{
+	    		    chance = 0.22;
+	           	    il_main = #weapon/14-17;
+	                il_main = #armor/6-35;
+	                il_main = #*/14-17;
+	    			il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends	= true;
+	}
+	[physics]
+	{
+		  break_sound = s_e_meat_explosion;
+		  explosion_magnitude = 1.5;
+		[break_particulate]
+		{
+			  frag_glb_krug_raider_01 = 1;
+			  frag_glb_krug_raider_02 = 1;
+			  frag_glb_krug_raider_03 = 1;
+			  frag_glb_krug_raider_04 = 1;
+			  frag_glb_krug_raider_05 = 1;
+			  frag_glb_krug_raider_06 = 1;
+			  frag_glb_krug_raider_07 = 1;
+			  frag_glb_krug_raider_08 = 1;
+		}
+	}
+}

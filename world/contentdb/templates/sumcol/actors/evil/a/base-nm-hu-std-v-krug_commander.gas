@@ -1,0 +1,134 @@
+[t:template,n:krug_commander_base]  // = krug_commander
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug commander";
+	  specializes = base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 12, 0;
+			  intelligence = 9, 0;
+			  melee = 6,  0;
+			  strength = 16, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 151;
+		  life = 190;
+		  mana = 18;
+		  material = steel;
+		  max_life = 190;
+		  max_mana = 18;
+		  model = m_c_eam_kc_pos_1;
+		  scale_base = 1.2;
+		  selection_indicator_scale = 0.85;
+		[textures]
+		{
+			  0 = b_c_eam_kc;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 34;
+		  damage_min = 30;
+	}
+	[body]
+	{
+		min_move_velocity = 1.75;
+		avg_move_velocity = 2;
+	}
+	[common]
+	{
+		  screen_name = "Krug Commander";
+		  membership = krug, monster;
+	}
+	[defend]
+	{
+		  defense = 86;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = ax_d_d_2h1b_avg;
+			}
+    		[oneof*]
+			{
+				[all*]
+				{
+					[all*]
+					{
+        				chance = 0.01;
+    	        	    il_main = #spell/2-4;
+					}
+					[all*]
+					{
+        				chance = 0.02;
+    	        	    il_main = #spell/5-10;
+					}
+					[oneof*]
+					{
+					    chance = 0.40;
+		           	    il_main = #weapon/31-35;
+		                il_main = #armor/40-73;
+		    			il_main = potion_mana_small;
+						il_main = potion_health_small;
+                    }
+                    [oneof*]
+					{
+	                   	chance = 0.004;
+	                   	il_main = #weapon/-rare(1)/32-44;
+	                   	il_main = #armor/-rare(1)/55-99;
+                       	il_main = #*/-rare(1)/32-44;
+                	}
+					[oneof*]
+					{
+                       	chance = 0.002;
+	                   	il_main = #weapon/-unique(2)/32-44;
+	                   	il_main = #armor/-unique(2)/55-99;
+                       	il_main = #*/-unique(2)/32-44;
+                    }
+					[gold*]
+					{
+						  chance = 0.6;
+						  max = 115;
+						  min = 90;
+					}
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+			?social							= 0.35
+			&still							= false;
+
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&form_party_on_friend_entered_ICZ	= true
+			&form_party_on_friend_entered_OCZ	= true
+			&party_template						= "party_krug_commander";
+		on_enemy_spotted_alert_friends			= true;
+	}
+	[physics]
+	{
+		  break_sound = s_e_meat_explosion;
+		  explosion_magnitude = 1.5;
+		[break_particulate]
+		{
+			  frag_glb_krug_commander_01 = 1;
+			  frag_glb_krug_commander_02 = 1;
+			  frag_glb_krug_commander_03 = 1;
+			  frag_glb_krug_commander_04 = 1;
+			  frag_glb_krug_commander_05 = 1;
+			  frag_glb_krug_commander_06 = 1;
+			  frag_glb_krug_commander_07 = 1;
+			  frag_glb_krug_commander_08 = 1;
+		}
+	}
+}

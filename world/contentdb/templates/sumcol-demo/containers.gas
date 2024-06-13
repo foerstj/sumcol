@@ -37,6 +37,16 @@
     {
         [other]
         {
+            il_main = spell_summon_krug_scavenger;
+            il_main = spell_summon_krug_scout;
+            il_main = scroll_summon_brankar;
+            il_main = spell_summon_krug_grunt;
+            il_main = scroll_summon_klandank;
+            il_main = spell_summon_krug_chucker;
+            il_main = spell_summon_krug_raider;
+            il_main = spell_summon_krug_guard;
+            il_main = scroll_summon_futak;
+            il_main = spell_summon_krug_commander;
             il_main = spell_summon_soul_stinger;
             il_main = spell_summon_giant_lizard;
             il_main = scroll_summon_ferocious_braak;
@@ -259,6 +269,18 @@
     {
         [other]
         {
+            // krug
+            il_main = spell_summon_krug_scavenger;
+            il_main = spell_summon_krug_scout;
+            il_main = scroll_summon_brankar;
+            il_main = spell_summon_krug_grunt;
+            il_main = scroll_summon_klandank;
+            il_main = spell_summon_krug_chucker;
+            il_main = spell_summon_krug_raider;
+            il_main = spell_summon_krug_guard;
+            il_main = scroll_summon_futak;
+            il_main = spell_summon_krug_commander;
+            // braak
             il_main = spell_summon_braak_mage;
             il_main = spell_summon_braak;
             il_main = scroll_summon_pitiful_braak;

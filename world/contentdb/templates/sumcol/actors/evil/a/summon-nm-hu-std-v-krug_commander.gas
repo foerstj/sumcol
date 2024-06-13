@@ -1,0 +1,18 @@
+[t:template,n:krug_commander_summon]
+{
+    specializes = krug_commander_base;
+
+    doc = "[summon] krug commander";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = ax_d_d_2h1b_avg;
+			}
+        }
+    }
+}
