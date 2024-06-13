@@ -1,0 +1,84 @@
+Go		m_Go$;
+Go		m_Spell$;
+GoMind	m_Mind$;
+GoBody  m_Body$;
+Job		m_Job$;
+
+#include "k_job_c_mcp_fidget_utils"
+
+void GetSpell$( )
+{
+	m_Spell$ = m_Go$.Inventory.GetItem( il_active_primary_spell );
+}
+
+void TryResurrect$( )
+{
+    if( m_Spell$ != NULL )
+    {
+        m_Mind$.TempQtColl1.Clear;
+        m_Mind$.TempGopColl1.Clear;
+        m_Mind$.TempQtColl1.Add( QT_FRIEND );
+        m_Mind$.TempQtColl1.Add( QT_DEAD );
+        if( m_Mind$.GetVisible( m_Mind$.TempQtColl1, m_Mind$.TempGopColl1 ) )
+        {
+            int i$ = 0;
+            int iend$ = m_Mind$.TempGopColl1.size();
+
+            while( i$ < iend$ )
+            {
+                Go temp$ = m_Mind$.TempGopColl1.Get( i$ );
+                if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
+                {
+                    if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
+                    {
+                        m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
+                        break;
+                    }
+                }
+                i$ += 1;
+            }
+        }
+    }
+}
+
+startup state Unknown$
+{
+}
+
+event OnJobInitPointers$( Job job$ )
+{
+	m_Job$					= job$;
+	m_Go$					= job$.Go;
+	m_Mind$					= job$.Go.Mind;
+	m_Body$					= job$.Go.Body;
+}
+
+event OnJobInit$( Job job$ )
+{
+	OnJobInitPointers$( job$ );
+
+	GetSpell$();
+
+	SetState Wandering$;
+}
+
+state Wandering$
+{
+	trigger OnWorldMessage$( WE_ANIM_DONE )
+	{
+		StartFidgetIfRequired$();
+	}
+
+	trigger OnTimer$( 1 )
+	{
+		This.CreateTimer( 1 , 1 ); 
+		TryResurrect$();
+	}
+
+	event OnEnterState$
+	{
+		StartFidgetIfRequired$();
+
+		This.CreateTimer( 1 , 1 );
+	}
+}

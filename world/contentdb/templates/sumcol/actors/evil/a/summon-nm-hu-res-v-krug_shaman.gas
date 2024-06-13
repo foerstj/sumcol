@@ -20,5 +20,6 @@
     [mind]
     {
 		jat_brain = world\ai\jobs\common\brain_hero.skrit;  // reset party-forming
+        jat_fidget = world\ai\jobs\sumcol\job_fidget_resurrect.skrit;  // use the resurrect spell
     }
 }
