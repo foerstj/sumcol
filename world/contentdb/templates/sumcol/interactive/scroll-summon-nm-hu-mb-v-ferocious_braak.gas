@@ -14,7 +14,7 @@
     }
     [common]
     {
-        description = "Summons a Ferocious Braak to guard the Caster.";
+        description = "Summons the Ferocious Braak to guard the Caster.";
     }
     [gui]
     {
