@@ -1,0 +1,14 @@
+[t:template,n:krug_shaman_summon]
+{
+    specializes = krug_shaman_sumcol_base;
+
+    doc = "[summon] krug shaman";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+        }
+    }
+}
