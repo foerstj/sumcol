@@ -7,8 +7,18 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		[other]
+		{
+			//il_active_primary_spell   = spell_fireshot;
+			//il_active_secondary_spell = spell_resurrect_monster;
+			il_active_primary_spell   = spell_resurrect_monster;
+		}
 		[pcontent]
 		{
         }
+    }
+    [mind]
+    {
+		jat_brain = world\ai\jobs\common\brain_hero.skrit;  // reset party-forming
     }
 }
