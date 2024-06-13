@@ -141,3 +141,10 @@
 	  p position = -3.54495,0,0.0185108,0xf00cc9f1;
 	}
 }
+[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
+{
+	[placement]
+	{
+	  p position = 14.4673,-3,5.20355,0x642caff0;
+	}
+}
