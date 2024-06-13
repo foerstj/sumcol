@@ -23,3 +23,18 @@
 	  p position = -2.82124,0,-0.0992756,0x131cc381;
 	}
 }
+[t:spell_resurrect_monster,n:0x00100050]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[gui]
+	{
+	  b is_droppable = true;
+	}
+	[placement]
+	{
+	  p position = -1.29232,0,1.49186,0x131cc381;
+	}
+}
