@@ -195,6 +195,16 @@
 		from = "Summon Yellow Spider";
 		to = "Gelbe Spinne beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Giant Lizard";
+		to = "Riesenechse beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Soul Stinger";
+		to = "Seelenstecher beschwören";
+	}
 
 	[0x0000]
 	{
@@ -390,5 +400,15 @@
 	{
 		from = "Summons a Yellow Spider to guard the Caster.";
 		to = "Beschwört eine Gelbe Spinne, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Lizard to guard the Caster.";
+		to = "Beschwört eine Riesenechse, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Soul Stinger to guard the Caster.";
+		to = "Beschwört einen Seelenstecher, der den Anwender verteidigt.";
 	}
 }
