@@ -40,6 +40,7 @@
             il_main = spell_summon_krug_scavenger;
             il_main = spell_summon_krug_scout;
             il_main = scroll_summon_brankar;
+            il_main = spell_summon_krug_shaman;
             il_main = spell_summon_krug_grunt;
             il_main = scroll_summon_klandank;
             il_main = spell_summon_krug_chucker;
@@ -273,6 +274,7 @@
             il_main = spell_summon_krug_scavenger;
             il_main = spell_summon_krug_scout;
             il_main = scroll_summon_brankar;
+            il_main = spell_summon_krug_shaman;
             il_main = spell_summon_krug_grunt;
             il_main = scroll_summon_klandank;
             il_main = spell_summon_krug_chucker;
