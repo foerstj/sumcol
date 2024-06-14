@@ -9,7 +9,7 @@ set ds=%DungeonSiege%
 set target=vanilla
 set ds_exe=DSLOA.exe
 if "%target%"=="vanilla" (
-  set ds_exe=DungeonSiege.exe
+  set ds_exe=DSMod.exe
 )
 
 :: Compile dsmap & dsres files
