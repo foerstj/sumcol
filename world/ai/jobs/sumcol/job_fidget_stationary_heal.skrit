@@ -9,10 +9,12 @@ Job		m_Job$;
 void GetSpell$( )
 {
 	m_Spell$ = m_Go$.Inventory.GetItem( il_active_primary_spell );
+    report.genericf("GetSpell$ %p\n", m_Spell$);
 }
 
 void TryHeal$( )
 {
+    report.genericf("TryHeal$\n");
     if( m_Spell$ != NULL )
     {
         m_Mind$.TempQtColl1.Clear;
