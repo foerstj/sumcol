@@ -6,14 +6,17 @@ set res_cs=Summons Collection
 :: path of DS installation
 set ds=%DungeonSiege%
 
+set dest_res=DSLOA
+set dest_map=DSLOA
+
 :: Cleanup resources so as not to confuse Siege Editor
 :: all-in-one dsres
-del "%ds%\DSLOA\%res_cs%.dsres"
+del "%ds%\%dest_res%\%res_cs%.dsres"
 :: translation
-del "%ds%\DSLOA\%res_cs%.de.dsres"
+del "%ds%\%dest_res%\%res_cs%.de.dsres"
 :: partial builds
-del "%ds%\DSLOA\%res_cs% - *.dsres"
+del "%ds%\%dest_res%\%res_cs% - *.dsres"
 
 :: demo map
-del "%ds%\DSLOA\%map_cs%.dsres"
-del "%ds%\DSLOA\%map_cs%.dsmap"
+del "%ds%\%dest_res%\%map_cs%.dsres"
+del "%ds%\%dest_map%\%map_cs%.dsmap"
