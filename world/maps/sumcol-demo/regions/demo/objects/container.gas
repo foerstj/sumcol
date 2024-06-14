@@ -33,6 +33,13 @@
 	  p position = 17.0301,-3,-2.95491,0x642caff0;
 	}
 }
+[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
+{
+	[placement]
+	{
+	  p position = 14.4673,-3,5.20355,0x642caff0;
+	}
+}
 [t:sumcol_demo_barrel_animals_vanilla,n:0x00100004]
 {
 	[placement]
@@ -141,10 +148,10 @@
 	  p position = -3.54495,0,0.0185108,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
+[t:barrel_glb_powder_keg,n:0x00100051]
 {
 	[placement]
 	{
-	  p position = 14.4673,-3,5.20355,0x642caff0;
+	  p position = 2.70505,0,-2.9209,0x9414169a;
 	}
 }
