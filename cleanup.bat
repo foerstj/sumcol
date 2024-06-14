@@ -6,8 +6,13 @@ set res_cs=Summons Collection
 :: path of DS installation
 set ds=%DungeonSiege%
 
+set target=vanilla
 set dest_res=DSLOA
 set dest_map=DSLOA
+if "%target%"=="vanilla" (
+  set dest_res=Resources
+  set dest_map=Maps
+)
 
 :: Cleanup resources so as not to confuse Siege Editor
 :: all-in-one dsres

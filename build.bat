@@ -23,8 +23,13 @@ set tc=%TankCreator%
 set mode=%1
 echo %mode%
 
+set target=vanilla
 set dest_res=DSLOA
 set dest_map=DSLOA
+if "%target%"=="vanilla" (
+  set dest_res=Resources
+  set dest_map=Maps
+)
 
 :: Compile map file
 rmdir /S /Q "%tmp%\Bits"
@@ -33,14 +38,19 @@ robocopy "%doc_dsloa%\Bits\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /S
 if %errorlevel% neq 0 pause
 
 :: Compile all-in-one resource file
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /xf *.psd /S
-robocopy "%doc_dsloa%\Bits\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
-robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
-if %errorlevel% neq 0 pause
+if "%target%"=="loa" (
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%doc_dsloa%\Bits\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /xf *.psd /S
+  robocopy "%doc_dsloa%\Bits\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
+  robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
+  robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  if %errorlevel% neq 0 pause
+)
+if "%target%"=="vanilla" (
+  call :build_partial "v" "Vanilla"
+)
 
 :: Compile translation resource file
 rmdir /S /Q "%tmp%\Bits"
