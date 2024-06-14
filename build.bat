@@ -23,10 +23,13 @@ set tc=%TankCreator%
 set mode=%1
 echo %mode%
 
+set dest_res=DSLOA
+set dest_map=DSLOA
+
 :: Compile map file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_map%\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Compile all-in-one resource file
@@ -36,13 +39,13 @@ robocopy "%doc_dsloa%\Bits\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%"
 robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
 robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
 robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Compile translation resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\language" "%tmp%\Bits\language" %res%-*.de.gas /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 if "%mode%"=="release" (
@@ -56,7 +59,7 @@ if "%mode%"=="release" (
 :: Compile demo resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%-demo" "%tmp%\Bits\world\contentdb\templates\%res%-demo" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%map_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%map_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Cleanup
@@ -77,7 +80,7 @@ exit /b %errorlevel%
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
@@ -92,7 +95,7 @@ exit /b 0
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /xf *-%infix%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" /xf *-%infix%-* /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
@@ -108,6 +111,6 @@ exit /b 0
   robocopy "%doc_dsloa%\Bits\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%doc_dsloa%\Bits\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /S
   robocopy "%doc_dsloa%\Bits\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\DSLOA\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
