@@ -102,6 +102,13 @@
     specializes = base_neener;
     common:screen_name = "PContent Neener";
     mind:jat_talk = world\ai\jobs\common\job_talk.skrit;
+    [inventory]
+    {
+        [equipment]
+        {
+            es_weapon_hand = hm_g_c_1h1m_low;  // just to prevent DSMod from complaining about "wrong stance for fidgeting"
+        }
+    }
 }
 
 [t:template,n:sumcol_demo_pcontent_neener_0_9]
