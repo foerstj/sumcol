@@ -7,6 +7,11 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		[other]
+		{
+			il_active_primary_spell   = spell_shaman_fireshot_summon;
+			il_active_secondary_spell = spell_resurrect_monster;  // doesn't work tho
+		}
 		[pcontent]
 		{
         }
