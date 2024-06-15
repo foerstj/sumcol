@@ -14,32 +14,38 @@ void GetSpell$( )
 
 void TryHeal$( )
 {
-    report.genericf("TryHeal$\n");
-    if( m_Spell$ != NULL )
+    if( m_Spell$ == NULL )
     {
-        m_Mind$.TempQtColl1.Clear;
-        m_Mind$.TempGopColl1.Clear;
-        m_Mind$.TempQtColl1.Add( QT_FRIEND );
-        m_Mind$.TempQtColl1.Add( QT_ALIVE );
-        if( m_Mind$.GetVisible( m_Mind$.TempQtColl1, m_Mind$.TempGopColl1 ) )
-        {
-            int i$ = 0;
-            int iend$ = m_Mind$.TempGopColl1.size();
+        report.genericf("TryHeal$: no spell\n");
+        return;
+    }
 
-            while( i$ < iend$ )
+    m_Mind$.TempQtColl1.Clear;
+    m_Mind$.TempGopColl1.Clear;
+    m_Mind$.TempQtColl1.Add( QT_FRIEND );
+    m_Mind$.TempQtColl1.Add( QT_ALIVE );
+    if( !m_Mind$.GetVisible( m_Mind$.TempQtColl1, m_Mind$.TempGopColl1 ) )
+    {
+        report.genericf("TryHeal$: no visible alive friends\n");
+        return;
+    }
+
+    int i$ = 0;
+    int iend$ = m_Mind$.TempGopColl1.size();
+    report.genericf("TryHeal$: %i visible alive friends\n", iend$);
+
+    while( i$ < iend$ )
+    {
+        Go temp$ = m_Mind$.TempGopColl1.Get( i$ );
+        if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
+        {
+            if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
             {
-                Go temp$ = m_Mind$.TempGopColl1.Get( i$ );
-                if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
-                {
-                    if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
-                    {
-                        m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
-                        break;
-                    }
-                }
-                i$ += 1;
+                m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
+                break;
             }
         }
+        i$ += 1;
     }
 }
 
