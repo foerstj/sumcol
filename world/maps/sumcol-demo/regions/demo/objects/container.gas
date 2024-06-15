@@ -150,8 +150,12 @@
 }
 [t:barrel_glb_powder_keg,n:0x00100051]
 {
+	[attack]
+	{
+	  f area_damage_radius = 2;
+	}
 	[placement]
 	{
-	  p position = 2.70505,0,-2.9209,0x9414169a;
+	  p position = -3.66627,0,3.78672,0x9414169a;
 	}
 }
