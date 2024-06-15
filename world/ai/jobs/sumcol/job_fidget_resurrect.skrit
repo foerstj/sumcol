@@ -20,24 +20,37 @@ void TryResurrect$( )
         return;
     }
 
-    m_Mind$.TempQtColl1.Clear;
     m_Mind$.TempGopColl1.Clear;
-    //m_Mind$.TempQtColl1.Add( QT_FRIEND );
-    //m_Mind$.TempQtColl1.Add( QT_DEAD );
-    //m_Mind$.TempQtColl1.Add( QT_ACTOR );
-    if( !m_Mind$.GetVisible( m_Mind$.TempQtColl1, m_Mind$.TempGopColl1 ) )
+    m_Mind$.TempGopColl2.Clear;
+
+    AIQuery.GetOccupantsInSphere( m_Go$.Placement.Position, m_Mind$.SightRange, m_Mind$.tempGopColl1 );
+    report.genericf("TryResurrect$: %i occupants in sphere\n", m_Mind$.tempGopColl1.Size() );
+    int i$ = 0;
+    while( i$ < m_Mind$.tempGopColl1.Size() )
     {
-        report.genericf("TryResurrect$: no visible objects\n");
-        return;
+        Go temp$ = m_Mind$.tempGopColl1.Get( i$ );
+        i$ += 1;
+        
+        if( temp$ == NULL )
+        {
+            continue;
+        }
+        if( !temp$.HasAspect || !temp$.HasActor )
+        {
+            continue;
+        }
+        if( temp$.Actor.GetAlignment == AA_GOOD && IsDead( temp$.Aspect.GetLifeState() ) )
+        {
+            m_Mind$.TempGopColl2.add( temp$ );
+            break;
+        }
     }
 
-    int i$ = 0;
-    int iend$ = m_Mind$.TempGopColl1.size();
-    report.genericf("TryResurrect$: %i visible objects\n", iend$);
-
-    while( i$ < iend$ )
+    report.genericf("TryResurrect$: %i candidates for resurrection\n", m_Mind$.TempGopColl2.Size() );
+    i$ = 0;
+    while( i$ < m_Mind$.TempGopColl2.Size() )
     {
-        Go temp$ = m_Mind$.TempGopColl1.Get( i$ );
+        Go temp$ = m_Mind$.TempGopColl2.Get( i$ );
         if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
         {
             report.genericf("TryResurrect$: #%i is in range\n", i$);
