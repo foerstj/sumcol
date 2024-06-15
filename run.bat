@@ -6,7 +6,7 @@ set doc_dsloa=%USERPROFILE%\Documents\Dungeon Siege LoA
 :: path of DS installation
 set ds=%DungeonSiege%
 
-set target=vanilla
+set target=loa
 set ds_exe=DSLOA.exe
 if "%target%"=="vanilla" (
   set ds_exe=DungeonSiege.exe
