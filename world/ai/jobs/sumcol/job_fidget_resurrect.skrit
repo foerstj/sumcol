@@ -22,25 +22,28 @@ void TryResurrect$( )
 
     m_Mind$.TempQtColl1.Clear;
     m_Mind$.TempGopColl1.Clear;
-    m_Mind$.TempQtColl1.Add( QT_FRIEND );
-    m_Mind$.TempQtColl1.Add( QT_DEAD );
+    //m_Mind$.TempQtColl1.Add( QT_FRIEND );
+    //m_Mind$.TempQtColl1.Add( QT_DEAD );
+    //m_Mind$.TempQtColl1.Add( QT_ACTOR );
     if( !m_Mind$.GetVisible( m_Mind$.TempQtColl1, m_Mind$.TempGopColl1 ) )
     {
-        report.genericf("TryResurrect$: no visible dead friends\n");
+        report.genericf("TryResurrect$: no visible objects\n");
         return;
     }
 
     int i$ = 0;
     int iend$ = m_Mind$.TempGopColl1.size();
-    report.genericf("TryResurrect$: %i visible dead friends\n", iend$);
+    report.genericf("TryResurrect$: %i visible objects\n", iend$);
 
     while( i$ < iend$ )
     {
         Go temp$ = m_Mind$.TempGopColl1.Get( i$ );
         if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
         {
-            if( m_Spell$.Magic.IsCastableOn( temp$ ) && ( temp$.Player.Controller == PC_HUMAN ))
+            report.genericf("TryResurrect$: #%i is in range\n", i$);
+            if( m_Spell$.Magic.IsCastableOn( temp$ ))
             {
+                report.genericf("TryResurrect$: #%i castable\n", i$);
                 m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
                 break;
             }
