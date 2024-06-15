@@ -54,6 +54,8 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Wasps: Giant Wasp
   - Lectars: Lectar
   - Slargs: Slarg
+  - Stingers: Soul Stinger
+  - Lizards: Giant Lizard
   - Stationary:
     - Skrubbs: Farm Skrubb, Black Skrubb
     - Worms: Mine Worm, Googore
@@ -99,7 +101,9 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Tesla Heal Coil
 - Humanoids:
   - Braak (NM): Braak, Braak Mage
-    - Miniboss: Pitiful Braak
+    - Miniboss: Pitiful Braak, Ferocious Braak
+  - Krug (NM): Krug Scavenger, Krug Scout, Krug Apprentice, Krug Shaman, Krug Grunt, Krug Chucker, Krug Raider, Krug Guard, Krug Commander
+    - Miniboss: Brankar the Scavenger, Klandank the Krug, Huskar the Shaman, Futak the Trainer
 
 ### LoA Creatures:
 - Animals (NM):

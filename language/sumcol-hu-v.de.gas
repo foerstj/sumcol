@@ -52,6 +52,21 @@
 		from = "Summon Krug Commander";
 		to = "Krug-Kommandeur beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Krug Apprentice";
+		to = "Krug-Lehrling beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Krug Shaman";
+		to = "Krug-Schamane beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Huskar the Shaman";
+		to = "Huskar den Schamanen beschwören";
+	}
 
 	[0x0000]
 	{
@@ -102,6 +117,21 @@
 	{
 		from = "Summons a Krug Commander to guard the Caster.";
 		to = "Beschwört einen Krug-Kommandeur, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Apprentice to guard the Caster.";
+		to = "Beschwört einen Krug-Lehrling, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Shaman to guard the Caster.";
+		to = "Beschwört einen Krug-Schamanen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons Huskar the Shaman to guard the Caster.";
+		to = "Beschwört Huskar den Schamanen, der den Anwender verteidigt.";
 	}
 
 
