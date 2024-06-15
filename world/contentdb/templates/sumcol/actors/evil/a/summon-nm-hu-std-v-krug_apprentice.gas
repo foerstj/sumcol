@@ -1,0 +1,18 @@
+[t:template,n:krug_apprentice_summon]
+{
+    specializes = krug_apprentice_base;
+
+    doc = "[summon] krug Apprentice";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_apprentice_zap_summon;
+		}
+		[pcontent]
+		{
+        }
+    }
+}
