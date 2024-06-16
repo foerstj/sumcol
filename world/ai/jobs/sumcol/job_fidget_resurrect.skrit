@@ -16,7 +16,6 @@ void TryResurrect$( )
 {
     if( m_Spell$ == NULL )
     {
-        report.genericf("TryResurrect$: no spell\n");
         return;
     }
 
@@ -24,7 +23,6 @@ void TryResurrect$( )
     m_Mind$.TempGopColl2.Clear;
 
     AIQuery.GetOccupantsInSphere( m_Go$.Placement.Position, m_Mind$.SightRange, m_Mind$.tempGopColl1 );
-    report.genericf("TryResurrect$: %i occupants in sphere\n", m_Mind$.tempGopColl1.Size() );
     int i$ = 0;
     while( i$ < m_Mind$.tempGopColl1.Size() )
     {
@@ -42,26 +40,26 @@ void TryResurrect$( )
         if( temp$.Actor.GetAlignment == AA_GOOD && IsDead( temp$.Aspect.GetLifeState() ) )
         {
             m_Mind$.TempGopColl2.add( temp$ );
-            break;
         }
     }
-
     report.genericf("TryResurrect$: %i candidates for resurrection\n", m_Mind$.TempGopColl2.Size() );
+
     i$ = 0;
     while( i$ < m_Mind$.TempGopColl2.Size() )
     {
         Go temp$ = m_Mind$.TempGopColl2.Get( i$ );
-        if ( m_Mind$.GetDistance( temp$ ) <= m_Spell$.Magic.CastRange )
-        {
-            report.genericf("TryResurrect$: #%i is in range\n", i$);
-            if( m_Spell$.Magic.IsCastableOn( temp$ ))
-            {
-                report.genericf("TryResurrect$: #%i castable\n", i$);
-                m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
-                break;
-            }
-        }
         i$ += 1;
+
+        if ( m_Mind$.GetDistance( temp$ ) > m_Spell$.Magic.CastRange )
+        {
+            continue;
+        }
+        if( m_Spell$.Magic.IsCastableOn( temp$ ))
+        {
+            report.genericf("TryResurrect$: Found resurrection target\n" );
+            m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
+            break;
+        }
     }
 }
 
@@ -95,7 +93,7 @@ state Wandering$
 
 	trigger OnTimer$( 1 )
 	{
-		This.CreateTimer( 1 , 1 ); 
+		This.CreateTimer( 1 , 2 );  // try again in 2s - give the resurrect spell a bit of time if resurrection target found
 		TryResurrect$();
 	}
 
