@@ -452,6 +452,7 @@ state Arrived$
         // resurrect someone if needed and possible
         if (TryResurrect$())
         {
+            this.SetNewTimerSeconds( 1, 5 );  // give the spell a bit of time before deciding next action, to avoid casting twice
             return;
         }
 
