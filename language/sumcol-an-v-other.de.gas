@@ -1,0 +1,194 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Phrak Ballista";
+		to = "Phrak-Balliste beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Venom Fiend";
+		to = "Giftdämon beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Black Skrubb";
+		to = "Schwarzen Skrubb beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Farm Skrubb";
+		to = "Feld-Skrubb beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Googore";
+		to = "Googore beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Mine Worm";
+		to = "Grubenwurm beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Arakun Spider";
+		to = "Arakun-Spinne beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Forest Phrak";
+		to = "Wald-Phrak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Frostnid";
+		to = "Frostnid beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Frost Spitter";
+		to = "Frostnid-Spucker beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Giant Moth";
+		to = "Riesenmotte beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Giant Wasp";
+		to = "Riesenwespe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Googore Grub";
+		to = "Googore-Larve beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Phrak";
+		to = "Phrak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Phrak Piercer";
+		to = "Phrak-Schlitzer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Stalagnid";
+		to = "Stalagnid beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Swamp Stinger";
+		to = "Sumpfstecher beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Yellow Spider";
+		to = "Gelbe Spinne beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Soul Stinger";
+		to = "Seelenstecher beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Phrak Ballista to guard the Caster.";
+		to = "Beschwört eine Phrak-Balliste, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Venom Fiend to guard the Caster.";
+		to = "Beschwört einen Giftdämon, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Black Skrubb to guard the Caster.";
+		to = "Beschwört einen Schwarzen Skrubb, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Farm Skrubb to guard the Caster.";
+		to = "Beschwört einen Feld-Skrubb, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Googore to guard the Caster.";
+		to = "Beschwört einen Googore, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mine Worm to guard the Caster.";
+		to = "Beschwört einen Grubenwurm, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons an Arakun Spider to guard the Caster.";
+		to = "Beschwört eine Arakun-Spinne, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Forest Phrak to guard the Caster.";
+		to = "Beschwört einen Wald-Phrak, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frostnid to guard the Caster.";
+		to = "Beschwört einen Frostnid, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Spitter to guard the Caster.";
+		to = "Beschwört einen Frostnid-Spucker, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Moth to guard the Caster.";
+		to = "Beschwört eine Riesenmotte, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Wasp to guard the Caster.";
+		to = "Beschwört eine Riesenwespe, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Googore Grub to guard the Caster.";
+		to = "Beschwört eine Googore-Larve, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Phrak to guard the Caster.";
+		to = "Beschwört einen Phrak, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Phrak Piercer to guard the Caster.";
+		to = "Beschwört einen Phrak-Schlitzer, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Stalagnid to guard the Caster.";
+		to = "Beschwört einen Stalagnid, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Swamp Stinger to guard the Caster.";
+		to = "Beschwört einen Sumpfstecher, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Yellow Spider to guard the Caster.";
+		to = "Beschwört eine Gelbe Spinne, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Soul Stinger to guard the Caster.";
+		to = "Beschwört einen Seelenstecher, der den Anwender verteidigt.";
+	}
+}
