@@ -56,6 +56,43 @@
 		  i id = 7;
 		}
 	}
+	[t:snode,n:0x1eb66588]
+	{
+	  b bounds_camera = true;
+	  b camera_fade = false;
+	  x guid = 0x1EB66588;
+	  x mesh_guid = 0x001006A9;
+	  x nodelevel = 0xFFFFFFFF;
+	  x nodeobject = 0xFFFFFFFF;
+	  x nodesection = 0x00000001;
+	  b occludes_camera = true;
+	  b occludes_light = true;
+		texsetabbr = grs01;
+		[door*]
+		{
+		  i fardoor = 8;
+		  x farguid = 0x9414169A;
+		  i id = 6;
+		}
+		[door*]
+		{
+		  i fardoor = 6;
+		  x farguid = 0x6B868837;
+		  i id = 3;
+		}
+		[door*]
+		{
+		  i fardoor = 3;
+		  x farguid = 0x642CAFF0;
+		  i id = 5;
+		}
+		[door*]
+		{
+		  i fardoor = 4;
+		  x farguid = 0x642CAFF0;
+		  i id = 4;
+		}
+	}
 	[t:snode,n:0x3a845ae4]
 	{
 	  b bounds_camera = true;
@@ -103,6 +140,31 @@
 		  i fardoor = 7;
 		  x farguid = 0xE4B45244;
 		  i id = 4;
+		}
+	}
+	[t:snode,n:0x49918744]
+	{
+	  b bounds_camera = true;
+	  b camera_fade = false;
+	  x guid = 0x49918744;
+	  x mesh_guid = 0x001006A9;
+	  x nodelevel = 0xFFFFFFFF;
+	  x nodeobject = 0xFFFFFFFF;
+	  x nodesection = 0x00000001;
+	  b occludes_camera = true;
+	  b occludes_light = true;
+		texsetabbr = grs01;
+		[door*]
+		{
+		  i fardoor = 3;
+		  x farguid = 0x6B868837;
+		  i id = 6;
+		}
+		[door*]
+		{
+		  i fardoor = 7;
+		  x farguid = 0x642CAFF0;
+		  i id = 5;
 		}
 	}
 	[t:snode,n:0x642caff0]
@@ -177,6 +239,73 @@
 		  x farguid = 0x9414169A;
 		  i id = 1;
 		}
+		[door*]
+		{
+		  i fardoor = 5;
+		  x farguid = 0x1EB66588;
+		  i id = 3;
+		}
+		[door*]
+		{
+		  i fardoor = 4;
+		  x farguid = 0x1EB66588;
+		  i id = 4;
+		}
+		[door*]
+		{
+		  i fardoor = 5;
+		  x farguid = 0x6B868837;
+		  i id = 5;
+		}
+		[door*]
+		{
+		  i fardoor = 4;
+		  x farguid = 0x6B868837;
+		  i id = 6;
+		}
+		[door*]
+		{
+		  i fardoor = 5;
+		  x farguid = 0x49918744;
+		  i id = 7;
+		}
+	}
+	[t:snode,n:0x6b868837]
+	{
+	  b bounds_camera = true;
+	  b camera_fade = false;
+	  x guid = 0x6B868837;
+	  x mesh_guid = 0x001006A9;
+	  x nodelevel = 0xFFFFFFFF;
+	  x nodeobject = 0xFFFFFFFF;
+	  x nodesection = 0x00000001;
+	  b occludes_camera = true;
+	  b occludes_light = true;
+		texsetabbr = grs01;
+		[door*]
+		{
+		  i fardoor = 3;
+		  x farguid = 0x1EB66588;
+		  i id = 6;
+		}
+		[door*]
+		{
+		  i fardoor = 6;
+		  x farguid = 0x49918744;
+		  i id = 3;
+		}
+		[door*]
+		{
+		  i fardoor = 5;
+		  x farguid = 0x642CAFF0;
+		  i id = 5;
+		}
+		[door*]
+		{
+		  i fardoor = 6;
+		  x farguid = 0x642CAFF0;
+		  i id = 4;
+		}
 	}
 	[t:snode,n:0x9414169a]
 	{
@@ -207,6 +336,12 @@
 		  i fardoor = 1;
 		  x farguid = 0xF00CC9F1;
 		  i id = 3;
+		}
+		[door*]
+		{
+		  i fardoor = 6;
+		  x farguid = 0x1EB66588;
+		  i id = 8;
 		}
 	}
 	[t:snode,n:0xe0d23e5f]

@@ -1,5 +1,6 @@
 [node_mesh_index]
 {
+	0x001006a9 = t_xxx_flr_04x08-v0;
 	0x001006aa = t_xxx_flr_08x08-v0;
 	0x00100c6c = t_grs01_houses_stone-chapel-a;
 }

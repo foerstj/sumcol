@@ -148,7 +148,7 @@
 	  p position = -3.54495,0,0.0185108,0xf00cc9f1;
 	}
 }
-[t:barrel_glb_powder_keg,n:0x00100051]
+[t:barrel_glb_powder_keg,n:0x00100052]
 {
 	[attack]
 	{
@@ -156,6 +156,28 @@
 	}
 	[placement]
 	{
-	  p position = -3.66627,0,3.78672,0x9414169a;
+	  p position = -0.0365543,0,-0.172155,0x1eb66588;
+	}
+}
+[t:barrel_glb_powder_keg,n:0x00100053]
+{
+	[attack]
+	{
+	  f area_damage_radius = 2;
+	}
+	[placement]
+	{
+	  p position = -0.0564194,0,-0.0957813,0x6b868837;
+	}
+}
+[t:barrel_glb_powder_keg,n:0x00100054]
+{
+	[attack]
+	{
+	  f area_damage_radius = 2;
+	}
+	[placement]
+	{
+	  p position = 0.0934219,0,-0.104223,0x49918744;
 	}
 }
