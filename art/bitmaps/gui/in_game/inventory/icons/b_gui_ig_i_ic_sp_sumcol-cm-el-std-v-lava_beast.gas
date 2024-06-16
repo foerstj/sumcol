@@ -1,7 +1,0 @@
-[t:tsd,n:b_gui_ig_i_ic_sp_sumcol-cm-el-std-v-lava_beast]
-{
-  b dither = true;
-  b hasalpha = true;
-    layer1texture1 = b_gui_ig_i_ic_sp_sumcol-cm-el-std-v-lava_beast;
-  i texturedetail = 0;
-}
