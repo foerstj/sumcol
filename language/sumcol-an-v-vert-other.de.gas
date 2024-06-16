@@ -1,0 +1,114 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Rabid Spiked Maw";
+		to = "Wildes dornenbewehrtes Maul beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Red Drake";
+		to = "Roten Drachen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Blue Drake";
+		to = "Blauen Drachen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Frost Drake";
+		to = "Frostdrachen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Lectar";
+		to = "Lectar beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Mangler";
+		to = "Mangler beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Sea Mangler";
+		to = "Seemangler beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Slarg";
+		to = "Slarg beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Snapper";
+		to = "Schnapper beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Spiked Maw";
+		to = "Dornenbewehrtes Maul beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Giant Lizard";
+		to = "Riesenechse beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Rabid Spiked Maw to guard the Caster.";
+		to = "Beschwört ein Wildes dornenbewehrtes Maul, das den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Red Drake to guard the Caster.";
+		to = "Beschwört einen Roten Drachen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Blue Drake to guard the Caster.";
+		to = "Beschwört einen Blauen Drachen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Drake to guard the Caster.";
+		to = "Beschwört einen Frostdrachen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Lectar to guard the Caster.";
+		to = "Beschwört einen Lectar, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mangler to guard the Caster.";
+		to = "Beschwört einen Mangler, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Sea Mangler to guard the Caster.";
+		to = "Beschwört einen Seemangler, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Slarg to guard the Caster.";
+		to = "Beschwört einen Slarg, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Snapper to guard the Caster.";
+		to = "Beschwört einen Schnapper, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Spiked Maw to guard the Caster.";
+		to = "Beschwört ein Dornenbewehrtes Maul, das den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Lizard to guard the Caster.";
+		to = "Beschwört eine Riesenechse, die den Anwender verteidigt.";
+	}
+}
