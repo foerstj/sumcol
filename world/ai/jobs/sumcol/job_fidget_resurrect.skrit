@@ -8,7 +8,7 @@ Job		m_Job$;
 
 void GetSpell$( )
 {
-	m_Spell$ = m_Go$.Inventory.GetItem( il_active_primary_spell );
+	m_Spell$ = m_Go$.Inventory.GetItem( il_active_secondary_spell );
     report.genericf("GetSpell$ %p\n", m_Spell$);
 }
 
