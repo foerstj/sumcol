@@ -81,7 +81,7 @@ event OnCCWorldMessage$( eWorldEvent e$, WorldMessage msg$ )
     }
 }
 
-// decide what to do next
+// decide what to do next - move to the guard target if not close already
 state RequestAction$
 {
     transition
@@ -263,6 +263,80 @@ state RequestAction$
     }
 }
 
+bool TryAttackClientEnemies$(Go client$)
+{
+    if( client$.Mind.OnEnemySpottedAttack && client$.Mind.AliveEnemiesVisible )
+    {
+        report.reportf( "aiskrit", "%s Guard: Trying to attack client's enemies.\n", m_go$.templatename );
+
+        Go enemy$ = client$.Mind.GetBestFocusEnemy();
+
+        if( enemy$ == NULL )
+        {
+            enemy$ = m_Mind$.GetBestFocusEnemy();
+        }
+
+        if( enemy$ != NULL )
+        {
+            if( TryRespondToAttack$( m_Go$, enemy$ ) )
+            {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+bool TryHealClient$(Go client$)
+{
+    if ( !client$.Mind.IsLifeHigh )
+    {
+        report.reportf( "aiskrit", "%s Guard: Trying to heal client.\n", m_go$.templatename );
+
+        Go spellBook$ = m_Go$.Inventory.GetEquipped( ES_SPELLBOOK );
+        if( spellBook$ != NULL )
+        {
+            // find the most healing spell this guy can cast
+            m_Mind$.TempQtColl1.Clear;
+            m_Mind$.TempQtColl1.Add( QT_SPELL );
+            m_Mind$.TempQtColl1.Add( QT_CASTABLE );
+            m_Mind$.TempQtColl1.Add( QT_LIFE_HEALING );
+
+            m_Mind$.TempGopColl1.Clear;
+            spellBook$.Inventory.ListItems( IL_SPELL_1, m_Mind$.TempGopColl1 );
+            spellBook$.Inventory.ListItems( IL_SPELL_2, m_Mind$.TempGopColl1 );
+
+            m_Mind$.TempGopColl2.Clear;
+            AIQuery.Get( m_Go$, m_Mind$.TempQtColl1, m_Mind$.TempGopColl1, m_Mind$.TempGopColl2 );
+            Go spell$ = AIQuery.GetMax( m_Go$, QT_LIFE_HEALING, m_Mind$.TempGopColl2 );
+
+            // compare spell and log if best one thus far
+            if( spell$ != NULL )
+            {
+                m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, m_Target$, spell$.Goid ) );
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+bool TryAttackOwnEnemies$()
+{
+    if( ( m_Mind$.OnEnemySpottedAttack && m_Mind$.AliveEnemiesVisible ) && ( m_Mind$.GetDistance( m_Target$.Go ) < m_Mind$.SightRange ) )
+    {
+        report.reportf( "aiskrit", "%s Guard: Trying to attack own enemies.\n", m_go$.templatename );
+
+        Go enemy$ = m_Mind$.GetBestFocusEnemy();
+        if( TryAutoAttack$( m_Go$, enemy$ ) )
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+// decide what to do next
 state Arrived$
 {
     transition
@@ -280,11 +354,11 @@ state Arrived$
         }
         if( ( m_Mind$.GetDistanceAtPlanEnd( m_Target$.Go ) > m_FollowDistance$ ) && ( m_Mind$.GetDistance( m_Target$.Go ) > m_ApproachDistance$ ) )
         {
-            SetState RequestAction$;
+            SetState RequestAction$;  // move to target
         }
         else if( ( Math.Abs( m_Mind$.GetDistanceAtPlanEnd( m_Target$.Go ) - m_Mind$.GetDistance( m_Target$.Go ) ) < 0.2 ) && ( m_Mind$.GetDistance( m_Target$.Go ) > m_ApproachDistance$ ) )
         {
-            SetState RequestAction$;
+            SetState RequestAction$;  // move to target
         }
         else
         {
@@ -294,9 +368,9 @@ state Arrived$
 
     event OnEnterState$
     {
-        StartFidgetIfRequired$();    
+        StartFidgetIfRequired$();
         this.CreateTimer( 1, 1 );
-    
+
         // verify our values!
         if (!m_Target$.IsValidMp() )
         {
@@ -310,79 +384,31 @@ state Arrived$
         }
 
         float dist$ = m_Mind$.GetDistanceAtPlanEnd( m_Target$.Go );
-
         Go client$ = m_Target$.Go;
 
-        if( client$.Mind.OnEnemySpottedAttack && client$.Mind.AliveEnemiesVisible )
+        // attack client's enemies first
+        if (TryAttackClientEnemies$(client$))
         {
-            report.reportf( "aiskrit", "%s Guard: Trying to attack client's enemies.\n", m_go$.templatename );
-
-            // attack client's enemies first
-            Go enemy$ = client$.Mind.GetBestFocusEnemy();
-
-            if( enemy$ == NULL )
-            {
-                enemy$ = m_Mind$.GetBestFocusEnemy();
-            }
-
-            if( enemy$ != NULL )
-            {
-                if( TryRespondToAttack$( m_Go$, enemy$ ) )
-                {
-                    return;
-                }
-            }
+            return;
         }
 
-        if ( !client$.Mind.IsLifeHigh )
+        // heal client if needed and possible
+        if (TryHealClient$(client$))
         {
-            report.reportf( "aiskrit", "%s Guard: Trying to heal client.\n", m_go$.templatename );
-
-            // heal client if needed and possible
-
-            Go spellBook$ = m_Go$.Inventory.GetEquipped( ES_SPELLBOOK );
-            if( spellBook$ != NULL )
-            {
-                // find the most healing spell this guy can cast
-                m_Mind$.TempQtColl1.Clear;
-                m_Mind$.TempQtColl1.Add( QT_SPELL );
-                m_Mind$.TempQtColl1.Add( QT_CASTABLE );
-                m_Mind$.TempQtColl1.Add( QT_LIFE_HEALING );
-
-                m_Mind$.TempGopColl1.Clear;
-                spellBook$.Inventory.ListItems( IL_SPELL_1, m_Mind$.TempGopColl1 );
-                spellBook$.Inventory.ListItems( IL_SPELL_2, m_Mind$.TempGopColl1 );
-
-                m_Mind$.TempGopColl2.Clear;
-                AIQuery.Get( m_Go$, m_Mind$.TempQtColl1, m_Mind$.TempGopColl1, m_Mind$.TempGopColl2 );
-                Go spell$ = AIQuery.GetMax( m_Go$, QT_LIFE_HEALING, m_Mind$.TempGopColl2 );
-
-                // compare spell and log if best one thus far
-                if( spell$ != NULL )
-                {
-                    m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, m_Target$, spell$.Goid ) );
-                    return;
-                }
-            }
+            return;
         }
 
-        if( ( m_Mind$.OnEnemySpottedAttack && m_Mind$.AliveEnemiesVisible ) && ( m_Mind$.GetDistance( m_Target$.Go ) < m_Mind$.SightRange ) )
+        // attack own enemies last
+        if (TryAttackOwnEnemies$())
         {
-            report.reportf( "aiskrit", "%s Guard: Trying to attack own enemies.\n", m_go$.templatename );
-
-            // attack own enemies last
-            Go enemy$ = m_Mind$.GetBestFocusEnemy();
-            if( TryAutoAttack$( m_Go$, enemy$ ) )
-            {
-                return;
-            }
+            return;
         }
 
+        // try to stay close to client
         if( ( dist$ > m_FollowDistance$ ) && ( m_Mind$.GetDistance( m_Target$.Go ) > m_ApproachDistance$ ) )
         {
             report.reportf( "aiskrit", "%s Guard: Trying to move closer to client.\n", m_go$.templatename );
 
-            // try to stay close to client
             this.SetNewTimerSeconds( 1, .1 );
             return;
         }
