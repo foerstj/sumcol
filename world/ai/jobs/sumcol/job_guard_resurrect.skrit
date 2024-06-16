@@ -1,16 +1,24 @@
 // Based on job_guard.skrit - cast a spell while guarding
 
-Go        m_Go$;
-GoMind    m_Mind$;
+Go      m_Go$;
+GoMind  m_Mind$;
 GoBody  m_Body$;
-Job        m_Job$;
+Job     m_Job$;
 Goid    m_Target$;
-float    m_FollowDistance$;
-float    m_ApproachDistance$;
+float   m_FollowDistance$;
+float   m_ApproachDistance$;
+Go		m_ResurrectSpell$;
 
 #include "k_job_c_attack_utils"
 #include "k_job_c_mcp_path_utils"
 #include "k_job_c_mcp_fidget_utils"
+
+bool GetResurrectSpell$( )
+{
+	m_ResurrectSpell$ = m_Go$.Inventory.GetItem( il_active_secondary_spell );
+    report.genericf("GetResurrectSpell$ %p\n", m_ResurrectSpell$);
+    return m_ResurrectSpell$ != NULL;
+}
 
 startup state STARTUP$
 {
@@ -31,6 +39,7 @@ event OnJobInit$( Job job$ )
     OnJobInitPointers$( job$ );
 
     m_Target$    = job$.GoalObject;
+    GetResurrectSpell$();
 
     if (m_Target$.IsValidMp())
     {
@@ -263,6 +272,60 @@ state RequestAction$
     }
 }
 
+bool TryResurrect$()
+{
+    if( m_ResurrectSpell$ == NULL )
+    {
+        return false;
+    }
+
+    m_Mind$.TempGopColl1.Clear;
+    m_Mind$.TempGopColl2.Clear;
+
+    AIQuery.GetOccupantsInSphere( m_Go$.Placement.Position, m_Mind$.SightRange, m_Mind$.tempGopColl1 );
+    int i$ = 0;
+    while( i$ < m_Mind$.tempGopColl1.Size() )
+    {
+        Go temp$ = m_Mind$.tempGopColl1.Get( i$ );
+        i$ += 1;
+        
+        if( temp$ == NULL )
+        {
+            continue;
+        }
+        if( !temp$.HasAspect || !temp$.HasActor )
+        {
+            continue;
+        }
+        if( temp$.Actor.GetAlignment != AA_GOOD || !IsDead( temp$.Aspect.GetLifeState() ) )
+        {
+            continue;
+        }
+        m_Mind$.TempGopColl2.add( temp$ );
+    }
+    report.genericf("TryResurrect$: %i candidates for resurrection\n", m_Mind$.TempGopColl2.Size() );
+
+    i$ = 0;
+    while( i$ < m_Mind$.TempGopColl2.Size() )
+    {
+        Go temp$ = m_Mind$.TempGopColl2.Get( i$ );
+        i$ += 1;
+
+        if ( m_Mind$.GetDistance( temp$ ) > m_ResurrectSpell$.Magic.CastRange )
+        {
+            continue;
+        }
+        if( !m_ResurrectSpell$.Magic.IsCastableOn( temp$ ))
+        {
+            continue;
+        }
+        report.genericf("TryResurrect$: Found resurrection target\n" );
+        m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_ResurrectSpell$.Goid ) );
+        return true;
+    }
+    return false;
+}
+
 bool TryAttackClientEnemies$(Go client$)
 {
     if( client$.Mind.OnEnemySpottedAttack && client$.Mind.AliveEnemiesVisible )
@@ -385,6 +448,12 @@ state Arrived$
 
         float dist$ = m_Mind$.GetDistanceAtPlanEnd( m_Target$.Go );
         Go client$ = m_Target$.Go;
+
+        // resurrect someone if needed and possible
+        if (TryResurrect$())
+        {
+            return;
+        }
 
         // attack client's enemies first
         if (TryAttackClientEnemies$(client$))
