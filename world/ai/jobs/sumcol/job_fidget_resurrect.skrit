@@ -98,11 +98,11 @@ state Wandering$
 		bool resurrecting$ = TryResurrect$();
         if (resurrecting$)
         {
-            This.CreateTimer( 1 , 5 );  // give the resurrect spell a bit of time if resurrection target found
+            This.CreateTimer( 1 , 5 );  // wait 5s to give the resurrect spell a bit of time if resurrection target found
         }
         else
         {
-            This.CreateTimer( 1 , 1 );
+            This.CreateTimer( 1 , 1 );  // check again every second
         }
 	}
 
@@ -110,6 +110,6 @@ state Wandering$
 	{
 		StartFidgetIfRequired$();
 
-		This.CreateTimer( 1 , 1 );
+		This.CreateTimer( 1 , 2 );  // initially wait 2s to avoid race condition of double casting due to job reset by spell_summon.skrit
 	}
 }
