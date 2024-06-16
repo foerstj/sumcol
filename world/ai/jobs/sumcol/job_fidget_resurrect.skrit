@@ -1,3 +1,5 @@
+// Based on job_fidget_fairy.skrit - cast a spell while fidgeting
+
 Go		m_Go$;
 Go		m_Spell$;
 GoMind	m_Mind$;
