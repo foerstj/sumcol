@@ -76,12 +76,15 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Wraiths: Wraith Mage
   - Ghost
   - Skulls: Rector
+  - Zombies: Walking Corpse, Tortured Corpse
+    - Miniboss: Ancient Corpse
 - Plants (NM):
   - Larch Miniboss: Infested Larch
   - Stationary:
     - Trees: Tretch
 - Demonics (CM):
-  - Mucosa: Vile Mucosa
+  - Mucosa: Vile Mucosa, Dark Mucosa
+    - Miniboss: Mucosa Brute
   - Horrid
   - Darklings: Forest Darkling
   - Synged
@@ -109,7 +112,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ### LoA Creatures:
 - Animals (NM):
-  - Spiders: Emerald Spider
+  - Spiders: Emerald Spider, Widow Spider
   - Manglers: Angler
   - Worms: Ice Grub
   - Moths: Ice Moth
@@ -134,12 +137,14 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Air (NM) Miniboss: Air Elemental Minion
   - Water (NM) Miniboss: Water Elemental Minion
 - Undead (CM):
-  - Zombies: Mummy
+  - Zombies: Mummy, Slime Zombie
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines
     - Mantraps: Mantrap
 - Demonics (CM):
+  - Mucosa: Large Twisted Mucosa
+    - Miniboss: Twisted Mucosa Brute
   - Rune: Rune Fiend
   - Whelnar's Eyes
 
