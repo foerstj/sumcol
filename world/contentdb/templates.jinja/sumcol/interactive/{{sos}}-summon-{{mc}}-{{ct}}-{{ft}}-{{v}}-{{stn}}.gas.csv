@@ -45,7 +45,7 @@ spell;krug_guard;krug_guard;;a;Krug Guard;1.5;nm;hu;std;v;x;1200;7;17;1;;;;14;17
 spell;jungle_skrubb;dsx_skrubb_jungle;;a;Jungle Skrubb;1.5;nm;an;st;loa;;38;1;8;;;0.9;;;;15;19;1.5;1;;;
 spell;mine_worm;mine_worm;;a;Mine Worm;2;nm;an;st;v;;95;0.5;12;0.9;;0.9;0.2;;;22;24;1;2.5;;;Spell shoots 5 arrows
 spell;braak_mage;braak_magic;;a;Braak Mage;1.2;nm;hu;std;v;x;3800;7;21;;;0.85;0.4;;;19;21;1;0.9;;;Spell shoots 3 projectiles, but bonus for poor logistics
-scroll;huskar;krug_shaman_boss_01;;;Huskar the Shaman;1.75;nm;hu;mb;v;x;76;15;11;1.2;;1.2;;;;13;37;1;3;;;
+scroll;huskar;krug_shaman_boss_01;;;Huskar the Shaman;1.75;nm;hu;mb-res;v;x;76;15;11;1.2;;1.2;;;;13;37;1;3;;;
 spell;white_wolf;wolf_white;;a;White Wolf;1.5;nm;an;std;v;;960;6;16;0.95;;;;;;;;1;0.8;;;
 scroll;futak;krug_grunt_boss_01;;;Futak the Trainer;1.75;nm;hu;mb;v;x;48;16;10;1.2;;;;3;7;;;1;3;;;
 spell;braak;braak;;a;Braak;1.5;nm;hu;std;v;x;3800;7;22;1;;;;;;;;1;1;;;
