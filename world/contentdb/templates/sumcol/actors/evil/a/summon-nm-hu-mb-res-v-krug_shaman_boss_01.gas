@@ -19,6 +19,7 @@
     [mind]
     {
 		jat_brain = world\ai\jobs\common\brain_hero.skrit;  // reset party-forming
-        jat_fidget = world\ai\jobs\sumcol\job_fidget_resurrect.skrit;  // use the resurrect spell
+        jat_guard = world\ai\jobs\sumcol\job_guard_resurrect.skrit;  // use the resurrect spell while guarding caster (resurrect other party members)
+        jat_fidget = world\ai\jobs\sumcol\job_fidget_resurrect.skrit;  // use the resurrect spell while caster is dead (resurrect caster itself)
     }
 }
