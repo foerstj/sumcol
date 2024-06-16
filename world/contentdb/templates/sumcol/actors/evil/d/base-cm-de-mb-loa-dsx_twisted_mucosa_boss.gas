@@ -1,0 +1,122 @@
+[t:template,n:dsx_twisted_mucosa_boss_base]  // = dsx_twisted_mucosa_boss
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_twisted_mucosa_boss";
+	specializes = twisted_mucosa_base;
+	[body]
+		{
+		
+		}
+	[actor]
+		{
+			[skills]
+				{
+					strength	=	 9, 0;
+					intelligence	=	 7, 0;
+					dexterity	 =	8, 0;
+					melee	 =	4, 0;
+				}
+		}
+	[aspect]
+		{
+		textures:0 = b_c_edm_twisted_mucosa;
+		experience_value = 69;
+		life = 132;
+		max_life = 132;
+		mana = 10;
+		max_mana = 10;
+		[voice]
+			{
+				[die]			{ priority = high; * = s_e_die_twisted_mucosa_medium_SED;	}
+				[enemy_spotted]	{ priority = high; * = s_e_call_twisted_mucosa_big_SED;		}
+				[hit_glance]	{ priority = low; * = s_e_hit_twisted_mucosa_medium_SED;	}
+			}
+		}
+	[attack]
+		{
+			attack_range = 0.5;
+			damage_max = 30;
+			damage_min = 22;
+		}
+	[defend] { defense=43; }
+	[common]
+		{
+			screen_name="Twisted Mucosa Brute";
+			membership = monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+			[template_triggers]
+				{
+					[*]
+						{
+							condition* = receive_world_message("WE_ENTERED_WORLD");
+							single_shot = true;
+							no_trig_bits = true;
+							action* = call_sfx_script("unique_ray_red(sgx)");
+						}
+				}
+		}
+	[generator_in_object]
+		{
+			spawn_chance = 0.5;
+			child_template_name = body_glb_twisted_mucosa;
+		}
+		[inventory]
+{
+	drop_at_use_point = true;
+	[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 4, Strong */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 18;
+				max = 35;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.2;
+				il_main = #weapon/14-14;
+				il_main = #armor/4-34;
+				il_main = #*/14-14;
+			}
+		}
+	}
+}
+	[mind]
+		{
+			jat_brain	 = world\ai\jobs\common\brain_hero.skrit
+				?actor_creates_own_party	= true
+				&party_template						= "party_mucosa_boss";
+
+			jat_fidget			= world\ai\jobs\common\job_fidget.skrit
+				?social				= 0.8
+				&approach_dist		= 3
+				&friend_template	= false
+				&friends			= party_mucosa_boss
+				&still				= false;
+
+			jat_attack_object_melee				= world\ai\jobs\common\job_attack_object_melee.skrit
+				?run_chance						= 1.0;
+		}
+	[physics]
+		{
+			[break_particulate]
+				{
+					frag_glb_mucosa_01 = 1;
+					frag_glb_mucosa_02 = 1;
+					frag_glb_mucosa_03 = 2;
+					frag_glb_mucosa_04 = 3;
+					frag_glb_mucosa_05 = 1;
+					frag_glb_mucosa_06 = 1;
+					frag_glb_mucosa_07 = 3;
+				}
+		}
+}

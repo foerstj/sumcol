@@ -37,6 +37,7 @@
     {
         [other]
         {
+            // krug
             il_main = spell_summon_krug_scavenger;
             il_main = spell_summon_krug_scout;
             il_main = scroll_summon_brankar;
@@ -50,9 +51,20 @@
             il_main = scroll_summon_huskar;
             il_main = scroll_summon_futak;
             il_main = spell_summon_krug_commander;
+            // fillers high-level
             il_main = spell_summon_soul_stinger;
             il_main = spell_summon_giant_lizard;
             il_main = scroll_summon_ferocious_braak;
+            // fillers low-level
+            il_main = spell_summon_walking_corpse;
+            il_main = spell_summon_widow_spider;
+            il_main = scroll_summon_ancient_corpse;
+            il_main = spell_summon_slime_zombie;
+            il_main = spell_summon_large_twisted_mucosa;
+            il_main = spell_summon_tortured_corpse;
+            il_main = spell_summon_dark_mucosa;
+            il_main = scroll_summon_twisted_mucosa_brute;
+            il_main = scroll_summon_mucosa_brute;
         }
     }
 }
@@ -122,6 +134,7 @@
             il_main = spell_summon_ice_moth;
             il_main = spell_summon_varg;
             il_main = spell_summon_snow_boar;
+            il_main = spell_summon_widow_spider;
             il_main = spell_summon_bubber;
             il_main = spell_summon_angler;
             il_main = spell_summon_emerald_spider;
@@ -189,15 +202,22 @@
     {
         [other]
         {
+            // skeletons
             il_main = spell_summon_skeleton_guard;
             il_main = spell_summon_skeleton_archer;
             il_main = scroll_summon_skeleton_captain;
             il_main = spell_summon_rector;
-            il_main = spell_summon_mummy;
-            il_main = scroll_summon_dark_wolf;
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
             il_main = spell_summon_skeleton_mercenary;
+            // zombies
+            il_main = spell_summon_walking_corpse;
+            il_main = scroll_summon_ancient_corpse;
+            il_main = spell_summon_slime_zombie;
+            il_main = spell_summon_tortured_corpse;
+            il_main = spell_summon_mummy;
+            il_main = scroll_summon_dark_wolf;
+            // ghosts
             il_main = spell_summon_ghost;
         }
     }
@@ -227,14 +247,21 @@
     {
         [other]
         {
-            il_main = spell_summon_rune_fiend;
+            // mucosa
             il_main = spell_summon_vile_mucosa;
+            il_main = spell_summon_large_twisted_mucosa;
+            il_main = spell_summon_dark_mucosa;
+            il_main = scroll_summon_twisted_mucosa_brute;
+            il_main = scroll_summon_mucosa_brute;
+            // intelligent
             il_main = spell_summon_horrid;
+            il_main = spell_summon_toreck;
+            il_main = spell_summon_kell;
+            // other
+            il_main = spell_summon_rune_fiend;
             il_main = spell_summon_whelnars_eyes;
             il_main = spell_summon_forest_darkling;
             il_main = spell_summon_synged;
-            il_main = spell_summon_toreck;
-            il_main = spell_summon_kell;
         }
     }
 }

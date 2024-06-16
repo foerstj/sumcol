@@ -1,0 +1,15 @@
+[t:template,n:walking_corpse_boss_01_summon]
+{
+    specializes = walking_corpse_boss_01_base;
+
+	doc = "[summon] zombie_decayed";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

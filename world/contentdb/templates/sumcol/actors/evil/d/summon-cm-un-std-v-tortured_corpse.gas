@@ -1,0 +1,15 @@
+[t:template,n:tortured_corpse_summon]
+{
+    specializes = tortured_corpse_base;
+
+	doc = "[summon] tortured_corpse";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

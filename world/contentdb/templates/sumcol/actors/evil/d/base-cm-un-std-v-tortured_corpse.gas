@@ -1,0 +1,53 @@
+[t:template,n:tortured_corpse_base]  // = tortured_corpse
+{
+	category_name = "1W_evil_d";
+	doc = "tortured_corpse";
+	specializes = base_dungeon_crawler;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  12, 0;
+			intelligence =  3, 0;
+			dexterity =  3, 0;
+			melee =  2, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 54;
+		life = 34;
+		max_life = 34;
+		mana = 6;
+        max_mana = 6;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 13;
+		damage_min = 10;
+	}
+	[common] { screen_name="Tortured Corpse"; }
+	[defend] { defense=8; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/5-7;
+                	il_main = #armor/8-41;
+				}
+        		[oneof*]
+				{
+	        		chance = 0.002;
+	            	il_main = #weapon/-rare(1)/8-10;
+	            	il_main = #armor/-rare(1)/16-22;
+                }
+	        }
+        }
+	}
+}

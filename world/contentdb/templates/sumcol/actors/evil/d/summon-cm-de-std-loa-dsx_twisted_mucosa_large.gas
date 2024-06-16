@@ -1,0 +1,19 @@
+[t:template,n:dsx_twisted_mucosa_large_summon]
+{
+    specializes = dsx_twisted_mucosa_large_base;
+
+	doc = "[summon] dsx_twisted_mucosa_large";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	[generator_in_object]
+	{
+		spawn_chance = 0;
+	}
+}

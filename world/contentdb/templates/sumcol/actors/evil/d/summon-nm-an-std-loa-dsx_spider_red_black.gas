@@ -1,0 +1,15 @@
+[t:template,n:dsx_spider_red_black_summon]
+{
+    specializes = dsx_spider_red_black_base;
+
+	doc = "[summon] dsx_spider_red_black";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

@@ -1,0 +1,15 @@
+[t:template,n:dsx_slime_zombie_summon]
+{
+    specializes = dsx_slime_zombie_base;
+
+	doc = "[summon] dsx_slime_zombie";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

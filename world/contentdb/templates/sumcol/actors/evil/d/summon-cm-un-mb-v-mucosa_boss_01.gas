@@ -1,0 +1,19 @@
+[t:template,n:mucosa_boss_01_summon]
+{
+    specializes = mucosa_boss_01_base;
+
+	doc = "[summon] mucosa";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	[generator_in_object]
+	{
+		spawn_chance = 0;
+	}
+}
