@@ -2,11 +2,6 @@
 {
 	[0x0000]
 	{
-		from = "Summon Magma Beast";
-		to = "Magmabestie beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Frost Archer";
 		to = "Frostbogenschütze beschwören";
 	}
@@ -19,31 +14,6 @@
 	{
 		from = "Summon Swamp Abomination";
 		to = "Sumpfgräuel beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Blazing Elemental";
-		to = "Flammendes Elementar beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Bronze Gargoyle";
-		to = "Wasserspeier aus Bronze beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Gargoyle";
-		to = "Wasserspeier beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Lava Beast";
-		to = "Lavaungeheuer beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Lava Spirit Fighter";
-		to = "Lavageist-Kämpfer beschwören";
 	}
 	[0x0000]
 	{
@@ -93,11 +63,6 @@
 
 	[0x0000]
 	{
-		from = "Summons a Magma Beast to guard the Caster.";
-		to = "Beschwört eine Magmabestie, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
 		from = "Summons a Frost Archer to guard the Caster.";
 		to = "Beschwört einen Frostbogenschützen, der den Anwender verteidigt.";
 	}
@@ -110,31 +75,6 @@
 	{
 		from = "Summons a Swamp Abomination to guard the Caster.";
 		to = "Beschwört ein Sumpfgräuel, das den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Blazing Elemental to guard the Caster.";
-		to = "Beschwört ein Flammendes Elementar, das den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Bronze Gargoyle to guard the Caster.";
-		to = "Beschwört einen Wasserspeier aus Bronze, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Gargoyle to guard the Caster.";
-		to = "Beschwört einen Wasserspeier, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Lava Beast to guard the Caster.";
-		to = "Beschwört ein Lavaungeheuer, das den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Lava Spirit Fighter to guard the Caster.";
-		to = "Beschwört einen Lavageist-Kämpfer, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{

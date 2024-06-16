@@ -1,7 +1,5 @@
 [t:0x0407,n:text]
 {
-    // Krug
-
 	[0x0000]
 	{
 		from = "Summon Krug Scavenger";
@@ -132,50 +130,5 @@
 	{
 		from = "Summons Huskar the Shaman to guard the Caster.";
 		to = "Beschwört Huskar den Schamanen, der den Anwender verteidigt.";
-	}
-
-
-    // Braak
-
-	[0x0000]
-	{
-		from = "Summon Braak";
-		to = "Braak beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Braak Mage";
-		to = "Braak-Zauberer beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Pitiful Braak";
-		to = "Erbärmlichen Braak beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Ferocious Braak";
-		to = "Bösartigen Braak beschwören";
-	}
-
-	[0x0000]
-	{
-		from = "Summons a Braak to guard the Caster.";
-		to = "Beschwört einen Braak, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Braak Mage to guard the Caster.";
-		to = "Beschwört einen Braak-Zauberer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons the Pitiful Braak to guard the Caster.";
-		to = "Beschwört den Erbärmlichen Braak, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons the Ferocious Braak to guard the Caster.";
-		to = "Beschwört den Bösartigen Braak, der den Anwender verteidigt.";
 	}
 }
