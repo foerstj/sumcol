@@ -1,23 +1,23 @@
 // Based on job_fidget_fairy.skrit - cast a spell while fidgeting
 
 Go		m_Go$;
-Go		m_Spell$;
 GoMind	m_Mind$;
 GoBody  m_Body$;
 Job		m_Job$;
+Go		m_ResurrectSpell$;
 
 #include "k_job_c_mcp_fidget_utils"
 
-bool GetSpell$( )
+bool GetResurrectSpell$( )
 {
-	m_Spell$ = m_Go$.Inventory.GetItem( il_active_secondary_spell );
-    report.genericf("GetSpell$ %p\n", m_Spell$);
-    return m_Spell$ != NULL;
+	m_ResurrectSpell$ = m_Go$.Inventory.GetItem( il_active_secondary_spell );
+    report.genericf("GetResurrectSpell$ %p\n", m_ResurrectSpell$);
+    return m_ResurrectSpell$ != NULL;
 }
 
 bool TryResurrect$( )
 {
-    if( m_Spell$ == NULL )
+    if( m_ResurrectSpell$ == NULL )
     {
         return false;
     }
@@ -40,10 +40,11 @@ bool TryResurrect$( )
         {
             continue;
         }
-        if( temp$.Actor.GetAlignment == AA_GOOD && IsDead( temp$.Aspect.GetLifeState() ) )
+        if( temp$.Actor.GetAlignment != AA_GOOD || !IsDead( temp$.Aspect.GetLifeState() ) )
         {
-            m_Mind$.TempGopColl2.add( temp$ );
+            continue;
         }
+        m_Mind$.TempGopColl2.add( temp$ );
     }
     report.genericf("TryResurrect$: %i candidates for resurrection\n", m_Mind$.TempGopColl2.Size() );
 
@@ -53,16 +54,17 @@ bool TryResurrect$( )
         Go temp$ = m_Mind$.TempGopColl2.Get( i$ );
         i$ += 1;
 
-        if ( m_Mind$.GetDistance( temp$ ) > m_Spell$.Magic.CastRange )
+        if ( m_Mind$.GetDistance( temp$ ) > m_ResurrectSpell$.Magic.CastRange )
         {
             continue;
         }
-        if( m_Spell$.Magic.IsCastableOn( temp$ ))
+        if( !m_ResurrectSpell$.Magic.IsCastableOn( temp$ ))
         {
-            report.genericf("TryResurrect$: Found resurrection target\n" );
-            m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
-            return true;
+            continue;
         }
+        report.genericf("TryResurrect$: Found resurrection target\n" );
+        m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_ResurrectSpell$.Goid ) );
+        return true;
     }
     return false;
 }
@@ -83,7 +85,7 @@ event OnJobInit$( Job job$ )
 {
 	OnJobInitPointers$( job$ );
 
-	GetSpell$();
+	GetResurrectSpell$();
 
 	SetState Wandering$;
 }
