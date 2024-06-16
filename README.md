@@ -97,13 +97,15 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Explosive: Proxo
   - Stationary:
     - Tesla Coil
-  - Stationary HEAL:
+  - Stationary Heal:
     - Tesla Heal Coil
 - Humanoids:
   - Braak (NM): Braak, Braak Mage
     - Miniboss: Pitiful Braak, Ferocious Braak
-  - Krug (NM): Krug Scavenger, Krug Scout, Krug Apprentice, Krug Shaman, Krug Grunt, Krug Chucker, Krug Raider, Krug Guard, Krug Commander
-    - Miniboss: Brankar the Scavenger, Klandank the Krug, Huskar the Shaman, Futak the Trainer
+  - Krug (NM): Krug Scavenger, Krug Scout, Krug Apprentice, Krug Grunt, Krug Chucker, Krug Raider, Krug Guard, Krug Commander
+    - Resurrect: Krug Shaman
+    - Miniboss: Brankar the Scavenger, Klandank the Krug, Futak the Trainer
+    - Miniboss Resurrect: Huskar the Shaman
 
 ### LoA Creatures:
 - Animals (NM):
