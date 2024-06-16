@@ -6,17 +6,18 @@ Job		m_Job$;
 
 #include "k_job_c_mcp_fidget_utils"
 
-void GetSpell$( )
+bool GetSpell$( )
 {
 	m_Spell$ = m_Go$.Inventory.GetItem( il_active_secondary_spell );
     report.genericf("GetSpell$ %p\n", m_Spell$);
+    return m_Spell$ != NULL;
 }
 
-void TryResurrect$( )
+bool TryResurrect$( )
 {
     if( m_Spell$ == NULL )
     {
-        return;
+        return false;
     }
 
     m_Mind$.TempGopColl1.Clear;
@@ -58,9 +59,10 @@ void TryResurrect$( )
         {
             report.genericf("TryResurrect$: Found resurrection target\n" );
             m_Mind$.SDoJob( MakeJobReq( JAT_CAST, JQ_ACTION, QP_FRONT, AO_REFLEX, temp$.goid, m_Spell$.Goid ) );
-            break;
+            return true;
         }
     }
+    return false;
 }
 
 startup state Unknown$
@@ -93,8 +95,15 @@ state Wandering$
 
 	trigger OnTimer$( 1 )
 	{
-		This.CreateTimer( 1 , 2 );  // try again in 2s - give the resurrect spell a bit of time if resurrection target found
-		TryResurrect$();
+		bool resurrecting$ = TryResurrect$();
+        if (resurrecting$)
+        {
+            This.CreateTimer( 1 , 5 );  // give the resurrect spell a bit of time if resurrection target found
+        }
+        else
+        {
+            This.CreateTimer( 1 , 1 );
+        }
 	}
 
 	event OnEnterState$
