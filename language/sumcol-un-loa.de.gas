@@ -5,10 +5,20 @@
 		from = "Summon Mummy";
 		to = "Mami beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Slime Zombie";
+		to = "Schleimzombie beschwören";
+	}
 
 	[0x0000]
 	{
 		from = "Summons a Mummy to guard the Caster.";
 		to = "Beschwört eine Mami, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Slime Zombie to guard the Caster.";
+		to = "Beschwört einen Schleimzombie, der den Anwender verteidigt.";
 	}
 }

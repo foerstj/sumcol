@@ -55,6 +55,11 @@
 		from = "Summon Swirling Midges";
 		to = "Wirbelmücken beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Widow Spider";
+		to = "Witwenspinne beschwören";
+	}
 
 	[0x0000]
 	{
@@ -110,5 +115,10 @@
 	{
 		from = "Summons Swirling Midges to guard the Caster.";
 		to = "Beschwört Wirbelmücken, die den Anwender verteidigen.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Widow Spider to guard the Caster.";
+		to = "Beschwört eine Witwenspinne, die den Anwender verteidigt.";
 	}
 }

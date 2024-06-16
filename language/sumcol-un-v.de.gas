@@ -40,6 +40,21 @@
 		from = "Summon Rector";
 		to = "Rektor beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Walking Corpse";
+		to = "Wandelnde Leiche beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Ancient Corpse";
+		to = "Alten Leichnam beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Tortured Corpse";
+		to = "Gequälte Leiche beschwören";
+	}
 
 	[0x0000]
 	{
@@ -80,5 +95,20 @@
 	{
 		from = "Summons a Rector to guard the Caster.";
 		to = "Beschwört einen Rektor, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Walking Corpse to guard the Caster.";
+		to = "Beschwört eine Wandelnde Leiche, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ancient Corpse to guard the Caster.";
+		to = "Beschwört einen Alten Leichnam, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Tortured Corpse to guard the Caster.";
+		to = "Beschwört eine Gequälte Leiche, die den Anwender verteidigt.";
 	}
 }

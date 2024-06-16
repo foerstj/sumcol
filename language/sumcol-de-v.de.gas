@@ -17,6 +17,16 @@
 	}
 	[0x0000]
 	{
+		from = "Summon Dark Mucosa";
+		to = "Dunklen Mucosa beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Mucosa Brute";
+		to = "Mucosa-Schläger beschwören";
+	}
+	[0x0000]
+	{
 		from = "Summon Forest Darkling";
 		to = "Waldfinsterling beschwören";
 	}
@@ -45,6 +55,16 @@
 	{
 		from = "Summons a Vile Mucosa to guard the Caster.";
 		to = "Beschwört einen Gemeinen Mucosa, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Mucosa to guard the Caster.";
+		to = "Beschwört einen Dunklen Mucosa, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mucosa Brute to guard the Caster.";
+		to = "Beschwört einen Mucosa-Schläger, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
