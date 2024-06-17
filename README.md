@@ -16,10 +16,11 @@ Assignment to Nature vs. Combat Magic is done based on the creature, roughly fol
 
 ## Installation
 
-Put the "Summons Collection.dsres" file into the DSLOA (or Resources) folder. It contains all summons.
+If you use DSLOA, simply put the "Summons Collection.dsres" file into the DSLOA folder. It contains all summons.
 
-*Alternatively,* pick from the partial .dsres files, which are split by creature type (animals / elementals...), by functional type (standard / stationary / miniboss...), by DS version (vanilla / LoA), or by mage class (Nature / Combat).\
-The partial builds can be used standalone or in combination. For example, if you use the "Animals" and the "Standard" partial builds, you get all animal *and* standard summons - including for example the Farm Skrubb (animal summon), the Skeleton Archer (standard summon), and of course also the Phrak (standard animal summon).
+*Alternatively,* pick from the partial .dsres files, which are split by functional type (standard / non-standard) and by DS version (vanilla / LoA).
+
+If you use vanilla DS, use the partial .dsres files to only install the vanilla summons.
 
 Spells are added to PContent, which means they appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
