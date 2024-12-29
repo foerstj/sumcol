@@ -1,0 +1,40 @@
+[t:template,n:dsx_scorpiot_ranged_rusted_summon]
+{
+    specializes = dsx_scorpiot_ranged_rusted_base;
+
+	doc = "[summon] dsx_scorpiot_ranged_rusted";
+	aspect:experience_value = 0;
+
+    physics:explode_when_killed = false;
+    mind:jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+	[common]
+    {
+        // ADDED
+        [template_triggers]
+        {
+            [*]
+            {
+                action* = call_sfx_script("sumcol_scorpiot_call");
+                condition* = receive_world_message("WE_ENTERED_WORLD");
+                single_shot = true;
+            }
+        }
+    }
+	[aspect]
+	{
+		[voice]
+		{
+			[die]		{ priority = high;	* = s_e_die_scorpiot_SED;}
+			//[enemy_spotted]	{ priority = high; * = s_e_call_scorpiot_SED; }  // REMOVED
+		}
+	}
+
+	[inventory]
+	{
+		[other] 
+		{ 
+			il_active_primary_spell = dsx_spell_rusted_scorpigun_lcannon_summon;
+			il_spell_2 = dsx_spell_rusted_scorpigun_rcannon_summon;
+		}		
+	}
+}

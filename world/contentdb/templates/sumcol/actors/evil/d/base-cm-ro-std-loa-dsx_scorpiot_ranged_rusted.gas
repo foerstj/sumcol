@@ -1,0 +1,174 @@
+[t:template,n:dsx_scorpiot_ranged_rusted_base]  // = dsx_scorpiot_ranged_rusted
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_scorpiot_ranged_rusted";
+	specializes = dsx_scorpiot_base;
+	[actor]
+	{
+		[skills]
+		{
+		  strength 		= 11, 0; 
+		  intelligence  =  7, 0;
+		  dexterity 	=  8, 0;
+		  ranged 		=  7, 0;
+		  combat_magic	=  7, 0;
+		  nature_magic	=  7, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 156;
+		life             = 196;
+		max_life         = 196;
+		mana             = 33;
+		max_mana         = 33;
+
+		model = m_c_edm_scorpigun;
+		textures:0 = b_c_edm_scorpiot-02;
+		scale_base = 0.8;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 45;
+		damage_min = 30;
+	}
+	[body]
+	{
+		avg_move_velocity = 1.5;
+      [bone_translator]
+	{
+	  body_anterior = BoneHead;
+	  body_mid = BoneBody;
+	  body_posterior = BoneBody;
+	  kill_bone = BoneBody;
+	}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_scorpigun_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=mg-01; }
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] {
+
+//					These Guys aren't going to have a laser
+//					01 = mg-01; // tail beam
+					00 = mg-02; // left cannon
+					01 = mg-03; // right cannon
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di-01; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell=dsx_spell_rusted_scorpigun_lcannon;
+			il_spell_2 = dsx_spell_rusted_scorpigun_rcannon;
+		}
+	}
+
+	[common]
+	{
+	  screen_name = "Ancient Scorpiot"; //--
+	}
+
+	[generator_in_object]
+    	{
+		child_template_name = dsx_scorpiot_skeleton_rusted;
+		spawn_event = WE_EXPLODED;
+		spawn_chance = 1.0;
+	}
+
+	[physics]
+    	{
+		explode_when_killed = true;
+		explosion_magnitude = 4.25;
+		gib_gore_good = true;
+		break_effect=generic_explosion;
+
+		[break_particulate]
+		{
+			frag_glb_rusted_scorpiot_head = 1;
+			frag_glb_rusted_scorpiot_back = 1;
+			frag_glb_rusted_scorpiot_shoulder = 2;
+			frag_glb_rusted_scorpiot_leg = 4;
+			frag_glb_rusted_scorpiot_piston = 2;
+		}
+	}
+
+ 
+	[defend] { defense = 73; }
+
+
+	[mind]
+	{
+		jat_fidget				= world\ai\jobs\common\job_fidget.skrit
+		?curious				= 0.75
+		&wander					= 0.8
+		&social					= 0.2
+		&interest				= interest
+		&delay_min				= 1
+		&delay_max				= 6
+		&still					= false;
+		on_enemy_spotted_alert_friends 		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true
+		&actor_creates_own_party		= true
+		&party_template				= "party_dsx_automaton";
+		com_channels				= dyn_party, automaton;
+		com_range				= 14.0;
+		melee_engage_range			= 14.0;
+		ranged_engage_range	 		= 14.0;
+		personal_space_range 			= 1.0;
+		sight_range				= 14.0;
+		actor_life_ratio_low_threshold 		= 0.5;
+		jat_die					= world\ai\jobs\actors\evil\job_die_explode.skrit;
+		jat_startup				= world\ai\jobs\common\job_startup_reveal.skrit
+		?try_face				= false;
+		jat_cast 				= world\ai\jobs\common\job_cast.skrit
+		?rand_spell 				= true;
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+		on_enemy_entered_ocz_flee 	= true;
+		on_enemy_entered_ocz_attack = false;
+		on_enemy_entered_icz_flee 	= true;
+		on_enemy_entered_icz_attack = false;
+		flee_count 					= 1;
+	}
+}
