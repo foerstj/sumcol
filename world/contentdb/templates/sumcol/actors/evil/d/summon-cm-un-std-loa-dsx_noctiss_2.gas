@@ -1,0 +1,17 @@
+[t:template,n:dsx_noctiss_2_summon]
+{
+    specializes = dsx_noctiss_2_base;
+
+	doc = "[summon] dsx_noctiss_2";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+
+    mind:jat_startup = jat_none;
+}
