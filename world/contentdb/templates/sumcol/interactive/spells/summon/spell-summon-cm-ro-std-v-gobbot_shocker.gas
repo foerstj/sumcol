@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Gobbot Shocker";
-    }
-    [common]
-    {
         description = "Summons a Gobbot Shocker to guard the Caster.";
     }
     [gui]

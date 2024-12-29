@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Sandskreech";
-    }
-    [common]
-    {
         description = "Summons a Sandskreech to guard the Caster.";
     }
     [gui]

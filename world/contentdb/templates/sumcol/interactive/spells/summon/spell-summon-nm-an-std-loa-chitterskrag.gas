@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Chitterskrag";
-    }
-    [common]
-    {
         description = "Summons a Chitterskrag to guard the Caster.";
     }
     [gui]

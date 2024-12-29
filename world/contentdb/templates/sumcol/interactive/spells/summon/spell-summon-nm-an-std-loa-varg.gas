@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Varg";
-    }
-    [common]
-    {
         description = "Summons a Varg to guard the Caster.";
     }
     [gui]

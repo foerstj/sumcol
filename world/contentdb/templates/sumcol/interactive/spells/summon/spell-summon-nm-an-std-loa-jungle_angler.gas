@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Jungle Angler";
-    }
-    [common]
-    {
         description = "Summons a Jungle Angler to guard the Caster.";
     }
     [gui]

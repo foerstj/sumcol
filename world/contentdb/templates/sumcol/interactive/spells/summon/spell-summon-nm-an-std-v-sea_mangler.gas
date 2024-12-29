@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Sea Mangler";
-    }
-    [common]
-    {
         description = "Summons a Sea Mangler to guard the Caster.";
     }
     [gui]

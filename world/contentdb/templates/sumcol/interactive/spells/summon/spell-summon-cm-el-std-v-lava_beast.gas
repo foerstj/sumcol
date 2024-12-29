@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Lava Beast";
-    }
-    [common]
-    {
         description = "Summons a Lava Beast to guard the Caster.";
     }
     [gui]

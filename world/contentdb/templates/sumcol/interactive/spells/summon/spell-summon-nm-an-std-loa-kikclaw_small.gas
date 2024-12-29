@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Skitterling";
-    }
-    [common]
-    {
         description = "Summons a Skitterling to guard the Caster.";
     }
     [gui]

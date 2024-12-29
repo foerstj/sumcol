@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Forest Phrak";
-    }
-    [common]
-    {
         description = "Summons a Forest Phrak to guard the Caster.";
     }
     [gui]

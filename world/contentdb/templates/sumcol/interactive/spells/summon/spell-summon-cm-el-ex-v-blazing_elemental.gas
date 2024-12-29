@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Blazing Elemental";
-    }
-    [common]
-    {
         description = "Summons a Blazing Elemental to guard the Caster.";
     }
     [gui]

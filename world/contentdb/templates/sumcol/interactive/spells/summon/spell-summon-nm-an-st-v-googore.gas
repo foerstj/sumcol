@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Googore";
-    }
-    [common]
-    {
         description = "Summons a Googore to guard the Caster.";
     }
     [gui]

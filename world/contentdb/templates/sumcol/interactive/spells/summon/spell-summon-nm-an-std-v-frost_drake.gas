@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Frost Drake";
-    }
-    [common]
-    {
         description = "Summons a Frost Drake to guard the Caster.";
     }
     [gui]

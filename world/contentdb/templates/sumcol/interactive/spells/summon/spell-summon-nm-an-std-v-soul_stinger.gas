@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Soul Stinger";
-    }
-    [common]
-    {
         description = "Summons a Soul Stinger to guard the Caster.";
     }
     [gui]

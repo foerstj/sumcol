@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Weathered Automaton";
-    }
-    [common]
-    {
         description = "Summons a Weathered Automaton to guard the Caster.";
     }
     [gui]

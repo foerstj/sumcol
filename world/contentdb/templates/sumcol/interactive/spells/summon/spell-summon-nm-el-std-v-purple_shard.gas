@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Purple Shard";
-    }
-    [common]
-    {
         description = "Summons a Purple Shard to guard the Caster.";
     }
     [gui]

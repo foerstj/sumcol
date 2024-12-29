@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Furok Slasher";
-    }
-    [common]
-    {
         description = "Summons a Furok Slasher to guard the Caster.";
     }
     [gui]

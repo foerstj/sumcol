@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Arakun Spider";
-    }
-    [common]
-    {
         description = "Summons an Arakun Spider to guard the Caster.";
     }
     [gui]

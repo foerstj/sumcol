@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Greater Scrub Scorpion";
-    }
-    [common]
-    {
         description = "Summons a Greater Scrub Scorpion to guard the Caster.";
     }
     [gui]

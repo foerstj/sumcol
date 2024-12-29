@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Skeleton Mercenary";
-    }
-    [common]
-    {
         description = "Summons a Skeleton Mercenary to guard the Caster.";
     }
     [gui]

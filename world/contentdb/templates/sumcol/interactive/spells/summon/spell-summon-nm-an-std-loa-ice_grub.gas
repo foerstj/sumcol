@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ice Grub";
-    }
-    [common]
-    {
         description = "Summons an Ice Grub to guard the Caster.";
     }
     [gui]

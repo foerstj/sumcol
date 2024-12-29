@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Skeleton Ranger";
-    }
-    [common]
-    {
         description = "Summons a Skeleton Ranger to guard the Caster.";
     }
     [gui]

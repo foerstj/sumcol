@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Stalagnid";
-    }
-    [common]
-    {
         description = "Summons a Stalagnid to guard the Caster.";
     }
     [gui]

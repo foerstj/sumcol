@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Air Elemental Minion";
-    }
-    [common]
-    {
         description = "Summons an Air Elemental Minion to guard the Caster.";
     }
     [gui]

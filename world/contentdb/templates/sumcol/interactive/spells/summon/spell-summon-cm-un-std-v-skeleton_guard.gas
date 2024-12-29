@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Skeleton Guard";
-    }
-    [common]
-    {
         description = "Summons a Skeleton Guard to guard the Caster.";
     }
     [gui]

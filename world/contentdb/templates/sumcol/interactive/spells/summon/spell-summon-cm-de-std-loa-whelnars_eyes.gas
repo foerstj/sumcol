@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Whelnar's Eyes";
-    }
-    [common]
-    {
         description = "Summons Whelnar's Eyes to guard the Caster.";
     }
     [gui]

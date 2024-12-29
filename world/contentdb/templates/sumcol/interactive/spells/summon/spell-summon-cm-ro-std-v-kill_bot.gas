@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Kill Bot";
-    }
-    [common]
-    {
         description = "Summons a Kill Bot to guard the Caster.";
     }
     [gui]

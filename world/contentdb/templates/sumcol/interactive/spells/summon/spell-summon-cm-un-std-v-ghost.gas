@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ghost";
-    }
-    [common]
-    {
         description = "Summons a Ghost to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Large Twisted Mucosa";
-    }
-    [common]
-    {
         description = "Summons a Large Twisted Mucosa to guard the Caster.";
     }
     [gui]

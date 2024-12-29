@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Tesla Coil";
-    }
-    [common]
-    {
         description = "Summons a Tesla Coil to guard the Caster.";
     }
     [gui]

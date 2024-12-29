@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Swarmling Drone";
-    }
-    [common]
-    {
         description = "Summons a Swarmling Drone to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ice Moth";
-    }
-    [common]
-    {
         description = "Summons an Ice Moth to guard the Caster.";
     }
     [gui]

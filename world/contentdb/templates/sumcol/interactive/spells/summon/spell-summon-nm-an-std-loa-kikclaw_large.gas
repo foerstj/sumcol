@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Skitterclaw";
-    }
-    [common]
-    {
         description = "Summons a Skitterclaw to guard the Caster.";
     }
     [gui]

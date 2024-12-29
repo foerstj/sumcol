@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ice Fly";
-    }
-    [common]
-    {
         description = "Summons an Ice Fly to guard the Caster.";
     }
     [gui]

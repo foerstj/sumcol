@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Farm Skrubb";
-    }
-    [common]
-    {
         description = "Summons a Farm Skrubb to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Living Dead";
-    }
-    [common]
-    {
         description = "Summons a Living Dead to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Krug Killer Dog";
-    }
-    [common]
-    {
         description = "Summons a Krug Killer Dog to guard the Caster.";
     }
     [gui]

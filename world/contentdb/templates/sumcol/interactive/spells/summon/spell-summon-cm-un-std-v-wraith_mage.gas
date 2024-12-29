@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Wraith Mage";
-    }
-    [common]
-    {
         description = "Summons a Wraith Mage to guard the Caster.";
     }
     [gui]

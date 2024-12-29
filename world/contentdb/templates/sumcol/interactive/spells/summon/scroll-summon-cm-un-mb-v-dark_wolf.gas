@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Dark Wolf";
-    }
-    [common]
-    {
         description = "Summons a Dark Wolf to guard the Caster.";
     }
     [gui]

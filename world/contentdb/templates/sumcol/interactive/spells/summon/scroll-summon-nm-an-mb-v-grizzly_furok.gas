@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Grizzly Furok";
-    }
-    [common]
-    {
         description = "Summons a Grizzly Furok to guard the Caster.";
     }
     [gui]

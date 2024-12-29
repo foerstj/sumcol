@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Rusted Automaton";
-    }
-    [common]
-    {
         description = "Summons a Rusted Automaton to guard the Caster.";
     }
     [gui]

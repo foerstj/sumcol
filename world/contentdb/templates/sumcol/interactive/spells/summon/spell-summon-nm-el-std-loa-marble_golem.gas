@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Marble Golem";
-    }
-    [common]
-    {
         description = "Summons a Marble Golem to guard the Caster.";
     }
     [gui]

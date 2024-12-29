@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Swarmling Queen";
-    }
-    [common]
-    {
         description = "Summons a Swarmling Queen to guard the Caster.";
     }
     [gui]

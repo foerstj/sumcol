@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Rending Mhulliq";
-    }
-    [common]
-    {
         description = "Summons a Rending Mhulliq to guard the Caster.";
     }
     [gui]

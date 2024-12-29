@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Phrak Piercer";
-    }
-    [common]
-    {
         description = "Summons a Phrak Piercer to guard the Caster.";
     }
     [gui]

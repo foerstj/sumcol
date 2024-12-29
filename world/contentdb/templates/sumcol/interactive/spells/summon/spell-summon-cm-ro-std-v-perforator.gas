@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Perforator";
-    }
-    [common]
-    {
         description = "Summons a Perforator to guard the Caster.";
     }
     [gui]

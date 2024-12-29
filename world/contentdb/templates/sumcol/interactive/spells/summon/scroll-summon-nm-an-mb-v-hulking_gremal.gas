@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Hulking Gremal";
-    }
-    [common]
-    {
         description = "Summons a Hulking Gremal to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Slime Zombie";
-    }
-    [common]
-    {
         description = "Summons a Slime Zombie to guard the Caster.";
     }
     [gui]

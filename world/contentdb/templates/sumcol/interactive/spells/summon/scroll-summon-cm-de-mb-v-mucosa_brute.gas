@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Mucosa Brute";
-    }
-    [common]
-    {
         description = "Summons a Mucosa Brute to guard the Caster.";
     }
     [gui]

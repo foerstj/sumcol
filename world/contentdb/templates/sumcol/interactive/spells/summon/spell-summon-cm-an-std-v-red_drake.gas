@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Red Drake";
-    }
-    [common]
-    {
         description = "Summons a Red Drake to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Toreck";
-    }
-    [common]
-    {
         description = "Summons a Toreck to guard the Caster.";
     }
     [gui]

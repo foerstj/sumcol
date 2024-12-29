@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ice Archer";
-    }
-    [common]
-    {
         description = "Summons an Ice Archer to guard the Caster.";
     }
     [gui]

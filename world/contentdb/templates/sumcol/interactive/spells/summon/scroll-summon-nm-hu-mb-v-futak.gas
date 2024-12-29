@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Futak the Trainer";
-    }
-    [common]
-    {
         description = "Summons Futak the Trainer to guard the Caster.";
     }
     [gui]

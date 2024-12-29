@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Krug Apprentice";
-    }
-    [common]
-    {
         description = "Summons a Krug Apprentice to guard the Caster.";
     }
     [gui]

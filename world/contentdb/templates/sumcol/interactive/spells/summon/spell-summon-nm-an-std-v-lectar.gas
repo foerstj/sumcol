@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Lectar";
-    }
-    [common]
-    {
         description = "Summons a Lectar to guard the Caster.";
     }
     [gui]

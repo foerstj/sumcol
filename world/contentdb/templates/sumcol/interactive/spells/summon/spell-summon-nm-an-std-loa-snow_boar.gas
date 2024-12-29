@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Snow Boar";
-    }
-    [common]
-    {
         description = "Summons a Snow Boar to guard the Caster.";
     }
     [gui]

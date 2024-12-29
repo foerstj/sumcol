@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Swamp Abomination";
-    }
-    [common]
-    {
         description = "Summons a Swamp Abomination to guard the Caster.";
     }
     [gui]

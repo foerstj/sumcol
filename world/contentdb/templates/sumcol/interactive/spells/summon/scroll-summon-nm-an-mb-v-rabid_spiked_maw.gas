@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Rabid Spiked Maw";
-    }
-    [common]
-    {
         description = "Summons a Rabid Spiked Maw to guard the Caster.";
     }
     [gui]

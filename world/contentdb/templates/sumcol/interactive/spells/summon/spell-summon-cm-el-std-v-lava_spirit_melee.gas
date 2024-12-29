@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Lava Spirit Fighter";
-    }
-    [common]
-    {
         description = "Summons a Lava Spirit Fighter to guard the Caster.";
     }
     [gui]

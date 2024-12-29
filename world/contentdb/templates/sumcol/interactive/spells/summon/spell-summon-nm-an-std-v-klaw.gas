@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Klaw";
-    }
-    [common]
-    {
         description = "Summons a Klaw to guard the Caster.";
     }
     [gui]

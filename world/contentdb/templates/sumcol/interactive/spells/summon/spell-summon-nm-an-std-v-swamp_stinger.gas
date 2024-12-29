@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Swamp Stinger";
-    }
-    [common]
-    {
         description = "Summons a Swamp Stinger to guard the Caster.";
     }
     [gui]

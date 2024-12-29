@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Brankar the Scavenger";
-    }
-    [common]
-    {
         description = "Summons Brankar the Scavenger to guard the Caster.";
     }
     [gui]

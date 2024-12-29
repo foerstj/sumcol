@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ferocious Braak";
-    }
-    [common]
-    {
         description = "Summons the Ferocious Braak to guard the Caster.";
     }
     [gui]

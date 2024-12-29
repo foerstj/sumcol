@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Swamp Creature";
-    }
-    [common]
-    {
         description = "Summons a Swamp Creature to guard the Caster.";
     }
     [gui]

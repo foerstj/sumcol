@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Cobble Man";
-    }
-    [common]
-    {
         description = "Summons a Cobble Man to guard the Caster.";
     }
     [gui]

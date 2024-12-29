@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Yellow Spider";
-    }
-    [common]
-    {
         description = "Summons a Yellow Spider to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Mantrap";
-    }
-    [common]
-    {
         description = "Summons a Mantrap to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Heater";
-    }
-    [common]
-    {
         description = "Summons a Heater to guard the Caster.";
     }
     [gui]

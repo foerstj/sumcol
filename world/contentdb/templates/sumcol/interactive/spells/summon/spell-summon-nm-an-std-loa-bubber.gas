@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Island Lizard";
-    }
-    [common]
-    {
         description = "Summons an Island Lizard to guard the Caster.";
     }
     [gui]

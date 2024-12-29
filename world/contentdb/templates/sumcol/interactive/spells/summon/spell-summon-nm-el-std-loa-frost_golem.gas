@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Frost Golem";
-    }
-    [common]
-    {
         description = "Summons a Frost Golem to guard the Caster.";
     }
     [gui]

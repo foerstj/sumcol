@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Pitiful Braak";
-    }
-    [common]
-    {
         description = "Summons the Pitiful Braak to guard the Caster.";
     }
     [gui]

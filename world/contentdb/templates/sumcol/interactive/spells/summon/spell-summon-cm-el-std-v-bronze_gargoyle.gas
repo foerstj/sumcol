@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Bronze Gargoyle";
-    }
-    [common]
-    {
         description = "Summons a Bronze Gargoyle to guard the Caster.";
     }
     [gui]

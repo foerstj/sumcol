@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Forest Darkling";
-    }
-    [common]
-    {
         description = "Summons a Forest Darkling to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ancient Corpse";
-    }
-    [common]
-    {
         description = "Summons an Ancient Corpse to guard the Caster.";
     }
     [gui]

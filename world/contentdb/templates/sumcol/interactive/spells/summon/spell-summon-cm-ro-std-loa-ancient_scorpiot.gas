@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ancient Scorpiot";
-    }
-    [common]
-    {
         description = "Summons an Ancient Scorpiot to guard the Caster.";
     }
     [gui]

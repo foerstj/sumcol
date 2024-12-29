@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Giant Wasp";
-    }
-    [common]
-    {
         description = "Summons a Giant Wasp to guard the Caster.";
     }
     [gui]

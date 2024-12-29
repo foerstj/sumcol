@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Rune Fiend";
-    }
-    [common]
-    {
         description = "Summons a Rune Fiend to guard the Caster.";
     }
     [gui]

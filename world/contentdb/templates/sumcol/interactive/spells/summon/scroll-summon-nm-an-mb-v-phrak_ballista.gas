@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Phrak Ballista";
-    }
-    [common]
-    {
         description = "Summons a Phrak Ballista to guard the Caster.";
     }
     [gui]

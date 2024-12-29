@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Frost Spitter";
-    }
-    [common]
-    {
         description = "Summons a Frost Spitter to guard the Caster.";
     }
     [gui]

@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Monstrous Rat";
-    }
-    [common]
-    {
         description = "Summons a Monstrous Rat to guard the Caster.";
     }
     [gui]

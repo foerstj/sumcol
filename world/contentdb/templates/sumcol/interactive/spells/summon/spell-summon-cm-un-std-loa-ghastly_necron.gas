@@ -11,9 +11,6 @@
     [common]
     {
         screen_name = "Summon Ghastly Necron";
-    }
-    [common]
-    {
         description = "Summons a Ghastly Necron to guard the Caster.";
     }
     [gui]
