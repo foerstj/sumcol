@@ -4,6 +4,13 @@
 
 	doc = "[summon] dsx_necron_ghastly";
 	aspect:experience_value = 0;
+
+    physics:explode_when_killed = false;
+    [effect_aftereffect]
+    {
+        effect = necron_ghastly_die;
+    }
+
 	[inventory]
 	{
 		spew_equipped_kill_count = <ignore>;
