@@ -361,6 +361,22 @@
     }
 }
 
+[t:template,n:sumcol_demo_barrel_testonly]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Test Only";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_kell_shot;
+            il_main = spell_summon_kell_blast;
+            il_main = spell_summon_kell_bolt;
+        }
+    }
+}
+
 [t:template,n:sumcol_demo_barrel_redone_vanilla]
 {
     specializes = sumcol_demo_base_barrel;
