@@ -58,6 +58,7 @@
             il_main = scroll_summon_krakemaw_the_putrid;
             il_main = spell_summon_red_noctiss;
             il_main = spell_summon_blue_noctiss;
+            il_main = scroll_summon_rune_guardian;
         }
     }
 }
@@ -305,6 +306,7 @@
             il_main = scroll_summon_twisted_mucosa_brute;
             // other
             il_main = spell_summon_rune_fiend;
+            il_main = scroll_summon_rune_guardian;
             il_main = spell_summon_whelnars_eyes;
         }
     }

@@ -1,0 +1,36 @@
+[t:template,n:dsx_rune_guardian_boss_summon]
+{
+	specializes = dsx_rune_guardian_boss_base;
+
+	doc = "[summon] dsx_rune_guardian_boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	[mind]
+	{
+		jat_startup = jat_none;
+		jat_die     = world\ai\jobs\common\job_die.skrit;  // is job_die_explode in base
+	}
+	[generator_in_object]
+	{
+		spawn_chance = 0;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+            // ERASED: WE_KILLED -> rune_guardian_die
+		}
+	}
+    [effect_aftereffect]
+    {
+        //effect = rune_guardian_die;
+        effect = rune_guardian_explode;  // this one has the sparkles and camera shake
+    }
+}
