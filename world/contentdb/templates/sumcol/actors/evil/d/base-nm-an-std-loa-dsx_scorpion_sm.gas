@@ -1,0 +1,56 @@
+[t:template,n:dsx_scorpion_sm_base]  // = dsx_scorpion_sm
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_scorpion_sm";
+	specializes = dsx_scorpion_base;
+	[aspect]
+	{
+		[textures]	{ 0 = b_c_edm_sm_scorpion; }
+		experience_value = 573;
+		life = 208;
+		max_life = 208;
+		model = m_c_edm_sc_pos_1;
+		scale_base = 0.4;
+	}
+	[actor]
+	{
+		[skills]
+		{
+			strength =  17, 0;
+			intelligence =  8, 0;
+			dexterity =  11, 0;
+			melee =  15,  0;
+
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 81;
+		damage_min = 72;
+	}
+	[common]
+	{
+		screen_name="Lesser Scrub Scorpion";
+	}
+	[defend] { defense=121; }
+	[inventory]
+	{
+		
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		break_effect = blood_mist;
+		break_sound = s_e_meat_explosion;
+		[break_particulate]
+		{
+			frag_glb_smscorpion_01 = 1;
+			frag_glb_smscorpion_02 = 2;
+			frag_glb_smscorpion_03 = 1;
+			frag_glb_smscorpion_04 = 4;
+			frag_glb_smscorpion_05 = 4;
+		}
+	}
+
+}

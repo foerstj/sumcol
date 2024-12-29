@@ -1,0 +1,88 @@
+[t:template,n:dsx_scorpion_lg_base]  // = dsx_scorpion_lg
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_scorpion_lg";
+	specializes = dsx_scorpion_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  18, 0;
+			intelligence =  8, 0;
+			dexterity =  12, 0;
+			melee =  16,  0;
+
+		}
+	}
+	[aspect]
+	{
+		experience_value = 400;
+		life = 392;
+		max_life = 392;
+		model = m_c_edm_sc_pos_1;
+		scale_base = 0.6;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 91;
+		damage_min = 85;
+	}	
+	[common]
+	{
+		screen_name="Greater Scrub Scorpion";
+	}
+	[defend] { defense=184; }
+	[inventory]
+	{
+	[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 20, Medium */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 783;
+				max = 1556;
+			}
+			[oneof*]
+			{
+				chance = 0.2;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.15;
+				il_main = #weapon/41-55;
+				il_main = #armor/17-128;
+				il_main = #*/41-55;
+			}
+			[oneof*]
+			{
+				chance = 0.0075;
+				il_main = #weapon/-rare(1)/44-60;
+				il_main = #armor/-rare(1)/90-184;
+				il_main = #*/-rare(1)/44-60;
+			}
+			
+		}
+	}	
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		break_effect = blood_mist;
+		break_sound = s_e_meat_explosion;
+		[break_particulate]
+		{
+			frag_glb_lgscorpion_01 = 1;
+			frag_glb_lgscorpion_02 = 2;
+			frag_glb_lgscorpion_03 = 1;
+			frag_glb_lgscorpion_04 = 4;
+			frag_glb_lgscorpion_05 = 4;
+		}
+	}
+}

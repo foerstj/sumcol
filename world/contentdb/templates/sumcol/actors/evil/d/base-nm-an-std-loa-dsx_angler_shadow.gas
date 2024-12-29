@@ -1,0 +1,39 @@
+[t:template,n:dsx_angler_shadow_base]  // = dsx_angler_shadow
+//balanced to Level 15
+{
+	doc = "dsx_angler_shadow";
+	specializes = dsx_angler_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 	15, 0;
+			intelligence = 	8, 0;
+			dexterity = 	11, 0;
+			melee =  	13,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 400;
+		life = 184;
+		max_life = 184;
+		mana = 10;
+		max_mana = 10;
+		scale_base = 0.60;
+		[textures]	{0=b_c_edm_shadow_angler;}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 61;
+		damage_min = 55;
+	}
+	[common] { screen_name="Shadow Angler"; }
+	[defend] { defense=96; }
+	[mind] 
+	{ 
+		jat_fidget	= world\ai\jobs\common\job_fidget.skrit;
+        personal_space_range = 0.2;
+	}
+}

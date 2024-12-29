@@ -1,0 +1,15 @@
+[t:template,n:dsx_scorpion_lg_summon]
+{
+    specializes = dsx_scorpion_lg_base;
+
+	doc = "[summon] dsx_scorpion_lg";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

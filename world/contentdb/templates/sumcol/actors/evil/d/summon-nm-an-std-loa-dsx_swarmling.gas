@@ -1,0 +1,8 @@
+[t:template,n:dsx_swarmling_summon]
+{
+    specializes = dsx_swarmling_base;
+
+	doc = "[summon] dsx_swarmling";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

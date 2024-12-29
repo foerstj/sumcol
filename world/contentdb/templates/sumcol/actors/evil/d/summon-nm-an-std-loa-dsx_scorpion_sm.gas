@@ -1,0 +1,8 @@
+[t:template,n:dsx_scorpion_sm_summon]
+{
+    specializes = dsx_scorpion_sm_base;
+
+	doc = "[summon] dsx_scorpion_sm";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

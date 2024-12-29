@@ -1,0 +1,49 @@
+[t:template,n:dsx_angler_jungle_base]  // = dsx_angler_jungle
+{
+	doc = "dsx_angler_jungle";
+	specializes = dsx_angler_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 	9, 0;
+			intelligence = 	7, 0;
+			dexterity = 	8, 0;
+			melee =  	4, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 98;
+		life = 117;
+		max_life = 117;
+		mana = 4;
+		material = teeth;
+		max_mana = 4;
+ 	    [textures]	{0=b_c_edm_jungle_mangler;}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 26;
+		damage_min = 20;
+	}
+	[common] { screen_name="Jungle Angler"; }
+	[defend] { defense=52; }
+	[mind]
+	{
+		jat_attack_object_melee	= world\ai\jobs\common\job_attack_object_melee.skrit
+			?cautious_chance	= 0.75
+			&min_cautious_distance = 3.00
+			&cautious_approach_distance = 1.0
+			&cautious_down_time = 1.1;
+
+
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit
+			?social 		= 0.35
+			&approach_dist 	= 2.00
+			&move_distance 	= 4.00
+			&min_distance 	= 2.00
+			&still 			= false;
+	}
+}

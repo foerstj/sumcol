@@ -1,0 +1,7 @@
+[t:template,n:dsx_angler_shadow_summon]
+{
+    specializes = dsx_angler_shadow_base;
+
+	doc = "[summon] dsx_angler_shadow";
+	aspect:experience_value = 0;
+}
