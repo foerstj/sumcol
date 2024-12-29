@@ -1,0 +1,12 @@
+[t:template,n:dsx_drake_death_one_summon]
+{
+    specializes = dsx_drake_death_one_base;
+
+    doc = "[summon] dsx_drake_death_one";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent] {}
+    }
+}

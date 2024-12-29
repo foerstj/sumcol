@@ -53,6 +53,8 @@
             il_main = spell_summon_weathered_automaton;
             il_main = spell_summon_rusted_automaton;
             il_main = spell_summon_ancient_scorpiot;
+            il_main = spell_summon_rahk;
+            il_main = spell_summon_scaly_rahk;
         }
     }
 }
@@ -244,6 +246,8 @@
             il_main = spell_summon_mummy;
             il_main = spell_summon_living_dead;
             il_main = spell_summon_ghastly_necron;
+            il_main = spell_summon_rahk;
+            il_main = spell_summon_scaly_rahk;
         }
     }
 }
