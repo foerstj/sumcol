@@ -12,6 +12,9 @@
     {
         screen_name = "Summon {{csn}}";
         description = "Summons {{ [a, csn] | join(' ') | trim }} to guard the Caster.";
+        {% if test_only %}
+        is_pcontent_allowed = false;
+        {% endif %}
     }
     [gui]
     {
