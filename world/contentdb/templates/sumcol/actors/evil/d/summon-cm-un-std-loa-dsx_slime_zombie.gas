@@ -12,8 +12,6 @@
             // ERASED
 		}
 	}
-    [mind]
-    {
-        jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
-    }
+
+    mind:jat_startup = jat_none;
 }
