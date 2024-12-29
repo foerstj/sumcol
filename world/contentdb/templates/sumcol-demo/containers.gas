@@ -55,6 +55,7 @@
             il_main = spell_summon_ancient_scorpiot;
             il_main = spell_summon_rahk;
             il_main = spell_summon_scaly_rahk;
+            il_main = scroll_summon_krakemaw_the_putrid;
         }
     }
 }
@@ -248,6 +249,7 @@
             il_main = spell_summon_ghastly_necron;
             il_main = spell_summon_rahk;
             il_main = spell_summon_scaly_rahk;
+            il_main = scroll_summon_krakemaw_the_putrid;
         }
     }
 }
