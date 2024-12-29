@@ -49,8 +49,9 @@
             // fillers cm
             il_main = spell_summon_living_dead;
             il_main = spell_summon_dark_acolyte;
-            il_main = spell_summon_weathered_automaton;
             il_main = spell_summon_ghastly_necron;
+            il_main = spell_summon_weathered_automaton;
+            il_main = spell_summon_rusted_automaton;
         }
     }
 }
@@ -322,6 +323,7 @@
 
             // LoA
             il_main = spell_summon_weathered_automaton;
+            il_main = spell_summon_rusted_automaton;
         }
     }
 }

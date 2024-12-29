@@ -1,0 +1,145 @@
+[t:template,n:dsx_automaton_rusted_base]  // = dsx_automaton_rusted
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_automaton_rusted";
+	specializes = dsx_automaton_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	 = 12, 0;
+			intelligence = 7, 0;
+			dexterity 	 = 8, 0;
+			ranged 		 = 8, 0;
+			nature_magic = 8,0;
+			combat_magic = 8,0;
+		}
+	}
+	[aspect]
+	{
+		model = m_c_edm_au2;
+		[textures]	{ 0 = b_c_edm_au-02; }
+		experience_value = 104;
+		life			 = 219;
+		max_life		 = 219;
+		mana			 = 98;
+		max_mana		 = 22;
+		material = steel;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_automaton_SED;	 }
+			[enemy_spotted]	{ priority = high; * = s_e_call_automaton_old_SED; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 35; 
+		damage_min = 28; 
+	}
+	[body]
+	{
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_au2_fs;
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = mg;
+					01 = mg-01;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files]
+					{ 
+						00=dsf;
+						01=dsf-01;
+					}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+			[chore_misc]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] 
+				{
+					slep=ds-01;
+					wake=rv;
+				}
+			}
+		}
+	}
+	
+	[common]
+	{
+		screen_name = "Rusted Automaton";
+	}
+	[generator_in_object]
+	{
+		child_template_name = dsx_automaton_skeleton2;
+		spawn_event = WE_EXPLODED;
+		spawn_chance = 1.0;
+	}
+	[defend] { defense = 75; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] 
+		{ 
+			il_active_primary_spell   = dsx_spell_rusted_automoton_minigun; 
+		}		
+	}
+	[mind]
+	{
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+	
+		on_enemy_entered_ocz_flee 		= true;
+		on_enemy_entered_ocz_attack 	= false;
+		on_enemy_entered_icz_flee 		= true;
+		on_enemy_entered_icz_attack 	= false;
+		flee_count 						= 1;
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		explosion_magnitude = 4.25;
+		gib_gore_good = true;
+		break_effect=generic_explosion;
+
+		[break_particulate]
+		{
+			frag_glb_Rautomaton_r-01 = 2;
+			frag_glb_Rautomaton_r-02 = 2;
+			frag_glb_Rautomaton_r-03 = 2;
+			frag_glb_Rautomaton_r-04 = 1;
+			frag_glb_Rautomaton_r-05 = 1;
+		}
+	}
+ 
+}
