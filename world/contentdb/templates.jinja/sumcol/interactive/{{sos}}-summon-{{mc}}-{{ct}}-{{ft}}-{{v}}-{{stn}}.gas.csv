@@ -88,7 +88,7 @@ spell;chitterskrag_baby;dsx_chitterskrag_baby;;an;Immature Chitterskrag;0.75;nm;
 spell;furok_slasher;furok_slasher;;a;Furok Slasher;2;nm;an;std;v;;7600;7;25;1.1;;;;;;;;1;1.2;;;
 spell;slarg;slarg;;a;Slarg;0.75;nm;an;std;v;;4800;7;23;0.85;;;;;;;;1;0.6;;;
 spell;monstrous_rat;dsx_giant_rat_monstrous;;a;Monstrous Rat;1;nm;an;std;loa;;7600;6;25;0.95;;;;;;;;1;0.8;;;
-spell;ghastly_necron;dsx_necron_ghastly;;a;Ghastly Necron;1.5;cm;un;std;loa;;3000;6;21;1;;;;;;;;0.8;1;;;
+spell;ghastly_necron;dsx_necron_ghastly;;a;Ghastly Necron;1.5;cm;un;std;loa;;3000;6;21;1;;;;70;76;;;0.8;1;;;
 spell;teal_shard;shard_teal;;a;Teal Shard;0.75;nm;el;std;v;;6000;5;23;;;0.9;;;;41;45;3;0.6;;;
 spell;ice_warrior;ice_warrior;good;an;Ice Warrior;1.5;nm;el;std;v;;2400;6;20;1.05;;;;40;48;;;2;1.2;;;
 spell;kikclaw_small;dsx_kikclaw_2;;a;Skitterling;1;nm;an;std;loa;;9600;7;26;0.8;;;;;;;;1;0.8;;;

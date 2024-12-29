@@ -6,6 +6,11 @@
 	aspect:experience_value = 0;
 	[inventory]
 	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = st_un_seck_mage_dsx;
+        }
 		[pcontent]
 		{
             // ERASED
