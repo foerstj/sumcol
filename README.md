@@ -75,7 +75,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Miniboss: Skeleton Captain
   - Wolf Miniboss: Dark Wolf
   - Wraiths: Wraith Mage
-  - Ghost
+  - Ghosts: Ghost
   - Skulls: Rector
   - Zombies: Walking Corpse, Tortured Corpse
     - Miniboss: Ancient Corpse
@@ -114,7 +114,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 ### LoA Creatures:
 - Animals (NM):
   - Spiders: Emerald Spider, Widow Spider
-  - Manglers: Angler
+  - Manglers: Angler, Jungle Angler, Shadow Angler
   - Worms: Ice Grub
   - Moths: Ice Moth
   - Midges: Swirling Midges
@@ -126,8 +126,12 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Spikers: Jungle Spiker
   - Skitterclaws: Skitterling, Skitterclaw
   - Rats: Monstrous Rat
-  - Pickers: Swarmling Drone, Swarmling Queen
+  - Pickers: Swarmling Drone, Swarmling Queen, Sandskreech
   - Bear Miniboss: Yellow Eye
+  - Phraks: Swarmling
+  - Slargs: Leetch
+  - Stingers: Flying Gritch
+  - Scorpions: Greater Scrub Scorpion, Lesser Scrub Scorpion
   - Stationary:
     - Skrubbs: Jungle Skrubb
 - Elementals:
@@ -138,7 +142,12 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Air (NM) Miniboss: Air Elemental Minion
   - Water (NM) Miniboss: Water Elemental Minion
 - Undead (CM):
-  - Zombies: Mummy, Slime Zombie
+  - Zombies: Mummy, Slime Zombie, Living Dead
+  - Necrons: Ghastly Necron
+  - Wraiths: Dark Acolyte
+  - Rahks: Rahk, Scaly Rahk
+    - Miniboss: Krakemaw the Putrid
+  - Ghosts: Noctiss (red & blue)
 - Plants (NM):
   - Stationary:
     - Vines: Killer Vines
@@ -147,7 +156,11 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Mucosa: Large Twisted Mucosa
     - Miniboss: Twisted Mucosa Brute
   - Rune: Rune Fiend
+    - Miniboss: Rune Guardian
   - Whelnar's Eyes
+- Robots (CM):
+  - Automatons: Weathered Automaton, Rusted Automaton
+  - Scorpiots: Ancient Scorpiot
 
 
 ## Balancing
