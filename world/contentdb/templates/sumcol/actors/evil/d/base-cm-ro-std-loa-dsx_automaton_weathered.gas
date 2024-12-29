@@ -1,0 +1,45 @@
+[t:template,n:dsx_automaton_weathered_base]  // = dsx_automaton_weathered
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_automaton_weathered";
+	specializes = dsx_automaton_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 12, 0;
+			intelligence 	= 7, 0;
+			dexterity 		= 8, 0;
+			melee 			= 8, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 104;
+		life		 	= 219;
+		max_life	 	= 219;
+		mana		 	= 22;
+		max_mana	 	= 22;
+		model = m_c_edm_au;
+		[textures]	{ 0 = b_c_edm_au-01; }
+		[voice]
+		{
+			[attack]	{ priority = high; * = s_e_attack_automaton_SED;	 }
+			[die]	{ priority = high; * = s_e_die_automaton_SED;	 }
+			[enemy_spotted]	{ priority = high; * = s_e_call_automaton_old_SED; }
+		}
+	}
+	[attack]
+	{
+			attack_range = 0.5;
+			damage_max = 65;
+			damage_min = 55; 
+	}
+	[common]
+	{
+		screen_name = "Weathered Automaton";
+	}
+	[defend] { defense = 120; }
+
+
+}

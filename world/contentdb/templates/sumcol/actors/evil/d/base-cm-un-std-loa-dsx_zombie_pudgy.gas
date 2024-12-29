@@ -1,0 +1,37 @@
+[t:template,n:dsx_zombie_pudgy_base]  // = dsx_zombie_pudgy
+{
+// Level 12, medium melee
+	category_name = "1W_evil_d";
+	doc = "dsx_zombie_pudgy";
+	specializes = dsx_base_zombie_pudgy;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength =	12,0;
+			intelligence =	8,0;
+			dexterity =	9,0;
+			melee =		8,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 208;
+		life = 242;
+		max_life = 242;
+		mana = 8;
+		max_mana = 8;
+		model = m_c_edm_zo_pos_2;
+		[textures] { 0=b_c_edm_zo-03; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 52;
+		damage_min = 45;
+	}
+	[common] { screen_name="Living Dead"; }
+	[defend] { defense=93; }
+
+}

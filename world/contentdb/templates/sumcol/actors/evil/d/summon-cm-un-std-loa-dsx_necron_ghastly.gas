@@ -1,0 +1,14 @@
+[t:template,n:dsx_necron_ghastly_summon]
+{
+    specializes = dsx_necron_ghastly_base;
+
+	doc = "[summon] dsx_necron_ghastly";
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

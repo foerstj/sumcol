@@ -1,0 +1,15 @@
+[t:template,n:dsx_acolyte_dark_summon]
+{
+    specializes = dsx_acolyte_dark_base;
+
+	doc = "[summon] dsx_acolyte_dark";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

@@ -1,0 +1,8 @@
+[t:template,n:dsx_automaton_weathered_summon]
+{
+    specializes = dsx_automaton_weathered_base;
+
+	doc = "[summon] dsx_automaton_weathered";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

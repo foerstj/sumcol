@@ -1,0 +1,14 @@
+[t:template,n:dsx_zombie_pudgy_summon]
+{
+    specializes = dsx_zombie_pudgy_base;
+
+	doc = "[summon] dsx_zombie_pudgy";
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

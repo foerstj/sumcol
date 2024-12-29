@@ -46,6 +46,11 @@
             il_main = spell_summon_greater_scrub_scorpion;
             il_main = spell_summon_lesser_scrub_scorpion;
             il_main = spell_summon_sandskreech;
+            // fillers cm
+            il_main = spell_summon_living_dead;
+            il_main = spell_summon_dark_acolyte;
+            il_main = spell_summon_weathered_automaton;
+            il_main = spell_summon_ghastly_necron;
         }
     }
 }
@@ -165,13 +170,12 @@
     {
         [other]
         {
+            // Vanilla
             // stone / crystal
             il_main = spell_summon_gargoyle_melee;
             il_main = spell_summon_teal_shard;
             il_main = spell_summon_green_shard;
-            il_main = spell_summon_cobbleman;
             il_main = spell_summon_blue_shard;
-            il_main = spell_summon_marble_golem;
             il_main = spell_summon_purple_shard;
             il_main = spell_summon_bronze_gargoyle;
             // ice / frost
@@ -182,7 +186,6 @@
             il_main = scroll_summon_frost_archer;
             il_main = scroll_summon_frost_warrior;
             // swamp
-            il_main = spell_summon_bog_beast;
             il_main = spell_summon_swamp_slinger;
             il_main = spell_summon_swamp_creature;
             il_main = scroll_summon_swamp_abomination;
@@ -191,6 +194,13 @@
             il_main = spell_summon_lava_spirit_melee;
             il_main = spell_summon_lava_beast;
             il_main = scroll_summon_magma_beast;
+
+            // LoA
+            // stone / crystal
+            il_main = spell_summon_cobbleman;
+            il_main = spell_summon_marble_golem;
+            // swamp
+            il_main = spell_summon_bog_beast;
             // elemental minions
             il_main = scroll_summon_air_elemental_minion;
             il_main = scroll_summon_earth_elemental_minion;
@@ -207,6 +217,7 @@
     {
         [other]
         {
+            // Vanilla
             // skeletons
             il_main = spell_summon_skeleton_guard;
             il_main = spell_summon_skeleton_archer;
@@ -218,12 +229,19 @@
             // zombies
             il_main = spell_summon_walking_corpse;
             il_main = scroll_summon_ancient_corpse;
-            il_main = spell_summon_slime_zombie;
             il_main = spell_summon_tortured_corpse;
-            il_main = spell_summon_mummy;
             il_main = scroll_summon_dark_wolf;
             // ghosts
             il_main = spell_summon_ghost;
+
+            // LoA
+            // skeletons
+            il_main = spell_summon_dark_acolyte;
+            // zombies
+            il_main = spell_summon_slime_zombie;
+            il_main = spell_summon_mummy;
+            il_main = spell_summon_living_dead;
+            il_main = spell_summon_ghastly_necron;
         }
     }
 }
@@ -236,10 +254,13 @@
     {
         [other]
         {
-            il_main = spell_summon_killer_vines;
-            il_main = spell_summon_mantrap;
+            // Vanilla
             il_main = spell_summon_tretch;
             il_main = scroll_summon_infested_larch;
+
+            // LoA
+            il_main = spell_summon_killer_vines;
+            il_main = spell_summon_mantrap;
         }
     }
 }
@@ -252,21 +273,26 @@
     {
         [other]
         {
+            // Vanilla
             // mucosa
             il_main = spell_summon_vile_mucosa;
-            il_main = spell_summon_large_twisted_mucosa;
             il_main = spell_summon_dark_mucosa;
-            il_main = scroll_summon_twisted_mucosa_brute;
             il_main = scroll_summon_mucosa_brute;
             // intelligent
             il_main = spell_summon_horrid;
             il_main = spell_summon_toreck;
             il_main = spell_summon_kell;
             // other
-            il_main = spell_summon_rune_fiend;
-            il_main = spell_summon_whelnars_eyes;
             il_main = spell_summon_forest_darkling;
             il_main = spell_summon_synged;
+
+            // LoA
+            // mucosa
+            il_main = spell_summon_large_twisted_mucosa;
+            il_main = scroll_summon_twisted_mucosa_brute;
+            // other
+            il_main = spell_summon_rune_fiend;
+            il_main = spell_summon_whelnars_eyes;
         }
     }
 }
@@ -279,6 +305,7 @@
     {
         [other]
         {
+            // Vanilla
             il_main = spell_summon_kill_bot;
             il_main = spell_summon_hunter;
             il_main = spell_summon_copter;
@@ -292,6 +319,9 @@
             il_main = spell_summon_proxo;
             il_main = spell_summon_tesla_coil;
             il_main = spell_summon_tesla_coil_heal;
+
+            // LoA
+            il_main = spell_summon_weathered_automaton;
         }
     }
 }
