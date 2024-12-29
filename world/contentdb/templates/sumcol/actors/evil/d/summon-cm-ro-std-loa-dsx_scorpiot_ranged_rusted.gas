@@ -1,4 +1,5 @@
-[t:template,n:dsx_scorpiot_ranged_rusted_summon]
+[t:template,n:dsx_scorpiot_ranged_rusted_summon] { specializes = dsx_scorpiot_ranged_rusted_summon_base; }
+[t:template,n:dsx_scorpiot_ranged_rusted_summon_base]
 {
     specializes = dsx_scorpiot_ranged_rusted_base;
 
@@ -31,10 +32,34 @@
 
 	[inventory]
 	{
-		[other] 
+		[other]
 		{ 
 			il_active_primary_spell = dsx_spell_rusted_scorpigun_lcannon_summon;
 			il_spell_2 = dsx_spell_rusted_scorpigun_rcannon_summon;
-		}		
+		}
+	}
+}
+
+[t:template,n:dsx_scorpiot_ranged_rusted_lcannon_summon]
+{
+    specializes = dsx_scorpiot_ranged_rusted_summon_base;
+	[inventory]
+	{
+		[other]
+		{ 
+			il_active_primary_spell = dsx_spell_rusted_scorpigun_lcannon_summon;
+		}
+	}
+}
+
+[t:template,n:dsx_scorpiot_ranged_rusted_rcannon_summon]
+{
+    specializes = dsx_scorpiot_ranged_rusted_summon_base;
+	[inventory]
+	{
+		[other]
+		{ 
+			il_spell_2 = dsx_spell_rusted_scorpigun_rcannon_summon;
+		}
 	}
 }

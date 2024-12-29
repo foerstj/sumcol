@@ -370,6 +370,8 @@
     {
         [other]
         {
+            il_main = spell_summon_ancient_scorpiot_lcannon;
+            il_main = spell_summon_ancient_scorpiot_rcannon;
             il_main = spell_summon_kell_shot;
             il_main = spell_summon_kell_blast;
             il_main = spell_summon_kell_bolt;
