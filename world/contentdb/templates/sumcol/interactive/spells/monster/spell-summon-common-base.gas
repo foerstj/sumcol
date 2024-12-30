@@ -29,6 +29,8 @@
 		usage_context_flags = uc_offensive;
 		state_name = "Controlling Monster";
 		require_state_check = true;
+
+		is_one_shot = true;
 	}
 }
 
