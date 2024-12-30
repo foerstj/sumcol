@@ -1,21 +1,3 @@
-//////////////////////////////////////////////////////////////////////////////
-//
-// File     :  spell_summon_random.skrit
-// Author(s):  Rick Saenz, Eric Tams
-//
-// Copyright © 2000 Gas Powered Games, Inc.  All rights reserved.
-//----------------------------------------------------------------------------
-//  $Revision:: $              $Date:$
-//----------------------------------------------------------------------------
-//
-// This Skrit summons a random helper. The helper is defined in a pcontent block
-// In the spell.
-//
-// The Normal Go version Must Create and drop the Pcontent, since Omni Go's can't
-// have an inventory. Then it will create the Omni version.
-// 
-//////////////////////////////////////////////////////////////////////////////
-
 property string effect_script$		= ""	doc = "Name of the SiegeFx script that will be providing the visual.";
 property string end_script$			= ""	doc = "Name of the SiegeFx script that will be providing the visual when un_summoning.";
 property string script_params$		= ""   	doc = "Parameters to send to SiegeFx script";
@@ -25,30 +7,34 @@ property string caster_description$	= ""	doc = "Description of enchantment being
 property float	spawn_radius$		= -1.0	doc = "Used to find a position for the summon";
 property bool	monster_summon$		= false	doc	= "Is a monster casting this spell?";
 
-owner = GoSkritComponent;
+owner = GoSkritComponent;  // the spell object (normal resp. omni go)
 
-int starting_pos$;
+int starting_pos$;  // siegefx var id
 
-Goid summoned_goid$;
-Goid caster$;
-Goid target$;
-Goid new_point$;
-float summon_duration$;
+Goid summoned_goid$;  // the sub-summon i.e. a swamp creature
+Goid caster$;  // i.e. the witch
+Goid target$;  // either the target enemy itself, or the target summon point
+Goid new_point$;  // the target summon point (a go of template "point")
+float summon_duration$;  // calculated from the spell's magic:effect_duration
 
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
+    // Omni Go
 	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
 	{
+        // Got a CC message that our sub-summon got killed - clean up so the caster can cast the spell again
 		SetState CleanUp$;
 	}
 }
 
 trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 {
+    // Omni Go
 	if( summoned_goid$.IsValid )
 	{
 		if( WorldState.CurrentState == WS_SP_NIS )
 		{
+            // Game is entering a NIS? Make sure the sub-summon doesn't upset anything, just unsummon it right away
 			SetState CleanUp$;
 		}
 	}
@@ -58,8 +44,8 @@ startup state CastBegin$
 {
  	event OnGoHandleMessage$( eWorldEvent e$, WorldMessage msg$ )
 	{
-		if( e$ == WE_REQ_CAST ) {
-
+		if( e$ == WE_REQ_CAST )
+        {
 			////////////////////
 			// Normal Go
 			
@@ -81,32 +67,32 @@ startup state CastBegin$
 
 			if( spawn_radius$ > 0.0 )
 			{
+                // make a new point to summon at
+                GoCloneReq cloneReq$ = MakeGoCloneReq( "point" );
+
 				if( AIQuery.FindSpotRelativeToSource( target$.Go, 
 														spawn_radius$ * 0.66, 
 														spawn_radius$ * 1.33, 
 														2.0, 
 														caster$.Go.Mind.TempPos1 ) )
 	   			{
-	   				// make a new point to summon at
-					GoCloneReq cloneReq$ = MakeGoCloneReq( "point" );
 					cloneReq$.StartingPos	= caster$.Go.Mind.TempPos1;
-                	cloneReq$.SnapToTerrain = true;         
-					cloneReq$.ForceClientAllowed = true;
-           			new_point$	= GoDb.SCloneGo( cloneReq$ );
-           			target$ = new_point$;                   
 	   			} else {
-	   				// make a new point to summon at
-					GoCloneReq cloneReq$ = MakeGoCloneReq( "point" );
 					cloneReq$.StartingPos	= target$.Go.Placement.Position;
-                	cloneReq$.SnapToTerrain = true;
-					cloneReq$.ForceClientAllowed = true;
-           			new_point$	= GoDb.SCloneGo( cloneReq$ );
-           			target$ = new_point$;
 	   			}	
+
+                cloneReq$.SnapToTerrain = true;
+                cloneReq$.ForceClientAllowed = true;
+                new_point$	= GoDb.SCloneGo( cloneReq$ );
+                target$ = new_point$;
 			}
+
+            // target$ is decided, continue in an immediate timer callback
 			This.CreateTimer( 2, 0 );
-		} else if( e$ == WE_REQ_ACTIVATE ) {
-			
+
+		}
+        else if( e$ == WE_REQ_ACTIVATE )
+        {
 			////////////////////
 			// Omni Go
 			
@@ -118,10 +104,10 @@ startup state CastBegin$
 				SetState CleanUp$;
 				return;
 			}
-			
+
 			// buff the summoned guy up.
 			owner.go.magic.SApplyEnchantments( summoned_goid$, caster$ );
-			
+
 			if(!monster_summon$)
 			{
 				// Setup where experience will go from who this actor damages
@@ -134,24 +120,24 @@ startup state CastBegin$
 				// set the right playerID so the creature will attack in a multiplayer competative game.
 				summoned_goid$.Go.SsetPlayer( caster$.Go.PlayerID );
 			}
-			
+
 			// Make this go have the same membership as the caster
 			summoned_goid$.Go.Common.SCopyMembership( caster$ );
-		
-			// watch our pet, so if he dies we can control a new pet.
+
+			// Watch our pet, so if he dies we can control a new pet.
+            // This will CC the WE_KILLED message to us.
 			GoDb.StartWatching( owner.Goid, summoned_goid$);
-		
+
 			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(summoned_goid$.Go, caster$.Go);
-		
-			// Wait a second before assigning the new job
-			
+
+			// sub-summon is fully initialized, continue to next state after an immediate timer callback
 			this.CreateTimer( 1, 0 );
 		}
 	}
 
 	transition -> SummonGo$ : OnGoHandleMessage( WE_SPELL_SYNC_MID );  // Normal Go
 	transition -> Stay$ : OnTimer( 1 );  // Omni Go
-	
+
 	Trigger OnTimer$( 2 )
 	{
 		////////////////////
@@ -163,8 +149,10 @@ startup state CastBegin$
 			starting_pos$ = SiegeFx.AddVariable( target$.go.placement.position, owner.goid );
 
 			// Start the visual
+            // This will trigger WE_SPELL_SYNC_MID when the white cylinders conceal the target position
 			SiegeFx.SRunScript( effect_script$, target$, caster$, script_params$, owner.Goid, WE_REQ_ACTIVATE );
-		
+
+            // Apply "Controlling Summoned" state to the caster i.e. witch so she can't cast the spell again while the sub-summon exists
 			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(caster$.Go, caster$.Go);
 			caster$.Go.Actor.SAddGenericState( owner.Go.Magic.CasterStateName, caster_description$, summon_duration$ + 2.0, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
 		}
@@ -175,12 +163,12 @@ startup state CastBegin$
 	}
 }
 
-
+// The sub-summon go must be created by the normal go, because omni gos can't have an inventory
 state SummonGo$
 {
 	////////////////////
 	// Normal Go
-	
+
 	event OnEnterState$
 	{
 		if(caster$.IsValid)
@@ -204,7 +192,7 @@ state SummonGo$
 				}
 				
 				// create Omni version of the spell.
-				GoCloneReq cloneReq$ = MakeGoCloneReq( Owner.go.Parent.Goid, owner.goid );
+				GoCloneReq cloneReq$ = MakeGoCloneReq( Owner.go.Parent.Goid, owner.goid );  // omni go will have same parent
 				cloneReq$.Omni = true;
 				Goid new_spell$ = GoDb.SCloneGo( cloneReq$ );
 				
@@ -217,11 +205,11 @@ state SummonGo$
 	}
 }
 
-state Stay$
+state Stay$  // control sub-summon
 {
 	////////////////////
 	// Omni Go
-	
+
 	event OnEnterState$
 	{
 		if( !caster$.IsValid )
@@ -229,7 +217,7 @@ state Stay$
 			SetState CleanUp$;
 			return;
 		}
-		
+
 		if (summoned_goid$.IsValid)
 		{
 			if(!monster_summon$)
@@ -239,7 +227,7 @@ state Stay$
 				{
 					summoned_goid$.Go.Mind.SDoJob( MakeJobReq( JAT_GUARD, JQ_ACTION, QP_BACK, AO_REFLEX, caster$ ) );
 				}
-				
+
 				// we want to be able to see the dude's health
 				summoned_goid$.Go.Actor.SSetCanShowHealth( true );
 			}
@@ -250,31 +238,33 @@ state Stay$
 			this.CreateTimer( 1, summon_duration$ );
 		}
 	}
-	transition -> CleanUp$: OnTimer( 1 );
-	transition -> CleanUp$: OnGoHandleMessage( WE_SPELL_EXPIRATION_TIMER_RESET );
+
+	transition -> CleanUp$: OnTimer( 1 );  // Clean up when the summon duration is over
+	transition -> CleanUp$: OnGoHandleMessage( WE_SPELL_EXPIRATION_TIMER_RESET );  // Clean up when forcibly un-summoning (not directly possible for sub-summons tho)
 }
 
 state CleanUp$
 {
 	////////////////////
 	// Omni Go
-	
+
 	transition -> FinishedOmni$: OnTimer( 1 );
-	
+
 	event OnEnterState$
 	{
+        // let witch cast again
 		if( caster$.IsValidMp )
 		{
 			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
 		}
-			
+
 		if( summoned_goid$.IsValidMp ) 
 		{
 			if ( end_script$ != "" ) 
 			{
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
 			}
-			
+
 			if(!monster_summon$)
 			{
 				summoned_goid$.Go.Aspect.ClearExperienceBenefactor();
@@ -283,9 +273,12 @@ state CleanUp$
 			}
 
 			summoned_goid$.Go.Actor.SRemoveGenericState( state_name$ );
-			 
+
 			GoDb.StopWatching( owner.Goid, summoned_goid$);
+
+            // don't delete the sub-summon just yet - will happen in FinishedOmni$
 		}
+
 		this.CreateTimer( 1, .1 );
 	}
 }
@@ -294,17 +287,18 @@ state Finished$
 {
 	////////////////////
 	// Normal Go
-	
+
 	event OnEnterState$
 	{
 		// Get rid of any temporary storage
 		SiegeFx.ClearVariables( owner.goid );
-	
+
 		if( new_point$.IsValid() )
 		{
+            // the sub-summon go is created & positioned, the point go is no longer needed
 			PostWorldMessage( WE_REQ_DELETE, new_point$, new_point$, 1 );
 		}
-		
+
 		PostWorldMessage( WE_REQ_DELETE, owner.Goid, owner.Goid, 1 );
 	}
 }
@@ -313,24 +307,24 @@ state FinishedOmni$
 {
 	////////////////////
 	// Omni Go
-	
+
 	event OnEnterState$
 	{
 		if( summoned_goid$.isvalid) 
 		{
+            // delete the sub-summon
 			GoDb.SMarkGoAndChildrenForDeletion( summoned_goid$, true, true );
 		}
+
 		PostWorldMessage( WE_REQ_DELETE, owner.Goid, owner.Goid, 1 );
 	}
 }
-
-
 
 state Abort$
 {
 	////////////////////
 	// Normal Go
-	
+
 	event OnEnterState$
 	{
 		// Refund the players mana
@@ -343,7 +337,7 @@ state Abort$
 		{
 			PostWorldMessage( WE_REQ_DELETE, new_point$, new_point$, 1 );
 		}
-		
+
 		PostWorldMessage( WE_REQ_DELETE, owner.Goid, owner.Goid, 1 );
 	}
 }
