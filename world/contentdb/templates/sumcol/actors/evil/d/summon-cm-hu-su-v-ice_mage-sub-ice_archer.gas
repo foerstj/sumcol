@@ -3,7 +3,6 @@
 	specializes = ice_archer_base;
 
 	doc = "[summon] ice_archer (good) (sub)";
-    actor:alignment = aa_good;
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
    	[inventory]

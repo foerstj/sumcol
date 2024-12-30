@@ -9,7 +9,8 @@
 	}
 	[spell_summon_random]
 	{
-		monster_summon = true;
+		monster_summon = false;
+
 		spawn_radius	= 3.0;
 		effect_script = "summon";
 		end_script = "un_summon";

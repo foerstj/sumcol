@@ -3,7 +3,6 @@
 	specializes = swamp_slinger_base;
 
 	doc = "[summon] swamp_slinger (good) (sub)";
-    actor:alignment = aa_good;
 	aspect:experience_value = 0;
 	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
     physics:explode_when_killed = false;
