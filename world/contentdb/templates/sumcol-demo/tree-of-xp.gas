@@ -1,0 +1,19 @@
+[t:template,n:tree_of_xp]
+{
+    specializes = tretch_base;  // reusing base template of a sumcol summon
+
+    common:screen_name = "Tree of Experience";
+    [aspect]
+    {
+        max_life = 1000000;
+        life = 1000000;
+        experience_value = 1000000000;  // 1k xp per hp
+    }
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
+	[defend] { defense = 1000; }
+	[inventory] { [pcontent] {} }
+}
