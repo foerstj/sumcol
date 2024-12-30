@@ -1,0 +1,20 @@
+[t:template,n:ice_warrior_good_sub_summon]
+{
+	specializes = ice_warrior_base;
+
+	doc = "[summon] ice_warrior (good) (sub)";
+    actor:alignment = aa_good;
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+   	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+    	[equipment]
+		{
+            es_weapon_hand = sd_un_ice_avg;
+		}
+		[pcontent]
+		{
+		}
+	}
+}
