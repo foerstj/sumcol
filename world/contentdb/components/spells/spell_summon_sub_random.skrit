@@ -191,8 +191,10 @@ state SummonGo$
 					summoned_goid$.Go.actor.ssetalignment( caster$.Go.actor.alignment );
 				}
 				
-				// create Omni version of the spell.
-				GoCloneReq cloneReq$ = MakeGoCloneReq( Owner.go.Parent.Goid, owner.goid );  // omni go will have same parent
+				// Create omni version of the spell.
+                // Using the summoned go as parent of the omni spell. If you use the owner's parent, the omni will vanish together with the caster, leaving noone to control the sub-summon!
+				//GoCloneReq cloneReq$ = MakeGoCloneReq( Owner.go.Parent.Goid, owner.goid );  // omni go will have same parent
+				GoCloneReq cloneReq$ = MakeGoCloneReq( summoned_goid$, owner.goid );  // omni go will have the sub-summon as parent
 				cloneReq$.Omni = true;
 				Goid new_spell$ = GoDb.SCloneGo( cloneReq$ );
 				
