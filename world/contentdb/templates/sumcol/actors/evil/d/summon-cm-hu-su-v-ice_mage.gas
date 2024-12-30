@@ -1,4 +1,5 @@
-[t:template,n:ice_mage_summon]
+[t:template,n:ice_mage_summon] { specializes = ice_mage_summon_base; }
+[t:template,n:ice_mage_summon_base]
 {
     specializes = ice_mage_base;
 
@@ -23,4 +24,30 @@
 			&spell_chances				= "0.5,                     0.5"
 			&spells						= "spell_ice_mage_iceblast, spell_ice_mage_summon_summon";
 	}
+}
+
+[t:template,n:ice_mage_attacking_summon]
+{
+    specializes = ice_mage_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_ice_mage_iceblast;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
+
+[t:template,n:ice_mage_summoning_summon]
+{
+    specializes = ice_mage_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_spell_1 = spell_ice_mage_summon_summon;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
 }
