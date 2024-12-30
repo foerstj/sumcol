@@ -22,7 +22,7 @@ property string script_params$		= ""   	doc = "Parameters to send to SiegeFx scr
 property string state_name$			= "summoned"			doc = "Name of effect to use as a generic state and as a screen name.";
 property string description$		= ""	doc = "Description of enchantment being applied";
 property string caster_description$	= ""	doc = "Description of enchantment being applied to the caster";
-property float	spawn_radius$		= -1.0	doc = "Name of effect to use as a generic state and as a screen name on the caster.";
+property float	spawn_radius$		= -1.0	doc = "Used to find a position for the summon";
 property bool	monster_summon$		= false	doc	= "Is a monster casting this spell?";
 
 owner = GoSkritComponent;
@@ -136,9 +136,9 @@ startup state CastBegin$
 			}
 			
 			// Make this go have the same membership as the caster
-			summoned_goid$.Go.Common.SCopyMembership( caster$ );	
+			summoned_goid$.Go.Common.SCopyMembership( caster$ );
 		
-			// watch out pet, so if he dies we can control a new pet.
+			// watch our pet, so if he dies we can control a new pet.
 			GoDb.StartWatching( owner.Goid, summoned_goid$);
 		
 			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(summoned_goid$.Go, caster$.Go);
@@ -149,11 +149,14 @@ startup state CastBegin$
 		}
 	}
 
-	transition -> SummonGo$ : OnGoHandleMessage( WE_SPELL_SYNC_MID );
-	transition -> Stay$ : OnTimer( 1 );
+	transition -> SummonGo$ : OnGoHandleMessage( WE_SPELL_SYNC_MID );  // Normal Go
+	transition -> Stay$ : OnTimer( 1 );  // Omni Go
 	
 	Trigger OnTimer$( 2 )
 	{
+		////////////////////
+		// Normal Go
+
 		if( target$.IsValidMp && caster$.IsValidMp )
 		{
 			// Copy the reference to the starting position into SiegeFx persistant storage
@@ -207,12 +210,12 @@ state SummonGo$
 				
 				// send Omni version an Activate to get it started.
 				PostWorldMessage( WE_REQ_ACTIVATE, caster$, new_spell$, MakeInt( summoned_goid$ ), 0 );
-			}	
+			}
 		}
 		// delete normal version of the spell.
 		SetState Finished$;
-	}	
-}			 
+	}
+}
 
 state Stay$
 {
@@ -275,11 +278,11 @@ state CleanUp$
 			if(!monster_summon$)
 			{
 				summoned_goid$.Go.Aspect.ClearExperienceBenefactor();
-				// we dont want to be able to see the dude's health
+				// we dont want to be able to see the dude's health anymore
 				summoned_goid$.Go.Actor.SSetCanShowHealth( false );
 			}
 
-			summoned_goid$.Go.Actor.SRemoveGenericState( state_name$ );		
+			summoned_goid$.Go.Actor.SRemoveGenericState( state_name$ );
 			 
 			GoDb.StopWatching( owner.Goid, summoned_goid$);
 		}
