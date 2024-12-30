@@ -1,0 +1,16 @@
+[t:template,n:swamp_creature_good_sub_summon]
+{
+	specializes = swamp_creature_base;
+
+	doc = "[summon] swamp_creature (good) (sub)";
+    actor:alignment = aa_good;
+	aspect:experience_value = 0;
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+    physics:explode_when_killed = false;
+   	[inventory]
+	{
+		[pcontent]
+		{
+		}
+	}
+}
