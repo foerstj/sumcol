@@ -37,6 +37,8 @@
     {
         [other]
         {
+            // witches
+            il_main = spell_summon_swamp_witch;
             // fillers nm
             il_main = spell_summon_swarmling;
             il_main = spell_summon_jungle_angler;
@@ -370,6 +372,8 @@
             il_main = spell_summon_braak;
             il_main = scroll_summon_pitiful_braak;
             il_main = scroll_summon_ferocious_braak;
+            // witches
+            il_main = spell_summon_swamp_witch;
         }
     }
 }
