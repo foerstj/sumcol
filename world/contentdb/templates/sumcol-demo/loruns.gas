@@ -53,6 +53,7 @@
 			intelligence 	= 0, 0, 10;
 
 			combat_magic 	= 0, 0,	0;
+			uber 			= 0, 0,	0;
 		}
     }
 }
@@ -74,6 +75,7 @@
 			intelligence 	= 3.50, 0, 10;
 
 			combat_magic 	= 5, 0,	0;
+			uber 			= 5, 0,	0;
 		}
     }
 }
@@ -95,6 +97,7 @@
 			intelligence 	= 7.00, 0, 10;
 
 			combat_magic 	= 10,	0,	0;
+			uber 			= 10,	0,	0;
 		}
     }
 }
@@ -116,6 +119,7 @@
 			intelligence 	=10.50, 0, 10;
 
 			combat_magic 	= 15,	0,	0;
+			uber 			= 15,	0,	0;
 		}
     }
 }
@@ -137,6 +141,7 @@
 			intelligence 	=14.00, 0, 10;
 
 			combat_magic 	= 20,	0,	0;
+			uber 			= 20,	0,	0;
 		}
     }
 }
@@ -158,6 +163,7 @@
 			intelligence 	=17.50, 0, 10;
 
 			combat_magic 	= 25,	0,	0;
+			uber 			= 25,	0,	0;
 		}
     }
 }
@@ -179,6 +185,7 @@
 			intelligence 	=21.00, 0, 10;
 
 			combat_magic 	= 30,	0,	0;
+			uber 			= 30,	0,	0;
 		}
     }
 }
@@ -200,6 +207,7 @@
 			intelligence 	=24.50, 0, 10;
 
 			combat_magic 	= 35,	0,	0;
+			uber 			= 35,	0,	0;
 		}
     }
 }
@@ -221,6 +229,7 @@
 			intelligence 	=28.00, 0, 10;
 
 			combat_magic 	= 40,	0,	0;
+			uber 			= 40,	0,	0;
 		}
     }
 }
@@ -242,6 +251,7 @@
 			intelligence 	=31.50, 0, 10;
 
 			combat_magic 	= 45,	0,	0;
+			uber 			= 45,	0,	0;
 		}
     }
 }
@@ -263,6 +273,7 @@
 			intelligence 	=35.00, 0, 10;
 
 			combat_magic 	= 50,	0,	0;
+			uber 			= 50,	0,	0;
 		}
     }
 }
@@ -284,6 +295,7 @@
 			intelligence 	=38.50, 0, 10;
 
 			combat_magic 	= 55,	0,	0;
+			uber 			= 55,	0,	0;
 		}
     }
 }
@@ -305,6 +317,7 @@
 			intelligence 	=42.00, 0, 10;
 
 			combat_magic 	= 60,	0,	0;
+			uber 			= 60,	0,	0;
 		}
     }
 }
@@ -326,6 +339,7 @@
 			intelligence 	=45.50, 0, 10;
 
 			combat_magic 	= 65,	0,	0;
+			uber 			= 65,	0,	0;
 		}
     }
 }

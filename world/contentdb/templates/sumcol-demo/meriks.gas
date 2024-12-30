@@ -54,6 +54,7 @@
 			intelligence 	= 0, 0, 10;
 
 			nature_magic 	= 0, 0,	0;
+			uber 			= 0, 0,	0;
 		}
     }
 }
@@ -75,6 +76,7 @@
 			intelligence 	= 3.65, 0, 10;
 
 			nature_magic 	= 5, 0,	0;
+			uber 			= 5, 0,	0;
 		}
     }
 }
@@ -96,6 +98,7 @@
 			intelligence 	= 7.30, 0, 10;
 
 			nature_magic 	= 10,	0,	0;
+			uber 			= 10,	0,	0;
 		}
     }
 }
@@ -117,6 +120,7 @@
 			intelligence 	=10.95, 0, 10;
 
 			nature_magic 	= 15,	0,	0;
+			uber 			= 15,	0,	0;
 		}
     }
 }
@@ -138,6 +142,7 @@
 			intelligence 	=14.60, 0, 10;
 
 			nature_magic 	= 20,	0,	0;
+			uber 			= 20,	0,	0;
 		}
     }
 }
@@ -159,6 +164,7 @@
 			intelligence 	=18.25, 0, 10;
 
 			nature_magic 	= 25,	0,	0;
+			uber 			= 25,	0,	0;
 		}
     }
 }
@@ -180,6 +186,7 @@
 			intelligence 	=21.90, 0, 10;
 
 			nature_magic 	= 30,	0,	0;
+			uber 			= 30,	0,	0;
 		}
     }
 }
@@ -201,6 +208,7 @@
 			intelligence 	=25.55, 0, 10;
 
 			nature_magic 	= 35,	0,	0;
+			uber 			= 35,	0,	0;
 		}
     }
 }
@@ -222,6 +230,7 @@
 			intelligence 	=29.20, 0, 10;
 
 			nature_magic 	= 40,	0,	0;
+			uber 			= 40,	0,	0;
 		}
     }
 }
@@ -243,6 +252,7 @@
 			intelligence 	=32.85, 0, 10;
 
 			nature_magic 	= 45,	0,	0;
+			uber 			= 45,	0,	0;
 		}
     }
 }
@@ -264,6 +274,7 @@
 			intelligence 	=36.50, 0, 10;
 
 			nature_magic 	= 50,	0,	0;
+			uber 			= 50,	0,	0;
 		}
     }
 }
@@ -285,6 +296,7 @@
 			intelligence 	=40.15, 0, 10;
 
 			nature_magic 	= 55,	0,	0;
+			uber 			= 55,	0,	0;
 		}
     }
 }
@@ -306,6 +318,7 @@
 			intelligence 	=43.80, 0, 10;
 
 			nature_magic 	= 60,	0,	0;
+			uber 			= 60,	0,	0;
 		}
     }
 }
@@ -327,6 +340,7 @@
 			intelligence 	=47.45, 0, 10;
 
 			nature_magic 	= 65,	0,	0;
+			uber 			= 65,	0,	0;
 		}
     }
 }
