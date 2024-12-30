@@ -7,7 +7,7 @@
 	[inventory]
 	{
 	}
-	[spell_summon_random]
+	[spell_summon_sub_random]
 	{
 		monster_summon = false;
 
