@@ -20,18 +20,19 @@
 	}
 	[magic]
 	{
-		cast_range = 10;
-		cast_reload_delay = 1;
-		caster_state_name = "Controlling Monster";
-		effect_duration = 600;
 		requires_line_of_sight = true;
-		speed_bias = 1;
 		target_type_flags = tt_conscious_enemy;
 		usage_context_flags = uc_offensive;
-		state_name = "Controlling Monster";
-		require_state_check = true;
-
+		cast_range = 10;
+		cast_reload_delay = 1;
+		speed_bias = 1;
 		is_one_shot = true;
+
+		require_state_check = true;
+		caster_state_name = "Controlling Monster";
+		state_name = "Controlling Monster";
+
+		effect_duration = 60;  // That's enough, they can simply re-summon
 	}
 }
 
