@@ -14,6 +14,6 @@
 		damage_max = 0;
 		damage_min = 0;
 	}
-	[defend] { defense = 1000; }
+	[defend] { defense = 0; }
 	[inventory] { [pcontent] {} }
 }
