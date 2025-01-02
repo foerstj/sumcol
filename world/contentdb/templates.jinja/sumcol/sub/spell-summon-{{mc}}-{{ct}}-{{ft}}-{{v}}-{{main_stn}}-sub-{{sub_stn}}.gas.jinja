@@ -27,13 +27,13 @@
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_m | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
+                value = ((((((#src_combat_magic_level*4.2)*{{dmg_m | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_m | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
+                value = ((((((#src_combat_magic_level*4.2)*{{dmg_m | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
             }
             {% endif %}
             {% if dmg_r %}
@@ -41,13 +41,13 @@
             {
                 alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = (((((#magic*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #ranged_damage_min) - {{wpn_dmg_min | float}});
+                value = (((((#src_combat_magic_level*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #ranged_damage_min) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = (((((#magic*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #ranged_damage_max) - {{wpn_dmg_max | float}});
+                value = (((((#src_combat_magic_level*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #ranged_damage_max) - {{wpn_dmg_max | float}});
             }
             {% endif %}
             {% if dmg_c %}
@@ -55,32 +55,32 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #cmagic_damage_min) - {{spl_dmg_min | float}});
+                value = ((((((#src_combat_magic_level*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #cmagic_damage_min) - {{spl_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #cmagic_damage_max) - {{spl_dmg_max | float}});
+                value = ((((((#src_combat_magic_level*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #cmagic_damage_max) - {{spl_dmg_max | float}});
             }
             {% endif %}
             [*]
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*4.2)*{{armor | float}}) - #base_defense);
+                value = (((#src_combat_magic_level*4.2)*{{armor | float}}) - #base_defense);
             }
             [*]
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = ((((#magic*12)+(#spell_req_level*12))*{{life | float}}) - #maxlife);
+                value = ((((#src_combat_magic_level*12)+(#spell_req_level*12))*{{life | float}}) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*12)+(#spell_req_level*12))*{{life | float}});
+                value = (((#src_combat_magic_level*12)+(#spell_req_level*12))*{{life | float}});
             }
             {% if dmg_m %}
             [*]
@@ -88,9 +88,9 @@
                 alteration = alter_melee;
                 duration = #infinite;
                 {% if req_lvl <= 50 %}
-                value = ((#magic*{{ 1 - req_lvl/200 }})-#melee);
+                value = ((#src_combat_magic_level*{{ 1 - req_lvl/200 }})-#melee);
                 {% else %}
-                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#melee);
+                value = ((#src_combat_magic_level*{{ 0.75 + (req_lvl-50)/400 }})-#melee);
                 {% endif %}
             }
             {% endif %}
@@ -100,9 +100,9 @@
                 alteration = alter_ranged;
                 duration = #infinite;
                 {% if req_lvl <= 50 %}
-                value = ((#magic*{{ 1 - req_lvl/200 }})-#ranged);
+                value = ((#src_combat_magic_level*{{ 1 - req_lvl/200 }})-#ranged);
                 {% else %}
-                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#ranged);
+                value = ((#src_combat_magic_level*{{ 0.75 + (req_lvl-50)/400 }})-#ranged);
                 {% endif %}
             }
             {% endif %}
@@ -112,9 +112,9 @@
                 alteration = alter_combat_magic;
                 duration = #infinite;
                 {% if req_lvl <= 50 %}
-                value = ((#magic*{{ 1 - req_lvl/200 }})-#combat_magic_level);
+                value = ((#src_combat_magic_level*{{ 1 - req_lvl/200 }})-#combat_magic_level);
                 {% else %}
-                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#combat_magic_level);
+                value = ((#src_combat_magic_level*{{ 0.75 + (req_lvl-50)/400 }})-#combat_magic_level);
                 {% endif %}
             }
             {% endif %}
@@ -122,31 +122,31 @@
             {
                 alteration = alter_strength;
                 duration = #infinite;
-                value = (((#magic*0.64)+10) - #str);
+                value = (((#src_combat_magic_level*0.64)+10) - #str);
             }
             [*]
             {
                 alteration = alter_dexterity;
                 duration = #infinite;
-                value = (((#magic*0.27)+10) - #dex);
+                value = (((#src_combat_magic_level*0.27)+10) - #dex);
             }
             [*]
             {
                 alteration = alter_intelligence;
                 duration = #infinite;
-                value = (((#magic*0.09)+10) - #int);
+                value = (((#src_combat_magic_level*0.09)+10) - #int);
             }
             [*]
             {
                 alteration = alter_max_mana;
                 duration = #infinite;
-                value = ((#magic*19) - #maxmana);
+                value = ((#src_combat_magic_level*19) - #maxmana);
             }
             [*]
             {
                 alteration = alter_mana;
                 duration = 1.0;
-                value = (#magic*19);
+                value = (#src_combat_magic_level*19);
             }
         }
     }

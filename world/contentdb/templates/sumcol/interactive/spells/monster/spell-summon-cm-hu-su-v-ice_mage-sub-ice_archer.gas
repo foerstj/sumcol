@@ -26,67 +26,67 @@
             {
                 alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = (((((#magic*4.2)*1.0)*0.9) - #ranged_damage_min) - 33.0);
+                value = (((((#src_combat_magic_level*4.2)*1.0)*0.9) - #ranged_damage_min) - 33.0);
             }
             [*]
             {
                 alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = (((((#magic*4.2)*1.0)*1.1) - #ranged_damage_max) - 37.0);
+                value = (((((#src_combat_magic_level*4.2)*1.0)*1.1) - #ranged_damage_max) - 37.0);
             }
             [*]
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*4.2)*2.0) - #base_defense);
+                value = (((#src_combat_magic_level*4.2)*2.0) - #base_defense);
             }
             [*]
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = ((((#magic*12)+(#spell_req_level*12))*1.2) - #maxlife);
+                value = ((((#src_combat_magic_level*12)+(#spell_req_level*12))*1.2) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*12)+(#spell_req_level*12))*1.2);
+                value = (((#src_combat_magic_level*12)+(#spell_req_level*12))*1.2);
             }
             [*]
             {
                 alteration = alter_ranged;
                 duration = #infinite;
-                value = ((#magic*0.895)-#ranged);
+                value = ((#src_combat_magic_level*0.895)-#ranged);
             }
             [*]
             {
                 alteration = alter_strength;
                 duration = #infinite;
-                value = (((#magic*0.64)+10) - #str);
+                value = (((#src_combat_magic_level*0.64)+10) - #str);
             }
             [*]
             {
                 alteration = alter_dexterity;
                 duration = #infinite;
-                value = (((#magic*0.27)+10) - #dex);
+                value = (((#src_combat_magic_level*0.27)+10) - #dex);
             }
             [*]
             {
                 alteration = alter_intelligence;
                 duration = #infinite;
-                value = (((#magic*0.09)+10) - #int);
+                value = (((#src_combat_magic_level*0.09)+10) - #int);
             }
             [*]
             {
                 alteration = alter_max_mana;
                 duration = #infinite;
-                value = ((#magic*19) - #maxmana);
+                value = ((#src_combat_magic_level*19) - #maxmana);
             }
             [*]
             {
                 alteration = alter_mana;
                 duration = 1.0;
-                value = (#magic*19);
+                value = (#src_combat_magic_level*19);
             }
         }
     }
