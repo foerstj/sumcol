@@ -33,6 +33,7 @@
 		state_name = "Controlling Monster";
 
 		effect_duration = 60;  // That's enough, they can simply re-summon
+		apply_enchantments = false;
 	}
 }
 
