@@ -39,7 +39,7 @@ trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 		}
 	}
 }
-			
+
 startup state CastBegin$
 {
  	event OnGoHandleMessage$( eWorldEvent e$, WorldMessage msg$ )
@@ -95,7 +95,7 @@ startup state CastBegin$
         {
 			////////////////////
 			// Omni Go
-			
+
 			caster$ = msg$.GetSendFrom();
 			summoned_goid$ = MakeGoid( msg$.GetData1() );
 			
@@ -110,9 +110,22 @@ startup state CastBegin$
 
 			if(!monster_summon$)
 			{
-				// Setup where experience will go from who this actor damages
-				summoned_goid$.Go.aspect.SetExperienceBenefactor( caster$ );
-				summoned_goid$.Go.aspect.SetExperienceBenefactorSkill( owner.go.magic.skillclass );
+				// Setup where experience will go: to the player character who summoned the witch
+                Goid benefactor$ = caster$;
+                String benefactorSkill$ = owner.go.magic.skillClass;
+                if (caster$.isValid)
+                {
+                    Goid masterSpell$ = caster$.go.actor.getGenericStateSpellGoid( "summoned" );
+                    if (masterSpell$.isValid && masterSpell$.go.parent != null)
+                    {
+                        benefactor$ = masterSpell$.go.parent.goid;
+                        benefactorSkill$ = masterSpell$.go.magic.skillClass;
+                    }
+                }
+                report.genericf("Sub-summon benefactor: %p %s, %s\n", benefactor$, benefactor$.go.templateName, benefactorSkill$);
+
+				summoned_goid$.go.aspect.setExperienceBenefactor( benefactor$ );
+				summoned_goid$.go.aspect.setExperienceBenefactorSkill( benefactorSkill$ );
 			}
 
 			if( caster$.IsValid )
@@ -177,27 +190,27 @@ state SummonGo$
 			{
 				// Create new game objects as specified in delayed_pcontent block
 				owner.go.inventory.AddDelayedPcontent();
-			
+
 				Go summoned_go$ = owner.go.children.get( 0 );
-				
+
 				owner.go.inventory.RSRemove( summoned_go$, false );
 				summoned_go$.placement.SSetposition( SiegeFx.GetVariable( starting_pos$, owner.goid ), true );
-				
+
 				summoned_goid$ = summoned_go$.goid;
-				
+
 				if(!monster_summon$)
 				{
 					// Now match the alignment to whatever the caster is 
 					summoned_goid$.Go.actor.ssetalignment( caster$.Go.actor.alignment );
 				}
-				
+
 				// Create omni version of the spell.
                 // Using the summoned go as parent of the omni spell. If you use the owner's parent, the omni will vanish together with the caster, leaving noone to control the sub-summon!
 				//GoCloneReq cloneReq$ = MakeGoCloneReq( Owner.go.Parent.Goid, owner.goid );  // omni go will have same parent
 				GoCloneReq cloneReq$ = MakeGoCloneReq( summoned_goid$, owner.goid );  // omni go will have the sub-summon as parent
 				cloneReq$.Omni = true;
 				Goid new_spell$ = GoDb.SCloneGo( cloneReq$ );
-				
+
 				// send Omni version an Activate to get it started.
 				PostWorldMessage( WE_REQ_ACTIVATE, caster$, new_spell$, MakeInt( summoned_goid$ ), 0 );
 			}
@@ -284,7 +297,7 @@ state CleanUp$
 		this.CreateTimer( 1, .1 );
 	}
 }
-	
+
 state Finished$
 {
 	////////////////////
