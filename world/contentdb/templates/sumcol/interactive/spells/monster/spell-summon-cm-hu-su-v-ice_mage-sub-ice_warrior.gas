@@ -1,0 +1,12 @@
+[t:template,n:spell_ice_mage_summon_ice_warrior]
+{
+    specializes = base_spell_summon_sub;
+
+	[inventory]
+	{
+		[delayed_pcontent]
+		{
+            il_main = ice_warrior_good_sub_summon;
+		}
+	}
+}

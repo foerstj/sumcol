@@ -14,15 +14,16 @@
 		[other]
 		{
 			il_active_primary_spell = spell_ice_mage_iceblast;
-			il_spell_1 = spell_ice_mage_summon_summon;  // EDITED
+			il_spell_1 = spell_ice_mage_summon_ice_warrior;
+			il_spell_2 = spell_ice_mage_summon_ice_archer;
 		}
     }
 	[mind]
 	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                     0.5"
-			&spells						= "spell_ice_mage_iceblast, spell_ice_mage_summon_summon";
+			&spell_chances				= "0.5,                     0.25,                              0.25"
+			&spells						= "spell_ice_mage_iceblast, spell_ice_mage_summon_ice_warrior, spell_ice_mage_summon_ice_archer";
 	}
 }
 
@@ -39,14 +40,27 @@
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
 }
 
-[t:template,n:ice_mage_summoning_summon]
+[t:template,n:ice_mage_summoning_ice_warrior_summon]
 {
     specializes = ice_mage_summon_base;
 	[inventory]
 	{
 		[other]
 		{
-			il_spell_1 = spell_ice_mage_summon_summon;
+			il_spell_1 = spell_ice_mage_summon_ice_warrior;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
+
+[t:template,n:ice_mage_summoning_ice_archer_summon]
+{
+    specializes = ice_mage_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_spell_2 = spell_ice_mage_summon_ice_archer;
 		}
     }
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
