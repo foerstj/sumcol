@@ -393,6 +393,8 @@
             il_main = spell_summon_ancient_scorpiot_rcannon;
             il_main = spell_summon_ice_mage_attacking;
             il_main = spell_summon_ice_mage_summoning;
+            il_main = spell_summon_swamp_witch_attacking;
+            il_main = spell_summon_swamp_witch_summoning;
             il_main = spell_summon_kell_shot;
             il_main = spell_summon_kell_blast;
             il_main = spell_summon_kell_bolt;

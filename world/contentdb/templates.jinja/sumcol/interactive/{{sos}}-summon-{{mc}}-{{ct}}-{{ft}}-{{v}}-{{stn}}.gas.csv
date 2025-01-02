@@ -137,6 +137,8 @@ scroll;dark_wolf;wolf_black_boss_01;;a;Dark Wolf;1.75;cm;un;mb;v;;8700;14;43;1.2
 spell;tretch;tretch;;a;Tretch;2;nm;pl;st;v;;5300;0.5;32;1;;;;;;;;2;2.5;;;;
 spell;swamp_slinger;swamp_slinger;good;a;Swamp Slinger;1.5;nm;el;std;v;;52000;6;42;;;0.95;;;;65;67;0.8;1;;;;
 spell;swamp_witch;swamp_witch;;a;Swamp Witch;1.5;cm;hu;su;v;x;41000;6;37;;;0.9;;;;95;99;1;0.9;;;;
+spell;swamp_witch_attacking;swamp_witch_attacking;;a;Swamp Witch (Attacking);1.5;cm;hu;su;v;x;41000;6;37;;;0.9;;;;95;99;1;0.9;;;swamp_witch;
+spell;swamp_witch_summoning;swamp_witch_summoning;;a;Swamp Witch (Summoning);1.5;cm;hu;su;v;x;41000;6;37;;;0.9;;;;95;99;1;0.9;;;swamp_witch;
 spell;forest_phrak;phrak_forest;;a;Forest Phrak;0.75;nm;an;std;v;;36000;6;39;0.85;;;;;;;;2;0.4;;;;
 spell;googore_grub;googore_grub;;a;Googore Grub;0.75;nm;an;std;v;;53000;9;47;0.8;;;;;;;;1;0.4;;;;
 spell;hunter;hunter;;a;Hunter;1;cm;ro;std;v;;48000;7;45;0.95;;;;;;;;3;0.6;;;;
