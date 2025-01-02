@@ -18,6 +18,7 @@
     [magic]
     {
         required_level = 21;
+        max_level = 41;
 
         [enchantments]
         {
