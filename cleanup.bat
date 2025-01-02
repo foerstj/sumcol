@@ -6,7 +6,9 @@ set res_cs=Summons Collection
 :: path of DS installation
 set ds=%DungeonSiege%
 
-set target=loa
+if "%target%"=="" (
+  set target=loa
+)
 set dest_res=DSLOA
 set dest_map=DSLOA
 if "%target%"=="vanilla" (

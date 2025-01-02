@@ -23,7 +23,9 @@ set tc=%TankCreator%
 set mode=%1
 echo %mode%
 
-set target=loa
+if "%target%"=="" (
+  set target=loa
+)
 set dest_res=DSLOA
 set dest_map=DSLOA
 if "%target%"=="vanilla" (
