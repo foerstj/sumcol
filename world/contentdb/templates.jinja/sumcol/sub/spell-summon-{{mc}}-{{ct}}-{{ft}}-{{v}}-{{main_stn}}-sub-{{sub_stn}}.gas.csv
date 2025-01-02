@@ -1,5 +1,5 @@
-main_stn;mc;ct;ft;v;req_lvl;sub_stn;dmg_m;dmg_r;dmg_c;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life
-ice_mage;cm;hu;su;v;21;ice_warrior;1.05;;;;40;48;;;2;1.2
-ice_mage;cm;hu;su;v;21;ice_archer;;1;;;33;37;;;2;1.2
-swamp_witch;cm;hu;su;v;30;swamp_creature;1.1;;;;;;;;0.8;2.5
-swamp_witch;cm;hu;su;v;30;swamp_slinger;;;0.95;;;;65;67;0.8;1
+main_stn;mc;ct;ft;v;req_lvl;sub_stn;scale;dmg_m;dmg_r;dmg_c;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life
+ice_mage;cm;hu;su;v;21;ice_warrior;1.5;1.05;;;;40;48;;;2;1.2
+ice_mage;cm;hu;su;v;21;ice_archer;1.5;;1;;;33;37;;;2;1.2
+swamp_witch;cm;hu;su;v;30;swamp_creature;2.5;1.1;;;;;;;;0.8;2.5
+swamp_witch;cm;hu;su;v;30;swamp_slinger;1.5;;;0.95;;;;65;67;0.8;1

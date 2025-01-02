@@ -14,7 +14,7 @@
 		spawn_radius	= 3.0;
 		effect_script = "summon";
 		end_script = "un_summon";
-		script_params = "[scale(1.75)]";
+		script_params = "[scale(1.0)]";
 		description = "Summoned Creature";
 		caster_description = "Controlling Summoned";
 	}

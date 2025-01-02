@@ -15,6 +15,10 @@
     {
         screen_name = "Sub-Summon ice_archer";
     }
+    [spell_summon_sub_random]
+    {
+        script_params = "[scale(1.5)]";
+    }
     [magic]
     {
         required_level = 21;
