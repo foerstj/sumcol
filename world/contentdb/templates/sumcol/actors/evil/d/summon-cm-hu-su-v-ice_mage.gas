@@ -47,7 +47,7 @@
 	{
 		[other]
 		{
-			il_spell_1 = spell_ice_mage_summon_ice_warrior;
+			il_active_primary_spell = spell_ice_mage_summon_ice_warrior;
 		}
     }
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
@@ -60,7 +60,7 @@
 	{
 		[other]
 		{
-			il_spell_2 = spell_ice_mage_summon_ice_archer;
+			il_active_primary_spell = spell_ice_mage_summon_ice_archer;
 		}
     }
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
