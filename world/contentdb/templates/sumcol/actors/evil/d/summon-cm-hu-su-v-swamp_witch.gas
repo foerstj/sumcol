@@ -14,15 +14,16 @@
 		[other]
 		{
 			il_active_primary_spell = spell_ice_mage_balls;
-			il_spell_1 = spell_swamp_witch_summon_summon;  // EDITED
+			il_spell_1 = spell_swamp_witch_summon_swamp_creature;
+			il_spell_2 = spell_swamp_witch_summon_swamp_slinger;
 		}
     }
 	[mind]
 	{
 		jat_cast 						= world\ai\jobs\common\job_cast.skrit
 			?rand_spell					= true
-			&spell_chances				= "0.5,                  0.5"
-			&spells						= "spell_ice_mage_balls, spell_swamp_witch_summon_summon";
+			&spell_chances				= "0.5,                  0.25,                                    0.25"
+			&spells						= "spell_ice_mage_balls, spell_swamp_witch_summon_swamp_creature, spell_swamp_witch_summon_swamp_slinger";
 	}
 }
 
@@ -39,14 +40,27 @@
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
 }
 
-[t:template,n:swamp_witch_summoning_summon]
+[t:template,n:swamp_witch_summoning_swamp_creature_summon]
 {
     specializes = swamp_witch_summon_base;
 	[inventory]
 	{
 		[other]
 		{
-			il_spell_1 = spell_swamp_witch_summon_summon;
+			il_active_primary_spell = spell_swamp_witch_summon_swamp_creature;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
+
+[t:template,n:swamp_witch_summoning_swamp_slinger_summon]
+{
+    specializes = swamp_witch_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_swamp_witch_summon_swamp_slinger;
 		}
     }
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;

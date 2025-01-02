@@ -1,0 +1,93 @@
+[t:template,n:spell_swamp_witch_summon_swamp_creature] { specializes = spell_swamp_witch_summon_swamp_creature_base; }
+[t:template,n:spell_swamp_witch_summon_swamp_creature_base]
+{
+    specializes = base_spell_summon_sub;
+
+    doc = "spell swamp_witch sub-summon swamp_creature";
+	[inventory]
+	{
+		[delayed_pcontent]
+		{
+            il_main = swamp_creature_good_sub_summon;
+		}
+	}
+    [common]
+    {
+        screen_name = "Sub-Summon swamp_creature";
+    }
+    [magic]
+    {
+        required_level = 30;
+        max_level = 50;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = ((((((#src_combat_magic_level*4.2)*1.1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = ((((((#src_combat_magic_level*4.2)*1.1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#src_combat_magic_level*4.2)*0.8) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#src_combat_magic_level*12)+(#spell_req_level*12))*2.5) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#src_combat_magic_level*12)+(#spell_req_level*12))*2.5);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#src_combat_magic_level*0.85)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#src_combat_magic_level*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#src_combat_magic_level*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#src_combat_magic_level*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#src_combat_magic_level*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#src_combat_magic_level*19);
+            }
+        }
+    }
+}

@@ -395,7 +395,8 @@
             il_main = spell_summon_ice_mage_summoning_ice_warrior;
             il_main = spell_summon_ice_mage_summoning_ice_archer;
             il_main = spell_summon_swamp_witch_attacking;
-            il_main = spell_summon_swamp_witch_summoning;
+            il_main = spell_summon_swamp_witch_summoning_swamp_creature;
+            il_main = spell_summon_swamp_witch_summoning_swamp_slinger;
             il_main = spell_summon_kell_shot;
             il_main = spell_summon_kell_blast;
             il_main = spell_summon_kell_bolt;
