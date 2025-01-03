@@ -1,0 +1,107 @@
+[t:template,n:dsx_rune_caster_base]  // = dsx_rune_caster
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_rune_caster";
+	specializes = rune_caster_base;
+
+	[actor]
+		{
+			[skills]
+				{
+					strength     =	15, 0;
+					intelligence =	8, 0;
+					dexterity    =	10, 0;
+					nature_magic =	13, 0;
+					combat_magic =	13, 0;
+				}
+		}
+	[aspect]
+		{
+			experience_value = 520;
+			life 			= 325;
+			max_life 		= 325;
+			mana 			= 40;
+			max_mana 		= 40;	
+		}
+	[attack]
+		{
+			attack_range = 0.5;
+			damage_max = 50;
+			damage_min = 44;
+		}
+	[common] { screen_name="Rune Caster"; }
+	
+	[generator_in_object]
+		{
+			child_template_name = swamp_switch_skeleton;
+			spawn_event = WE_KILLED;
+			spawn_chance = 1.0;
+		}
+	
+	[defend] { defense=111; }
+
+	[inventory]
+		{
+			spew_equipped_kill_count = ;		
+			selected_active_location = il_active_primary_spell;
+			[other]
+				{
+					il_active_primary_spell=dsx_spell_rune_caster_damage;
+					il_spell_1=dsx_spell_rune_caster_summon;
+				}
+				[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 18, Medium */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 565;
+				max = 1121;
+			}
+			[oneof*]
+			{
+				chance = 0.2;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.15;
+				il_main = #weapon/36-49;
+				il_main = #armor/14-109;
+				il_main = #*/36-49;
+			}
+			[oneof*]
+			{
+				chance = 0.0075;
+				il_main = #weapon/-rare(1)/39-55;
+				il_main = #armor/-rare(1)/81-165;
+				il_main = #*/-rare(1)/39-55;
+			}
+			
+		}
+	}
+		}
+	
+	[mind]
+		{
+			jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+				?social							= 0.35
+				&meander						= false
+				&still							= false;
+			jat_cast						= world\ai\jobs\common\job_cast.skrit
+				?rand_spell					= true
+				&spell_chances				= "0.5,									 0.5"
+				&spells						= "dsx_spell_rune_caster_damage, dsx_spell_rune_caster_summon";
+		
+			on_enemy_entered_ocz_flee		= true;
+			on_enemy_entered_ocz_attack = false;
+			on_enemy_entered_icz_flee		= true;
+			on_enemy_entered_icz_attack = false;
+			flee_count					= 1;
+		}
+
+}

@@ -39,6 +39,7 @@
         {
             // witches
             il_main = spell_summon_ice_mage;
+            il_main = spell_summon_rune_caster;
             il_main = spell_summon_swamp_witch;
             // fillers nm
             il_main = spell_summon_swarmling;
@@ -354,6 +355,7 @@
     {
         [other]
         {
+            // Vanilla
             // krug
             il_main = spell_summon_krug_scavenger;
             il_main = spell_summon_krug_scout;
@@ -376,6 +378,10 @@
             // witches
             il_main = spell_summon_ice_mage;
             il_main = spell_summon_swamp_witch;
+
+            // LoA
+            // witches
+            il_main = spell_summon_rune_caster;
         }
     }
 }
@@ -394,6 +400,9 @@
             il_main = spell_summon_ice_mage_attacking;
             il_main = spell_summon_ice_mage_summoning_ice_warrior;
             il_main = spell_summon_ice_mage_summoning_ice_archer;
+            il_main = spell_summon_rune_caster_attacking;
+            il_main = spell_summon_rune_caster_summoning_beast;
+            il_main = spell_summon_rune_caster_summoning_fiend;
             il_main = spell_summon_swamp_witch_attacking;
             il_main = spell_summon_swamp_witch_summoning_swamp_creature;
             il_main = spell_summon_swamp_witch_summoning_swamp_slinger;

@@ -120,6 +120,9 @@ spell;proxo;proxo;;a;Proxo;2;cm;ro;ex;v;;7600;1;40;1;;;;;;;;2.5;1;;;;Custom spel
 spell;blue_shard;shard_blue;;a;Blue Shard;1.25;nm;el;std;v;;24000;4;29;;;1;;;;58;64;3;1;;;;
 spell;spiked_maw;spiked_maw;;a;Spiked Maw;1;nm;an;std;v;;38000;5;35;;;1;;;;75;80;1.5;0.8;;;;
 spell;rune_caster;dsx_rune_caster;;a;Rune Caster;1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;44;50;1;0.9;;;;
+spell;rune_caster_attacking;dsx_rune_caster_attacking;;a;Rune Caster (Attacking);1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;44;50;1;0.9;;;rune_caster;
+spell;rune_caster_summoning_beast;dsx_rune_caster_summoning_dsx_rune_guardian;;a;Rune Caster (Summoning Beast);1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;44;50;1;0.9;;;rune_caster;
+spell;rune_caster_summoning_fiend;dsx_rune_caster_summoning_dsx_rune_guardian_r;;a;Rune Caster (Summoning Fiend);1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;44;50;1;0.9;;;rune_caster;
 spell;rune_fiend;dsx_rune_guardian_r;;a;Rune Fiend;1.5;cm;de;std;loa;;15000;6;27;;;1;;;;44;55;1;1.2;;;;
 spell;kikclaw_large;dsx_kikclaw;;a;Skitterclaw;1.5;nm;an;std;loa;;19000;6;29;0.9;;;;;;;;1;1;;;;
 scroll;frost_warrior;ice_warrior_boss_01;;a;Frost Warrior;1.5;nm;el;mb;v;;600;14;21;1.25;;;;40;48;;;2;3.6;;;;

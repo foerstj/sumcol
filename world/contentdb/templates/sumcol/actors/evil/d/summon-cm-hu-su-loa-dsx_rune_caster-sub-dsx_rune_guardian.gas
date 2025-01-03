@@ -1,0 +1,14 @@
+[t:template,n:dsx_rune_guardian_good_sub_summon]
+{
+	specializes = rune_guardian_base;
+
+	doc = "[summon] dsx_rune_guardian (good) (sub)";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+   	[inventory]
+	{
+		[pcontent]
+		{
+		}
+	}
+}

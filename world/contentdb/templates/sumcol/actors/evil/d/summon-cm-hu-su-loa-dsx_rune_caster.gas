@@ -1,0 +1,67 @@
+[t:template,n:dsx_rune_caster_summon] { specializes = dsx_rune_caster_summon_base; }
+[t:template,n:dsx_rune_caster_summon_base]
+{
+    specializes = dsx_rune_caster_base;
+
+    doc = "[summon] dsx_rune_caster";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+        }
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_rune_caster_damage;
+			il_spell_1 = spell_dsx_rune_caster_summon_dsx_rune_guardian;
+			il_spell_2 = spell_dsx_rune_caster_summon_dsx_rune_guardian_r;
+		}
+    }
+	[mind]
+	{
+		jat_cast 						= world\ai\jobs\common\job_cast.skrit
+			?rand_spell					= true
+			&spell_chances				= "0.5,                          0.25,                                           0.25"
+			&spells						= "dsx_spell_rune_caster_damage, spell_dsx_rune_caster_summon_dsx_rune_guardian, spell_dsx_rune_caster_summon_dsx_rune_guardian_r";
+	}
+}
+
+[t:template,n:dsx_rune_caster_attacking_summon]
+{
+    specializes = dsx_rune_caster_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_rune_caster_damage;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
+
+[t:template,n:dsx_rune_caster_summoning_dsx_rune_guardian_summon]
+{
+    specializes = dsx_rune_caster_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_dsx_rune_caster_summon_dsx_rune_guardian;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
+
+[t:template,n:dsx_rune_caster_summoning_dsx_rune_guardian_r_summon]
+{
+    specializes = dsx_rune_caster_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_dsx_rune_caster_summon_dsx_rune_guardian_r;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
