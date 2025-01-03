@@ -15,8 +15,8 @@
     }
     [gui]
     {
-        active_icon =   b_gui_ig_i_ic_sc_sumcol-cm-hu-su-v-frost_mage;
-        inventory_icon =b_gui_ig_i_ic_sc_sumcol-cm-hu-su-v-frost_mage-inv;
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-cm-hu-mb-su-v-frost_mage;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-cm-hu-mb-su-v-frost_mage-inv;
     }
     [spell_summon]
     {
@@ -27,7 +27,7 @@
     {
         effect_duration = 840;
         mana_cost = 0;
-        mana_cost_modifier = (#magic+1)*(18+0);
+        mana_cost_modifier = (#magic+1)*(18+1);
         required_level = 25;
         max_level = 45;
 
