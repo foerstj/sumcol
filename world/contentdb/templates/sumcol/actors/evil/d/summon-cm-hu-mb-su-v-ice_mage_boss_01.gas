@@ -26,3 +26,16 @@
 			&spells						= "spell_ice_mage_iceblast, spell_ice_mage_summon_ice_warrior, spell_ice_mage_summon_ice_archer";
 	}
 }
+
+[t:template,n:ice_mage_boss_01_attacking_summon]
+{
+    specializes = ice_mage_boss_01_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_ice_mage_iceblast;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}

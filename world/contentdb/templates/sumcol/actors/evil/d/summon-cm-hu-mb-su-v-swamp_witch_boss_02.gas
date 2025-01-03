@@ -26,3 +26,16 @@
 			&spells						= "spell_ice_mage_balls, spell_swamp_witch_summon_swamp_creature, spell_swamp_witch_summon_swamp_slinger";
 	}
 }
+
+[t:template,n:swamp_witch_boss_02_attacking_summon]
+{
+    specializes = swamp_witch_boss_02_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = spell_ice_mage_balls;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
