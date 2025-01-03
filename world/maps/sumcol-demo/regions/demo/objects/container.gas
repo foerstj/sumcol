@@ -1,3 +1,46 @@
+[t:chest_grs_03,n:0x00100048]
+{
+	[aspect]
+	{
+	  b does_block_path = false;
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = spell_flash;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = spell_bomb;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = sumcol_ring_mana;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = spell_icefury;
+			il_main = spell_fireball;
+			il_main = spell_explosive_powder;
+			il_main = potion_mana_super;
+			il_main = spell_iceblast;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = 3.27454,0,0.0180607,0x9d9c2a2d;
+	}
+}
+[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.08913,0,2.7782,0x84d72719;
+	}
+}
 [t:sumcol_demo_barrel_animals_vanilla,n:0x00100004]
 {
 	[placement]
@@ -111,49 +154,6 @@
 	[placement]
 	{
 	  p position = 2.17746,0,3.23134,0xf00cc9f1;
-	}
-}
-[t:chest_grs_03,n:0x00100048]
-{
-	[aspect]
-	{
-	  b does_block_path = false;
-	}
-	[inventory]
-	{
-		[other]
-		{
-			il_main = spell_iceblast;
-			il_main = potion_mana_super;
-			il_main = spell_explosive_powder;
-			il_main = spell_fireball;
-			il_main = spell_icefury;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = sumcol_ring_mana;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = spell_bomb;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = spell_flash;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -0.123599,0,3.16866,0x4dd17aa8;
-	}
-}
-[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.08913,0,2.7782,0x84d72719;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00100053]
