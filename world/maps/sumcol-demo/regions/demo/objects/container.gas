@@ -1,45 +1,3 @@
-[t:chest_grs_03,n:0x00100048]
-{
-	[aspect]
-	{
-	  b does_block_path = false;
-	}
-	[inventory]
-	{
-		[other]
-		{
-			il_main = sumcol_ring_mana;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = spell_bomb;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = spell_flash;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = spell_icefury;
-			il_main = spell_fireball;
-			il_main = spell_explosive_powder;
-			il_main = potion_mana_super;
-			il_main = spell_iceblast;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 17.0301,-3,-2.95491,0x642caff0;
-	}
-}
-[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
-{
-	[placement]
-	{
-	  p position = 14.4673,-3,5.20355,0x642caff0;
-	}
-}
 [t:sumcol_demo_barrel_animals_vanilla,n:0x00100004]
 {
 	[placement]
@@ -155,15 +113,47 @@
 	  p position = 2.17746,0,3.23134,0xf00cc9f1;
 	}
 }
-[t:barrel_glb_powder_keg,n:0x00100052]
+[t:chest_grs_03,n:0x00100048]
 {
-	[attack]
+	[aspect]
 	{
-	  f area_damage_radius = 2;
+	  b does_block_path = false;
+	}
+	[inventory]
+	{
+		[other]
+		{
+			il_main = spell_iceblast;
+			il_main = potion_mana_super;
+			il_main = spell_explosive_powder;
+			il_main = spell_fireball;
+			il_main = spell_icefury;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = sumcol_ring_mana;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = spell_bomb;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = spell_flash;
+		}
 	}
 	[placement]
 	{
-	  p position = -0.0365543,0,-0.172155,0x1eb66588;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.123599,0,3.16866,0x4dd17aa8;
+	}
+}
+[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
+{
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -3.08913,0,2.7782,0x84d72719;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00100053]
@@ -174,7 +164,8 @@
 	}
 	[placement]
 	{
-	  p position = -0.0564194,0,-0.0957813,0x6b868837;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = -0.219124,0,-0.4803,0x1797a39b;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00100054]
@@ -185,6 +176,18 @@
 	}
 	[placement]
 	{
-	  p position = 0.0934219,0,-0.104223,0x49918744;
+	  p position = -0.330462,0,0.210678,0x88423592;
+	}
+}
+[t:barrel_glb_powder_keg,n:0x00100052]
+{
+	[attack]
+	{
+	  f area_damage_radius = 2;
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.142746,0,0.460446,0x7a3aef8b;
 	}
 }

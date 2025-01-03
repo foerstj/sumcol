@@ -2,14 +2,16 @@
 {
 	[placement]
 	{
-	  p position = -2.07272,0,-0.475958,0x131cc381;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.232262,0,1.50315,0x4dd17aa8;
 	}
 }
 [t:potion_mana_super,n:0x00100002]
 {
 	[placement]
 	{
-	  p position = -2.0982,0,0.148001,0x131cc381;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.39169,0,1.52863,0x4dd17aa8;
 	}
 }
 [t:gold,n:0x00100003]
@@ -20,7 +22,8 @@
 	}
 	[placement]
 	{
-	  p position = -2.82124,0,-0.0992756,0x131cc381;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0.144416,0,2.25166,0x4dd17aa8;
 	}
 }
 [t:spell_resurrect_monster,n:0x00100050]
@@ -35,7 +38,7 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.06676,0,-0.223106,0x1eb66588;
+	  q orientation = 0,1,0,0;
+	  p position = 0.0918007,0,3.49065,0x7a3aef8b;
 	}
 }
