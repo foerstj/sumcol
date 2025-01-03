@@ -12,6 +12,7 @@
   b 0x0e8b844c = false;
   b 0x0f3f8484 = false;
   b 0x16f4adb3 = false;
+  b 0x19473a7d = false;
   b 0x1bbaba9e = false;
   b 0x1c157b94 = false;
   b 0x1ff1ada5 = false;
@@ -29,6 +30,7 @@
   b 0x397ddbac = false;
   b 0x3a0e7577 = false;
   b 0x3eaa20d4 = false;
+  b 0x47c21b74 = false;
   b 0x4972580b = false;
   b 0x49cb812e = false;
   b 0x4b48c3a6 = false;
@@ -49,9 +51,12 @@
   b 0x6a497e92 = false;
   b 0x6f5fbdcf = false;
   b 0x717ca7e8 = false;
+  b 0x71a2e525 = false;
   b 0x742bb1a0 = false;
   b 0x781dc54d = false;
+  b 0x799a7f7a = false;
   b 0x79d0eabf = false;
+  b 0x7a6b661b = false;
   b 0x7c3b31c5 = false;
   b 0x815888ca = false;
   b 0x858b946b = false;
@@ -62,6 +67,7 @@
   b 0x922213a8 = false;
   b 0x96e0c1aa = false;
   b 0x9d5dcd55 = false;
+  b 0x9e35250d = false;
   b 0xa041a943 = false;
   b 0xa3fbe5c6 = false;
   b 0xa6ab35f5 = false;
