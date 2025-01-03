@@ -25,7 +25,7 @@
     }
     [magic]
     {
-        effect_duration = 780;
+        effect_duration = 660;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+1);
         required_level = 23;
@@ -67,13 +67,13 @@
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = ((((#magic*12)+(#spell_req_level*12))*2.5) - #maxlife);
+                value = ((((#magic*12)+(#spell_req_level*12))*7.5) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*12)+(#spell_req_level*12))*2.5);
+                value = (((#magic*12)+(#spell_req_level*12))*7.5);
             }
             [*]
             {
