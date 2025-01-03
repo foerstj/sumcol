@@ -39,6 +39,7 @@
         {
             // witches
             il_main = spell_summon_ice_mage;
+            il_main = scroll_summon_frost_mage;
             il_main = spell_summon_rune_caster;
             il_main = spell_summon_swamp_witch;
             // fillers nm
@@ -377,6 +378,7 @@
             il_main = scroll_summon_ferocious_braak;
             // witches
             il_main = spell_summon_ice_mage;
+            il_main = scroll_summon_frost_mage;
             il_main = spell_summon_swamp_witch;
 
             // LoA

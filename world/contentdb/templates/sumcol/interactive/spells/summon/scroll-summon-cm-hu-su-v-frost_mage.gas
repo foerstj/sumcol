@@ -1,0 +1,104 @@
+[t:template,n:scroll_summon_frost_mage] { specializes = scroll_summon_frost_mage_base; }
+[t:template,n:scroll_summon_frost_mage_base]
+{
+    specializes = base_scroll_sumcol_cm;
+
+    doc = "scroll Summon Frost Mage";
+    [aspect]
+    {
+        gold_value = 1900;
+    }
+    [common]
+    {
+        screen_name = "Summon Frost Mage";
+        description = "Summons a Frost Mage to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-cm-hu-su-v-frost_mage;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-cm-hu-su-v-frost_mage-inv;
+    }
+    [spell_summon]
+    {
+        template_name = ice_mage_boss_01_summon;
+        script_params = "[scale(1.5)]";
+    }
+    [magic]
+    {
+        effect_duration = 960;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(18+0);
+        required_level = 25;
+        max_level = 45;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_cmagic_damage_min;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*1.1)*1.0)*0.9) - #cmagic_damage_min) - 27.0);
+            }
+            [*]
+            {
+                alteration = alter_cmagic_damage_max;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*1.1)*1.0)*1.1) - #cmagic_damage_max) - 29.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*1.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*0.9) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*0.9);
+            }
+            [*]
+            {
+                alteration = alter_combat_magic;
+                duration = #infinite;
+                value = ((#magic*0.875)-#combat_magic_level);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}
