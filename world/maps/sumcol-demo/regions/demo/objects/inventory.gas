@@ -32,6 +32,10 @@
 	{
 	  b is_visible = true;
 	}
+	[common]
+	{
+		screen_name = "spell_resurrect_monster";
+	}
 	[gui]
 	{
 	  b is_droppable = true;

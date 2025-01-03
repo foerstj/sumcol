@@ -2,11 +2,47 @@
 {
 	[common]
 	{
-		screen_name = "Krug Shaman Resurrection Test Area";
+		screen_name = "Special Testing";
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,0;
-	  p position = 0.371696,0,-1.62633,0x7a3aef8b;
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = 0.137724,0,3.07366,0xa5e1a107;
+	}
+}
+[t:sign_glb_no_return,n:0x00100008]
+{
+	[common]
+	{
+		screen_name = "Evaluation";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,2.98023e-008;
+	  p position = 0.0379558,0,2.97248,0x131cc381;
+	}
+}
+[t:sign_glb_no_return,n:0x0010000a]
+{
+	[common]
+	{
+		screen_name = "PContent";
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,-0.707107;
+	  p position = -3.09648,0,-0.162001,0x0cb7dafa;
+	}
+}
+[t:sign_glb_no_return,n:0x0010000d]
+{
+	[common]
+	{
+		screen_name = "General Testing";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,-0.707107;
+	  p position = 3.25697,0,0.102658,0xe605667a;
 	}
 }
