@@ -110,6 +110,8 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Resurrect: Krug Shaman
     - Miniboss: Brankar the Scavenger, Klandank the Krug, Futak the Trainer
     - Miniboss Resurrect: Huskar the Shaman
+  - Sub-summoning: Witches (CM): Ice Mage, Swamp Witch
+    - Miniboss: Frost Mage, Skank Witch, Lost Witch
 
 ### LoA Creatures:
 - Animals (NM):
@@ -161,6 +163,8 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Robots (CM):
   - Automatons: Weathered Automaton, Rusted Automaton
   - Scorpiots: Ancient Scorpiot
+- Humanoids:
+  - Sub-summoning: Witches (CM): Rune Caster
 
 
 ## Balancing
