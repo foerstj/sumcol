@@ -8,23 +8,23 @@
 	{
 		[other]
 		{
-			il_main = spell_iceblast;
-			il_main = potion_mana_super;
-			il_main = spell_explosive_powder;
-			il_main = spell_fireball;
-			il_main = spell_icefury;
+			il_main = spell_flash;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
-			il_main = sumcol_ring_mana;
+			il_main = potion_health_super;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
 			il_main = spell_bomb;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
+			il_main = sumcol_ring_mana;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = spell_flash;
+			il_main = spell_icefury;
+			il_main = spell_fireball;
+			il_main = spell_explosive_powder;
+			il_main = potion_mana_super;
+			il_main = spell_iceblast;
 		}
 	}
 	[placement]
@@ -148,6 +148,17 @@
 	  p position = -0.13514,0,2.12941,0x3a845ae4;
 	}
 }
+[t:barrel_glb_powder_keg,n:0x00100054]
+{
+	[attack]
+	{
+	  f area_damage_radius = 2;
+	}
+	[placement]
+	{
+	  p position = -0.330462,0,0.210678,0x88423592;
+	}
+}
 [t:barrel_glb_powder_keg,n:0x00100053]
 {
 	[attack]
@@ -158,17 +169,6 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = -0.219124,0,-0.4803,0x1797a39b;
-	}
-}
-[t:barrel_glb_powder_keg,n:0x00100054]
-{
-	[attack]
-	{
-	  f area_damage_radius = 2;
-	}
-	[placement]
-	{
-	  p position = -0.330462,0,0.210678,0x88423592;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00100052]

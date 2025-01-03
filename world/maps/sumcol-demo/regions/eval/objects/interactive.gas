@@ -1,13 +1,13 @@
-[t:sign_glb_01,n:0x00300010]
+[t:sign_glb_01,n:0x00300012]
 {
 	[common]
 	{
-		screen_name = "For req.lvl 0-30 (not moving)";
+		screen_name = "For req.lvl 30+";
 	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.44603,1.97247,1.56875,0x7c3b31c5;
+	  p position = -1.43962,1.97229,1.56795,0xea95aff5;
 	}
 }
 [t:sign_glb_01,n:0x0030000f]
@@ -22,6 +22,18 @@
 	  p position = -1.39023,1.9835,1.55582,0x815888ca;
 	}
 }
+[t:sign_glb_01,n:0x00300010]
+{
+	[common]
+	{
+		screen_name = "For req.lvl 0-30 (not moving)";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.44603,1.97247,1.56875,0x7c3b31c5;
+	}
+}
 [t:sign_glb_01,n:0x00300011]
 {
 	[common]
@@ -32,17 +44,5 @@
 	{
 	  q orientation = 0,0.92388,0,0.382683;
 	  p position = -1.48303,1.99449,1.60431,0x05e3f4a1;
-	}
-}
-[t:sign_glb_01,n:0x00300012]
-{
-	[common]
-	{
-		screen_name = "For req.lvl 30+";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.43962,1.97229,1.56795,0xea95aff5;
 	}
 }

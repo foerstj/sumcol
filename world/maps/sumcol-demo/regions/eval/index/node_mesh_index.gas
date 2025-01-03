@@ -4,5 +4,10 @@
 	0x003006a5 = t_xxx_flr_04x04-v0;
 	0x003006a9 = t_xxx_flr_04x08-v0;
 	0x003006aa = t_xxx_flr_08x08-v0;
+	0x003007f2 = t_xxx_ledg_08-cnr-ccav-t;
+	0x003007f3 = t_xxx_ledg_08-cnr-ccav-tf;
+	0x003007f5 = t_xxx_ledg_08-cnr-cnvx-t;
+	0x003007fa = t_xxx_ledg_08-thck-t;
+	0x003007fc = t_xxx_ledg_08-thin-t;
 	0x003009fa = t_xxx_wal_04-thck;
 }

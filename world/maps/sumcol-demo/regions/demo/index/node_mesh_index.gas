@@ -1,4 +1,8 @@
 [node_mesh_index]
 {
 	0x001006aa = t_xxx_flr_08x08-v0;
+	0x001007f2 = t_xxx_ledg_08-cnr-ccav-t;
+	0x001007f5 = t_xxx_ledg_08-cnr-cnvx-t;
+	0x001007fa = t_xxx_ledg_08-thck-t;
+	0x001007fc = t_xxx_ledg_08-thin-t;
 }
