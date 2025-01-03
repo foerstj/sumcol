@@ -33,14 +33,6 @@
 	  p position = 3.27454,0,0.0180607,0x9d9c2a2d;
 	}
 }
-[t:sumcol_demo_barrel_pcontent,n:0x0010004f]
-{
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.08913,0,2.7782,0x84d72719;
-	}
-}
 [t:sumcol_demo_barrel_animals_vanilla,n:0x00100004]
 {
 	[placement]
