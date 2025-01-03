@@ -8,23 +8,23 @@
 	{
 		[other]
 		{
-			il_main = spell_flash;
+			il_main = spell_iceblast;
+			il_main = potion_mana_super;
+			il_main = spell_explosive_powder;
+			il_main = spell_fireball;
+			il_main = spell_icefury;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
-			il_main = potion_health_super;
+			il_main = sumcol_ring_mana;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
 			il_main = spell_bomb;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
-			il_main = sumcol_ring_mana;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
-			il_main = spell_icefury;
-			il_main = spell_fireball;
-			il_main = spell_explosive_powder;
-			il_main = potion_mana_super;
-			il_main = spell_iceblast;
+			il_main = potion_health_super;
+			il_main = spell_flash;
 		}
 	}
 	[placement]
@@ -33,88 +33,65 @@
 	  p position = 3.27454,0,0.0180607,0x9d9c2a2d;
 	}
 }
+[t:sumcol_demo_barrel_new,n:0x0010004e]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.904696;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.842703,0,0.538378;
+	  p position = -1.91734,0,0.135478,0x9d9c2a2d;
+	}
+}
 [t:sumcol_demo_barrel_animals_vanilla,n:0x00100004]
 {
 	[placement]
 	{
-	  p position = -1.62725,0,-3.51343,0xf00cc9f1;
+	  p position = -0.494185,0,-3.62486,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_elementals,n:0x00100005]
 {
 	[placement]
 	{
-	  p position = -1.27423,-1.90735e-006,-2.271,0xf00cc9f1;
+	  p position = -0.141166,0,-2.38243,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_plants,n:0x00100006]
 {
 	[placement]
 	{
-	  p position = -1.27313,0,-0.995928,0xf00cc9f1;
+	  p position = -0.140066,0,-1.10735,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_undead,n:0x00100007]
 {
 	[placement]
 	{
-	  p position = -1.35697,0,0.266376,0xf00cc9f1;
-	}
-}
-[t:sumcol_demo_barrel_redone_vanilla,n:0x00100022]
-{
-	[placement]
-	{
-	  p position = 1.74723,0,-0.834198,0xf00cc9f1;
+	  p position = -0.223906,0,0.154946,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_demonics,n:0x00100036]
 {
 	[placement]
 	{
-	  p position = -1.32567,-9.53674e-007,1.34092,0xf00cc9f1;
-	}
-}
-[t:sumcol_demo_barrel_original_vanilla,n:0x00100037]
-{
-	[placement]
-	{
-	  p position = 2.86075,0,-0.853841,0xf00cc9f1;
-	}
-}
-[t:sumcol_demo_barrel_original_loa,n:0x00100038]
-{
-	[placement]
-	{
-	  p position = 2.84871,0,0.0988419,0xf00cc9f1;
-	}
-}
-[t:sumcol_demo_barrel_redone_loa,n:0x00100049]
-{
-	[placement]
-	{
-	  p position = 1.79007,0,0.174832,0xf00cc9f1;
-	}
-}
-[t:sumcol_demo_barrel_standardized,n:0x0010004a]
-{
-	[placement]
-	{
-	  p position = 2.21976,0,1.87765,0xf00cc9f1;
+	  p position = -0.192606,0,1.22949,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_animals_loa,n:0x0010004b]
 {
 	[placement]
 	{
-	  p position = -0.669517,0,-3.49035,0xf00cc9f1;
+	  p position = 0.463547,0,-3.60178,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_robots,n:0x0010004c]
 {
 	[placement]
 	{
-	  p position = -1.36985,0,2.35301,0xf00cc9f1;
+	  p position = -0.236786,0,2.24158,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_humanoids,n:0x0010004d]
@@ -126,26 +103,49 @@
 	[placement]
 	{
 	  q orientation = 0,0.149429,0,0.988772;
-	  p position = -1.44483,0,3.53378,0xf00cc9f1;
+	  p position = -0.264586,0,3.38338,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_new,n:0x0010004e]
+[t:sumcol_demo_barrel_redone_vanilla,n:0x00100022]
 {
-	[aspect]
-	{
-	  f scale_multiplier = 0.904696;
-	}
 	[placement]
 	{
-	  q orientation = 0,0.538378,0,0.842703;
-	  p position = -3.54495,0,0.0185108,0xf00cc9f1;
+	  p position = -0.56537,0,-1.93613,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_barrel_original_vanilla,n:0x00100037]
+{
+	[placement]
+	{
+	  p position = 0.548147,0,-1.95577,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_barrel_original_loa,n:0x00100038]
+{
+	[placement]
+	{
+	  p position = 0.536107,0,-1.00309,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_barrel_redone_loa,n:0x00100049]
+{
+	[placement]
+	{
+	  p position = -0.522531,0,-0.927096,0x3a845ae4;
+	}
+}
+[t:sumcol_demo_barrel_standardized,n:0x0010004a]
+{
+	[placement]
+	{
+	  p position = -0.0928411,0,0.775722,0x3a845ae4;
 	}
 }
 [t:sumcol_demo_barrel_testonly,n:0x00100055]
 {
 	[placement]
 	{
-	  p position = 2.17746,0,3.23134,0xf00cc9f1;
+	  p position = -0.13514,0,2.12941,0x3a845ae4;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00100053]
