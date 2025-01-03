@@ -1,0 +1,28 @@
+[t:template,n:swamp_witch_boss_01_summon] { specializes = swamp_witch_boss_01_summon_base; }
+[t:template,n:swamp_witch_boss_01_summon_base]
+{
+    specializes = swamp_witch_boss_01_base;
+
+    doc = "[summon] swamp_witch_boss_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+        }
+		[other]
+		{
+			il_active_primary_spell = spell_ice_mage_balls;
+			il_spell_1 = spell_swamp_witch_summon_swamp_creature;
+			il_spell_2 = spell_swamp_witch_summon_swamp_slinger;
+		}
+    }
+	[mind]
+	{
+		jat_cast 						= world\ai\jobs\common\job_cast.skrit
+			?rand_spell					= true
+			&spell_chances				= "0.5,                  0.25,                                    0.25"
+			&spells						= "spell_ice_mage_balls, spell_swamp_witch_summon_swamp_creature, spell_swamp_witch_summon_swamp_slinger";
+	}
+}
