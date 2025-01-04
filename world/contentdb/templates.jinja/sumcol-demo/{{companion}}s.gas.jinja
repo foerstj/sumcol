@@ -1,0 +1,23 @@
+{% for level in range(0, 70, 5) %}
+[t:template,n:sumcol_demo_{{companion}}_{{'%02d' % level}}]
+{
+	specializes = sumcol_demo_base_{{companion}};
+
+	[common]
+	{
+		screen_name = "{{companion | capitalize}} level {{level}}";
+	}
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= {{'%0.2f' % (level*str_factor)}}, 0, 10;
+			dexterity 		= {{'%0.2f' % (level*dex_factor)}}, 0, 10;
+			intelligence 	= {{'%0.2f' % (level*int_factor)}}, 0, 10;
+
+			{{skill}} 	= {{level}}, 0, 0;
+			uber 			= {{level}}, 0, 0;
+		}
+	}
+}
+{% endfor %}

@@ -1,307 +1,294 @@
 [t:template,n:sumcol_demo_merik_00]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 0";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
-			strength 		= 0, 0, 10;
-			dexterity 		= 0, 0, 10;
-			intelligence 	= 0, 0, 10;
+			strength 		= 0.00, 0, 10;
+			dexterity 		= 0.00, 0, 10;
+			intelligence 	= 0.00, 0, 10;
 
-			nature_magic 	= 0, 0,	0;
-			uber 			= 0, 0,	0;
+			nature_magic 	= 0, 0, 0;
+			uber 			= 0, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_05]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 5";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 0.45, 0, 10;
 			dexterity 		= 0.90, 0, 10;
 			intelligence 	= 3.65, 0, 10;
 
-			nature_magic 	= 5, 0,	0;
-			uber 			= 5, 0,	0;
+			nature_magic 	= 5, 0, 0;
+			uber 			= 5, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_10]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 10";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 0.90, 0, 10;
 			dexterity 		= 1.80, 0, 10;
 			intelligence 	= 7.30, 0, 10;
 
-			nature_magic 	= 10,	0,	0;
-			uber 			= 10,	0,	0;
+			nature_magic 	= 10, 0, 0;
+			uber 			= 10, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_15]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 15";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 1.35, 0, 10;
 			dexterity 		= 2.70, 0, 10;
-			intelligence 	=10.95, 0, 10;
+			intelligence 	= 10.95, 0, 10;
 
-			nature_magic 	= 15,	0,	0;
-			uber 			= 15,	0,	0;
+			nature_magic 	= 15, 0, 0;
+			uber 			= 15, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_20]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 20";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 1.80, 0, 10;
 			dexterity 		= 3.60, 0, 10;
-			intelligence 	=14.60, 0, 10;
+			intelligence 	= 14.60, 0, 10;
 
-			nature_magic 	= 20,	0,	0;
-			uber 			= 20,	0,	0;
+			nature_magic 	= 20, 0, 0;
+			uber 			= 20, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_25]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 25";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 2.25, 0, 10;
 			dexterity 		= 4.50, 0, 10;
-			intelligence 	=18.25, 0, 10;
+			intelligence 	= 18.25, 0, 10;
 
-			nature_magic 	= 25,	0,	0;
-			uber 			= 25,	0,	0;
+			nature_magic 	= 25, 0, 0;
+			uber 			= 25, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_30]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 30";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 2.70, 0, 10;
 			dexterity 		= 5.40, 0, 10;
-			intelligence 	=21.90, 0, 10;
+			intelligence 	= 21.90, 0, 10;
 
-			nature_magic 	= 30,	0,	0;
-			uber 			= 30,	0,	0;
+			nature_magic 	= 30, 0, 0;
+			uber 			= 30, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_35]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 35";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 3.15, 0, 10;
 			dexterity 		= 6.30, 0, 10;
-			intelligence 	=25.55, 0, 10;
+			intelligence 	= 25.55, 0, 10;
 
-			nature_magic 	= 35,	0,	0;
-			uber 			= 35,	0,	0;
+			nature_magic 	= 35, 0, 0;
+			uber 			= 35, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_40]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 40";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 3.60, 0, 10;
 			dexterity 		= 7.20, 0, 10;
-			intelligence 	=29.20, 0, 10;
+			intelligence 	= 29.20, 0, 10;
 
-			nature_magic 	= 40,	0,	0;
-			uber 			= 40,	0,	0;
+			nature_magic 	= 40, 0, 0;
+			uber 			= 40, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_45]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 45";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 4.05, 0, 10;
 			dexterity 		= 8.10, 0, 10;
-			intelligence 	=32.85, 0, 10;
+			intelligence 	= 32.85, 0, 10;
 
-			nature_magic 	= 45,	0,	0;
-			uber 			= 45,	0,	0;
+			nature_magic 	= 45, 0, 0;
+			uber 			= 45, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_50]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 50";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 4.50, 0, 10;
 			dexterity 		= 9.00, 0, 10;
-			intelligence 	=36.50, 0, 10;
+			intelligence 	= 36.50, 0, 10;
 
-			nature_magic 	= 50,	0,	0;
-			uber 			= 50,	0,	0;
+			nature_magic 	= 50, 0, 0;
+			uber 			= 50, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_55]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 55";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 4.95, 0, 10;
 			dexterity 		= 9.90, 0, 10;
-			intelligence 	=40.15, 0, 10;
+			intelligence 	= 40.15, 0, 10;
 
-			nature_magic 	= 55,	0,	0;
-			uber 			= 55,	0,	0;
+			nature_magic 	= 55, 0, 0;
+			uber 			= 55, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_60]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 60";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 5.40, 0, 10;
-			dexterity 		=10.80, 0, 10;
-			intelligence 	=43.80, 0, 10;
+			dexterity 		= 10.80, 0, 10;
+			intelligence 	= 43.80, 0, 10;
 
-			nature_magic 	= 60,	0,	0;
-			uber 			= 60,	0,	0;
+			nature_magic 	= 60, 0, 0;
+			uber 			= 60, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_merik_65]
 {
-    specializes = sumcol_demo_base_merik;
+	specializes = sumcol_demo_base_merik;
 
 	[common]
 	{
 		screen_name = "Merik level 65";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 5.85, 0, 10;
-			dexterity 		=11.70, 0, 10;
-			intelligence 	=47.45, 0, 10;
+			dexterity 		= 11.70, 0, 10;
+			intelligence 	= 47.45, 0, 10;
 
-			nature_magic 	= 65,	0,	0;
-			uber 			= 65,	0,	0;
+			nature_magic 	= 65, 0, 0;
+			uber 			= 65, 0, 0;
 		}
-    }
+	}
 }

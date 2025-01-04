@@ -1,307 +1,294 @@
 [t:template,n:sumcol_demo_lorun_00]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 0";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
-			strength 		= 0, 0, 10;
-			dexterity 		= 0, 0, 10;
-			intelligence 	= 0, 0, 10;
+			strength 		= 0.00, 0, 10;
+			dexterity 		= 0.00, 0, 10;
+			intelligence 	= 0.00, 0, 10;
 
-			combat_magic 	= 0, 0,	0;
-			uber 			= 0, 0,	0;
+			combat_magic 	= 0, 0, 0;
+			uber 			= 0, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_05]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 5";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 0.65, 0, 10;
 			dexterity 		= 0.85, 0, 10;
 			intelligence 	= 3.50, 0, 10;
 
-			combat_magic 	= 5, 0,	0;
-			uber 			= 5, 0,	0;
+			combat_magic 	= 5, 0, 0;
+			uber 			= 5, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_10]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 10";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 1.30, 0, 10;
 			dexterity 		= 1.70, 0, 10;
 			intelligence 	= 7.00, 0, 10;
 
-			combat_magic 	= 10,	0,	0;
-			uber 			= 10,	0,	0;
+			combat_magic 	= 10, 0, 0;
+			uber 			= 10, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_15]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 15";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 1.95, 0, 10;
 			dexterity 		= 2.55, 0, 10;
-			intelligence 	=10.50, 0, 10;
+			intelligence 	= 10.50, 0, 10;
 
-			combat_magic 	= 15,	0,	0;
-			uber 			= 15,	0,	0;
+			combat_magic 	= 15, 0, 0;
+			uber 			= 15, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_20]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 20";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 2.60, 0, 10;
 			dexterity 		= 3.40, 0, 10;
-			intelligence 	=14.00, 0, 10;
+			intelligence 	= 14.00, 0, 10;
 
-			combat_magic 	= 20,	0,	0;
-			uber 			= 20,	0,	0;
+			combat_magic 	= 20, 0, 0;
+			uber 			= 20, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_25]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 25";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 3.25, 0, 10;
 			dexterity 		= 4.25, 0, 10;
-			intelligence 	=17.50, 0, 10;
+			intelligence 	= 17.50, 0, 10;
 
-			combat_magic 	= 25,	0,	0;
-			uber 			= 25,	0,	0;
+			combat_magic 	= 25, 0, 0;
+			uber 			= 25, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_30]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 30";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 3.90, 0, 10;
 			dexterity 		= 5.10, 0, 10;
-			intelligence 	=21.00, 0, 10;
+			intelligence 	= 21.00, 0, 10;
 
-			combat_magic 	= 30,	0,	0;
-			uber 			= 30,	0,	0;
+			combat_magic 	= 30, 0, 0;
+			uber 			= 30, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_35]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 35";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 4.55, 0, 10;
 			dexterity 		= 5.95, 0, 10;
-			intelligence 	=24.50, 0, 10;
+			intelligence 	= 24.50, 0, 10;
 
-			combat_magic 	= 35,	0,	0;
-			uber 			= 35,	0,	0;
+			combat_magic 	= 35, 0, 0;
+			uber 			= 35, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_40]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 40";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 5.20, 0, 10;
 			dexterity 		= 6.80, 0, 10;
-			intelligence 	=28.00, 0, 10;
+			intelligence 	= 28.00, 0, 10;
 
-			combat_magic 	= 40,	0,	0;
-			uber 			= 40,	0,	0;
+			combat_magic 	= 40, 0, 0;
+			uber 			= 40, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_45]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 45";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 5.85, 0, 10;
 			dexterity 		= 7.65, 0, 10;
-			intelligence 	=31.50, 0, 10;
+			intelligence 	= 31.50, 0, 10;
 
-			combat_magic 	= 45,	0,	0;
-			uber 			= 45,	0,	0;
+			combat_magic 	= 45, 0, 0;
+			uber 			= 45, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_50]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 50";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 6.50, 0, 10;
 			dexterity 		= 8.50, 0, 10;
-			intelligence 	=35.00, 0, 10;
+			intelligence 	= 35.00, 0, 10;
 
-			combat_magic 	= 50,	0,	0;
-			uber 			= 50,	0,	0;
+			combat_magic 	= 50, 0, 0;
+			uber 			= 50, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_55]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 55";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 7.15, 0, 10;
 			dexterity 		= 9.35, 0, 10;
-			intelligence 	=38.50, 0, 10;
+			intelligence 	= 38.50, 0, 10;
 
-			combat_magic 	= 55,	0,	0;
-			uber 			= 55,	0,	0;
+			combat_magic 	= 55, 0, 0;
+			uber 			= 55, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_60]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 60";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 7.80, 0, 10;
-			dexterity 		=10.20, 0, 10;
-			intelligence 	=42.00, 0, 10;
+			dexterity 		= 10.20, 0, 10;
+			intelligence 	= 42.00, 0, 10;
 
-			combat_magic 	= 60,	0,	0;
-			uber 			= 60,	0,	0;
+			combat_magic 	= 60, 0, 0;
+			uber 			= 60, 0, 0;
 		}
-    }
+	}
 }
-
 [t:template,n:sumcol_demo_lorun_65]
 {
-    specializes = sumcol_demo_base_lorun;
+	specializes = sumcol_demo_base_lorun;
 
 	[common]
 	{
 		screen_name = "Lorun level 65";
 	}
-    [actor]
-    {
+	[actor]
+	{
 		[skills]
 		{
 			strength 		= 8.45, 0, 10;
-			dexterity 		=11.05, 0, 10;
-			intelligence 	=45.50, 0, 10;
+			dexterity 		= 11.05, 0, 10;
+			intelligence 	= 45.50, 0, 10;
 
-			combat_magic 	= 65,	0,	0;
-			uber 			= 65,	0,	0;
+			combat_magic 	= 65, 0, 0;
+			uber 			= 65, 0, 0;
 		}
-    }
+	}
 }
