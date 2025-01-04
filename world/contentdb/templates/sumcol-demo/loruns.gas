@@ -26,6 +26,8 @@
 		[other]
 		{
 			il_active_primary_spell = spell_fireshot;
+            il_main = potion_health_super;
+            il_main = potion_mana_super;
 		}
 	}
     [mind]
