@@ -7,7 +7,7 @@
     {
         max_life = 1000000;
         life = 1000000;
-        experience_value = 1000000000;  // 1k xp per hp
+        experience_value = 1000000000000;  // 1 million xp per hp
     }
 	[attack]
 	{
