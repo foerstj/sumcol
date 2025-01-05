@@ -6,7 +6,7 @@
     doc = "spell Summon Swamp Witch (Attacking)";
     [aspect]
     {
-        gold_value = 41000;
+        gold_value = 66000;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 37;
-        max_level = 57;
+        required_level = 47;
+        max_level = 67;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.815)-#combat_magic_level);
+                value = ((#magic*0.765)-#combat_magic_level);
             }
             [*]
             {
