@@ -192,6 +192,12 @@ Strength/Dexterity/Intelligence: based on caster's level.\
 Mana: based on caster's level.
 
 
+## Note
+
+The functionality for gaining experience from the summon's damage is broken in the Siege Engine. Over-simplified, it only works for Combat Magic summons with ranged attacks, e.g. Jade Gargoyle. Which sucks, especially for Nature Mages - and also prohibits using this mod to play a campaign as a "summoner".\
+But fear not, I made a fix for it! Have a look at the minimod "no xp limits - fixes summons xp".
+
+
 ## Attribution
 
 Made by me with lots of testing support from Estaf.
