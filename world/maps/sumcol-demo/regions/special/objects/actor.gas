@@ -1,7 +1,21 @@
-[t:tree_of_xp,n:0x00500006]
+[t:tree_of_xp_1,n:0x00500005]
+{
+	[placement]
+	{
+	  p position = -2.32949,0,-2.57093,0x61518f07;
+	}
+}
+[t:tree_of_xp_1k,n:0x00500006]
 {
 	[placement]
 	{
 	  p position = -2.27175,0,-2.53694,0x4c6ab25c;
+	}
+}
+[t:tree_of_xp_1m,n:0x00500007]
+{
+	[placement]
+	{
+	  p position = -2.25258,0,-2.47315,0x281c7f1c;
 	}
 }

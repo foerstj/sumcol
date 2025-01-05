@@ -1,4 +1,4 @@
-[t:template,n:tree_of_xp]
+[t:template,n:base_tree_of_xp]
 {
     specializes = tretch_base;  // reusing base template of a sumcol summon
 
@@ -7,7 +7,6 @@
     {
         max_life = 1000000;
         life = 1000000;
-        experience_value = 1000000000000;  // 1 million xp per hp
     }
 	[attack]
 	{
@@ -16,4 +15,26 @@
 	}
 	[defend] { defense = 1; }
 	[inventory] { [pcontent] {} }
+}
+
+[t:template,n:tree_of_xp_1]
+{
+    specializes = base_tree_of_xp;
+
+    aspect:experience_value = 1000000;  // 1 xp per hp
+    common:screen_name = "Tree of Light Experience";
+}
+[t:template,n:tree_of_xp_1k]
+{
+    specializes = base_tree_of_xp;
+
+    aspect:experience_value = 1000000000;  // 1k xp per hp
+    common:screen_name = "Tree of Ridiculous Experience";
+}
+[t:template,n:tree_of_xp_1m]
+{
+    specializes = base_tree_of_xp;
+
+    aspect:experience_value = 1000000000000;  // 1M xp per hp
+    common:screen_name = "Tree of Ludicrous Experience";
 }
