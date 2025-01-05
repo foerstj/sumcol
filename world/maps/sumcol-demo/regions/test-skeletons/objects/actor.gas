@@ -1,0 +1,76 @@
+[t:skeleton_mercenary_archer,n:0x00600003]
+{
+	[placement]
+	{
+	  p position = -1.41696,3.8147e-006,1.80554,0x1df9fd74;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x00600001]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  p position = -2.40454,0,1.96012,0xd1fe552b;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x00600000]
+{
+	[placement]
+	{
+	  p position = 2.72512,0,2.03113,0xdf92ec08;
+	}
+}
+[t:skeleton_mercenary_archer,n:0x00600002]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  p position = -2.11944,0,-2.04638,0x0a1c5a6d;
+	}
+}
+[t:2w_skeleton_mercenary_archer,n:0x00600007]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,5.96046e-008;
+	  p position = -2.73265,0,3.06551,0x06c41b84;
+	}
+}
+[t:2w_skeleton_mercenary_archer,n:0x00600004]
+{
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,5.96046e-008,0,1;
+	  p position = -2.56207,0,-2.28473,0x14de89d2;
+	}
+}
+[t:2w_skeleton_mercenary_archer,n:0x00600005]
+{
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = -2.02501,0,1.71796,0x7c5ef3fb;
+	}
+}
+[t:2w_skeleton_mercenary_archer,n:0x00600006]
+{
+	[placement]
+	{
+	  q orientation = 0,-5.96046e-008,0,1;
+	  p position = 3.50552,0,3.90817,0x0cbec62f;
+	}
+}

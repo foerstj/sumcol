@@ -11,4 +11,13 @@
 			0x00200002 = 0x13EF2AF4,2;
 		}
 	}
+	[t:stitch_editor,n:test-skeletons]
+	{
+		dest_region = test-skeletons;
+		[node_ids]
+		{
+			0x00600001 = 0x0224EB2B,4;
+			0x00600002 = 0x0224EB2B,3;
+		}
+	}
 }

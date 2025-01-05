@@ -1033,20 +1033,6 @@
 	  p position = -2.21718,0,0.0211182,0x2b4b7e42;
 	}
 }
-[t:skeleton_mercenary_archer,n:0x002000c8]
-{
-	[placement]
-	{
-	  p position = -1.41696,3.8147e-006,1.80554,0x25be0339;
-	}
-}
-[t:skeleton_mercenary_archer,n:0x002000c5]
-{
-	[placement]
-	{
-	  p position = 2.72512,0,2.03113,0x4fe0ff2e;
-	}
-}
 [t:gargoyle,n:0x00200142]
 {
 	[placement]
@@ -1109,68 +1095,6 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = 2.94501,0,-1.7326,0x83d86e65;
-	}
-}
-[t:skeleton_mercenary_archer,n:0x002000c6]
-{
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  p position = -2.40454,0,1.96012,0xeac47518;
-	}
-}
-[t:skeleton_mercenary_archer,n:0x002000c7]
-{
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  p position = -2.11944,0,-2.04638,0x18e17d96;
-	}
-}
-[t:2w_skeleton_mercenary_archer,n:0x002000cf]
-{
-	[placement]
-	{
-	  q orientation = 0,-5.96046e-008,0,1;
-	  p position = 3.50552,0,3.90817,0xb43b4c61;
-	}
-}
-[t:2w_skeleton_mercenary_archer,n:0x002000ce]
-{
-	[placement]
-	{
-	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = -2.02501,0,1.71796,0xed6542a2;
-	}
-}
-[t:2w_skeleton_mercenary_archer,n:0x002000cd]
-{
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,5.96046e-008,0,1;
-	  p position = -2.56207,0,-2.28473,0x1942b1d2;
-	}
-}
-[t:2w_skeleton_mercenary_archer,n:0x002000d0]
-{
-	[mind]
-	{
-		movement_orders = mo_hold;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,5.96046e-008;
-	  p position = -2.73265,0,3.06551,0x3b74f50f;
 	}
 }
 [t:swamp_slinger,n:0x00200138]

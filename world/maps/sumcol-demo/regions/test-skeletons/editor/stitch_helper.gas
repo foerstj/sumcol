@@ -1,0 +1,14 @@
+[stitch_helper_data]
+{
+	source_region_guid = 0x00000006;
+	source_region_name = test-skeletons;
+	[t:stitch_editor,n:test]
+	{
+		dest_region = test;
+		[node_ids]
+		{
+			0x00600001 = 0x3A235763,5;
+			0x00600002 = 0x3A235763,6;
+		}
+	}
+}
