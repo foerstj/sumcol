@@ -1,7 +1,7 @@
-[t:tree_of_xp,n:0x00500005]
+[t:tree_of_xp,n:0x00500006]
 {
 	[placement]
 	{
-	  p position = 1.8207,-1.90735e-006,0.188885,0x72d00973;
+	  p position = -2.27175,0,-2.53694,0x4c6ab25c;
 	}
 }

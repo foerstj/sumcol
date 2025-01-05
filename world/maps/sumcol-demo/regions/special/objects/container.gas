@@ -2,20 +2,23 @@
 {
 	[placement]
 	{
-	  p position = 2.07693,0,0.127831,0xe655a314;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.454556,0,-0.313534,0x17269572;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00500002]
 {
 	[placement]
 	{
-	  p position = 2.0093,0,-2.28541,0x14c779a7;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = -0.588761,0,-0.258678,0x38d7e73a;
 	}
 }
 [t:barrel_glb_powder_keg,n:0x00500000]
 {
 	[placement]
 	{
-	  p position = 0.800421,0,-2.01508,0xa87db0cc;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.95426,0,0.260223,0x15b84498;
 	}
 }
