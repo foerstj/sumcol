@@ -1,3 +1,10 @@
+[t:sumcol_gen-sumcol_krug_dummy_100,n:0x00700002]
+{
+	[placement]
+	{
+	  p position = 2.38732,0,-2.21014,0x81ff2230;
+	}
+}
 [t:sumcol_gen-sumcol_krug_dummy_50,n:0x00700000]
 {
 	[placement]
@@ -14,13 +21,6 @@
 	[placement]
 	{
 	  p position = -2.44194,0,2.53999,0x75f34985;
-	}
-}
-[t:sumcol_gen-sumcol_krug_dummy_100,n:0x00700002]
-{
-	[placement]
-	{
-	  p position = 2.38732,0,-2.21014,0x81ff2230;
 	}
 }
 [t:sumcol_gen-sumcol_krug_dummy_100_hold,n:0x00700003]
@@ -41,17 +41,6 @@
 	  p position = 1.87595,-7.62939e-006,2.13605,0x782a9c7a;
 	}
 }
-[t:sumcol_gen-sumcol_krug_dummy_200_hold,n:0x00700005]
-{
-	[common]
-	{
-		dev_instance_text = "GENERATOR - MO_HOLD";
-	}
-	[placement]
-	{
-	  p position = -0.044548,0,0.0601234,0x73d88b40;
-	}
-}
 [t:sumcol_gen-sumcol_krug_dummy_300,n:0x00700006]
 {
 	[placement]
@@ -68,5 +57,16 @@
 	[placement]
 	{
 	  p position = 2.61611,-7.62939e-006,2.45258,0x601ca8e1;
+	}
+}
+[t:sumcol_gen-sumcol_krug_dummy_200_hold,n:0x00700005]
+{
+	[common]
+	{
+		dev_instance_text = "GENERATOR - MO_HOLD";
+	}
+	[placement]
+	{
+	  p position = -0.044548,0,0.0601234,0x73d88b40;
 	}
 }
