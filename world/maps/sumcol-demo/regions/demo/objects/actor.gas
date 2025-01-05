@@ -904,13 +904,6 @@
 	  p position = -1.66171,3,-1.32801,0x7894cc94;
 	}
 }
-[t:tree_of_xp,n:0x00100056]
-{
-	[placement]
-	{
-	  p position = -0.183823,0,-0.455795,0xb863cb69;
-	}
-}
 [t:sumcol_demo_merik_110,n:0x00100020]
 {
 	[aspect]

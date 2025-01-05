@@ -20,6 +20,15 @@
 			0x00400002 = 0xA964680D,3;
 		}
 	}
+	[t:stitch_editor,n:special]
+	{
+		dest_region = special;
+		[node_ids]
+		{
+			0x00500001 = 0xE0D23E5F,4;
+			0x00500002 = 0xE0D23E5F,3;
+		}
+	}
 	[t:stitch_editor,n:test]
 	{
 		dest_region = test;

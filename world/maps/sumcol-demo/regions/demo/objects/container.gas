@@ -148,38 +148,3 @@
 	  p position = -0.13514,0,2.12941,0x3a845ae4;
 	}
 }
-[t:barrel_glb_powder_keg,n:0x00100054]
-{
-	[attack]
-	{
-	  f area_damage_radius = 2;
-	}
-	[placement]
-	{
-	  p position = -0.330462,0,0.210678,0x88423592;
-	}
-}
-[t:barrel_glb_powder_keg,n:0x00100053]
-{
-	[attack]
-	{
-	  f area_damage_radius = 2;
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = -0.219124,0,-0.4803,0x1797a39b;
-	}
-}
-[t:barrel_glb_powder_keg,n:0x00100052]
-{
-	[attack]
-	{
-	  f area_damage_radius = 2;
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 0.142746,0,0.460446,0x7a3aef8b;
-	}
-}

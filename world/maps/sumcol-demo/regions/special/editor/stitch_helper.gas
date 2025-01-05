@@ -2,4 +2,13 @@
 {
 	source_region_guid = 0x00000005;
 	source_region_name = special;
+	[t:stitch_editor,n:demo]
+	{
+		dest_region = demo;
+		[node_ids]
+		{
+			0x00500001 = 0x1B397B71,5;
+			0x00500002 = 0x1B397B71,6;
+		}
+	}
 }

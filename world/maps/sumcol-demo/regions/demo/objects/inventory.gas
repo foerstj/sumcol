@@ -26,23 +26,3 @@
 	  p position = 2.35754,0,-0.249952,0x9d9c2a2d;
 	}
 }
-[t:spell_resurrect_monster,n:0x00100050]
-{
-	[aspect]
-	{
-	  b is_visible = true;
-	}
-	[common]
-	{
-		screen_name = "spell_resurrect_monster";
-	}
-	[gui]
-	{
-	  b is_droppable = true;
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,0;
-	  p position = 0.0918007,0,3.49065,0x7a3aef8b;
-	}
-}

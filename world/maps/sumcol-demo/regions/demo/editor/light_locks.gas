@@ -1,34 +1,22 @@
 [light_locks]
 {
-  b 0x02e2dc5b = false;
   b 0x0c9e0699 = false;
   b 0x0cb7dafa = false;
   b 0x10d60752 = false;
   b 0x11746478 = false;
   b 0x131cc381 = false;
   b 0x14e3f089 = false;
-  b 0x173cfdec = false;
-  b 0x1797a39b = false;
   b 0x22748d56 = false;
   b 0x249949a6 = false;
-  b 0x25cc3de3 = false;
   b 0x3331072e = false;
   b 0x3a845ae4 = false;
-  b 0x3c382fa3 = false;
   b 0x47592211 = false;
-  b 0x553920d8 = false;
-  b 0x5d2c7cfa = false;
   b 0x608a81ae = false;
   b 0x623b4f55 = false;
   b 0x6ac44248 = false;
   b 0x7894cc94 = false;
-  b 0x79101814 = false;
-  b 0x7a3aef8b = false;
   b 0x7d356e90 = false;
   b 0x7f645c5e = false;
-  b 0x88423592 = false;
-  b 0x96e64cd8 = false;
-  b 0x97c79763 = false;
   b 0x9d9c2a2d = false;
   b 0xa53aa6b9 = false;
   b 0xa5e1a107 = false;
@@ -37,19 +25,12 @@
   b 0xa964680d = false;
   b 0xa9ee0381 = false;
   b 0xb02bd2fd = false;
-  b 0xb863cb69 = false;
   b 0xbae50081 = false;
   b 0xbfbba45a = false;
-  b 0xc2e07f1f = false;
-  b 0xc4d8611a = false;
   b 0xc76187a1 = false;
   b 0xccff347c = false;
-  b 0xd1ae4891 = false;
   b 0xe0d23e5f = false;
-  b 0xe13684dd = false;
   b 0xe605667a = false;
-  b 0xe7973bb0 = false;
   b 0xefba8d34 = false;
   b 0xf00cc9f1 = false;
-  b 0xfb0dac0b = false;
 }
