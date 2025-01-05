@@ -1,0 +1,21 @@
+[t:barrel_glb_powder_keg,n:0x00500001]
+{
+	[placement]
+	{
+	  p position = 2.07693,0,0.127831,0xe655a314;
+	}
+}
+[t:barrel_glb_powder_keg,n:0x00500002]
+{
+	[placement]
+	{
+	  p position = 2.0093,0,-2.28541,0x14c779a7;
+	}
+}
+[t:barrel_glb_powder_keg,n:0x00500000]
+{
+	[placement]
+	{
+	  p position = 0.800421,0,-2.01508,0xa87db0cc;
+	}
+}

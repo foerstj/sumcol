@@ -1,0 +1,19 @@
+[t:spell_resurrect_monster,n:0x00500003]
+{
+	[aspect]
+	{
+	  b is_visible = true;
+	}
+	[common]
+	{
+		screen_name = "spell_resurrect_monster";
+	}
+	[gui]
+	{
+	  b is_droppable = true;
+	}
+	[placement]
+	{
+	  p position = -3.42421,0,-2.40013,0xa87db0cc;
+	}
+}
