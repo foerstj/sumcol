@@ -1,0 +1,14 @@
+[stitch_helper_data]
+{
+	source_region_guid = 0x00000007;
+	source_region_name = test-krugs;
+	[t:stitch_editor,n:test]
+	{
+		dest_region = test;
+		[node_ids]
+		{
+			0x00700001 = 0x87CEFACB,5;
+			0x00700002 = 0x87CEFACB,6;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+[node_mesh_index]
+{
+	0x0070053f = t_xxx_cnr_04-ccav;
+	0x007006a9 = t_xxx_flr_04x08-v0;
+	0x007006aa = t_xxx_flr_08x08-v0;
+	0x007007f2 = t_xxx_ledg_08-cnr-ccav-t;
+	0x007007f5 = t_xxx_ledg_08-cnr-cnvx-t;
+	0x007007fa = t_xxx_ledg_08-thck-t;
+	0x007007fc = t_xxx_ledg_08-thin-t;
+	0x007009fa = t_xxx_wal_04-thck;
+}

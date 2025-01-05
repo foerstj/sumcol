@@ -11,6 +11,15 @@
 			0x00200002 = 0x13EF2AF4,2;
 		}
 	}
+	[t:stitch_editor,n:test-krugs]
+	{
+		dest_region = test-krugs;
+		[node_ids]
+		{
+			0x00700001 = 0xA59617CA,4;
+			0x00700002 = 0xA59617CA,3;
+		}
+	}
 	[t:stitch_editor,n:test-skeletons]
 	{
 		dest_region = test-skeletons;
