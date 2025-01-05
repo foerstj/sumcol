@@ -1,3 +1,11 @@
+[t:barrel_glb_powder_keg,n:0x00500000]
+{
+	[placement]
+	{
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 2.95426,0,0.260223,0x15b84498;
+	}
+}
 [t:barrel_glb_powder_keg,n:0x00500001]
 {
 	[placement]
@@ -12,13 +20,5 @@
 	{
 	  q orientation = 0,0.707107,0,0.707107;
 	  p position = -0.588761,0,-0.258678,0x38d7e73a;
-	}
-}
-[t:barrel_glb_powder_keg,n:0x00500000]
-{
-	[placement]
-	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.95426,0,0.260223,0x15b84498;
 	}
 }
