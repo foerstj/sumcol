@@ -60,6 +60,31 @@
 		from = "Summon Widow Spider";
 		to = "Witwenspinne beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Swarmling";
+		to = "Swarmling beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Flying Gritch";
+		to = "Fliegenden Gritch beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Greater Scrub Scorpion";
+		to = "Großen Buschskorpion beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Lesser Scrub Scorpion";
+		to = "Kleinen Buschskorpion beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Sandskreech";
+		to = "Sandskreech beschwören";
+	}
 
 	[0x0000]
 	{
@@ -120,5 +145,30 @@
 	{
 		from = "Summons a Widow Spider to guard the Caster.";
 		to = "Beschwört eine Witwenspinne, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Swarmling to guard the Caster.";
+		to = "Beschwört einen Swarmling, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Flying Gritch to guard the Caster.";
+		to = "Beschwört einen Fliegenden Gritch, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Greater Scrub Scorpion to guard the Caster.";
+		to = "Beschwört einen Großen Buschskorpion, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Lesser Scrub Scorpion to guard the Caster.";
+		to = "Beschwört einen Kleinen Buschskorpion, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Sandskreech to guard the Caster.";
+		to = "Beschwört einen Sandskreech, der den Anwender verteidigt.";
 	}
 }

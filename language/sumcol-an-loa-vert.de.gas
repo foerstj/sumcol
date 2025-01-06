@@ -60,6 +60,21 @@
 		from = "Summon Yellow Eye";
 		to = "Gelbauge beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Jungle Angler";
+		to = "Dschungelangler beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Shadow Angler";
+		to = "Schattenangler beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Leetch";
+		to = "Leetch beschwören";
+	}
 
 	[0x0000]
 	{
@@ -120,5 +135,20 @@
 	{
 		from = "Summons Yellow Eye to guard the Caster.";
 		to = "Beschwört Gelbauge, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Jungle Angler to guard the Caster.";
+		to = "Beschwört einen Dschungelangler, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadow Angler to guard the Caster.";
+		to = "Beschwört einen Schattenangler, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Leetch to guard the Caster.";
+		to = "Beschwört einen Leetch, der den Anwender verteidigt.";
 	}
 }

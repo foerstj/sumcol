@@ -1,0 +1,34 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Weathered Automaton";
+		to = "Abgenutzten Automaton beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Rusted Automaton";
+		to = "Rostigen Automaton beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Ancient Scorpiot";
+		to = "Alten Scorpiot beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Weathered Automaton to guard the Caster.";
+		to = "Beschwört einen Abgenutzten Automaton, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rusted Automaton to guard the Caster.";
+		to = "Beschwört einen Rostigen Automaton, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ancient Scorpiot to guard the Caster.";
+		to = "Beschwört einen Alten Scorpiot, der den Anwender verteidigt.";
+	}
+}

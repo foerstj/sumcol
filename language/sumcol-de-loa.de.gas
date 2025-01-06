@@ -20,6 +20,11 @@
 		from = "Summon Whelnar's Eyes";
 		to = "Whelnars Augen beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Rune Guardian";
+		to = "Runenwächter beschwören";
+	}
 
 	[0x0000]
 	{
@@ -40,5 +45,10 @@
 	{
 		from = "Summons Whelnar's Eyes to guard the Caster.";
 		to = "Beschwört Whelnars Augen, die den Anwender verteidigen.";
+	}
+	[0x0000]
+	{
+		from = "Summons the Rune Guardian to guard the Caster.";
+		to = "Beschwört den Runenwächter, der den Anwender verteidigt.";
 	}
 }

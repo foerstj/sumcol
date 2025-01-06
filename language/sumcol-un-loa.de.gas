@@ -10,6 +10,41 @@
 		from = "Summon Slime Zombie";
 		to = "Schleimzombie beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Living Dead";
+		to = "Lebende Tote beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Dark Acolyte";
+		to = "Finsteren Akolythen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Ghastly Necron";
+		to = "Üblen Necron beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Rahk";
+		to = "Rahk beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Scaly Rahk";
+		to = "Schuppigen Rahk beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Krakemaw the Putrid";
+		to = "Krakemaw den Stinkenden beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Noctiss";
+		to = "Noctiss beschwören";
+	}
 
 	[0x0000]
 	{
@@ -20,5 +55,40 @@
 	{
 		from = "Summons a Slime Zombie to guard the Caster.";
 		to = "Beschwört einen Schleimzombie, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Living Dead to guard the Caster.";
+		to = "Beschwört eine Lebende Tote, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Acolyte to guard the Caster.";
+		to = "Beschwört einen Finsteren Akolythen, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Ghastly Necron to guard the Caster.";
+		to = "Beschwört einen Üblen Necron, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rahk to guard the Caster.";
+		to = "Beschwört einen Rahk, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Scaly Rahk to guard the Caster.";
+		to = "Beschwört einen Schuppigen Rahk, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons Krakemaw the Putrid to guard the Caster.";
+		to = "Beschwört Krakemaw den Stinkenden, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Noctiss to guard the Caster.";
+		to = "Beschwört einen Noctiss, der den Anwender verteidigt.";
 	}
 }

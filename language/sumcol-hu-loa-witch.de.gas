@@ -1,0 +1,14 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Rune Caster";
+		to = "Runenleger beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Rune Caster to guard the Caster.";
+		to = "Beschwört einen Runenleger, der den Anwender verteidigt.";
+	}
+}
