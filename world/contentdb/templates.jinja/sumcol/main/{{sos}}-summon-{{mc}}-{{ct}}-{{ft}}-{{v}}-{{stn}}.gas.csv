@@ -86,10 +86,10 @@ spell;mummy;dsx_mummy;;a;Mummy;1.5;cm;un;std;loa;;3000;7;21;0.9;;;;;;;;;0.8;1;;;
 spell;rending_mhulliq;dsx_mhulliq_two;;a;Rending Mhulliq;1.5;nm;an;std;loa;;4800;6;23;1;;;;;;;;;1;1;;;;
 scroll;grizzly_furok;furok_boss_01;;a;Grizzly Furok;2;nm;an;mb;v;;960;15;23;1.3;;;;;;;;;1;3.6;;;;
 spell;ice_archer;ice_archer;good;an;Ice Archer;1.5;nm;el;std;v;;3000;4;20;;1;;;;33;37;;;2;1.2;;;;
-spell;ice_mage;ice_mage;;an;Ice Mage;1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;;;;27;29;1;0.9;;;;
-spell;ice_mage_attacking;ice_mage_attacking;;an;Ice Mage (Attacking);1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;;;;27;29;1;0.9;;;ice_mage;
-spell;ice_mage_summoning_ice_warrior;ice_mage_summoning_ice_warrior;;an;Ice Mage (Summoning Ice Warrior);1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;;;;27;29;1;0.9;;;ice_mage;
-spell;ice_mage_summoning_ice_archer;ice_mage_summoning_ice_archer;;an;Ice Mage (Summoning Ice Archer);1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;;;;27;29;1;0.9;;;ice_mage;
+spell;ice_mage;ice_mage;;an;Ice Mage;1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;0.2;;;27;29;1;0.9;;;;Spell shoots 5 arrows
+spell;ice_mage_attacking;ice_mage_attacking;;an;Ice Mage (Attacking);1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;0.2;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows
+spell;ice_mage_summoning_ice_warrior;ice_mage_summoning_ice_warrior;;an;Ice Mage (Summoning Ice Warrior);1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;0.2;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows
+spell;ice_mage_summoning_ice_archer;ice_mage_summoning_ice_archer;;an;Ice Mage (Summoning Ice Archer);1.5;nm;hu;su;v;x;7500;6;24;;;0.9;;0.2;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows
 spell;chitterskrag_baby;dsx_chitterskrag_baby;;an;Immature Chitterskrag;0.75;nm;an;std;loa;;4800;6;23;0.9;;;;;;;;;2;0.6;;;;
 spell;furok_slasher;furok_slasher;;a;Furok Slasher;2;nm;an;std;v;;7600;7;25;1.1;;;;;;;;;1;1.2;;;;
 spell;slarg;slarg;;a;Slarg;0.75;nm;an;std;v;;4800;7;23;0.85;;;;;;;;;1;0.6;;;;
@@ -108,8 +108,8 @@ spell;scaly_rahk;dsx_drake_death_two;;a;Scaly Rahk;2.5;cm;un;std;loa;;4800;4;22;
 spell;green_shard;shard_green;;a;Green Shard;1;nm;el;std;v;;12000;4;26;;;0.95;;;;;56;62;3;0.8;;;;
 spell;stalagnid;spider_stalagnid;;a;Stalagnid;1;nm;an;std;v;;7600;7;25;0.9;;;;;;;;;2;0.8;;;;
 spell;flying_gritch;dsx_flying_gritch;;a;Flying Gritch;1;nm;an;std;loa;;15000;8;28;0.8;;;;;;;;;1;0.5;;;;
-scroll;frost_mage;ice_mage_boss_01;;a;Frost Mage;1.5;nm;hu;mb-su;v;x;1900;14;25;;;1.1;;;;;27;29;1;2.7;;;;
-scroll;frost_mage_attacking;ice_mage_boss_01_attacking;;a;Frost Mage (Attacking);1.5;nm;hu;mb-su;v;x;1900;14;25;;;1.1;;;;;27;29;1;2.7;;;frost_mage;
+scroll;frost_mage;ice_mage_boss_01;;a;Frost Mage;1.5;nm;hu;mb-su;v;x;1900;14;25;;;1.1;;0.2;;;27;29;1;2.7;;;;Spell shoots 5 arrows
+scroll;frost_mage_attacking;ice_mage_boss_01_attacking;;a;Frost Mage (Attacking);1.5;nm;hu;mb-su;v;x;1900;14;25;;;1.1;;0.2;;;27;29;1;2.7;;;frost_mage;Spell shoots 5 arrows
 spell;greater_scrub_scorpion;dsx_scorpion_lg;;a;Greater Scrub Scorpion;1.5;nm;an;std;loa;;15000;6;28;0.85;;;;;;;;;2;0.8;;;;
 spell;shadow_angler;dsx_angler_shadow;;a;Shadow Angler;1;nm;an;std;loa;;15000;7;28;0.9;;;;;;;;;1;0.6;;;;
 spell;chitterskrag;dsx_chitterskrag_one;;a;Chitterskrag;2;nm;an;std;loa;;6000;6;24;1.1;;;;;;;;;2;1.8;;;;
