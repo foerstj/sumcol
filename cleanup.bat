@@ -1,8 +1,10 @@
 chcp 65001
+
 :: name of map, case-sensitive
 set map_cs=Summons Collection Demo
 :: name of resources, case-sensitive
 set res_cs=Summons Collection
+
 :: path of DS installation
 set ds=%DungeonSiege%
 
