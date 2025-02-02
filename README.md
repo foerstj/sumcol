@@ -30,141 +30,119 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - This mod is compatible with Unlimited Summons, except for the explosive summon (Blazing Elemental) which can still only be summoned once at a time.
 
 
-## Features
+## Creatures
 
-### Vanilla Creatures:
+### Vanilla Standard:
 - Animals (NM):
   - Phraks: Phrak, Phrak Piercer, Swamp Stinger, Forest Phrak
-    - Miniboss: Phrak Ballista
   - Spiders: Yellow Spider, Arakun Spider, Stalagnid, Frostnid, Frost Spitter
-  - Gremal Miniboss: Hulking Gremal
   - Manglers: Snapper, Mangler, Sea Mangler
-  - Worms: Googore Grub
   - Wolves: Gray Wolf, White Wolf
-    - Miniboss: Alpha Wolf
   - Dogs: Krug Dog, Krug Killer Dog
   - Drakes: Frost Drake, Blue Drake, Red Drake (CM)
-  - Klaws: Klaw
-    - Miniboss: Dark Klaw
-  - Furoks: Furok Slasher
-    - Miniboss: Grizzly Furok
-  - Spikers: Spiked Maw
-    - Miniboss: Rabid Spiked Maw
-  - Scorpion Miniboss: Venom Fiend
-  - Moths: Giant Moth
-  - Wasps: Giant Wasp
-  - Lectars: Lectar
-  - Slargs: Slarg
-  - Stingers: Soul Stinger
-  - Lizards: Giant Lizard
-  - Stationary:
-    - Skrubbs: Farm Skrubb, Black Skrubb
-    - Worms: Mine Worm, Googore
+  - Others: Googore Grub, Klaw, Furok Slasher, Spiked Maw, Giant Moth, Giant Wasp, Lectar, Slarg, Soul Stinger, Giant Lizard
 - Elementals:
   - Gargoyles (CM): Gargoyle (melee), Bronze Gargoyle
   - Ice (NM): Ice Warrior, Ice Archer, Ice Fly
-    - Miniboss: Frost Warrior, Frost Archer
   - Crystal (NM): Teal Shard, Green Shard, Blue Shard, Purple Shard
   - Swamp (NM): Swamp Creature, Swamp Slinger
-    - Miniboss: Swamp Abomination
   - Lava (CM): Lava Beast, Lava Spirit (melee)
-    - Miniboss: Magma Beast
-  - Fire (CM) Explosive: Blazing Elemental
 - Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard, Skeleton Ranger, Skeleton Mercenary
-    - Miniboss: Skeleton Captain
-  - Wolf Miniboss: Dark Wolf
-  - Wraiths: Wraith Mage
-  - Ghosts: Ghost
-  - Skulls: Rector
   - Zombies: Walking Corpse, Tortured Corpse
-    - Miniboss: Ancient Corpse
-- Plants (NM):
-  - Larch Miniboss: Infested Larch
-  - Stationary:
-    - Trees: Tretch
+  - Others: Wraith Mage, Ghost, Rector
 - Demonics (CM):
   - Mucosa: Vile Mucosa, Dark Mucosa
-    - Miniboss: Mucosa Brute
-  - Horrid
-  - Darklings: Forest Darkling
-  - Synged
-  - Toreck
-  - Kells: Kell
+  - Other: Horrid, Forest Darkling, Synged, Toreck, Kell
 - Robots (CM):
   - Pickers: Kill Bot, Hunter
-  - Copter
-  - Perforator
-  - Heater
-  - Blaster
   - Gobbots: Gobbot Shocker, Gobbot Igniter, Gobbot Gunner, Gobbot Grenadier
-  - Explosive: Proxo
-  - Stationary:
-    - Tesla Coil
-  - Stationary Heal:
-    - Tesla Heal Coil
+  - Others: Copter, Perforator, Heater, Blaster
 - Humanoids:
   - Braak (NM): Braak, Braak Mage
-    - Miniboss: Pitiful Braak, Ferocious Braak
   - Krug (NM): Krug Scavenger, Krug Scout, Krug Apprentice, Krug Grunt, Krug Chucker, Krug Raider, Krug Guard, Krug Commander
-    - Resurrect: Krug Shaman
-    - Miniboss: Brankar the Scavenger, Klandank the Krug, Futak the Trainer
-    - Miniboss Resurrect: Huskar the Shaman
-  - Sub-summoning: Witches (CM): Ice Mage, Swamp Witch
-    - Miniboss: Frost Mage, Skank Witch, Lost Witch
 
-### LoA Creatures:
+### Vanilla Non-Standard:
+- Stationary:
+  - Animals (NM):
+    - Skrubbs: Farm Skrubb, Black Skrubb
+    - Worms: Mine Worm, Googore
+  - Plants (NM): Tretch
+  - Robots (CM): Tesla Coil
+  - Stationary Heal:
+    - Robots (CM): Tesla Heal Coil
+- Explosive:
+  - Elementals:
+    - Fire (CM): Blazing Elemental
+  - Robots (CM): Proxo
+- Resurrect:
+  - Humanoids:
+    - Krug (NM): Krug Shaman
+- Sub-summoning:
+  - Humanoids:
+    - Witches (CM): Ice Mage, Swamp Witch
+- Miniboss Scrolls:
+  - Animals (NM): Phrak Ballista, Hulking Gremal, Alpha Wolf, Dark Klaw, Grizzly Furok, Rabid Spiked Maw, Venom Fiend
+  - Elementals:
+    - Ice (NM): Frost Warrior, Frost Archer
+    - Swamp (NM): Swamp Abomination
+    - Lava (CM): Magma Beast
+  - Undead (CM): Skeleton Captain, Dark Wolf, Ancient Corpse
+  - Plants (NM): Infested Larch
+  - Demonics (CM):
+    - Mucosa Brute
+  - Humanoids:
+    - Braak (NM): Pitiful Braak, Ferocious Braak
+    - Krug (NM): Brankar the Scavenger, Klandank the Krug, Futak the Trainer
+  - Miniboss Resurrect:
+    - Humanoids:
+      - Krug (NM): Huskar the Shaman
+  - Miniboss Sub-summoning:
+    - Humanoids:
+      - Witches (CM): Frost Mage, Skank Witch, Lost Witch
+
+### LoA Standard:
 - Animals (NM):
   - Spiders: Emerald Spider, Widow Spider
   - Manglers: Angler, Jungle Angler, Shadow Angler
-  - Worms: Ice Grub
-  - Moths: Ice Moth
-  - Midges: Swirling Midges
-  - Wolves: Varg
   - Lizards: Island Lizard, Thunder Lizard
   - Boars: Snow Boar, Mhulliq, Rending Mhulliq
   - Chitterskrags: Immature Chitterskrag, Chitterskrag, Spewing Chitterskrag
-    - Miniboss: Giant Chitterskrag
-  - Spikers: Jungle Spiker
   - Skitterclaws: Skitterling, Skitterclaw
-  - Rats: Monstrous Rat
   - Pickers: Swarmling Drone, Swarmling Queen, Sandskreech
-  - Bear Miniboss: Yellow Eye
-  - Phraks: Swarmling
-  - Slargs: Leetch
-  - Stingers: Flying Gritch
   - Scorpions: Greater Scrub Scorpion, Lesser Scrub Scorpion
-  - Stationary:
-    - Skrubbs: Jungle Skrubb
+  - Others: Ice Grub, Ice Moth, Swirling Midges, Varg, Jungle Spiker, Monstrous Rat, Swarmling, Leetch, Flying Gritch
 - Elementals:
   - Frost (NM): Frost Golem
   - Earth (NM): Marble Golem, Cobble Man
-    - Miniboss: Earth Elemental Minion
   - Swamp (NM): Bog Beast
-  - Air (NM) Miniboss: Air Elemental Minion
-  - Water (NM) Miniboss: Water Elemental Minion
 - Undead (CM):
   - Zombies: Mummy, Slime Zombie, Living Dead
-  - Necrons: Ghastly Necron
-  - Wraiths: Dark Acolyte
+  - Ghosts: Noctiss (red), Noctiss (blue)
   - Rahks: Rahk, Scaly Rahk
-    - Miniboss: Krakemaw the Putrid
-  - Ghosts: Noctiss (red & blue)
-- Plants (NM):
-  - Stationary:
-    - Vines: Killer Vines
-    - Mantraps: Mantrap
+  - Others: Ghastly Necron, Dark Acolyte
 - Demonics (CM):
-  - Mucosa: Large Twisted Mucosa
-    - Miniboss: Twisted Mucosa Brute
-  - Rune: Rune Fiend
-    - Miniboss: Rune Guardian
-  - Whelnar's Eyes
+  - Large Twisted Mucosa, Rune Fiend, Whelnar's Eyes
 - Robots (CM):
   - Automatons: Weathered Automaton, Rusted Automaton
-  - Scorpiots: Ancient Scorpiot
+  - Others: Ancient Scorpiot
 - Humanoids:
-  - Sub-summoning: Witches (CM): Rune Caster
+
+### LoA Non-Standard:
+- Stationary:
+  - Animals (NM): Jungle Skrubb
+  - Plants (NM): Killer Vines, Mantrap
+- Sub-summoning:
+  - Humanoids:
+    - Witches (CM): Rune Caster
+- Miniboss Scrolls:
+  - Animals (NM): Giant Chitterskrag, Yellow Eye
+  - Elementals:
+    - Earth (NM): Earth Elemental Minion
+    - Air (NM): Air Elemental Minion
+    - Water (NM): Water Elemental Minion
+  - Undead (CM): Krakemaw the Putrid
+  - Demonics (CM): Twisted Mucosa Brute, Rune Guardian
 
 
 ## Balancing
