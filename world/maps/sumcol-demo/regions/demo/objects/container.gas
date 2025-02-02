@@ -8,23 +8,23 @@
 	{
 		[other]
 		{
-			il_main = spell_flash;
+			il_main = spell_iceblast;
+			il_main = potion_mana_super;
+			il_main = spell_explosive_powder;
+			il_main = spell_fireball;
+			il_main = spell_icefury;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
-			il_main = potion_health_super;
+			il_main = sumcol_ring_mana;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
 			il_main = spell_bomb;
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
-			il_main = sumcol_ring_mana;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
-			il_main = spell_icefury;
-			il_main = spell_fireball;
-			il_main = spell_explosive_powder;
-			il_main = potion_mana_super;
-			il_main = spell_iceblast;
+			il_main = potion_health_super;
+			il_main = spell_flash;
 		}
 	}
 	[placement]
@@ -45,65 +45,102 @@
 	  p position = -1.91734,0,0.135478,0x9d9c2a2d;
 	}
 }
-[t:sumcol_demo_barrel_animals_vanilla,n:0x00100004]
+[t:sumcol_demo_barrel_vanilla_animals,n:0x00100031]
 {
 	[placement]
 	{
-	  p position = -0.494185,0,-3.62486,0xf00cc9f1;
+	  p position = 2.1243,0,-3.0192,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_elementals,n:0x00100005]
+[t:sumcol_demo_barrel_vanilla_demonics,n:0x00100032]
 {
 	[placement]
 	{
-	  p position = -0.141166,0,-2.38243,0xf00cc9f1;
+	  p position = 2.07048,0,-2.05302,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_plants,n:0x00100006]
+[t:sumcol_demo_barrel_vanilla_elementals,n:0x00100033]
 {
 	[placement]
 	{
-	  p position = -0.140066,0,-1.10735,0xf00cc9f1;
+	  p position = 2.03324,0,-0.967471,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_undead,n:0x00100007]
+[t:sumcol_demo_barrel_vanilla_humanoids,n:0x00100043]
 {
 	[placement]
 	{
-	  p position = -0.223906,0,0.154946,0xf00cc9f1;
+	  p position = 1.99918,0,-0.0733109,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_demonics,n:0x00100036]
+[t:sumcol_demo_barrel_vanilla_plants,n:0x00100044]
 {
 	[placement]
 	{
-	  p position = -0.192606,0,1.22949,0xf00cc9f1;
+	  p position = 1.97823,0,1.02432,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_animals_loa,n:0x0010004b]
+[t:sumcol_demo_barrel_vanilla_robots,n:0x00100045]
 {
 	[placement]
 	{
-	  p position = 0.463547,0,-3.60178,0xf00cc9f1;
+	  p position = 1.89655,0,2.24618,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_robots,n:0x0010004c]
+[t:sumcol_demo_barrel_vanilla_undead,n:0x00100046]
 {
 	[placement]
 	{
-	  p position = -0.236786,0,2.24158,0xf00cc9f1;
+	  p position = 1.92844,0,3.19508,0xf00cc9f1;
 	}
 }
-[t:sumcol_demo_barrel_humanoids,n:0x0010004d]
+[t:sumcol_demo_barrel_loa_animals,n:0x00100047]
 {
-	[aspect]
-	{
-	  f scale_multiplier = 0.977165;
-	}
 	[placement]
 	{
-	  q orientation = 0,0.149429,0,0.988772;
-	  p position = -0.264586,0,3.38338,0xf00cc9f1;
+	  p position = -1.99535,0,-3.28028,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_loa_demonics,n:0x0010004f]
+{
+	[placement]
+	{
+	  p position = -1.95384,-1.90735e-006,-2.15977,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_loa_elementals,n:0x00100050]
+{
+	[placement]
+	{
+	  p position = -1.99385,1.90735e-006,-1.0056,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_loa_humanoids,n:0x00100052]
+{
+	[placement]
+	{
+	  p position = -2.03142,0,0.0738335,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_loa_plants,n:0x00100053]
+{
+	[placement]
+	{
+	  p position = -2.12561,0,1.21612,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_loa_robots,n:0x00100054]
+{
+	[placement]
+	{
+	  p position = -2.10466,0,2.31416,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_loa_undead,n:0x00100056]
+{
+	[placement]
+	{
+	  p position = -2.17936,0,3.37569,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_redone_vanilla,n:0x00100022]
