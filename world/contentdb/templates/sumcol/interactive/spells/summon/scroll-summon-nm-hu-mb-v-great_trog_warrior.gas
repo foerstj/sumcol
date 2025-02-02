@@ -1,0 +1,104 @@
+[t:template,n:scroll_summon_great_trog_warrior] { specializes = scroll_summon_great_trog_warrior_base; }
+[t:template,n:scroll_summon_great_trog_warrior_base]
+{
+    specializes = base_scroll_sumcol_nm;
+
+    doc = "scroll Summon Great Trog Warrior";
+    [aspect]
+    {
+        gold_value = 5000;
+    }
+    [common]
+    {
+        screen_name = "Summon Great Trog Warrior";
+        description = "Summons a Great Trog Warrior to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-nm-hu-mb-v-great_trog_warrior;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-nm-hu-mb-v-great_trog_warrior-inv;
+    }
+    [spell_summon]
+    {
+        template_name = trog_warrior_boss_01_summon;
+        script_params = "[scale(1.5)]";
+    }
+    [magic]
+    {
+        effect_duration = 840;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(18+1);
+        required_level = 31;
+        max_level = 51;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = (((((((#magic*4.2)*1.25)*1)*0.9) - #melee_damage_min) - #base_damage) - 40.0);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = (((((((#magic*4.2)*1.25)*1)*1.1) - #melee_damage_max) - #base_damage) - 59.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*1.5) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*3.0) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*3.0);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic*0.845)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}
