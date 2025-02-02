@@ -1,0 +1,105 @@
+[t:template,n:bandit_ranged_base]  // = bandit_ranged
+{
+	doc = "bandit_ranged";
+	specializes = base_bandit;
+	[actor]
+	{
+		[skills]
+		{
+			strength =   14, 0;
+			intelligence = 10, 0;
+			dexterity =   12, 0;
+			ranged =  14,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 315;
+		max_life = 315;
+		mana = 20;
+		max_mana = 20;
+   		experience_value = 1138;
+
+		[textures]
+		{
+			0 = b_c_gah_fb_skin_34;
+			1 = b_c_pos_a3_033;
+		}
+	}
+	[common]
+	{
+		screen_name="Bandit Archer";
+		membership = monster, party_bandit_ranged, bandit;
+	}
+	[inventory]
+	{
+        custom_head = m_c_gah_fb_hlmt_head-05;
+    	selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[pcontent]
+		{
+			[all*]
+			{
+				es_feet = bo_bo_le_light;
+                es_shield_hand = bw_g_c_s_l_c_avg;
+			}
+			[oneof*]
+			{
+				[oneof*]
+				{
+				   chance = 0.05;
+				   il_main = potion_health_medium;
+				   il_main = potion_mana_medium;
+				}
+				[all*]
+				{
+	   				chance = 0.02;
+	                il_main = #spell/8-12;
+				}
+				[oneof*]
+				{
+					chance = 0.22;
+					il_main = #*/50-66;
+					il_main = #armor/29-141;
+				}
+                [oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/60-78;
+	                il_main = #armor/-rare(1)/140-225;
+                    il_main = #*/-rare(1)/60-78;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/60-78;
+	                il_main = #armor/-unique(2)/140-225;
+                    il_main = #*/-unique(2)/60-78;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 1744;
+					min = 1456;
+				}
+            }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 60;
+		damage_min = 50;
+	}
+	[defend] { defense=150; }
+	[mind]
+    {
+  		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party		= true
+			&actor_joins_existing_party		= true
+			&party_template					= "party_bandit_ranged";
+
+    	jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+    		?social							= 0.35
+    		&still							= false;
+    }
+}

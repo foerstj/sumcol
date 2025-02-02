@@ -1,0 +1,21 @@
+[t:template,n:bandit_ranged_summon]
+{
+    specializes = bandit_ranged_base;
+
+    doc = "[summon] bandit_ranged";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_feet = bo_bo_le_light;
+            es_shield_hand = bw_g_c_s_l_c_avg;
+        }
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

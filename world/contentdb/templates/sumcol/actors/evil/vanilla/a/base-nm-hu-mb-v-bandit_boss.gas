@@ -1,0 +1,88 @@
+[t:template,n:bandit_boss_base]  // = bandit_boss
+{
+	doc = "bandit_boss";
+	specializes = base_bandit;
+	[actor]
+	{
+		[skills]
+		{
+			strength =   21, 0;
+			intelligence = 15, 0;
+			dexterity =   14, 0;
+			melee =  25,  0;
+		}
+	}
+
+	[common]
+	{
+		screen_name = "Bandit Boss";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_red(sgx)");
+			}
+		}
+	}
+	[aspect]
+	{
+		life = 950;
+		max_life = 950;
+		mana = 600;
+		max_mana = 600;
+		experience_value = 3700;
+		[textures]
+		{
+			0 = b_c_gah_fb_skin_35;
+			1 = b_c_pos_a3_034;
+		}
+	}
+	[inventory]
+	{
+        custom_head = m_c_gah_fb_hlmt_head-04;
+		[pcontent]
+		{
+			[all*]
+			{
+				es_feet = bo_bo_le_light;
+                es_weapon_hand = ax_g_c_1h2b_avg;
+			}
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/66-70;
+					il_main = #armor/200-250;
+				}
+                [oneof*]
+				{
+	                il_main = #weapon/-rare(1)/75-89;
+	                il_main = #armor/-rare(1)/226-287;
+                    il_main = #*/-rare(1)/75-89;
+                }
+				[oneof*]
+				{
+	                il_main = #weapon/-unique(2)/75-89;
+	                il_main = #armor/-unique(2)/226-287;
+                    il_main = #*/-unique(2)/75-89;
+	            }
+				[gold*]
+				{
+					max = 2588;
+					min = 2060;
+					piles = 2 - 3;
+				}
+			}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 71;
+		damage_min = 69;
+	}
+	[defend] { defense=450; }
+}

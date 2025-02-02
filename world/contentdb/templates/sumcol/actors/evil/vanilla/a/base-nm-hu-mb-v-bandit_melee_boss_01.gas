@@ -1,0 +1,108 @@
+[t:template,n:bandit_melee_boss_01_base]  // = bandit_melee_boss_01
+{
+	doc = "bandit_melee_boss_01";
+	specializes = base_bandit;
+	[actor]
+	{
+		[skills]
+		{
+			strength =   16, 0;
+			intelligence =  11, 0;
+			dexterity =   13, 0;
+			melee =  19,  0;
+		}
+	}
+	[aspect]
+	{
+		life = 420;
+		max_life = 420;
+		mana = 20;
+		max_mana = 20;
+   		experience_value = 2230;
+		model = m_c_gah_fb_pos_a1;
+		[textures]
+		{
+			0 = b_c_gah_fb_skin_34;
+			1 = b_c_pos_a1_041;
+		}
+	}
+	[common]
+	{
+		membership = monster, party_bandit_ranged, bandit;
+        screen_name = "Rogue Bandit";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_blue(sgx)");
+			}
+		}
+	}
+
+	[inventory]
+	{
+
+		[pcontent]
+		{
+			[all*]
+			{
+				es_feet = bo_bo_le_light;
+                es_weapon_hand = sd_g_c_gl_1h_avg;
+			}
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/66-70;
+					il_main = #armor/200-250;
+				}
+                [oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/75-89;
+	                il_main = #armor/-rare(1)/226-287;
+                    il_main = #*/-rare(1)/75-89;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/75-89;
+	                il_main = #armor/-unique(2)/226-287;
+                    il_main = #*/-unique(2)/75-89;
+	            }
+				[gold*]
+				{
+					max = 3488;
+					min = 2560;
+					min_pile = 397;
+					piles = 2 - 4;
+				}
+			}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 65;
+		damage_min = 60;
+	}
+   	[defend] { defense=305; }
+   	[mind]
+   	{
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party			= true
+			&actor_creates_own_party			= true
+			&form_party_on_friend_entered_ICZ	= true
+			&form_party_on_friend_entered_ICZ	= true
+			&party_template						= "party_bandit_ranged";
+
+		jat_fidget		= world\ai\jobs\common\job_fidget.skrit
+			?curious		= 0.75
+			&interest		= interest
+			&meander		= true
+			&still			= false;
+	}
+}

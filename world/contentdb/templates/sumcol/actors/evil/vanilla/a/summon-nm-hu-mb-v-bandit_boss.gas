@@ -1,0 +1,21 @@
+[t:template,n:bandit_boss_summon]
+{
+    specializes = bandit_boss_base;
+
+    doc = "[summon] bandit_boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_feet = bo_bo_le_light;
+            es_weapon_hand = ax_g_c_1h2b_avg;
+        }
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

@@ -1,0 +1,21 @@
+[t:template,n:bandit_melee_summon]
+{
+    specializes = bandit_melee_base;
+
+    doc = "[summon] bandit_melee";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_feet = bo_bo_le_light;
+            es_weapon_hand = sd_g_c_gl_1h_avg;
+        }
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}
