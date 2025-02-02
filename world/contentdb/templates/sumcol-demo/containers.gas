@@ -40,11 +40,11 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_animals]
+[t:template,n:sumcol_demo_barrel_vanilla_standard_animals]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Animals - Vanilla";
+    common:screen_name = "Animals - Vanilla Standard";
     [inventory]
     {
         [other]
@@ -52,21 +52,14 @@
             // mammals
             il_main = spell_summon_krug_dog;
             il_main = spell_summon_gray_wolf;
-            il_main = scroll_summon_alpha_wolf;
             il_main = spell_summon_krug_killer_dog;
-            il_main = scroll_summon_hulking_gremal;
             il_main = spell_summon_white_wolf;
             il_main = spell_summon_klaw;
-            il_main = scroll_summon_dark_klaw;
-            il_main = scroll_summon_grizzly_furok;
             il_main = spell_summon_furok_slasher;
             // reptiles
-            il_main = spell_summon_farm_skrubb;
-            il_main = spell_summon_black_skrubb;
             il_main = spell_summon_frost_drake;
             il_main = spell_summon_spiked_maw;
             il_main = spell_summon_lectar;
-            il_main = scroll_summon_rabid_spiked_maw;
             il_main = spell_summon_blue_drake;
             il_main = spell_summon_giant_lizard;
             il_main = spell_summon_red_drake;
@@ -79,10 +72,8 @@
             il_main = spell_summon_phrak;
             il_main = spell_summon_phrak_piercer;
             il_main = spell_summon_yellow_spider;
-            il_main = scroll_summon_phrak_ballista;
             il_main = spell_summon_arakun_spider;
             il_main = spell_summon_giant_moth;
-            il_main = scroll_summon_venom_fiend;
             il_main = spell_summon_frost_spitter;
             il_main = spell_summon_frostnid;
             il_main = spell_summon_stalagnid;
@@ -91,23 +82,47 @@
             il_main = spell_summon_giant_wasp;
             il_main = spell_summon_soul_stinger;
             // worms
-            il_main = spell_summon_mine_worm;
             il_main = spell_summon_googore_grub;
-            il_main = spell_summon_googore;
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_animals]
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_animals]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Animals - LoA";
+    common:screen_name = "Animals - Vanilla Non-Standard";
     [inventory]
     {
         [other]
         {
             // mammals
-            il_main = scroll_summon_yellow_eye;
+            il_main = scroll_summon_alpha_wolf;
+            il_main = scroll_summon_hulking_gremal;
+            il_main = scroll_summon_dark_klaw;
+            il_main = scroll_summon_grizzly_furok;
+            // reptiles
+            il_main = spell_summon_farm_skrubb;
+            il_main = spell_summon_black_skrubb;
+            il_main = scroll_summon_rabid_spiked_maw;
+            // insects / arthropods
+            il_main = scroll_summon_phrak_ballista;
+            il_main = scroll_summon_venom_fiend;
+            // worms
+            il_main = spell_summon_mine_worm;
+            il_main = spell_summon_googore;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_loa_standard_animals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Animals - LoA Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // mammals
             il_main = spell_summon_varg;
             il_main = spell_summon_snow_boar;
             il_main = spell_summon_mhulliq;
@@ -115,7 +130,6 @@
             il_main = spell_summon_monstrous_rat;
             // reptiles
             il_main = spell_summon_bubber;
-            il_main = spell_summon_jungle_skrubb;
             il_main = spell_summon_thunder_lizard;
             il_main = spell_summon_jungle_spiker;
             // birds
@@ -136,7 +150,6 @@
             il_main = spell_summon_swirling_midges;
             il_main = spell_summon_chitterskrag;
             il_main = spell_summon_chitterskrag_spew;
-            il_main = scroll_summon_giant_chitterskrag;
             il_main = spell_summon_swarmling;
             il_main = spell_summon_flying_gritch;
             il_main = spell_summon_greater_scrub_scorpion;
@@ -147,11 +160,29 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_elementals]
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_animals]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Elementals - Vanilla";
+    common:screen_name = "Animals - LoA Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // mammals
+            il_main = scroll_summon_yellow_eye;
+            // reptiles
+            il_main = spell_summon_jungle_skrubb;
+            // insects / arthropods
+            il_main = scroll_summon_giant_chitterskrag;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_standard_elementals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Elementals - Vanilla Standard";
     [inventory]
     {
         [other]
@@ -168,25 +199,40 @@
             il_main = spell_summon_ice_fly;
             il_main = spell_summon_ice_archer;
             il_main = spell_summon_ice_warrior;
-            il_main = scroll_summon_frost_archer;
-            il_main = scroll_summon_frost_warrior;
             // swamp
             il_main = spell_summon_swamp_slinger;
             il_main = spell_summon_swamp_creature;
+            // fire / lava
+            il_main = spell_summon_lava_spirit_melee;
+            il_main = spell_summon_lava_beast;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_elementals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Elementals - Vanilla Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // ice / frost
+            il_main = scroll_summon_frost_archer;
+            il_main = scroll_summon_frost_warrior;
+            // swamp
             il_main = scroll_summon_swamp_abomination;
             // fire / lava
             il_main = spell_summon_blazing_elemental;
-            il_main = spell_summon_lava_spirit_melee;
-            il_main = spell_summon_lava_beast;
             il_main = scroll_summon_magma_beast;
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_elementals]
+[t:template,n:sumcol_demo_barrel_loa_standard_elementals]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Elementals - LoA";
+    common:screen_name = "Elementals - LoA Standard";
     [inventory]
     {
         [other]
@@ -196,6 +242,18 @@
             il_main = spell_summon_marble_golem;
             // swamp
             il_main = spell_summon_bog_beast;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_elementals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Elementals - LoA Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
             // elemental minions
             il_main = scroll_summon_air_elemental_minion;
             il_main = scroll_summon_earth_elemental_minion;
@@ -203,11 +261,11 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_undead]
+[t:template,n:sumcol_demo_barrel_vanilla_standard_undead]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Undead - Vanilla";
+    common:screen_name = "Undead - Vanilla Standard";
     [inventory]
     {
         [other]
@@ -215,26 +273,40 @@
             // skeletons
             il_main = spell_summon_skeleton_guard;
             il_main = spell_summon_skeleton_archer;
-            il_main = scroll_summon_skeleton_captain;
             il_main = spell_summon_rector;
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
             il_main = spell_summon_skeleton_mercenary;
             // zombies
             il_main = spell_summon_walking_corpse;
-            il_main = scroll_summon_ancient_corpse;
             il_main = spell_summon_tortured_corpse;
-            il_main = scroll_summon_dark_wolf;
             // ghosts
             il_main = spell_summon_ghost;
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_undead]
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_undead]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Undead - LoA";
+    common:screen_name = "Undead - Vanilla Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // skeletons
+            il_main = scroll_summon_skeleton_captain;
+            // zombies
+            il_main = scroll_summon_ancient_corpse;
+            il_main = scroll_summon_dark_wolf;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_loa_standard_undead]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Undead - LoA Standard";
     [inventory]
     {
         [other]
@@ -248,18 +320,43 @@
             il_main = spell_summon_ghastly_necron;
             il_main = spell_summon_rahk;
             il_main = spell_summon_scaly_rahk;
-            il_main = scroll_summon_krakemaw_the_putrid;
             // ghosts
             il_main = spell_summon_red_noctiss;
             il_main = spell_summon_blue_noctiss;
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_plants]
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_undead]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Plants - Vanilla";
+    common:screen_name = "Undead - LoA Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // zombies
+            il_main = scroll_summon_krakemaw_the_putrid;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_standard_plants]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Plants - Vanilla Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_plants]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Plants - Vanilla Non-Standard";
     [inventory]
     {
         [other]
@@ -269,11 +366,23 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_plants]
+[t:template,n:sumcol_demo_barrel_loa_standard_plants]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Plants - LoA";
+    common:screen_name = "Plants - LoA Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_plants]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Plants - LoA Non-Standard";
     [inventory]
     {
         [other]
@@ -283,11 +392,11 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_demonics]
+[t:template,n:sumcol_demo_barrel_vanilla_standard_demonics]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Demonics - Vanilla";
+    common:screen_name = "Demonics - Vanilla Standard";
     [inventory]
     {
         [other]
@@ -295,7 +404,6 @@
             // mucosa
             il_main = spell_summon_vile_mucosa;
             il_main = spell_summon_dark_mucosa;
-            il_main = scroll_summon_mucosa_brute;
             // intelligent
             il_main = spell_summon_horrid;
             il_main = spell_summon_toreck;
@@ -306,30 +414,58 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_demonics]
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_demonics]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Demonics - LoA";
+    common:screen_name = "Demonics - Vanilla Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // mucosa
+            il_main = scroll_summon_mucosa_brute;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_loa_standard_demonics]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Demonics - LoA Standard";
     [inventory]
     {
         [other]
         {
             // mucosa
             il_main = spell_summon_large_twisted_mucosa;
-            il_main = scroll_summon_twisted_mucosa_brute;
             // other
             il_main = spell_summon_rune_fiend;
-            il_main = scroll_summon_rune_guardian;
             il_main = spell_summon_whelnars_eyes;
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_robots]
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_demonics]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Robots - Vanilla";
+    common:screen_name = "Demonics - LoA Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // mucosa
+            il_main = scroll_summon_twisted_mucosa_brute;
+            // other
+            il_main = scroll_summon_rune_guardian;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_standard_robots]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Robots - Vanilla Standard";
     [inventory]
     {
         [other]
@@ -344,17 +480,29 @@
             il_main = spell_summon_gobbot_igniter;
             il_main = spell_summon_gobbot_gunner;
             il_main = spell_summon_gobbot_grenadier;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_robots]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Robots - Vanilla Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
             il_main = spell_summon_proxo;
             il_main = spell_summon_tesla_coil;
             il_main = spell_summon_tesla_coil_heal;
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_robots]
+[t:template,n:sumcol_demo_barrel_loa_standard_robots]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Robots - LoA";
+    common:screen_name = "Robots - LoA Standard";
     [inventory]
     {
         [other]
@@ -365,11 +513,23 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_vanilla_humanoids]
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_robots]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Humanoids - Vanilla";
+    common:screen_name = "Robots - LoA Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_standard_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids - Vanilla Standard";
     [inventory]
     {
         [other]
@@ -377,20 +537,34 @@
             // krug
             il_main = spell_summon_krug_scavenger;
             il_main = spell_summon_krug_scout;
-            il_main = scroll_summon_brankar;
             il_main = spell_summon_krug_apprentice;
-            il_main = spell_summon_krug_shaman;
             il_main = spell_summon_krug_grunt;
-            il_main = scroll_summon_klandank;
             il_main = spell_summon_krug_chucker;
             il_main = spell_summon_krug_raider;
             il_main = spell_summon_krug_guard;
-            il_main = scroll_summon_huskar;
-            il_main = scroll_summon_futak;
             il_main = spell_summon_krug_commander;
             // braak
             il_main = spell_summon_braak_mage;
             il_main = spell_summon_braak;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_vanilla_nonstandard_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids - Vanilla Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            // krug
+            il_main = scroll_summon_brankar;
+            il_main = spell_summon_krug_shaman;
+            il_main = scroll_summon_klandank;
+            il_main = scroll_summon_huskar;
+            il_main = scroll_summon_futak;
+            // braak
             il_main = scroll_summon_pitiful_braak;
             il_main = scroll_summon_ferocious_braak;
             // witches
@@ -402,11 +576,23 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_loa_humanoids]
+[t:template,n:sumcol_demo_barrel_loa_standard_humanoids]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Humanoids - LoA";
+    common:screen_name = "Humanoids - LoA Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_loa_nonstandard_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids - LoA Non-Standard";
     [inventory]
     {
         [other]
