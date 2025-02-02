@@ -12,7 +12,7 @@ spell;golem_frost;golem_frost;summon;a;Frost Golem;1.75;nm;el;std;v;;420000;7;92
 spell;hell_boar;hell_boar;summon;a;Hell Boar;1.75;nm;an;std;v;;36000;6;39;1;;;;;;;;1;1;127
 spell;impaler;impaler;summon;an;Impaler;1;nm;an;std;v;;190000;6;75;1.1;;;;;;;;2;1.5;176
 spell;killer_gremal;gremal_killer;summon;a;Killer Gremal;2.75;nm;an;std;v;;1200;6;17;0.9;;;;;;;;1;0.8;8
-spell;krug_dog_skeleton;krug_dog_skeleton;summon;a;Skeleton Krug Dog;1;cm;un;std;v;;100000;6;61;0.9;;;;;;;;2;0.5;141
+spell;krug_dog_skeleton;krug_dog_skeleton;sumcol;a;Skeleton Krug Dog;1;cm;un;std;v;;100000;6;61;0.9;;;;;;;;2;0.5;141
 spell;larch;larch;summon;a;Larch;1.75;nm;pl;std;v;;96000;4;60;1.2;;;;;;;;2;2.5;66
 spell;lava_spirit;lava_spirit_magic;summon;a;Lava Spirit;1;cm;el;std;v;;400000;6;86;;;0.95;;;;205;245;2;0.8;172
 spell;molten_golem;molten_golem;;a;Slag;1.75;cm;el;std;v;;420000;7;92;0.9;;;;;;;;2;0.8;174

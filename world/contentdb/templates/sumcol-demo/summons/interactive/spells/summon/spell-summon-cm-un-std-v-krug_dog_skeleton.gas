@@ -24,7 +24,7 @@
     }
     [spell_summon]
     {
-        template_name = krug_dog_skeleton_summon;
+        template_name = krug_dog_skeleton_sumcol;
         script_params = "[scale(1.0)]";
     }
     [magic]

@@ -1,0 +1,18 @@
+[t:template,n:krug_dog_skeleton_sumcol]
+{
+	category_name = "1W_evil_d";
+	doc = "[summon] krug_dog_skeleton (SumCol)";
+	specializes = krug_dog_skeleton_base;
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;  // ADDED to remove ?guard=true in base
+}
