@@ -1,0 +1,21 @@
+[t:template,n:trog_warrior_summon]
+{
+    specializes = trog_warrior_base;
+
+    doc = "[summon] trog warrior";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_shield_hand = sh_m_g_c_r_s_avg;
+            es_weapon_hand = sd_g_c_st_1h_avg;
+        }
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

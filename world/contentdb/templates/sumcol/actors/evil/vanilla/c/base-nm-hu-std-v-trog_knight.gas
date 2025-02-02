@@ -1,0 +1,97 @@
+[t:template,n:trog_knight_base]  // = trog_knight
+{
+	category_name = "1W_evil_c";
+	doc = "trog knight";
+	specializes = base_trog;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  19, 0;
+			intelligence =  8, 0;
+			dexterity =  11, 0;
+            melee =  18,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 700;
+		life = 420;
+        max_life = 420;
+        mana = 14;
+		max_mana = 14;
+		textures:0 = b_c_ecm_tg-03;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 53;
+		damage_min = 45;
+	}
+	[common]
+	{
+		screen_name="Trog Knight";
+		membership = party_trog_warrior_boss, monster;
+	}
+    [defend] { defense=90; }
+   	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_MELEE_WEAPON;
+    	[pcontent]
+		{
+			[all*] { es_weapon_hand = sd_g_c_sd_2h_fun_trog; }
+
+   			[oneof*]
+			{
+				[oneof*]
+				{
+				   chance = 0.2;
+				   il_main = potion_health_medium;
+				   il_main = potion_mana_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/40-58;
+					il_main = #armor/80-120;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/40-58;
+	                il_main = #armor/-rare(1)/80-120;
+                    il_main = #*/-rare(1)/40-58;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/40-58;
+	                il_main = #armor/-unique(2)/80-120;
+                    il_main = #*/-unique(2)/40-58;
+	            }
+				[gold*]
+				{
+					chance = 0.1;
+					max = 840;
+					min = 600;
+				}
+            }
+		}
+	}
+	[mind]
+	{
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+			?curious						= 0.65
+			&interest						= interest
+			&still							= false;
+
+		jat_brain						 = world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		 = true;
+
+		actor_auto_switches_to_melee         = true;
+		actor_auto_switches_to_ranged        = false;
+		actor_auto_uses_stored_items		 = true;
+
+		actor_weapon_preference				 = WP_MELEE;
+	}
+}

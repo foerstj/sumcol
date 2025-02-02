@@ -1,0 +1,91 @@
+[t:template,n:trog_base]  // = trog
+{
+	category_name = "1W_evil_c";
+	doc = "trog";
+	specializes = base_trog;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  13, 0;
+			intelligence =  7, 0;
+			dexterity =  8, 0;
+            melee =  12,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 392;
+		life = 297;
+        max_life = 297;
+        mana = 14;
+		max_mana = 14;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 22;
+		damage_min = 18;
+	}
+	[common]
+	{
+		screen_name="Trog";
+		membership = party_trog_warrior_boss, monster;
+	}
+    [defend] { defense=78; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[all*]
+			{
+				es_weapon_hand = ss_g_c_sd_1h_avg;
+			}
+   			[oneof*]
+			{
+				[oneof*]
+				{
+				   chance = 0.2;
+				   il_main = potion_health_medium;
+				   il_main = potion_mana_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/35-52;
+					il_main = #armor/50-120;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/35-52;
+	                il_main = #armor/-rare(1)/50-120;
+                    il_main = #*/-rare(1)/35-52;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/35-52;
+	                il_main = #armor/-unique(2)/50-120;
+                    il_main = #*/-unique(2)/35-52;
+	            }
+				[gold*]
+				{
+					chance = 0.1;
+					max = 620;
+					min = 400;
+				}
+            }
+		}
+	}
+	[mind]
+	{
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+			?social							= 0.45
+			&still							= false;
+
+		jat_brain						 = world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		 = true;
+	}
+
+}

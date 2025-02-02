@@ -1,0 +1,20 @@
+[t:template,n:trog_knight_summon]
+{
+    specializes = trog_knight_base;
+
+    doc = "[summon] trog knight";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = sd_g_c_sd_2h_fun_trog;
+        }
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

@@ -1,0 +1,100 @@
+[t:template,n:trog_warrior_base]  // = trog_warrior
+{
+	category_name = "1W_evil_c";
+	doc = "trog warrior";
+	specializes = base_trog;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	 =  16, 0;
+			intelligence =  7, 0;
+			dexterity 	 =  9, 0;
+            melee 		 =  14,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 580;
+		life = 325;
+        max_life = 325;
+        mana = 14;
+		max_mana = 14;
+		textures:0 = b_c_ecm_tg-02;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 30;
+		damage_min = 20;
+	}
+	[common]
+	{
+		screen_name="Trog Warrior";
+		membership = party_trog_warrior_boss, monster;
+	}
+    [defend] { defense=93; }
+   	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_MELEE_WEAPON;
+    	[pcontent]
+		{
+			[all*]
+			{
+				es_shield_hand = sh_m_g_c_r_s_avg;
+				es_weapon_hand = sd_g_c_st_1h_avg;
+			}
+   			[oneof*]
+			{
+				[oneof*]
+				{
+				   chance = 0.2;
+				   il_main = potion_health_medium;
+				   il_main = potion_mana_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/35-52;
+					il_main = #armor/50-120;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/35-52;
+	                il_main = #armor/-rare(1)/50-120;
+                    il_main = #*/-rare(1)/35-52;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/35-52;
+	                il_main = #armor/-unique(2)/50-120;
+                    il_main = #*/-unique(2)/35-52;
+	            }
+				[gold*]
+				{
+					chance = 0.1;
+					max = 750;
+					min = 500;
+				}
+            }
+		}
+	}
+	[mind]
+	{
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+			?social							= 0.45
+			&approach_dist					= 2
+			&still							= false;
+
+		jat_brain						 = world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		 = true;
+
+		actor_auto_switches_to_melee         = true;
+		actor_auto_switches_to_ranged        = false;
+		actor_auto_uses_stored_items		 = true;
+
+		actor_weapon_preference				 = WP_MELEE;
+	}
+}
