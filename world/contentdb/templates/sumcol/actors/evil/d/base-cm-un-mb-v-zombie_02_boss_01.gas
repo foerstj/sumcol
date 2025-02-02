@@ -1,0 +1,93 @@
+[t:template,n:zombie_02_boss_01_base]  // = zombie_02_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "zombie_decayed boss 01";
+	specializes = base_zombie_02;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	20,0;
+			intelligence =  6,0;
+			dexterity =  	14,0;
+			melee =  		20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 3200;
+		life = 1152;
+		max_life = 1152;
+		mana = 6;
+		max_mana = 6;
+		[textures] { 0=b_c_edm_zo-08; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 95;
+		damage_min = 85;
+	}
+	[common]
+	{
+		screen_name="Wretched Zombie";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_red(sgx)");
+			}
+		}
+	}
+	[defend] { defense=256; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[all*]
+			{
+				[all*]
+				{
+       				chance = 0.1;
+	                il_main = #spell/29-31;
+				}
+				[oneof*]
+				{
+					il_main = #*/75-81;
+					il_main = #armor/250-290;
+	                il_main = #weapon/75-81;
+				}
+				[oneof*]
+				{
+	                   chance = 0.004;
+	                   il_main = #weapon/-rare(1)/60-81;
+	                   il_main = #armor/-rare(1)/220-290;
+                       il_main = #*/-rare(1)/60-81;
+                }
+				[oneof*]
+				{
+                       chance = 0.002;
+	                   il_main = #weapon/-unique(2)/60-81;
+	                   il_main = #armor/-unique(2)/220-290;
+                       il_main = #*/-unique(2)/60-81;
+	            }
+				[gold*]
+				{
+					max = 5168;
+					min = 4186;
+					min_pile = 622;
+					piles = 3 - 5;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_startup = jat_none;
+		actor_auto_fidgets = true;
+	}
+}

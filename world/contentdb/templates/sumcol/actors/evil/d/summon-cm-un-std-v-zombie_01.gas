@@ -1,0 +1,20 @@
+[t:template,n:zombie_01_summon]
+{
+	specializes = base_zombie_01;
+
+	category_name = "1W_evil_d";
+	doc = "[summon] zombie";
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+	mind:jat_startup = jat_none;
+	mind:actor_auto_fidgets = true;
+}

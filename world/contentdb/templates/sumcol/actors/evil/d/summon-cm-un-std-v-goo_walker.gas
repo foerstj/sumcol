@@ -1,0 +1,20 @@
+[t:template,n:goo_walker_summon]
+{
+	specializes = base_goo_walker;
+
+	category_name = "1W_evil_d";
+	doc = "[summon] goo walker";
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+	mind:jat_startup = jat_none;
+	mind:actor_auto_fidgets = true;
+}
