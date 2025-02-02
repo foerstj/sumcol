@@ -80,7 +80,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Krug (NM): Krug Shaman
 - Sub-summoning:
   - Humanoids:
-    - Witches (CM): Ice Mage, Swamp Witch
+    - Nature Witches (NM): Ice Mage, Swamp Witch
 - Miniboss Scrolls:
   - Animals (NM): Phrak Ballista, Hulking Gremal, Alpha Wolf, Dark Klaw, Grizzly Furok, Rabid Spiked Maw, Venom Fiend
   - Elementals:
@@ -99,7 +99,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
       - Krug (NM): Huskar the Shaman
   - Miniboss Sub-summoning:
     - Humanoids:
-      - Witches (CM): Frost Mage, Skank Witch, Lost Witch
+      - Nature Witches (NM): Frost Mage, Skank Witch, Lost Witch
 
 ### LoA Standard:
 - Animals (NM):
@@ -134,7 +134,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Plants (NM): Killer Vines, Mantrap
 - Sub-summoning:
   - Humanoids:
-    - Witches (CM): Rune Caster
+    - Combat Witches (CM): Rune Caster
 - Miniboss Scrolls:
   - Animals (NM): Giant Chitterskrag, Yellow Eye
   - Elementals:
