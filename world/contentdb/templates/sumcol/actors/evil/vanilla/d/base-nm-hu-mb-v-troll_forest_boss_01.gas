@@ -1,0 +1,103 @@
+[t:template,n:troll_forest_boss_01_base]  // = troll_forest_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "troll forest boss";
+	specializes = troll_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  15, 0;
+			intelligence =  10, 0;
+			dexterity =  19, 0;
+			melee =  20,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1505;
+		life = 710;
+		life_recovery_period = 4.7;
+		life_recovery_unit	= 1;
+		max_life = 710;
+		mana = 10;
+		max_mana = 10;
+		textures:0 = b_c_edm_tl-06;
+        life_recovery_unit  = 1;
+        life_recovery_period = 5;
+
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 12;
+		damage_min = 8;
+	}
+	[common]
+	{
+	screen_name="Muong Troll";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_green(sgx)");
+			}
+		}
+	}
+	[defend] { defense=195; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+            	es_weapon_hand = cb_un_2h_troll_forest;
+			}
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/60-65;
+					il_main = #armor/180-190;
+				}
+                [oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/64-78;
+	                il_main = #armor/-rare(1)/199-225;
+                    il_main = #*/-rare(1)/64-78;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/64-78;
+	                il_main = #armor/-unique(2)/199-225;
+                    il_main = #*/-unique(2)/64-78;
+	            }
+            }
+		}
+	}
+	[mind]
+	{
+		jat_fidget							= world\ai\jobs\common\job_fidget.skrit
+			?curious							= 0.75
+			&interest							= interest
+			&meander							= false
+			&still								= false;
+
+//		jat_brain					= world\ai\jobs\common\brain_hero.skrit
+//			?heal_life_after_flee		= true;
+
+		actor_life_ratio_low_threshold = .33;
+		on_life_ratio_low_flee = true;
+		flee_count = 1;
+		flee_distance = 20;
+		melee_engage_range = 14.0;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+}

@@ -1,0 +1,20 @@
+[t:template,n:troll_forest_boss_01_summon]
+{
+    specializes = troll_forest_boss_01_base;
+
+	doc = "[summon] troll forest boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = cb_un_2h_troll_forest;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

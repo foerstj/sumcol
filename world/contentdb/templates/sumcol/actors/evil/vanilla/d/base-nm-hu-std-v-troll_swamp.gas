@@ -1,0 +1,90 @@
+[t:template,n:troll_swamp_base]  // = troll_swamp
+{
+	category_name = "1W_evil_d";
+	doc = "troll_swamp";
+	specializes = troll_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  20, 0;
+			intelligence =  9, 0;
+			dexterity =  13, 0;
+			melee =  15,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2500;
+		life = 488;
+		life_recovery_period = 6;
+		life_recovery_unit	= 1;
+		max_life = 488;
+		mana = 10;
+		max_mana = 10;
+		scale_base = 0.6;
+		textures:0 = b_c_edm_tl-02;
+        life_recovery_unit  = 1;
+        life_recovery_period = 5;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 27;
+		damage_min = 22;
+	}
+	[body]
+	{
+		min_move_velocity =2.8;
+		max_move_velocity = 5.1;
+	}
+	[common]
+	{
+		screen_name="Swamp Troll";
+		membership = party_troll_swamp_boss, monster;
+	}
+	[defend] { defense=200; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+            	es_weapon_hand = cb_un_2h_troll_swamp;
+			}
+			[oneof*]
+			{
+				chance = 0.2;
+				il_main = #*/66-79;
+			    il_main = potion_health_medium;
+			    il_main = potion_mana_medium;
+			}
+		}
+	}
+	[mind]
+	{
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party			= true;
+
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit
+			?social							= 0.7
+			&social_limit					= 2
+			&social_limit_dist				= 3
+			&friend_template				= false
+			&friends						= party_troll_swamp_boss
+			&meander						= true
+			&still							= false;
+
+		jat_attack_object_melee 		= world\ai\jobs\common\job_attack_object_melee.skrit
+			?run_chance 					= 1.0;
+
+		actor_life_ratio_low_threshold 	= .33;
+		on_life_ratio_low_flee 			= true;
+		flee_count						= 1;
+		flee_distance					= 20;
+		melee_engage_range				= 14.0;
+		personal_space_range			= 0.7;
+		ranged_engage_range				= 14.0;
+		sight_range						= 14.0;
+	}
+}

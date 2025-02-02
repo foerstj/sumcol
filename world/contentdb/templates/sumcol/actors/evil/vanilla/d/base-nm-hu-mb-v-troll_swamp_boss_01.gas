@@ -1,0 +1,96 @@
+[t:template,n:troll_swamp_boss_01_base]  // = troll_swamp_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "troll_swamp_boss";
+	specializes = troll_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  21, 0;
+			intelligence =  9, 0;
+			dexterity =  16, 0;
+			melee =  16,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 4250;
+		life = 700;
+		life_recovery_period = 7.75;
+		life_recovery_unit	= 1;
+		max_life = 700;
+		mana = 10;
+		max_mana = 10;
+		scale_base = 0.6;
+		textures:0 = b_c_edm_tl-07;
+        life_recovery_unit  = 1;
+        life_recovery_period = 5;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 32;
+		damage_min = 27;
+	}
+	[body]
+	{
+		min_move_velocity =2.8;
+		max_move_velocity = 5.1;
+	}
+	[common]
+	{
+		screen_name="Rotten Troll";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_green(sgx)");
+			}
+		}
+	}
+	[defend] { defense=384; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+            	es_weapon_hand = cb_un_2h_troll_swamp;
+			}
+			[oneof*]
+			{
+				chance = 1.0;
+				il_main = #*/79-85;
+			}
+		}
+	}
+	[mind]
+	{
+		jat_fidget			= world\ai\jobs\common\job_fidget.skrit
+			?social				= 0.8
+			&social_limit		= 3
+			&social_limit_dist	= 2
+			&friend_template	= false
+			&friends			= party_troll_swamp_boss
+			&still				= false;
+
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party			= true
+			&party_template						= "party_troll_swamp_boss";
+
+
+		actor_life_ratio_low_threshold 	= .33;
+		on_life_ratio_low_flee 			= true;
+		flee_count						= 1;
+		flee_distance					= 20;
+		melee_engage_range				= 14.0;
+		personal_space_range			= 0.7;
+		ranged_engage_range				= 14.0;
+		sight_range						= 14.0;
+	}
+}
