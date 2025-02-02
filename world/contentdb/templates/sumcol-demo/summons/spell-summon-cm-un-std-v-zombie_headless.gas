@@ -4,18 +4,18 @@
     specializes = base_spell_sumcol_cm;
     [common]    { is_pcontent_allowed = false;    }
 
-    doc = "spell Summon Zombie (SumCol Demo)";
+    doc = "spell Summon Headless Zombie (SumCol Demo)";
     [aspect]
     {
         gold_value = 44000;
     }
     [common]
     {
-        screen_name = "Summon Zombie (SumCol Demo)";
+        screen_name = "Summon Headless Zombie (SumCol Demo)";
     }
     [common]
     {
-        description = "Summons a Zombie to guard the Caster.";
+        description = "Summons a Headless Zombie to guard the Caster.";
     }
     [gui]
     {

@@ -29,7 +29,7 @@ spell;troll_forest;troll_forest;summon;a;Forest Troll;1;nm;hu;std;v;x;28000;6;33
 spell;wolf_black;wolf_black;summon;a;Black Wolf;1.75;nm;an;std;v;;38000;6;40;0.95;;;;;;;;1;0.8;46
 spell;wraith;wraith;summon;a;Wraith;1;cm;un;std;v;;69000;6;53;1;;;;;;;;2;0.8;136
 spell;wraith_archer;wraith_archer;summon;a;Wraith Archer;1;cm;un;std;v;;100000;5;57;;0.95;;;94;110;;;2;0.8;139
-spell;zombie_headless;zombie_headless;summon;a;Zombie;1;cm;un;std;v;;44000;7;43;0.9;;;;;;;;0.8;1;130
+spell;zombie_headless;zombie_headless;summon;a;Headless Zombie;1;cm;un;std;v;;44000;7;43;0.9;;;;;;;;0.8;1;130
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 spell;dsx_twisted_mucosa;dsx_twisted_mucosa;summon;a;Twisted Mucosa;2;cm;de;std;loa;;240;5;10;0.9;;;;;;;;2;1.5;221
 spell;dsx_vile_twisted_mucosa;dsx_vile_twisted_mucosa;summon;a;Vile Twisted Mucosa;2;cm;de;std;loa;;950;4;15;;;0.9;;;;17;25;2;1.2;222
