@@ -49,7 +49,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Lava (CM): Lava Beast, Lava Spirit (melee)
 - Undead (CM):
   - Skeletons: Skeleton Archer, Skeleton Guard, Skeleton Ranger, Skeleton Mercenary
-  - Zombies: Walking Corpse, Tortured Corpse
+  - Zombies: Walking Corpse, Tortured Corpse, Goo Walker, Zombie
   - Others: Wraith Mage, Ghost, Rector
 - Demonics (CM):
   - Mucosa: Vile Mucosa, Dark Mucosa
@@ -61,6 +61,11 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Humanoids:
   - Braak (NM): Braak, Braak Mage
   - Krug (NM): Krug Scavenger, Krug Scout, Krug Apprentice, Krug Grunt, Krug Chucker, Krug Raider, Krug Guard, Krug Commander
+  - Lungers (NM): Dark Lunger, Dark Slinger, Dark Caster
+  - Trog (NM): Trog, Trog Warrior, Trog Knight
+  - Bandits (NM): Bandit, Bandit Archer
+  - Goracks (NM): Gorack
+  - Trolls (NM): Swamp Troll
 
 ### Vanilla Non-Standard:
 - Stationary:
@@ -87,13 +92,20 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Ice (NM): Frost Warrior, Frost Archer
     - Swamp (NM): Swamp Abomination
     - Lava (CM): Magma Beast
-  - Undead (CM): Skeleton Captain, Dark Wolf, Ancient Corpse
+  - Undead (CM):
+    - Zombies: Dark Wolf, Ancient Corpse, Wretched Zombie
+    - Others: Skeleton Captain
   - Plants (NM): Infested Larch
   - Demonics (CM):
     - Mucosa Brute
   - Humanoids:
     - Braak (NM): Pitiful Braak, Ferocious Braak
     - Krug (NM): Brankar the Scavenger, Klandank the Krug, Futak the Trainer
+    - Lungers (NM): Shadow Lunger
+    - Trog (NM): Great Trog Warrior
+    - Bandits (NM): Rogue Bandit, Bandit Boss
+    - Goracks (NM): Enraged Gorack
+    - Trolls (NM): Muong Troll, Rotten Troll
   - Miniboss Resurrect:
     - Humanoids:
       - Krug (NM): Huskar the Shaman
