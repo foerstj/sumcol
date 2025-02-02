@@ -1,0 +1,15 @@
+[t:template,n:gorack_boss_01_summon]
+{
+    specializes = gorack_boss_01_base;
+
+    doc = "[summon] gorack boss 01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

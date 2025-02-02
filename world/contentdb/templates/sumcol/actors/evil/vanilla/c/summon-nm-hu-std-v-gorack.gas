@@ -1,0 +1,15 @@
+[t:template,n:gorack_summon]
+{
+    specializes = gorack_base;
+
+    doc = "[summon] gorack";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}
