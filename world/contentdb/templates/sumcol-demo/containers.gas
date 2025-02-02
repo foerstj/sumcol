@@ -37,35 +37,6 @@
     {
         [other]
         {
-            // witches
-            il_main = spell_summon_ice_mage;
-            il_main = scroll_summon_frost_mage;
-            il_main = spell_summon_rune_caster;
-            il_main = spell_summon_swamp_witch;
-            il_main = scroll_summon_skank_witch;
-            il_main = scroll_summon_lost_witch;
-            // fillers nm
-            il_main = spell_summon_swarmling;
-            il_main = spell_summon_jungle_angler;
-            il_main = spell_summon_shadow_angler;
-            il_main = spell_summon_leetch;
-            il_main = spell_summon_flying_gritch;
-            il_main = spell_summon_greater_scrub_scorpion;
-            il_main = spell_summon_lesser_scrub_scorpion;
-            il_main = spell_summon_sandskreech;
-            // fillers cm
-            il_main = spell_summon_living_dead;
-            il_main = spell_summon_dark_acolyte;
-            il_main = spell_summon_ghastly_necron;
-            il_main = spell_summon_weathered_automaton;
-            il_main = spell_summon_rusted_automaton;
-            il_main = spell_summon_ancient_scorpiot;
-            il_main = spell_summon_rahk;
-            il_main = spell_summon_scaly_rahk;
-            il_main = scroll_summon_krakemaw_the_putrid;
-            il_main = spell_summon_red_noctiss;
-            il_main = spell_summon_blue_noctiss;
-            il_main = scroll_summon_rune_guardian;
         }
     }
 }
