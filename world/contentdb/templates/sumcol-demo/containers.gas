@@ -37,6 +37,33 @@
     {
         [other]
         {
+            // Standard
+            // undead
+            il_main = spell_summon_goo_walker;
+            il_main = spell_summon_zombie;
+            // humanoid
+            il_main = spell_summon_dark_caster;
+            il_main = spell_summon_dark_slinger;
+            il_main = spell_summon_dark_lunger;
+            il_main = spell_summon_trog;
+            il_main = spell_summon_trog_warrior;
+            il_main = spell_summon_trog_knight;
+            il_main = spell_summon_bandit;
+            il_main = spell_summon_bandit_archer;
+            il_main = spell_summon_gorack;
+            il_main = spell_summon_swamp_troll;
+
+            // Non-Standard
+            // undead
+            il_main = scroll_summon_wretched_zombie;
+            // humanoid
+            il_main = scroll_summon_shadow_lunger;
+            il_main = scroll_summon_great_trog_warrior;
+            il_main = scroll_summon_rogue_bandit;
+            il_main = scroll_summon_bandit_boss;
+            il_main = scroll_summon_enraged_gorack;
+            il_main = scroll_summon_muong_troll;
+            il_main = scroll_summon_rotten_troll;
         }
     }
 }
@@ -280,6 +307,8 @@
             // zombies
             il_main = spell_summon_walking_corpse;
             il_main = spell_summon_tortured_corpse;
+            il_main = spell_summon_goo_walker;
+            il_main = spell_summon_zombie;
             // ghosts
             il_main = spell_summon_ghost;
         }
@@ -299,6 +328,7 @@
             // zombies
             il_main = scroll_summon_ancient_corpse;
             il_main = scroll_summon_dark_wolf;
+            il_main = scroll_summon_wretched_zombie;
         }
     }
 }
@@ -546,6 +576,21 @@
             // braak
             il_main = spell_summon_braak_mage;
             il_main = spell_summon_braak;
+            // lungers
+            il_main = spell_summon_dark_caster;
+            il_main = spell_summon_dark_slinger;
+            il_main = spell_summon_dark_lunger;
+            // trog
+            il_main = spell_summon_trog;
+            il_main = spell_summon_trog_warrior;
+            il_main = spell_summon_trog_knight;
+            // bandits
+            il_main = spell_summon_bandit;
+            il_main = spell_summon_bandit_archer;
+            // goracks
+            il_main = spell_summon_gorack;
+            // trolls
+            il_main = spell_summon_swamp_troll;
         }
     }
 }
@@ -573,6 +618,18 @@
             il_main = spell_summon_swamp_witch;
             il_main = scroll_summon_skank_witch;
             il_main = scroll_summon_lost_witch;
+            // lungers
+            il_main = scroll_summon_shadow_lunger;
+            // trog
+            il_main = scroll_summon_great_trog_warrior;
+            // bandits
+            il_main = scroll_summon_rogue_bandit;
+            il_main = scroll_summon_bandit_boss;
+            // goracks
+            il_main = scroll_summon_enraged_gorack;
+            // trolls
+            il_main = scroll_summon_muong_troll;
+            il_main = scroll_summon_rotten_troll;
         }
     }
 }
