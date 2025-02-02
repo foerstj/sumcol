@@ -1,0 +1,15 @@
+[t:template,n:dark_lunger_boss_01_summon]
+{
+    specializes = dark_lunger_boss_01;
+
+	doc = "[summon] dark_lunger boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent]
+        {
+            // ERASED
+        }
+    }
+}

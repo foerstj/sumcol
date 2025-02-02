@@ -1,0 +1,15 @@
+[t:template,n:dark_caster_summon]
+{
+    specializes = dark_caster;
+
+	doc = "[summon] dark_caster";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent]
+        {
+            // ERASED
+        }
+    }
+}
