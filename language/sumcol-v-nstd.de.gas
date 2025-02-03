@@ -1,0 +1,444 @@
+[t:0x0407,n:text]
+{
+
+	[0x0000]
+	{
+		from = "Summon Phrak Ballista";
+		to = "Phrak-Balliste beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Phrak Ballista to guard the Caster.";
+		to = "Beschwört eine Phrak-Balliste, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Venom Fiend";
+		to = "Giftdämon beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Venom Fiend to guard the Caster.";
+		to = "Beschwört einen Giftdämon, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Black Skrubb";
+		to = "Schwarzen Skrubb beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Black Skrubb to guard the Caster.";
+		to = "Beschwört einen Schwarzen Skrubb, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Farm Skrubb";
+		to = "Feld-Skrubb beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Farm Skrubb to guard the Caster.";
+		to = "Beschwört einen Feld-Skrubb, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Googore";
+		to = "Googore beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Googore to guard the Caster.";
+		to = "Beschwört einen Googore, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mine Worm";
+		to = "Grubenwurm beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mine Worm to guard the Caster.";
+		to = "Beschwört einen Grubenwurm, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Wolf";
+		to = "Dunklen Wolf beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Wolf to guard the Caster.";
+		to = "Beschwört einen Dunklen Wolf, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Alpha Wolf";
+		to = "Leitwolf beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Alpha Wolf to guard the Caster.";
+		to = "Beschwört einen Leitwolf, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Klaw";
+		to = "Dunkelklaw beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Klaw to guard the Caster.";
+		to = "Beschwört einen Dunkelklaw, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Grizzly Furok";
+		to = "Grausigen Furok beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Grizzly Furok to guard the Caster.";
+		to = "Beschwört einen Grausigen Furok, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hulking Gremal";
+		to = "Hünenhaften Gremal beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hulking Gremal to guard the Caster.";
+		to = "Beschwört einen Hünenhaften Gremal, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Rabid Spiked Maw";
+		to = "Wildes dornenbewehrtes Maul beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rabid Spiked Maw to guard the Caster.";
+		to = "Beschwört ein Wildes dornenbewehrtes Maul, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mucosa Brute";
+		to = "Mucosa-Schläger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mucosa Brute to guard the Caster.";
+		to = "Beschwört einen Mucosa-Schläger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Magma Beast";
+		to = "Magmabestie beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Magma Beast to guard the Caster.";
+		to = "Beschwört eine Magmabestie, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Blazing Elemental";
+		to = "Flammendes Elementar beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Blazing Elemental to guard the Caster.";
+		to = "Beschwört ein Flammendes Elementar, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Frost Archer";
+		to = "Frostbogenschütze beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Archer to guard the Caster.";
+		to = "Beschwört einen Frostbogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Frost Warrior";
+		to = "Frostkrieger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Warrior to guard the Caster.";
+		to = "Beschwört einen Frostkrieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Swamp Abomination";
+		to = "Sumpfgräuel beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Swamp Abomination to guard the Caster.";
+		to = "Beschwört ein Sumpfgräuel, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Pitiful Braak";
+		to = "Erbärmlichen Braak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Pitiful Braak to guard the Caster.";
+		to = "Beschwört den Erbärmlichen Braak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ferocious Braak";
+		to = "Bösartigen Braak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Ferocious Braak to guard the Caster.";
+		to = "Beschwört den Bösartigen Braak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Brankar the Scavenger";
+		to = "Brankar den Fledderer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Brankar the Scavenger to guard the Caster.";
+		to = "Beschwört Brankar den Fledderer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Klandank the Krug";
+		to = "Klandank den Krug beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Klandank the Krug to guard the Caster.";
+		to = "Beschwört Klandank den Krug, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Futak the Trainer";
+		to = "Futak den Tiermeister beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Futak the Trainer to guard the Caster.";
+		to = "Beschwört Futak den Tiermeister, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Shaman";
+		to = "Krug-Schamane beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Shaman to guard the Caster.";
+		to = "Beschwört einen Krug-Schamanen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Huskar the Shaman";
+		to = "Huskar den Schamanen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Huskar the Shaman to guard the Caster.";
+		to = "Beschwört Huskar den Schamanen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Shadow Lunger";
+		to = "Schattenspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadow Lunger to guard the Caster.";
+		to = "Beschwört einen Schattenspringer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Great Trog Warrior";
+		to = "Großen Trog-Krieger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Great Trog Warrior to guard the Caster.";
+		to = "Beschwört einen Großen Trog-Krieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ice Mage";
+		to = "Eismagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ice Mage to guard the Caster.";
+		to = "Beschwört einen Eismagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Frost Mage";
+		to = "Frostmagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Mage to guard the Caster.";
+		to = "Beschwört einen Frostmagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Swamp Witch";
+		to = "Sumpfhexe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Swamp Witch to guard the Caster.";
+		to = "Beschwört eine Sumpfhexe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Skank Witch";
+		to = "Skank-Hexe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Skank Witch to guard the Caster.";
+		to = "Beschwört eine Skank-Hexe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Lost Witch";
+		to = "Verirrte Hexe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Lost Witch to guard the Caster.";
+		to = "Beschwört die Verirrte Hexe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Infested Larch";
+		to = "Infizierten Lärchling beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Infested Larch to guard the Caster.";
+		to = "Beschwört einen Infizierten Lärchling, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Tretch";
+		to = "Tretch beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Tretch to guard the Caster.";
+		to = "Beschwört einen Tretch, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Proxo";
+		to = "Proxo beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Proxo to guard the Caster.";
+		to = "Beschwört einen Proxo, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Tesla Coil";
+		to = "Teslaspule beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Tesla Coil to guard the Caster.";
+		to = "Beschwört eine Teslaspule, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Tesla Heal Coil";
+		to = "Tesla-Heilspule beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Tesla Heal Coil to guard the Caster.";
+		to = "Beschwört eine Tesla-Heilspule, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Skeleton Captain";
+		to = "Skeletthauptmann beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Skeleton Captain to guard the Caster.";
+		to = "Beschwört einen Skeletthauptmann, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ancient Corpse";
+		to = "Alten Leichnam beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ancient Corpse to guard the Caster.";
+		to = "Beschwört einen Alten Leichnam, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Wretched Zombie";
+		to = "Elenden Zombie beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Wretched Zombie to guard the Caster.";
+		to = "Beschwört einen Elenden Zombie, der den Anwender verteidigt.";
+	}
+
+}
