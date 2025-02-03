@@ -2,6 +2,28 @@
 {
 	[0x0000]
 	{
+		from = "Summon Braak";
+		to = "Braak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Braak to guard the Caster.";
+		to = "Beschwört einen Braak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Braak Mage";
+		to = "Braak-Zauberer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Braak Mage to guard the Caster.";
+		to = "Beschwört einen Braak-Zauberer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Krug Scavenger";
 		to = "Krug-Strauchdieb beschwören";
 	}
@@ -86,5 +108,71 @@
 	{
 		from = "Summons a Krug Apprentice to guard the Caster.";
 		to = "Beschwört einen Krug-Lehrling, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Lunger";
+		to = "Dunkelspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Lunger to guard the Caster.";
+		to = "Beschwört einen Dunkelspringer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Slinger";
+		to = "Finsterschleuder beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Slinger to guard the Caster.";
+		to = "Beschwört einen Finsterschleuder, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Caster";
+		to = "Dunklen Hexer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Caster to guard the Caster.";
+		to = "Beschwört einen Dunklen Hexer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Trog";
+		to = "Trog beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Trog to guard the Caster.";
+		to = "Beschwört einen Trog, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Trog Warrior";
+		to = "Trog-Krieger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Trog Warrior to guard the Caster.";
+		to = "Beschwört einen Trog-Krieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Trog Knight";
+		to = "Trog-Ritter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Trog Knight to guard the Caster.";
+		to = "Beschwört einen Trog-Ritter, der den Anwender verteidigt.";
 	}
 }

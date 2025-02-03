@@ -1,0 +1,156 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Pitiful Braak";
+		to = "Erbärmlichen Braak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Pitiful Braak to guard the Caster.";
+		to = "Beschwört den Erbärmlichen Braak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ferocious Braak";
+		to = "Bösartigen Braak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Ferocious Braak to guard the Caster.";
+		to = "Beschwört den Bösartigen Braak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Brankar the Scavenger";
+		to = "Brankar den Fledderer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Brankar the Scavenger to guard the Caster.";
+		to = "Beschwört Brankar den Fledderer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Klandank the Krug";
+		to = "Klandank den Krug beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Klandank the Krug to guard the Caster.";
+		to = "Beschwört Klandank den Krug, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Futak the Trainer";
+		to = "Futak den Tiermeister beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Futak the Trainer to guard the Caster.";
+		to = "Beschwört Futak den Tiermeister, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Shaman";
+		to = "Krug-Schamane beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Shaman to guard the Caster.";
+		to = "Beschwört einen Krug-Schamanen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Huskar the Shaman";
+		to = "Huskar den Schamanen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Huskar the Shaman to guard the Caster.";
+		to = "Beschwört Huskar den Schamanen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Shadow Lunger";
+		to = "Schattenspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadow Lunger to guard the Caster.";
+		to = "Beschwört einen Schattenspringer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Great Trog Warrior";
+		to = "Großen Trog-Krieger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Great Trog Warrior to guard the Caster.";
+		to = "Beschwört einen Großen Trog-Krieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ice Mage";
+		to = "Eismagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ice Mage to guard the Caster.";
+		to = "Beschwört einen Eismagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Frost Mage";
+		to = "Frostmagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Mage to guard the Caster.";
+		to = "Beschwört einen Frostmagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Swamp Witch";
+		to = "Sumpfhexe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Swamp Witch to guard the Caster.";
+		to = "Beschwört eine Sumpfhexe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Skank Witch";
+		to = "Skank-Hexe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Skank Witch to guard the Caster.";
+		to = "Beschwört eine Skank-Hexe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Lost Witch";
+		to = "Verirrte Hexe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Lost Witch to guard the Caster.";
+		to = "Beschwört die Verirrte Hexe, die den Anwender verteidigt.";
+	}
+}
