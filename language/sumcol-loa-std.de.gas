@@ -240,7 +240,7 @@
 	[0x0000]
 	{
 		from = "Summons a Swarmling Queen to guard the Caster.";
-		to = "Beschwört ein Swarmlingkönigin, die den Anwender verteidigt.";
+		to = "Beschwört eine Swarmlingkönigin, die den Anwender verteidigt.";
 	}
 
 	[0x0000]
@@ -328,7 +328,7 @@
 	[0x0000]
 	{
 		from = "Summons a Large Twisted Mucosa to guard the Caster.";
-		to = "Beschwört einen großen verdrehten Mucosa, der den Anwender verteidigt.";
+		to = "Beschwört einen Großen verdrehten Mucosa, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
