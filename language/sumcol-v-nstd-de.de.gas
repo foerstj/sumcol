@@ -1,0 +1,14 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Mucosa Brute";
+		to = "Mucosa-Schläger beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Mucosa Brute to guard the Caster.";
+		to = "Beschwört einen Mucosa-Schläger, der den Anwender verteidigt.";
+	}
+}

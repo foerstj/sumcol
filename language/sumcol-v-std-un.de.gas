@@ -2,11 +2,6 @@
 {
 	[0x0000]
 	{
-		from = "Summon Skeleton Captain";
-		to = "Skeletthauptmann beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Skeleton Archer";
 		to = "Skelettbogenschütze beschwören";
 	}
@@ -47,20 +42,10 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Ancient Corpse";
-		to = "Alten Leichnam beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Tortured Corpse";
 		to = "Gequälte Leiche beschwören";
 	}
 
-	[0x0000]
-	{
-		from = "Summons a Skeleton Captain to guard the Caster.";
-		to = "Beschwört einen Skeletthauptmann, der den Anwender verteidigt.";
-	}
 	[0x0000]
 	{
 		from = "Summons a Skeleton Archer to guard the Caster.";
@@ -100,11 +85,6 @@
 	{
 		from = "Summons a Walking Corpse to guard the Caster.";
 		to = "Beschwört eine Wandelnde Leiche, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ancient Corpse to guard the Caster.";
-		to = "Beschwört einen Alten Leichnam, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
