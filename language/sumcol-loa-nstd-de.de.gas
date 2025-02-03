@@ -1,0 +1,24 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Twisted Mucosa Brute";
+		to = "Verdrehten Mucosa-Schläger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Rune Guardian";
+		to = "Runenwächter beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Twisted Mucosa Brute to guard the Caster.";
+		to = "Beschwört einen verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons the Rune Guardian to guard the Caster.";
+		to = "Beschwört den Runenwächter, der den Anwender verteidigt.";
+	}
+}

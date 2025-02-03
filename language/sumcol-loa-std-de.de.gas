@@ -7,11 +7,6 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Twisted Mucosa Brute";
-		to = "Verdrehten Mucosa-Schläger beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Rune Fiend";
 		to = "Runendämon beschwören";
 	}
@@ -20,21 +15,11 @@
 		from = "Summon Whelnar's Eyes";
 		to = "Whelnars Augen beschwören";
 	}
-	[0x0000]
-	{
-		from = "Summon Rune Guardian";
-		to = "Runenwächter beschwören";
-	}
 
 	[0x0000]
 	{
 		from = "Summons a Large Twisted Mucosa to guard the Caster.";
 		to = "Beschwört einen großen verdrehten Mucosa, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Twisted Mucosa Brute to guard the Caster.";
-		to = "Beschwört einen verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
@@ -45,10 +30,5 @@
 	{
 		from = "Summons Whelnar's Eyes to guard the Caster.";
 		to = "Beschwört Whelnars Augen, die den Anwender verteidigen.";
-	}
-	[0x0000]
-	{
-		from = "Summons the Rune Guardian to guard the Caster.";
-		to = "Beschwört den Runenwächter, der den Anwender verteidigt.";
 	}
 }

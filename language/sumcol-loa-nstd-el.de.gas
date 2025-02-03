@@ -2,21 +2,6 @@
 {
 	[0x0000]
 	{
-		from = "Summon Bog Beast";
-		to = "Schlammbestie beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Cobble Man";
-		to = "Pflastermann beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Marble Golem";
-		to = "Marmorgolem beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Air Elemental Minion";
 		to = "Luftelementar-Scherge beschwören";
 	}
@@ -31,21 +16,6 @@
 		to = "Wasserelementar-Scherge beschwören";
 	}
 
-	[0x0000]
-	{
-		from = "Summons a Bog Beast to guard the Caster.";
-		to = "Beschwört eine Schlammbestie, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Cobble Man to guard the Caster.";
-		to = "Beschwört einen Pflastermann, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Marble Golem to guard the Caster.";
-		to = "Beschwört einen Marmorgolem, der den Anwender verteidigt.";
-	}
 	[0x0000]
 	{
 		from = "Summons an Air Elemental Minion to guard the Caster.";

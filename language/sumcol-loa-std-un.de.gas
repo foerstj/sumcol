@@ -37,11 +37,6 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Krakemaw the Putrid";
-		to = "Krakemaw den Stinkenden beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Noctiss";
 		to = "Noctiss beschwören";
 	}
@@ -80,11 +75,6 @@
 	{
 		from = "Summons a Scaly Rahk to guard the Caster.";
 		to = "Beschwört einen Schuppigen Rahk, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons Krakemaw the Putrid to guard the Caster.";
-		to = "Beschwört Krakemaw den Stinkenden, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
