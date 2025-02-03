@@ -10,6 +10,8 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gasp
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gaspy\jinja\sumcol\language\sumcol-loa-std.de.gas.csv --value v=loa --value ft=std
 if %errorlevel% neq 0 pause
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gaspy\jinja\sumcol\language\sumcol-v-nstd.de.gas.csv --value v=v --value ft=nstd
+if %errorlevel% neq 0 pause
 
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable%
 if %errorlevel% neq 0 pause

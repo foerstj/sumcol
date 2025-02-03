@@ -169,7 +169,7 @@
 	[0x0000]
 	{
 		from = "Summon Frost Archer";
-		to = "Frostbogenschütze beschwören";
+		to = "Frostbogenschützen beschwören";
 	}
 	[0x0000]
 	{
@@ -257,7 +257,7 @@
 	[0x0000]
 	{
 		from = "Summon Krug Shaman";
-		to = "Krug-Schamane beschwören";
+		to = "Krug-Schamanen beschwören";
 	}
 	[0x0000]
 	{
