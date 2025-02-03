@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Mine Worm";
-		to = "Grubenwurm beschwören";
+		from = "Summons a Googore to guard the Caster.";
+		to = "Beschwört einen Googore, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Googore to guard the Caster.";
-		to = "Beschwört einen Googore, der den Anwender verteidigt.";
+		from = "Summon Mine Worm";
+		to = "Grubenwurm beschwören";
 	}
 	[0x0000]
 	{

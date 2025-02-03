@@ -5,7 +5,6 @@
 		from = "Summon Rune Caster";
 		to = "Runenleger beschwören";
 	}
-
 	[0x0000]
 	{
 		from = "Summons a Rune Caster to guard the Caster.";

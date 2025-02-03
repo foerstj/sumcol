@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Chitterskrag to guard the Caster.";
+		to = "Beschwört einen Chitterskrag, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Immature Chitterskrag";
 		to = "Unreifen Chitterskrag beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons an Immature Chitterskrag to guard the Caster.";
+		to = "Beschwört einen Unreifen Chitterskrag, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Spewing Chitterskrag";
@@ -17,9 +29,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Spewing Chitterskrag to guard the Caster.";
+		to = "Beschwört einen Spuckenden Chitterskrag, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Emerald Spider";
 		to = "Smaragdspinne beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons an Emerald Spider to guard the Caster.";
+		to = "Beschwört eine Smaragdspinne, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Ice Grub";
@@ -27,9 +51,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons an Ice Grub to guard the Caster.";
+		to = "Beschwört eine Eislarve, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Ice Moth";
 		to = "Eismotte beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons an Ice Moth to guard the Caster.";
+		to = "Beschwört eine Eismotte, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Swarmling Drone";
@@ -37,9 +73,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Swarmling Drone to guard the Caster.";
+		to = "Beschwört eine Swarmlingdrohne, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Swarmling Queen";
 		to = "Swarmlingkönigin beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Swarmling Queen to guard the Caster.";
+		to = "Beschwört ein Swarmlingkönigin, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Swirling Midges";
@@ -47,9 +95,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons Swirling Midges to guard the Caster.";
+		to = "Beschwört Wirbelmücken, die den Anwender verteidigen.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Widow Spider";
 		to = "Witwenspinne beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Widow Spider to guard the Caster.";
+		to = "Beschwört eine Witwenspinne, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Swarmling";
@@ -57,9 +117,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Swarmling to guard the Caster.";
+		to = "Beschwört einen Swarmling, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Flying Gritch";
 		to = "Fliegenden Gritch beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Flying Gritch to guard the Caster.";
+		to = "Beschwört einen Fliegenden Gritch, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Greater Scrub Scorpion";
@@ -67,84 +139,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Greater Scrub Scorpion to guard the Caster.";
+		to = "Beschwört einen Großen Buschskorpion, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Lesser Scrub Scorpion";
 		to = "Kleinen Buschskorpion beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Sandskreech";
-		to = "Sandskreech beschwören";
+		from = "Summons a Lesser Scrub Scorpion to guard the Caster.";
+		to = "Beschwört einen Kleinen Buschskorpion, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Chitterskrag to guard the Caster.";
-		to = "Beschwört einen Chitterskrag, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Immature Chitterskrag to guard the Caster.";
-		to = "Beschwört einen Unreifen Chitterskrag, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Spewing Chitterskrag to guard the Caster.";
-		to = "Beschwört einen Spuckenden Chitterskrag, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Emerald Spider to guard the Caster.";
-		to = "Beschwört eine Smaragdspinne, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ice Grub to guard the Caster.";
-		to = "Beschwört eine Eislarve, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ice Moth to guard the Caster.";
-		to = "Beschwört eine Eismotte, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swarmling Drone to guard the Caster.";
-		to = "Beschwört eine Swarmlingdrohne, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swarmling Queen to guard the Caster.";
-		to = "Beschwört ein Swarmlingkönigin, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons Swirling Midges to guard the Caster.";
-		to = "Beschwört Wirbelmücken, die den Anwender verteidigen.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Widow Spider to guard the Caster.";
-		to = "Beschwört eine Witwenspinne, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swarmling to guard the Caster.";
-		to = "Beschwört einen Swarmling, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Flying Gritch to guard the Caster.";
-		to = "Beschwört einen Fliegenden Gritch, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Greater Scrub Scorpion to guard the Caster.";
-		to = "Beschwört einen Großen Buschskorpion, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Lesser Scrub Scorpion to guard the Caster.";
-		to = "Beschwört einen Kleinen Buschskorpion, der den Anwender verteidigt.";
+		from = "Summon Sandskreech";
+		to = "Sandskreech beschwören";
 	}
 	[0x0000]
 	{

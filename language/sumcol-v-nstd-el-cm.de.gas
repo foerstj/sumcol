@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Blazing Elemental";
-		to = "Flammendes Elementar beschwören";
+		from = "Summons a Magma Beast to guard the Caster.";
+		to = "Beschwört eine Magmabestie, die den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Magma Beast to guard the Caster.";
-		to = "Beschwört eine Magmabestie, die den Anwender verteidigt.";
+		from = "Summon Blazing Elemental";
+		to = "Flammendes Elementar beschwören";
 	}
 	[0x0000]
 	{

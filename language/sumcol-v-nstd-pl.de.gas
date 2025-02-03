@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Tretch";
-		to = "Tretch beschwören";
+		from = "Summons an Infested Larch to guard the Caster.";
+		to = "Beschwört einen Infizierten Lärchling, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons an Infested Larch to guard the Caster.";
-		to = "Beschwört einen Infizierten Lärchling, der den Anwender verteidigt.";
+		from = "Summon Tretch";
+		to = "Tretch beschwören";
 	}
 	[0x0000]
 	{

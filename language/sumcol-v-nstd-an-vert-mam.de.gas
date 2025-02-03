@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Dark Wolf to guard the Caster.";
+		to = "Beschwört einen Dunklen Wolf, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Alpha Wolf";
 		to = "Leitwolf beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons an Alpha Wolf to guard the Caster.";
+		to = "Beschwört einen Leitwolf, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Dark Klaw";
@@ -17,34 +29,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Dark Klaw to guard the Caster.";
+		to = "Beschwört einen Dunkelklaw, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Grizzly Furok";
 		to = "Grausigen Furok beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Hulking Gremal";
-		to = "Hünenhaften Gremal beschwören";
+		from = "Summons a Grizzly Furok to guard the Caster.";
+		to = "Beschwört einen Grausigen Furok, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Dark Wolf to guard the Caster.";
-		to = "Beschwört einen Dunklen Wolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Alpha Wolf to guard the Caster.";
-		to = "Beschwört einen Leitwolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Dark Klaw to guard the Caster.";
-		to = "Beschwört einen Dunkelklaw, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Grizzly Furok to guard the Caster.";
-		to = "Beschwört einen Grausigen Furok, der den Anwender verteidigt.";
+		from = "Summon Hulking Gremal";
+		to = "Hünenhaften Gremal beschwören";
 	}
 	[0x0000]
 	{

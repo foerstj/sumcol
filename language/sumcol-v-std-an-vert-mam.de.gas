@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Furok Slasher to guard the Caster.";
+		to = "Beschwört einen Furok Schlitzer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Gray Wolf";
 		to = "Grauwolf beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Gray Wolf to guard the Caster.";
+		to = "Beschwört einen Grauwolf, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Klaw";
@@ -17,9 +29,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Klaw to guard the Caster.";
+		to = "Beschwört einen Klaw, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Krug Dog";
 		to = "Krug-Hund beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Krug Dog to guard the Caster.";
+		to = "Beschwört einen Krug-Hund, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Krug Killer Dog";
@@ -27,34 +51,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon White Wolf";
-		to = "Weißen Wolf beschwören";
+		from = "Summons a Krug Killer Dog to guard the Caster.";
+		to = "Beschwört einen Krug-Kampfhund, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Furok Slasher to guard the Caster.";
-		to = "Beschwört einen Furok Schlitzer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Gray Wolf to guard the Caster.";
-		to = "Beschwört einen Grauwolf, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Klaw to guard the Caster.";
-		to = "Beschwört einen Klaw, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Dog to guard the Caster.";
-		to = "Beschwört einen Krug-Hund, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Killer Dog to guard the Caster.";
-		to = "Beschwört einen Krug-Kampfhund, der den Anwender verteidigt.";
+		from = "Summon White Wolf";
+		to = "Weißen Wolf beschwören";
 	}
 	[0x0000]
 	{

@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons an Arakun Spider to guard the Caster.";
+		to = "Beschwört eine Arakun-Spinne, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Forest Phrak";
 		to = "Wald-Phrak beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Forest Phrak to guard the Caster.";
+		to = "Beschwört einen Wald-Phrak, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Frostnid";
@@ -17,9 +29,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Frostnid to guard the Caster.";
+		to = "Beschwört einen Frostnid, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Frost Spitter";
 		to = "Frostnid-Spucker beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Frost Spitter to guard the Caster.";
+		to = "Beschwört einen Frostnid-Spucker, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Giant Moth";
@@ -27,9 +51,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Giant Moth to guard the Caster.";
+		to = "Beschwört eine Riesenmotte, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Giant Wasp";
 		to = "Riesenwespe beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Giant Wasp to guard the Caster.";
+		to = "Beschwört eine Riesenwespe, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Phrak";
@@ -37,9 +73,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Phrak to guard the Caster.";
+		to = "Beschwört einen Phrak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Phrak Piercer";
 		to = "Phrak-Schlitzer beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Phrak Piercer to guard the Caster.";
+		to = "Beschwört einen Phrak-Schlitzer, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Stalagnid";
@@ -47,9 +95,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Stalagnid to guard the Caster.";
+		to = "Beschwört einen Stalagnid, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Swamp Stinger";
 		to = "Sumpfstecher beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Swamp Stinger to guard the Caster.";
+		to = "Beschwört einen Sumpfstecher, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Yellow Spider";
@@ -57,64 +117,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Soul Stinger";
-		to = "Seelenstecher beschwören";
+		from = "Summons a Yellow Spider to guard the Caster.";
+		to = "Beschwört eine Gelbe Spinne, die den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons an Arakun Spider to guard the Caster.";
-		to = "Beschwört eine Arakun-Spinne, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Forest Phrak to guard the Caster.";
-		to = "Beschwört einen Wald-Phrak, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Frostnid to guard the Caster.";
-		to = "Beschwört einen Frostnid, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Frost Spitter to guard the Caster.";
-		to = "Beschwört einen Frostnid-Spucker, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Giant Moth to guard the Caster.";
-		to = "Beschwört eine Riesenmotte, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Giant Wasp to guard the Caster.";
-		to = "Beschwört eine Riesenwespe, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Phrak to guard the Caster.";
-		to = "Beschwört einen Phrak, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Phrak Piercer to guard the Caster.";
-		to = "Beschwört einen Phrak-Schlitzer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Stalagnid to guard the Caster.";
-		to = "Beschwört einen Stalagnid, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swamp Stinger to guard the Caster.";
-		to = "Beschwört einen Sumpfstecher, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Yellow Spider to guard the Caster.";
-		to = "Beschwört eine Gelbe Spinne, die den Anwender verteidigt.";
+		from = "Summon Soul Stinger";
+		to = "Seelenstecher beschwören";
 	}
 	[0x0000]
 	{

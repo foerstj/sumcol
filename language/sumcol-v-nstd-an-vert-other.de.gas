@@ -5,7 +5,6 @@
 		from = "Summon Rabid Spiked Maw";
 		to = "Wildes dornenbewehrtes Maul beschwören";
 	}
-
 	[0x0000]
 	{
 		from = "Summons a Rabid Spiked Maw to guard the Caster.";

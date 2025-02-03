@@ -7,24 +7,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Skeleton Captain to guard the Caster.";
+		to = "Beschwört einen Skeletthauptmann, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Ancient Corpse";
 		to = "Alten Leichnam beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Wretched Zombie";
-		to = "Elenden Zombie beschwören";
+		from = "Summons an Ancient Corpse to guard the Caster.";
+		to = "Beschwört einen Alten Leichnam, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Skeleton Captain to guard the Caster.";
-		to = "Beschwört einen Skeletthauptmann, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ancient Corpse to guard the Caster.";
-		to = "Beschwört einen Alten Leichnam, der den Anwender verteidigt.";
+		from = "Summon Wretched Zombie";
+		to = "Elenden Zombie beschwören";
 	}
 	[0x0000]
 	{

@@ -7,24 +7,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons an Air Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Luftelementar-Schergen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Earth Elemental Minion";
 		to = "Erdelementar-Scherge beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Water Elemental Minion";
-		to = "Wasserelementar-Scherge beschwören";
+		from = "Summons an Earth Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Erdelementar-Schergen, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons an Air Elemental Minion to guard the Caster.";
-		to = "Beschwört einen Luftelementar-Schergen, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Earth Elemental Minion to guard the Caster.";
-		to = "Beschwört einen Erdelementar-Schergen, der den Anwender verteidigt.";
+		from = "Summon Water Elemental Minion";
+		to = "Wasserelementar-Scherge beschwören";
 	}
 	[0x0000]
 	{

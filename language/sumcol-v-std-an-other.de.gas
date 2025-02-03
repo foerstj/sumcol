@@ -5,7 +5,6 @@
 		from = "Summon Googore Grub";
 		to = "Googore-Larve beschwören";
 	}
-
 	[0x0000]
 	{
 		from = "Summons a Googore Grub to guard the Caster.";

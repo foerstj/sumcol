@@ -7,24 +7,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Large Twisted Mucosa to guard the Caster.";
+		to = "Beschwört einen großen verdrehten Mucosa, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Rune Fiend";
 		to = "Runendämon beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Whelnar's Eyes";
-		to = "Whelnars Augen beschwören";
+		from = "Summons a Rune Fiend to guard the Caster.";
+		to = "Beschwört einen Runendämon, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Large Twisted Mucosa to guard the Caster.";
-		to = "Beschwört einen großen verdrehten Mucosa, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Rune Fiend to guard the Caster.";
-		to = "Beschwört einen Runendämon, der den Anwender verteidigt.";
+		from = "Summon Whelnar's Eyes";
+		to = "Whelnars Augen beschwören";
 	}
 	[0x0000]
 	{

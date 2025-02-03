@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons an Angler to guard the Caster.";
+		to = "Beschwört einen Angler, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Island Lizard";
 		to = "Inselechse beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons an Island Lizard to guard the Caster.";
+		to = "Beschwört eine Inselechse, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Jungle Spiker";
@@ -17,9 +29,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Jungle Spiker to guard the Caster.";
+		to = "Beschwört einen Dschungelnadler, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Skitterclaw";
 		to = "Skitterclaw beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Skitterclaw to guard the Caster.";
+		to = "Beschwört einen Skitterclaw, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Skitterling";
@@ -27,9 +51,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Skitterling to guard the Caster.";
+		to = "Beschwört einen Skitterling, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Mhulliq";
 		to = "Mhulliq beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Mhulliq to guard the Caster.";
+		to = "Beschwört einen Mhulliq, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Monstrous Rat";
@@ -37,9 +73,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Monstrous Rat to guard the Caster.";
+		to = "Beschwört eine Monströse Ratte, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Rending Mhulliq";
 		to = "Reißenden Mhulliq beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Rending Mhulliq to guard the Caster.";
+		to = "Beschwört einen Reißenden Mhulliq, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Snow Boar";
@@ -47,9 +95,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Snow Boar to guard the Caster.";
+		to = "Beschwört einen Schneekeiler, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Thunder Lizard";
 		to = "Donnerechse beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Thunder Lizard to guard the Caster.";
+		to = "Beschwört eine Donnerechse, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Varg";
@@ -57,9 +117,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Varg to guard the Caster.";
+		to = "Beschwört einen Varg, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Jungle Angler";
 		to = "Dschungelangler beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Jungle Angler to guard the Caster.";
+		to = "Beschwört einen Dschungelangler, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Shadow Angler";
@@ -67,74 +139,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Leetch";
-		to = "Leetch beschwören";
+		from = "Summons a Shadow Angler to guard the Caster.";
+		to = "Beschwört einen Schattenangler, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons an Angler to guard the Caster.";
-		to = "Beschwört einen Angler, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Island Lizard to guard the Caster.";
-		to = "Beschwört eine Inselechse, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Jungle Spiker to guard the Caster.";
-		to = "Beschwört einen Dschungelnadler, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Skitterclaw to guard the Caster.";
-		to = "Beschwört einen Skitterclaw, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Skitterling to guard the Caster.";
-		to = "Beschwört einen Skitterling, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Mhulliq to guard the Caster.";
-		to = "Beschwört einen Mhulliq, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Monstrous Rat to guard the Caster.";
-		to = "Beschwört eine Monströse Ratte, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Rending Mhulliq to guard the Caster.";
-		to = "Beschwört einen Reißenden Mhulliq, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Snow Boar to guard the Caster.";
-		to = "Beschwört einen Schneekeiler, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Thunder Lizard to guard the Caster.";
-		to = "Beschwört eine Donnerechse, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Varg to guard the Caster.";
-		to = "Beschwört einen Varg, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Jungle Angler to guard the Caster.";
-		to = "Beschwört einen Dschungelangler, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Shadow Angler to guard the Caster.";
-		to = "Beschwört einen Schattenangler, der den Anwender verteidigt.";
+		from = "Summon Leetch";
+		to = "Leetch beschwören";
 	}
 	[0x0000]
 	{

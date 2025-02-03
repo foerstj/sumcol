@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Rune Guardian";
-		to = "Runenwächter beschwören";
+		from = "Summons a Twisted Mucosa Brute to guard the Caster.";
+		to = "Beschwört einen verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Twisted Mucosa Brute to guard the Caster.";
-		to = "Beschwört einen verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
+		from = "Summon Rune Guardian";
+		to = "Runenwächter beschwören";
 	}
 	[0x0000]
 	{

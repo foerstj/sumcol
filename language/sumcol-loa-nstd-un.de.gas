@@ -5,7 +5,6 @@
 		from = "Summon Krakemaw the Putrid";
 		to = "Krakemaw den Stinkenden beschwören";
 	}
-
 	[0x0000]
 	{
 		from = "Summons Krakemaw the Putrid to guard the Caster.";

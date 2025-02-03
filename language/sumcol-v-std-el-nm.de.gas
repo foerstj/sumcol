@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Blue Shard to guard the Caster.";
+		to = "Beschwört eine Blaue Scherbe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Green Shard";
 		to = "Grüne Scherbe beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Green Shard to guard the Caster.";
+		to = "Beschwört eine Grüne Scherbe, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Ice Archer";
@@ -17,9 +29,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons an Ice Archer to guard the Caster.";
+		to = "Beschwört einen Eisbogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Ice Fly";
 		to = "Eisfliege beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons an Ice Fly to guard the Caster.";
+		to = "Beschwört eine Eisfliege, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Ice Warrior";
@@ -27,9 +51,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons an Ice Warrior to guard the Caster.";
+		to = "Beschwört einen Eiskrieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Purple Shard";
 		to = "Rote Scherbe beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Purple Shard to guard the Caster.";
+		to = "Beschwört eine Rote Scherbe, die den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Swamp Creature";
@@ -37,54 +73,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Swamp Creature to guard the Caster.";
+		to = "Beschwört ein Sumpfwesen, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Swamp Slinger";
 		to = "Sumpfschleuder beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Teal Shard";
-		to = "Tonscherbe beschwören";
+		from = "Summons a Swamp Slinger to guard the Caster.";
+		to = "Beschwört eine Sumpfschleuder, die den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Blue Shard to guard the Caster.";
-		to = "Beschwört eine Blaue Scherbe, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Green Shard to guard the Caster.";
-		to = "Beschwört eine Grüne Scherbe, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ice Archer to guard the Caster.";
-		to = "Beschwört einen Eisbogenschützen, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ice Fly to guard the Caster.";
-		to = "Beschwört eine Eisfliege, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons an Ice Warrior to guard the Caster.";
-		to = "Beschwört einen Eiskrieger, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Purple Shard to guard the Caster.";
-		to = "Beschwört eine Rote Scherbe, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swamp Creature to guard the Caster.";
-		to = "Beschwört ein Sumpfwesen, das den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Swamp Slinger to guard the Caster.";
-		to = "Beschwört eine Sumpfschleuder, die den Anwender verteidigt.";
+		from = "Summon Teal Shard";
+		to = "Tonscherbe beschwören";
 	}
 	[0x0000]
 	{

@@ -5,7 +5,6 @@
 		from = "Summon Mucosa Brute";
 		to = "Mucosa-Schläger beschwören";
 	}
-
 	[0x0000]
 	{
 		from = "Summons a Mucosa Brute to guard the Caster.";

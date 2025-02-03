@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Mantrap";
-		to = "Menschenfalle beschwören";
+		from = "Summons Killer Vines to guard the Caster.";
+		to = "Beschwört Todesranken, die den Anwender verteidigen.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons Killer Vines to guard the Caster.";
-		to = "Beschwört Todesranken, die den Anwender verteidigen.";
+		from = "Summon Mantrap";
+		to = "Menschenfalle beschwören";
 	}
 	[0x0000]
 	{
