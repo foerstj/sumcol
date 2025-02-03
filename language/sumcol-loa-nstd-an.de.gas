@@ -1,0 +1,34 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Yellow Eye";
+		to = "Gelbauge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Giant Chitterskrag";
+		to = "Riesigen Chitterskrag beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Jungle Skrubb";
+		to = "Dschungel-Skrubb beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons Yellow Eye to guard the Caster.";
+		to = "Beschwört Gelbauge, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Chitterskrag to guard the Caster.";
+		to = "Beschwört einen Riesigen Chitterskrag, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Jungle Skrubb to guard the Caster.";
+		to = "Beschwört einen Dschungel-Skrubb, der den Anwender verteidigt.";
+	}
+}

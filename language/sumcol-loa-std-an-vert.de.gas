@@ -57,11 +57,6 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Yellow Eye";
-		to = "Gelbauge beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Jungle Angler";
 		to = "Dschungelangler beschwören";
 	}
@@ -130,11 +125,6 @@
 	{
 		from = "Summons a Varg to guard the Caster.";
 		to = "Beschwört einen Varg, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons Yellow Eye to guard the Caster.";
-		to = "Beschwört Gelbauge, der den Anwender verteidigt.";
 	}
 	[0x0000]
 	{
