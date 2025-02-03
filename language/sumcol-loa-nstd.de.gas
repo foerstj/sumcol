@@ -1,0 +1,136 @@
+[t:0x0407,n:text]
+{
+
+	[0x0000]
+	{
+		from = "Summon Yellow Eye";
+		to = "Gelbauge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Yellow Eye to guard the Caster.";
+		to = "Beschwört Gelbauge, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Giant Chitterskrag";
+		to = "Riesigen Chitterskrag beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Chitterskrag to guard the Caster.";
+		to = "Beschwört einen Riesigen Chitterskrag, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Jungle Skrubb";
+		to = "Dschungel-Skrubb beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Jungle Skrubb to guard the Caster.";
+		to = "Beschwört einen Dschungel-Skrubb, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Twisted Mucosa Brute";
+		to = "Verdrehten Mucosa-Schläger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Twisted Mucosa Brute to guard the Caster.";
+		to = "Beschwört einen verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Rune Guardian";
+		to = "Runenwächter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Rune Guardian to guard the Caster.";
+		to = "Beschwört den Runenwächter, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Air Elemental Minion";
+		to = "Luftelementar-Scherge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Air Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Luftelementar-Schergen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Earth Elemental Minion";
+		to = "Erdelementar-Scherge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Earth Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Erdelementar-Schergen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Water Elemental Minion";
+		to = "Wasserelementar-Scherge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Water Elemental Minion to guard the Caster.";
+		to = "Beschwört einen Wasserelementar-Schergen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Rune Caster";
+		to = "Runenleger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rune Caster to guard the Caster.";
+		to = "Beschwört einen Runenleger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Killer Vines";
+		to = "Todesranken beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Killer Vines to guard the Caster.";
+		to = "Beschwört Todesranken, die den Anwender verteidigen.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mantrap";
+		to = "Menschenfalle beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mantrap to guard the Caster.";
+		to = "Beschwört eine Menschenfalle, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krakemaw the Putrid";
+		to = "Krakemaw den Stinkenden beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Krakemaw the Putrid to guard the Caster.";
+		to = "Beschwört Krakemaw den Stinkenden, der den Anwender verteidigt.";
+	}
+
+}
