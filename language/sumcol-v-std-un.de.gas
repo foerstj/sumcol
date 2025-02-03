@@ -45,6 +45,16 @@
 		from = "Summon Tortured Corpse";
 		to = "Gequälte Leiche beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summon Goo Walker";
+		to = "Goo-Geher beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summon Zombie";
+		to = "Zombie beschwören";
+	}
 
 	[0x0000]
 	{
@@ -90,5 +100,15 @@
 	{
 		from = "Summons a Tortured Corpse to guard the Caster.";
 		to = "Beschwört eine Gequälte Leiche, die den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Goo Walker to guard the Caster.";
+		to = "Beschwört einen Goo-Geher, der den Anwender verteidigt.";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zombie to guard the Caster.";
+		to = "Beschwört einen Zombie, der den Anwender verteidigt.";
 	}
 }
