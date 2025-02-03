@@ -2,26 +2,6 @@
 {
 	[0x0000]
 	{
-		from = "Summon Phrak Ballista";
-		to = "Phrak-Balliste beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Venom Fiend";
-		to = "Giftdämon beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Black Skrubb";
-		to = "Schwarzen Skrubb beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summon Farm Skrubb";
-		to = "Feld-Skrubb beschwören";
-	}
-	[0x0000]
-	{
 		from = "Summon Arakun Spider";
 		to = "Arakun-Spinne beschwören";
 	}
@@ -81,26 +61,6 @@
 		to = "Seelenstecher beschwören";
 	}
 
-	[0x0000]
-	{
-		from = "Summons a Phrak Ballista to guard the Caster.";
-		to = "Beschwört eine Phrak-Balliste, die den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Venom Fiend to guard the Caster.";
-		to = "Beschwört einen Giftdämon, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Black Skrubb to guard the Caster.";
-		to = "Beschwört einen Schwarzen Skrubb, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Farm Skrubb to guard the Caster.";
-		to = "Beschwört einen Feld-Skrubb, der den Anwender verteidigt.";
-	}
 	[0x0000]
 	{
 		from = "Summons an Arakun Spider to guard the Caster.";

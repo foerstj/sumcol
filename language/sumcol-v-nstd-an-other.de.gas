@@ -10,11 +10,6 @@
 		from = "Summon Mine Worm";
 		to = "Grubenwurm beschwören";
 	}
-	[0x0000]
-	{
-		from = "Summon Googore Grub";
-		to = "Googore-Larve beschwören";
-	}
 
 	[0x0000]
 	{
@@ -25,10 +20,5 @@
 	{
 		from = "Summons a Mine Worm to guard the Caster.";
 		to = "Beschwört einen Grubenwurm, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Googore Grub to guard the Caster.";
-		to = "Beschwört eine Googore-Larve, die den Anwender verteidigt.";
 	}
 }

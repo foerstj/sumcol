@@ -1,0 +1,14 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Googore Grub";
+		to = "Googore-Larve beschwören";
+	}
+
+	[0x0000]
+	{
+		from = "Summons a Googore Grub to guard the Caster.";
+		to = "Beschwört eine Googore-Larve, die den Anwender verteidigt.";
+	}
+}
