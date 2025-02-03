@@ -466,7 +466,7 @@
 	[0x0000]
 	{
 		from = "Summon Ice Archer";
-		to = "Eisbogenschütze beschwören";
+		to = "Eisbogenschützen beschwören";
 	}
 	[0x0000]
 	{
@@ -669,7 +669,7 @@
 	[0x0000]
 	{
 		from = "Summons a Dark Slinger to guard the Caster.";
-		to = "Beschwört einen Finsterschleuder, der den Anwender verteidigt.";
+		to = "Beschwört eine Finsterschleuder, die den Anwender verteidigt.";
 	}
 
 	[0x0000]
@@ -829,7 +829,7 @@
 	[0x0000]
 	{
 		from = "Summon Skeleton Archer";
-		to = "Skelettbogenschütze beschwören";
+		to = "Skelettbogenschützen beschwören";
 	}
 	[0x0000]
 	{
