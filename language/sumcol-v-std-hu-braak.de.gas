@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Braak Mage";
-		to = "Braak-Zauberer beschwören";
+		from = "Summons a Braak to guard the Caster.";
+		to = "Beschwört einen Braak, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Braak to guard the Caster.";
-		to = "Beschwört einen Braak, der den Anwender verteidigt.";
+		from = "Summon Braak Mage";
+		to = "Braak-Zauberer beschwören";
 	}
 	[0x0000]
 	{

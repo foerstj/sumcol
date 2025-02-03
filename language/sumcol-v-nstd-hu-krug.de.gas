@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons Brankar the Scavenger to guard the Caster.";
+		to = "Beschwört Brankar den Fledderer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Klandank the Krug";
 		to = "Klandank den Krug beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons Klandank the Krug to guard the Caster.";
+		to = "Beschwört Klandank den Krug, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Futak the Trainer";
@@ -17,34 +29,25 @@
 	}
 	[0x0000]
 	{
+		from = "Summons Futak the Trainer to guard the Caster.";
+		to = "Beschwört Futak den Tiermeister, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Krug Shaman";
 		to = "Krug-Schamane beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summon Huskar the Shaman";
-		to = "Huskar den Schamanen beschwören";
+		from = "Summons a Krug Shaman to guard the Caster.";
+		to = "Beschwört einen Krug-Schamanen, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons Brankar the Scavenger to guard the Caster.";
-		to = "Beschwört Brankar den Fledderer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons Klandank the Krug to guard the Caster.";
-		to = "Beschwört Klandank den Krug, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons Futak the Trainer to guard the Caster.";
-		to = "Beschwört Futak den Tiermeister, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Shaman to guard the Caster.";
-		to = "Beschwört einen Krug-Schamanen, der den Anwender verteidigt.";
+		from = "Summon Huskar the Shaman";
+		to = "Huskar den Schamanen beschwören";
 	}
 	[0x0000]
 	{

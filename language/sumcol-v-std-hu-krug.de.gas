@@ -7,9 +7,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Krug Scavenger to guard the Caster.";
+		to = "Beschwört einen Krug-Strauchdieb, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Krug Scout";
 		to = "Krug-Späher beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Krug Scout to guard the Caster.";
+		to = "Beschwört einen Krug-Späher, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Krug Grunt";
@@ -17,9 +29,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Krug Grunt to guard the Caster.";
+		to = "Beschwört einen Krug-Soldat, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Krug Chucker";
 		to = "Krug-Schleuderer beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Krug Chucker to guard the Caster.";
+		to = "Beschwört einen Krug-Schleuderer, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Krug Guard";
@@ -27,9 +51,21 @@
 	}
 	[0x0000]
 	{
+		from = "Summons a Krug Guard to guard the Caster.";
+		to = "Beschwört einen Krug-Wächter, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Krug Raider";
 		to = "Krug-Plünderer beschwören";
 	}
+	[0x0000]
+	{
+		from = "Summons a Krug Raider to guard the Caster.";
+		to = "Beschwört einen Krug-Plünderer, der den Anwender verteidigt.";
+	}
+
 	[0x0000]
 	{
 		from = "Summon Krug Commander";
@@ -37,44 +73,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Krug Apprentice";
-		to = "Krug-Lehrling beschwören";
+		from = "Summons a Krug Commander to guard the Caster.";
+		to = "Beschwört einen Krug-Kommandeur, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons a Krug Scavenger to guard the Caster.";
-		to = "Beschwört einen Krug-Strauchdieb, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Scout to guard the Caster.";
-		to = "Beschwört einen Krug-Späher, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Grunt to guard the Caster.";
-		to = "Beschwört einen Krug-Soldat, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Chucker to guard the Caster.";
-		to = "Beschwört einen Krug-Schleuderer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Guard to guard the Caster.";
-		to = "Beschwört einen Krug-Wächter, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Raider to guard the Caster.";
-		to = "Beschwört einen Krug-Plünderer, der den Anwender verteidigt.";
-	}
-	[0x0000]
-	{
-		from = "Summons a Krug Commander to guard the Caster.";
-		to = "Beschwört einen Krug-Kommandeur, der den Anwender verteidigt.";
+		from = "Summon Krug Apprentice";
+		to = "Krug-Lehrling beschwören";
 	}
 	[0x0000]
 	{

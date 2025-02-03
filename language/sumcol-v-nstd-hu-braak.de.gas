@@ -7,14 +7,14 @@
 	}
 	[0x0000]
 	{
-		from = "Summon Ferocious Braak";
-		to = "Bösartigen Braak beschwören";
+		from = "Summons the Pitiful Braak to guard the Caster.";
+		to = "Beschwört den Erbärmlichen Braak, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
 	{
-		from = "Summons the Pitiful Braak to guard the Caster.";
-		to = "Beschwört den Erbärmlichen Braak, der den Anwender verteidigt.";
+		from = "Summon Ferocious Braak";
+		to = "Bösartigen Braak beschwören";
 	}
 	[0x0000]
 	{
