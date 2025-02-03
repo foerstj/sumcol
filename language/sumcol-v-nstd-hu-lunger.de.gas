@@ -1,0 +1,13 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Shadow Lunger";
+		to = "Schattenspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadow Lunger to guard the Caster.";
+		to = "Beschwört einen Schattenspringer, der den Anwender verteidigt.";
+	}
+}

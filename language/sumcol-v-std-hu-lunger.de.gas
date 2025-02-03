@@ -1,0 +1,35 @@
+[t:0x0407,n:text]
+{
+	[0x0000]
+	{
+		from = "Summon Dark Lunger";
+		to = "Dunkelspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Lunger to guard the Caster.";
+		to = "Beschwört einen Dunkelspringer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Slinger";
+		to = "Finsterschleuder beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Slinger to guard the Caster.";
+		to = "Beschwört einen Finsterschleuder, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Caster";
+		to = "Dunklen Hexer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Caster to guard the Caster.";
+		to = "Beschwört einen Dunklen Hexer, der den Anwender verteidigt.";
+	}
+}
