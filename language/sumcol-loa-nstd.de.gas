@@ -42,7 +42,7 @@
 	[0x0000]
 	{
 		from = "Summons a Twisted Mucosa Brute to guard the Caster.";
-		to = "Beschwört einen verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
+		to = "Beschwört einen Verdrehten Mucosa-Schläger, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
@@ -59,7 +59,7 @@
 	[0x0000]
 	{
 		from = "Summon Air Elemental Minion";
-		to = "Luftelementar-Scherge beschwören";
+		to = "Luftelementar-Schergen beschwören";
 	}
 	[0x0000]
 	{
@@ -70,7 +70,7 @@
 	[0x0000]
 	{
 		from = "Summon Earth Elemental Minion";
-		to = "Erdelementar-Scherge beschwören";
+		to = "Erdelementar-Schergen beschwören";
 	}
 	[0x0000]
 	{
@@ -81,7 +81,7 @@
 	[0x0000]
 	{
 		from = "Summon Water Elemental Minion";
-		to = "Wasserelementar-Scherge beschwören";
+		to = "Wasserelementar-Schergen beschwören";
 	}
 	[0x0000]
 	{

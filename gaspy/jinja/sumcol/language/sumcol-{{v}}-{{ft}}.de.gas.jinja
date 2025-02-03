@@ -1,0 +1,17 @@
+[t:0x0407,n:text]
+{
+	{% for row in data %}
+
+	[0x0000]
+	{
+		from = "Summon {{row.csn_from}}";
+		to = "{{row.csn_to}} beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons {{ [row.a_from, row.csn_from] | join(' ') | trim }} to guard the Caster.";
+		to = "Beschwört {{ [row.a_to, row.csn_to] | join(' ') | trim }}, {{row.sa_to}} den Anwender {% if row.plural %}verteidigen{% else %}verteidigt{% endif %}.";
+	}
+    {% endfor %}
+
+}
