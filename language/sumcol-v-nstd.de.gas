@@ -300,6 +300,61 @@
 
 	[0x0000]
 	{
+		from = "Summon Rogue Bandit";
+		to = "Räuberunterführer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rogue Bandit to guard the Caster.";
+		to = "Beschwört einen Räuberunterführer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Bandit Boss";
+		to = "Räuberhauptmann beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Bandit Boss to guard the Caster.";
+		to = "Beschwört einen Räuberhauptmann, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Enraged Gorack";
+		to = "Zornigen Gorack beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Enraged Gorack to guard the Caster.";
+		to = "Beschwört einen Zornigen Gorack, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Muong Troll";
+		to = "Muong-Troll beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Muong Troll to guard the Caster.";
+		to = "Beschwört einen Muong-Troll, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Rotten Troll";
+		to = "Hinterhältigen Troll beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rotten Troll to guard the Caster.";
+		to = "Beschwört einen Hinterhältigen Troll, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Ice Mage";
 		to = "Eismagier beschwören";
 	}
