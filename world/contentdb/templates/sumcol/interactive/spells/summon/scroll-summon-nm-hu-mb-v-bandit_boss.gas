@@ -11,7 +11,7 @@
     [common]
     {
         screen_name = "Summon Bandit Boss";
-        description = "Summons the Bandit Boss to guard the Caster.";
+        description = "Summons a Bandit Boss to guard the Caster.";
     }
     [gui]
     {
