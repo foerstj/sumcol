@@ -6,7 +6,7 @@
     doc = "scroll Summon Lost Witch (Attacking)";
     [aspect]
     {
-        gold_value = 14000;
+        gold_value = 9100;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 840;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+1);
-        required_level = 49;
-        max_level = 69;
+        required_level = 39;
+        max_level = 59;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.755)-#combat_magic_level);
+                value = ((#magic*0.8049999999999999)-#combat_magic_level);
             }
             [*]
             {

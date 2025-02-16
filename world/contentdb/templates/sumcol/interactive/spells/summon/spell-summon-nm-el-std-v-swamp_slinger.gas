@@ -6,7 +6,7 @@
     doc = "spell Summon Swamp Slinger";
     [aspect]
     {
-        gold_value = 52000;
+        gold_value = 34000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 42;
-        max_level = 62;
+        required_level = 33;
+        max_level = 53;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.79)-#combat_magic_level);
+                value = ((#magic*0.835)-#combat_magic_level);
             }
             [*]
             {

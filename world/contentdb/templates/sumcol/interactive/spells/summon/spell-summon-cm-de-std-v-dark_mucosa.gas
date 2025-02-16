@@ -6,7 +6,7 @@
     doc = "spell Summon Dark Mucosa";
     [aspect]
     {
-        gold_value = 1200;
+        gold_value = 120;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 300;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 17;
-        max_level = 37;
+        required_level = 7;
+        max_level = 27;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.915)-#melee);
+                value = ((#magic*0.965)-#melee);
             }
             [*]
             {
