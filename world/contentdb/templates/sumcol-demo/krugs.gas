@@ -201,6 +201,7 @@
 {
     specializes = sumcol_krug_dummy_50_base;
     mind:movement_orders = MO_HOLD;
+    mind:combat_orders = CO_HOLD;
 }
 
 // ~ Wasped
@@ -241,6 +242,7 @@
 {
     specializes = sumcol_krug_dummy_100_base;
     mind:movement_orders = MO_HOLD;
+    mind:combat_orders = CO_HOLD;
 }
 
 // ~ Mucosa Raider
@@ -281,6 +283,7 @@
 {
     specializes = sumcol_krug_dummy_200_base;
     mind:movement_orders = MO_HOLD;
+    mind:combat_orders = CO_HOLD;
 }
 
 // ~ Veteran Maljin Stalker
@@ -321,6 +324,7 @@
 {
     specializes = sumcol_krug_dummy_300_base;
     mind:movement_orders = MO_HOLD;
+    mind:combat_orders = CO_HOLD;
 }
 
 
