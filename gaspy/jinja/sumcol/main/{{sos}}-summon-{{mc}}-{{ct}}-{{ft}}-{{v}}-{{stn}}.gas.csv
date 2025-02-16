@@ -1,5 +1,5 @@
 sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;abf_m;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;effect_script;end_script;test_only;comment
-spell;tesla_coil;coil_gob_01;;a;Tesla Coil;2.5;cm;ro;st;v;;7600;0.5;40;;;0.95;;;;;2;3;3;1.8;;;;
+spell;tesla_coil;coil_gob_01;;a;Tesla Coil;2.5;cm;ro;st;v;;9500;0.5;40;;;0.95;;;;;2;3;3;1.8;;;;
 spell;tesla_coil_heal;coil_gob_03;;a;Tesla Heal Coil;2.5;cm;ro;st-heal;v;;10000;1;42;;;1;;;;;;;3;2.5;;;;Healer
 scroll;yellow_eye;dsx_bear_snow;;;Yellow Eye;2.5;nm;an;mb;loa;;76;13;12;1.3;;;;;;;;;1;4.5;;;;
 spell;phrak;phrak;;a;Phrak;0.75;nm;an;std;v;;30;6;1;0.85;;;;;;;;;2;0.4;;;;
@@ -207,7 +207,7 @@ spell;kell;kell;;a;Kell;2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;
 spell;kell_shot;kell_shot;;a;Kell (Shot);2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;kell;Shot (220-240)
 spell;kell_blast;kell_blast;;a;Kell (Blast);2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;kell;Blast (actually 240-280) (fire spell)
 spell;kell_bolt;kell_bolt;;a;Kell (Bolt);2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;kell;Bolt (220-240)
-spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;1.25;cm;el;std;v;;260000;7;86;1;;;;;;;;;2;0.8;;;;
+spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;1.25;cm;el;std;v;;320000;7;86;1;;;;;;;;;2;0.8;;;;
 spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;;130000;4;62;1.1;;1.1;;;;;;;3;2;;;;Custom dmgvol spell
 spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;;130000;4;62;1.1;;1.1;;;;;160;200;1.5;2.5;;;;
-scroll;magma_beast;lava_beast_boss_01;;a;Magma Beast;2.5;cm;el;mb;v;;23000;11;64;1.3;;1.3;;;;;;;2;9;;;;Custom dmgvol spell
+scroll;magma_beast;lava_beast_boss_01;;a;Magma Beast;2.5;cm;el;mb;v;;29000;11;64;1.3;;1.3;;;;;;;2;9;;;;Custom dmgvol spell

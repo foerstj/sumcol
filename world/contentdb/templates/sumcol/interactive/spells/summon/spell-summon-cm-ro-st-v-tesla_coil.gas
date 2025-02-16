@@ -6,7 +6,7 @@
     doc = "spell Summon Tesla Coil";
     [aspect]
     {
-        gold_value = 7600;
+        gold_value = 9500;
     }
     [common]
     {

@@ -6,7 +6,7 @@
     doc = "spell Summon Lava Spirit Fighter";
     [aspect]
     {
-        gold_value = 260000;
+        gold_value = 320000;
     }
     [common]
     {

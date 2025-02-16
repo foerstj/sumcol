@@ -6,7 +6,7 @@
     doc = "scroll Summon Magma Beast";
     [aspect]
     {
-        gold_value = 23000;
+        gold_value = 29000;
     }
     [common]
     {
