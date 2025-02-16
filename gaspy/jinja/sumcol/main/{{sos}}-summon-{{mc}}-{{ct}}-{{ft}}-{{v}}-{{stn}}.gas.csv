@@ -123,7 +123,7 @@ spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;;7500;3;24;1
 scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;;760;12;21;;1.2;;;;33;37;;;2;3.6;;;;
 spell;proxo;proxo;;a;Proxo;2;cm;ro;ex;v;;7600;1;40;1;;;;;;;;;2.5;1;;;;Custom spell skrit
 spell;blue_shard;shard_blue;;a;Blue Shard;1.25;nm;el;std;v;;24000;4;29;;;1;;;;;58;64;3;1;;;;
-spell;spiked_maw;spiked_maw;;a;Spiked Maw;1;nm;an;std;v;;19000;5;28;;;1;;;;;75;80;1.5;0.8;;;;
+spell;spiked_maw;spiked_maw;;a;Spiked Maw;1.5;nm;an;std;v;;19000;5;28;;;1;;;;;75;80;1.5;0.8;;;;
 spell;rune_caster;dsx_rune_caster;;a;Rune Caster;1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;;44;50;1;0.9;;;;
 spell;rune_caster_attacking;dsx_rune_caster_attacking;;a;Rune Caster (Attacking);1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;;44;50;1;0.9;;;rune_caster;
 spell;rune_caster_summoning_beast;dsx_rune_caster_summoning_dsx_rune_guardian;;a;Rune Caster (Summoning Beast);1.5;cm;hu;su;loa;;33000;6;32;;;0.9;;;;;44;50;1;0.9;;;rune_caster;
@@ -143,7 +143,7 @@ scroll;rune_guardian;dsx_rune_guardian_boss;;the;Rune Guardian;2.5;cm;de;mb;loa;
 spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;26000;7;32;1.1;;;;;75;77;;;1.5;1;;;;
 spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;26000;5;32;0.95;;;;;;;;;2;1;;;;
 spell;purple_shard;shard_purple;;a;Purple Shard;1.75;nm;el;std;v;;33000;3;32;;;1.1;;;;;82;88;3;1.5;;;;
-scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1;nm;an;mb;v;;4800;13;29;;;1.2;;;;;75;80;1.5;2.4;;;;
+scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;4800;13;29;;;1.2;;;;;75;80;1.5;2.4;;;;
 spell;bandit_archer;bandit_ranged;;a;Bandit Archer;1.5;nm;hu;std;v;x;36000;5;34;;1;;;;65;93;;;1.2;1;;;;
 scroll;great_trog_warrior;trog_warrior_boss_01;;a;Great Trog Warrior;1.5;nm;hu;mb;v;x;5300;14;32;1.25;;;;;40;59;;;1.5;3;;;;
 spell;bandit;bandit_melee;;a;Bandit;1.5;nm;hu;std;v;x;29000;6;34;1.1;;;;;24;32;;;1.5;1;;;;
@@ -207,7 +207,7 @@ spell;kell;kell;;a;Kell;2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;
 spell;kell_shot;kell_shot;;a;Kell (Shot);2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;kell;Shot (220-240)
 spell;kell_blast;kell_blast;;a;Kell (Blast);2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;kell;Blast (actually 240-280) (fire spell)
 spell;kell_bolt;kell_bolt;;a;Kell (Bolt);2.5;cm;de;std;v;x;150000;6;65;;;1.1;;;;;220;240;1;1.2;;;kell;Bolt (220-240)
-spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;1.25;cm;el;std;v;;110000;7;63;1;;;;;;;;;2;0.8;;;;
+spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;2;cm;el;std;v;;110000;7;63;1;;;;;;;;;2;0.8;;;;
 spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;;130000;4;62;1.1;;1.1;;;;;;;3;2;;;;Custom dmgvol spell
 spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;;130000;4;62;1.1;;1.1;;;;;160;200;1.5;2.5;;;;
 scroll;magma_beast;lava_beast_boss_01;;a;Magma Beast;2.5;cm;el;mb;v;;29000;11;64;1.3;;1.3;;;;;;;2;9;;;;Custom dmgvol spell

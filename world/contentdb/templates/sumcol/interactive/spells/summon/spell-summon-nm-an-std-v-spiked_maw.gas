@@ -21,7 +21,7 @@
     [spell_summon]
     {
         template_name = spiked_maw_summon;
-        script_params = "[scale(1.0)]";
+        script_params = "[scale(1.5)]";
     }
     [magic]
     {
