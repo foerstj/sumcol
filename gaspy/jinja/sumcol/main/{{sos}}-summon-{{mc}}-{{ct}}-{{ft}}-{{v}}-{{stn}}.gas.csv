@@ -34,7 +34,7 @@ spell;bubber;dsx_bubber;;an;Island Lizard;1.25;nm;an;std;loa;;150;6;8;0.9;;;;;;;
 spell;skeleton_archer;skeleton_archer;;a;Skeleton Archer;1.5;cm;un;std;v;;120;5;6;;0.95;;;;10;16;;;2;1;;;;
 spell;swarmling;dsx_swarmling;;a;Swarmling;1;nm;an;std;loa;;150;6;8;0.85;;;;;;;;;2;0.4;;;;
 spell;krug_raider;krug_raider;;a;Krug Raider;1.5;nm;hu;std;v;x;300;7;11;1.05;;;;;14;17;;;1.2;1;;;;
-spell;vile_mucosa;mucosa_small;;a;Vile Mucosa;1.5;cm;de;std;v;;150;5;7;;;0.95;;;;;10;15;2;0.8;;;;Spell has trackball + fire dmg
+spell;vile_mucosa;mucosa_small;;a;Vile Mucosa;1.5;cm;de;std;v;;150;5;7;;;0.95;;0.7;;;5;8;2;0.8;;;;Custom spell, spell has trackball + fire dmg
 scroll;ancient_corpse;walking_corpse_boss_01;;an;Ancient Corpse;1.5;cm;un;mb;v;;24;16;7;1.1;;;;;;;;;0.8;3;;;;
 spell;killer_vines;dsx_vines_killer;;;Killer Vines;1.25;nm;pl;st;loa;;38;1;9;1;;;;;;;;;1.5;1.5;;un_summon_vines_killer;;
 scroll;skeleton_captain;skeleton_guard_boss_01;;a;Skeleton Captain;1.5;cm;un;mb;v;;12;14;4;1.3;;;;;14;17;;;2.5;3;;;;
@@ -117,7 +117,7 @@ scroll;frost_mage_attacking;ice_mage_boss_01_attacking;;a;Frost Mage (Attacking)
 spell;greater_scrub_scorpion;dsx_scorpion_lg;;a;Greater Scrub Scorpion;1.5;nm;an;std;loa;;15000;6;28;0.85;;;;;;;;;2;0.8;;;;
 spell;shadow_angler;dsx_angler_shadow;;a;Shadow Angler;1;nm;an;std;loa;;15000;7;28;0.9;;;;;;;;;1;0.6;;;;
 spell;chitterskrag;dsx_chitterskrag_one;;a;Chitterskrag;2;nm;an;std;loa;;6000;6;24;1.1;;;;;;;;;2;1.8;;;;
-spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;;9500;5;25;;;1;;0.5;;;27;33;2;1.8;;;;Spell has trackball + fire dmg
+spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;;9500;5;25;;;1;;0.7;;;27;33;2;1.8;;;;Custom spell, spell has trackball + fire dmg
 spell;sandskreech;dsx_sandskreech;;a;Sandskreech;1.5;nm;an;std;loa;;19000;7;29;0.9;;;;;;;;;2;0.8;;;;
 spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;;7500;3;24;1.2;;1.2;;;;;;;3;2.5;;;;Custom dmgvol spell
 scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;;760;12;21;;1.2;;;;33;37;;;2;3.6;;;;

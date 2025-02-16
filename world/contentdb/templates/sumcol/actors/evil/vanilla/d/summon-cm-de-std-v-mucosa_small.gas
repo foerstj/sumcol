@@ -1,19 +1,20 @@
 [t:template,n:mucosa_small_summon]
 {
-    specializes = mucosa_small_base;
+	specializes = mucosa_small_base;
 
-    doc = "[summon] mucosa small";
+	doc = "[summon] mucosa small";
 	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
+	physics:explode_when_killed = false;
 	[generator_in_object]
 	{
 		spawn_chance = 0;
 	}
 	[inventory]
 	{
+		[other] { il_active_primary_spell=spell_mucosa_poison_summon; }
 		[pcontent]
 		{
-            // ERASED
+			// ERASED
 		}
 	}
 }
