@@ -6,7 +6,7 @@
     doc = "spell Summon Blue Drake";
     [aspect]
     {
-        gold_value = 52000;
+        gold_value = 99000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 240;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 42;
-        max_level = 62;
+        required_level = 56;
+        max_level = 76;
 
         [enchantments]
         {
@@ -79,13 +79,13 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.79)-#melee);
+                value = ((#magic*0.765)-#melee);
             }
             [*]
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.79)-#combat_magic_level);
+                value = ((#magic*0.765)-#combat_magic_level);
             }
             [*]
             {

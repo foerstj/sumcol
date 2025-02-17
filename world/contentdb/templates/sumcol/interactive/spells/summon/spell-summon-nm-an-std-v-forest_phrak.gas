@@ -6,7 +6,7 @@
     doc = "spell Summon Forest Phrak";
     [aspect]
     {
-        gold_value = 36000;
+        gold_value = 66000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 39;
-        max_level = 59;
+        required_level = 52;
+        max_level = 72;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.8049999999999999)-#melee);
+                value = ((#magic*0.755)-#melee);
             }
             [*]
             {

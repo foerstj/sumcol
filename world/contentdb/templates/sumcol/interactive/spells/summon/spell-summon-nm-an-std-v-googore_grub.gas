@@ -6,7 +6,7 @@
     doc = "spell Summon Googore Grub";
     [aspect]
     {
-        gold_value = 53000;
+        gold_value = 110000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 540;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 47;
-        max_level = 67;
+        required_level = 63;
+        max_level = 83;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.765)-#melee);
+                value = ((#magic*0.7825)-#melee);
             }
             [*]
             {
