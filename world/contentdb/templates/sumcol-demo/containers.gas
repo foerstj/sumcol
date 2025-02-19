@@ -672,18 +672,26 @@
         {
             il_main = spell_summon_ancient_scorpiot_lcannon;
             il_main = spell_summon_ancient_scorpiot_rcannon;
+
             il_main = spell_summon_ice_mage_attacking;
             il_main = spell_summon_ice_mage_summoning_ice_warrior;
             il_main = spell_summon_ice_mage_summoning_ice_archer;
             il_main = scroll_summon_frost_mage_attacking;
+
             il_main = spell_summon_rune_caster_attacking;
             il_main = spell_summon_rune_caster_summoning_beast;
             il_main = spell_summon_rune_caster_summoning_fiend;
+
+            il_main = scroll_summon_muong_troll_norecov;
+            il_main = spell_summon_swamp_troll_norecov;
+            il_main = scroll_summon_rotten_troll_norecov;
+
             il_main = spell_summon_swamp_witch_attacking;
             il_main = spell_summon_swamp_witch_summoning_swamp_creature;
             il_main = spell_summon_swamp_witch_summoning_swamp_slinger;
             il_main = scroll_summon_skank_witch_attacking;
             il_main = scroll_summon_lost_witch_attacking;
+
             il_main = spell_summon_kell_shot;
             il_main = spell_summon_kell_blast;
             il_main = spell_summon_kell_bolt;

@@ -1,4 +1,5 @@
-[t:template,n:troll_forest_boss_01_summon]
+[t:template,n:troll_forest_boss_01_summon] { specializes = troll_forest_boss_01_summon_base; }
+[t:template,n:troll_forest_boss_01_summon_base]
 {
     specializes = troll_forest_boss_01_base;
 
@@ -16,5 +17,16 @@
 		{
             // ERASED
 		}
+	}
+}
+
+[t:template,n:troll_forest_boss_01_norecov_summon]
+{
+    specializes = troll_forest_boss_01_summon_base;
+
+	[aspect]
+	{
+		life_recovery_period = 0;
+		life_recovery_unit = 0;
 	}
 }

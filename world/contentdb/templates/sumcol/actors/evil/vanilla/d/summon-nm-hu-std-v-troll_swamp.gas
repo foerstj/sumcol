@@ -1,4 +1,5 @@
-[t:template,n:troll_swamp_summon]
+[t:template,n:troll_swamp_summon] { specializes = troll_swamp_base; }
+[t:template,n:troll_swamp_summon_base]
 {
     specializes = troll_swamp_base;
 
@@ -16,5 +17,16 @@
 		{
             // ERASED
 		}
+	}
+}
+
+[t:template,n:troll_swamp_norecov_summon]
+{
+    specializes = troll_swamp_summon_base;
+
+	[aspect]
+	{
+		life_recovery_period = 0;
+		life_recovery_unit = 0;
 	}
 }
