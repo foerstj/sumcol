@@ -222,7 +222,6 @@
             il_main = spell_summon_purple_shard;
             il_main = spell_summon_bronze_gargoyle;
             // ice / frost
-            il_main = spell_summon_frost_golem;
             il_main = spell_summon_ice_fly;
             il_main = spell_summon_ice_archer;
             il_main = spell_summon_ice_warrior;
@@ -264,6 +263,8 @@
     {
         [other]
         {
+            // ice / frost
+            il_main = spell_summon_frost_golem;
             // stone / crystal
             il_main = spell_summon_cobbleman;
             il_main = spell_summon_marble_golem;
