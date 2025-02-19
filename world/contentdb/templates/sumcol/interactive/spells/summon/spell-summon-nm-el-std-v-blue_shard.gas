@@ -6,7 +6,7 @@
     doc = "spell Summon Blue Shard";
     [aspect]
     {
-        gold_value = 24000;
+        gold_value = 38000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 240;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 29;
-        max_level = 49;
+        required_level = 35;
+        max_level = 55;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.855)-#combat_magic_level);
+                value = ((#magic*0.825)-#combat_magic_level);
             }
             [*]
             {

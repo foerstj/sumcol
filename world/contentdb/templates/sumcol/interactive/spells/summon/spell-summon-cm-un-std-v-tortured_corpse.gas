@@ -6,7 +6,7 @@
     doc = "spell Summon Tortured Corpse";
     [aspect]
     {
-        gold_value = 96;
+        gold_value = 150;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 420;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 6;
-        max_level = 26;
+        required_level = 8;
+        max_level = 28;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.97)-#melee);
+                value = ((#magic*0.96)-#melee);
             }
             [*]
             {

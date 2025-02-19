@@ -6,7 +6,7 @@
     doc = "spell Summon Dark Caster";
     [aspect]
     {
-        gold_value = 30000;
+        gold_value = 43000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 30;
-        max_level = 50;
+        required_level = 38;
+        max_level = 58;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.85)-#combat_magic_level);
+                value = ((#magic*0.81)-#combat_magic_level);
             }
             [*]
             {

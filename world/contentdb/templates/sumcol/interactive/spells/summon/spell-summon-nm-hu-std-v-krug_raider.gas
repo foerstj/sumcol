@@ -6,7 +6,7 @@
     doc = "spell Summon Krug Raider";
     [aspect]
     {
-        gold_value = 300;
+        gold_value = 480;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 420;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 11;
-        max_level = 31;
+        required_level = 13;
+        max_level = 33;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.945)-#melee);
+                value = ((#magic*0.935)-#melee);
             }
             [*]
             {

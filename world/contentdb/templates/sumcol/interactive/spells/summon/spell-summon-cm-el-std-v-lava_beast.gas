@@ -6,7 +6,7 @@
     doc = "spell Summon Lava Beast";
     [aspect]
     {
-        gold_value = 130000;
+        gold_value = 340000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 240;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 62;
-        max_level = 82;
+        required_level = 83;
+        max_level = 103;
 
         [enchantments]
         {
@@ -79,13 +79,13 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.78)-#melee);
+                value = ((#magic*0.8325)-#melee);
             }
             [*]
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.78)-#combat_magic_level);
+                value = ((#magic*0.8325)-#combat_magic_level);
             }
             [*]
             {

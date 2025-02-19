@@ -6,7 +6,7 @@
     doc = "spell Summon Copter";
     [aspect]
     {
-        gold_value = 48000;
+        gold_value = 79000;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 300;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 40;
-        max_level = 60;
+        required_level = 51;
+        max_level = 71;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.8)-#combat_magic_level);
+                value = ((#magic*0.7525)-#combat_magic_level);
             }
             [*]
             {

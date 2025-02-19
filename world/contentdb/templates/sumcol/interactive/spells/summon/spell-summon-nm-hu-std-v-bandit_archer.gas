@@ -6,7 +6,7 @@
     doc = "spell Summon Bandit Archer";
     [aspect]
     {
-        gold_value = 36000;
+        gold_value = 57000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 300;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 34;
-        max_level = 54;
+        required_level = 44;
+        max_level = 64;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_ranged;
                 duration = #infinite;
-                value = ((#magic*0.83)-#ranged);
+                value = ((#magic*0.78)-#ranged);
             }
             [*]
             {

@@ -6,7 +6,7 @@
     doc = "spell Summon Toreck";
     [aspect]
     {
-        gold_value = 110000;
+        gold_value = 290000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 64;
-        max_level = 84;
+        required_level = 84;
+        max_level = 104;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.785)-#melee);
+                value = ((#magic*0.835)-#melee);
             }
             [*]
             {

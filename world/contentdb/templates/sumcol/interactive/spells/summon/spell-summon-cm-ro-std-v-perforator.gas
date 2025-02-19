@@ -6,7 +6,7 @@
     doc = "spell Summon Perforator";
     [aspect]
     {
-        gold_value = 60000;
+        gold_value = 91000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 240;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 45;
-        max_level = 65;
+        required_level = 54;
+        max_level = 74;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.775)-#combat_magic_level);
+                value = ((#magic*0.76)-#combat_magic_level);
             }
             [*]
             {

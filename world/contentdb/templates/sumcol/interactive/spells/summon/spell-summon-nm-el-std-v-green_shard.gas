@@ -6,7 +6,7 @@
     doc = "spell Summon Green Shard";
     [aspect]
     {
-        gold_value = 12000;
+        gold_value = 34000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 240;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 26;
-        max_level = 46;
+        required_level = 33;
+        max_level = 53;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.87)-#combat_magic_level);
+                value = ((#magic*0.835)-#combat_magic_level);
             }
             [*]
             {

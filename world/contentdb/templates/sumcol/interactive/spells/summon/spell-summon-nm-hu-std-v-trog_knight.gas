@@ -6,7 +6,7 @@
     doc = "spell Summon Trog Knight";
     [aspect]
     {
-        gold_value = 26000;
+        gold_value = 38000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 420;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 32;
-        max_level = 52;
+        required_level = 40;
+        max_level = 60;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.84)-#melee);
+                value = ((#magic*0.8)-#melee);
             }
             [*]
             {
