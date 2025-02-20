@@ -140,7 +140,7 @@ spell;marble_golem;dsx_golem_marble;;a;Marble Golem;1.5;nm;el;std;loa;;25;7600;6
 spell;lectar;lectar;;a;Lectar;1;nm;an;std;v;;31;25000;7;0.9;;;;;;;;;1.5;0.6;;;;
 scroll;shadow_lunger;dark_lunger_boss_01;;a;Shadow Lunger;1;nm;hu;mb;v;x;30;4800;17;1.1;;;;;;;;;1;1.8;;;;
 scroll;rune_guardian;dsx_rune_guardian_boss;;the;Rune Guardian;2.5;cm;de;mb;loa;x;32;5300;15;1.3;;;0.5;;84;102;;;1;3.6;;;;Wpn dmg incl lightning – attacks can do 2x dmg
-spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;;;75;77;;;1.5;1;;;;
+spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;0.9;;75;77;;;1.5;1;;;;1/5 of attacks do double damage
 spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;43;44000;5;0.95;;;;;;;;;2;1;;;;
 spell;purple_shard;shard_purple;;a;Purple Shard;1.75;nm;el;std;v;;37;41000;3;;;1.1;;;;;82;88;3;1.5;;;;
 scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;29;4800;13;;;1.2;;;;;75;80;1.5;2.4;;;;
