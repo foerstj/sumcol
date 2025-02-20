@@ -60,7 +60,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#src_combat_magic_level*0.8200000000000001)-#melee);
+                value = ((#src_combat_magic_level*0.82)-#melee);
             }
             [*]
             {

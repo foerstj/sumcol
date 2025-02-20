@@ -108,9 +108,9 @@
                 alteration = alter_melee;
                 duration = #infinite;
                 {% if req_lvl <= 50 %}
-                value = ((#magic*{{ 1 - req_lvl/200 }})-#melee);
+                value = ((#magic*{{ '%0.5g' | format(1 - req_lvl/200) }})-#melee);
                 {% else %}
-                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#melee);
+                value = ((#magic*{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }})-#melee);
                 {% endif %}
             }
             {% endif %}
@@ -120,9 +120,9 @@
                 alteration = alter_ranged;
                 duration = #infinite;
                 {% if req_lvl <= 50 %}
-                value = ((#magic*{{ 1 - req_lvl/200 }})-#ranged);
+                value = ((#magic*{{ '%0.5g' | format(1 - req_lvl/200) }})-#ranged);
                 {% else %}
-                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#ranged);
+                value = ((#magic*{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }})-#ranged);
                 {% endif %}
             }
             {% endif %}
@@ -132,9 +132,9 @@
                 alteration = alter_combat_magic;
                 duration = #infinite;
                 {% if req_lvl <= 50 %}
-                value = ((#magic*{{ 1 - req_lvl/200 }})-#combat_magic_level);
+                value = ((#magic*{{ '%0.5g' | format(1 - req_lvl/200) }})-#combat_magic_level);
                 {% else %}
-                value = ((#magic*{{ 0.75 + (req_lvl-50)/400 }})-#combat_magic_level);
+                value = ((#magic*{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }})-#combat_magic_level);
                 {% endif %}
             }
             {% endif %}
