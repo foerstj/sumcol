@@ -6,7 +6,7 @@
     doc = "spell Summon Tretch";
     [aspect]
     {
-        gold_value = 5300;
+        gold_value = 8700;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 30.0;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(3+0);
-        required_level = 32;
-        max_level = 52;
+        required_level = 43;
+        max_level = 63;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.84)-#melee);
+                value = ((#magic*0.785)-#melee);
             }
             [*]
             {

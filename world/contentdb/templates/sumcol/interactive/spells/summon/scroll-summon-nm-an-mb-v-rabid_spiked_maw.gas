@@ -6,7 +6,7 @@
     doc = "scroll Summon Rabid Spiked Maw";
     [aspect]
     {
-        gold_value = 4800;
+        gold_value = 8700;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 780;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+1);
-        required_level = 29;
-        max_level = 49;
+        required_level = 38;
+        max_level = 58;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.855)-#combat_magic_level);
+                value = ((#magic*0.81)-#combat_magic_level);
             }
             [*]
             {

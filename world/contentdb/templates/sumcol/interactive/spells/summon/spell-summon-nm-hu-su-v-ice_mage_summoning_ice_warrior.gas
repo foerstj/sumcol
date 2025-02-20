@@ -6,7 +6,7 @@
     doc = "spell Summon Ice Mage (Summoning Ice Warrior)";
     [aspect]
     {
-        gold_value = 7500;
+        gold_value = 30000;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 24;
-        max_level = 44;
+        required_level = 30;
+        max_level = 50;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.88)-#combat_magic_level);
+                value = ((#magic*0.85)-#combat_magic_level);
             }
             [*]
             {

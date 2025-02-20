@@ -6,7 +6,7 @@
     doc = "scroll Summon Ferocious Braak";
     [aspect]
     {
-        gold_value = 38000;
+        gold_value = 63000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 840;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+1);
-        required_level = 70;
-        max_level = 90;
+        required_level = 81;
+        max_level = 101;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.8)-#combat_magic_level);
+                value = ((#magic*0.8275)-#combat_magic_level);
             }
             [*]
             {

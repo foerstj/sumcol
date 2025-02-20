@@ -6,7 +6,7 @@
     doc = "scroll Summon Frost Mage (Attacking)";
     [aspect]
     {
-        gold_value = 1900;
+        gold_value = 6300;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 840;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+1);
-        required_level = 25;
-        max_level = 45;
+        required_level = 31;
+        max_level = 51;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.875)-#combat_magic_level);
+                value = ((#magic*0.845)-#combat_magic_level);
             }
             [*]
             {

@@ -6,7 +6,7 @@
     doc = "scroll Summon Grizzly Furok";
     [aspect]
     {
-        gold_value = 300;
+        gold_value = 760;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 900;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+1);
-        required_level = 18;
-        max_level = 38;
+        required_level = 22;
+        max_level = 42;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.91)-#melee);
+                value = ((#magic*0.89)-#melee);
             }
             [*]
             {

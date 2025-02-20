@@ -6,7 +6,7 @@
     doc = "spell Summon Tesla Coil";
     [aspect]
     {
-        gold_value = 9500;
+        gold_value = 16000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 30.0;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(3+0);
-        required_level = 40;
-        max_level = 60;
+        required_level = 51;
+        max_level = 71;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.8)-#combat_magic_level);
+                value = ((#magic*0.7525)-#combat_magic_level);
             }
             [*]
             {
