@@ -20,9 +20,9 @@
 	}
 	[attack]
 	{
-        // Ten-fold original damage (explosion doesn't take enchantments from summon spell into account)
-		damage_max = 4200;
-		damage_min = 3800;
+        // Edited original damage (explosion doesn't take enchantments from summon spell into account)
+		damage_max = 6300;  // = 420 * 15
+		damage_min = 5700;  // = 380 * 15
 	}
 }
 
