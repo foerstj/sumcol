@@ -21,8 +21,8 @@
     }
     [magic]
     {
-        required_level = 26;
-        max_level = 46;
+        required_level = 32;
+        max_level = 52;
 
         [enchantments]
         {
@@ -60,7 +60,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#src_combat_magic_level*0.87)-#combat_magic_level);
+                value = ((#src_combat_magic_level*0.84)-#combat_magic_level);
             }
             [*]
             {
