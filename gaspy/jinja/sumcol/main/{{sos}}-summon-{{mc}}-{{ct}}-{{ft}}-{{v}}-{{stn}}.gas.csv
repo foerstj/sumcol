@@ -122,6 +122,7 @@ spell;sandskreech;dsx_sandskreech;;a;Sandskreech;1.5;nm;an;std;loa;;29;19000;7;0
 spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;;24;7500;3;1.2;;1.2;;;;;;;3;2.5;;;;Custom dmgvol spell
 scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;;28;3800;12;;1.2;;;;33;37;;;2;3.6;;;;
 spell;proxo;proxo;;a;Proxo;2;cm;ro;ex;v;;52;13000;1;1;;;;;;;;;2.5;1;;;;Custom spell skrit
+spell;proxo_hold;proxo_hold;;a;Proxo (hold);2;cm;ro;ex;v;;52;13000;1;1;;;;;;;;;2.5;1;;;proxo;Custom spell skrit
 spell;blue_shard;shard_blue;;a;Blue Shard;1.25;nm;el;std;v;;35;38000;4;;;1;;;;;58;64;3;1;;;;
 spell;spiked_maw;spiked_maw;;a;Spiked Maw;1.5;nm;an;std;v;;37;41000;5;;;1;;;;;75;80;1.5;0.8;;;;
 spell;rune_caster;dsx_rune_caster;;a;Rune Caster;1.5;cm;hu;su;loa;;32;33000;6;;;0.9;;;;;44;50;1;0.9;;;;
@@ -199,6 +200,7 @@ spell;forest_darkling;darkling_forest;;a;Forest Darkling;1.5;cm;de;std;v;;56;990
 spell;googore;googore;;a;Googore;2;nm;an;st;v;;63;27000;0.5;0.9;;0.9;;;;;170;180;1;2.5;;;;
 spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;;65;120000;6;1.05;;;;;35;58;;;2.5;1;;;;
 spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;2;0.8;;;;Custom spell skrit
+spell;blazing_elemental_hold;suicide_elemental_hold;good;a;Blazing Elemental (hold);1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;2;0.8;;;blazing_elemental;Custom spell skrit
 spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;;56;99000;4;1.1;;1.1;;;;;145;155;1.5;2.5;;;;
 scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;;55;15000;13;1.35;;;;;;;;;2;7.5;;;;
 spell;giant_lizard;giant_lizard;;a;Giant Lizard;2;nm;an;std;v;;68;140000;7;0.95;;;;;;;;;1.5;0.8;;;;

@@ -1,0 +1,105 @@
+[t:template,n:spell_summon_blazing_elemental_hold] { specializes = spell_summon_blazing_elemental_hold_base; }
+[t:template,n:spell_summon_blazing_elemental_hold_base]
+{
+    specializes = base_spell_sumcol_cm_explosive;
+
+    doc = "spell Summon Blazing Elemental (hold)";
+    [aspect]
+    {
+        gold_value = 58000;
+    }
+    [common]
+    {
+        screen_name = "Summon Blazing Elemental (hold)";
+        description = "Summons a Blazing Elemental (hold) to guard the Caster.";
+        is_pcontent_allowed = false;
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sp_sumcol-cm-el-ex-v-blazing_elemental;
+        inventory_icon =b_gui_ig_i_ic_sp_sumcol-cm-el-ex-v-blazing_elemental-inv;
+    }
+    [spell_summon_explosive]
+    {
+        template_name = suicide_elemental_hold_good_summon;
+        script_params = "[scale(1.5)]";
+    }
+    [magic]
+    {
+        effect_duration = 60;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(1+0);
+        required_level = 84;
+        max_level = 104;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = (((((((#magic*4.2)*1.0)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = (((((((#magic*4.2)*1.0)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*2.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*0.8) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*0.8);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic*0.835)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}

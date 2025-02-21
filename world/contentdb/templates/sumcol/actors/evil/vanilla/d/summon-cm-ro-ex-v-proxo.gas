@@ -1,4 +1,5 @@
-[t:template,n:proxo_summon]
+[t:template,n:proxo_summon] { specializes = proxo_summon_base; }
+[t:template,n:proxo_summon_base]
 {
     specializes = proxo_base;
 
@@ -12,4 +13,11 @@
 		damage_max = 1800;  // = 240 * 7.5
 		damage_min = 1650;  // = 220 * 7.5
 	}
+}
+
+[t:template,n:proxo_hold_summon]
+{
+    specializes = proxo_summon_base;
+
+    mind:combat_orders = CO_HOLD;
 }
