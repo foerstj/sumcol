@@ -103,6 +103,7 @@ spell;skatwyrm_ranged;dsx_skatwyrm_r;;a;Swarmling Queen;1;nm;an;std;loa;;36;4000
 spell;swirling_midges;dsx_midge_swirling;;;Swirling Midges;0.5;nm;an;std;loa;;35;38000;7;;;0.8;;;;;88;110;2;0.4;;;;
 spell;frost_drake;drake_white;;a;Frost Drake;2;nm;an;std;v;;29;24000;4;1.1;;1.1;;;;;70;74;1.5;2.5;;;;
 scroll;krakemaw_the_putrid;dsx_drake_death_two_boss;;;Krakemaw the Putrid;2.5;cm;un;mb;loa;;30;6000;11;1.3;;1.3;;;;;80;90;1.5;7.5;;;;
+scroll;krakemaw_the_putrid_small;dsx_drake_death_two_boss_small;;;Krakemaw the Putrid (small);2.5;cm;un;mb;loa;;30;6000;11;1.3;;1.3;;;;;80;90;1.5;7.5;;;krakemaw_the_putrid;
 spell;rahk;dsx_drake_death_one;;a;Rahk;2.5;cm;un;std;loa;;29;24000;4;1.1;;1.1;;;;;80;90;1.5;2.5;;;;
 spell;scaly_rahk;dsx_drake_death_two;;a;Scaly Rahk;2.5;cm;un;std;loa;;29;24000;4;1.1;;1.1;;;;;80;90;1.5;2.5;;;;
 spell;dark_caster;dark_caster;;a;Dark Caster;1;nm;hu;std;v;x;38;43000;6;;;0.85;;;;;72;78;1;0.6;;;;

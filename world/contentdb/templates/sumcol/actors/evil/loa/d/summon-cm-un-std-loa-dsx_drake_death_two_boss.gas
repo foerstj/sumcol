@@ -1,4 +1,5 @@
-[t:template,n:dsx_drake_death_two_boss_summon]
+[t:template,n:dsx_drake_death_two_boss_summon] { specializes = dsx_drake_death_two_boss_summon_base; }
+[t:template,n:dsx_drake_death_two_boss_summon_base]
 {
     specializes = dsx_drake_death_two_boss_base;
 
@@ -9,4 +10,11 @@
     {
         [pcontent] {}
     }
+}
+
+[t:template,n:dsx_drake_death_two_boss_small_summon]
+{
+    specializes = dsx_drake_death_two_boss_summon_base;
+
+    aspect:scale_multiplier = 1;
 }
