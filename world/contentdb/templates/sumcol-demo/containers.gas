@@ -487,8 +487,6 @@
         {
             // mucosa
             il_main = scroll_summon_twisted_mucosa_brute;
-            // other
-            il_main = scroll_summon_rune_guardian;
         }
     }
 }
