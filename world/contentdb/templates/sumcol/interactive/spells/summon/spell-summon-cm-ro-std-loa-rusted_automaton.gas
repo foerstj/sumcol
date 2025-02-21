@@ -6,7 +6,7 @@
     doc = "spell Summon Rusted Automaton";
     [aspect]
     {
-        gold_value = 1200;
+        gold_value = 3800;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 300;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 16;
-        max_level = 36;
+        required_level = 21;
+        max_level = 41;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.92)-#combat_magic_level);
+                value = ((#magic*0.895)-#combat_magic_level);
             }
             [*]
             {

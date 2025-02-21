@@ -6,7 +6,7 @@
     doc = "spell Summon Slime Zombie";
     [aspect]
     {
-        gold_value = 48;
+        gold_value = 60;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 420;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 3;
-        max_level = 23;
+        required_level = 4;
+        max_level = 24;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.985)-#melee);
+                value = ((#magic*0.98)-#melee);
             }
             [*]
             {

@@ -6,7 +6,7 @@
     doc = "spell Summon Ancient Scorpiot (RCannon)";
     [aspect]
     {
-        gold_value = 1500;
+        gold_value = 6000;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 17;
-        max_level = 37;
+        required_level = 23;
+        max_level = 43;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.915)-#combat_magic_level);
+                value = ((#magic*0.885)-#combat_magic_level);
             }
             [*]
             {

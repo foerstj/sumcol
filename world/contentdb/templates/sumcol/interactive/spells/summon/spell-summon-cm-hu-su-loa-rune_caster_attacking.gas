@@ -6,7 +6,7 @@
     doc = "spell Summon Rune Caster (Attacking)";
     [aspect]
     {
-        gold_value = 33000;
+        gold_value = 50000;
     }
     [common]
     {
@@ -29,8 +29,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 32;
-        max_level = 52;
+        required_level = 41;
+        max_level = 61;
 
         [enchantments]
         {
@@ -68,7 +68,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.84)-#combat_magic_level);
+                value = ((#magic*0.795)-#combat_magic_level);
             }
             [*]
             {

@@ -6,7 +6,7 @@
     doc = "spell Summon Swarmling Drone";
     [aspect]
     {
-        gold_value = 12000;
+        gold_value = 32000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 420;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(15+0);
-        required_level = 27;
-        max_level = 47;
+        required_level = 36;
+        max_level = 56;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_melee;
                 duration = #infinite;
-                value = ((#magic*0.865)-#melee);
+                value = ((#magic*0.82)-#melee);
             }
             [*]
             {
