@@ -10,7 +10,7 @@ This collection aims to provide more fun and useful options, esp. ranged summons
 Stats are based on numbers of similar original summoning spells. See below for details on balancing.\
 For stationary & explosive summons, gold value, duration & mana cost are much lower.\
 For miniboss summons, scrolls are used; gold value is much lower, duration & life is much higher.\
-Required level is a few levels higher than the level where players typically first encounter the creature, except when existing spells provide a reasonable precedent.\
+Required level is around 4/3 of the level where players typically first encounter the creature, similar to the original spells.\
 Assignment to Nature vs. Combat Magic is done based on the creature, roughly following the shaky logic of the original spells.
 
 
@@ -154,7 +154,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Air (NM): Air Elemental Minion
     - Water (NM): Water Elemental Minion
   - Undead (CM): Krakemaw the Putrid
-  - Demonics (CM): Twisted Mucosa Brute, Rune Guardian
+  - Demonics (CM): Twisted Mucosa Brute
 
 
 ## Balancing
