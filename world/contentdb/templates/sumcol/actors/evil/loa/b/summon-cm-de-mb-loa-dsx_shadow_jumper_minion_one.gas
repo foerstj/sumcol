@@ -1,0 +1,9 @@
+[t:template,n:dsx_shadow_jumper_minion_one_summon]
+{
+    specializes = dsx_shadow_jumper_minion_one_base;
+
+    doc = "[summon] dsx_shadow_jumper_minion_one";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED*/ } }
+}

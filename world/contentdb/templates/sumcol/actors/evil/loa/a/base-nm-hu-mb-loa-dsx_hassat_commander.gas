@@ -1,0 +1,208 @@
+[t:template,n:dsx_hassat_commander_base]  // = dsx_hassat_commander
+{
+  category_name = "1W_evil_a";
+  doc = "dsx_hassat_commander";
+  specializes = actor_evil;
+		[actor]
+	    	{
+	      		[skills]
+			{
+		  		strength     = 11, 0;
+		  		intelligence = 7, 0;
+		  		dexterity    = 9, 0;
+		  		melee        = 7, 0;
+			}
+		}
+		[aspect]
+		{
+			model=m_c_eam_HC;
+	      
+	      		experience_value = 208;
+	      		life             = 294;
+	      		max_life         = 294;
+	      		mana             = 36;
+	      		max_mana         = 36;
+	      		[voice]
+			{
+				[die]			{ priority = high; * = s_e_die_tiger_SED;  }
+				[enemy_spotted]	{ priority = high; * = s_e_call_tiger_SED; }
+	//			[hit_critical]	{ priority = low; * = s_e_hit_tiger_SED;  }
+	//			[hit_glance]	{ priority = low; * = s_e_hit_tiger_SED;  }
+				[hit_solid]		{ priority = low; * = s_e_hit_tiger_SED;  }
+			}
+		}
+	
+		[body]
+		{
+			min_move_velocity	= 1.5;
+			avg_move_velocity	= 3.500;
+		
+			[bone_translator]
+			{
+				body_anterior = Bip01_Head;
+				body_mid = Bip01_Spine2;
+				body_posterior = Bip01_Pelvis;
+				kill_bone = Bip01_Spine2;
+				shield_bone = shield_grip;
+				weapon_bone = Weapon_grip;
+			}
+			[chore_dictionary]
+			{
+				chore_prefix = a_c_eam_hassat_commander_fs;
+				[chore_attack]
+				{
+					chore_stances = 5;
+					skrit = select_attack;
+					[anim_files]
+					{
+						0mid = at;
+						0mid = at-02;
+						high = at-03;
+						qffg = dff;
+					}
+					[anim_durations]
+					{
+						fs5 = 2;			
+					}
+				}
+				[chore_default]
+				{
+					chore_stances = 5;
+					skrit = infinite_loop;
+					[anim_files] { 00=dfs; }
+				}
+				[chore_die]
+				{
+					chore_stances = 5;
+					skrit = select_transition;
+					[anim_files] { 00=di; }
+				}
+				[chore_fidget]
+				{
+					chore_stances = 5;
+					skrit = select_fidget;
+					[anim_files] 
+					{
+						00 = dff;
+						01 = dff-02;
+					}
+				}
+				[chore_walk]
+				{
+					chore_stances = 5;
+					skrit = select_walk;
+					[anim_files] { 00=wl; }
+				}
+				[chore_magic]
+				{
+					chore_stances = 5;
+					skrit = select_attack;
+					[anim_files]
+					{
+						00 = mg;
+					}
+				}
+			}
+		}
+		[attack]
+		{
+			attack_range = .5;
+			damage_max = 48;
+			damage_min = 44;
+		}
+		[common]
+		{
+			screen_name = "Hassat Commander";
+			membership = hassat,monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode; 
+			[template_triggers]
+			{
+				[*]
+				{
+					condition* = receive_world_message("WE_ENTERED_WORLD");
+					single_shot = true;
+					no_trig_bits = true;
+					action* = call_sfx_script("unique_ray_red(sgx)");
+	
+				}
+	
+			}
+	
+		}
+	
+		[guts_manager]
+		{
+			effect_name = melee_hit_2;
+		}
+		[defend] { defense = 90; }
+		[inventory]
+		{
+			spew_equipped_kill_count = <ignore>;
+			[equipment]
+			{
+			  es_weapon_hand = st_g_c_dsx_hst_avg; //formerly staff2_hassat_staff;	//sd_un_ice_avg;
+			}
+		[pcontent]
+			{
+			/* Generated: Tue Jun 17 11:13:15 2003
+				Level 11, Strong */
+				[oneof*]
+				{
+					[gold*]
+					{
+						chance = 0.2;
+						min = 127;
+						max = 253;
+					}
+					[oneof*]
+					{
+						chance = 0.2;
+						il_main = potion_mana_small;
+						il_main = potion_health_small;
+					}
+					[oneof*]
+					{
+						chance = 0.2;
+						il_main = #weapon/25-33;
+						il_main = #armor/12-71;
+						il_main = #*/25-33;
+					}
+					[oneof*]
+					{
+						chance = 0.01;
+						il_main = #weapon/-rare(1)/33-41;
+						il_main = #armor/-rare(1)/43-109;
+						il_main = #*/-rare(1)/33-41;
+					}
+					[oneof*]
+					{
+						chance = 0.005;
+						il_main = #weapon/-unique(2)/33-41;
+						il_main = #armor/-unique(2)/43-109;
+						il_main = #*/-unique(2)/33-41;
+					}			
+				}
+			}
+	      				
+		}
+		[mind]
+		{
+			jat_fidget				= world\ai\jobs\common\job_fidget.skrit
+			?curious				= 0.75
+			&wander					= 0.8
+			&social					= 0.1
+			&interest				= interest
+			&delay_min				= 6
+			&delay_max				= 16
+			&still					= false;
+			on_enemy_spotted_alert_friends 		= true;
+			jat_brain				= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		= true
+			&actor_creates_own_party		= true
+			&party_template				= "party_dsx_hassat";
+			com_channels				= dyn_party, hassat;
+			com_range				= 14.0;
+			melee_engage_range			= 14.0;
+			ranged_engage_range	 		= 14.0;
+			sight_range				= 14.0;
+		}
+}

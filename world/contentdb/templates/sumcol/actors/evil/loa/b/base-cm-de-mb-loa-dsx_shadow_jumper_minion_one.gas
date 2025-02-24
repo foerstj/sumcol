@@ -1,0 +1,99 @@
+// melee only minion
+[t:template,n:dsx_shadow_jumper_minion_one_base]  // = dsx_shadow_jumper_minion_one
+{ //level 10
+		category_name = "1W_evil_b";
+		doc = "dsx_shadow_jumper_minion_one";
+		specializes = dsx_shadow_minion_base;
+		[actor]
+		{
+			[skills]
+			{
+				strength =     14, 0;
+				intelligence = 8, 0;
+				dexterity =    10, 0;
+				melee =        12, 0;
+			}
+		}
+		[aspect]
+		{
+			experience_value = 1208;
+			life             = 470;
+			max_life         = 470;
+			mana             = 44;
+			max_mana         = 44;
+			model = m_c_ebb_sj_pos_1;
+			textures:0 = b_c_ebb_sj-01;
+			material = flesh;
+			[voice]
+			{
+				[enemy_spotted]	{ priority = high; * = s_e_call_shadowjumper_minion_SED; }
+				[die]			{ priority = high; * = s_e_die_shadowjumper_minion_SED; }
+				[hit_critical]	{ priority = low; * = s_e_hit_skeleton_SED; }
+				[hit_glance]	{ priority = low; * = s_e_hit_skeleton_SED; }
+				[hit_solid]		{ priority = low; * = s_e_hit_skeleton_SED; }
+			}
+		}
+		[attack]
+		{
+			attack_range = 0.5;
+			damage_max = 68;
+			damage_min = 60; 
+		}
+		[common]
+		{
+			screen_name = "Shadowjumper Minion"; //--
+			membership = monster; //--
+		}
+		[defend] { defense = 156; }
+		[inventory]
+		{
+			spew_equipped_kill_count = <ignore>;
+			[equipment]
+			{
+				es_weapon_hand = dg_g_c_dsx_kaj_mag;
+				es_shield_hand = dg_g_c_dsx_kaj_mag;
+			}
+			[pcontent]
+			{
+			/* Generated: Tue Jun 17 11:13:15 2003
+				Level 11, Strong */
+				[oneof*]
+				{
+					[gold*]
+					{
+						chance = 0.2;
+						min = 127;
+						max = 253;
+					}
+					[oneof*]
+					{
+						chance = 0.2;
+						il_main = potion_mana_small;
+						il_main = potion_health_small;
+					}
+					[oneof*]
+					{
+						chance = 0.2;
+						il_main = #weapon/25-33;
+						il_main = #armor/12-71;
+						il_main = #*/25-33;
+					}
+					[oneof*]
+					{
+						chance = 0.01;
+						il_main = #weapon/-rare(1)/33-41;
+						il_main = #armor/-rare(1)/43-109;
+						il_main = #*/-rare(1)/33-41;
+					}
+					[oneof*]
+					{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/33-41;
+					il_main = #armor/-unique(2)/43-109;
+					il_main = #*/-unique(2)/33-41;
+				}			
+			}
+		}
+					
+	}
+}

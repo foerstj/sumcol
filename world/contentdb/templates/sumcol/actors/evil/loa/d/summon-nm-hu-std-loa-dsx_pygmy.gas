@@ -1,0 +1,15 @@
+[t:template,n:dsx_pygmy_summon]
+{
+    specializes = dsx_pygmy_base;
+
+	doc = "[summon] dsx_pygmy";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

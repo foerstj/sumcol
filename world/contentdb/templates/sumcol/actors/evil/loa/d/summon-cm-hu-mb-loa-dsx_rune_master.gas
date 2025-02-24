@@ -1,0 +1,19 @@
+[t:template,n:dsx_rune_master_summon] { specializes = dsx_rune_master_summon_base; }
+[t:template,n:dsx_rune_master_summon_base]
+{
+    specializes = dsx_rune_master_base;
+
+    doc = "[summon] dsx_rune_master";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+        }
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_rune_master_damage;
+		}
+    }
+}

@@ -1,0 +1,15 @@
+[t:template,n:dsx_hassat_shaman_summon]
+{
+    specializes = dsx_hassat_shaman_sumcol_base;
+
+    doc = "[summon] dsx_hassat_shaman";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

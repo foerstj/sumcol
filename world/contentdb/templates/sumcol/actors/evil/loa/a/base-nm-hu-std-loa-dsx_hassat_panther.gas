@@ -1,0 +1,106 @@
+// Tiger Melee (unarmed)
+[t:template,n:dsx_hassat_panther_base]  // = dsx_hassat_panther
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_hassat_panther";
+	specializes = base_hassat_tiger;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength     = 11, 0;
+			intelligence = 7, 0;
+			dexterity    = 9, 0;
+			melee        = 7, 0;
+		}
+	}
+
+	[aspect]
+	{
+		scale_base		 = .85;
+		textures:0		 = b_c_eam_hg-02;
+		experience_value = 205;
+		life             = 294;
+		max_life         = 294;
+		mana             = 0;
+		max_mana         = 0;
+		[voice]
+		{
+			[die]		{ priority = high; * = s_e_die_leopard_SED;  }
+			[enemy_spotted]	{ priority = high; * = s_e_call_leopard_SED; }
+//			[hit_critical]	{ priority = low; * = s_e_hit_leopard_SED;  }
+//			[hit_glance]	{ priority = low; * = s_e_hit_leopard_SED;  }
+			[hit_solid]	{ priority = low; * = s_e_hit_leopard_SED;  }
+		}
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 47;
+		damage_min = 43;
+	}
+
+	[common] 
+	{ 
+		screen_name="Hassat Panther"; 
+		membership = hassat, monster;
+	}
+
+	[defend] 
+	{ 
+		defense=90; 
+	}
+  	[inventory]
+  	{
+  		drop_at_use_point = true;
+  		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 11, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 127;
+					max = 253;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/25-33;
+					il_main = #armor/12-71;
+					il_main = #*/25-33;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/33-41;
+					il_main = #armor/-rare(1)/43-109;
+					il_main = #*/-rare(1)/33-41;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/33-41;
+					il_main = #armor/-unique(2)/43-109;
+					il_main = #*/-unique(2)/33-41;
+				}			
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true;		
+	}
+}

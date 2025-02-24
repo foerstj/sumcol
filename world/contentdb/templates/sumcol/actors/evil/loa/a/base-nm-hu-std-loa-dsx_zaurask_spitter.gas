@@ -1,0 +1,101 @@
+// weak ranged variant (area 2)
+[t:template,n:dsx_zaurask_spitter_base]  // = dsx_zaurask_spitter
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_spitter";
+	specializes = zaurask_ranged_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength     = 10, 0;
+			intelligence = 7, 0;
+			dexterity    = 8, 0;
+			ranged	     = 5, 0;
+			combat_magic = 5, 0;
+			nature_magic = 5, 0;
+		}
+	}
+
+	[aspect]
+	{
+		scale_base		 = 0.8;		
+		experience_value = 120;
+		life			 = 211;
+		max_life		 = 211;
+		mana			 = 23;
+		max_mana		 = 23;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 30;
+		damage_min = 22;
+	}
+
+	[common] {screen_name="Zaurask Archer"; }
+
+	[defend] { defense=50; }
+
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_shield_hand = bw_dsx_zau_2_a;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 8, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 84;
+					max = 167;
+				}
+				[oneof*]
+				{
+					chance = 0.088888888888889;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/22-25;
+					il_main = #armor/10-62;
+					il_main = #*/22-25;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/25-33;
+					il_main = #armor/-rare(1)/25-81;
+					il_main = #*/-rare(1)/25-33;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/25-33;
+					il_main = #armor/-unique(2)/25-81;
+					il_main = #*/-unique(2)/25-33;
+				}			
+			}
+		}
+	}
+	[mind]
+	{
+		actor_auto_switches_to_melee				 = false;
+		actor_auto_switches_to_ranged				 = true;
+		actor_auto_uses_stored_items		 = false;
+		actor_weapon_preference				 = WP_RANGED;
+	}
+}

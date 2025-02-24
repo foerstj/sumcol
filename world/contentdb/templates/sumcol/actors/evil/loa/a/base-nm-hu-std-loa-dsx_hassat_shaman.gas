@@ -1,0 +1,43 @@
+[t:template,n:dsx_hassat_shaman_sumcol_base]  // = dsx_hassat_shaman
+{
+	category_name = "1w_evil_a";
+	doc="dsx_hassat_shaman";
+	specializes = dsx_hassat_shaman_base;
+
+		[actor]
+		{
+			[skills]
+			{
+				strength     = 11, 0;
+				intelligence = 7, 0;
+				dexterity    = 8, 0;
+				nature_magic = 6, 0;
+				combat_magic = 6, 0;
+			}
+		}
+	
+		[aspect]
+		{
+			experience_value = 152;
+			life             = 129;
+			max_life         = 129;
+			mana             = 26;
+			max_mana         = 26;
+		}
+	
+		[attack]
+		{
+			attack_range = .5;
+			damage_max = 27;
+			damage_min = 23;
+		}
+	
+		[common] 
+		{ 
+			screen_name="Hassat Shaman"; 
+			membership = hassat, monster;
+		}
+	
+		[defend] { defense=52; }
+
+}

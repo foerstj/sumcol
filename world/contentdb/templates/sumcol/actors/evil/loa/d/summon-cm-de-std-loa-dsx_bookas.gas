@@ -1,0 +1,15 @@
+[t:template,n:dsx_bookas_summon]
+{
+    specializes = dsx_bookas_base;
+
+	doc = "[summon] dsx_bookas";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

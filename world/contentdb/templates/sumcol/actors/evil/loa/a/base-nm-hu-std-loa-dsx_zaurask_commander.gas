@@ -1,0 +1,100 @@
+// strong melee variant - MINIBOSS (area 5)
+[t:template,n:dsx_zaurask_commander_base]  // = dsx_zaurask_commander
+{
+// Balanced to level 16, hard melee
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_commander";
+	specializes = zaurask_melee_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength	= 14, 0;
+			intelligence	= 8, 0;
+			dexterity	= 10, 0;
+			melee		= 11, 0;
+		}
+	}
+
+	[aspect]
+	{
+		experience_value = 514;
+		life		 = 470;
+		max_life	 = 470;
+		mana		 = 26;
+		max_mana	 = 26;
+		scale_base = 1.0;
+		model = m_c_eam_zcomm;
+		textures:0 = b_c_eam_zcomm;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_zaurask_mini_boss_SED;	 }
+			[enemy_spotted]	{ priority = high; * = s_e_call_zaurask_mini_boss; }
+			//[hit_critical]	{ priority = low; * = s_e_hit_zaurask_mini_boss_2_SED;	}
+			//[hit_glance]	{ priority = low; * = s_e_hit_zaurask_mini_boss_1_SED;	}
+			[hit_solid]		{ priority = low; * = s_e_hit_zaurask_mini_boss_2_SED;	}
+		}
+
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 100
+		damage_min = 82;
+	}
+	[defend] { defense=150; }
+
+	[common] { screen_name="Zaurask Slavemaster"; 	}
+
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand=ss_g_c_bl_1h_fun_dsx;
+			es_shield_hand=sh_un_m_o_r_m_turtle_dsx;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 17, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 413;
+					max = 821;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/36-49;
+					il_main = #armor/19-109;
+					il_main = #*/36-49;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/49-58;
+					il_main = #armor/-rare(1)/81-165;
+					il_main = #*/-rare(1)/49-58;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/49-58;
+					il_main = #armor/-unique(2)/81-165;
+					il_main = #*/-unique(2)/49-58;
+				}			
+			}
+		}
+	}
+}

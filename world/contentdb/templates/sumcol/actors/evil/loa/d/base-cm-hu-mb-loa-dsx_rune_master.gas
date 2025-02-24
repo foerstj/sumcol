@@ -1,0 +1,114 @@
+[t:template,n:dsx_rune_master_base]  // = dsx_rune_master
+//balanced for Level 14
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_rune_master";
+	specializes = rune_caster_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength =	15, 0;
+			intelligence =	9, 0;
+			dexterity =	 10, 0;
+			nature_magic =	14,	 0;
+			combat_magic = 14, 0;
+
+		}
+	}
+	[aspect]
+	{
+		scale_base = 1.4;
+		textures:0 = b_c_edm_rune_master;
+		experience_value = 696;
+		life = 506;
+		max_life = 506;
+		mana = 60;
+		max_mana = 60;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 66;
+		damage_min = 60;
+
+	}
+	[common]
+	{
+		screen_name="Rune Master";
+		membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;				
+				action* = call_sfx_script("unique_ray_green(sgx)");
+			}
+		}
+	}
+
+	[generator_in_object]
+	{
+		child_template_name = swamp_switch_skeleton;
+		spawn_event = WE_KILLED;
+		spawn_chance = 1.0;
+	}
+
+	[defend] { defense = 132; }
+
+	[inventory]
+	{
+		spew_equipped_kill_count = ;		
+
+		selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell=dsx_spell_rune_master_damage;
+			il_spell_1=dsx_spell_rune_caster_summon_q;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 18, Special */
+			[all*]
+			{
+				[gold*]
+				{
+					//chance = 0.2;
+					min = 565;
+					max = 1121;
+				}
+				[oneof*]
+				{
+					//chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					//chance = 0.2;
+					il_main = #weapon/39-52;
+					il_main = #armor/21-118;
+					il_main = #*/39-52;
+				}
+				[oneof*]
+				{
+					//chance = 0.01;
+					il_main = #weapon/-rare(1)/52-60;
+					il_main = #armor/-rare(1)/90-174;
+					il_main = #*/-rare(1)/52-60;
+				}
+				[oneof*]
+				{
+					//chance = 0.005;
+					il_main = #weapon/-unique(2)/52-60;
+					il_main = #armor/-unique(2)/90-174;
+					il_main = #*/-unique(2)/52-60;
+				}			
+			}
+		}					
+	}
+}

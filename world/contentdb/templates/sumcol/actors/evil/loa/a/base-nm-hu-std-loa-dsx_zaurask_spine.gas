@@ -1,0 +1,95 @@
+// strong ranged variant (area 5) 
+[t:template,n:dsx_zaurask_spine_base]  // = dsx_zaurask_spine
+{
+// Balanced to level 16, medium ranged
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_spine";
+	specializes = zaurask_ranged_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength		= 14, 0;
+			intelligence 	= 8, 0;
+			dexterity		= 10, 0;
+			ranged			= 11, 0;
+		}
+	}
+
+	[aspect]
+	{
+		experience_value = 398;
+		life		 	= 298;
+		max_life	 	= 298;
+		mana		 	= 54;
+		max_mana	 	= 54;
+		scale_base	 	= 0.85;
+		textures:0 = b_c_eam_zaurask2;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 57;
+		damage_min = 45;
+	}
+
+	[common] {screen_name="Zaurask Spine"; }
+
+	[defend] { defense=89; }
+
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_shield_hand = bw_dsx_zaurask_2_b;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 17, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 413;
+					max = 821;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/33-47;
+					il_main = #armor/13-100;
+					il_main = #*/33-47;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/36-52;
+					il_main = #armor/-rare(1)/71-156;
+					il_main = #*/-rare(1)/36-52;
+				}
+				
+			}
+		}
+	}
+	[mind]
+	{
+		actor_auto_switches_to_melee				 = false;
+		actor_auto_switches_to_ranged				 = true;
+		actor_auto_uses_stored_items		 = false;
+		actor_weapon_preference			 = WP_RANGED;
+	}
+}
