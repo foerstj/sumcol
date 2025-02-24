@@ -1,0 +1,104 @@
+[t:template,n:spell_summon_hassat_hunter] { specializes = spell_summon_hassat_hunter_base; }
+[t:template,n:spell_summon_hassat_hunter_base]
+{
+    specializes = base_spell_sumcol_nm;
+
+    doc = "spell Summon Hassat Hunter";
+    [aspect]
+    {
+        gold_value = 2400;
+    }
+    [common]
+    {
+        screen_name = "Summon Hassat Hunter";
+        description = "Summons a Hassat Hunter to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sp_sumcol-nm-hu-std-loa-hassat_hunter;
+        inventory_icon =b_gui_ig_i_ic_sp_sumcol-nm-hu-std-loa-hassat_hunter-inv;
+    }
+    [spell_summon]
+    {
+        template_name = dsx_hassat_bowman_summon;
+        script_params = "[scale(2.0)]";
+    }
+    [magic]
+    {
+        effect_duration = 300;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(18+0);
+        required_level = 19;
+        max_level = 39;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_ranged_damage_min;
+                duration = #infinite;
+                value = (((((#magic*4.2)*1.0)*0.9) - #ranged_damage_min) - 26.0);
+            }
+            [*]
+            {
+                alteration = alter_ranged_damage_max;
+                duration = #infinite;
+                value = (((((#magic*4.2)*1.0)*1.1) - #ranged_damage_max) - 36.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*1.2) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*1.0) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*1.0);
+            }
+            [*]
+            {
+                alteration = alter_ranged;
+                duration = #infinite;
+                value = ((#magic*0.905)-#ranged);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}
