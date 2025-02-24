@@ -1,6 +1,6 @@
 [t:template,n:dark_slinger_summon]
 {
-    specializes = dark_slinger;
+    specializes = dark_slinger_base;
 
 	doc = "[summon] dark_slinger";
 	aspect:experience_value = 0;

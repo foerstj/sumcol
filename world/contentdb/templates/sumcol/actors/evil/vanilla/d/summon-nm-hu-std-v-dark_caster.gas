@@ -1,6 +1,6 @@
 [t:template,n:dark_caster_summon]
 {
-    specializes = dark_caster;
+    specializes = dark_caster_base;
 
 	doc = "[summon] dark_caster";
 	aspect:experience_value = 0;
