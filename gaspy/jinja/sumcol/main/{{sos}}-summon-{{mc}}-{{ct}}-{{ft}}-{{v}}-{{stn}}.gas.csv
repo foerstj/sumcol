@@ -158,7 +158,7 @@ scroll;shadowjumper_henchman;dsx_shadow_jumper_minion_three;;a;Shadowjumper Henc
 spell;marble_golem;dsx_golem_marble;;a;Marble Golem;1.5;nm;el;std;loa;;33;28000;6;1.1;;;;;;;;;3;1;;;;
 spell;lectar;lectar;;a;Lectar;1;nm;an;std;v;;31;25000;7;0.9;;;;;;;;;1.5;0.6;;;;
 scroll;shadow_lunger;dark_lunger_boss_01;;a;Shadow Lunger;1;nm;hu;mb;v;x;39;7300;17;1.1;;;;;;;;;1;1.8;;;;
-scroll;rune_master;dsx_rune_master;;a;Rune Master;2;cm;hu;mb-su;loa;x;42;10000;13;;;1.2;;;;;60;66;1;4.5;;;;
+scroll;rune_master;dsx_rune_master;;a;Rune Master;2;cm;hu;mb;loa;x;42;10000;13;;;1.2;;;;;60;66;1;4.5;;;;
 spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;0.9;;75;77;;;1.5;1;;;;1/5 of attacks do double damage
 spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;43;44000;5;0.95;;;;;;;;;2;1;;;;
 spell;purple_shard;shard_purple;;a;Purple Shard;1.75;nm;el;std;v;;37;41000;3;;;1.1;;;;;82;88;3;1.5;;;;
