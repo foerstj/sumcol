@@ -355,6 +355,17 @@
 
 	[0x0000]
 	{
+		from = "Summon Bookas";
+		to = "Bookas beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Bookas to guard the Caster.";
+		to = "Beschwört einen Bookas, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Bog Beast";
 		to = "Schlammbestie beschwören";
 	}
@@ -384,6 +395,149 @@
 	{
 		from = "Summons a Marble Golem to guard the Caster.";
 		to = "Beschwört einen Marmorgolem, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Jungle Slinger";
+		to = "Dschungelschleuder beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Jungle Slinger to guard the Caster.";
+		to = "Beschwört eine Dschungelschleuder, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Claw";
+		to = "Zauraskerklaue beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Claw to guard the Caster.";
+		to = "Beschwört eine Zauraskerklaue, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Archer";
+		to = "Zauraskerbogenschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Archer to guard the Caster.";
+		to = "Beschwört einen Zauraskerbogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Incanter";
+		to = "Zauraskerbeschwörer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Incanter to guard the Caster.";
+		to = "Beschwört einen Zauraskerbeschwörer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gulik";
+		to = "Gulik beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gulik to guard the Caster.";
+		to = "Beschwört einen Gulik, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Runner";
+		to = "Hassati-Läufer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Runner to guard the Caster.";
+		to = "Beschwört einen Hassati-Läufer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Hunter";
+		to = "Hassati-Jäger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Hunter to guard the Caster.";
+		to = "Beschwört einen Hassati-Jäger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Panther";
+		to = "Hassati-Panther beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Panther to guard the Caster.";
+		to = "Beschwört einen Hassati-Panther, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Shaman";
+		to = "Hassati-Schamanen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Shaman to guard the Caster.";
+		to = "Beschwört einen Hassati-Schamanen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Fang";
+		to = "Zauraskerfangzahn beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Fang to guard the Caster.";
+		to = "Beschwört einen Zauraskerfangzahn, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Adept";
+		to = "Zauraskeradept beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Adept to guard the Caster.";
+		to = "Beschwört einen Zauraskeradept, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Spine";
+		to = "Zauraskerspindel beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Spine to guard the Caster.";
+		to = "Beschwört eine Zauraskerspindel, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Slavemaster";
+		to = "Zauraskersklavenmeister beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Slavemaster to guard the Caster.";
+		to = "Beschwört einen Zauraskersklavenmeister, der den Anwender verteidigt.";
 	}
 
 	[0x0000]

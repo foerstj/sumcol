@@ -47,6 +47,28 @@
 
 	[0x0000]
 	{
+		from = "Summon Shadowjumper Minion";
+		to = "Shadowjumper-Schergen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadowjumper Minion to guard the Caster.";
+		to = "Beschwört einen Shadowjumper-Schergen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Shadowjumper Henchman";
+		to = "Shadowjumper-Helfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadowjumper Henchman to guard the Caster.";
+		to = "Beschwört einen Shadowjumper-Helfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Rune Guardian";
 		to = "Runenwächter beschwören";
 	}
@@ -91,6 +113,28 @@
 
 	[0x0000]
 	{
+		from = "Summon Jungle Slinger Camora";
+		to = "Dschungelschleuder Camora beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Jungle Slinger Camora to guard the Caster.";
+		to = "Beschwört eine Dschungelschleuder Camora, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Commander";
+		to = "Hassati-Kommandeur beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Commander to guard the Caster.";
+		to = "Beschwört einen Hassati-Kommandeur, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Rune Caster";
 		to = "Runenleger beschwören";
 	}
@@ -98,6 +142,17 @@
 	{
 		from = "Summons a Rune Caster to guard the Caster.";
 		to = "Beschwört einen Runenleger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Rune Master";
+		to = "Runenmeister beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rune Master to guard the Caster.";
+		to = "Beschwört einen Runenmeister, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
