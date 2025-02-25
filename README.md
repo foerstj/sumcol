@@ -134,11 +134,15 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
   - Rahks: Rahk, Scaly Rahk
   - Others: Ghastly Necron, Dark Acolyte
 - Demonics (CM):
-  - Large Twisted Mucosa, Rune Fiend, Whelnar's Eyes
+  - Large Twisted Mucosa, Rune Fiend, Whelnar's Eyes, Bookas
 - Robots (CM):
   - Automatons: Weathered Automaton, Rusted Automaton
   - Others: Ancient Scorpiot
 - Humanoids:
+  - Lungers (NM): Jungle Slinger
+  - Zaurask (NM): Zaurask Claw, Zaurask Archer, Zaurask Incanter, Zaurask Fang, Zaurask Adept, Zaurask Spine, Zaurask Slavemaster
+  - Hassat (NM): Hassat Runner, Hassat Hunter, Hassat Panther, Hassat Shaman
+  - Other: Gulik (NM)
 
 ### LoA Non-Standard:
 - Stationary:
@@ -154,7 +158,13 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Air (NM): Air Elemental Minion
     - Water (NM): Water Elemental Minion
   - Undead (CM): Krakemaw the Putrid
-  - Demonics (CM): Twisted Mucosa Brute
+  - Demonics (CM):
+    - Mucosa: Twisted Mucosa Brute
+    - Shadowjumper Minions: Shadowjumper Minion, Shadowjumper Henchman
+  - Humanoids: 
+    - Lungers (NM): Jungle Slinger Camora
+    - Hassat (NM): Hassat Commander
+    - Combat Witches (CM): Rune Master
 
 
 ## Balancing
