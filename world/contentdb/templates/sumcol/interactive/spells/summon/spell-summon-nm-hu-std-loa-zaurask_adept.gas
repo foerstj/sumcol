@@ -6,7 +6,7 @@
     doc = "spell Summon Zaurask Adept";
     [aspect]
     {
-        gold_value = 24000;
+        gold_value = 41000;
     }
     [common]
     {
@@ -28,8 +28,8 @@
         effect_duration = 360;
         mana_cost = 0;
         mana_cost_modifier = (#magic+1)*(18+0);
-        required_level = 29;
-        max_level = 49;
+        required_level = 37;
+        max_level = 57;
 
         [enchantments]
         {
@@ -67,7 +67,7 @@
             {
                 alteration = alter_combat_magic;
                 duration = #infinite;
-                value = ((#magic*0.855)-#combat_magic_level);
+                value = ((#magic*0.815)-#combat_magic_level);
             }
             [*]
             {
