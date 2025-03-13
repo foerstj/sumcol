@@ -91,7 +91,7 @@ spell;thunder_lizard;dsx_lizard_thunder;;a;Thunder Lizard;1.5;nm;an;std;loa;;37;
 spell;hassat_panther;dsx_hassat_panther;;a;Hassat Panther;2;nm;hu;std;loa;x;25;7600;6;1.1;;;;;;;;;1.2;1.2;;;;
 spell;jungle_spiker;dsx_spiked_dweller;;a;Jungle Spiker;1;nm;an;std;loa;;17;1500;5;;;0.95;;;;;55;70;1.5;0.8;;;;
 spell;living_dead;dsx_zombie_pudgy;;a;Living Dead;1.5;cm;un;std;loa;;24;6000;7;0.95;;;;;;;;;0.8;1;;;;
-scroll;hassat_commander;dsx_hassat_commander;;a;Hassat Commander;2.5;nm;hu;mb;loa;x;27;2400;13;1.35;;;;;50;58;;;1.2;4.5;;;;
+scroll;hassat_commander;dsx_hassat_commander;;a;Hassat Commander;2.5;nm;hu;mb;loa;x;27;2400;13;1.35;;;0.25;;50;58;;;1.2;4.5;;;;Attack anims with lots of attacks
 spell;dark_acolyte;dsx_acolyte_dark;;a;Dark Acolyte;1.5;cm;un;std;loa;;24;6000;6;1.1;;;;;;;;;2.5;0.8;;;;
 spell;frostnid;spider_frostnid;;a;Frostnid;1;nm;an;std;v;;25;7600;7;0.95;;;;;;;;;2;0.8;;;;
 spell;mummy;dsx_mummy;;a;Mummy;1.5;cm;un;std;loa;;28;15000;7;0.9;;;;;;;;;0.8;1;;;;
