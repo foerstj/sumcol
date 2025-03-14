@@ -1,0 +1,21 @@
+{% for v, V in {'v': 'Vanilla', 'loa': 'LoA'}.items() %}
+{% for std, Std in {'std': 'Standard', 'nstd': 'Non-Standard'}.items() %}
+{% for ct, Ct in {'an': 'Animals', 'el': 'Elementals', 'un': 'Undead', 'pl': 'Plants', 'de': 'Demonics', 'ro': 'Robots', 'hu': 'Humanoids'}.items() %}
+[t:template,n:sumcol_demo_barrel_{{V.lower()}}_{{Std.lower().replace('-', '')}}_{{Ct.lower()}}]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "{{Ct}} - {{V}} {{Std}}";
+    [inventory]
+    {
+        [other]
+        {
+            {% for row in data if row['v'] == v and row['ct'] == ct and (row['ft'] == 'std') == (std == 'std') and not row['test_only'] %}
+            il_main = {{ 'spell' if not row['ft'].startswith('mb') else 'scroll' }}_summon_{{ row['stn'] }};
+            {% endfor %}
+        }
+    }
+}
+{% endfor %}
+{% endfor %}
+{% endfor %}
