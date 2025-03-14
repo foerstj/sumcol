@@ -1,0 +1,38 @@
+[t:template,n:sumcol_demo_barrel_new]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "New";
+    [inventory]
+    {
+        [other]
+        {
+            // Standard
+            // undead
+            il_main = spell_summon_possessed_skull;
+            // humanoid
+            il_main = spell_summon_goblin_grunt;
+            il_main = spell_summon_goblin_guard;
+            il_main = spell_summon_water_lunger;
+            il_main = spell_summon_water_slinger;
+            il_main = spell_summon_cyclops;
+            il_main = spell_summon_sand_ripper;
+            il_main = spell_summon_sand_mage;
+            il_main = spell_summon_sand_basher;
+            il_main = spell_summon_droog_grunt;
+            il_main = spell_summon_droog_archer;
+            il_main = spell_summon_droog_mage;
+
+            // Non-Standard
+            // demonic
+            il_main = scroll_summon_fury_spawn;
+            // undead
+            il_main = scroll_summon_warrior_wraith;
+            il_main = scroll_summon_dark_wraith_mage;
+            il_main = scroll_summon_skeleton_mercenary_captain;
+            // humanoid
+            il_main = scroll_summon_bile_lunger;
+            il_main = scroll_summon_droog_captain;
+        }
+    }
+}

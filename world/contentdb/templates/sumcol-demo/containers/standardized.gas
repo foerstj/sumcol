@@ -1,0 +1,39 @@
+[t:template,n:sumcol_demo_barrel_standardized]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Standardized Dummies";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_standard_m_0_sumcol_demo;
+            il_main = spell_summon_standard_r_0_sumcol_demo;
+            il_main = spell_summon_standard_c_0_sumcol_demo;
+            il_main = spell_summon_standard_m_10_sumcol_demo;
+            il_main = spell_summon_standard_r_10_sumcol_demo;
+            il_main = spell_summon_standard_c_10_sumcol_demo;
+            il_main = spell_summon_standard_m_20_sumcol_demo;
+            il_main = spell_summon_standard_r_20_sumcol_demo;
+            il_main = spell_summon_standard_c_20_sumcol_demo;
+            il_main = spell_summon_standard_m_30_sumcol_demo;
+            il_main = spell_summon_standard_r_30_sumcol_demo;
+            il_main = spell_summon_standard_c_30_sumcol_demo;
+            il_main = spell_summon_standard_m_40_sumcol_demo;
+            il_main = spell_summon_standard_r_40_sumcol_demo;
+            il_main = spell_summon_standard_c_40_sumcol_demo;
+            il_main = spell_summon_standard_m_50_sumcol_demo;
+            il_main = spell_summon_standard_r_50_sumcol_demo;
+            il_main = spell_summon_standard_c_50_sumcol_demo;
+            il_main = spell_summon_standard_m_60_sumcol_demo;
+            il_main = spell_summon_standard_r_60_sumcol_demo;
+            il_main = spell_summon_standard_c_60_sumcol_demo;
+            il_main = spell_summon_standard_m_70_sumcol_demo;
+            il_main = spell_summon_standard_r_70_sumcol_demo;
+            il_main = spell_summon_standard_c_70_sumcol_demo;
+            il_main = spell_summon_standard_m_80_sumcol_demo;
+            il_main = spell_summon_standard_r_80_sumcol_demo;
+            il_main = spell_summon_standard_c_80_sumcol_demo;
+        }
+    }
+}

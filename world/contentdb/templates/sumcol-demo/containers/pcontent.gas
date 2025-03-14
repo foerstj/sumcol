@@ -1,0 +1,25 @@
+[t:template,n:sumcol_demo_barrel_pcontent]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "PContent";
+    [inventory]
+    {
+        [pcontent]
+        {
+            [all*]
+            {
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+                il_main = #club/2-3;
+            }
+        }
+    }
+}
