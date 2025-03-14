@@ -20,6 +20,6 @@ if %errorlevel% neq 0 pause
 
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map world\contentdb\templates\sumcol-demo --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\companions world\contentdb\templates\sumcol-demo --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 popd
