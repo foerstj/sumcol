@@ -1,0 +1,104 @@
+[t:template,n:spell_summon_water_slinger] { specializes = spell_summon_water_slinger_base; }
+[t:template,n:spell_summon_water_slinger_base]
+{
+    specializes = base_spell_sumcol_nm;
+
+    doc = "spell Summon Water Slinger";
+    [aspect]
+    {
+        gold_value = 150000;
+    }
+    [common]
+    {
+        screen_name = "Summon Water Slinger";
+        description = "Summons a Water Slinger to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sp_sumcol-nm-hu-std-v-water_slinger;
+        inventory_icon =b_gui_ig_i_ic_sp_sumcol-nm-hu-std-v-water_slinger-inv;
+    }
+    [spell_summon]
+    {
+        template_name = water_slinger_summon;
+        script_params = "[scale(1.5)]";
+    }
+    [magic]
+    {
+        effect_duration = 360;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(18+0);
+        required_level = 65;
+        max_level = 85;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_melee_damage_min;
+                duration = #infinite;
+                value = (((((((#magic*4.2)*0.9)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_melee_damage_max;
+                duration = #infinite;
+                value = (((((((#magic*4.2)*0.9)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*1.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*0.8) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*0.8);
+            }
+            [*]
+            {
+                alteration = alter_melee;
+                duration = #infinite;
+                value = ((#magic*0.7875)-#melee);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}

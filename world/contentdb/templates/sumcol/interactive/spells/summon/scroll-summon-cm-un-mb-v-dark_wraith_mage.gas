@@ -1,0 +1,104 @@
+[t:template,n:scroll_summon_dark_wraith_mage] { specializes = scroll_summon_dark_wraith_mage_base; }
+[t:template,n:scroll_summon_dark_wraith_mage_base]
+{
+    specializes = base_scroll_sumcol_cm;
+
+    doc = "scroll Summon Dark Wraith Mage";
+    [aspect]
+    {
+        gold_value = 29000;
+    }
+    [common]
+    {
+        screen_name = "Summon Dark Wraith Mage";
+        description = "Summons a Dark Wraith Mage to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-cm-un-mb-v-dark_wraith_mage;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-cm-un-mb-v-dark_wraith_mage-inv;
+    }
+    [spell_summon]
+    {
+        template_name = wraith_mage_boss_01_summon;
+        script_params = "[scale(1.5)]";
+    }
+    [magic]
+    {
+        effect_duration = 780;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(15+1);
+        required_level = 64;
+        max_level = 84;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_cmagic_damage_min;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*1.15)*1.0)*0.9) - #cmagic_damage_min) - 120.0);
+            }
+            [*]
+            {
+                alteration = alter_cmagic_damage_max;
+                duration = #infinite;
+                value = ((((((#magic*4.2)*1.15)*1.0)*1.1) - #cmagic_damage_max) - 140.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*2.2) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*2.4) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*2.4);
+            }
+            [*]
+            {
+                alteration = alter_combat_magic;
+                duration = #infinite;
+                value = ((#magic*0.785)-#combat_magic_level);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}
