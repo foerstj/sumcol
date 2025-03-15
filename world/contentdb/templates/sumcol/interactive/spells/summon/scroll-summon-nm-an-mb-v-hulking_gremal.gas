@@ -102,3 +102,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_hulking_gremal]
+{
+    specializes = scroll_summon_hulking_gremal_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

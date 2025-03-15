@@ -120,3 +120,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_krakemaw_the_putrid]
+{
+    specializes = scroll_summon_krakemaw_the_putrid_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

@@ -120,3 +120,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_magma_beast]
+{
+    specializes = scroll_summon_magma_beast_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

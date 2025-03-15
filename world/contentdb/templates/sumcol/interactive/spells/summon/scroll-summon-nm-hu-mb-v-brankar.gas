@@ -102,3 +102,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_brankar]
+{
+    specializes = scroll_summon_brankar_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

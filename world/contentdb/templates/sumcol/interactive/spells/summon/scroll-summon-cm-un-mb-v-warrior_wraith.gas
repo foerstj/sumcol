@@ -102,3 +102,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_warrior_wraith]
+{
+    specializes = scroll_summon_warrior_wraith_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

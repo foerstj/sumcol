@@ -1,0 +1,63 @@
+[t:template,n:sumcol_demo_barrel_scroll_spells]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Scrolls as Spells";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = test_spell_summon_yellow_eye;
+            il_main = test_spell_summon_brankar;
+            il_main = test_spell_summon_phrak_ballista;
+            il_main = test_spell_summon_alpha_wolf;
+            il_main = test_spell_summon_klandank;
+            il_main = test_spell_summon_ancient_corpse;
+            il_main = test_spell_summon_skeleton_captain;
+            il_main = test_spell_summon_hulking_gremal;
+            il_main = test_spell_summon_jungle_slinger_camora;
+            il_main = test_spell_summon_twisted_mucosa_brute;
+            il_main = test_spell_summon_mucosa_brute;
+            il_main = test_spell_summon_huskar;
+            il_main = test_spell_summon_futak;
+            il_main = test_spell_summon_venom_fiend;
+            il_main = test_spell_summon_pitiful_braak;
+            il_main = test_spell_summon_dark_klaw;
+            il_main = test_spell_summon_hassat_commander;
+            il_main = test_spell_summon_grizzly_furok;
+            il_main = test_spell_summon_krakemaw_the_putrid;
+            il_main = test_spell_summon_frost_mage;
+            il_main = test_spell_summon_frost_archer;
+            il_main = test_spell_summon_frost_warrior;
+            il_main = test_spell_summon_giant_chitterskrag;
+            il_main = test_spell_summon_shadowjumper_henchman;
+            il_main = test_spell_summon_shadow_lunger;
+            il_main = test_spell_summon_rune_master;
+            il_main = test_spell_summon_rabid_spiked_maw;
+            il_main = test_spell_summon_great_trog_warrior;
+            il_main = test_spell_summon_shadowjumper_minion;
+            il_main = test_spell_summon_dark_wolf;
+            il_main = test_spell_summon_muong_troll;
+            il_main = test_spell_summon_enraged_gorack;
+            il_main = test_spell_summon_rogue_bandit;
+            il_main = test_spell_summon_air_elemental_minion;
+            il_main = test_spell_summon_earth_elemental_minion;
+            il_main = test_spell_summon_water_elemental_minion;
+            il_main = test_spell_summon_skank_witch;
+            il_main = test_spell_summon_wretched_zombie;
+            il_main = test_spell_summon_bandit_boss;
+            il_main = test_spell_summon_lost_witch;
+            il_main = test_spell_summon_rotten_troll;
+            il_main = test_spell_summon_swamp_abomination;
+            il_main = test_spell_summon_fury_spawn;
+            il_main = test_spell_summon_infested_larch;
+            il_main = test_spell_summon_dark_wraith_mage;
+            il_main = test_spell_summon_bile_lunger;
+            il_main = test_spell_summon_warrior_wraith;
+            il_main = test_spell_summon_skeleton_mercenary_captain;
+            il_main = test_spell_summon_droog_captain;
+            il_main = test_spell_summon_ferocious_braak;
+            il_main = test_spell_summon_magma_beast;
+        }
+    }
+}

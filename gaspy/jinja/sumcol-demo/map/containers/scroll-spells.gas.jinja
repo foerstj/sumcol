@@ -1,0 +1,15 @@
+[t:template,n:sumcol_demo_barrel_scroll_spells]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Scrolls as Spells";
+    [inventory]
+    {
+        [other]
+        {
+            {% for row in data if row['sos'] == 'scroll' and not row['test_only'] %}
+            il_main = test_spell_summon_{{ row['stn'] }};
+            {% endfor %}
+        }
+    }
+}

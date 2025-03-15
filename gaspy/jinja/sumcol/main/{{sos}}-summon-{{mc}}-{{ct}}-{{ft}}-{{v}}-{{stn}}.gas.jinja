@@ -171,3 +171,13 @@
         }
     }
 }
+{% if sos == 'scroll' %}
+
+[t:template,n:test_spell_summon_{{stn}}]
+{
+    specializes = {{sos}}_summon_{{stn}}_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+{% endif %}

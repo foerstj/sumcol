@@ -102,3 +102,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_rogue_bandit]
+{
+    specializes = scroll_summon_rogue_bandit_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

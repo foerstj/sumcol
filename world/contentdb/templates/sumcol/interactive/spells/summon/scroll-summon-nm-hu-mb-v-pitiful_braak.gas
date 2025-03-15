@@ -102,3 +102,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_pitiful_braak]
+{
+    specializes = scroll_summon_pitiful_braak_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

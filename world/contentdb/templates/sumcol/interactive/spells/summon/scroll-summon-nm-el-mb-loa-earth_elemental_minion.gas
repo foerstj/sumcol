@@ -120,3 +120,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_earth_elemental_minion]
+{
+    specializes = scroll_summon_earth_elemental_minion_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

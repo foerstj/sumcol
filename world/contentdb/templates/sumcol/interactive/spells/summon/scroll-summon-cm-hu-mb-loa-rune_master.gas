@@ -102,3 +102,11 @@
         }
     }
 }
+
+[t:template,n:test_spell_summon_rune_master]
+{
+    specializes = scroll_summon_rune_master_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

@@ -22,6 +22,8 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\tem
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\companions world\contentdb\templates\sumcol-demo --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\sumcol.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main --value stable=%stable% --bits "%bits%"
+if %errorlevel% neq 0 pause
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spells.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 popd
