@@ -1,0 +1,24 @@
+[t:template,n:goblin_guard_summon]
+{
+    specializes = goblin_guard_base;
+
+    doc = "[summon] goblin_guard";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+		spew_equipped_kill_count = <ignore>;
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				es_weapon_hand = ss_g_c_bl_1h_avg;
+               	es_weapon_hand = mc_g_c_s_1h_avg;
+               	es_weapon_hand = sd_g_c_gl_1h_avg;
+               	es_weapon_hand = ax_g_c_1h2b_avg;
+			}
+
+            // ERASED
+        }
+    }
+}

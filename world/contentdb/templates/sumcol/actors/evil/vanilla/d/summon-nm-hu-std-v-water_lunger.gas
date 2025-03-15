@@ -1,0 +1,15 @@
+[t:template,n:water_lunger_summon]
+{
+    specializes = water_lunger_base;
+
+	doc = "[summon] water_lunger";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent]
+        {
+            // ERASED
+        }
+    }
+}

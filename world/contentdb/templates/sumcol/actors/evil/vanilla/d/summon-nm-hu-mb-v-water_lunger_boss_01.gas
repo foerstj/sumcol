@@ -1,0 +1,15 @@
+[t:template,n:water_lunger_boss_01_summon]
+{
+    specializes = water_lunger_boss_01_base;
+
+	doc = "[summon] water_lunger boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+        [pcontent]
+        {
+            // ERASED
+        }
+    }
+}

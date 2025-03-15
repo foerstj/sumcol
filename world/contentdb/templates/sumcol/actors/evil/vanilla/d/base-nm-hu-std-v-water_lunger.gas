@@ -1,0 +1,88 @@
+[t:template,n:water_lunger_base]  // = water_lunger
+{
+	category_name = "1W_evil_d";
+	doc = "water_lunger";
+	specializes = base_dark_lunger;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  15, 0;
+			intelligence =  7, 0;
+			dexterity =  16, 0;
+            melee =  31,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 10600;
+		life = 640;
+        max_life = 640;
+        mana = 26;
+        max_mana = 26;
+        textures:0 = b_c_edm_dl-04;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 145;
+		damage_min = 125;
+	}
+	[common]
+	{
+		screen_name="Water Lunger";
+		membership = party_water_lunger_boss, monster;
+	}
+	[defend] { defense=360; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #*/55-103;
+					il_main = #armor/48-235;
+                	il_main = #nmagic/23-38;
+                	il_main = #cmagic/25-38;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/96-122;
+	                il_main = #armor/-rare(1)/199-262;
+                    il_main = #*/-rare(1)/96-122;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/96-122;
+	                il_main = #armor/-unique(2)/199-262;
+                    il_main = #*/-unique(2)/96-122;
+	            }
+			}
+        }
+	}
+	[mind]
+	{
+        sight_origin_height	= 2.5;
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party			= true;
+	}
+	[physics]
+	{
+		explode_when_killed = true;
+		break_effect = blood_mist;
+		break_sound = s_e_meat_explosion;
+		[break_particulate]
+		{
+			frag_glb_water_lunger_01 = 1;
+			frag_glb_water_lunger_02 = 2;
+			frag_glb_water_lunger_03 = 2;
+			frag_glb_water_lunger_04 = 2;
+			frag_glb_water_lunger_05 = 1;
+		}
+	}
+}
