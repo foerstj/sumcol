@@ -8,8 +8,6 @@
         [other]
         {
             // Standard
-            // undead
-            il_main = spell_summon_possessed_skull;
             // humanoid
             il_main = spell_summon_goblin_grunt;
             il_main = spell_summon_goblin_guard;

@@ -83,7 +83,6 @@
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
             il_main = spell_summon_skeleton_mercenary;
-            il_main = spell_summon_possessed_skull;
             il_main = spell_summon_ghost;
         }
     }
