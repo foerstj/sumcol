@@ -146,6 +146,17 @@
 
 	[0x0000]
 	{
+		from = "Summon Fury Spawn";
+		to = "Furienbrut beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Fury Spawn to guard the Caster.";
+		to = "Beschwört eine Furienbrut, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Magma Beast";
 		to = "Magmabestie beschwören";
 	}
@@ -410,6 +421,28 @@
 
 	[0x0000]
 	{
+		from = "Summon Bile Lunger";
+		to = "Gallenspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Bile Lunger to guard the Caster.";
+		to = "Beschwört einen Gallenspringer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droog Captain";
+		to = "Droog-Hauptmann beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droog Captain to guard the Caster.";
+		to = "Beschwört einen Droog-Hauptmann, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Infested Larch";
 		to = "Infizierten Lärchling beschwören";
 	}
@@ -494,6 +527,39 @@
 	{
 		from = "Summons a Wretched Zombie to guard the Caster.";
 		to = "Beschwört einen Elenden Zombie, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Warrior Wraith";
+		to = "Kriegergespenst beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Warrior Wraith to guard the Caster.";
+		to = "Beschwört ein Kriegergespenst, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Dark Wraith Mage";
+		to = "Dunklen Gespenstermagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Dark Wraith Mage to guard the Caster.";
+		to = "Beschwört einen Dunklen Gespenstermagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Skeleton Mercenary Captain";
+		to = "Söldnerskeletthauptmann beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Skeleton Mercenary Captain to guard the Caster.";
+		to = "Beschwört einen Söldnerskeletthauptmann, der den Anwender verteidigt.";
 	}
 
 }

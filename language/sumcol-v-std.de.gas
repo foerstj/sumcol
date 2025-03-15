@@ -762,6 +762,127 @@
 
 	[0x0000]
 	{
+		from = "Summon Goblin Grunt";
+		to = "Goblin-Kämpfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Goblin Grunt to guard the Caster.";
+		to = "Beschwört einen Goblin-Kämpfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Goblin Guard";
+		to = "Goblin-Wache beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Goblin Guard to guard the Caster.";
+		to = "Beschwört eine Goblin-Wache, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Cyclops";
+		to = "Zyklopen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Cyclops to guard the Caster.";
+		to = "Beschwört einen Zyklopen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Water Lunger";
+		to = "Wasserspringer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Water Lunger to guard the Caster.";
+		to = "Beschwört einen Wasserspringer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Water Slinger";
+		to = "Wasserschleuder beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Water Slinger to guard the Caster.";
+		to = "Beschwört eine Wasserschleuder, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Sand Ripper";
+		to = "Sandschlitzer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Sand Ripper to guard the Caster.";
+		to = "Beschwört einen Sandschlitzer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Sand Mage";
+		to = "Sandmagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Sand Mage to guard the Caster.";
+		to = "Beschwört einen Sandmagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Sand Basher";
+		to = "Sandschläger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Sand Basher to guard the Caster.";
+		to = "Beschwört einen Sandschläger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droog Grunt";
+		to = "Droog-Krieger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droog Grunt to guard the Caster.";
+		to = "Beschwört einen Droog-Krieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droog Archer";
+		to = "Droog-Bogenschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droog Archer to guard the Caster.";
+		to = "Beschwört einen Droog-Bogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droog Mage";
+		to = "Droog-Magier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droog Mage to guard the Caster.";
+		to = "Beschwört einen Droog-Magier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Kill Bot";
 		to = "Bot Töten beschwören";
 	}
