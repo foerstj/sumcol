@@ -3,7 +3,7 @@
     specializes = fury_lesser_01_base;
 
     doc = "[summon] fury_spawn";
-	aspect:experience_value = 0;
+    aspect:experience_value = 0;
     physics:explode_when_killed = false;
     [inventory]
     {
@@ -11,9 +11,83 @@
         {
             il_active_primary_spell = spell_fury_zap_1_summon;
         }
-    	[pcontent]
-		{
+        [pcontent]
+        {
             // ERASED
         }
+    }
+
+	[body]
+	{
+		[chore_dictionary]
+		{
+			initial_chore = chore_none;
+			chore_prefix = a_c_ebb_fy_fs;
+			[chore_misc]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files]
+				{
+					slep = ds;  // EDITED was fl-02
+					wake = rv;
+				}
+			}
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+				}
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+					02 = at-03;
+					03 = at-04;
+					04 = at-05;
+					05 = at-06;
+					06 = at-07;
+					qffg = dsf;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=fl-02; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=fl; }
+			}
+		}
+	}
+    [mind]
+    {
+        // Together with "slep=ds" anim, this prevents the creature to stay in its static position and ignore its surroundings
+        actor_auto_fidgets = true;
+        jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
     }
 }

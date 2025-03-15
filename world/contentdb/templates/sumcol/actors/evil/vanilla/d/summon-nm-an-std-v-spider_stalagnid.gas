@@ -47,7 +47,7 @@
 			{
 				chore_stances = 0;
 				skrit = select_fidget;
-				[anim_files] { 00=dff; }  // EDITED
+				[anim_files] { 00=dff; }  // EDITED was ds
 			}
 			[chore_walk]
 			{
