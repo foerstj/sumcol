@@ -228,7 +228,7 @@ spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;
 spell;blazing_elemental_hold;suicide_elemental_hold;good;a;Blazing Elemental (hold);1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;2;0.8;;;blazing_elemental;Custom spell skrit
 spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;;56;99000;4;1.1;;1.1;;;;;145;155;1.5;2.5;;;;
 scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;;55;15000;13;1.35;;;;;;;;;2;7.5;;;;
-scroll;dark_wraith_mage;wraith_mage_boss_01;;a;Dark Wraith Mage;1.5;cm;un;mb;v;;64;29000;13;;;1.15;;;;;120;140;2.2;2.4;;;;
+scroll;dark_wraith_mage;wraith_mage_boss_01;;a;Dark Wraith Mage;1.5;cm;un;mb;v;;64;29000;13;;;1.15;;0.5;;;120;140;2.2;2.4;;;;Spell shoots 2 trackballs
 spell;sand_ripper;sand_ripper;;a;Sand Ripper;1;cm;hu;std;v;x;70;150000;6;0.9;;;;;;;;;2;0.6;;;;
 scroll;bile_lunger;water_lunger_boss_01;;a;Bile Lunger;1.5;nm;hu;mb;v;x;65;24000;16;1.1;;;;;;;;;1;2.4;;;;
 spell;sand_mage;sand_mage;;a;Sand Mage;1;cm;hu;std;v;x;71;200000;5;;;0.9;;;;;132;152;2;0.6;;;;
