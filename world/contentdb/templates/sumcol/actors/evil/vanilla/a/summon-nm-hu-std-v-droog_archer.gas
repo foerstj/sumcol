@@ -1,0 +1,20 @@
+[t:template,n:droog_archer_summon]
+{
+    specializes = droog_archer_base;
+
+    doc = "[summon] droog_archer";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_shield_hand = bw_un_droog_avg;
+		}
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

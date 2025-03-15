@@ -1,0 +1,17 @@
+[t:template,n:droog_grunt_boss_01_summon]
+{
+    specializes = droog_grunt_boss_01_base;
+
+    doc = "[summon] droog grunt boss 01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand = sd_un_droog_1h_avg;
+		}
+    }
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

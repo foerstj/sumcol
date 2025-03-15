@@ -1,0 +1,15 @@
+[t:template,n:droog_mage_summon]
+{
+    specializes = droog_mage_base;
+
+    doc = "[summon] droog_mage";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}
