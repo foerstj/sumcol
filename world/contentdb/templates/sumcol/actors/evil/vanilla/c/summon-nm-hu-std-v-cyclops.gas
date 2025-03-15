@@ -10,7 +10,7 @@
 		spew_equipped_kill_count = <ignore>;
 		[equipment]
 		{
-			es_weapon_hand = cb_un_2h_cyclops;
+			es_weapon_hand = cb_un_2h_cyclops;  // equip all with club, more stable balancing
 		}
 		[pcontent]
 		{
