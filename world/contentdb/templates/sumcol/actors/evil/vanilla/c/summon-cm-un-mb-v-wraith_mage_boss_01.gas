@@ -1,0 +1,16 @@
+[t:template,n:wraith_mage_boss_01_summon]
+{
+    specializes = wraith_mage_boss_01_base;
+
+    doc = "[summon] wraith_mage boss";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

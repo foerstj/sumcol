@@ -1,0 +1,101 @@
+[t:template,n:skeleton_mercenary_boss_01_base]  // = skeleton_mercenary_boss_01
+{
+	category_name = "1W_evil_c";
+	doc = "skeleton mercenary_boss";
+	specializes = skeleton_mercenary_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	19, 0;
+			intelligence =  13, 0;
+			dexterity =  	15, 0;
+			melee =  		40,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 42420;
+		life = 924;
+		max_life = 924;
+		mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 145;
+		damage_min = 115;
+	}
+	[common]
+	{
+		screen_name="Skeleton Captain";
+		membership = monster, party_skeleton_mercenary_archer;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_purple(sgx)");
+			}
+		}
+	}
+	[defend] { defense=567; }
+
+   	[mind]
+	{
+		sight_origin_height	= 1.3;
+		melee_engage_range = 14.0;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+
+	[inventory]
+	{
+		[pcontent]
+		{
+			[all*]
+			{
+				[oneof*]
+				{
+    				es_weapon_hand = sd_g_c_st_1h_avg;
+					es_weapon_hand = ss_g_c_sd_1h_avg;
+				}
+				es_shield_hand = #shield/-no_mod/150-180;
+				es_chest = bd_un_ba_f_g_skeleton_captain;
+			}
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/115-140;
+					il_main = #armor/380-430;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/138-150;
+	                il_main = #armor/-rare(1)/412-442;
+                    il_main = #*/-rare(1)/138-150;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/138-150;
+	                il_main = #armor/-unique(2)/412-442;
+                    il_main = #*/-unique(2)/138-150;
+	            }
+				[gold*]
+				{
+					max = 27104;
+					min = 21003;
+					min_pile = 2110;
+					piles = 4 - 6;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,15 @@
+[t:template,n:fury_lesser_01_summon]
+{
+    specializes = fury_lesser_01_base;
+
+    doc = "[summon] fury_spawn";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}
