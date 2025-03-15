@@ -1,0 +1,15 @@
+[t:template,n:sand_ripper_summon]
+{
+    specializes = sand_ripper_base;
+
+	doc = "[summon] sand_ripper";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}

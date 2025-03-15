@@ -1,0 +1,69 @@
+[t:template,n:sand_ripper_base]  // = sand_ripper
+{
+	category_name = "1W_evil_d";
+	doc = "sand_ripper";
+	specializes = base_imp;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		13, 0;
+			intelligence = 	10, 0;
+			dexterity = 	12, 0;
+			melee =  		29, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 22000;
+		life = 960;
+		max_life = 960;
+		mana = 14;
+		max_mana = 14;
+		model = m_c_edm_li_pos_1;
+		[textures] { 0=b_c_edm_li-05; }
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_sand_ripper; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 140;
+		damage_min = 120;
+	}
+	[common] { screen_name="Sand Ripper"; }
+	[defend] { defense=300; }
+   	[inventory]
+	{
+    	[pcontent]
+		{
+   			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/39-114;
+	                il_main = #nmagic/15-24;
+                	il_main = #cmagic/15-24;
+    			}
+                [gold*]
+				{
+					chance = 0.125;
+                    max = 17980;
+					min = 15487;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit;
+
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14;
+	}
+}

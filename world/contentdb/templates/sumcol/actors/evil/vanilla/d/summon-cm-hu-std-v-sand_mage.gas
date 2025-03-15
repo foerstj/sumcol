@@ -1,0 +1,16 @@
+[t:template,n:sand_mage_summon]
+{
+    specializes = sand_mage_base;
+
+	doc = "[summon] sand_mage";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}
