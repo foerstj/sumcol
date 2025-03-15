@@ -61,11 +61,15 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - Humanoids:
   - Braak (NM): Braak, Braak Mage
   - Krug (NM): Krug Scavenger, Krug Scout, Krug Apprentice, Krug Grunt, Krug Chucker, Krug Raider, Krug Guard, Krug Commander
-  - Lungers (NM): Dark Lunger, Dark Slinger, Dark Caster
+  - Lungers (NM): Dark Lunger, Dark Slinger, Dark Caster; Water Lunger, Water Slinger
   - Trog (NM): Trog, Trog Warrior, Trog Knight
   - Bandits (NM): Bandit, Bandit Archer
   - Goracks (NM): Gorack
   - Trolls (NM): Swamp Troll
+  - Goblins (CM): Goblin Grunt, Goblin Guard
+  - Cyclops (NM): Cyclops
+  - Sand Imps (CM): Sand Ripper, Sand Mage, Sand Basher
+  - Droog (NM): Droog Grunt, Droog Archer, Droog Mage
 
 ### Vanilla Non-Standard:
 - Stationary:
@@ -94,18 +98,20 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
     - Lava (CM): Magma Beast
   - Undead (CM):
     - Zombies: Dark Wolf, Ancient Corpse, Wretched Zombie
-    - Others: Skeleton Captain
+    - Wraiths: Warrior Wraith, Dark Wraith Mage
+    - Skeletons: Skeleton Captain, Skeleton Mercenary Captain
   - Plants (NM): Infested Larch
   - Demonics (CM):
-    - Mucosa Brute
+    - Mucosa Brute, Fury Spawn
   - Humanoids:
     - Braak (NM): Pitiful Braak, Ferocious Braak
     - Krug (NM): Brankar the Scavenger, Klandank the Krug, Futak the Trainer
-    - Lungers (NM): Shadow Lunger
+    - Lungers (NM): Shadow Lunger; Bile Lunger
     - Trog (NM): Great Trog Warrior
     - Bandits (NM): Rogue Bandit, Bandit Boss
     - Goracks (NM): Enraged Gorack
     - Trolls (NM): Muong Troll, Rotten Troll
+    - Droog (NM): Droog Captain
   - Miniboss Resurrect:
     - Humanoids:
       - Krug (NM): Huskar the Shaman
