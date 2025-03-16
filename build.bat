@@ -10,7 +10,7 @@ set res=sumcol
 set res_cs=Summons Collection
 
 :: tank properties
-set year=2024
+set year=2025
 set copyright=CC-BY-SA %year%
 set author=Johannes Förstner
 
