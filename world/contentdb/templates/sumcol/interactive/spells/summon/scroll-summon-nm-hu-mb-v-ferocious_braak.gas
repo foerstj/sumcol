@@ -102,11 +102,3 @@
         }
     }
 }
-
-[t:template,n:test_spell_summon_ferocious_braak]
-{
-    specializes = scroll_summon_ferocious_braak_base;
-
-    common:is_pcontent_allowed = false;
-    magic:one_use = false;
-}

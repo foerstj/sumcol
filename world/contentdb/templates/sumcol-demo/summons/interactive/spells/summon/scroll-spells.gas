@@ -1,0 +1,399 @@
+[t:template,n:test_spell_summon_yellow_eye]
+{
+    specializes = scroll_summon_yellow_eye_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_brankar]
+{
+    specializes = scroll_summon_brankar_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_phrak_ballista]
+{
+    specializes = scroll_summon_phrak_ballista_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_alpha_wolf]
+{
+    specializes = scroll_summon_alpha_wolf_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_klandank]
+{
+    specializes = scroll_summon_klandank_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_ancient_corpse]
+{
+    specializes = scroll_summon_ancient_corpse_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_skeleton_captain]
+{
+    specializes = scroll_summon_skeleton_captain_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_hulking_gremal]
+{
+    specializes = scroll_summon_hulking_gremal_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_jungle_slinger_camora]
+{
+    specializes = scroll_summon_jungle_slinger_camora_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_twisted_mucosa_brute]
+{
+    specializes = scroll_summon_twisted_mucosa_brute_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_mucosa_brute]
+{
+    specializes = scroll_summon_mucosa_brute_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_huskar]
+{
+    specializes = scroll_summon_huskar_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_futak]
+{
+    specializes = scroll_summon_futak_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_venom_fiend]
+{
+    specializes = scroll_summon_venom_fiend_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_pitiful_braak]
+{
+    specializes = scroll_summon_pitiful_braak_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_dark_klaw]
+{
+    specializes = scroll_summon_dark_klaw_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_hassat_commander]
+{
+    specializes = scroll_summon_hassat_commander_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_grizzly_furok]
+{
+    specializes = scroll_summon_grizzly_furok_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_krakemaw_the_putrid]
+{
+    specializes = scroll_summon_krakemaw_the_putrid_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_krakemaw_the_putrid_small]
+{
+    specializes = scroll_summon_krakemaw_the_putrid_small_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_frost_mage]
+{
+    specializes = scroll_summon_frost_mage_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_frost_mage_attacking]
+{
+    specializes = scroll_summon_frost_mage_attacking_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_frost_archer]
+{
+    specializes = scroll_summon_frost_archer_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_frost_warrior]
+{
+    specializes = scroll_summon_frost_warrior_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_giant_chitterskrag]
+{
+    specializes = scroll_summon_giant_chitterskrag_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_shadowjumper_henchman]
+{
+    specializes = scroll_summon_shadowjumper_henchman_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_shadow_lunger]
+{
+    specializes = scroll_summon_shadow_lunger_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_rune_master]
+{
+    specializes = scroll_summon_rune_master_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_rabid_spiked_maw]
+{
+    specializes = scroll_summon_rabid_spiked_maw_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_great_trog_warrior]
+{
+    specializes = scroll_summon_great_trog_warrior_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_shadowjumper_minion]
+{
+    specializes = scroll_summon_shadowjumper_minion_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_dark_wolf]
+{
+    specializes = scroll_summon_dark_wolf_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_muong_troll]
+{
+    specializes = scroll_summon_muong_troll_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_muong_troll_norecov]
+{
+    specializes = scroll_summon_muong_troll_norecov_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_enraged_gorack]
+{
+    specializes = scroll_summon_enraged_gorack_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_rogue_bandit]
+{
+    specializes = scroll_summon_rogue_bandit_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_air_elemental_minion]
+{
+    specializes = scroll_summon_air_elemental_minion_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_earth_elemental_minion]
+{
+    specializes = scroll_summon_earth_elemental_minion_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_water_elemental_minion]
+{
+    specializes = scroll_summon_water_elemental_minion_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_skank_witch]
+{
+    specializes = scroll_summon_skank_witch_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_skank_witch_attacking]
+{
+    specializes = scroll_summon_skank_witch_attacking_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_wretched_zombie]
+{
+    specializes = scroll_summon_wretched_zombie_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_bandit_boss]
+{
+    specializes = scroll_summon_bandit_boss_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_lost_witch]
+{
+    specializes = scroll_summon_lost_witch_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_lost_witch_attacking]
+{
+    specializes = scroll_summon_lost_witch_attacking_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_rotten_troll]
+{
+    specializes = scroll_summon_rotten_troll_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_rotten_troll_norecov]
+{
+    specializes = scroll_summon_rotten_troll_norecov_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_swamp_abomination]
+{
+    specializes = scroll_summon_swamp_abomination_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_fury_spawn]
+{
+    specializes = scroll_summon_fury_spawn_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_infested_larch]
+{
+    specializes = scroll_summon_infested_larch_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_dark_wraith_mage]
+{
+    specializes = scroll_summon_dark_wraith_mage_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_bile_lunger]
+{
+    specializes = scroll_summon_bile_lunger_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_warrior_wraith]
+{
+    specializes = scroll_summon_warrior_wraith_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_skeleton_mercenary_captain]
+{
+    specializes = scroll_summon_skeleton_mercenary_captain_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_droog_captain]
+{
+    specializes = scroll_summon_droog_captain_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_ferocious_braak]
+{
+    specializes = scroll_summon_ferocious_braak_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_magma_beast]
+{
+    specializes = scroll_summon_magma_beast_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}

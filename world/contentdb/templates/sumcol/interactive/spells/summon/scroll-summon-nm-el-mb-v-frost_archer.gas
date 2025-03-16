@@ -102,11 +102,3 @@
         }
     }
 }
-
-[t:template,n:test_spell_summon_frost_archer]
-{
-    specializes = scroll_summon_frost_archer_base;
-
-    common:is_pcontent_allowed = false;
-    magic:one_use = false;
-}

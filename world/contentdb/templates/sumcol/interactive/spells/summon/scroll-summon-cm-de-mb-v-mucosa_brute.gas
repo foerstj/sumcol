@@ -102,11 +102,3 @@
         }
     }
 }
-
-[t:template,n:test_spell_summon_mucosa_brute]
-{
-    specializes = scroll_summon_mucosa_brute_base;
-
-    common:is_pcontent_allowed = false;
-    magic:one_use = false;
-}

@@ -102,11 +102,3 @@
         }
     }
 }
-
-[t:template,n:test_spell_summon_bandit_boss]
-{
-    specializes = scroll_summon_bandit_boss_base;
-
-    common:is_pcontent_allowed = false;
-    magic:one_use = false;
-}

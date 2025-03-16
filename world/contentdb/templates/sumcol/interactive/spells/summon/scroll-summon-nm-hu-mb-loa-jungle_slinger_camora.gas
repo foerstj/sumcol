@@ -102,11 +102,3 @@
         }
     }
 }
-
-[t:template,n:test_spell_summon_jungle_slinger_camora]
-{
-    specializes = scroll_summon_jungle_slinger_camora_base;
-
-    common:is_pcontent_allowed = false;
-    magic:one_use = false;
-}

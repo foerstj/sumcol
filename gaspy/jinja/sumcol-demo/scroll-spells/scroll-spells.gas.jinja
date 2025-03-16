@@ -1,0 +1,11 @@
+{% for row in data %}
+{% if row['sos'] == 'scroll' %}
+[t:template,n:test_spell_summon_{{row['stn']}}]
+{
+    specializes = {{row['sos']}}_summon_{{row['stn']}}_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+{% endif %}
+{% endfor %}

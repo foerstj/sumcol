@@ -102,11 +102,3 @@
         }
     }
 }
-
-[t:template,n:test_spell_summon_alpha_wolf]
-{
-    specializes = scroll_summon_alpha_wolf_base;
-
-    common:is_pcontent_allowed = false;
-    magic:one_use = false;
-}
