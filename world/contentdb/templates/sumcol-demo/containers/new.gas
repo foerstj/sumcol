@@ -9,28 +9,28 @@
         {
             // Standard
             // humanoid
-            il_main = spell_summon_goblin_grunt;
-            il_main = spell_summon_goblin_guard;
-            il_main = spell_summon_water_lunger;
-            il_main = spell_summon_water_slinger;
-            il_main = spell_summon_cyclops;
-            il_main = spell_summon_sand_ripper;
-            il_main = spell_summon_sand_mage;
-            il_main = spell_summon_sand_basher;
-            il_main = spell_summon_droog_grunt;
-            il_main = spell_summon_droog_archer;
-            il_main = spell_summon_droog_mage;
+            il_main = spell_summon_hassat_archer;
+            il_main = spell_summon_hassat_caster;
+            il_main = spell_summon_hassat_fighter;
+            il_main = spell_summon_hassat_ranger;
+            il_main = spell_summon_hassat_grunt;
+            il_main = spell_summon_hassat_mage;
+            il_main = spell_summon_zaurask_lightning;
+            il_main = spell_summon_zaurask_seer;
+            il_main = spell_summon_zaurask_whacker;
+            il_main = spell_summon_zaurask_slasher;
+            il_main = spell_summon_zaurask_ranger;
+            il_main = spell_summon_zaurask_leader;
+            il_main = spell_summon_zaurask_fighter;
+            il_main = spell_summon_zaurask_mage;
+            il_main = spell_summon_droc;
+            il_main = spell_summon_droc_spatter;
+            il_main = spell_summon_droc_superior;
+            il_main = spell_summon_ztrool;
+            // demonic
+            il_main = spell_summon_slithermage_master;
 
             // Non-Standard
-            // demonic
-            il_main = scroll_summon_fury_spawn;
-            // undead
-            il_main = scroll_summon_warrior_wraith;
-            il_main = scroll_summon_dark_wraith_mage;
-            il_main = scroll_summon_skeleton_mercenary_captain;
-            // humanoid
-            il_main = scroll_summon_bile_lunger;
-            il_main = scroll_summon_droog_captain;
         }
     }
 }
