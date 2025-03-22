@@ -1,0 +1,15 @@
+[t:template,n:dsx_zaurask_caster_summon]
+{
+    specializes = dsx_zaurask_caster_base;
+
+	doc = "[summon] dsx_zaurask_caster";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

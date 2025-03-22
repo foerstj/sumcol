@@ -1,0 +1,7 @@
+[t:template,n:dsx_droc_grunt_base]  // = dsx_droc_grunt
+//balanced for Level 21
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_droc_grunt";
+	specializes = droc_melee_base;
+}

@@ -1,0 +1,110 @@
+[t:template,n:dsx_slithermage_melee_base]  // = dsx_slithermage_melee
+//balanced to Level 24
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_slithermage_melee";
+	specializes = dsx_slithermage_base;
+	[actor]
+		{
+			[skills]
+				{
+					strength =	18, 0;
+					intelligence = 8, 0;
+					dexterity =	11, 0;
+					melee =		17, 0;
+					combat_magic = 20,0;
+					nature_magic = 20,0;
+				}
+		}
+	[aspect]
+		{
+			experience_value = 814;
+			life				= 820;
+			max_life			= 820;
+			mana				= 228;
+			max_mana			= 228;
+		textures:0 = b_c_ecm_kl-03;
+
+		}
+	[attack]
+		{
+			attack_range = 0.5;
+			damage_max = 138;
+			damage_min = 99;
+		}
+	[body]
+		{
+			avg_move_velocity = 2.5;
+		}
+	[common]
+		{
+			screen_name = "Slithermage Master"; //--
+			membership = monster; //--
+		}
+	[defend] { defense = 280; }
+
+	[mind]
+		{
+			jat_brain = world\ai\jobs\common\brain_hero.skrit
+				?actor_joins_existing_party	= true;
+			jat_fidget = world\ai\jobs\common\job_fidget.skrit;
+
+			melee_engage_range = 14;
+			personal_space_range = 0.7;
+			ranged_engage_range = 14.0;
+			sight_range = 14.0;
+		}
+	[inventory]
+
+		{
+			selected_active_location = il_active_primary_spell;
+			[other]
+				{
+					il_active_primary_spell	= dsx_spell_slithermage_blast_2; 
+				}
+	
+		
+			drop_at_use_point = true;
+			[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 25, Weak */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 1808;
+				max = 3589;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.111111111111111;
+				il_main = potion_mana_medium;
+				il_main = potion_health_medium;
+			}
+			[oneof*]
+			{
+				chance = 0.1;
+				il_main = #weapon/49-68;
+				il_main = #armor/22-165;
+				il_main = #*/49-68;
+			}
+			[oneof*]
+			{
+				chance = 0.005;
+				il_main = #weapon/-rare(1)/44-71;
+				il_main = #armor/-rare(1)/118-165;
+				il_main = #*/-rare(1)/44-71;
+			}
+			
+		}
+	}
+		}
+}

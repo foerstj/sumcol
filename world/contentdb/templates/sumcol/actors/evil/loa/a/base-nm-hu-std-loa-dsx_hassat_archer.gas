@@ -1,0 +1,97 @@
+// Area 6
+[t:template,n:dsx_hassat_archer_base]  // = dsx_hassat_archer
+//balanced to Level 14
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_hassat_archer";
+	specializes = base_hassat_cheetah;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 15, 0;
+			intelligence 	=  8, 0;
+			dexterity 		=  10, 0;
+			ranged 			=  13,  0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = .875;
+		model=m_c_eam_ha-02;
+		
+		experience_value = 520;
+		life = 337;
+		max_life = 337;
+		mana = 10;
+		max_mana = 10;
+	}
+	[attack]
+	{
+		attack_range = .5;
+		damage_max = 60;
+		damage_min = 54;
+	}
+	[common] 
+	{ 
+		screen_name="Hassat Archer"; 
+		membership = hassat, monster;		
+	}
+	[defend] { defense = 107; }
+	[inventory]
+	{
+	     spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_shield_hand = bw_dsx_hassat_01; 
+		}
+	[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 18, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 565;
+					max = 1121;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/36-49;
+					il_main = #armor/14-109;
+					il_main = #*/36-49;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/39-55;
+					il_main = #armor/-rare(1)/81-165;
+					il_main = #*/-rare(1)/39-55;
+				}
+				
+			}
+		}
+	      
+	}
+			
+	[mind]
+	{
+		actor_auto_switches_to_melee         = false;
+		actor_auto_switches_to_ranged        = true;
+		actor_auto_uses_stored_items		 = false;
+		on_enemy_spotted_alert_friends		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true;
+		actor_weapon_preference				 = WP_RANGED;
+	}
+}

@@ -1,0 +1,15 @@
+[t:template,n:dsx_ztrool_summon]
+{
+    specializes = dsx_ztrool_base;
+
+	doc = "[summon] dsx_ztrool";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

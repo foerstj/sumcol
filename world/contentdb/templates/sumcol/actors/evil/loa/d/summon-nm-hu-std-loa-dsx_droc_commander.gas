@@ -1,0 +1,15 @@
+[t:template,n:dsx_droc_commander_summon]
+{
+    specializes = dsx_droc_commander_base;
+
+	doc = "[summon] dsx_droc_commander";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

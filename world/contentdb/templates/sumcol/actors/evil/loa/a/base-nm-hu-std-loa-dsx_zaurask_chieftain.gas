@@ -1,0 +1,46 @@
+// uber melee variant - BUFFED (area 7)
+[t:template,n:dsx_zaurask_chieftain_base]  // = dsx_zaurask_chieftain
+//balanced to Level 22
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_chieftain";
+	specializes = zaurask_melee_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength	= 17, 0;
+			intelligence = 8, 0;
+			dexterity	= 11, 0;
+			melee		= 18, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1281;
+		life			= 623;
+		max_life		= 623;
+		mana			= 26;
+		max_mana		= 26;
+		scale_base = 1.2;
+		textures:0 = b_c_eam_zmelee-02;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 119;
+		damage_min = 102;
+	}
+	[defend] { defense = 222; }
+	[common] { screen_name="Zaurask Leader"; }
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand=ss_g_c_bl_1h_fun_01_dsx;	
+			es_shield_hand=sh_un_m_o_r_m_turtle_01_dsx; // adds 0 defense
+		}
+		
+	}
+}

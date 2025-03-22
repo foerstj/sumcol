@@ -1,0 +1,93 @@
+// Tiger Melee (sword) Area 7
+[t:template,n:dsx_hassat_fighter_base]  // = dsx_hassat_fighter
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_hassat_fighter";
+	specializes = base_hassat_leopard;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength     = 15, 0;
+			intelligence = 8, 0;
+			dexterity    = 11, 0;
+			melee        = 16, 0;
+		}
+	}
+
+	[aspect]
+	{
+		model			 = m_c_eam_HS;
+		scale_base 		 = .875;
+		experience_value = 692;
+		life             = 369;
+		max_life         = 369;
+		mana             = 0;
+		max_mana         = 0;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 85;
+		damage_min = 74;
+	}
+
+	[common] 
+	{ 
+		screen_name="Hassat Fighter"; 
+		membership = hassat, monster;
+	}
+	[defend] { defense = 166; }
+
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand=ss_g_c_bl_1h_fun_02_dsx;
+      	}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 20, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 783;
+					max = 1556;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/41-55;
+					il_main = #armor/17-128;
+					il_main = #*/41-55;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/44-60;
+					il_main = #armor/-rare(1)/90-184;
+					il_main = #*/-rare(1)/44-60;
+				}
+				
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends		= true;
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party			= true;		
+	}
+}

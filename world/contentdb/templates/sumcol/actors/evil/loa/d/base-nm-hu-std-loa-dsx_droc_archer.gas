@@ -1,0 +1,12 @@
+[t:template,n:dsx_droc_archer_base]  // = dsx_droc_archer
+//balanced to Level 20
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_droc_archer";
+	specializes = droc_archer_base;
+	
+	[guts_manager]
+	{
+		effect_name = melee_hit_2;
+	}
+}

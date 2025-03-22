@@ -1,0 +1,97 @@
+[t:template,n:dsx_zaurask_ranger_base]  // = dsx_zaurask_ranger
+//balanced for Level 18
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_ranger";
+	specializes = zaurask_ranged_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength	= 18, 0;
+			intelligence = 8, 0;
+			dexterity	= 11, 0;
+			melee		= 18, 0;
+			ranged 		= 20, 0;
+		}
+	}
+
+	[aspect]
+	{
+		experience_value = 1244;
+		life			= 478;
+		max_life		= 478;
+		mana			= 199;
+		max_mana		= 199;
+		textures:0 = b_c_eam_zaurask2;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 90;
+		damage_min = 81;
+
+	}
+
+	[common] {screen_name="Zaurask Ranger"; }
+
+	[defend] { defense=150; }
+
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_shield_hand = bw_dsx_zau_2_d;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 24, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 1671;
+					max = 3318;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/49-66;
+					il_main = #armor/21-156;
+					il_main = #*/49-66;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/52-71;
+					il_main = #armor/-rare(1)/118-221;
+					il_main = #*/-rare(1)/52-71;
+				}
+				
+			}
+		}
+	}
+
+	[mind]
+	{
+		actor_auto_switches_to_melee				 = false;
+		actor_auto_switches_to_ranged				 = true;
+		actor_auto_uses_stored_items		 = false;
+
+		actor_weapon_preference				 = WP_RANGED;
+	}
+}

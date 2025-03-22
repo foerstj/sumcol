@@ -1,0 +1,86 @@
+// strong melee variant
+[t:template,n:dsx_zaurask_whacker_base]  // = dsx_zaurask_whacker
+//balanced to Level 23
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_whacker";
+	specializes = zaurask_melee_base;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength		= 17, 0;
+			intelligence 	= 8, 0;
+			dexterity		= 11, 0;
+			melee			= 18, 0;
+		}
+	}
+	[aspect]
+	{
+		textures:0 = b_c_eam_zmelee-01;
+		scale_base	 = 0.95;
+		experience_value = 982;
+		life			 = 482;
+		max_life		 = 482;
+		mana			 = 150;
+		max_mana		 = 150;
+	}
+
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 104;
+		damage_min = 95;
+	}
+	
+	[common] { screen_name="Zaurask Whacker"; }
+
+	[defend] { defense=210; }
+
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand=ss_g_c_bl_1h_fun_03_dsx;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 23, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 1412;
+					max = 2803;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/47-63;
+					il_main = #armor/19-146;
+					il_main = #*/47-63;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/49-68;
+					il_main = #armor/-rare(1)/118-212;
+					il_main = #*/-rare(1)/49-68;
+				}
+				
+			}			
+		}
+	}
+}

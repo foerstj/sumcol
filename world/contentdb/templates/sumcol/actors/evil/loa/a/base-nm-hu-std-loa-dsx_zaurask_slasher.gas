@@ -1,0 +1,82 @@
+// uber melee variant (area 8)
+[t:template,n:dsx_zaurask_slasher_base]  // = dsx_zaurask_slasher
+//balanced to Level 24
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_slasher";
+	specializes = zaurask_melee_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength		= 18, 0;
+			intelligence 	= 8, 0;
+			dexterity		= 11, 0;
+			melee			= 20, 0;
+		}
+	}
+	[aspect]
+	{
+		textures:0 = b_c_eam_zmelee-02;
+		scale_base		 = 0.95;		
+		experience_value = 1213;
+		life			= 455;
+		max_life		= 455;
+		mana			= 150;
+		max_mana		= 150;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 88;
+		damage_min = 79;
+	}
+	[common] { screen_name="Zaurask Slasher"; }
+	[defend] { defense=238; }
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand=ss_g_c_bl_1h_fun_05_dsx;
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 24, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 1671;
+					max = 3318;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/49-66;
+					il_main = #armor/21-156;
+					il_main = #*/49-66;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/52-71;
+					il_main = #armor/-rare(1)/118-221;
+					il_main = #*/-rare(1)/52-71;
+				}
+				
+			}
+		
+		}
+	}
+}

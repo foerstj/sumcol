@@ -1,0 +1,93 @@
+[t:template,n:dsx_zaurask_mage_base]  // = dsx_zaurask_mage
+{
+	category_name = "1w_evil_a";
+	doc="dsx_zaurask_mage";
+	specializes = zaurask_magic_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength	= 18, 0;
+			intelligence = 8, 0;
+			dexterity	= 11, 0;
+			nature_magic = 20, 0;
+			combat_magic = 20, 0;
+		}
+	}
+	[aspect]
+	{
+		textures:0 = b_c_eam_zcaster-02;
+		experience_value = 1656;
+		life			= 717;
+		max_life		= 717;
+		mana			= 173;
+		max_mana		= 173;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 102;
+		damage_min = 93;
+	}
+	[common] {screen_name="Zaurask Mage"; }
+	[defend] { defense = 184; }
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell		= spell_zaurask_mage_dsx;
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 24, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 1671;
+					max = 3318;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/52-68;
+					il_main = #armor/30-165;
+					il_main = #*/52-68;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/68-77;
+					il_main = #armor/-rare(1)/128-230;
+					il_main = #*/-rare(1)/68-77;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/68-77;
+					il_main = #armor/-unique(2)/128-230;
+					il_main = #*/-unique(2)/68-77;
+				}			
+			}
+		}
+	}
+
+	[mind]
+	{
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+	}
+
+}

@@ -1,0 +1,91 @@
+// uber ranged variant (area 8)
+//balanced to Level 22
+[t:template,n:dsx_zaurask_archer_base]  // = dsx_zaurask_archer
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_zaurask_archer";
+	specializes = zaurask_ranged_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength	 = 17, 0;
+			intelligence =  8, 0;
+			dexterity	 = 11, 0;
+			ranged		 = 16, 0;
+		}
+	}
+
+	[aspect]
+	{
+		experience_value = 655;
+		life			 = 208;
+		max_life		 = 208;
+		mana			 = 173;
+		max_mana		 = 173;
+		scale_base	 = 0.9;
+		textures:0 = b_c_eam_zaurask1;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 53;
+		damage_min = 44;
+	}
+	[common] {screen_name="Zaurask Lightning"; }
+	[defend] { defense = 91; }
+	[inventory]
+	{
+		// we may want to give them a percentage change of dropping
+		// their main spell or weapon.
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_shield_hand = bw_dsx_zau_2_c;
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 23, Weak */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 1412;
+					max = 2803;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.1;
+					il_main = #weapon/44-63;
+					il_main = #armor/19-146;
+					il_main = #*/44-63;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-rare(1)/41-66;
+					il_main = #armor/-rare(1)/100-146;
+					il_main = #*/-rare(1)/41-66;
+				}				
+			}
+		}			
+	}
+
+	[mind]
+	{
+		actor_auto_switches_to_melee				 = false;
+		actor_auto_switches_to_ranged				 = true;
+		actor_auto_uses_stored_items		 = false;
+
+		actor_weapon_preference				 = WP_RANGED;
+	}
+}

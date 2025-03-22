@@ -1,0 +1,92 @@
+//balanced for level 21+
+[t:template,n:dsx_droc_commander_base]  // = dsx_droc_commander
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_droc_commander";
+	specializes = droc_melee_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength	= 18, 0;
+			intelligence = 9, 0;
+			dexterity	= 12, 0;
+			melee		= 18, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 717;
+		life		 = 418;
+		max_life	 = 418;
+		mana		 = 26;
+		max_mana	 = 26;
+		model = m_c_edm_drc_pos_3;
+		textures:0 = b_c_edm_drc-03;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max 	= 117;
+		damage_min 	= 105;
+	}
+	[common]
+	{
+		screen_name="Droc Superior";
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+			}
+		}
+	}
+	[defend] { defense=184; }
+	[inventory]
+		{
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 14, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 200;
+					max = 398;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/30-41;
+					il_main = #armor/15-90;
+					il_main = #*/30-41;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/41-49;
+					il_main = #armor/-rare(1)/62-137;
+					il_main = #*/-rare(1)/41-49;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/41-49;
+					il_main = #armor/-unique(2)/62-137;
+					il_main = #*/-unique(2)/41-49;
+				}			
+			}
+		}	
+	}
+	[mind]{}
+}

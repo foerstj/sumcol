@@ -1,0 +1,15 @@
+[t:template,n:dsx_zaurask_archer_summon]
+{
+    specializes = dsx_zaurask_archer_base;
+
+	doc = "[summon] dsx_zaurask_archer";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

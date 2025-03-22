@@ -1,0 +1,91 @@
+// Area 6
+[t:template,n:dsx_hassat_caster_base]  // = dsx_hassat_caster
+//balanced for Level 15
+{
+	category_name = "1w_evil_a";
+	doc="dsx_hassat_caster";
+	specializes = base_hassat_lion;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		=  15, 0;
+			intelligence 	=  8, 0;
+			dexterity 		=  10, 0;
+			nature_magic 	=  14, 0;
+			combat_magic	=  14, 0;
+		}
+    }
+	[aspect]
+	{
+		experience_value = 520;
+		life = 387;
+		max_life = 387;
+		mana = 100000;
+		max_mana = 100000;
+
+		scale_base = .875;
+		model=m_c_eam_HM;
+	}
+	[attack]
+	{
+		attack_range = .5;
+		damage_max = 65;
+		damage_min = 55;
+	}
+	[common] 
+	{ 
+		screen_name = "Hassat Caster"; 
+		membership = hassat, monster;
+	}
+	[defend] { defense = 127; }
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell   = dsx_spell_hassat_caster_fireshot; }    
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 18, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 565;
+					max = 1121;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/36-49;
+					il_main = #armor/14-109;
+					il_main = #*/36-49;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/39-55;
+					il_main = #armor/-rare(1)/81-165;
+					il_main = #*/-rare(1)/39-55;
+				}
+				
+			}
+		}	
+	}
+	[mind]
+	{
+		actor_weapon_preference              = WP_MAGIC;
+		actor_auto_switches_to_magic         = true;
+		on_enemy_spotted_alert_friends		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true;
+	}
+}

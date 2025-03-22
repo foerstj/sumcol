@@ -1,0 +1,98 @@
+//Leopard with Staff (Area 6)
+//balanced for Level 14
+[t:template,n:dsx_hassat_grunt_base]  // = dsx_hassat_grunt
+{
+	category_name = "1W_evil_a";
+	doc = "dsx_hassat_grunt";
+	specializes = base_hassat_leopard;
+
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 15, 0;
+			intelligence 	= 8, 0;
+			dexterity 		= 10, 0;
+			melee 			= 14,  0;
+		}	
+	}
+	
+	[aspect]
+	{
+		experience_value = 696;
+
+		life 		= 506;
+		max_life 	= 506;
+		mana 		= 18;
+		max_mana 	= 18;
+    }
+	[attack]
+	{
+		attack_range = .5;
+		damage_max = 92;
+		damage_min = 86;
+	}
+	[common] 
+	{ 
+		screen_name="Hassat Slicer"; 
+		membership = hassat, monster;
+	}
+	[defend] { defense = 165; }	
+	[inventory]
+	{
+         spew_equipped_kill_count = <ignore>;
+
+		[equipment]
+		{
+			es_weapon_hand=ax_g_c_1h2b_low_dsx;
+		}
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 18, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 565;
+					max = 1121;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/39-52;
+					il_main = #armor/21-118;
+					il_main = #*/39-52;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/52-60;
+					il_main = #armor/-rare(1)/90-174;
+					il_main = #*/-rare(1)/52-60;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/52-60;
+					il_main = #armor/-unique(2)/90-174;
+					il_main = #*/-unique(2)/52-60;
+				}			
+			}
+		}
+	}
+	
+	[mind]
+	{
+		on_enemy_spotted_alert_friends		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true;		
+	}
+}
