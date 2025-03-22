@@ -13,7 +13,7 @@
             il_main = spell_summon_hassat_caster;
             il_main = spell_summon_hassat_fighter;
             il_main = spell_summon_hassat_ranger;
-            il_main = spell_summon_hassat_grunt;
+            il_main = spell_summon_hassat_slicer;
             il_main = spell_summon_hassat_mage;
             il_main = spell_summon_zaurask_lightning;
             il_main = spell_summon_zaurask_seer;
