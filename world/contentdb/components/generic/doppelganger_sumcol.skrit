@@ -410,6 +410,9 @@ State Switch$
 		// make it evil
 		newMe$.Go.Actor.SSetAlignment( owner.Go.Actor.GetAlignment() );  // EDITED: turn alignment to owner's, instead of hard-coded aa_evil
 
+        // ADDED: we want to be able to see the dude's health
+        newMe$.Go.Actor.SSetCanShowHealth( true );
+
 		#only( game )
 	        [[
 		// copy the mind
