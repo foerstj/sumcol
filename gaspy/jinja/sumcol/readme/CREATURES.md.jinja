@@ -1,11 +1,14 @@
-SUMMONS COLLECTION CREATURES
+{% set creatures = data | rejectattr('test_only') | list %}
+SUMMONS COLLECTION CREATURES: {{ creatures | length }}
 {% for v, V in {'v': 'Vanilla', 'loa': 'LoA'}.items() %}
 {% for std, Std in {'std': 'Standard', 'nstd': 'Non-Standard'}.items() %}
+{% set creatures_v_std = [row for row in creatures if row['v'] == v and (row['ft'] == 'std') == (std == 'std')] %}
 
-{{ V }} {{ Std }} Creatures:
+{{ V }} {{ Std }} Creatures: {{ creatures_v_std | length }}
 {% for ct, Ct in {'an': 'Animals', 'el': 'Elementals', 'un': 'Undead', 'pl': 'Plants', 'de': 'Demonics', 'ro': 'Robots', 'hu': 'Humanoids'}.items() %}
-- {{ Ct }}:
-  {% for row in data if row['v'] == v and row['ct'] == ct and (row['ft'] == 'std') == (std == 'std') and not row['test_only'] %}
+{% set creatures_v_std_ct = [row for row in creatures_v_std if row['ct'] == ct] %}
+- {{ Ct }}: {{ creatures_v_std_ct | length }}
+  {% for row in creatures_v_std_ct %}
   - {{ row['csn'] }}
   {% endfor %}
 {% endfor %}

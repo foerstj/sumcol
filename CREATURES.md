@@ -1,7 +1,7 @@
-SUMMONS COLLECTION CREATURES
+SUMMONS COLLECTION CREATURES: 249
 
-Vanilla Standard Creatures:
-- Animals:
+Vanilla Standard Creatures: 101
+- Animals: 29
   - Phrak
   - Phrak Piercer
   - Snapper
@@ -31,7 +31,7 @@ Vanilla Standard Creatures:
   - Blue Drake
   - Giant Lizard
   - Red Drake
-- Elementals:
+- Elementals: 13
   - Gargoyle
   - Ice Fly
   - Ice Archer
@@ -45,7 +45,7 @@ Vanilla Standard Creatures:
   - Swamp Creature
   - Lava Spirit Fighter
   - Lava Beast
-- Undead:
+- Undead: 11
   - Skeleton Guard
   - Walking Corpse
   - Skeleton Archer
@@ -57,8 +57,8 @@ Vanilla Standard Creatures:
   - Skeleton Ranger
   - Skeleton Mercenary
   - Ghost
-- Plants:
-- Demonics:
+- Plants: 0
+- Demonics: 7
   - Vile Mucosa
   - Dark Mucosa
   - Horrid
@@ -66,7 +66,7 @@ Vanilla Standard Creatures:
   - Synged
   - Toreck
   - Kell
-- Robots:
+- Robots: 10
   - Hunter
   - Kill Bot
   - Copter
@@ -77,7 +77,7 @@ Vanilla Standard Creatures:
   - Gobbot Shocker
   - Perforator
   - Blaster
-- Humanoids:
+- Humanoids: 31
   - Krug Scavenger
   - Krug Scout
   - Krug Apprentice
@@ -110,8 +110,8 @@ Vanilla Standard Creatures:
   - Droog Mage
   - Droog Grunt
 
-Vanilla Non-Standard Creatures:
-- Animals:
+Vanilla Non-Standard Creatures: 51
+- Animals: 11
   - Farm Skrubb
   - Phrak Ballista
   - Alpha Wolf
@@ -123,13 +123,13 @@ Vanilla Non-Standard Creatures:
   - Grizzly Furok
   - Rabid Spiked Maw
   - Googore
-- Elementals:
+- Elementals: 5
   - Frost Archer
   - Frost Warrior
   - Swamp Abomination
   - Blazing Elemental
   - Magma Beast
-- Undead:
+- Undead: 7
   - Ancient Corpse
   - Skeleton Captain
   - Dark Wolf
@@ -137,17 +137,17 @@ Vanilla Non-Standard Creatures:
   - Dark Wraith Mage
   - Warrior Wraith
   - Skeleton Mercenary Captain
-- Plants:
+- Plants: 2
   - Tretch
   - Infested Larch
-- Demonics:
+- Demonics: 2
   - Mucosa Brute
   - Fury Spawn
-- Robots:
+- Robots: 3
   - Tesla Coil
   - Tesla Heal Coil
   - Proxo
-- Humanoids:
+- Humanoids: 21
   - Brankar the Scavenger
   - Krug Shaman
   - Klandank the Krug
@@ -170,8 +170,8 @@ Vanilla Non-Standard Creatures:
   - Droog Captain
   - Ferocious Braak
 
-LoA Standard Creatures:
-- Animals:
+LoA Standard Creatures: 81
+- Animals: 29
   - Ice Grub
   - Ice Moth
   - Varg
@@ -201,12 +201,12 @@ LoA Standard Creatures:
   - Sandskreech
   - Skitterclaw
   - Lesser Scrub Scorpion
-- Elementals:
+- Elementals: 4
   - Frost Golem
   - Bog Beast
   - Cobble Man
   - Marble Golem
-- Undead:
+- Undead: 9
   - Slime Zombie
   - Living Dead
   - Dark Acolyte
@@ -216,18 +216,18 @@ LoA Standard Creatures:
   - Scaly Rahk
   - Noctiss
   - Noctiss
-- Plants:
-- Demonics:
+- Plants: 0
+- Demonics: 5
   - Large Twisted Mucosa
   - Bookas
   - Whelnar's Eyes
   - Rune Fiend
   - Slithermage Master
-- Robots:
+- Robots: 3
   - Rusted Automaton
   - Weathered Automaton
   - Ancient Scorpiot
-- Humanoids:
+- Humanoids: 31
   - Jungle Slinger
   - Gulik
   - Zaurask Archer
@@ -260,26 +260,26 @@ LoA Standard Creatures:
   - Zaurask Fighter
   - Zaurask Mage
 
-LoA Non-Standard Creatures:
-- Animals:
+LoA Non-Standard Creatures: 16
+- Animals: 3
   - Yellow Eye
   - Jungle Skrubb
   - Giant Chitterskrag
-- Elementals:
+- Elementals: 3
   - Air Elemental Minion
   - Earth Elemental Minion
   - Water Elemental Minion
-- Undead:
+- Undead: 1
   - Krakemaw the Putrid
-- Plants:
+- Plants: 2
   - Killer Vines
   - Mantrap
-- Demonics:
+- Demonics: 3
   - Twisted Mucosa Brute
   - Shadowjumper Henchman
   - Shadowjumper Minion
-- Robots:
-- Humanoids:
+- Robots: 0
+- Humanoids: 4
   - Jungle Slinger Camora
   - Hassat Commander
   - Rune Caster

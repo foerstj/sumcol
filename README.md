@@ -32,7 +32,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ## Creatures
 
-For a list of all supported creatures, see CREATURES.md.
+Over 200 creatures are available for summoning. For a list of all supported creatures, see CREATURES.md.
 
 
 ## Balancing
