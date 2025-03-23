@@ -31,6 +31,7 @@
             il_main = spell_summon_slithermage_master;
 
             // Non-Standard
+            il_main = spell_summon_doppelganger;
         }
     }
 }

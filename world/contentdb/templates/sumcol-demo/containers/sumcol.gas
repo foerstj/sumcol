@@ -551,6 +551,7 @@
         {
             il_main = scroll_summon_twisted_mucosa_brute;
             il_main = scroll_summon_shadowjumper_henchman;
+            il_main = spell_summon_doppelganger;
             il_main = scroll_summon_shadowjumper_minion;
         }
     }

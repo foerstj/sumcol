@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 249
+SUMMONS COLLECTION CREATURES: 250
 
 Vanilla Standard Creatures: 101
 - Animals: 29
@@ -260,7 +260,7 @@ LoA Standard Creatures: 81
   - Zaurask Fighter
   - Zaurask Mage
 
-LoA Non-Standard Creatures: 16
+LoA Non-Standard Creatures: 17
 - Animals: 3
   - Yellow Eye
   - Jungle Skrubb
@@ -274,9 +274,10 @@ LoA Non-Standard Creatures: 16
 - Plants: 2
   - Killer Vines
   - Mantrap
-- Demonics: 3
+- Demonics: 4
   - Twisted Mucosa Brute
   - Shadowjumper Henchman
+  - Doppelganger
   - Shadowjumper Minion
 - Robots: 0
 - Humanoids: 4
