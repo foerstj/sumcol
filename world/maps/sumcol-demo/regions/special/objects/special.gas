@@ -1,0 +1,15 @@
+[t:party_humanoid,n:0x0050000a]
+{
+	[party]
+	{
+		[add_members]
+		{
+		  x * = 0x00500008;
+		  x * = 0x00500009;
+		}
+	}
+	[placement]
+	{
+	  p position = -0.619233,0,-0.248268,0x5f07aa31;
+	}
+}

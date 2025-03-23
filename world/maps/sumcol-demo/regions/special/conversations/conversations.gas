@@ -1,0 +1,9 @@
+[shop_mule]
+{
+	[text*]
+	{
+		choice = buy_packmule;
+		screen_text = "Donkey?";
+	  f scroll_rate = 10.000000;
+	}
+}

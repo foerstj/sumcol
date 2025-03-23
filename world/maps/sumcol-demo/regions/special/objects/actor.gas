@@ -1,8 +1,32 @@
-[t:tree_of_xp_1,n:0x00500005]
+[t:merchant_packmule,n:0x00500008]
 {
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_mule;
+		}
+	}
 	[placement]
 	{
-	  p position = -2.32949,0,-2.57093,0x61518f07;
+	  q orientation = 0,0.923879,0,-0.382684;
+	  p position = 0.277077,0,-1.31937,0x5f07aa31;
+	}
+}
+[t:mule_bt_r1,n:0x00500009]
+{
+	[aspect]
+	{
+	  i gold_value = 1;
+	}
+	[common]
+	{
+		screen_name = "Wonkey the Donkey";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.49012e-007;
+	  p position = -2.07579,-9.53674e-007,-0.148937,0x5f07aa31;
 	}
 }
 [t:tree_of_xp_1k,n:0x00500006]
@@ -10,6 +34,13 @@
 	[placement]
 	{
 	  p position = -2.27175,0,-2.53694,0x4c6ab25c;
+	}
+}
+[t:tree_of_xp_1,n:0x00500005]
+{
+	[placement]
+	{
+	  p position = -2.32949,0,-2.57093,0x61518f07;
 	}
 }
 [t:tree_of_xp_1m,n:0x00500007]
