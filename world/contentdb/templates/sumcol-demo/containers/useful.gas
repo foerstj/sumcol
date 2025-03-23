@@ -1,0 +1,64 @@
+[t:template,n:chest_grs_03_base]  // = chest_grs_03
+{
+	category_name = "container";
+	doc = "chest_stump";
+	specializes = base_chest;
+	[common] { screen_name="Chest"; }
+	[aspect]
+	{
+		material = steel;
+		model = m_i_glb_chest-stump;
+		[textures]		{ 0 = b_i_glb_chest-stump; }
+	}
+	[body]
+	{
+		[chore_dictionary]
+		{
+			chore_prefix = a_i_glb;
+			[chore_open]
+			{
+				skrit = transition;
+				[anim_files] { 00=chest-stump-open; }
+			}
+		}
+	}
+}
+
+[t:template,n:sumcol_demo_chest_useful_items]
+{
+    specializes = chest_grs_03_base;
+
+    common:screen_name = "Useful stuff";
+	[aspect]
+	{
+	  b does_block_path = false;
+	}
+    [inventory]
+    {
+        [other]
+        {
+            // some additional potions
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_health_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+			il_main = potion_mana_super;
+
+            // best-of-breed attack spells
+			il_main = spell_flash;
+			il_main = spell_iceblast;
+			il_main = spell_icefury;
+			il_main = spell_explosive_powder;
+			il_main = spell_fireball;
+			il_main = spell_bomb;
+
+            // ring to increase max mana
+			il_main = sumcol_ring_mana;
+        }
+    }
+}

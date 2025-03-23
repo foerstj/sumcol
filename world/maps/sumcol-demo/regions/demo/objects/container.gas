@@ -1,32 +1,5 @@
-[t:chest_grs_03,n:0x00100048]
+[t:sumcol_demo_chest_useful_items,n:0x00100048]
 {
-	[aspect]
-	{
-	  b does_block_path = false;
-	}
-	[inventory]
-	{
-		[other]
-		{
-			il_main = spell_iceblast;
-			il_main = potion_mana_super;
-			il_main = spell_explosive_powder;
-			il_main = spell_fireball;
-			il_main = spell_icefury;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = sumcol_ring_mana;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = spell_bomb;
-			il_main = potion_mana_super;
-			il_main = potion_mana_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = potion_health_super;
-			il_main = spell_flash;
-		}
-	}
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
