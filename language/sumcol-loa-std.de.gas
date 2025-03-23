@@ -366,6 +366,17 @@
 
 	[0x0000]
 	{
+		from = "Summon Slithermage Master";
+		to = "Slithermage-Meister beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Slithermage Master to guard the Caster.";
+		to = "Beschwört einen Slithermage-Meister, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Bog Beast";
 		to = "Schlammbestie beschwören";
 	}
@@ -538,6 +549,204 @@
 	{
 		from = "Summons a Zaurask Slavemaster to guard the Caster.";
 		to = "Beschwört einen Zauraskersklavenmeister, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Slicer";
+		to = "Hassati-Schlitzer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Slicer to guard the Caster.";
+		to = "Beschwört einen Hassati-Schlitzer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Archer";
+		to = "Hassati-Bogenschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Archer to guard the Caster.";
+		to = "Beschwört einen Hassati-Bogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Caster";
+		to = "Hassati-Anwender beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Caster to guard the Caster.";
+		to = "Beschwört einen Hassati-Anwender, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Lightning";
+		to = "Zauraskerblitz beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Lightning to guard the Caster.";
+		to = "Beschwört einen Zauraskerblitz, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Whacker";
+		to = "Zauraskerschläger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Whacker to guard the Caster.";
+		to = "Beschwört einen Zauraskerschläger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Seer";
+		to = "Zauraskerseher beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Seer to guard the Caster.";
+		to = "Beschwört einen Zauraskerseher, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Leader";
+		to = "Zauraskeranführer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Leader to guard the Caster.";
+		to = "Beschwört einen Zauraskeranführer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droc";
+		to = "Droc beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droc to guard the Caster.";
+		to = "Beschwört einen Droc, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droc Spatter";
+		to = "Droc-Spucker beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droc Spatter to guard the Caster.";
+		to = "Beschwört einen Droc-Spucker, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Droc Superior";
+		to = "Obersten Droc beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Droc Superior to guard the Caster.";
+		to = "Beschwört einen Obersten Droc, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Fighter";
+		to = "Hassati-Kämpfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Fighter to guard the Caster.";
+		to = "Beschwört einen Hassati-Kämpfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Ranger";
+		to = "Hassati-Waldläufer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Ranger to guard the Caster.";
+		to = "Beschwört einen Hassati-Waldläufer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Hassat Mage";
+		to = "Hassati-Magier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Hassat Mage to guard the Caster.";
+		to = "Beschwört einen Hassati-Magier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ztrool";
+		to = "Ztrool beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Ztrool to guard the Caster.";
+		to = "Beschwört einen Ztrool, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Slasher";
+		to = "Zauraskerschlitzer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Slasher to guard the Caster.";
+		to = "Beschwört einen Zauraskerschlitzer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Ranger";
+		to = "Zaurasker-Waldläufer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Ranger to guard the Caster.";
+		to = "Beschwört einen Zaurasker-Waldläufer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Fighter";
+		to = "Zauraskerkämpfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Fighter to guard the Caster.";
+		to = "Beschwört einen Zauraskerkämpfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Mage";
+		to = "Zauraskermagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Mage to guard the Caster.";
+		to = "Beschwört einen Zauraskermagier, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
