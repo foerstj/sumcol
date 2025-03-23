@@ -1,4 +1,4 @@
-[t:template,n:dsx_doppelganger_summon]
+[t:template,n:dsx_doppelganger_sumcol_summon]
 {
     specializes = dsx_doppelganger_sumcol_base;
 

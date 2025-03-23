@@ -1,0 +1,224 @@
+[t:template,n:base_dsx_doppelganger_sumcol]  // = dsx_doppelganger_base, but without the doppelganger skrit
+{
+	category_name = "1W_evil_c";
+	doc = "DSX Doppelganger Base";
+	specializes = actor_evil;
+	[aspect]
+	{
+		force_no_render = true;
+		// MRC 7/18/2003 Allow clicking on invisible objects.
+		force_no_render_click = true;
+		megamap_icon	= b_gui_ig_mnu_doppelganger;
+		megamap_orient = true;
+		model = m_c_edm_dg_pos_1;
+		material = flesh;
+		[voice]
+		{
+			[die]			{ priority = high;	* = s_e_die_doppelganger;		}
+			[enemy_spotted]	{ priority = high; * = s_e_call_doppelganger_SED; }
+			[hit_critical]	{ priority = low;	* = s_e_hit_doppelganger_SED;		}
+			[hit_glance]	{ priority = low;	* = s_e_hit_doppelganger_SED;		}
+			[hit_solid]		{ priority = low;	* = s_e_hit_doppelganger_SED;		}
+		}
+
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 70;
+		damage_min = 70;
+	}
+	[body]
+	{
+		avg_move_velocity = 2;
+		[bone_translator]
+		{
+			body_anterior = Bip01_Head;
+			body_mid = Bip01_Spine;
+			body_posterior = Bip01_Pelvis;
+			kill_bone = Bip01_Pelvis;
+			shield_bone = shield_grip;
+			weapon_bone = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			initial_chore = chore_none;
+			chore_prefix = a_c_edm_dg_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=mg; }
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=mg; }
+			}
+			[chore_misc]
+			{
+				chore_stances = ignore;
+				skrit = select_transition;
+				[anim_files]
+				{
+					slep = a_c_edm_dg_fs0_dfs;
+					wake = a_c_edm_dg_fs0_ds;
+				}
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=rl; }
+			}
+		}
+	}
+
+	[common]
+	{
+		screen_name = "Doppelganger";
+		membership = monster,immune_freeze;
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("doppelganger_body");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+	[defend] { defense=150; }
+	[inventory]
+	{
+		spew_equipped_kill_count = ;
+
+  		
+	}
+
+	//[doppelganger] {}
+
+	[mind]
+	{
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party	= true;
+
+		jat_fidget 						= world\ai\jobs\common\job_fidget.skrit;
+
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+
+	[physics]
+	{
+		explode_when_killed = true;
+		break_effect = doppelganger_die;
+		gib_gore_good = true;
+	}
+}
+
+[t:template,n:dsx_doppelganger_sumcol_base]
+{
+    specializes = base_dsx_doppelganger_sumcol;
+
+    // stuff like in dsx_doppelganger, but without the doppelganger skrit
+	category_name = "1W_evil_c";
+	doc = "dsx_doppelganger";
+	[actor]
+	{
+		[skills]
+			{
+				strength 	=  15, 0;
+				intelligence = 8, 0;
+				dexterity 	=  11, 0;
+				melee 		=  13, 0;
+			}
+	}
+	[aspect]
+	{
+		experience_value = 748;
+		life = 553;
+		max_life = 553;
+		mana = 1;
+		max_mana = 1;
+	}
+	[common]
+	{
+		screen_name = "Doppelganger";
+		membership = monster,immune_freeze;
+	}
+	//[doppelganger]{ statsMultiplier = 0.8; }
+	[defend] { defense=174; }
+	[inventory]
+	{
+		drop_at_use_point = true;
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 19, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 663;
+					max = 1316;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/39-52;
+					il_main = #armor/15-118;
+					il_main = #*/39-52;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/41-58;
+					il_main = #armor/-rare(1)/90-174;
+					il_main = #*/-rare(1)/41-58;
+				}
+				
+			}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 86;
+		damage_min = 80;
+	}
+
+    // use an own skrit instead
+	[doppelganger_sumcol]
+    {
+        statsMultiplier = 0.8;
+    }
+}

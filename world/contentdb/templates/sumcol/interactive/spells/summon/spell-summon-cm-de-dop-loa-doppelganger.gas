@@ -20,7 +20,7 @@
     }
     [spell_summon]
     {
-        template_name = dsx_doppelganger_summon;
+        template_name = dsx_doppelganger_sumcol_summon;
         script_params = "[scale(1.0)]";
     }
     [magic]
