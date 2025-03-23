@@ -1,0 +1,15 @@
+[t:template,n:sumcol_demo_barrel_testonly]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Test Only";
+    [inventory]
+    {
+        [other]
+        {
+            {% for row in data if row['test_only'] %}
+            il_main = spell_summon_{{ row['stn'] }};
+            {% endfor %}
+        }
+    }
+}
