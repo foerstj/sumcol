@@ -126,6 +126,8 @@
 	{
 		defense = 20;
 	}
+
+    aspect:textures:0 = b_c_eam_ksv;
 }
 
 // ~ Mucosa
@@ -196,6 +198,8 @@
 	{
 		defense = 100;
 	}
+
+    aspect:textures:0 = b_c_eam_ksv;
 }
 [t:template,n:sumcol_krug_dummy_50_hold]
 {
@@ -278,6 +282,8 @@
 	{
 		defense = 500;
 	}
+
+    aspect:textures:0 = b_c_eam_ksv;
 }
 [t:template,n:sumcol_krug_dummy_200_hold]
 {
