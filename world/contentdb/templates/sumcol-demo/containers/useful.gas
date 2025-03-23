@@ -57,6 +57,11 @@
 			il_main = spell_fireball;
 			il_main = spell_bomb;
 
+            // healing spells
+			il_main = spell_healing_hands;
+			il_main = spell_healing_wind;
+			il_main = spell_major_heal;
+
             // ring to increase max mana
 			il_main = sumcol_ring_mana;
         }
