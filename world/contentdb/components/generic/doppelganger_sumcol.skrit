@@ -408,7 +408,7 @@ State Switch$
 //		report.genericf("Doppleganger: Changing.  My goid: 0x%x My new goid: 0x%x\n", MakeInt(owner.goid), MakeInt(newMe$));
 
 		// make it evil
-		newMe$.Go.Actor.SSetAlignment( aa_evil );
+		newMe$.Go.Actor.SSetAlignment( owner.Go.Actor.GetAlignment() );  // EDITED: turn alignment to owner's, instead of hard-coded aa_evil
 
 		#only( game )
 	        [[
