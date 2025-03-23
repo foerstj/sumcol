@@ -13,6 +13,8 @@
             // ERASED
 		}
 	}
+
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
 }
 
 [t:template,n:dsx_hassat_mage_attacking_summon]
