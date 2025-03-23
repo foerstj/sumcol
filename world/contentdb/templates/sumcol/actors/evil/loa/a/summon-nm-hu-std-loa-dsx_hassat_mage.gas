@@ -1,4 +1,5 @@
-[t:template,n:dsx_hassat_mage_summon]
+[t:template,n:dsx_hassat_mage_summon] { specializes = dsx_hassat_mage_summon_base; }
+[t:template,n:dsx_hassat_mage_summon_base]
 {
     specializes = dsx_hassat_mage_base;
 
@@ -12,4 +13,30 @@
             // ERASED
 		}
 	}
+}
+
+[t:template,n:dsx_hassat_mage_attacking_summon]
+{
+    specializes = dsx_hassat_mage_summon_base;
+	[inventory]
+	{
+		[other] 
+		{ 
+			il_active_primary_spell = dsx_spell_hassat_mage_fireshot;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
+}
+
+[t:template,n:dsx_hassat_mage_casting_orb_summon]
+{
+    specializes = dsx_hassat_mage_summon_base;
+	[inventory]
+	{
+		[other] 
+		{ 
+			il_active_primary_spell = dsx_spell_hassat_mage_orb;
+		}
+    }
+    mind:jat_cast = world\ai\jobs\common\job_cast.skrit;
 }

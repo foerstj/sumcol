@@ -37,6 +37,9 @@
             il_main = spell_summon_blazing_elemental_hold;
 
             il_main = scroll_summon_krakemaw_the_putrid_small;
+
+            il_main = spell_summon_hassat_mage_attacking;
+            il_main = spell_summon_hassat_mage_casting_orb;
         }
     }
 }
