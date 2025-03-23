@@ -1,0 +1,286 @@
+SUMMONS COLLECTION CREATURES
+
+Vanilla Standard Creatures:
+- Animals:
+  - Phrak
+  - Phrak Piercer
+  - Snapper
+  - Yellow Spider
+  - Krug Dog
+  - Gray Wolf
+  - Arakun Spider
+  - Krug Killer Dog
+  - Giant Moth
+  - White Wolf
+  - Klaw
+  - Frost Spitter
+  - Frostnid
+  - Furok Slasher
+  - Slarg
+  - Frost Drake
+  - Stalagnid
+  - Spiked Maw
+  - Lectar
+  - Swamp Stinger
+  - Mangler
+  - Forest Phrak
+  - Googore Grub
+  - Sea Mangler
+  - Giant Wasp
+  - Soul Stinger
+  - Blue Drake
+  - Giant Lizard
+  - Red Drake
+- Elementals:
+  - Gargoyle
+  - Ice Fly
+  - Ice Archer
+  - Teal Shard
+  - Ice Warrior
+  - Green Shard
+  - Blue Shard
+  - Purple Shard
+  - Swamp Slinger
+  - Bronze Gargoyle
+  - Swamp Creature
+  - Lava Spirit Fighter
+  - Lava Beast
+- Undead:
+  - Skeleton Guard
+  - Walking Corpse
+  - Skeleton Archer
+  - Rector
+  - Tortured Corpse
+  - Goo Walker
+  - Zombie
+  - Wraith Mage
+  - Skeleton Ranger
+  - Skeleton Mercenary
+  - Ghost
+- Plants:
+- Demonics:
+  - Vile Mucosa
+  - Dark Mucosa
+  - Horrid
+  - Forest Darkling
+  - Synged
+  - Toreck
+  - Kell
+- Robots:
+  - Hunter
+  - Kill Bot
+  - Copter
+  - Heater
+  - Gobbot Grenadier
+  - Gobbot Gunner
+  - Gobbot Igniter
+  - Gobbot Shocker
+  - Perforator
+  - Blaster
+- Humanoids:
+  - Krug Scavenger
+  - Krug Scout
+  - Krug Apprentice
+  - Krug Grunt
+  - Krug Chucker
+  - Krug Raider
+  - Krug Guard
+  - Braak Mage
+  - Braak
+  - Krug Commander
+  - Goblin Grunt
+  - Dark Caster
+  - Dark Slinger
+  - Dark Lunger
+  - Trog
+  - Trog Warrior
+  - Trog Knight
+  - Bandit Archer
+  - Bandit
+  - Gorack
+  - Goblin Guard
+  - Swamp Troll
+  - Water Slinger
+  - Water Lunger
+  - Cyclops
+  - Sand Ripper
+  - Sand Mage
+  - Sand Basher
+  - Droog Archer
+  - Droog Mage
+  - Droog Grunt
+
+Vanilla Non-Standard Creatures:
+- Animals:
+  - Farm Skrubb
+  - Phrak Ballista
+  - Alpha Wolf
+  - Black Skrubb
+  - Hulking Gremal
+  - Mine Worm
+  - Venom Fiend
+  - Dark Klaw
+  - Grizzly Furok
+  - Rabid Spiked Maw
+  - Googore
+- Elementals:
+  - Frost Archer
+  - Frost Warrior
+  - Swamp Abomination
+  - Blazing Elemental
+  - Magma Beast
+- Undead:
+  - Ancient Corpse
+  - Skeleton Captain
+  - Dark Wolf
+  - Wretched Zombie
+  - Dark Wraith Mage
+  - Warrior Wraith
+  - Skeleton Mercenary Captain
+- Plants:
+  - Tretch
+  - Infested Larch
+- Demonics:
+  - Mucosa Brute
+  - Fury Spawn
+- Robots:
+  - Tesla Coil
+  - Tesla Heal Coil
+  - Proxo
+- Humanoids:
+  - Brankar the Scavenger
+  - Krug Shaman
+  - Klandank the Krug
+  - Huskar the Shaman
+  - Futak the Trainer
+  - Pitiful Braak
+  - Ice Mage
+  - Frost Mage
+  - Shadow Lunger
+  - Great Trog Warrior
+  - Muong Troll
+  - Swamp Witch
+  - Enraged Gorack
+  - Rogue Bandit
+  - Skank Witch
+  - Bandit Boss
+  - Lost Witch
+  - Rotten Troll
+  - Bile Lunger
+  - Droog Captain
+  - Ferocious Braak
+
+LoA Standard Creatures:
+- Animals:
+  - Ice Grub
+  - Ice Moth
+  - Varg
+  - Snow Boar
+  - Widow Spider
+  - Island Lizard
+  - Swarmling
+  - Angler
+  - Emerald Spider
+  - Mhulliq
+  - Jungle Angler
+  - Leetch
+  - Thunder Lizard
+  - Jungle Spiker
+  - Rending Mhulliq
+  - Immature Chitterskrag
+  - Monstrous Rat
+  - Skitterling
+  - Swarmling Drone
+  - Swarmling Queen
+  - Swirling Midges
+  - Flying Gritch
+  - Greater Scrub Scorpion
+  - Shadow Angler
+  - Chitterskrag
+  - Spewing Chitterskrag
+  - Sandskreech
+  - Skitterclaw
+  - Lesser Scrub Scorpion
+- Elementals:
+  - Frost Golem
+  - Bog Beast
+  - Cobble Man
+  - Marble Golem
+- Undead:
+  - Slime Zombie
+  - Living Dead
+  - Dark Acolyte
+  - Mummy
+  - Ghastly Necron
+  - Rahk
+  - Scaly Rahk
+  - Noctiss
+  - Noctiss
+- Plants:
+- Demonics:
+  - Large Twisted Mucosa
+  - Bookas
+  - Whelnar's Eyes
+  - Rune Fiend
+  - Slithermage Master
+- Robots:
+  - Rusted Automaton
+  - Weathered Automaton
+  - Ancient Scorpiot
+- Humanoids:
+  - Jungle Slinger
+  - Gulik
+  - Zaurask Archer
+  - Zaurask Claw
+  - Zaurask Incanter
+  - Hassat Hunter
+  - Hassat Shaman
+  - Hassat Runner
+  - Hassat Panther
+  - Zaurask Adept
+  - Zaurask Spine
+  - Zaurask Fang
+  - Zaurask Slavemaster
+  - Hassat Archer
+  - Hassat Caster
+  - Zaurask Lightning
+  - Hassat Fighter
+  - Hassat Ranger
+  - Hassat Slicer
+  - Droc Superior
+  - Droc Spatter
+  - Droc
+  - Ztrool
+  - Hassat Mage
+  - Zaurask Seer
+  - Zaurask Whacker
+  - Zaurask Slasher
+  - Zaurask Ranger
+  - Zaurask Leader
+  - Zaurask Fighter
+  - Zaurask Mage
+
+LoA Non-Standard Creatures:
+- Animals:
+  - Yellow Eye
+  - Jungle Skrubb
+  - Giant Chitterskrag
+- Elementals:
+  - Air Elemental Minion
+  - Earth Elemental Minion
+  - Water Elemental Minion
+- Undead:
+  - Krakemaw the Putrid
+- Plants:
+  - Killer Vines
+  - Mantrap
+- Demonics:
+  - Twisted Mucosa Brute
+  - Shadowjumper Henchman
+  - Shadowjumper Minion
+- Robots:
+- Humanoids:
+  - Jungle Slinger Camora
+  - Hassat Commander
+  - Rune Caster
+  - Rune Master
