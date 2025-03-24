@@ -1,4 +1,4 @@
-[t:template,n:base_dsx_doppelganger_sumcol]  // = dsx_doppelganger_base, but without the doppelganger skrit
+[t:template,n:base_dsx_doppelganger_sumcol]  // like dsx_doppelganger_base, but without the doppelganger skrit
 {
 	category_name = "1W_evil_c";
 	doc = "DSX Doppelganger Base";
@@ -138,11 +138,11 @@
 	}
 }
 
-[t:template,n:dsx_doppelganger_sumcol_base]
+[t:template,n:dsx_doppelganger_sumcol] { specializes = dsx_doppelganger_sumcol_base; }
+[t:template,n:dsx_doppelganger_sumcol_base]  // like dsx_doppelganger, but without the doppelganger skrit
 {
     specializes = base_dsx_doppelganger_sumcol;
 
-    // stuff like in dsx_doppelganger, but without the doppelganger skrit
 	category_name = "1W_evil_c";
 	doc = "dsx_doppelganger";
 	[actor]
@@ -215,10 +215,4 @@
 		damage_max = 86;
 		damage_min = 80;
 	}
-
-    // use an own skrit instead
-	[doppelganger_sumcol]
-    {
-        statsMultiplier = 0.8;
-    }
 }

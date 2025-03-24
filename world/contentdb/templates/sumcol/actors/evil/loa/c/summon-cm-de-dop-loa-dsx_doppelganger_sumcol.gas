@@ -2,7 +2,7 @@
 {
     specializes = dsx_doppelganger_sumcol_base;
 
-    doc = "[summon] dsx_doppelganger";
+    doc = "[summon] dsx_doppelganger_sumcol";
 	aspect:experience_value = 0;
     physics:explode_when_killed = false;
 	[inventory]
