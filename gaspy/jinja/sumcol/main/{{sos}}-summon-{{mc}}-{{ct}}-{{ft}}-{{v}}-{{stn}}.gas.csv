@@ -170,7 +170,7 @@ spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;
 spell;droc_superior;dsx_droc_commander;;a;Droc Superior;1.5;nm;hu;std;loa;x;46;50000;5;1.1;;;;;;;;;1.7;1.5;;;;
 spell;droc_spatter;dsx_droc_archer;;a;Droc Spatter;1.5;nm;hu;std;loa;x;45;60000;4;;;1;;0.8;;;40;46;1.5;1.5;;;;Custom spell, spell has trackball + fire dmg
 spell;droc;dsx_droc_grunt;;a;Droc;1.5;nm;hu;std;loa;x;44;46000;5;1.05;;;;;;;;;1.5;1.5;;;;
-spell;doppelganger;dsx_doppelganger_sumcol;;a;Doppelganger;1;cm;de;dop;loa;;37;33000;7;1;1;1;;;;;;;1;1;;;;
+spell;doppelganger;dsx_doppelganger_sumcol;;a;Doppelganger;1;cm;de;dop;loa;;37;33000;7;0;0;0;;;;;;;1;1;;;;Initial creature is just a dummy
 spell;ztrool;dsx_ztrool;;a;Ztrool;1.5;nm;hu;std;loa;x;49;58000;6;1;;;;;;;;;1.5;0.8;;;;
 spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;43;44000;5;0.95;;;;;;;;;2;1;;;;
 spell;slithermage_master;dsx_slithermage_melee;;a;Slithermage Master;2;cm;de;std;loa;x;49;72000;5;;;1.1;;;;;119;131;1.5;2;;;;
