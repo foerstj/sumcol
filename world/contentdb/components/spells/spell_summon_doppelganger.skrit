@@ -766,17 +766,17 @@ state Switch$
 		// delete the inventory of the old body
 		DeleteInventory$(oldMe$.go);
 
-		// JCD 8/5/03
-		// if we are dopping into a transformed character, let the transformation manager transform it
-		//  this will make saving and loading work correctly.
-		if( doppel_target$.go.Actor.HasGenericState("transformed") )
-		{
-			#only( game )
-			[[
-			newMe$.go.Actor.SAddGenericState("transformed", "", -1, newMe$, newMe$, 0);
-			TransformationManager.STransformMe( newMe$.Go, 	TransformationManager.GetNewTemplateName(doppel_target$.Go), "" );
-			]]
-		}
+		//// JCD 8/5/03
+		//// if we are dopping into a transformed character, let the transformation manager transform it
+		////  this will make saving and loading work correctly.
+		//if( doppel_target$.go.Actor.HasGenericState("transformed") )
+		//{
+		//	#only( game )
+		//	[[
+		//	newMe$.go.Actor.SAddGenericState("transformed", "", -1, newMe$, newMe$, 0);
+		//	TransformationManager.STransformMe( newMe$.Go, 	TransformationManager.GetNewTemplateName(doppel_target$.Go), "" );
+		//	]]
+		//}
 
 		// Select the same slot as the target
 		// $$$ might want to change the slot. The target might be weilding a non-combat spell. -ET
