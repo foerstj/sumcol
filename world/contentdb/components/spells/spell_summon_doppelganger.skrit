@@ -26,6 +26,232 @@ Goid doppel_target$;  // Goid of the enemy that gets doppeled
 Goid newMe$;  // Goid of the doppeled creature
 
 
+// can we copy target$?  is it a good target?
+bool IsValidDoppelgangerTarget$( Go target$ )
+{
+	if( target$.Actor.HasGenericState("summoned") ||
+		target$.Actor.HasGenericState("DSX_mezmerizing") ||
+		target$.Actor.HasGenericState("invisibility_self") ||
+		target$.Inventory.IsPackOnly)
+	{
+		return false;
+	}
+
+	return true;
+}
+
+// JCD 9/3/03
+// delete all the items in the invetory of the target_go
+void DeleteInventory$( go target_go$ )
+{
+	// do we have an inventory
+	if(target_go$.HasInventory())
+	{
+		// clear a collection to use
+		target_go$.Mind.TempGopColl1.Clear();
+
+		// get everything in the inventory
+		target_go$.Inventory.ListItems(IL_ALL, target_go$.Mind.TempGopColl1);
+
+		// get set to loop
+		int i$ = 0;
+		int iend$ = target_go$.Mind.TempGopColl1.Size();
+		Go temp$;
+
+		// loop through and search for items that have inventories.  then delete the item
+		while( i$ < iend$ )
+		{
+			// get the go
+			temp$ = target_go$.Mind.TempGopColl1.Get( i$ );
+
+			// do we have an inventory?  if yes, go one level deeper.  i hope no one
+			// is planning on going farther than that...
+			if( temp$.HasInventory() )
+			{
+				// get all the items in this inventory
+				target_go$.Mind.TempGopColl2.Clear();
+				temp$.Inventory.ListItems(IL_ALL, target_go$.Mind.TempGopColl2);
+
+				// loop and delete
+				int j$ = 0;
+				int jend$ = target_go$.Mind.TempGopColl2.Size();
+				Go temp2$;
+
+				while(j$ < jend$)
+				{
+					temp2$ = target_go$.Mind.TempGopColl2.Get( j$ );
+
+					// remove it from the inventory
+					temp$.Inventory.RSRemove(temp2$, false);
+					// delete it
+					PostWorldMessage(WE_REQ_DELETE, owner.Goid, temp2$.Goid, 0);
+
+					j$ = j$ + 1;
+				}
+			}
+
+			// delete the item itself
+			target_go$.Inventory.RSRemove(temp$, false);
+			PostWorldMessage(WE_REQ_DELETE, owner.Goid, temp$.Goid, 0);
+
+			i$ = i$ + 1;
+		}
+	}
+}
+
+// JCD 9/3/03
+// copy inventory of from_go to to_go.
+// if copy all is set, we are copying from the old doppelganger body to the new one
+// when this happens, everything copied is pcontent.
+void CopyInventory$( go from_go$, go to_go$, bool copyAll$ )
+{
+	// both actors must have an inventory.
+	if( from_go$.HasInventory() && to_go$.HasInventory() )
+	{
+		// clear a collection to use
+		from_go$.Mind.TempGopColl1.Clear();
+
+		// get everything in the inventory
+		from_go$.Inventory.ListItems(IL_ALL, from_go$.Mind.TempGopColl1);
+
+		// get set to loop
+		int i$ = 0;
+		int iend$ = from_go$.Mind.TempGopColl1.Size();
+		Go temp$;
+		eInventoryLocation location$;
+		eEquipSlot slot$;
+
+		// loop through and copy all items from one to another
+		while( i$ < iend$ )
+		{
+			// get the item
+			temp$ = from_go$.Mind.TempGopColl1.Get( i$ );
+
+			// get its inventory location
+			location$ = from_go$.inventory.GetLocation(temp$);
+
+			// get its equip slot
+			slot$ = from_go$.inventory.GetEquippedSlot(temp$);
+
+			// if it is an item sitting in the targets inventory unused, we dont want it
+			if( location$ == IL_MAIN && slot$ == ES_NONE && !copyAll$ )
+			{
+				// report.genericf("non useful item found and NOT copied\n");
+				i$ = i$ + 1;
+				continue;
+			}
+
+			// if the location is not the selected location, we don't want to put it there.
+			if( location$ != from_go$.inventory.GetSelectedLocation() )
+			{
+				location$ = IL_MAIN;
+			}
+
+			// clone the item
+			GoCloneReq cloneReq$ = MakeGoCloneReq( temp$.GetTemplateName );
+			cloneReq$.StartingPos = owner.Go.Placement.Position;
+			Goid newItem$ = GoDb.SCloneGo( cloneReq$ );
+
+			// this is an item we are grabbing from the old dopps body and 
+			// is therefore a pcontent query result
+			if( copyAll$ )
+			{
+				#only(game)
+				[[
+				// report.genericf("setting an item as pcontent\n");
+				newItem$.go.SetIsPContentInventory(true);
+				]]
+			}
+			else
+			{
+				#only(game)
+				[[
+				newItem$.go.SetIsPContentInventory(false);
+				]]
+			}
+
+			// give the doppelganger the new item in the same location
+			to_go$.Inventory.RSAdd(newItem$.go, location$, AO_REFLEX, false);
+
+			// only equip if the slot is specific.
+			if( slot$ != ES_NONE && !copyAll$ )
+			{
+				to_go$.Inventory.RSEquip(slot$, newItem$, AO_REFLEX);
+			}
+
+			i$ = i$ + 1;
+		}
+	}
+}
+
+Goid GetPartyMemberInRange$( goid temptarget$, float range$ )
+{
+	// get the bad guys party
+	Go EnemyParty$;
+	// JCD 8/12/03
+	// if temptarget is a summon, we need to get its owner's party instead
+	if( temptarget$.go.Actor.HasGenericState("summoned") )
+	{
+		#only( game )
+		[[
+		EnemyParty$ = temptarget$.go.actor.GetGenericStateCasterGoid("summoned").go.GetPlayer().GetParty();
+		]]
+	}
+	else if( temptarget$.go.actor.HasGenericState("DSX_mezmerizing") )
+	{
+		#only( game )
+		[[
+		EnemyParty$ = temptarget$.go.actor.GetGenericStateCasterGoid("DSX_mezmerizing").go.GetPlayer().GetParty();
+		]]	
+	}
+	else
+	{
+		#only( game )
+		[[
+		EnemyParty$ = temptarget$.go.GetPlayer().GetParty();
+		]]
+	}
+	if( EnemyParty$ != NULL )
+	{
+		AIQuery.TempGopColl1.clear;
+
+		int i$ = 0;
+		int iend$ = EnemyParty$.children.size;
+		// report.genericf("Doppelganger: enemy party size: %d\n",iend$ );
+		while( i$ < iend$ )
+		{
+			// report.genericf("Doppleganger: searching for enemy within range\n");
+			Go member$ = EnemyParty$.children.Get( i$ );
+			// add all of the party members in range to the list.
+
+			// JCD 8/4/03
+			// don't allow dopps to copy summoned creatures nor spectral images
+			// nor pack animals
+			if( IsValidDoppelgangerTarget$( member$ ) &&
+				IsAlive( member$.Aspect.Lifestate ) &&
+				AIQuery.GetDistance( member$.Placement.Position, owner.Go.Placement.Position ) < ( range$ ) )
+			{
+				// report.genericf("Doppleganger: attackable enemy found\n");
+				AIQuery.TempGopColl1.Add( member$ );
+			}
+
+			i$ += 1;
+		}
+		
+		if( AIQuery.TempGopColl1.size() > 0 )
+		{
+			Go temp$ = AIQuery.TempGopColl1.Get( Math.RandomInt( AIQuery.TempGopColl1.size() - 1 ) );
+
+			if( temp$ != NULL )
+			{
+				return temp$.goid;
+			}
+		}
+	}
+	return temptarget$;
+}
+
+
 trigger OnGoPreload$
 {
 	if( template_name$ != "")
