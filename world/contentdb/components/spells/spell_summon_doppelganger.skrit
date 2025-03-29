@@ -9,17 +9,22 @@ property bool	guard_caster$		= true	doc = "Make the summoned creature follow the
 property bool	change_align$		= true	doc = "set summon alignment to be that of the caster.";
 property bool	delete_inv$			= true	doc = "delete summons inventory when removed.";
 
+property float	statsMultiplier$ = .5						doc = "Fraction of stats of copied creature.";
+property string	dop_effect_script$ = "doppelganger_glow"	doc = "Effect to play on the doppelganger while it's copied";
 
 
-owner = GoSkritComponent;
+
+owner = GoSkritComponent;  // the spell object
 #include "k_inc_spl_utils"
 
-int starting_pos$;
+Goid caster$;  // your mage char
+Goid cast_target$;  // probably like a dummy point object created where you right-click?
+int starting_pos$;  // starting pos of the summon (SiegeFX var ref)
+float summon_duration$;  // how long the summon will live
+Goid summoned_goid$;  // Goid of the initial creature
+Goid doppel_target$;  // Goid of the enemy that gets doppeled
+Goid newMe$;  // Goid of the doppeled creature
 
-Goid summoned_goid$;
-Goid target$;
-Goid caster$;
-float summon_duration$;
 
 trigger OnGoPreload$
 {
@@ -34,13 +39,15 @@ trigger OnTimer$( 2 )
 	SetState CleanUp$;
 }
 
+// cleanup if the summon is killed
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
 	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) )
 	{
 		if( summoned_goid$.IsValidMp) 
 		{
-			if ( end_script$ != "" ) {
+			if ( end_script$ != "" )
+			{
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
 			}
 		}
@@ -48,6 +55,7 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 	}
 }
 
+// disable the summon during NIS
 trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 {
 	if( summoned_goid$.IsValid )
@@ -93,14 +101,13 @@ startup state CastBegin$
 	{
 		if( e$ == WE_REQ_CAST ) 
 		{
-
 			////////////////////
 			// Normal Go
 
 			caster$ = msg$.GetSendFrom();
-			target$ = MakeGoid( msg$.GetData1() );
+			cast_target$ = MakeGoid( msg$.GetData1() );
 
-			if( !target$.IsValidMp || !caster$.IsValidMp )
+			if( !cast_target$.IsValidMp || !caster$.IsValidMp )
 			{
 				SetState Abort$;
 				return;
@@ -113,10 +120,10 @@ startup state CastBegin$
 			}
 
 			// Copy the reference to the starting position into SiegeFx persistant storage
-			starting_pos$ = SiegeFx.AddVariable( target$.go.placement.position, owner.goid );
+			starting_pos$ = SiegeFx.AddVariable( cast_target$.go.placement.position, owner.goid );
 
 			// Start the visual effect
-			SiegeFx.SRunScript( effect_script$, target$, caster$, script_params$, owner.Goid, WE_REQ_CAST );
+			SiegeFx.SRunScript( effect_script$, cast_target$, caster$, script_params$, owner.Goid, WE_REQ_CAST );
 
 			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(caster$.Go, caster$.Go);
 			caster$.Go.Actor.SAddGenericState( owner.Go.Magic.CasterStateName, caster_description$, summon_duration$ + 2.0, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
@@ -214,7 +221,8 @@ state ControlSummoned$
 	{
 		if( summoned_goid$.IsValidMp)
 		{
-			if ( end_script$ != "" ) {
+			if ( end_script$ != "" )
+			{
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
 			}
 		}
@@ -228,7 +236,8 @@ state ControlSummoned$
 	{
 		if( summoned_goid$.IsValidMp)
 		{
-			if ( end_script$ != "" ) {
+			if ( end_script$ != "" )
+			{
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
 			}
 		}
@@ -239,9 +248,10 @@ state ControlSummoned$
 	{
 		if( summoned_goid$.IsValidMp) 
 		{
-			if ( end_script$ != "" ) {
+			if ( end_script$ != "" )
+			{
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-			}		
+			}
 		}
 		this.CreateTimer( 2, .1 );
 	}
@@ -356,8 +366,6 @@ state CleanUp$
 					GoDb.SMarkForDeletion( summoned_goid$, true, true );
 				}
 			}
-
-
 		}
 		this.CreateTimer( 1, 0 );
 	}
