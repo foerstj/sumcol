@@ -21,9 +21,10 @@ Goid caster$;  // your mage char
 Goid cast_target$;  // probably like a dummy point object created where you right-click?
 int starting_pos$;  // starting pos of the summon (SiegeFX var ref)
 float summon_duration$;  // how long the summon will live
-Goid summoned_goid$;  // Goid of the initial creature
+Goid summoned_goid$;  // Goid of the summoned creature (first the initial, then the doppeled one)
 Goid doppel_target$;  // Goid of the enemy that gets doppeled
 Goid newMe$;  // Goid of the doppeled creature
+Goid oldMe$;  // Goid of the initial creature
 
 
 // can we copy target$?  is it a good target?
@@ -267,13 +268,14 @@ trigger OnTimer$( 2 )
 }
 
 // cleanup if the summon is killed
-void onCreatureKilled$( goid creature$ )
+void onSummonedKilled$()
 {
-	if( creature$.IsValidMp) 
+	// play unsummon effect
+	if( summoned_goid$.IsValidMp)
 	{
 		if ( end_script$ != "" )
 		{
-			SiegeFx.SRunScript( end_script$, creature$, creature$, script_params$, owner.Goid, WE_KILLED );
+			SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
 		}
 	}
 
@@ -283,7 +285,7 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
 	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) )
 	{
-		onCreatureKilled$( summoned_goid$ );
+		onSummonedKilled$();
 	}
 }
 
@@ -416,7 +418,7 @@ startup state CastBegin$
 				SetState CleanUp$;
 			}
 
-			this.CreateTimer( 1, 0 );
+			this.CreateTimer( 1, 0 );  // -> ControlSummoned$
 		}
 	}
 
@@ -473,6 +475,91 @@ void onEndSpell$()
 
 	this.CreateTimer( 2, .1 );  // global cleanup timer
 }
+void remindGuarding$()
+{
+	if( summoned_goid$.isvalid && caster$.IsValid() )
+	{
+		if( summoned_goid$.Go.Mind.UnderstandsJob( JAT_GUARD ) )
+		{
+			if( summoned_goid$.Go.Mind.CanOperateOn( owner.go.parent ) )
+			{
+				Job action$ = summoned_goid$.Go.Mind.GetFrontJob( JQ_ACTION );
+
+				if( action$ != NULL )
+				{
+					if( action$.JobAbstractType != JAT_FIDGET )
+					{
+						return;
+					}
+				}
+				summoned_goid$.go.Mind.SDoJob( MakeJobReq( JAT_GUARD, JQ_ACTION, QP_FRONT, AO_COMMAND, owner.go.parent.Goid ) );
+			}
+		}
+	}
+}
+bool findDoppelTarget$()
+{
+	// We're going to clone our target enemy and then remove ourself
+	// Find who we're attacking
+	Job action$ = summoned_goid$.Go.Mind.GetFrontJob( JQ_ACTION );
+
+	Goid target$ = NULL;
+
+	// JCD 8/12/03
+	// if the target is valid, just choose that
+	if ( action$!=NULL )
+	{
+		if( action$.IsOffensive )
+		{
+			if( action$.GoalObject.go.HasActor )
+			{
+				if( IsValidDoppelgangerTarget$(action$.GoalObject.go) )
+				{
+					// report.genericf("Doppelganger: we have a suitable target");
+					target$ = action$.GoalObject;
+				}
+			}
+			// we can't do much if our target doesn't have an actor...
+			else
+			{
+				return false;
+			}
+		}
+	}
+	// otherwise we need to look for someone else to clone.
+	if( target$ == NULL )
+	{
+		// JCD 8/12/03
+		// if we have an enemy near us, we can set it as our target
+		if( summoned_goid$.Go.Mind.GetBestFocusEnemy()!=NULL )
+		{
+			// find the closest enemy
+			target$ = summoned_goid$.Go.Mind.GetBestFocusEnemy().Goid;
+		}
+		// if we have none near us, we can't do anything.
+		else
+		{
+			return false;
+		}
+
+		// see if we can get a better target.
+		// see if we should choose a party member.
+		if( target$.IsValid )
+		{
+			target$ = GetPartyMemberInRange$( target$, summoned_goid$.Go.mind.sightrange * 1.5 );
+		}
+	}
+
+	// JCD 8/4/03
+	// we don't allow dopps to clone summoned creatures nor spectral images
+	if( !IsValidDoppelgangerTarget$(target$.go) )
+	{
+		return false;
+	}
+
+	doppel_target$ = target$;
+	return true;
+}
 state ControlSummoned$
 {
 	////////////////////
@@ -494,31 +581,6 @@ state ControlSummoned$
 	trigger OnTimer$ ( 1 )
 	{
 		onEndSpell$();
-	}
-
-	trigger OnTimer$ ( 3 )
-	{
-		this.CreateTimer( 3, 5 );
-
-		if( summoned_goid$.isvalid && caster$.IsValid() )
-		{
-			if( summoned_goid$.Go.Mind.UnderstandsJob( JAT_GUARD ) )
-			{
-				if( summoned_goid$.Go.Mind.CanOperateOn( owner.go.parent ) )
-				{
-					Job action$ = summoned_goid$.Go.Mind.GetFrontJob( JQ_ACTION );
-
-					if( action$ != NULL )
-					{
-						if( action$.JobAbstractType != JAT_FIDGET )
-						{
-							return;
-						}
-					}
-					summoned_goid$.go.Mind.SDoJob( MakeJobReq( JAT_GUARD, JQ_ACTION, QP_FRONT, AO_COMMAND, owner.go.parent.Goid ) );
-				}
-			}
-		}
 	}
 
 	event OnEnterState$
@@ -555,11 +617,42 @@ state ControlSummoned$
 			summoned_goid$.Go.Common.SCopyMembership( caster$ );
 		}
 
-		this.CreateTimer( 1, summon_duration$ );
+		this.CreateTimer( 1, summon_duration$ );  // end the spell after the duration times out
+
 		if(guard_caster$)
 		{
-			this.CreateTimer( 3, 5 );
+			this.CreateTimer( 3, 5 );  // start remind guarding
 		}
+
+		this.CreateTimer( 4, 1 );  // start looking for doppel target
+	}
+
+	// remind the summon of guarding the caster once in a while
+	trigger OnTimer$ ( 3 )
+	{
+		this.CreateTimer( 3, 5 );
+		remindGuarding$();
+	}
+
+	// every second we poll our range for an enemy to dopp.
+	trigger OnTimer$ ( 4 )
+	{
+		this.CreateTimer( 4, 1 );
+		
+		bool found$ = findDoppelTarget$();
+		if( found$ )
+		{
+			SiegeFX.SRunScript( "doppelganager_switch", summoned_goid$, doppel_target$, "", doppel_target$, WE_REQ_ACTIVATE );
+			SetState Switch$;
+		}
+	}
+}
+
+state Switch$
+{
+	change$ at ( 2.0 )
+	{
+		SetState CleanUp$;
 	}
 }
 
