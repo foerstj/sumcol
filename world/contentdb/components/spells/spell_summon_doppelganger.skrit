@@ -399,25 +399,25 @@ startup state CastBegin$
 				return;
 			}
 
-			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(summoned_goid$.Go, caster$.Go);
-			if( summoned_goid$.go.hasactor )
-			{
-				// buff the summoned guy up.
-				owner.go.magic.SApplyEnchantments( summoned_goid$, caster$ );
-				
-				summoned_goid$.Go.Aspect.IsInvincible = false;
-				
-				// Setup where experience will go from who this actor damages
-				summoned_goid$.Go.aspect.SetExperienceBenefactor( caster$ );
-				summoned_goid$.Go.aspect.SetExperienceBenefactorSkill( owner.go.magic.skillclass );
-				
-				// watch our pet, so if he dies we can control a new pet.
-				GoDb.StartWatching( owner.Goid, summoned_goid$);
-			}
-			else
+			if( !summoned_goid$.go.hasactor )
 			{
 				SetState CleanUp$;
+				return;
 			}
+
+			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(summoned_goid$.Go, caster$.Go);
+
+			// buff the summoned guy up.
+			owner.go.magic.SApplyEnchantments( summoned_goid$, caster$ );
+
+			summoned_goid$.Go.Aspect.IsInvincible = false;
+
+			// Setup where experience will go from who this actor damages
+			summoned_goid$.Go.aspect.SetExperienceBenefactor( caster$ );
+			summoned_goid$.Go.aspect.SetExperienceBenefactorSkill( owner.go.magic.skillclass );
+
+			// watch our pet, so if he dies we can control a new pet.
+			GoDb.StartWatching( owner.Goid, summoned_goid$);
 
 			this.CreateTimer( 1, 0 );  // -> ControlSummoned$
 		}
