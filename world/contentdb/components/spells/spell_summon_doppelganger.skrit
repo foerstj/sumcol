@@ -260,24 +260,29 @@ trigger OnGoPreload$
 	}
 }
 
+// global cleanup timer
 trigger OnTimer$( 2 )
 {
 	SetState CleanUp$;
 }
 
 // cleanup if the summon is killed
+void onCreatureKilled$( goid creature$ )
+{
+	if( creature$.IsValidMp) 
+	{
+		if ( end_script$ != "" )
+		{
+			SiegeFx.SRunScript( end_script$, creature$, creature$, script_params$, owner.Goid, WE_KILLED );
+		}
+	}
+	this.CreateTimer( 2, .1 );
+}
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
 	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) )
 	{
-		if( summoned_goid$.IsValidMp) 
-		{
-			if ( end_script$ != "" )
-			{
-				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
-			}
-		}
-		this.CreateTimer( 2, .1 );
+		onCreatureKilled$( summoned_goid$ );
 	}
 }
 
@@ -387,7 +392,7 @@ startup state CastBegin$
 				summoned_goid$.Go.aspect.SetExperienceBenefactor( caster$ );
 				summoned_goid$.Go.aspect.SetExperienceBenefactorSkill( owner.go.magic.skillclass );
 				
-				// watch out pet, so if he dies we can control a new pet.
+				// watch our pet, so if he dies we can control a new pet.
 				GoDb.StartWatching( owner.Goid, summoned_goid$);
 			}
 			else
@@ -481,6 +486,7 @@ state ControlSummoned$
 		}
 		this.CreateTimer( 2, .1 );
 	}
+
 	trigger OnTimer$ ( 3 )
 	{
 		this.CreateTimer( 3, 5 );
@@ -593,7 +599,8 @@ state CleanUp$
 				}
 			}
 		}
-		this.CreateTimer( 1, 0 );
+
+		this.CreateTimer( 1, 0 );  // -> FinishedOmni$
 	}
 }
 
@@ -626,7 +633,7 @@ state Abort$
 {
 	////////////////////
 	// Normal Go
-	
+
 	event OnEnterState$
 	{
 		// Refund the players mana
