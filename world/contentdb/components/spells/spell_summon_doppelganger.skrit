@@ -9,7 +9,7 @@ property bool	guard_caster$		= true	doc = "Make the summoned creature follow the
 property bool	change_align$		= true	doc = "set summon alignment to be that of the caster.";
 property bool	delete_inv$			= true	doc = "delete summons inventory when removed.";
 
-property float	statsMultiplier$ = .5						doc = "Fraction of stats of copied creature.";
+property float	statsMultiplier$ = 1.0						doc = "Fraction of stats of copied creature.";
 property string	dop_effect_script$ = "doppelganger_glow"	doc = "Effect to play on the doppelganger while it's copied";
 
 
@@ -25,7 +25,7 @@ Goid summoned_goid$;  // Goid of the summoned creature (first the initial, then 
 Goid doppel_target$;  // Goid of the enemy that gets doppeled
 Goid newMe$;  // Goid of the doppeled creature
 Goid oldMe$;  // Goid of the initial creature
-bool isDoppeled = false;
+bool isDoppeled$ = false;
 
 
 // can we copy target$?  is it a good target?
@@ -412,13 +412,6 @@ startup state CastBegin$
 
 			summoned_goid$.Go.Aspect.IsInvincible = false;
 
-			// Setup where experience will go from who this actor damages
-			summoned_goid$.Go.aspect.SetExperienceBenefactor( caster$ );
-			summoned_goid$.Go.aspect.SetExperienceBenefactorSkill( owner.go.magic.skillclass );
-
-			// watch our pet, so if he dies we can control a new pet.
-			GoDb.StartWatching( owner.Goid, summoned_goid$);
-
 			this.CreateTimer( 1, 0 );  // -> ControlSummoned$
 		}
 	}
@@ -605,6 +598,13 @@ state ControlSummoned$
 			summoned_goid$.Go.Common.SCopyMembership( caster$ );
 		}
 
+		// Setup where experience will go from who this actor damages
+		summoned_goid$.Go.aspect.SetExperienceBenefactor( caster$ );
+		summoned_goid$.Go.aspect.SetExperienceBenefactorSkill( owner.go.magic.skillclass );
+
+		// watch our pet, so if he dies we can control a new pet.
+		GoDb.StartWatching( owner.Goid, summoned_goid$);
+
 		this.CreateTimer( 1, summon_duration$ );  // end the spell after the duration times out
 
 		if(guard_caster$)
@@ -622,10 +622,12 @@ state ControlSummoned$
 			this.CreateTimer( 3, 5 );  // start remind guarding
 		}
 
-		if (!isDoppeled)
+		if (!isDoppeled$)
 		{
 			this.CreateTimer( 4, 1 );  // start looking for doppel target
 		}
+
+		this.CreateTimer( 5, 0 );  // start counting down
 	}
 
 	// remind the summon of guarding the caster once in a while
@@ -647,10 +649,26 @@ state ControlSummoned$
 			SetState Switch$;
 		}
 	}
+
+	// count down summon duration so we can re-apply it when switching
+	trigger OnTimer$ ( 5 )
+	{
+		this.CreateTimer( 5, 1 );
+		summon_duration$ = summon_duration$ - 1;
+	}
 }
 
 state Switch$
 {
+	trigger OnGoHandleMessage$( WE_SPELL_EXPIRATION_TIMER_RESET )
+	{
+		onEndSpell$();
+	}
+	trigger OnGoHandleMessage$( WE_REQ_DEACTIVATE )
+	{
+		onEndSpell$();
+	}
+
 	change$ at ( 1.0 )
 	{
 		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My scid: 0x%x\n", MakeInt(owner.goid), MakeInt(owner.scid));
@@ -789,7 +807,7 @@ state Switch$
 
 		// Now back to controlling the summoned creature...
 		summoned_goid$ = newMe$;
-		isDoppeled = true;
+		isDoppeled$ = true;
 		SetState ControlSummoned$;
 	}
 }
