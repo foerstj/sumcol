@@ -276,7 +276,8 @@ void onCreatureKilled$( goid creature$ )
 			SiegeFx.SRunScript( end_script$, creature$, creature$, script_params$, owner.Goid, WE_KILLED );
 		}
 	}
-	this.CreateTimer( 2, .1 );
+
+	this.CreateTimer( 2, .1 );  // global cleanup timer
 }
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
@@ -287,42 +288,57 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 }
 
 // disable the summon during NIS
+void onEnterNIS$()
+{
+	if( !summoned_goid$.IsValid )
+	{
+		return;
+	}
+
+	Go Summon$ = summoned_goid$.Go;
+	Summon$.Mind.SetMayAttack( false );
+	Summon$.Mind.SetMayBeAttacked( false );
+	Summon$.Mind.SDoJob( MakeJobReq( JAT_STOP, JQ_ACTION, QP_CLEAR, AO_COMMAND ));
+
+	Summon$.Mind.TempGopColl1.clear;
+	Summon$.Mind.GetEngagedMeEnemies( Summon$.Mind.TempGopColl1 );
+
+	int j$ = 0;
+	int jend$ = Summon$.Mind.TempGopColl1.Size();
+
+	Go Enemy$;
+
+	while( j$ < jend$ )
+	{
+		Enemy$ = Summon$.Mind.TempGopColl1.Get( j$ );
+		if( Enemy$ != NULL )
+		{
+			Enemy$.Mind.SDoJob( MakeJobReq( JAT_STOP, JQ_ACTION, QP_CLEAR, AO_COMMAND ));
+			Enemy$.Mind.ResetSensors();
+
+		}
+		j$ += 1;
+	}
+}
+void onLeaveNIS$()
+{
+	if( !summoned_goid$.IsValid )
+	{
+		return;
+	}
+
+	summoned_goid$.Go.Mind.SetMayAttack( true );
+	summoned_goid$.Go.Mind.SetMayBeAttacked( true );
+}
 trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 {
-	if( summoned_goid$.IsValid )
+	if( WorldState.CurrentState == WS_SP_NIS )
 	{
-		if( WorldState.CurrentState == WS_SP_NIS )
-		{
-			Go Summon$ = summoned_goid$.Go;
-			Summon$.Mind.SetMayAttack( false );
-			Summon$.Mind.SetMayBeAttacked( false );
-			Summon$.Mind.SDoJob( MakeJobReq( JAT_STOP, JQ_ACTION, QP_CLEAR, AO_COMMAND ));
-
-			Summon$.Mind.TempGopColl1.clear;
-			Summon$.Mind.GetEngagedMeEnemies( Summon$.Mind.TempGopColl1 );
-
-			int j$ = 0;
-			int jend$ = Summon$.Mind.TempGopColl1.Size();
-
-			Go Enemy$;
-
-			while( j$ < jend$ )
-			{
-				Enemy$ = Summon$.Mind.TempGopColl1.Get( j$ );
-				if( Enemy$ != NULL )
-				{
-					Enemy$.Mind.SDoJob( MakeJobReq( JAT_STOP, JQ_ACTION, QP_CLEAR, AO_COMMAND ));
-					Enemy$.Mind.ResetSensors();
-
-				}
-				j$ += 1;
-			}
-		}
-		else
-		{
-			summoned_goid$.Go.Mind.SetMayAttack( true );
-			summoned_goid$.Go.Mind.SetMayBeAttacked( true );
-		}
+		onEnterNIS$();
+	}
+	else
+	{
+		onLeaveNIS$();
 	}
 }
 
@@ -403,6 +419,7 @@ startup state CastBegin$
 			this.CreateTimer( 1, 0 );
 		}
 	}
+
 	transition -> ControlSummoned$ : OnTimer( 1 );
 }
 
@@ -437,12 +454,25 @@ state SummonGo$
 			// send Omni version an Activate to get it started.
 			PostWorldMessage( WE_REQ_ACTIVATE, caster$, new_spell$, MakeInt( summoned_goid$ ), 0 );
 		}
+
 		// delete normal version of the spell.
 		SetState Finished$;
 	}
 }
 
 
+void onEndSpell$()
+{
+	if( summoned_goid$.IsValidMp)
+	{
+		if ( end_script$ != "" )
+		{
+			SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
+		}
+	}
+
+	this.CreateTimer( 2, .1 );  // global cleanup timer
+}
 state ControlSummoned$
 {
 	////////////////////
@@ -450,14 +480,7 @@ state ControlSummoned$
 
 	trigger OnGoHandleMessage$( WE_SPELL_EXPIRATION_TIMER_RESET )
 	{
-		if( summoned_goid$.IsValidMp)
-		{
-			if ( end_script$ != "" )
-			{
-				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-			}
-		}
-		this.CreateTimer( 2, .1 );
+		onEndSpell$();
 	}
 
 	// JCD 7/25/03
@@ -465,31 +488,18 @@ state ControlSummoned$
 	// kill the spell in MP when the client presses the unsummon button without errors occurring.
 	trigger OnGoHandleMessage$( WE_REQ_DEACTIVATE )
 	{
-		if( summoned_goid$.IsValidMp)
-		{
-			if ( end_script$ != "" )
-			{
-				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-			}
-		}
-		this.CreateTimer( 2, .1 );
+		onEndSpell$();
 	}
 
 	trigger OnTimer$ ( 1 )
 	{
-		if( summoned_goid$.IsValidMp) 
-		{
-			if ( end_script$ != "" )
-			{
-				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-			}
-		}
-		this.CreateTimer( 2, .1 );
+		onEndSpell$();
 	}
 
 	trigger OnTimer$ ( 3 )
 	{
 		this.CreateTimer( 3, 5 );
+
 		if( summoned_goid$.isvalid && caster$.IsValid() )
 		{
 			if( summoned_goid$.Go.Mind.UnderstandsJob( JAT_GUARD ) )
