@@ -1,21 +1,7 @@
-//////////////////////////////////////////////////////////////////////////////
-//
-// File     :  spell_summon.skrit
-// Author(s):  Rick Saenz, Eric Tams
-//
-// Copyright © 2000 Gas Powered Games, Inc.  All rights reserved.
-//----------------------------------------------------------------------------
-//  $Revision:: $              $Date:$
-//----------------------------------------------------------------------------
-//
-// Summons an actor to guard the caster.
-//
-//////////////////////////////////////////////////////////////////////////////
-
 property string effect_script$		= ""	doc = "Name of the SiegeFx script that will be providing the visual.";
 property string end_script$			= ""	doc = "Name of the SiegeFx script that will be providing the visual when un_summoning.";
-property string script_params$		= ""   	doc = "Parameters to send to SiegeFx script";
-property string template_name$		= ""   	doc = "Template name of actor to summon";
+property string script_params$		= ""	doc = "Parameters to send to SiegeFx script";
+property string template_name$		= ""	doc = "Template name of actor to summon";
 property string state_name$			= "summoned"			doc = "Name of effect to use as a generic state and as a screen name.";
 property string description$		= ""	doc = "Description of enchantment being applied";
 property string caster_description$	= ""	doc = "Description of enchantment being applied to the caster";
@@ -46,17 +32,17 @@ trigger OnGoPreload$
 trigger OnTimer$( 2 )
 {
 	SetState CleanUp$;
-} 
+}
 
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
-	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
+	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) )
 	{
 		if( summoned_goid$.IsValidMp) 
 		{
 			if ( end_script$ != "" ) {
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
-			}		
+			}
 		}
 		this.CreateTimer( 2, .1 );
 	}
@@ -72,15 +58,15 @@ trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 			Summon$.Mind.SetMayAttack( false );
 			Summon$.Mind.SetMayBeAttacked( false );
 			Summon$.Mind.SDoJob( MakeJobReq( JAT_STOP, JQ_ACTION, QP_CLEAR, AO_COMMAND ));
-			
+
 			Summon$.Mind.TempGopColl1.clear;
 			Summon$.Mind.GetEngagedMeEnemies( Summon$.Mind.TempGopColl1 );
-			
+
 			int j$ = 0;
 			int jend$ = Summon$.Mind.TempGopColl1.Size();
-			
+
 			Go Enemy$;
-			
+
 			while( j$ < jend$ )
 			{
 				Enemy$ = Summon$.Mind.TempGopColl1.Get( j$ );
@@ -88,10 +74,10 @@ trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 				{
 					Enemy$.Mind.SDoJob( MakeJobReq( JAT_STOP, JQ_ACTION, QP_CLEAR, AO_COMMAND ));
 					Enemy$.Mind.ResetSensors();
-			
+
 				}
-				j$ += 1;   
-			}	
+				j$ += 1;
+			}
 		}
 		else
 		{
@@ -100,49 +86,49 @@ trigger OnGoHandleMessage$( WE_WORLD_STATE_TRANSITION_DONE )
 		}
 	}
 }
-			
+
 startup state CastBegin$
 {
- 	event OnGoHandleMessage$( eWorldEvent e$, WorldMessage msg$ )
+	event OnGoHandleMessage$( eWorldEvent e$, WorldMessage msg$ )
 	{
 		if( e$ == WE_REQ_CAST ) 
 		{
 
 			////////////////////
 			// Normal Go
-			
+
 			caster$ = msg$.GetSendFrom();
 			target$ = MakeGoid( msg$.GetData1() );
-			
+
 			if( !target$.IsValidMp || !caster$.IsValidMp )
 			{
 				SetState Abort$;
 				return;
 			}
-			
+
 			if( caster$.Go.Actor.HasGenericState( owner.Go.Magic.CasterStateName ) )
 			{
 				SetState Abort$;
 				return;
 			}
-				
+
 			// Copy the reference to the starting position into SiegeFx persistant storage
 			starting_pos$ = SiegeFx.AddVariable( target$.go.placement.position, owner.goid );
-			
+
 			// Start the visual effect
 			SiegeFx.SRunScript( effect_script$, target$, caster$, script_params$, owner.Goid, WE_REQ_CAST );
-		
+
 			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(caster$.Go, caster$.Go);
 			caster$.Go.Actor.SAddGenericState( owner.Go.Magic.CasterStateName, caster_description$, summon_duration$ + 2.0, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
-		} 
-		else if ( e$ == WE_SPELL_SYNC_MID ) 
+		}
+		else if ( e$ == WE_SPELL_SYNC_MID )
 		{
 			////////////////////
 			// Normal Go
-			
+
 			SetState SummonGo$;
 		}
-		else if ( e$ == WE_REQ_ACTIVATE ) 
+		else if ( e$ == WE_REQ_ACTIVATE )
 		{
 			////////////////////
 			// Omni Go
@@ -155,7 +141,7 @@ startup state CastBegin$
 				SetState CleanUp$;
 				return;
 			}
-			
+
 			summon_duration$ = owner.Go.Magic.EvaluateEffectDuration(summoned_goid$.Go, caster$.Go);
 			if( summoned_goid$.go.hasactor )
 			{
@@ -170,12 +156,12 @@ startup state CastBegin$
 				
 				// watch out pet, so if he dies we can control a new pet.
 				GoDb.StartWatching( owner.Goid, summoned_goid$);
- 			}
- 			else
- 			{
- 				SetState CleanUp$;
- 			}
-			
+			}
+			else
+			{
+				SetState CleanUp$;
+			}
+
 			this.CreateTimer( 1, 0 );
 		}
 	}
@@ -186,7 +172,7 @@ state SummonGo$
 {
 	////////////////////
 	// Normal Go
-	
+
 	event OnEnterState$
 	{
 		if( Owner.go.Parent != NULL )
@@ -197,58 +183,58 @@ state SummonGo$
 			cloneReq$.SnapToTerrain = true;
 			cloneReq$.Fadein = true;
 			summoned_goid$ = GoDb.SCloneGo( cloneReq$ );
-			
+
 			if( change_align$ && caster$.IsValid )
 			{
 				summoned_goid$.Go.actor.ssetalignment( caster$.Go.actor.alignment );
 				summoned_goid$.Go.SsetPlayer( caster$.Go.PlayerID );
 			}
 			summoned_goid$.Go.Aspect.IsInvincible = true;
-			
+
 			// create Omni version of the spell.
 			cloneReq$ = MakeGoCloneReq( Owner.go.Parent.Goid, owner.goid );
 			cloneReq$.Omni = true;
 			Goid new_spell$ = GoDb.SCloneGo( cloneReq$ );
-			
+
 			// send Omni version an Activate to get it started.
 			PostWorldMessage( WE_REQ_ACTIVATE, caster$, new_spell$, MakeInt( summoned_goid$ ), 0 );
 		}
 		// delete normal version of the spell.
 		SetState Finished$;
 	}
-}							 
+}
 
 
 state ControlSummoned$
 {
 	////////////////////
 	// Omni Go
-	
+
 	trigger OnGoHandleMessage$( WE_SPELL_EXPIRATION_TIMER_RESET )
 	{
-		if( summoned_goid$.IsValidMp) 
+		if( summoned_goid$.IsValidMp)
 		{
 			if ( end_script$ != "" ) {
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-			}		
+			}
 		}
 		this.CreateTimer( 2, .1 );
 	}
-	
+
 	// JCD 7/25/03
 	// does the same as when WE_SPELL_EXPIRATION_TIMER_RESET is caught, but this allows us to
 	// kill the spell in MP when the client presses the unsummon button without errors occurring.
 	trigger OnGoHandleMessage$( WE_REQ_DEACTIVATE )
 	{
-		if( summoned_goid$.IsValidMp) 
+		if( summoned_goid$.IsValidMp)
 		{
 			if ( end_script$ != "" ) {
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-			}		
+			}
 		}
 		this.CreateTimer( 2, .1 );
 	}
-	
+
 	trigger OnTimer$ ( 1 )
 	{
 		if( summoned_goid$.IsValidMp) 
@@ -269,7 +255,7 @@ state ControlSummoned$
 				if( summoned_goid$.Go.Mind.CanOperateOn( owner.go.parent ) )
 				{
 					Job action$ = summoned_goid$.Go.Mind.GetFrontJob( JQ_ACTION );
-				
+
 					if( action$ != NULL )
 					{
 						if( action$.JobAbstractType != JAT_FIDGET )
@@ -290,7 +276,7 @@ state ControlSummoned$
 			SetState CleanUp$;
 			return;
 		}
-		
+
 		if(guard_caster$)
 		{
 			JobReq req$;
@@ -303,15 +289,15 @@ state ControlSummoned$
 				}
 			}
 		}
-		
+
 		if( caster$.IsValid() )
 		{
 			summoned_goid$.Go.Actor.SAddGenericState( state_name$, description$, summon_duration$, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
-			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
+			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );
 			caster$.Go.Actor.SAddGenericState( owner.Go.Magic.CasterStateName, caster_description$, summon_duration$, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
-			
+
 			// we want to be able to see the dude's health
-			summoned_goid$.Go.Actor.SSetCanShowHealth( true );		
+			summoned_goid$.Go.Actor.SSetCanShowHealth( true );
 
 			// Make him have the same membership as the caster
 			summoned_goid$.Go.Common.SCopyMembership( caster$ );
@@ -331,16 +317,16 @@ state CleanUp$
 	// Omni Go
 	
 	transition -> FinishedOmni$: OnTimer( 1 );
-	
+
 	event OnEnterState$
 	{
 		if( caster$.IsValid )
 		{
-			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
+			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );
 		}
-				
-		if( summoned_goid$.isvalid) 
-		{	
+
+		if( summoned_goid$.isvalid)
+		{
 			GoDb.StopWatching( owner.Goid, summoned_goid$);
 
 			// MRC 8/4/2003 Bug 2269 If this is an effect creature (if it's being forced
@@ -371,17 +357,17 @@ state CleanUp$
 				}
 			}
 
-			
+
 		}
 		this.CreateTimer( 1, 0 );
 	}
 }
-	
+
 state Finished$
 {
 	////////////////////
 	// Normal Go
-	
+
 	event OnEnterState$
 	{
 		PostWorldMessage( WE_REQ_DELETE, owner.Goid, owner.Goid, 1 );
@@ -392,12 +378,12 @@ state FinishedOmni$
 {
 	////////////////////
 	// Omni Go
-	
+
 	event OnEnterState$
 	{
 		// Get rid of any temporary storage
 		SiegeFx.ClearVariables( owner.goid );
-	
+
 		PostWorldMessage( WE_REQ_DELETE, owner.Goid, owner.Goid, 1 );
 	}
 }
