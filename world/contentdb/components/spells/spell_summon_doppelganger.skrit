@@ -25,6 +25,7 @@ Goid summoned_goid$;  // Goid of the summoned creature (first the initial, then 
 Goid doppel_target$;  // Goid of the enemy that gets doppeled
 Goid newMe$;  // Goid of the doppeled creature
 Goid oldMe$;  // Goid of the initial creature
+bool isDoppeled = false;
 
 
 // can we copy target$?  is it a good target?
@@ -591,19 +592,6 @@ state ControlSummoned$
 			return;
 		}
 
-		if(guard_caster$)
-		{
-			JobReq req$;
-			if( summoned_goid$.Go.Mind.UnderstandsJob( JAT_GUARD ) )
-			{
-				if( summoned_goid$.Go.Mind.CanOperateOn( owner.go.parent ) )
-				{
-					req$ = MakeJobReq( JAT_GUARD, JQ_ACTION, QP_FRONT, AO_COMMAND, owner.go.parent.Goid );
-					summoned_goid$.go.Mind.SDoJob( req$ );
-				}
-			}
-		}
-
 		if( caster$.IsValid() )
 		{
 			summoned_goid$.Go.Actor.SAddGenericState( state_name$, description$, summon_duration$, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
@@ -621,10 +609,23 @@ state ControlSummoned$
 
 		if(guard_caster$)
 		{
+			JobReq req$;
+			if( summoned_goid$.Go.Mind.UnderstandsJob( JAT_GUARD ) )
+			{
+				if( summoned_goid$.Go.Mind.CanOperateOn( owner.go.parent ) )
+				{
+					req$ = MakeJobReq( JAT_GUARD, JQ_ACTION, QP_FRONT, AO_COMMAND, owner.go.parent.Goid );
+					summoned_goid$.go.Mind.SDoJob( req$ );
+				}
+			}
+
 			this.CreateTimer( 3, 5 );  // start remind guarding
 		}
 
-		this.CreateTimer( 4, 1 );  // start looking for doppel target
+		if (!isDoppeled)
+		{
+			this.CreateTimer( 4, 1 );  // start looking for doppel target
+		}
 	}
 
 	// remind the summon of guarding the caster once in a while
@@ -650,9 +651,146 @@ state ControlSummoned$
 
 state Switch$
 {
-	change$ at ( 2.0 )
+	change$ at ( 1.0 )
 	{
-		SetState CleanUp$;
+		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My scid: 0x%x\n", MakeInt(owner.goid), MakeInt(owner.scid));
+
+		if( !doppel_target$.IsValid )
+		{
+			SetState ControlSummoned$;
+			return;
+		}
+		if( !IsAlive( doppel_target$.Go.Aspect.Lifestate ) )
+		{
+			SetState ControlSummoned$;
+			return;
+		}
+
+		// Report.Genericf("Doppelganger copying target %s\n", target$.Go.TemplateName);
+		oldMe$ = summoned_goid$;
+
+		// clone who we're attacking at my location - make the player be MY player, not the player
+		//		of who I am attacking
+
+		GoCloneReq cloneReq$ = MakeGoCloneReq( doppel_target$, oldMe$.Go.PlayerId);
+		cloneReq$.StartingPos = oldMe$.Go.Placement.Position;
+		cloneReq$.SnapToTerrain = true;
+		#only( game )
+		[[
+		cloneReq$.SetCopyInventory(false);
+		]]
+		newMe$ = GoDb.SCloneGo( cloneReq$ );
+
+		// make new me invisible until the next phase, and unable to attack
+		newMe$.Go.Aspect.SSetIsVisible( false );
+		newMe$.Go.Mind.SetMayAttack( false );
+		newMe$.Go.Mind.SetMayBeAttacked( false );
+
+		// TAT 9/29/2003 - because of timing issues, we want to be sure that the
+		//	clone is created on all machines before setting it up
+		//	so let's wait a moment
+		this.CreateTimer(1, 0.5);
+	}
+
+	trigger OnTimer$(1)
+	{
+		if ( !newMe$.IsValid )
+		{
+			Report.Genericf("Doppelganger newMe is not valid\n");
+		}
+
+		// make new me visible and able to attack
+		newMe$.Go.Aspect.SSetIsVisible( true );
+		newMe$.Go.Mind.SetMayAttack( true );
+		newMe$.Go.Mind.SetMayBeAttacked( true );
+
+		// give the doppelganger a generic state so that we can check if it is a dopp later on
+		newMe$.go.Actor.SAddGenericState("doppelganger", "", -1, newMe$, newMe$, 0);
+
+		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My new goid: 0x%x\n", MakeInt(oldMe$), MakeInt(newMe$));
+
+		// make it aa_good
+		newMe$.Go.Actor.SSetAlignment( aa_good );
+
+		#only( game )
+		[[
+		// copy the mind
+		newMe$.Go.Mind.RSCopyMind( oldMe$.Go.Mind );
+
+		// and skills
+		newMe$.Go.Actor.RSCopySkills( oldMe$.Go.Actor, statsMultiplier$ );
+
+		// set the screen name
+		string screenName$;
+		oldMe$.Go.Common.GetScreenName(screenName$);
+		newMe$.Go.Common.SSetScreenName(screenName$);
+
+		// set up the appropriate stats
+		newMe$.Go.RSSetDoppelgangerStats( oldMe$.Go, statsMultiplier$ );
+		]]
+
+		// make sure it isn't invincible
+		newMe$.Go.Aspect.SetIsInvincible( false );
+
+		// Don't draw selection indicator
+		newMe$.Go.Aspect.SetDrawSelectionIndicator( false );
+
+		// JCD 9/3/03
+		// we want to copy the targets current inventory, not original inventory from their template
+		// first - run through dopps inventory, deleting everything we come to
+		DeleteInventory$(newMe$.go);
+		// second - give the dopp everything the target has
+		CopyInventory$( doppel_target$.go, newMe$.go, false );
+
+		// give the dopp everything from its old body
+		// everything we are giving here is pcontent.
+		//CopyInventory$( oldMe$.go, newMe$.go, true );
+		// delete the inventory of the old body
+		DeleteInventory$(oldMe$.go);
+
+		// JCD 8/5/03
+		// if we are dopping into a transformed character, let the transformation manager transform it
+		//  this will make saving and loading work correctly.
+		if( doppel_target$.go.Actor.HasGenericState("transformed") )
+		{
+			#only( game )
+			[[
+			newMe$.go.Actor.SAddGenericState("transformed", "", -1, newMe$, newMe$, 0);
+			TransformationManager.STransformMe( newMe$.Go, 	TransformationManager.GetNewTemplateName(doppel_target$.Go), "" );
+			]]
+		}
+
+		// Select the same slot as the target
+		// $$$ might want to change the slot. The target might be weilding a non-combat spell. -ET
+		newMe$.Go.Inventory.RSSelect( doppel_target$.Go.Inventory.SelectedLocation, AO_REFLEX );
+
+		//// Create a manager object to watch the new doppelganger.
+		//GoCloneReq cloneReq$ = MakeGoCloneReq( manager_template$ );
+		//cloneReq$.Omni = true;
+		//// MRC 8/4/2003 The manager should not exist on the client, and should be server only.
+		//// Need to explicitly specify this for some reason.  Otherwise, the manager was getting
+		//// created on the client, but was not being defeated.
+		//cloneReq$.SetForceClientAllowed(false);
+		//cloneReq$.SetForceServerOnly(true);
+		//Goid manager$ = GoDb.SCloneGo( cloneReq$ );
+		//SendWorldMessage( WE_REQ_ACTIVATE, newMe$, manager$ );
+
+		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My manager goid: 0x%x\n", MakeInt(oldMe$), MakeInt(manager$));
+
+		// Get the radius of the new me to use to scale the effect.
+		string params$ = "";
+		StringTool.AppendF(params$, "[%g][%g]", doppel_target$.Go.GetAspect.GetBoundingSphereRadius() * .5, (doppel_target$.Go.GetAspect.GetBoundingSphereRadius() * .5) - .1);
+
+		SiegeFX.SRunScript( dop_effect_script$, newMe$, newMe$, params$, newMe$, WE_REQ_ACTIVATE );
+
+		// delete the initial creature
+		GoDb.SMarkForDeletion( oldMe$.Go );
+
+
+		// Now back to controlling the summoned creature...
+		summoned_goid$ = newMe$;
+		isDoppeled = true;
+		SetState ControlSummoned$;
 	}
 }
 
