@@ -818,10 +818,13 @@ state Switch$
 		[[
 		// copy the mind
 		newMe$.Go.Mind.RSCopyMind( oldMe$.Go.Mind );
+
+		// mind fixes for stationaries
 		if( doppel_target$.Go.Mind.MovementOrders == MO_HOLD )
 		{
 			newMe$.Go.Mind.RSSetMovementOrders( MO_HOLD );
 		}
+		guard_caster$ = doppel_target$.Go.Mind.understandsJob( JAT_MOVE );  // stationaries like skrubbs shouldn't be told to follow the caster - it looketh very weirde
 
 		// and skills
 		//newMe$.Go.Actor.RSCopySkills( oldMe$.Go.Actor, statsMultiplier$ );
