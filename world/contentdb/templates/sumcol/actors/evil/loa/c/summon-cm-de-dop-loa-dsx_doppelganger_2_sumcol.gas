@@ -1,0 +1,23 @@
+[t:template,n:dsx_doppelganger_2_sumcol_summon]
+{
+    specializes = dsx_doppelganger_2_sumcol_base;
+
+    doc = "[summon] dsx_doppelganger_2_sumcol";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+        }
+    }
+
+	[mind]
+	{
+		b actor_auto_switches_to_karate					   = true;
+		b actor_auto_switches_to_melee					   = true;
+		b actor_auto_switches_to_ranged					   = true;
+		b actor_auto_switches_to_magic					   = true;
+	}
+}

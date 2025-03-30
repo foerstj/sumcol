@@ -1,0 +1,106 @@
+[t:template,n:dsx_doppelganger_boss_sumcol] { specializes = dsx_doppelganger_boss_sumcol_base; }
+[t:template,n:dsx_doppelganger_boss_sumcol_base]  // like dsx_doppelganger_boss, but without the doppelganger skrit
+{
+    specializes = base_dsx_doppelganger_sumcol;
+
+	category_name = "1W_evil_c";
+	doc = "dsx_doppelganger_boss";
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 15, 0;
+			intelligence 	=  8, 0;
+			dexterity 		= 11, 0;
+			melee 			= 13, 0;
+		}
+	}
+	[aspect]
+	{
+		scale_base = 2.0;
+		experience_value = 920;
+		life = 553;
+		max_life = 553;
+		mana = 1;
+		max_mana = 1;
+	}
+	[common]
+	{
+		screen_name = "Doppelganger Lord";
+		membership = monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;		
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("doppelganger_body_boss");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_light_blue(sgx)");
+			}
+		}
+	}
+	[inventory]
+	{
+		drop_at_use_point = true;
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 19, Special */
+			[all*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 663;
+					max = 1316;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/41-55;
+					il_main = #armor/23-128;
+					il_main = #*/41-55;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/55-63;
+					il_main = #armor/-rare(1)/100-184;
+					il_main = #*/-rare(1)/55-63;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/55-63;
+					il_main = #armor/-unique(2)/100-184;
+					il_main = #*/-unique(2)/55-63;
+				}			
+			}
+		}
+	}
+	[defend] { defense=184; }
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 89;
+		damage_min = 83;
+	}
+
+	//[doppelganger]
+	//{ 
+	//	statsMultiplier = 2.5;
+	//	effect_script = doppelganger_glow_boss;
+	//}
+}
