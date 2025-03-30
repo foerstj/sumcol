@@ -818,6 +818,10 @@ state Switch$
 		[[
 		// copy the mind
 		newMe$.Go.Mind.RSCopyMind( oldMe$.Go.Mind );
+		if( doppel_target$.Go.Mind.MovementOrders == MO_HOLD )
+		{
+			newMe$.Go.Mind.RSSetMovementOrders( MO_HOLD );
+		}
 
 		// and skills
 		//newMe$.Go.Actor.RSCopySkills( oldMe$.Go.Actor, statsMultiplier$ );
