@@ -31,6 +31,9 @@
         {% if end_script %}
         end_script = "{{end_script}}";
         {% endif %}
+        {% if ft == "mb-dop" %}
+        dop_effect_script = "doppelganger_glow_boss";
+        {% endif %}
     }
     [magic]
     {
