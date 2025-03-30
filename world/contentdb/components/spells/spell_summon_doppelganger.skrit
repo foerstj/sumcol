@@ -810,13 +810,16 @@ state Switch$
 			newMe$.Go.Common.SCopyMembership( caster$ );
 		}
 
+		// buff the doppeled guy up.
+		//owner.go.magic.SApplyEnchantments( newMe$, caster$ );
+
 		#only( game )
 		[[
 		// copy the mind
 		newMe$.Go.Mind.RSCopyMind( oldMe$.Go.Mind );
 
 		// and skills
-		newMe$.Go.Actor.RSCopySkills( oldMe$.Go.Actor, statsMultiplier$ );
+		//newMe$.Go.Actor.RSCopySkills( oldMe$.Go.Actor, statsMultiplier$ );
 
 		// set the screen name
 		string screenName$;
@@ -824,7 +827,7 @@ state Switch$
 		newMe$.Go.Common.SSetScreenName(screenName$);
 
 		// set up the appropriate stats
-		newMe$.Go.RSSetDoppelgangerStats( oldMe$.Go, statsMultiplier$ );
+		//newMe$.Go.RSSetDoppelgangerStats( oldMe$.Go, statsMultiplier$ );
 		]]
 
 		// make sure it isn't invincible
