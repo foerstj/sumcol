@@ -162,12 +162,6 @@ void CopyInventory$( go from_go$, go to_go$ )
 		// give the doppelganger the new item in the same location
 		to_go$.Inventory.RSAdd(newItem$.go, location$, AO_REFLEX, false);
 
-		// only equip if the slot is specific.
-		if( slot$ != ES_NONE )
-		{
-			to_go$.Inventory.RSEquip(slot$, newItem$, AO_REFLEX);
-		}
-
 		// do we have an inventory?  if yes, go one level deeper.  i hope no one
 		// is planning on going farther than that...
 		if( temp$.HasInventory() )
@@ -189,14 +183,23 @@ void CopyInventory$( go from_go$, go to_go$ )
 
 				// clone the item
 				GoCloneReq cloneReq2$ = MakeGoCloneReq( temp2$.GetTemplateName );
-				cloneReq2$.StartingPos = owner.Go.Placement.Position;
 				Goid newItem2$ = GoDb.SCloneGo( cloneReq2$ );
 
 				// give the doppelganger the new item in the same location
-				newItem$.Inventory.RSAdd(newItem2$.go, location2$, AO_REFLEX, false);
+				newItem$.Go.Inventory.RSAdd(newItem2$.go, location2$, AO_REFLEX, false);
 
 				j$ = j$ + 1;
 			}
+		}
+
+		// only equip if the slot is specific.
+		if( slot$ != ES_NONE )
+		{
+			to_go$.Inventory.RSEquip(slot$, newItem$, AO_REFLEX);
+		}
+		if( slot$ == ES_SPELLBOOK )
+		{
+			to_go$.Inventory.setActiveSpellbook( newItem$.Go );
 		}
 
 		i$ = i$ + 1;
