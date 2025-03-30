@@ -1,7 +1,7 @@
 [t:template,n:scroll_summon_doppelganger_lord] { specializes = scroll_summon_doppelganger_lord_base; }
 [t:template,n:scroll_summon_doppelganger_lord_base]
 {
-    specializes = base_scroll_sumcol_cm;
+    specializes = base_scroll_sumcol_cm_doppelganger;
 
     doc = "scroll Summon Doppelganger Lord";
     [aspect]
@@ -79,13 +79,13 @@
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = ((((#magic*12)+(#spell_req_level*12))*2.5) - #maxlife);
+                value = ((#maxlife*2.5) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (((#magic*12)+(#spell_req_level*12))*2.5);
+                value = (#maxlife*2.5);
             }
             [*]
             {

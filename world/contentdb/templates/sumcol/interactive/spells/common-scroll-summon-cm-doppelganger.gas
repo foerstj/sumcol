@@ -1,0 +1,48 @@
+[t:template,n:base_scroll_sumcol_cm_doppelganger]
+{
+	specializes = base_scroll_summon_dark;
+
+	category_name = "magic";
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "combat_spell_sparkle" );
+				condition* = receive_world_message("we_dropped");
+			}
+		}
+	}
+	[magic]
+	{
+		one_use = true;
+
+		apply_enchantments = false;
+		cast_range = 10;
+		cast_reload_delay = 1;
+		caster_state_name = "Controlling";
+		is_one_shot = true;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_terrain;
+		usage_context_flags = uc_passive;
+	}
+	[spell_summon_doppelganger]
+	{
+		effect_script = "summon";
+		end_script = "un_summon";
+		description = "Summoned Creature";
+		caster_description = "Controlling Summoned";
+	}
+}
+
+// DUMMY to ensure base_scroll_sumcol_cm_doppelganger is not a leaf template and not part of PContent pool!
+[t:template,n:dummy_scroll_summon_cm_doppelganger]
+{
+	specializes = base_scroll_sumcol_cm_doppelganger;
+
+	aspect:is_visible = false;
+	[common]	{ is_pcontent_allowed = false;	}
+	[gui]		{ is_droppable = false;			}
+}

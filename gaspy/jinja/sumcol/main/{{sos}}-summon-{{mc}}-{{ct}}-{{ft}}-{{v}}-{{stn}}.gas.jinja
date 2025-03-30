@@ -1,7 +1,7 @@
 [t:template,n:{{sos}}_summon_{{stn}}] { specializes = {{sos}}_summon_{{stn}}_base; }
 [t:template,n:{{sos}}_summon_{{stn}}_base]
 {
-    specializes = base_{{sos}}_sumcol_{{mc}}{% if ft == 'ex' %}_explosive{% elif ft == 'dop' %}_doppelganger{% endif %};
+    specializes = base_{{sos}}_sumcol_{{mc}}{% if ft == 'ex' %}_explosive{% elif 'dop' in ft.split('-') %}_doppelganger{% endif %};
 
     doc = "{{sos}} Summon {{csn}}";
     [aspect]
@@ -90,7 +90,7 @@
                 duration = #infinite;
                 value = (((#magic*4.2)*{{armor | float}}) - #base_defense);
             }
-			{% if ft != 'dop' %}
+			{% if 'dop' not in ft.split('-') %}
             [*]
             {
                 alteration = alter_max_life;
