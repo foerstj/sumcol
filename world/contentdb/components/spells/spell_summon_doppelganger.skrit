@@ -715,6 +715,14 @@ state Switch$
 		newMe$.Go.Mind.SetMayAttack( false );
 		newMe$.Go.Mind.SetMayBeAttacked( false );
 
+		// make it aa_good & give it caster's membership - avoid early that enemies befriend it
+		if( change_align$ && caster$.IsValid )
+		{
+			newMe$.Go.actor.ssetalignment( caster$.Go.actor.alignment );
+			newMe$.Go.SsetPlayer( caster$.Go.PlayerID );
+			newMe$.Go.Common.SCopyMembership( caster$ );
+		}
+
 		// TAT 9/29/2003 - because of timing issues, we want to be sure that the
 		//	clone is created on all machines before setting it up
 		//	so let's wait a moment
@@ -738,8 +746,13 @@ state Switch$
 
 		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My new goid: 0x%x\n", MakeInt(oldMe$), MakeInt(newMe$));
 
-		// make it aa_good
-		newMe$.Go.Actor.SSetAlignment( aa_good );
+		// make it aa_good & give it caster's membership - do it again here in case of the mentioned "timing issues"
+		if( change_align$ && caster$.IsValid )
+		{
+			newMe$.Go.actor.ssetalignment( caster$.Go.actor.alignment );
+			newMe$.Go.SsetPlayer( caster$.Go.PlayerID );
+			newMe$.Go.Common.SCopyMembership( caster$ );
+		}
 
 		#only( game )
 		[[
