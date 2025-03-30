@@ -8,7 +8,7 @@
         [other]
         {
             {% for row in data if row['test_only'] %}
-            il_main = spell_summon_{{ row['stn'] }};
+            il_main = {{ row['sos'] }}_summon_{{ row['stn'] }};
             {% endfor %}
         }
     }
