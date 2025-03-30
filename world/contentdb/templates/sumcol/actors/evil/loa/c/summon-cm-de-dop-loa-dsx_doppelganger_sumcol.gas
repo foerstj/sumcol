@@ -12,4 +12,12 @@
             // ERASED
         }
     }
+
+	[mind]
+	{
+		b actor_auto_switches_to_karate					   = true;
+		b actor_auto_switches_to_melee					   = true;
+		b actor_auto_switches_to_ranged					   = true;
+		b actor_auto_switches_to_magic					   = true;
+	}
 }
