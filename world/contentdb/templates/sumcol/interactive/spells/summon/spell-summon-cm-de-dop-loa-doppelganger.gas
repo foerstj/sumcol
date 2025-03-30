@@ -73,19 +73,19 @@
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*4.2)*1.0) - #base_defense);
+                value = (((#magic*4.2)*2.0) - #base_defense);
             }
             [*]
             {
                 alteration = alter_max_life;
                 duration = #infinite;
-                value = ((#maxlife*1.0) - #maxlife);
+                value = ((#maxlife*0.8) - #maxlife);
             }
             [*]
             {
                 alteration = alter_life;
                 duration = 1.0;
-                value = (#maxlife*1.0);
+                value = (#maxlife*0.8);
             }
             [*]
             {
