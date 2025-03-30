@@ -634,6 +634,7 @@ state ControlSummoned$
 
 		if( caster$.IsValid() )
 		{
+			summoned_goid$.Go.Actor.SRemoveGenericState( state_name$ );
 			summoned_goid$.Go.Actor.SAddGenericState( state_name$, description$, summon_duration$, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
 			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );
 			caster$.Go.Actor.SAddGenericState( owner.Go.Magic.CasterStateName, caster_description$, summon_duration$, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
@@ -758,6 +759,9 @@ state Switch$
 			newMe$.Go.SsetPlayer( caster$.Go.PlayerID );
 			newMe$.Go.Common.SCopyMembership( caster$ );
 		}
+
+		// prevent enemy doppelgangers from doppeling newMe - generic state "summoned" is one of the criteria in IsValidDoppelgangerTarget$
+		newMe$.Go.Actor.SAddGenericState( state_name$, description$, -1, caster$, owner.goid, owner.go.magic.GetMagicLevel( caster$.go ) );
 
 		// TAT 9/29/2003 - because of timing issues, we want to be sure that the
 		//	clone is created on all machines before setting it up
