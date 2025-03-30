@@ -43,7 +43,7 @@ bool IsValidDoppelgangerTarget$( Go target$ )
 }
 
 // JCD 9/3/03
-// delete all the items in the invetory of the target_go
+// delete all the items in the inventory of the target_go
 void DeleteInventory$( go target_go$ )
 {
 	// do we have an inventory
@@ -268,17 +268,37 @@ trigger OnTimer$( 2 )
 	SetState CleanUp$;
 }
 
-// cleanup if the summon is killed
-void onSummonedKilled$()
+void doPlayUnsummonEffect$( eWorldEvent e$)
 {
-	// play unsummon effect
+	// Running the effect not on the summon, but on a new point.
+	// This way it also works when the summon explodes on killed.
+
+	// Make an effect point.
+	GoCloneReq cloneReq$ = MakeGoCloneReq( "point" );
+	// MRC 7/8/2003 Bug 1412 Need to make sure the point is available on all clients.
+	cloneReq$.SetForceServerOnly(false);
+	cloneReq$.SetForceClientAllowed(true);
+	cloneReq$.StartingPos = summoned_goid$.Go.Placement.Position;
+	Goid point$ = GoDb.SCloneGo( cloneReq$ );
+
+	SiegeFx.SRunScript( end_script$, point$, point$, script_params$, point$, e$ );
+}
+void playUnsummonEffect$( eWorldEvent e$ )
+{
 	if( summoned_goid$.IsValidMp)
 	{
 		if ( end_script$ != "" )
 		{
-			SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
+			doPlayUnsummonEffect$( e$ );
 		}
 	}
+}
+
+// cleanup if the summon is killed
+void onSummonedKilled$()
+{
+	// play unsummon effect
+	playUnsummonEffect$( WE_KILLED );
 
 	this.CreateTimer( 2, .1 );  // global cleanup timer
 }
@@ -459,13 +479,7 @@ state SummonGo$
 
 void onEndSpell$()
 {
-	if( summoned_goid$.IsValidMp)
-	{
-		if ( end_script$ != "" )
-		{
-			SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_DAMAGED );
-		}
-	}
+	playUnsummonEffect$( WE_DAMAGED );
 
 	this.CreateTimer( 2, .1 );  // global cleanup timer
 }
