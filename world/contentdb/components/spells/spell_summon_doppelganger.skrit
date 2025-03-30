@@ -31,10 +31,20 @@ bool isDoppeled$ = false;
 // can we copy target$?  is it a good target?
 bool IsValidDoppelgangerTarget$( Go target$ )
 {
+	// exclusions from original Doppelganger
 	if( target$.Actor.HasGenericState("summoned") ||
 		target$.Actor.HasGenericState("DSX_mezmerizing") ||
 		target$.Actor.HasGenericState("invisibility_self") ||
 		target$.Inventory.IsPackOnly)
+	{
+		return false;
+	}
+
+	// additional exclusions for the summon - these should exclude bosses & minibosses
+	if( target$.Common.Membership.contains("immune_charm") ||
+		target$.Common.Membership.contains("immune_control") ||
+		target$.Common.Membership.contains("immune_polymorph") ||
+		target$.Common.Membership.contains("immune_align_change"))
 	{
 		return false;
 	}
