@@ -742,7 +742,7 @@ state Switch$
 		newMe$.Go.Mind.SetMayBeAttacked( true );
 
 		// give the doppelganger a generic state so that we can check if it is a dopp later on
-		newMe$.go.Actor.SAddGenericState("doppelganger", "", -1, newMe$, newMe$, 0);
+		newMe$.go.Actor.SAddGenericState("doppelganger", "Doppeled", -1, newMe$, newMe$, 0);
 
 		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My new goid: 0x%x\n", MakeInt(oldMe$), MakeInt(newMe$));
 
