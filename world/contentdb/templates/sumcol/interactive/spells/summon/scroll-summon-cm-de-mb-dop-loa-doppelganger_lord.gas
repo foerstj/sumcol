@@ -1,9 +1,9 @@
-[t:template,n:spell_summon_doppelganger_lord] { specializes = spell_summon_doppelganger_lord_base; }
-[t:template,n:spell_summon_doppelganger_lord_base]
+[t:template,n:scroll_summon_doppelganger_lord] { specializes = scroll_summon_doppelganger_lord_base; }
+[t:template,n:scroll_summon_doppelganger_lord_base]
 {
-    specializes = base_spell_sumcol_cm;
+    specializes = base_scroll_sumcol_cm;
 
-    doc = "spell Summon Doppelganger Lord";
+    doc = "scroll Summon Doppelganger Lord";
     [aspect]
     {
         gold_value = 9600;
@@ -15,8 +15,8 @@
     }
     [gui]
     {
-        active_icon =   b_gui_ig_i_ic_sp_sumcol-cm-de-mb-dop-loa-doppelganger_lord;
-        inventory_icon =b_gui_ig_i_ic_sp_sumcol-cm-de-mb-dop-loa-doppelganger_lord-inv;
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-cm-de-mb-dop-loa-doppelganger_lord;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-cm-de-mb-dop-loa-doppelganger_lord-inv;
     }
     [spell_summon_doppelganger]
     {

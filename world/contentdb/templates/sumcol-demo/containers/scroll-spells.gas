@@ -33,6 +33,7 @@
             il_main = test_spell_summon_shadowjumper_henchman;
             il_main = test_spell_summon_shadow_lunger;
             il_main = test_spell_summon_rune_master;
+            il_main = test_spell_summon_doppelganger_lord;
             il_main = test_spell_summon_rabid_spiked_maw;
             il_main = test_spell_summon_great_trog_warrior;
             il_main = test_spell_summon_shadowjumper_minion;
