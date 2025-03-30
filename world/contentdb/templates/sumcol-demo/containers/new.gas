@@ -31,7 +31,10 @@
             il_main = spell_summon_slithermage_master;
 
             // Non-Standard
+            // demonic
             il_main = spell_summon_doppelganger;
+            il_main = spell_summon_doppelganger_knave;
+            il_main = scroll_summon_doppelganger_lord;
         }
     }
 }
