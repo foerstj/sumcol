@@ -299,14 +299,27 @@ void onSummonedKilled$()
 {
 	// play unsummon effect
 	playUnsummonEffect$( WE_KILLED );
+	
+	DeleteInventory$( summoned_goid$.Go );
 
 	this.CreateTimer( 2, .1 );  // global cleanup timer
+}
+void onSummonDamaged$()
+{
+	if( isDoppeled$ && summoned_goid$.Go.Aspect.GetCurrentLife < 1.0 )
+	{
+		DeleteInventory$( summoned_goid$.Go );
+	}
 }
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
 	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) )
 	{
 		onSummonedKilled$();
+	}
+	if( ( e$ == WE_DAMAGED ) && ( summoned_goid$ == msg$.GetSendTo() ) )
+	{
+		onSummonDamaged$();
 	}
 }
 
