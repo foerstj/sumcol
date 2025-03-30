@@ -40,11 +40,17 @@ bool IsValidDoppelgangerTarget$( Go target$ )
 		return false;
 	}
 
-	// additional exclusions for the summon - these should exclude bosses & minibosses
+	// additional exclusions for the summon
+	// these should exclude bosses & minibosses
 	if( target$.Common.Membership.contains("immune_charm") ||
 		target$.Common.Membership.contains("immune_control") ||
 		target$.Common.Membership.contains("immune_polymorph") ||
 		target$.Common.Membership.contains("immune_align_change"))
+	{
+		return false;
+	}
+	// prevent doppel inception when meeting doppelganger enemies
+	if( target$.hasComponent("doppelganger") )
 	{
 		return false;
 	}
