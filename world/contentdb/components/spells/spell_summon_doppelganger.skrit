@@ -787,9 +787,10 @@ state Switch$
 
 	trigger OnTimer$(1)
 	{
-		if ( !newMe$.IsValid )
+		if ( !oldMe$.isValid() || !newMe$.isValid() || !caster$.isValid() || !doppel_target$.isValid() )
 		{
-			Report.Genericf("Doppelganger newMe is not valid\n");
+			SetState ControlSummoned$;
+			return;
 		}
 
 		// make new me visible and able to attack
@@ -803,7 +804,7 @@ state Switch$
 		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My new goid: 0x%x\n", MakeInt(oldMe$), MakeInt(newMe$));
 
 		// make it aa_good & give it caster's membership - do it again here in case of the mentioned "timing issues"
-		if( change_align$ && caster$.IsValid )
+		if( change_align$ )
 		{
 			newMe$.Go.actor.ssetalignment( caster$.Go.actor.alignment );
 			newMe$.Go.SsetPlayer( caster$.Go.PlayerID );
