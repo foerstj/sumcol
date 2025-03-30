@@ -843,34 +843,9 @@ state Switch$
 		// delete the inventory of the old body
 		DeleteInventory$(oldMe$.go);
 
-		//// JCD 8/5/03
-		//// if we are dopping into a transformed character, let the transformation manager transform it
-		////  this will make saving and loading work correctly.
-		//if( doppel_target$.go.Actor.HasGenericState("transformed") )
-		//{
-		//	#only( game )
-		//	[[
-		//	newMe$.go.Actor.SAddGenericState("transformed", "", -1, newMe$, newMe$, 0);
-		//	TransformationManager.STransformMe( newMe$.Go, 	TransformationManager.GetNewTemplateName(doppel_target$.Go), "" );
-		//	]]
-		//}
-
 		// Select the same slot as the target
 		// $$$ might want to change the slot. The target might be weilding a non-combat spell. -ET
 		newMe$.Go.Inventory.RSSelect( doppel_target$.Go.Inventory.SelectedLocation, AO_REFLEX );
-
-		//// Create a manager object to watch the new doppelganger.
-		//GoCloneReq cloneReq$ = MakeGoCloneReq( manager_template$ );
-		//cloneReq$.Omni = true;
-		//// MRC 8/4/2003 The manager should not exist on the client, and should be server only.
-		//// Need to explicitly specify this for some reason.  Otherwise, the manager was getting
-		//// created on the client, but was not being defeated.
-		//cloneReq$.SetForceClientAllowed(false);
-		//cloneReq$.SetForceServerOnly(true);
-		//Goid manager$ = GoDb.SCloneGo( cloneReq$ );
-		//SendWorldMessage( WE_REQ_ACTIVATE, newMe$, manager$ );
-
-		// report.genericf("Doppleganger: Changing.  My goid: 0x%x My manager goid: 0x%x\n", MakeInt(oldMe$), MakeInt(manager$));
 
 		// Get the radius of the new me to use to scale the effect.
 		string params$ = "";
