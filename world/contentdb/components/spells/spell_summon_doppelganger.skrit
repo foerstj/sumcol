@@ -811,7 +811,7 @@ state Switch$
 		}
 
 		// buff the doppeled guy up.
-		//owner.go.magic.SApplyEnchantments( newMe$, caster$ );
+		owner.go.magic.SApplyEnchantments( newMe$, caster$ );
 
 		#only( game )
 		[[
