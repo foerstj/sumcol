@@ -105,84 +105,68 @@ void DeleteInventory$( go target_go$ )
 // copy inventory of from_go to to_go.
 // if copy all is set, we are copying from the old doppelganger body to the new one
 // when this happens, everything copied is pcontent.
-void CopyInventory$( go from_go$, go to_go$, bool copyAll$ )
+void CopyInventory$( go from_go$, go to_go$ )
 {
 	// both actors must have an inventory.
-	if( from_go$.HasInventory() && to_go$.HasInventory() )
+	if( !from_go$.HasInventory() || !to_go$.HasInventory() )
 	{
-		// clear a collection to use
-		from_go$.Mind.TempGopColl1.Clear();
+		return;
+	}
 
-		// get everything in the inventory
-		from_go$.Inventory.ListItems(IL_ALL, from_go$.Mind.TempGopColl1);
+	// clear a collection to use
+	from_go$.Mind.TempGopColl1.Clear();
 
-		// get set to loop
-		int i$ = 0;
-		int iend$ = from_go$.Mind.TempGopColl1.Size();
-		Go temp$;
-		eInventoryLocation location$;
-		eEquipSlot slot$;
+	// get everything in the inventory
+	from_go$.Inventory.ListItems(IL_ALL, from_go$.Mind.TempGopColl1);
 
-		// loop through and copy all items from one to another
-		while( i$ < iend$ )
+	// get set to loop
+	int i$ = 0;
+	int iend$ = from_go$.Mind.TempGopColl1.Size();
+	Go temp$;
+	eInventoryLocation location$;
+	eEquipSlot slot$;
+
+	// loop through and copy all items from one to another
+	while( i$ < iend$ )
+	{
+		// get the item
+		temp$ = from_go$.Mind.TempGopColl1.Get( i$ );
+
+		// get its inventory location
+		location$ = from_go$.inventory.GetLocation(temp$);
+
+		// get its equip slot
+		slot$ = from_go$.inventory.GetEquippedSlot(temp$);
+
+		// if it is an item sitting in the targets inventory unused, we dont want it
+		if( location$ == IL_MAIN && slot$ == ES_NONE )
 		{
-			// get the item
-			temp$ = from_go$.Mind.TempGopColl1.Get( i$ );
-
-			// get its inventory location
-			location$ = from_go$.inventory.GetLocation(temp$);
-
-			// get its equip slot
-			slot$ = from_go$.inventory.GetEquippedSlot(temp$);
-
-			// if it is an item sitting in the targets inventory unused, we dont want it
-			if( location$ == IL_MAIN && slot$ == ES_NONE && !copyAll$ )
-			{
-				// report.genericf("non useful item found and NOT copied\n");
-				i$ = i$ + 1;
-				continue;
-			}
-
-			// if the location is not the selected location, we don't want to put it there.
-			if( location$ != from_go$.inventory.GetSelectedLocation() )
-			{
-				location$ = IL_MAIN;
-			}
-
-			// clone the item
-			GoCloneReq cloneReq$ = MakeGoCloneReq( temp$.GetTemplateName );
-			cloneReq$.StartingPos = owner.Go.Placement.Position;
-			Goid newItem$ = GoDb.SCloneGo( cloneReq$ );
-
-			// this is an item we are grabbing from the old dopps body and 
-			// is therefore a pcontent query result
-			if( copyAll$ )
-			{
-				#only(game)
-				[[
-				// report.genericf("setting an item as pcontent\n");
-				newItem$.go.SetIsPContentInventory(true);
-				]]
-			}
-			else
-			{
-				#only(game)
-				[[
-				newItem$.go.SetIsPContentInventory(false);
-				]]
-			}
-
-			// give the doppelganger the new item in the same location
-			to_go$.Inventory.RSAdd(newItem$.go, location$, AO_REFLEX, false);
-
-			// only equip if the slot is specific.
-			if( slot$ != ES_NONE && !copyAll$ )
-			{
-				to_go$.Inventory.RSEquip(slot$, newItem$, AO_REFLEX);
-			}
-
+			// report.genericf("non useful item found and NOT copied\n");
 			i$ = i$ + 1;
+			continue;
 		}
+
+		// if the location is not the selected location, we don't want to put it there.
+		if( location$ != from_go$.inventory.GetSelectedLocation() )
+		{
+			location$ = IL_MAIN;
+		}
+
+		// clone the item
+		GoCloneReq cloneReq$ = MakeGoCloneReq( temp$.GetTemplateName );
+		cloneReq$.StartingPos = owner.Go.Placement.Position;
+		Goid newItem$ = GoDb.SCloneGo( cloneReq$ );
+
+		// give the doppelganger the new item in the same location
+		to_go$.Inventory.RSAdd(newItem$.go, location$, AO_REFLEX, false);
+
+		// only equip if the slot is specific.
+		if( slot$ != ES_NONE )
+		{
+			to_go$.Inventory.RSEquip(slot$, newItem$, AO_REFLEX);
+		}
+
+		i$ = i$ + 1;
 	}
 }
 
@@ -785,11 +769,8 @@ state Switch$
 		// first - run through dopps inventory, deleting everything we come to
 		DeleteInventory$(newMe$.go);
 		// second - give the dopp everything the target has
-		CopyInventory$( doppel_target$.go, newMe$.go, false );
+		CopyInventory$( doppel_target$.go, newMe$.go );
 
-		// give the dopp everything from its old body
-		// everything we are giving here is pcontent.
-		//CopyInventory$( oldMe$.go, newMe$.go, true );
 		// delete the inventory of the old body
 		DeleteInventory$(oldMe$.go);
 
