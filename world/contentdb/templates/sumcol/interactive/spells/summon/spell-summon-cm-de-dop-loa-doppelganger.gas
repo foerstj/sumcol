@@ -22,7 +22,6 @@
     {
         template_name = dsx_doppelganger_sumcol_summon;
         script_params = "[scale(1.5)]";
-        statsMultiplier = 0.8;
     }
     [magic]
     {
@@ -75,6 +74,18 @@
                 alteration = alter_armor;
                 duration = #infinite;
                 value = (((#magic*4.2)*5.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((#maxlife*0.8) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (#maxlife*0.8);
             }
             [*]
             {
