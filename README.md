@@ -30,6 +30,25 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 - This mod is compatible with Unlimited Summons, except for the explosive summon (Blazing Elemental) which can still only be summoned once at a time.
 
 
+## Features
+
+- DS Versions: Both Vanilla and LoA
+- Magic Classes: Both Combat Magic and Nature Magic
+- Creature Types: All sorts of creatures are supported - humanoids, animals, demonic creatures, plants, elementals, robots, and undead.
+  Water creatures were omitted because summoning a Shrack or Hydrack on land would be weird.
+- Feature Types: The summons fall into these categories:
+  - Standard summons: The usual. A creature that fights alongside you. The bulk of the Summons Collection falls into this category.
+  - Non-Standard summons: These contain the following sub-categories (summons can fall into more than one sub-category):
+    - Stationary summons: Summons like the Skrubb can't follow you. To compensate, they cost only a fraction of the mana.
+	- Miniboss Scrolls: Minibosses can also be summoned, but only once. They have somewhat higher damage and 3 times the health of their base creatures. Their duration is also a lot longer, so be sure to heal them from time to time.
+	- Exploding summons: Summons like the Proxo explode to damage enemies. To compensate, they cost only a fraction of the mana.
+	- Resurrecting summons: The Krug Shaman can resurrect your party members when someone dies.
+	- Sub-summoning summons: Summons like the Swamp Witch will in turn summon another creature, e.g. a Swamp Slinger.
+	- Healing summons: The Tesla Heal Coil will heal you, instead of attacking enemies.
+	- Doppelganger summons: You summon a white cloud, which will turn into the first enemy it sees.
+	  Note: This is the most experimental of all non-standard categories. The Doppelganger will behave weirdly in a different way for each new enemy type. Health of the doppel is based on the enemy.
+
+
 ## Creatures
 
 Over 200 creatures are available for summoning. For a list of all supported creatures, see CREATURES.md.
