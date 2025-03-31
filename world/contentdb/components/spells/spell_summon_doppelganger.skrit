@@ -754,7 +754,7 @@ state Switch$
 		// clone who we're attacking at my location - make the player be MY player, not the player
 		//		of who I am attacking
 
-		GoCloneReq cloneReq$ = MakeGoCloneReq( doppel_target$, oldMe$.Go.PlayerId);
+		GoCloneReq cloneReq$ = MakeGoCloneReq( doppel_target$.Go.TemplateName, oldMe$.Go.PlayerId );
 		cloneReq$.StartingPos = oldMe$.Go.Placement.Position;
 		cloneReq$.SnapToTerrain = true;
 		#only( game )
