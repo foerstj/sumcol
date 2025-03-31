@@ -813,6 +813,9 @@ state Switch$
 
 		// buff the doppeled guy up.
 		owner.go.magic.SApplyEnchantments( newMe$, caster$ );
+		float life$ = doppel_target$.Go.Aspect.MaxLife * statsMultiplier$;
+		newMe$.Go.Aspect.SSetNaturalMaxLife( life$ );
+		newMe$.Go.Aspect.SSetCurrentLife( life$ );
 
 		#only( game )
 		[[
