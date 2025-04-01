@@ -157,6 +157,39 @@
 
 	[0x0000]
 	{
+		from = "Summon Doppelganger";
+		to = "Doppelganger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Doppelganger to guard the Caster.";
+		to = "Beschwört einen Doppelganger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Doppelganger Knave";
+		to = "Halunken-Doppelganger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Doppelganger Knave to guard the Caster.";
+		to = "Beschwört einen Halunken-Doppelganger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Doppelganger Lord";
+		to = "Lord-Doppelganger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Doppelganger Lord to guard the Caster.";
+		to = "Beschwört einen Lord-Doppelganger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Magma Beast";
 		to = "Magmabestie beschwören";
 	}
