@@ -27,7 +27,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ### Compatibility
 - If you play with vanilla DS, use only the vanilla dsres - LoA summons will not work properly.
-- This mod is compatible with Unlimited Summons, except for the explosive summon (Blazing Elemental) which can still only be summoned once at a time.
+- This mod is compatible with Unlimited Summons, except for the explosive summons (Proxo) and the Doppelgangers, which can still only be summoned once at a time.
 
 
 ## Features
