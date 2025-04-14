@@ -8,33 +8,37 @@
         [other]
         {
             // Standard
-            // humanoid
-            il_main = spell_summon_hassat_archer;
-            il_main = spell_summon_hassat_caster;
-            il_main = spell_summon_hassat_fighter;
-            il_main = spell_summon_hassat_ranger;
-            il_main = spell_summon_hassat_slicer;
-            il_main = spell_summon_hassat_mage;
-            il_main = spell_summon_zaurask_lightning;
-            il_main = spell_summon_zaurask_seer;
-            il_main = spell_summon_zaurask_whacker;
-            il_main = spell_summon_zaurask_slasher;
-            il_main = spell_summon_zaurask_ranger;
-            il_main = spell_summon_zaurask_leader;
-            il_main = spell_summon_zaurask_fighter;
-            il_main = spell_summon_zaurask_mage;
-            il_main = spell_summon_droc;
-            il_main = spell_summon_droc_spatter;
-            il_main = spell_summon_droc_superior;
-            il_main = spell_summon_ztrool;
+			// animals
+            il_main = spell_summon_quadscale;
+            il_main = spell_summon_molten_drake;
+			// undead
+            il_main = spell_summon_punisher;
+            il_main = spell_summon_terror_wraith;
+            il_main = spell_summon_giant_skeleton;
+            il_main = spell_summon_wraith_piercer;
+            il_main = spell_summon_wraith_warlock;
             // demonic
-            il_main = spell_summon_slithermage_master;
+            il_main = spell_summon_mucosa_raider;
+            il_main = spell_summon_seck_mage;
+            il_main = spell_summon_seck_elite_archer;
+            il_main = spell_summon_seck_archer;
+            il_main = spell_summon_seck_grunt;
+            il_main = spell_summon_lava_imp;
+            il_main = spell_summon_lava_runner;
+            il_main = spell_summon_lava_horror;
+            il_main = spell_summon_lava_mage;
+            il_main = spell_summon_seck_high_mage;
+            il_main = spell_summon_seck_elite_guard;
 
             // Non-Standard
+			// animals
+            il_main = scroll_summon_molten_steel_drake;
+			// undead
+            il_main = scroll_summon_giant_skeleton_stalker;
             // demonic
-            il_main = spell_summon_doppelganger;
-            il_main = spell_summon_doppelganger_knave;
-            il_main = scroll_summon_doppelganger_lord;
+            il_main = scroll_summon_maljin_jolt;
+            il_main = scroll_summon_maljin_phantom;
+            il_main = scroll_summon_maljin_stalker;
         }
     }
 }
