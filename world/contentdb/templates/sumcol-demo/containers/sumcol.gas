@@ -35,7 +35,9 @@
             il_main = spell_summon_soul_stinger;
             il_main = spell_summon_blue_drake;
             il_main = spell_summon_giant_lizard;
+            il_main = spell_summon_quadscale;
             il_main = spell_summon_red_drake;
+            il_main = spell_summon_molten_drake;
         }
     }
 }
@@ -83,7 +85,12 @@
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
             il_main = spell_summon_skeleton_mercenary;
+            il_main = spell_summon_punisher;
+            il_main = spell_summon_terror_wraith;
+            il_main = spell_summon_giant_skeleton;
             il_main = spell_summon_ghost;
+            il_main = spell_summon_wraith_piercer;
+            il_main = spell_summon_wraith_warlock;
         }
     }
 }
@@ -114,7 +121,18 @@
             il_main = spell_summon_forest_darkling;
             il_main = spell_summon_synged;
             il_main = spell_summon_toreck;
+            il_main = spell_summon_mucosa_raider;
+            il_main = spell_summon_seck_mage;
+            il_main = spell_summon_seck_elite_archer;
+            il_main = spell_summon_seck_archer;
+            il_main = spell_summon_seck_grunt;
+            il_main = spell_summon_lava_imp;
+            il_main = spell_summon_lava_runner;
             il_main = spell_summon_kell;
+            il_main = spell_summon_lava_horror;
+            il_main = spell_summon_lava_mage;
+            il_main = spell_summon_seck_high_mage;
+            il_main = spell_summon_seck_elite_guard;
         }
     }
 }
@@ -203,6 +221,7 @@
             il_main = scroll_summon_grizzly_furok;
             il_main = scroll_summon_rabid_spiked_maw;
             il_main = spell_summon_googore;
+            il_main = scroll_summon_molten_steel_drake;
         }
     }
 }
@@ -239,6 +258,7 @@
             il_main = scroll_summon_dark_wraith_mage;
             il_main = scroll_summon_warrior_wraith;
             il_main = scroll_summon_skeleton_mercenary_captain;
+            il_main = scroll_summon_giant_skeleton_stalker;
         }
     }
 }
@@ -267,6 +287,9 @@
         {
             il_main = scroll_summon_mucosa_brute;
             il_main = scroll_summon_fury_spawn;
+            il_main = scroll_summon_maljin_jolt;
+            il_main = scroll_summon_maljin_phantom;
+            il_main = scroll_summon_maljin_stalker;
         }
     }
 }

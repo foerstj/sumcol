@@ -1,7 +1,7 @@
-SUMMONS COLLECTION CREATURES: 252
+SUMMONS COLLECTION CREATURES: 275
 
-Vanilla Standard Creatures: 101
-- Animals: 29
+Vanilla Standard Creatures: 119
+- Animals: 31
   - Phrak
   - Phrak Piercer
   - Snapper
@@ -30,7 +30,9 @@ Vanilla Standard Creatures: 101
   - Soul Stinger
   - Blue Drake
   - Giant Lizard
+  - Quadscale
   - Red Drake
+  - Molten Drake
 - Elementals: 13
   - Gargoyle
   - Ice Fly
@@ -45,7 +47,7 @@ Vanilla Standard Creatures: 101
   - Swamp Creature
   - Lava Spirit Fighter
   - Lava Beast
-- Undead: 11
+- Undead: 16
   - Skeleton Guard
   - Walking Corpse
   - Skeleton Archer
@@ -56,16 +58,32 @@ Vanilla Standard Creatures: 101
   - Wraith Mage
   - Skeleton Ranger
   - Skeleton Mercenary
+  - Punisher
+  - Terror Wraith
+  - Giant Skeleton
   - Ghost
+  - Wraith Piercer
+  - Wraith Warlock
 - Plants: 0
-- Demonics: 7
+- Demonics: 18
   - Vile Mucosa
   - Dark Mucosa
   - Horrid
   - Forest Darkling
   - Synged
   - Toreck
+  - Mucosa Raider
+  - Seck Mage
+  - Seck Elite Archer
+  - Seck Archer
+  - Seck Grunt
+  - Lava Imp
+  - Lava Runner
   - Kell
+  - Lava Horror
+  - Lava Mage
+  - Seck High Mage
+  - Seck Elite Guard
 - Robots: 10
   - Hunter
   - Kill Bot
@@ -110,8 +128,8 @@ Vanilla Standard Creatures: 101
   - Droog Mage
   - Droog Grunt
 
-Vanilla Non-Standard Creatures: 51
-- Animals: 11
+Vanilla Non-Standard Creatures: 56
+- Animals: 12
   - Farm Skrubb
   - Phrak Ballista
   - Alpha Wolf
@@ -123,13 +141,14 @@ Vanilla Non-Standard Creatures: 51
   - Grizzly Furok
   - Rabid Spiked Maw
   - Googore
+  - Molten Steel Drake
 - Elementals: 5
   - Frost Archer
   - Frost Warrior
   - Swamp Abomination
   - Blazing Elemental
   - Magma Beast
-- Undead: 7
+- Undead: 8
   - Ancient Corpse
   - Skeleton Captain
   - Dark Wolf
@@ -137,12 +156,16 @@ Vanilla Non-Standard Creatures: 51
   - Dark Wraith Mage
   - Warrior Wraith
   - Skeleton Mercenary Captain
+  - Giant Skeleton Stalker
 - Plants: 2
   - Tretch
   - Infested Larch
-- Demonics: 2
+- Demonics: 5
   - Mucosa Brute
   - Fury Spawn
+  - Maljin Jolt
+  - Maljin Phantom
+  - Maljin Stalker
 - Robots: 3
   - Tesla Coil
   - Tesla Heal Coil

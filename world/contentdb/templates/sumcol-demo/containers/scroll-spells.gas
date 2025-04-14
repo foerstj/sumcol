@@ -56,9 +56,14 @@
             il_main = test_spell_summon_bile_lunger;
             il_main = test_spell_summon_warrior_wraith;
             il_main = test_spell_summon_skeleton_mercenary_captain;
+            il_main = test_spell_summon_giant_skeleton_stalker;
             il_main = test_spell_summon_droog_captain;
             il_main = test_spell_summon_ferocious_braak;
+            il_main = test_spell_summon_maljin_jolt;
+            il_main = test_spell_summon_maljin_phantom;
+            il_main = test_spell_summon_maljin_stalker;
             il_main = test_spell_summon_magma_beast;
+            il_main = test_spell_summon_molten_steel_drake;
         }
     }
 }

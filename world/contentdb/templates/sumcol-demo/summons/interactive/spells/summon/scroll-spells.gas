@@ -383,6 +383,13 @@
     common:is_pcontent_allowed = false;
     magic:one_use = false;
 }
+[t:template,n:test_spell_summon_giant_skeleton_stalker]
+{
+    specializes = scroll_summon_giant_skeleton_stalker_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
 [t:template,n:test_spell_summon_droog_captain]
 {
     specializes = scroll_summon_droog_captain_base;
@@ -397,9 +404,37 @@
     common:is_pcontent_allowed = false;
     magic:one_use = false;
 }
+[t:template,n:test_spell_summon_maljin_jolt]
+{
+    specializes = scroll_summon_maljin_jolt_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_maljin_phantom]
+{
+    specializes = scroll_summon_maljin_phantom_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_maljin_stalker]
+{
+    specializes = scroll_summon_maljin_stalker_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
 [t:template,n:test_spell_summon_magma_beast]
 {
     specializes = scroll_summon_magma_beast_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_molten_steel_drake]
+{
+    specializes = scroll_summon_molten_steel_drake_base;
 
     common:is_pcontent_allowed = false;
     magic:one_use = false;
