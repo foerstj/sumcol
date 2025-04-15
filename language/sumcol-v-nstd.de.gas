@@ -135,6 +135,17 @@
 
 	[0x0000]
 	{
+		from = "Summon Molten Steel Drake";
+		to = "Drachen aus geschmolzenem Stahl beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Molten Steel Drake to guard the Caster.";
+		to = "Beschwört einen Drachen aus geschmolzenem Stahl, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Mucosa Brute";
 		to = "Mucosa-Schläger beschwören";
 	}
@@ -186,6 +197,39 @@
 	{
 		from = "Summons a Doppelganger Lord to guard the Caster.";
 		to = "Beschwört einen Lord-Doppelganger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Maljin Stalker";
+		to = "Maljin-Pirschjäger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Maljin Stalker to guard the Caster.";
+		to = "Beschwört einen Maljin-Pirschjäger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Maljin Jolt";
+		to = "Maljin-Schützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Maljin Jolt to guard the Caster.";
+		to = "Beschwört einen Maljin-Schützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Maljin Phantom";
+		to = "Maljin-Phantom beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Maljin Phantom to guard the Caster.";
+		to = "Beschwört ein Maljin-Phantom, das den Anwender verteidigt.";
 	}
 
 	[0x0000]
@@ -593,6 +637,17 @@
 	{
 		from = "Summons a Skeleton Mercenary Captain to guard the Caster.";
 		to = "Beschwört einen Söldnerskeletthauptmann, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Giant Skeleton Stalker";
+		to = "Riesenskelettpirscher beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Skeleton Stalker to guard the Caster.";
+		to = "Beschwört einen Riesenskelettpirscher, der den Anwender verteidigt.";
 	}
 
 }

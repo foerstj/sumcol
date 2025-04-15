@@ -322,6 +322,28 @@
 
 	[0x0000]
 	{
+		from = "Summon Quadscale";
+		to = "Quadscale beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Quadscale to guard the Caster.";
+		to = "Beschwört ein Quadscale, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Molten Drake";
+		to = "Geschmolzenen Drachen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Molten Drake to guard the Caster.";
+		to = "Beschwört einen Geschmolzenen Drachen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Horrid";
 		to = "Fürchterlich beschwören";
 	}
@@ -395,6 +417,127 @@
 	{
 		from = "Summons a Kell to guard the Caster.";
 		to = "Beschwört einen Kell, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mucosa Raider";
+		to = "Mucosa-Räuber beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mucosa Raider to guard the Caster.";
+		to = "Beschwört einen Mucosa-Räuber, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Lava Imp";
+		to = "Lavateufel beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Lava Imp to guard the Caster.";
+		to = "Beschwört einen Lavateufel, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Lava Runner";
+		to = "Lavarenner beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Lava Runner to guard the Caster.";
+		to = "Beschwört einen Lavarenner, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Lava Horror";
+		to = "Lavahorror beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Lava Horror to guard the Caster.";
+		to = "Beschwört einen Lavahorror, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Lava Mage";
+		to = "Lavamagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Lava Mage to guard the Caster.";
+		to = "Beschwört einen Lavamagier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Seck Grunt";
+		to = "Seck-Fußsoldat beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Seck Grunt to guard the Caster.";
+		to = "Beschwört einen Seck-Fußsoldat, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Seck Archer";
+		to = "Seck-Bogenschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Seck Archer to guard the Caster.";
+		to = "Beschwört einen Seck-Bogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Seck Mage";
+		to = "Seck-Magier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Seck Mage to guard the Caster.";
+		to = "Beschwört einen Seck-Magier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Seck Elite Guard";
+		to = "Seck-Elitewache beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Seck Elite Guard to guard the Caster.";
+		to = "Beschwört eine Seck-Elitewache, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Seck Elite Archer";
+		to = "Seck-Elitebogenschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Seck Elite Archer to guard the Caster.";
+		to = "Beschwört einen Seck-Elitebogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Seck High Mage";
+		to = "Seck-Meistermagier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Seck High Mage to guard the Caster.";
+		to = "Beschwört einen Seck-Meistermagier, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
@@ -1110,6 +1253,61 @@
 	{
 		from = "Summons a Zombie to guard the Caster.";
 		to = "Beschwört einen Zombie, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Punisher";
+		to = "Bestrafer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Punisher to guard the Caster.";
+		to = "Beschwört einen Bestrafer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Terror Wraith";
+		to = "Schreckgespenst beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Terror Wraith to guard the Caster.";
+		to = "Beschwört ein Schreckgespenst, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Wraith Piercer";
+		to = "Geisterschlitzer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Wraith Piercer to guard the Caster.";
+		to = "Beschwört einen Geisterschlitzer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Wraith Warlock";
+		to = "Hexenmeistergespenst beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Wraith Warlock to guard the Caster.";
+		to = "Beschwört ein Hexenmeistergespenst, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Giant Skeleton";
+		to = "Riesenskelett beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Giant Skeleton to guard the Caster.";
+		to = "Beschwört ein Riesenskelett, das den Anwender verteidigt.";
 	}
 
 }
