@@ -21,7 +21,7 @@
     [spell_summon]
     {
         template_name = wraith_piercer_summon;
-        script_params = "[scale(1.5)]";
+        script_params = "[scale(2.5)]";
     }
     [magic]
     {
