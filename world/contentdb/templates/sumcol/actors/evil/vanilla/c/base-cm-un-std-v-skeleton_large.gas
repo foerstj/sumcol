@@ -1,0 +1,155 @@
+[t:template,n:skeleton_large_base]  // = skeleton_large
+{
+	category_name = "1W_evil_c";
+	doc = "Skeleton_large";
+	specializes = base_skeleton;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	35, 0;
+			intelligence =  7, 0;
+			dexterity =  	9, 0;
+			melee =  		24,  0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 55000;
+		life = 1200;
+		max_life = 1200;
+		mana = 4;
+		max_mana = 4;
+		[textures]	{0=b_c_ecm_sk-02;}
+        scale_base = 1.5;
+	}
+	[attack]
+	{
+		damage_max = 80;
+		damage_min = 60;
+	}
+
+	[body]
+	{
+		armor_version = ecm_sk;
+		avg_move_velocity = 1.500000;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine2;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine;
+			shield_bone = shield_grip;
+			weapon_bone = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_ecm_sk_fs;
+			[chore_attack]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					02 = at-03;
+					04 = at-05;
+					05 = at-06;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_fidget;
+				[anim_files]
+				{
+					00 = dff;
+					01 = dff-02;
+					02 = dff-03;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_walk;
+				[anim_files] { 00=wl-02; }
+			}
+		}
+	}
+
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_bone_dirty_01 = 1;
+			frag_glb_bone_dirty_02 = 1;
+			frag_glb_bone_dirty_03 = 1;
+			frag_glb_bone_dirty_04 = 4;
+			frag_glb_bone_dirty_05 = 1;
+			frag_glb_bone_dirty_06 = 1;
+		}
+	}
+	[common] { screen_name="Giant Skeleton"; }
+	[defend] { defense=430; }
+	[inventory]
+	{
+		[pcontent]
+		{
+   			[oneof*]
+			{
+  				es_weapon_hand = sd_g_c_sd_1h_avg;
+            }
+
+			es_shield_hand = #shield/-no_mod/150-380;
+
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/109-135;
+					il_main = #armor/60-303;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/122-144;
+	                il_main = #armor/-rare(1)/355-380;
+                    il_main = #*/-rare(1)/122-144;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/122-144;
+	                il_main = #armor/-unique(2)/355-380;
+                    il_main = #*/-unique(2)/122-144;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 22457;
+					min = 17754;
+				}
+			}
+        }
+	}
+    [mind]
+	{
+		melee_engage_range = 14.0;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+		personal_space_range = 1.4;
+	}
+}

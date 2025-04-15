@@ -1,0 +1,105 @@
+[t:template,n:drake_molten_boss_01_base]  // = drake_molten_boss_01
+{
+	category_name = "1W_evil_d";
+	doc = "drake_molten boss 01";
+	specializes = drake_molten_base;
+
+   	[actor]
+	{
+		[skills]
+		{
+			strength =  	70, 0;
+			intelligence =  19, 0;
+			dexterity =  	47, 0;
+            melee =  		52, 0;
+            combat_magic =  39, 0;
+		}
+	}
+	[aspect]
+	{
+		draw_shadow = false;
+		experience_value = 255000;
+		life = 2540;
+		max_life = 2540;
+		mana = 34;
+        max_mana = 34;
+		model=m_c_edm_dk_pos_1;
+ 		[textures] { 0=b_c_edm_dk-06; }
+
+        scale_base = 0.65;
+
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 253;
+		damage_min = 229;
+	}
+	[common]
+	{
+        screen_name="Molten Steel Drake";
+        membership=monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("drake_wing");
+				condition* = receive_world_message("we_anim_sfx",2);
+			}
+			[*]
+			{
+				action* = call_sfx_script("drake_scream");
+				condition* = receive_world_message("we_anim_sfx",3);
+			}
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_red(sgx)");
+			}
+
+		}
+
+	}
+   	[defend] { defense=830; }
+    [mind] 	{ personal_space_range = 0.9; }
+   	[inventory]
+	{
+    	selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_drake_breath_molten; }
+
+		[pcontent]
+		{
+			[all*]
+			{
+				[oneof*]
+				{
+					il_main = #*/150-180;
+					il_main = #armor/420-490;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/180-210;
+	                il_main = #armor/-rare(1)/420-490;
+                    il_main = #*/-rare(1)/180-210;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/180-210;
+	                il_main = #armor/-unique(2)/420-490;
+                    il_main = #*/-unique(2)/180-210;
+	            }
+				[gold*]
+				{
+					max = 71345;
+					min = 65784;
+					min_pile = 7210;
+					piles = 5 - 7;
+				}
+			}
+		}
+	}
+}

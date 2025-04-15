@@ -1,0 +1,21 @@
+[t:template,n:wraith_terror_summon]
+{
+    specializes = wraith_terror_base;
+
+    doc = "[summon] wraith_terror";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = ax_g_c_2h2b_fun;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	mind:jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+}

@@ -1,0 +1,20 @@
+[t:template,n:skeleton_large_summon]
+{
+    specializes = skeleton_large_base;
+
+    doc = "[summon] Skeleton_large";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+            es_weapon_hand = sd_g_c_sd_1h_avg;
+        }
+		[pcontent]
+		{
+			es_shield_hand = #shield/-no_mod/150-380;
+		}
+	}
+}

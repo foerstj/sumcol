@@ -1,0 +1,22 @@
+[t:template,n:punisher_good_summon]
+{
+	specializes = punisher_base;
+
+	category_name = "1W_evil_d";
+	doc = "[summon] punisher";
+
+	aspect:experience_value = 0;
+	physics:explode_when_killed = false;
+	[inventory]
+	{
+    	selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell=spell_punisher_burn; }
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+[t:template,n:warlock_summon]
+{
+    specializes = warlock_base;
+
+    doc = "[summon] warlock";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	mind:jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+}

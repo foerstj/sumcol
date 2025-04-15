@@ -1,0 +1,8 @@
+[t:template,n:quadscale_summon]
+{
+    specializes = quadscale_base;
+
+    doc = "[summon] quadscale";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+}

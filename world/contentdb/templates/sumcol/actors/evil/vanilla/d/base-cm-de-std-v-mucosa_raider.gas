@@ -1,0 +1,97 @@
+[t:template,n:mucosa_raider_base]  // = mucosa_raider
+{
+	category_name = "1W_evil_d";
+	doc = "mucosa_raider";
+	specializes = base_mucosa;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	35, 0;
+			intelligence =  11, 0;
+			dexterity =  	22, 0;
+            melee =         25, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 55000;
+		life = 1240;
+        max_life = 1240;
+        mana = 10;
+		max_mana = 10;
+		scale_base = 1.20;
+		textures:0 = b_c_edm_mu-05;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_mucosa_large_SED;	}
+			[enemy_spotted]	{ priority = high; * = s_e_call_mucosa_big_SED; 	}
+			[hit_glance]	{ priority = low; * = s_e_hit_mucosa_large_SED;	}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 205;
+		damage_min = 185;
+	}
+	[common] { screen_name="Mucosa Raider"; }
+	[defend] { defense=430; }
+	[generator_in_object]
+	{
+		spawn_chance = 0.5;
+		child_template_name = body_glb_mucosa_05;
+	}
+	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.35;
+					il_main = #*/82-136;
+                    il_main = #armor/61-310;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/131-152;
+	                il_main = #armor/-rare(1)/400-479;
+                    il_main = #*/-rare(1)/131-152;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/131-152;
+	                il_main = #armor/-unique(2)/400-479;
+                    il_main = #*/-unique(2)/131-152;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 23964;
+					min = 21345;
+				}
+			}
+		}
+	}
+   	[mind]
+	{
+		personal_space_range = 1.1;
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_mucosa_raider_01 = 1;
+			frag_glb_mucosa_raider_02 = 1;
+			frag_glb_mucosa_raider_03 = 2;
+			frag_glb_mucosa_raider_04 = 3;
+			frag_glb_mucosa_raider_05 = 1;
+			frag_glb_mucosa_raider_06 = 1;
+			frag_glb_mucosa_raider_07 = 3;
+		}
+	}
+}

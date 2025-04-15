@@ -1,0 +1,143 @@
+[t:template,n:wraith_piercer_base]  // = wraith_piercer
+{
+	category_name = "1W_evil_c";
+	doc = "wraith_piercer";
+	specializes = base_wraith;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		26, 0;
+			intelligence = 	9, 0;
+			dexterity = 	27, 0;
+            melee =  		27, 0;
+            ranged = 		27, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 77000;
+		life = 765;
+		max_life = 765;
+		mana = 16;
+		max_mana = 16;
+		model = m_c_ecm_wr_pos_2;
+		[textures] { 0=b_c_ecm_wr-03; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 151;
+		damage_min = 118;
+	}
+	[body]
+	{
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_ecm_wr_fs;
+			[chore_attack]
+			{
+				chore_stances = 6;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					qffg = dff;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 6;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 6;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+/*			[chore_misc] //$$$ uncomment me when I have FS6 "ds" and "up" anims
+			{
+				chore_stances = 3;
+				skrit = select_transition;
+				[anim_files]
+				{
+					stil = ds;
+					wake = up;
+				}
+			}*/
+			[chore_fidget]
+			{
+				chore_stances = 6;
+				skrit = select_fidget;
+				[anim_files]
+				{
+					00=dff;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 6;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	[common] { screen_name="Wraith Piercer"; }
+   	[defend] { defense=355; }
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[pcontent]
+		{
+			[oneof*]
+			{
+				es_shield_hand = bw_un_seck_avg;
+			}
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.35;
+					il_main = #*/72-127;
+                    il_main = #armor/64-316;
+	                il_main = #nmagic/15-48;
+	                il_main = #cmagic/15-48;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/128-140;
+	                il_main = #armor/-rare(1)/423-444;
+                    il_main = #*/-rare(1)/128-140;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/128-140;
+	                il_main = #armor/-unique(2)/423-444;
+                    il_main = #*/-unique(2)/128-140;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 24055;
+					min = 21567;
+				}
+			}
+		}
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_wraith_piercer_01 = 1;
+			frag_glb_wraith_piercer_02 = 1;
+			frag_glb_wraith_piercer_03 = 2;
+			frag_glb_wraith_piercer_04 = 1;
+			frag_glb_wraith_piercer_05 = 3;
+			frag_glb_wraith_piercer_06 = 1;
+		}
+	}
+}
