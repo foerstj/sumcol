@@ -1,0 +1,21 @@
+[t:template,n:seck_archer_elite_summon]
+{
+    specializes = seck_archer_elite_base;
+
+	doc = "[summon] Seck_archer_elite";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+			es_shield_hand = bw_un_seck_fin;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

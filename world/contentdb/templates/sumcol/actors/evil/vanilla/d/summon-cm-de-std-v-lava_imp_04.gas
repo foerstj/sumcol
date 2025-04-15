@@ -1,0 +1,15 @@
+[t:template,n:lava_imp_04_good_summon]
+{
+    specializes = lava_imp_04_base;
+
+	doc = "[summon] lava_imp_04";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

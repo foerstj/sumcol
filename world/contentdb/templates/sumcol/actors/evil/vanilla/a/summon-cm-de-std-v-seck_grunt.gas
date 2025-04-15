@@ -1,0 +1,20 @@
+[t:template,n:seck_grunt_summon]
+{
+    specializes = seck_grunt_base;
+
+	doc = "[summon] Seck Grunt";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+			es_weapon_hand = sd_un_seck_1h_avg;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

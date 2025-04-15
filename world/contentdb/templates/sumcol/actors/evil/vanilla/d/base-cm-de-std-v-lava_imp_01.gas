@@ -1,0 +1,71 @@
+[t:template,n:lava_imp_01_base]  // = lava_imp_01
+{
+	category_name = "1W_evil_d";
+	doc = "lava_imp_01";
+	specializes = base_imp;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		37, 0;
+			intelligence = 	12, 0;
+			dexterity = 	16, 0;
+			melee =  		40, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 87000;
+		life = 920;
+		max_life = 920;
+		mana = 14;
+		max_mana = 14;
+		model = m_c_edm_li_pos_1;
+		[textures] { 0=b_c_edm_li; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 200;
+		damage_min = 160;
+	}
+	[common]
+	{
+		screen_name="Lava Imp";
+		membership = monster, party_lava_imp_02;
+	}
+	[defend] { defense=500; }
+	[inventory]
+	{
+    	[pcontent]
+		{
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.35;
+					il_main = #*/120-150;
+	                il_main = #spell/45-58;
+   				    il_main = potion_health_large;
+				    il_main = potion_mana_large;
+				}
+				[gold*]
+				{
+					chance = 0.125;
+					max = 23678;
+					min = 19456;
+				}
+			}
+         }
+	}
+	[mind]
+	{
+		jat_brain							 = world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		 = true;
+
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14;
+	}
+}

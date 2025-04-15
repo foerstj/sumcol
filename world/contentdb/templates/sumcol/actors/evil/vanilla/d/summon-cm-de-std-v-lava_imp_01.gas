@@ -1,0 +1,16 @@
+[t:template,n:lava_imp_01_summon]
+{
+    specializes = lava_imp_01_base;
+
+	doc = "[summon] lava_imp_01";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

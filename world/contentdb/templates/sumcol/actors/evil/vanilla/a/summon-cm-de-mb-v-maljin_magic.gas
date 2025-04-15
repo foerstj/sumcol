@@ -1,0 +1,15 @@
+[t:template,n:maljin_magic_summon]
+{
+    specializes = maljin_magic_base;
+
+	doc = "[summon] maljin magic";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

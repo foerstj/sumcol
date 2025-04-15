@@ -1,0 +1,84 @@
+[t:template,n:maljin_melee_base]  // = maljin_melee
+{
+	category_name = "1W_evil_a";
+	doc = "maljin melee";
+	specializes = base_maljin;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		37, 0;
+			intelligence = 	14, 0;
+			dexterity = 	38, 0;
+			melee =  		30, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 87000;
+		life = 1420;
+		max_life = 1420;
+		mana = 1114;
+		max_mana = 1114;
+		model = m_c_edm_li_pos_2;
+		scale_base = 1.4;
+		[textures] { 0 = b_c_edm_li-02; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 215;
+		damage_min = 160;
+	}
+	[common]
+	{
+		screen_name = "Maljin Stalker";
+		membership	= party_maljin_ranged, monster;
+	}
+	[defend] { defense = 650; }
+	[inventory]
+	{
+    	[pcontent]
+		{
+   			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/84-128;
+					il_main = #armor/160-297;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/128-140;
+	                il_main = #armor/-rare(1)/350-400;
+                    il_main = #*/-rare(1)/128-140;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/128-140;
+	                il_main = #armor/-unique(2)/350-400;
+                    il_main = #*/-unique(2)/128-140;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 25024;
+					min = 20483;
+				}
+			}
+         }
+	}
+	[mind]
+	{
+		jat_brain						 = world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		 = true;
+
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14;
+	}
+}

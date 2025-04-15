@@ -1,0 +1,15 @@
+[t:template,n:maljin_melee_summon]
+{
+    specializes = maljin_melee_base;
+
+	doc = "[summon] maljin melee";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

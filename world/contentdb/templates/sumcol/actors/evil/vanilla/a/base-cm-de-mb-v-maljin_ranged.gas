@@ -1,0 +1,95 @@
+[t:template,n:maljin_ranged_base]  // = maljin_ranged
+{
+	category_name = "1W_evil_a";
+	doc = "maljin ranged";
+	specializes = base_maljin_ranged;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		31, 0;
+			intelligence = 	18, 0;
+			dexterity = 	46, 0;
+			melee =  		20, 0;
+   			ranged =  		29, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 87000;
+		life = 960;
+		max_life = 960;
+		mana = 1104;
+		max_mana = 1104;
+		model = m_c_edm_li_pos_3;
+		scale_base = 1.4;
+		[textures] { 0 = b_c_edm_li-03; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 180;
+		damage_min = 150;
+	}
+	[common]
+	{
+		screen_name = "Maljin Jolt";
+		membership	= party_maljin_ranged, monster;
+	}
+	[defend] { defense = 440; }
+	[inventory]
+	{
+    	[pcontent]
+		{
+   			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/100-130;
+					il_main = #armor/120-300;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/128-140;
+	                il_main = #armor/-rare(1)/350-400;
+                    il_main = #*/-rare(1)/128-140;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/128-140;
+	                il_main = #armor/-unique(2)/350-400;
+                    il_main = #*/-unique(2)/128-140;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 22510;
+					min = 20451;
+				}
+			}
+        }
+		selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell=spell_maljin_spike_01;
+			il_spell_1 = spell_maljin_spike_01;
+			il_spell_2 = spell_maljin_spike_02;
+			il_spell_3 = spell_maljin_spike_03;
+		}
+	}
+	[mind]
+	{
+		jat_brain						 = world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		= true
+			&actor_creates_own_party		= true
+			&party_template					= party_maljin_ranged;
+
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14;
+	}
+}

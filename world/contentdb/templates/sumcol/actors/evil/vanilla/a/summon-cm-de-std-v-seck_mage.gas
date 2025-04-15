@@ -1,0 +1,20 @@
+[t:template,n:seck_mage_summon]
+{
+    specializes = seck_mage_base;
+
+	doc = "[summon] Seck Mage";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+        [equipment]
+        {
+			es_weapon_hand = st_un_seck_mage;
+        }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

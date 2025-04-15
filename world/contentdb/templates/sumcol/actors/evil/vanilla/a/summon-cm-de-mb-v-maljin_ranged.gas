@@ -1,0 +1,16 @@
+[t:template,n:maljin_ranged_summon]
+{
+    specializes = maljin_ranged_base;
+
+	doc = "[summon] maljin ranged";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

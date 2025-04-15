@@ -1,0 +1,89 @@
+[t:template,n:maljin_magic_base]  // = maljin_magic
+{
+	category_name = "1W_evil_a";
+	doc = "maljin magic";
+	specializes = base_maljin_magic;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		30, 0;
+			intelligence = 	25, 0;
+			dexterity = 	35, 0;
+			melee =  		15, 0;
+            combat_magic = 	33, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 87000;
+		life = 900;
+		max_life = 900;
+		mana = 2214;
+		max_mana = 2214;
+		model = m_c_edm_li_pos_4;
+		scale_base = 1.4;
+		[textures] { 0 = b_c_edm_li-04; }
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 180;
+		damage_min = 140;
+	}
+	[common]
+	{
+		screen_name = "Maljin Phantom";
+	}
+	[defend] { defense = 370; }
+	[inventory]
+	{
+    	[pcontent]
+		{
+   			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.25;
+					il_main = #*/84-128;
+					il_main = #armor/60-297;
+				}
+				[oneof*]
+				{
+	            	chance = 0.004;
+	                il_main = #weapon/-rare(1)/128-140;
+	                il_main = #armor/-rare(1)/350-400;
+                    il_main = #*/-rare(1)/128-140;
+                }
+				[oneof*]
+				{
+                	chance = 0.002;
+	                il_main = #weapon/-unique(2)/128-140;
+	                il_main = #armor/-unique(2)/350-400;
+                    il_main = #*/-unique(2)/128-140;
+	            }
+				[gold*]
+				{
+					chance = 0.125;
+					max = 24210;
+					min = 18452;
+				}
+			}
+        }
+        selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			il_active_primary_spell=spell_maljin_ball_01;
+			il_spell_1 = spell_maljin_ball_01;
+			il_spell_2 = spell_maljin_ball_02;
+			il_spell_3 = spell_maljin_ball_03;
+		}
+	}
+	[mind]
+	{
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14;
+	}
+}
