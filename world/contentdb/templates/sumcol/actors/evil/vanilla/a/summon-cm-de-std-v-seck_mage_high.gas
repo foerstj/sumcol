@@ -12,6 +12,10 @@
         {
 			es_weapon_hand = st_un_seck_mage;
         }
+		[other]
+		{
+			il_active_primary_spell = spell_flame_blades_summon;
+		}
 		[pcontent]
 		{
             // ERASED
