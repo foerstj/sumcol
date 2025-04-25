@@ -21,7 +21,7 @@
     [spell_summon]
     {
         template_name = dsx_golem_clockwork_summon;
-        script_params = "[scale(2.5)]";
+        script_params = "[scale(3.0)]";
     }
     [magic]
     {
