@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 292
+SUMMONS COLLECTION CREATURES: 291
 
 Vanilla Standard Creatures: 119
 - Animals: 31
@@ -193,7 +193,7 @@ Vanilla Non-Standard Creatures: 56
   - Droog Captain
   - Ferocious Braak
 
-LoA Standard Creatures: 98
+LoA Standard Creatures: 97
 - Animals: 29
   - Ice Grub
   - Ice Moth
@@ -246,7 +246,7 @@ LoA Standard Creatures: 98
   - Whelnar's Eyes
   - Rune Fiend
   - Slithermage Master
-- Robots: 14
+- Robots: 13
   - Rusted Automaton
   - Weathered Automaton
   - Ancient Scorpiot
@@ -260,7 +260,6 @@ LoA Standard Creatures: 98
   - Scorpiot Slasher
   - Automaton Blade
   - Clockwork Automaton
-  - Flechette
 - Humanoids: 37
   - Jungle Slinger
   - Gulik

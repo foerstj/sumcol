@@ -19,14 +19,13 @@
             il_main = spell_summon_scorpiot_slasher;
             il_main = spell_summon_automaton_blade;
             il_main = spell_summon_clockwork_automaton;
-            il_main = spell_summon_flechette;
+            il_main = spell_summon_gobbot_general;
 			// humanoid
             il_main = spell_summon_goblin_blackguard;
             il_main = spell_summon_mountain_troll;
             il_main = spell_summon_mutant_goblin_hurler;
             il_main = spell_summon_mutant_goblin_warrior;
             il_main = spell_summon_goblin_headsman;
-            il_main = spell_summon_gobbot_general;
 
             // Non-Standard
         }

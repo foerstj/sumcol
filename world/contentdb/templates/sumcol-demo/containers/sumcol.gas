@@ -470,7 +470,6 @@
             il_main = spell_summon_scorpiot_slasher;
             il_main = spell_summon_automaton_blade;
             il_main = spell_summon_clockwork_automaton;
-            il_main = spell_summon_flechette;
         }
     }
 }
