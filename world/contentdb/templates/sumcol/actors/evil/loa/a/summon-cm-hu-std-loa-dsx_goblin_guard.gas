@@ -12,4 +12,5 @@
             // ERASED
 		}
 	}
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
 }
