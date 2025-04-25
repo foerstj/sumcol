@@ -1,0 +1,144 @@
+[t:template,n:dsx_automaton_flying_one_base]  // = dsx_automaton_flying_one
+{
+// Balanced to level 27, easy melee
+	category_name = "1W_evil_d";
+	doc = "dsx_automaton_flying_one";
+	specializes = actor_evil;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	= 19, 0;
+			intelligence =	8, 0;
+			dexterity 	= 16, 0;
+			melee 		= 21, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1195;
+		life = 255;
+		max_life = 255;
+		mana = 12;
+		max_mana = 12;
+		model = m_c_edm_aw;
+		material = steel;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_copter_SED; }
+			[enemy_spotted]	{ priority = high; * = s_e_call_mechanoid_flying_sed;	}
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 95;
+		damage_min = 87;
+	}
+	[body]
+	{
+		min_move_velocity = 3.000000;
+		avg_move_velocity = 4.000000;
+		[bone_translator]
+		{
+			body_anterior = head_top;
+			body_mid = root_to_abdom;
+			body_posterior = abdomend;
+			kill_bone = root_bone;
+			shield_bone = lf_end;
+			weapon_bone = rf_end;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_aw_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=fl; }
+			}
+		}
+	}
+	[common] 
+	{ 
+		screen_name="Mechanized Wasp"; 
+		membership = automaton, monster, immune_freeze;
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("automaton_wasp");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+	[defend] { defense=137; }
+	[mind]
+	{
+		jat_fidget				= world\ai\jobs\common\job_fidget.skrit
+		?curious				= 0.75
+		&wander					= 0.8
+		&social					= 0.2
+		&interest				= interest
+		&delay_min				= 1
+		&delay_max				= 6
+		&still					= false;
+		on_enemy_spotted_alert_friends 		= true;
+		jat_brain				= world\ai\jobs\common\brain_hero.skrit
+		?actor_joins_existing_party		= true
+		&actor_creates_own_party		= true
+		&party_template				= "party_dsx_automaton";
+		com_channels				= dyn_party, automaton;
+		com_range				= 14.0;
+		melee_engage_range			= 14.0;
+		ranged_engage_range	 		= 14.0;
+		personal_space_range 			= 0.4;
+		sight_range				= 14.0;
+	}
+	[physics]
+	{
+		break_effect = automaton_flying_die;
+		explode_when_killed = true;
+		explosion_magnitude = 1.0;
+		gib_gore_good = true;
+		[break_particulate]
+		{
+			frag_glb_gobbot_01 = 1;
+			frag_glb_gobbot_02 = 2;
+			frag_glb_gobbot_03 = 3;
+			frag_glb_gobbot_04 = 2;
+			frag_glb_gobbot_05 = 1;
+			frag_glb_gobbot_06 = 3;
+			frag_glb_gobbot_07 = 1;
+		}
+	}
+}

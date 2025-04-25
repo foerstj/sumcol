@@ -1,0 +1,52 @@
+[t:template,n:dsx_gobbot_grenade_base]  // = dsx_gobbot_grenade
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_grenade";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  18,0;
+			intelligence =  8, 0;
+			dexterity 	=  11, 0;
+            ranged		=  18,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1370;
+		life = 478;
+        	max_life = 478;
+        	mana = 14;
+        	max_mana = 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_2; 
+        	}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 70;
+		damage_min = 61;
+	}
+	[defend] { defense=150; }
+
+  	[common]
+	{
+		screen_name="Gobbot Grenadier";
+	}
+
+
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_weapon_hand = dsx_gobbot_grenade_launcher;
+		}
+		
+	}
+}

@@ -1,0 +1,53 @@
+[t:template,n:dsx_gobbot_minigun_base]  // = dsx_gobbot_minigun
+//balanced to Level 18
+{
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_minigun";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		=  20,0;
+			intelligence 	=  9, 0;
+			dexterity 		=  13, 0;
+            ranged			=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1196;
+		life 			= 355;
+        	max_life 		= 355;
+        	mana 			= 14;
+        	max_mana 		= 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_2; 
+        	}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 62;
+		damage_min = 54;
+	}
+	[common]
+	{
+		screen_name="Gobbot Sleeper";
+	}
+
+	[defend] { defense=112; }
+
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+	[pcontent]  //GUN
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = dsx_minigun_dragon;
+			}
+		}
+	}
+}

@@ -1,0 +1,66 @@
+[t:template,n:dsx_scorpiot_melee_base]  // = dsx_scorpiot_melee
+{
+// Balanced for level 27, medium melee
+	doc = "dsx_scorpiot_melee";
+	specializes = dsx_scorpiot_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =     19, 0;
+			intelligence = 8, 0;
+			dexterity =    12, 0;
+			melee =        19, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2391;
+		life             = 510;
+		max_life         = 510;
+		mana             = 33;
+		max_mana         = 33;
+		
+		model = m_c_edm_scorpiot;
+		textures:0 = b_c_edm_scorpiot;	
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 93; //! Do by hand, on a curve.  For low values, ~==XP (6xp => 6damage; 90xp=> 50damage)
+		damage_min = 93; //! Same as damage_max
+	}
+	[common]
+	{
+		screen_name = "Scorpiot Slasher"; //--
+	}
+	[defend] { defense = 212; }
+
+  [generator_in_object]
+  {
+		child_template_name = dsx_scorpiot_skeleton;
+		spawn_event = WE_EXPLODED;
+		spawn_chance = 1.0;
+  }
+
+  [physics]
+    {
+		explode_when_killed = true;
+		explosion_magnitude = 4.25;
+		gib_gore_good = true;
+		break_effect=generic_explosion;
+
+		[break_particulate]
+		{
+			frag_glb_scorpiot_head = 1;
+			frag_glb_scorpiot_back = 1;
+			frag_glb_scorpiot_shoulder = 2;
+			frag_glb_scorpiot_leg = 4;
+			frag_glb_scorpiot_rarm = 1;
+			frag_glb_scorpiot_larm = 1;
+			frag_glb_scorpiot_piston = 2;
+			frag_glb_scorpiot_blade = 1;
+		}
+    }
+
+}

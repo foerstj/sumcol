@@ -1,0 +1,180 @@
+[t:template,n:dsx_automaton_two_base]  // = dsx_automaton_two
+{
+// Balanced to level 27+, medium ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_automaton_two";
+	specializes = dsx_automaton_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 19, 0;
+			intelligence 	= 10, 0;
+			dexterity 		= 12, 0;
+			ranged 			= 19, 0;
+			nature_magic 	= 21,0;
+			combat_magic 	= 21,0;
+		}
+	}
+	[aspect]
+	{
+		model = m_c_edm_au2;
+		experience_value = 2052;
+		life		= 525;
+		max_life	= 525;
+		mana		= 22;
+		max_mana	= 22;
+		material = steel;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_automaton_SED;	 }
+			[enemy_spotted]	{ priority = high; * = s_e_call_mechanoid_big_SED; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 75;
+		damage_min = 68;
+	}
+	[body]
+	{
+
+		avg_move_velocity = 2.400000;
+
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_au2_fs;
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = mg;
+					01 = mg-01;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files]
+				{ 
+					00=dsf;
+					01=dsf-01;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+			[chore_misc]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] 
+				{
+					slep=ds-01;
+					wake=rv;
+				}
+			}
+		}
+	}
+	
+	[common]
+	{
+		screen_name = "Automaton Mech";
+	}
+	[generator_in_object]
+	{
+		child_template_name = dsx_automaton_skeleton2;
+		spawn_event = WE_EXPLODED;
+		spawn_chance = 1.0;
+	}
+	[defend] { defense = 182; }
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] 
+		{ 
+			il_active_primary_spell   = dsx_spell_automoton_minigun; 
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 27, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 2081;
+					max = 4132;
+				}
+				[oneof*]
+				{
+					chance = 0.088888888888889;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.111111111111111;
+					il_main = potion_mana_medium;
+					il_main = potion_health_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/60-77;
+					il_main = #armor/36-193;
+					il_main = #*/60-77;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/77-85;
+					il_main = #armor/-rare(1)/156-259;
+					il_main = #*/-rare(1)/77-85;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/77-85;
+					il_main = #armor/-unique(2)/156-259;
+					il_main = #*/-unique(2)/77-85;
+				}			
+			}
+		}	
+	}
+	[mind]
+	{
+		actor_weapon_preference			= WP_MAGIC;
+		actor_auto_switches_to_magic	= true;
+		actor_auto_switches_to_karate	= false;
+		actor_auto_switches_to_melee	= false;
+	
+		on_enemy_entered_ocz_flee 	= true;
+		on_enemy_entered_ocz_attack 	= false;
+		on_enemy_entered_icz_flee 		= true;
+		on_enemy_entered_icz_attack 	= false;
+		flee_count 						= 1;
+	}
+
+	
+}

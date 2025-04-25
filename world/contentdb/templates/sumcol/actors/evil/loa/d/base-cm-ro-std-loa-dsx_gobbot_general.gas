@@ -1,0 +1,104 @@
+[t:template,n:dsx_gobbot_general_base]  // = dsx_gobbot_general
+{
+// Balanced to level 28, hard ranged
+	category_name = "1W_evil_d";
+	doc = "dsx_gobbot_general";
+	specializes = dsx_base_gobbot;
+	[actor]
+	{
+		[skills]
+		{
+			strength 	=  19,0;
+			intelligence 	=  8, 0;
+			dexterity 	=  12, 0;
+           		ranged		=  20,0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2732;
+		life = 784;
+        	max_life = 784;
+        	mana = 14;
+        	max_mana = 14;
+        	[textures]	
+        	{ 
+        		0 = b_c_edm_px_3; 
+        	}    	
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 100;
+		damage_min = 90;
+	}
+	[common]
+	{
+		screen_name="Gobbot General";
+	}
+
+	[defend] { defense=207; }
+
+	[inventory]
+	{
+		// Has the monster weapon equipped
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			// this is balanced for the monster to use
+			es_weapon_hand = dsx_minigun_gas_monster;
+		}
+		[pcontent]
+	{
+	/* Generated: Tue Jun 17 11:13:15 2003
+		Level 28, Strong */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 2165;
+				max = 4298;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.111111111111111;
+				il_main = potion_mana_medium;
+				il_main = potion_health_medium;
+			}
+			[oneof*]
+			{
+				il_main = minigun_gas;
+				chance = 0.2;
+				il_main = #weapon/63-79;
+				il_main = #armor/38-202;
+				il_main = #*/63-79;
+			}
+			[oneof*]
+			{
+				chance = 0.01;
+				il_main = #weapon/-rare(1)/79-87;
+				il_main = #armor/-rare(1)/165-268;
+				il_main = #*/-rare(1)/79-87;
+			}
+			[oneof*]
+			{
+				chance = 0.005;
+				il_main = #weapon/-unique(2)/79-87;
+				il_main = #armor/-unique(2)/165-268;
+				il_main = #*/-unique(2)/79-87;
+			}		
+		}
+	}
+
+		// drops a player version
+		
+	}
+}

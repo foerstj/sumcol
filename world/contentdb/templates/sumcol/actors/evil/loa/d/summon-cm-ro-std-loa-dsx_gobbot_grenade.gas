@@ -1,0 +1,16 @@
+[t:template,n:dsx_gobbot_grenade_summon]
+{
+    specializes = dsx_gobbot_grenade_base;
+
+	doc = "[summon] dsx_gobbot_grenade";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

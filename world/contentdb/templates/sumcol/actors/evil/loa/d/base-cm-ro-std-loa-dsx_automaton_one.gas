@@ -1,0 +1,92 @@
+[t:template,n:dsx_automaton_one_base]  // = dsx_automaton_one
+{
+// Balanced for level 27+, hard melee
+	category_name = "1W_evil_d";
+	doc = "dsx_automaton_one";
+	specializes = dsx_automaton_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 19, 0;
+			intelligence 	=  8, 0;
+			dexterity 	 	= 12, 0;
+			melee 		 	= 22, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 2400;
+		life		 = 788;
+		max_life	 = 788;
+		mana		 = 22;
+		max_mana	 = 22;
+		model = m_c_edm_au;
+		[voice]
+		{
+			[attack]	{ priority = high; * = s_e_attack_automaton_SED;	 }
+			[die]	{ priority = high; * = s_e_die_automaton_SED;	 }
+			[enemy_spotted]	{ priority = high; * = s_e_call_mechanoid_big_SED; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 140; //! Do by hand, on a curve.	For low values, ~==XP (6xp => 6damage; 90xp=> 50damage)
+		damage_min = 120; //! Same as damage_max
+	}
+	[common]
+	{
+		screen_name = "Automaton Blade";
+	}
+	[defend] { defense = 320; }
+	[body]
+	{
+		avg_move_velocity = 2.400000;
+	}
+	[inventory]
+{
+	drop_at_use_point = true;
+	[pcontent]
+	{
+		/* Generated: Tue Jun 17 11:13:15 2003
+		Level 27, Medium */
+		[oneof*]
+		{
+			[gold*]
+			{
+				chance = 0.2;
+				min = 2081;
+				max = 4132;
+			}
+			[oneof*]
+			{
+				chance = 0.088888888888889;
+				il_main = potion_mana_small;
+				il_main = potion_health_small;
+			}
+			[oneof*]
+			{
+				chance = 0.111111111111111;
+				il_main = potion_mana_medium;
+				il_main = potion_health_medium;
+			}
+			[oneof*]
+			{
+				chance = 0.15;
+				il_main = #weapon/58-74;
+				il_main = #armor/25-184;
+				il_main = #*/58-74;
+			}
+			[oneof*]
+			{
+				chance = 0.0075;
+				il_main = #weapon/-rare(1)/60-79;
+				il_main = #armor/-rare(1)/146-249;
+				il_main = #*/-rare(1)/60-79;
+			}
+			
+		}
+	}
+}
+}
