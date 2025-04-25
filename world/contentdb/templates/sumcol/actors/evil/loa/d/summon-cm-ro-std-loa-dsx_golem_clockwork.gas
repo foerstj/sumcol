@@ -13,4 +13,5 @@
 		}
 	}
 	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+    mind:jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
 }
