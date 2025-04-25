@@ -184,7 +184,10 @@ spell;zaurask_seer;dsx_zaurask_caster;;a;Zaurask Seer;1.5;nm;hu;std;loa;x;47;660
 spell;zaurask_whacker;dsx_zaurask_whacker;;a;Zaurask Whacker;1.5;nm;hu;std;loa;x;45;48000;6;1;;;;;75;84;;;1.7;1.2;;;;
 scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;38;8700;13;;;1.2;;;;;75;80;1.5;2.4;;;;
 spell;bandit_archer;bandit_ranged;;a;Bandit Archer;1.5;nm;hu;std;v;x;44;57000;5;;1;;;;65;93;;;1.2;1;;;;
+spell;gobbot_igniter_emarard;dsx_gobbot_flamethrower;;a;Gobbot Igniter;1;cm;ro;std;loa;;45;60000;6;;1;;;;140;178;;;3;0.6;;;;
 scroll;great_trog_warrior;trog_warrior_boss_01;;a;Great Trog Warrior;1.5;nm;hu;mb;v;x;40;7600;14;1.25;;;;;40;59;;;1.5;3;;;;
+spell;mechanized_wasp;dsx_automaton_flying_one;;a;Mechanized Wasp;1;cm;ro;std;loa;;48;55000;6;0.85;;;;;;;;;3;0.6;;;;
+spell;gobbot_sleeper_emarard;dsx_gobbot_minigun;;a;Gobbot Sleeper;1;cm;ro;std;loa;;45;60000;6;;1;;;;43;57;;;3;0.6;;;;
 scroll;shadowjumper_minion;dsx_shadow_jumper_minion_one;;a;Shadowjumper Minion;1.5;cm;de;mb;loa;x;29;3800;15;1.3;;;;;50;55;;;1;3.6;;;;
 spell;zaurask_slasher;dsx_zaurask_slasher;;a;Zaurask Slasher;1.5;nm;hu;std;loa;x;48;55000;6;1;;;;;99;118;;;1.7;1.2;;;;
 spell;zaurask_ranger;dsx_zaurask_ranger;;a;Zaurask Ranger;1.5;nm;hu;std;loa;x;49;72000;5;;1;;;;91;100;;;1.7;1.2;;;;
@@ -192,7 +195,12 @@ spell;zaurask_leader;dsx_zaurask_chieftain;;a;Zaurask Leader;1.5;nm;hu;std;loa;x
 spell;bandit;bandit_melee;;a;Bandit;1.5;nm;hu;std;v;x;44;46000;6;1.1;;;;;24;32;;;1.5;1;;;;
 spell;mangler;mangler;;a;Mangler;1;nm;an;std;v;;43;44000;7;0.9;;;;;;;;;1;0.8;;;;
 spell;gorack;gorack;;a;Gorack;2;nm;hu;std;v;x;44;46000;6;1.1;;;;;;;;;1;1.2;;;;
+spell;gobbot_grenadier_emarard;dsx_gobbot_grenade;;a;Gobbot Grenadier;1;cm;ro;std;loa;;45;60000;6;;1;;;;81;90;;;3;0.6;;;;
 scroll;dark_wolf;wolf_black_boss_01;;a;Dark Wolf;1.75;cm;un;mb;v;;57;17000;14;1.2;;;;;;;;;1;2.7;;;;
+spell;goblin_blackguard;dsx_goblin_blackguard;;a;Goblin Blackguard;1.5;cm;hu;std;loa;x;50;60000;7;0.9;;;;;85;95;;;1.5;0.8;;;;
+spell;mountain_troll;dsx_troll_mountain;;a;Mountain Troll;1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;86;92;;;1;0.8;;;;
+spell;mutant_goblin_hurler;dsx_goblin_mutant_hurler;;a;Mutant Goblin Hurler;2;cm;hu;std;loa;x;51;79000;6;;1;;;;88;102;;;1.5;1.2;;;;
+spell;mutant_goblin_warrior;dsx_goblin_mutant;;a;Mutated Goblin Warrior;2;cm;hu;std;loa;x;50;60000;7;1.1;;;;;108;115;;;1.2;1.2;;;;
 spell;tretch;tretch;;a;Tretch;2;nm;pl;st;v;;43;8700;0.5;1;;;;;;;;;2;2.5;;;;
 spell;goo_walker;goo_walker;;a;Goo Walker;1.5;cm;un;std;v;;43;55000;6;;;0.85;;;;;72;78;0.8;1;;;;
 spell;zombie;zombie_01;;a;Zombie;1.5;cm;un;std;v;;43;44000;7;0.9;;;;;;;;;0.8;1;;;;
@@ -205,14 +213,20 @@ spell;swamp_witch;swamp_witch;;a;Swamp Witch;1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;
 spell;swamp_witch_attacking;swamp_witch_attacking;;a;Swamp Witch (Attacking);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
 spell;swamp_witch_summoning_swamp_creature;swamp_witch_summoning_swamp_creature;;a;Swamp Witch (Summoning Creature);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
 spell;swamp_witch_summoning_swamp_slinger;swamp_witch_summoning_swamp_slinger;;a;Swamp Witch (Summoning Slinger);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
+spell;scorpiot_gunner;dsx_scorpiot_ranged;;a;Scorpiot Gunner;2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;;;;;2.5;1.2;;;;
+spell;stingbot;dsx_automaton_flying_two;;a;Stingbot;1;cm;ro;std;loa;;49;58000;5;0.9;;;;;;;;;3;0.8;;;;
+spell;goblin_headsman;dsx_goblin_guard;;a;Goblin Headsman;1.5;cm;hu;std;loa;x;52;66000;6;0.95;;;;;85;91;;;1.5;0.8;;;;
 spell;forest_phrak;phrak_forest;;a;Forest Phrak;0.75;nm;an;std;v;;52;66000;6;0.85;;;;;;;;;2;0.4;;;;
 spell;googore_grub;googore_grub;;a;Googore Grub;0.75;nm;an;std;v;;63;110000;9;0.8;;;;;;;;;1;0.4;;;;
 spell;goblin_guard;goblin_guard;;a;Goblin Guard;1.5;cm;hu;std;v;x;57;83000;6;1;;;;;16;29;;;1.5;0.9;;;;Always equipped with shortsword
+spell;automaton_mech;dsx_automaton_two;;an;Automaton Mech;2;cm;ro;std;loa;;49;72000;5;;;1;;;;;88;95;3;1.2;;;;
 spell;hunter;hunter;;a;Hunter;1;cm;ro;std;v;;53;69000;7;0.95;;;;;;;;;3;0.6;;;;
 spell;kill_bot;kill_bot;;a;Kill Bot;1;cm;ro;std;v;;50;60000;7;0.9;;;;;;;;;2.5;0.6;;;;
 scroll;enraged_gorack;gorack_boss_01;;an;Enraged Gorack;2;nm;hu;mb;v;x;45;9600;14;1.3;;;;;;;;;1;3.6;;;;
 spell;bronze_gargoyle;gargoyle_bronze;;a;Bronze Gargoyle;0.75;cm;el;std;v;;43;55000;5;;;0.9;;;;;74;76;3;0.4;;;;
 scroll;rogue_bandit;bandit_melee_boss_01;;a;Rogue Bandit;1.5;nm;hu;mb;v;x;45;9600;14;1.3;;;;;24;32;;;1.2;3;;;;
+spell;scorpiot_slasher;dsx_scorpiot_melee;;a;Scorpiot Slasher;2.5;cm;ro;std;loa;;49;58000;6;1;;;;;;;;;2.5;1.2;;;;
+spell;automaton_blade;dsx_automaton_one;;an;Automaton Blade;2;cm;ro;std;loa;;49;58000;6;1.05;;;;;;;;;3;1.2;;;;
 spell;copter;copter;;a;Copter;1;cm;ro;std;v;;51;79000;5;;;0.85;;;;;82;88;2.5;0.4;summon_copter;;;
 spell;swamp_creature;swamp_creature;good;a;Swamp Creature;2.5;nm;el;std;v;;44;46000;6;1.1;;;;;;;;;0.8;2.5;;;;
 spell;swamp_troll;troll_swamp;;a;Swamp Troll;1.5;nm;hu;std;v;x;48;55000;6;1;;;;;75;85;;;1;0.8;;;;
@@ -220,6 +234,9 @@ spell;swamp_troll_norecov;troll_swamp_norecov;;a;Swamp Troll (no recov);1.5;nm;h
 scroll;air_elemental_minion;dsx_elemental_air_minion;;an;Air Elemental Minion;2;nm;el;mb;loa;;50;12000;14;1.2;;;;;;;;;2;3.6;;;;
 scroll;earth_elemental_minion;dsx_elemental_earth_minion;;an;Earth Elemental Minion;3;nm;el;mb;loa;;50;15000;12;1.3;;1.3;;;;;;;2;4.5;;;;Custom dmgvol spell
 scroll;water_elemental_minion;dsx_elemental_water_minion;;a;Water Elemental Minion;1.5;nm;el;mb;loa;;50;12000;17;1.1;;;;;;;;;1;1.8;;;;
+spell;clockwork_automaton;dsx_golem_clockwork;;a;Clockwork Automaton;2.5;cm;ro;std;loa;;50;60000;3;1.2;;;;;;;;;3;1.8;;;;
+spell;flechette;dsx_perforator;;a;Flechette;2;cm;ro;std;loa;;50;75000;4;;;1.05;;;;;90;96;2;1.2;;;;
+spell;gobbot_general;dsx_gobbot_general;;a;Gobbot General;1.5;cm;hu;std;loa;x;50;75000;6;;1.1;;;;90;100;;;3;0.6;;;;
 scroll;skank_witch;swamp_witch_boss_01;;a;Skank Witch;1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;95;99;1;2.7;;;;
 scroll;skank_witch_attacking;swamp_witch_boss_01_attacking;;a;Skank Witch (Attacking);1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;95;99;1;2.7;;;skank_witch;
 scroll;wretched_zombie;zombie_02_boss_01;;a;Wretched Zombie;1.5;cm;un;mb;v;;44;9100;16;1.1;;;;;;;;;0.8;3;;;;

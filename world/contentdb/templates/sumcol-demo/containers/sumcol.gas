@@ -460,6 +460,17 @@
             il_main = spell_summon_rusted_automaton;
             il_main = spell_summon_weathered_automaton;
             il_main = spell_summon_ancient_scorpiot;
+            il_main = spell_summon_gobbot_igniter_emarard;
+            il_main = spell_summon_mechanized_wasp;
+            il_main = spell_summon_gobbot_sleeper_emarard;
+            il_main = spell_summon_gobbot_grenadier_emarard;
+            il_main = spell_summon_scorpiot_gunner;
+            il_main = spell_summon_stingbot;
+            il_main = spell_summon_automaton_mech;
+            il_main = spell_summon_scorpiot_slasher;
+            il_main = spell_summon_automaton_blade;
+            il_main = spell_summon_clockwork_automaton;
+            il_main = spell_summon_flechette;
         }
     }
 }
@@ -501,8 +512,14 @@
             il_main = spell_summon_zaurask_slasher;
             il_main = spell_summon_zaurask_ranger;
             il_main = spell_summon_zaurask_leader;
+            il_main = spell_summon_goblin_blackguard;
+            il_main = spell_summon_mountain_troll;
+            il_main = spell_summon_mutant_goblin_hurler;
+            il_main = spell_summon_mutant_goblin_warrior;
             il_main = spell_summon_zaurask_fighter;
             il_main = spell_summon_zaurask_mage;
+            il_main = spell_summon_goblin_headsman;
+            il_main = spell_summon_gobbot_general;
         }
     }
 }

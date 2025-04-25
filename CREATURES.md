@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 275
+SUMMONS COLLECTION CREATURES: 292
 
 Vanilla Standard Creatures: 119
 - Animals: 31
@@ -193,7 +193,7 @@ Vanilla Non-Standard Creatures: 56
   - Droog Captain
   - Ferocious Braak
 
-LoA Standard Creatures: 81
+LoA Standard Creatures: 98
 - Animals: 29
   - Ice Grub
   - Ice Moth
@@ -246,11 +246,22 @@ LoA Standard Creatures: 81
   - Whelnar's Eyes
   - Rune Fiend
   - Slithermage Master
-- Robots: 3
+- Robots: 14
   - Rusted Automaton
   - Weathered Automaton
   - Ancient Scorpiot
-- Humanoids: 31
+  - Gobbot Igniter
+  - Mechanized Wasp
+  - Gobbot Sleeper
+  - Gobbot Grenadier
+  - Scorpiot Gunner
+  - Stingbot
+  - Automaton Mech
+  - Scorpiot Slasher
+  - Automaton Blade
+  - Clockwork Automaton
+  - Flechette
+- Humanoids: 37
   - Jungle Slinger
   - Gulik
   - Zaurask Archer
@@ -280,8 +291,14 @@ LoA Standard Creatures: 81
   - Zaurask Slasher
   - Zaurask Ranger
   - Zaurask Leader
+  - Goblin Blackguard
+  - Mountain Troll
+  - Mutant Goblin Hurler
+  - Mutated Goblin Warrior
   - Zaurask Fighter
   - Zaurask Mage
+  - Goblin Headsman
+  - Gobbot General
 
 LoA Non-Standard Creatures: 19
 - Animals: 3
