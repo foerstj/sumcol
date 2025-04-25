@@ -1,0 +1,127 @@
+[t:template,n:dsx_goblin_mutant_base]  // = dsx_goblin_mutant
+{
+// Balanced to level 26, medium melee
+	category_name = "1W_evil_a";
+	doc = "dsx_goblin_mutant";
+	specializes = dsx_base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  strength 	= 18, 0;
+			  dexterity 	=  8, 0;
+			  intelligence  = 12, 0;
+			  melee 	= 18, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1402;
+		life = 486;
+		max_life = 486;
+		mana = 18;
+		max_mana = 18;
+		model = m_c_eam_kc_pos_1;
+		scale_base = 1.2;
+		selection_indicator_scale = 0.85;
+		material = steel;
+		[textures]
+		{
+			  0 = b_c_eam_gobkrg;
+		}
+		[voice]
+		{
+			[die]		{ priority = high; * = s_e_die_mutant_goblin_SED;  }
+			[enemy_spotted]	{ priority = high; * = s_e_call_mutant_goblin_SED; }
+			[hit_critical]	{ priority = low; * = s_e_hit_krug_scout_SED;  }
+			[hit_glance]	{ priority = low; * = s_e_hit_krug_scout_SED;  }
+			[hit_solid]	{ priority = low; * = s_e_hit_krug_scout_SED;  }
+		}
+	}
+	[attack]
+	{
+		damage_max = 115;
+		damage_min = 108;
+	}
+	[body]
+	{
+		min_move_velocity = 1.75;
+		avg_move_velocity = 2;
+	}
+	[common]
+	{
+		  screen_name = "Mutated Goblin Warrior";
+		  membership = goblin, monster;
+	}
+	[defend]
+	{
+		  defense = 204;
+	}
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand = ax_d_d_dsx_goblin_mutant;
+		}		
+		
+		[pcontent]
+		{
+		/* Generated: Tue Jun 17 11:13:15 2003
+			Level 26, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 1945;
+					max = 3861;
+				}
+				[oneof*]
+				{
+					chance = 0.088888888888889;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.111111111111111;
+					il_main = potion_mana_medium;
+					il_main = potion_health_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/55-71;
+					il_main = #armor/23-174;
+					il_main = #*/55-71;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/58-77;
+					il_main = #armor/-rare(1)/137-240;
+					il_main = #*/-rare(1)/58-77;
+				}
+				
+			}
+		}
+	}
+
+	[physics]
+	{
+		break_sound = s_e_meat_explosion;
+		explosion_magnitude = 1.5;
+		[break_particulate]
+		{
+			  frag_glb_krug_commander_01 = 1;
+			  frag_glb_krug_commander_02 = 1;
+			  frag_glb_krug_commander_03 = 1;
+			  frag_glb_krug_commander_04 = 1;
+			  frag_glb_krug_commander_05 = 1;
+			  frag_glb_krug_commander_06 = 1;
+			  frag_glb_krug_commander_07 = 1;
+			  frag_glb_krug_commander_08 = 1;
+		}
+	}
+}

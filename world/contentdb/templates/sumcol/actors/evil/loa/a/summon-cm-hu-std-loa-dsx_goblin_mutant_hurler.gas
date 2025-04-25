@@ -1,0 +1,15 @@
+[t:template,n:dsx_goblin_mutant_hurler_summon]
+{
+    specializes = dsx_goblin_mutant_hurler_base;
+
+	doc = "[summon] dsx_goblin_mutant_hurler";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

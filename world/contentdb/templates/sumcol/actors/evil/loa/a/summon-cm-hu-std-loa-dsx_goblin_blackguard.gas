@@ -1,0 +1,15 @@
+[t:template,n:dsx_goblin_blackguard_summon]
+{
+    specializes = dsx_goblin_blackguard_base;
+
+	doc = "[summon] dsx_goblin_blackguard";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

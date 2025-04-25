@@ -1,0 +1,19 @@
+[t:template,n:dsx_troll_mountain_summon]
+{
+    specializes = dsx_troll_mountain_base;
+
+	doc = "[summon] dsx_troll_mountain";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[equipment]
+		{ 
+			es_weapon_hand = cb_un_dsx_2h_troll;
+		}
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}
