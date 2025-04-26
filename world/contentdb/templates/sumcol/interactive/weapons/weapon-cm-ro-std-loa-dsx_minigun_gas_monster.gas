@@ -1,0 +1,29 @@
+[t:template,n:dsx_minigun_gas_monster_base]  // = dsx_minigun_gas_monster
+{
+	doc = "DSX MONSTER Gas Gun";
+	specializes = base_minigun_gas;
+	
+	[attack]
+	{
+		f damage_max = 100.0;
+		f damage_min = 90.0;
+	}
+	
+	common:screen_name = "Goblin's Gas Gun";
+	
+	// monster only, shouldn't drop
+	gui:is_droppable = false;		
+}
+
+[t:template,n:dsx_minigun_gas_monster_sumcol] { specializes = dsx_minigun_gas_monster_sumcol_base; }
+[t:template,n:dsx_minigun_gas_monster_sumcol_base]
+{
+    specializes = dsx_minigun_gas_monster_base;
+
+	[attack]
+	{
+        // Edited original damage - minigun_magic.skrit doesn't take summon enchantments into account
+		damage_max = 250;  // = 100 * 2.5
+		damage_min = 225;  // = 90 * 2.5
+	}
+}

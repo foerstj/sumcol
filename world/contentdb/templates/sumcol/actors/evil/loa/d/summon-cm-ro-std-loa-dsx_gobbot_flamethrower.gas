@@ -10,7 +10,7 @@
 		spew_equipped_kill_count = <ignore>;
         [equipment]
         {
-            es_weapon_hand = minigun_napalm;
+            es_weapon_hand = minigun_napalm_sumcol;
         }
 		[pcontent]
 		{

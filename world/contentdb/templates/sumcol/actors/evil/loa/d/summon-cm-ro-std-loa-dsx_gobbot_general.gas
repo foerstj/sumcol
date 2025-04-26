@@ -7,6 +7,11 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand = dsx_minigun_gas_monster_sumcol;
+		}
 		[pcontent]
 		{
             // ERASED
