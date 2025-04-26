@@ -214,10 +214,10 @@ spell;swamp_witch;swamp_witch;;a;Swamp Witch;1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;
 spell;swamp_witch_attacking;swamp_witch_attacking;;a;Swamp Witch (Attacking);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
 spell;swamp_witch_summoning_swamp_creature;swamp_witch_summoning_swamp_creature;;a;Swamp Witch (Summoning Creature);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
 spell;swamp_witch_summoning_swamp_slinger;swamp_witch_summoning_swamp_slinger;;a;Swamp Witch (Summoning Slinger);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
-spell;scorpiot_gunner;dsx_scorpiot_ranged;;a;Scorpiot Gunner;2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;;;;;2.5;1.2;;;;Custom dmgvol & fire spells
-spell;scorpiot_gunner_laser;dsx_scorpiot_ranged_laser;;a;Scorpiot Gunner (Laser);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
-spell;scorpiot_gunner_lcannon;dsx_scorpiot_ranged_lcannon;;a;Scorpiot Gunner (LCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
-spell;scorpiot_gunner_zap_rcannon;dsx_scorpiot_ranged_zap_rcannon;;a;Scorpiot Gunner (Zap RCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;;;;;2.5;1.2;;;scorpiot_gunner;Custom fire spell
+spell;scorpiot_gunner;dsx_scorpiot_ranged;;a;Scorpiot Gunner;2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;;Custom dmgvol & fire spells, one also has a trackball (double dmg)
+spell;scorpiot_gunner_laser;dsx_scorpiot_ranged_laser;;a;Scorpiot Gunner (Laser);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
+spell;scorpiot_gunner_lcannon;dsx_scorpiot_ranged_lcannon;;a;Scorpiot Gunner (LCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
+spell;scorpiot_gunner_zap_rcannon;dsx_scorpiot_ranged_zap_rcannon;;a;Scorpiot Gunner (Zap RCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom fire spell + trackball
 spell;stingbot;dsx_automaton_flying_two;;a;Stingbot;1.5;cm;ro;std;loa;;49;58000;5;0.9;;;;;;;;;3;0.8;;;;
 spell;goblin_headsman;dsx_goblin_guard;;a;Goblin Headsman;1.5;cm;hu;std;loa;x;52;66000;6;0.95;;;;;85;91;;;1.5;0.8;;;;
 spell;forest_phrak;phrak_forest;;a;Forest Phrak;0.75;nm;an;std;v;;52;66000;6;0.85;;;;;;;;;2;0.4;;;;
