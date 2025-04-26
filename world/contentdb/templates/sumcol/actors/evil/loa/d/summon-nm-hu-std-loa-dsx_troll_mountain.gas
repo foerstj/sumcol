@@ -8,6 +8,7 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		spew_equipped_kill_count = <ignore>;
 		[equipment]
 		{ 
 			es_weapon_hand = cb_un_dsx_2h_troll;
