@@ -24,6 +24,9 @@
             il_main = spell_summon_swamp_witch_attacking;
             il_main = spell_summon_swamp_witch_summoning_swamp_creature;
             il_main = spell_summon_swamp_witch_summoning_swamp_slinger;
+            il_main = spell_summon_scorpiot_gunner_laser;
+            il_main = spell_summon_scorpiot_gunner_lcannon;
+            il_main = spell_summon_scorpiot_gunner_zap_rcannon;
             il_main = spell_summon_swamp_troll_norecov;
             il_main = scroll_summon_skank_witch_attacking;
             il_main = scroll_summon_lost_witch_attacking;

@@ -1,4 +1,5 @@
-[t:template,n:dsx_scorpiot_ranged_summon]
+[t:template,n:dsx_scorpiot_ranged_summon] { specializes = dsx_scorpiot_ranged_summon_base; }
+[t:template,n:dsx_scorpiot_ranged_summon_base]
 {
     specializes = dsx_scorpiot_ranged_base;
 
@@ -32,6 +33,52 @@
 		{
 			[die]		{ priority = high;	* = s_e_die_scorpiot_SED;}
 			//[enemy_spotted]	{ priority = high; * = s_e_call_scorpiot_SED; }  // REMOVED
+		}
+	}
+
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_scorpigun_laser;
+			il_spell_1 = dsx_spell_scorpigun_lcannon;
+			il_spell_2 = dsx_spell_scorpigun_zap_rcannon;
+		}
+	}
+}
+
+[t:template,n:dsx_scorpiot_ranged_laser_summon]
+{
+    specializes = dsx_scorpiot_ranged_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_scorpigun_laser;
+		}
+	}
+}
+
+[t:template,n:dsx_scorpiot_ranged_lcannon_summon]
+{
+    specializes = dsx_scorpiot_ranged_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_spell_1 = dsx_spell_scorpigun_lcannon;
+		}
+	}
+}
+
+[t:template,n:dsx_scorpiot_ranged_zap_rcannon_summon]
+{
+    specializes = dsx_scorpiot_ranged_summon_base;
+	[inventory]
+	{
+		[other]
+		{
+			il_spell_2 = dsx_spell_scorpigun_zap_rcannon;
 		}
 	}
 }
