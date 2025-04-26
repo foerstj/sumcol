@@ -14,4 +14,27 @@
 	}
 	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
     mind:jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+	[common]
+    {
+        [template_triggers]
+        {
+            [*]
+            {
+                action* = call_sfx_script("automaton_smoke");
+                action* = call_sfx_script("sumcol_mechanoid_big_call");  // ADDED
+                condition* = receive_world_message("WE_ENTERED_WORLD");  // EDITED - was WE_ENEMY_SPOTTED
+                single_shot = true;
+            }
+            // REMOVED: WE_KILLED -> automaton_death_sparks
+        }
+    }
+	[aspect]
+	{
+		[voice]
+		{
+			[attack]	{ priority = high; * = s_e_attack_automaton_SED;	 }
+			[die]	{ priority = high; * = s_e_die_automaton_SED;	 }
+			//[enemy_spotted]	{ priority = high; * = s_e_call_mechanoid_big_SED; }  // REMOVED
+		}
+	}
 }
