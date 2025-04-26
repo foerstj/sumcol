@@ -1,4 +1,5 @@
-[t:template,n:dsx_troll_mountain_summon]
+[t:template,n:dsx_troll_mountain_summon] { specializes = dsx_troll_mountain_base; }
+[t:template,n:dsx_troll_mountain_summon_base]
 {
     specializes = dsx_troll_mountain_base;
 
@@ -15,5 +16,16 @@
 		{
             // ERASED
 		}
+	}
+}
+
+[t:template,n:dsx_troll_mountain_norecov_summon]
+{
+    specializes = dsx_troll_mountain_summon_base;
+
+	[aspect]
+	{
+		life_recovery_period = 0;
+		life_recovery_unit = 0;
 	}
 }
