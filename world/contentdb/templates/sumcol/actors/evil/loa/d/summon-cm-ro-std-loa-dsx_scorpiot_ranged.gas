@@ -13,4 +13,25 @@
 		}
 	}
 	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+	[common]
+    {
+        // ADDED
+        [template_triggers]
+        {
+            [*]
+            {
+                action* = call_sfx_script("sumcol_scorpiot_call");
+                condition* = receive_world_message("WE_ENTERED_WORLD");
+                single_shot = true;
+            }
+        }
+    }
+	[aspect]
+	{
+		[voice]
+		{
+			[die]		{ priority = high;	* = s_e_die_scorpiot_SED;}
+			//[enemy_spotted]	{ priority = high; * = s_e_call_scorpiot_SED; }  // REMOVED
+		}
+	}
 }
