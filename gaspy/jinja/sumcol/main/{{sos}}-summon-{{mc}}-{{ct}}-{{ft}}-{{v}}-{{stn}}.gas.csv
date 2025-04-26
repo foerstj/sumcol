@@ -199,6 +199,7 @@ spell;gobbot_grenadier_emarard;dsx_gobbot_grenade;;a;Gobbot Grenadier;1.5;cm;ro;
 scroll;dark_wolf;wolf_black_boss_01;;a;Dark Wolf;1.75;cm;un;mb;v;;57;17000;14;1.2;;;;;;;;;1;2.7;;;;
 spell;goblin_blackguard;dsx_goblin_blackguard;;a;Goblin Blackguard;1.5;cm;hu;std;loa;x;50;60000;7;0.9;;;;;85;95;;;1.5;0.8;;;;
 spell;mountain_troll;dsx_troll_mountain;;a;Mountain Troll;1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;86;92;;;1;0.8;;;;
+spell;mountain_troll_norecov;dsx_troll_mountain_norecov;;a;Mountain Troll (no recov);1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;86;92;;;1;0.8;;;mountain_troll;
 spell;mutant_goblin_hurler;dsx_goblin_mutant_hurler;;a;Mutant Goblin Hurler;2;cm;hu;std;loa;x;51;79000;6;;1;;;;88;102;;;1.5;1.2;;;;
 spell;mutant_goblin_warrior;dsx_goblin_mutant;;a;Mutated Goblin Warrior;2;cm;hu;std;loa;x;50;60000;7;1.1;;;;;108;115;;;1.2;1.2;;;;
 spell;tretch;tretch;;a;Tretch;2;nm;pl;st;v;;43;8700;0.5;1;;;;;;;;;2;2.5;;;;
