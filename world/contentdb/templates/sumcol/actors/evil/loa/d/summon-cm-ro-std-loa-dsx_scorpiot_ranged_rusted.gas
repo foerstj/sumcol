@@ -33,7 +33,7 @@
 	[inventory]
 	{
 		[other]
-		{ 
+		{
 			il_active_primary_spell = dsx_spell_rusted_scorpigun_lcannon_summon;
 			il_spell_2 = dsx_spell_rusted_scorpigun_rcannon_summon;
 		}
@@ -46,7 +46,7 @@
 	[inventory]
 	{
 		[other]
-		{ 
+		{
 			il_active_primary_spell = dsx_spell_rusted_scorpigun_lcannon_summon;
 		}
 	}
@@ -58,7 +58,7 @@
 	[inventory]
 	{
 		[other]
-		{ 
+		{
 			il_spell_2 = dsx_spell_rusted_scorpigun_rcannon_summon;
 		}
 	}
