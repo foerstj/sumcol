@@ -751,6 +751,61 @@
 
 	[0x0000]
 	{
+		from = "Summon Goblin Blackguard";
+		to = "Goblin-Ganoven beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Goblin Blackguard to guard the Caster.";
+		to = "Beschwört einen Goblin-Ganoven, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Goblin Headsman";
+		to = "Goblin-Henker beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Goblin Headsman to guard the Caster.";
+		to = "Beschwört einen Goblin-Henker, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mutant Goblin Hurler";
+		to = "Mutanten Goblinwerfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mutant Goblin Hurler to guard the Caster.";
+		to = "Beschwört einen Mutanten Goblinwerfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mutated Goblin Warrior";
+		to = "Mutierten Goblinkrieger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mutated Goblin Warrior to guard the Caster.";
+		to = "Beschwört einen Mutierten Goblinkrieger, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mountain Troll";
+		to = "Bergtroll beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mountain Troll to guard the Caster.";
+		to = "Beschwört einen Bergtroll, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Weathered Automaton";
 		to = "Abgenutzten Automaton beschwören";
 	}
@@ -780,6 +835,127 @@
 	{
 		from = "Summons an Ancient Scorpiot to guard the Caster.";
 		to = "Beschwört einen Alten Scorpiot, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Igniter";
+		to = "Gobbot-Feuerteufel beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Igniter to guard the Caster.";
+		to = "Beschwört einen Gobbot-Feuerteufel, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Sleeper";
+		to = "Gobbot-Schläfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Sleeper to guard the Caster.";
+		to = "Beschwört einen Gobbot-Schläfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot Grenadier";
+		to = "Gobbot-Grenadier beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot Grenadier to guard the Caster.";
+		to = "Beschwört einen Gobbot-Grenadier, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Mechanized Wasp";
+		to = "Mechanische Wespe beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Mechanized Wasp to guard the Caster.";
+		to = "Beschwört eine Mechanische Wespe, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Stingbot";
+		to = "Stingbot beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Stingbot to guard the Caster.";
+		to = "Beschwört einen Stingbot, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Scorpiot Gunner";
+		to = "Scorpiot-Schützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Scorpiot Gunner to guard the Caster.";
+		to = "Beschwört einen Scorpiot-Schützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Scorpiot Slasher";
+		to = "Scorpiot-Schlitzer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Scorpiot Slasher to guard the Caster.";
+		to = "Beschwört einen Scorpiot-Schlitzer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Automaton Mech";
+		to = "Automaton Mech beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Automaton Mech to guard the Caster.";
+		to = "Beschwört einen Automaton Mech, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Automaton Blade";
+		to = "Automatonklinge beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Automaton Blade to guard the Caster.";
+		to = "Beschwört eine Automatonklinge, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Clockwork Automaton";
+		to = "Unruh-Automaton beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Clockwork Automaton to guard the Caster.";
+		to = "Beschwört einen Unruh-Automaton, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gobbot General";
+		to = "Gobbot-General beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Gobbot General to guard the Caster.";
+		to = "Beschwört einen Gobbot-General, der den Anwender verteidigt.";
 	}
 
 	[0x0000]
