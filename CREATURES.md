@@ -246,7 +246,7 @@ LoA Standard Creatures: 97
   - Whelnar's Eyes
   - Rune Fiend
   - Slithermage Master
-- Robots: 13
+- Robots: 14
   - Rusted Automaton
   - Weathered Automaton
   - Ancient Scorpiot
@@ -260,7 +260,8 @@ LoA Standard Creatures: 97
   - Scorpiot Slasher
   - Automaton Blade
   - Clockwork Automaton
-- Humanoids: 37
+  - Gobbot General
+- Humanoids: 36
   - Jungle Slinger
   - Gulik
   - Zaurask Archer
@@ -297,7 +298,6 @@ LoA Standard Creatures: 97
   - Zaurask Fighter
   - Zaurask Mage
   - Goblin Headsman
-  - Gobbot General
 
 LoA Non-Standard Creatures: 19
 - Animals: 3

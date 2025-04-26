@@ -470,6 +470,7 @@
             il_main = spell_summon_scorpiot_slasher;
             il_main = spell_summon_automaton_blade;
             il_main = spell_summon_clockwork_automaton;
+            il_main = spell_summon_gobbot_general;
         }
     }
 }
@@ -518,7 +519,6 @@
             il_main = spell_summon_zaurask_fighter;
             il_main = spell_summon_zaurask_mage;
             il_main = spell_summon_goblin_headsman;
-            il_main = spell_summon_gobbot_general;
         }
     }
 }
