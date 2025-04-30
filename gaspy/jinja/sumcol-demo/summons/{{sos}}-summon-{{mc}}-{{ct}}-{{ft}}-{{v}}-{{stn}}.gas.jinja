@@ -89,7 +89,11 @@
             {
                 alteration = alter_armor;
                 duration = #infinite;
+                {% if req_lvl <= 50 %}
                 value = (((#magic*4.2)*{{armor | float}}) - #base_defense);
+                {% else %}
+                value = (((#magic*4.2)*{{armor | float}}*(1+((#spell_req_level-50)*0.015))) - #base_defense);
+                {% endif %}
             }
             [*]
             {
