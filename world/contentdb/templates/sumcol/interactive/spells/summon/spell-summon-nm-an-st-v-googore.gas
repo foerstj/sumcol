@@ -61,7 +61,7 @@
             {
                 alteration = alter_armor;
                 duration = #infinite;
-                value = (((#magic*4.2)*1.0) - #base_defense);
+                value = (((#magic*4.2)*1.0*(1+((#spell_req_level-50)*0.015))) - #base_defense);
             }
             [*]
             {
