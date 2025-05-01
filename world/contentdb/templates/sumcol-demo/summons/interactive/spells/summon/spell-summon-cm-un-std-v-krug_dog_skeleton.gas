@@ -4,18 +4,18 @@
     specializes = base_spell_sumcol_cm;
     [common]    { is_pcontent_allowed = false;    }
 
-    doc = "spell Summon Skeleton Krug Dog (SumCol Demo)";
+    doc = "spell Summon Krug Dog Skeleton (SumCol Demo)";
     [aspect]
     {
         gold_value = 100000;
     }
     [common]
     {
-        screen_name = "Summon Skeleton Krug Dog (SumCol Demo)";
+        screen_name = "Summon Krug Dog Skeleton (SumCol Demo)";
     }
     [common]
     {
-        description = "Summons a Skeleton Krug Dog to guard the Caster.";
+        description = "Summons a Krug Dog Skeleton to guard the Caster.";
     }
     [gui]
     {

@@ -12,7 +12,7 @@ spell;golem_frost;golem_frost;summon;a;Frost Golem;1.75;nm;el;std;v;;420000;7;92
 spell;hell_boar;hell_boar;summon;a;Hell Boar;1.75;nm;an;std;v;;36000;6;39;1;;;;;;;;;1;1;127
 spell;impaler;impaler;summon;an;Impaler;1;nm;an;std;v;;190000;6;75;1.1;;;;;;;;;2;1.5;176
 spell;killer_gremal;gremal_killer;summon;a;Killer Gremal;2.75;nm;an;std;v;;1200;6;17;0.9;;;;;;;;;1;0.8;8
-spell;krug_dog_skeleton;krug_dog_skeleton;sumcol;a;Skeleton Krug Dog;1;cm;un;std;v;;100000;6;61;0.9;;;;;;;;;2;0.5;141
+spell;krug_dog_skeleton;krug_dog_skeleton;sumcol;a;Krug Dog Skeleton;1;cm;un;std;v;;100000;6;61;0.9;;;;;;;;;2;0.5;141
 spell;larch;larch;summon;a;Larch;1.75;nm;pl;std;v;;96000;4;60;1.2;;;;;;;;;2;2.5;66
 spell;lava_spirit;lava_spirit_magic;summon;a;Lava Spirit;1;cm;el;std;v;;400000;6;86;;;0.95;;;;;205;245;2;0.8;172
 spell;molten_golem;molten_golem;;a;Slag;1.75;cm;el;std;v;;420000;7;92;0.9;;;;;;;;;2;0.8;174
@@ -36,7 +36,7 @@ spell;dsx_vile_twisted_mucosa;dsx_vile_twisted_mucosa;summon;a;Vile Twisted Muco
 spell;dsx_giant_rat;dsx_giant_rat;summon;a;Giant Rat;1.75;nm;an;std;loa;;76;6;5;0.85;;;;;;;;;1;0.8;250
 spell;dsx_deadly_armor;dsx_deadly_armor;summon;;Deadly Armor;1;cm;un;std;loa;;32000;6;36;1;;;;;;;;;3;1;215
 spell;dsx_ursae_demonic;dsx_ursae_demonic;summon;an;Ursae;3;cm;un;std;loa;;24000;7;30;1.1;;;;;;;;;0.8;2;217
-spell;dsx_rune_guardian;dsx_rune_guardian;summon;a;Rune Guardian;2;cm;de;std;loa;;190000;7;75;1;;;;;;;;;1;1.2;219
+spell;dsx_rune_guardian;dsx_rune_guardian;summon;a;Rune Beast;2;cm;de;std;loa;;190000;7;75;1;;;;;;;;;1;1.2;219
 spell;dsx_barkrunner;dsx_barkrunner;summon;a;Barkrunner;2.25;nm;pl;std;loa;;2400;6;20;1.1;;;;;;;;;2;1.5;247
 spell;dsx_scrub_howler;dsx_scrub_howler;summon;a;Scrub Howler;2.25;nm;hu;std;loa;x;42000;6;42;1;;;;;74;90;;;1;1.5;251
 spell;dsx_bear;dsx_bear;summon;a;Cave Bear;3;nm;an;std;loa;;48;6;3;1.1;;;;;;;;;1;1.8;248

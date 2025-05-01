@@ -4,18 +4,18 @@
     specializes = base_spell_sumcol_cm;
     [common]    { is_pcontent_allowed = false;    }
 
-    doc = "spell Summon Rune Guardian (SumCol Demo)";
+    doc = "spell Summon Rune Beast (SumCol Demo)";
     [aspect]
     {
         gold_value = 190000;
     }
     [common]
     {
-        screen_name = "Summon Rune Guardian (SumCol Demo)";
+        screen_name = "Summon Rune Beast (SumCol Demo)";
     }
     [common]
     {
-        description = "Summons a Rune Guardian to guard the Caster.";
+        description = "Summons a Rune Beast to guard the Caster.";
     }
     [gui]
     {
