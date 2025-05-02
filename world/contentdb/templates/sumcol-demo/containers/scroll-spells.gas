@@ -30,7 +30,6 @@
             il_main = test_spell_summon_frost_archer;
             il_main = test_spell_summon_frost_warrior;
             il_main = test_spell_summon_giant_chitterskrag;
-            il_main = test_spell_summon_shadowjumper_henchman;
             il_main = test_spell_summon_shadow_lunger;
             il_main = test_spell_summon_rune_master;
             il_main = test_spell_summon_doppelganger_lord;

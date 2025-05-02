@@ -58,17 +58,6 @@
 
 	[0x0000]
 	{
-		from = "Summon Shadowjumper Henchman";
-		to = "Shadowjumper-Helfer beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summons a Shadowjumper Henchman to guard the Caster.";
-		to = "Beschwört einen Shadowjumper-Helfer, der den Anwender verteidigt.";
-	}
-
-	[0x0000]
-	{
 		from = "Summon Rune Guardian";
 		to = "Runenwächter beschwören";
 	}

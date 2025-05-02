@@ -157,7 +157,6 @@ spell;trog_warrior;trog_warrior;;a;Trog Warrior;1.5;nm;hu;std;v;x;39;36000;7;1.0
 spell;blue_noctiss;dsx_noctiss_2;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.9;;;;;66;84;2;1;;;;
 spell;red_noctiss;dsx_noctiss;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.85;;;;;56;64;2;1;;;;
 scroll;giant_chitterskrag;dsx_chitterskrag_boss;;a;Giant Chitterskrag;2;nm;an;mb;loa;;34;5800;13;1.3;;;;;;;;;2;5.4;;;;
-scroll;shadowjumper_henchman;dsx_shadow_jumper_minion_three;;a;Shadowjumper Henchman;1.5;cm;de;mb;loa;x;41;8000;15;1.3;;;;;72;80;;;1;3.6;;;;
 spell;marble_golem;dsx_golem_marble;;a;Marble Golem;1.5;nm;el;std;loa;;33;28000;6;1.1;;;;;;;;;3;1;;;;
 spell;zaurask_lightning;dsx_zaurask_archer;;a;Zaurask Lightning;1.5;nm;hu;std;loa;x;46;63000;6;;1;;;;84;93;;;1.7;1;;;;
 spell;lectar;lectar;;a;Lectar;1;nm;an;std;v;;31;25000;7;0.9;;;;;;;;;1.5;0.6;;;;
