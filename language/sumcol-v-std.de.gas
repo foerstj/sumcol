@@ -14,17 +14,6 @@
 
 	[0x0000]
 	{
-		from = "Summon Forest Phrak";
-		to = "Wald-Phrak beschwören";
-	}
-	[0x0000]
-	{
-		from = "Summons a Forest Phrak to guard the Caster.";
-		to = "Beschwört einen Wald-Phrak, der den Anwender verteidigt.";
-	}
-
-	[0x0000]
-	{
 		from = "Summon Frostnid";
 		to = "Frostnid beschwören";
 	}

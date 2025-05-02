@@ -1,7 +1,7 @@
-SUMMONS COLLECTION CREATURES: 291
+SUMMONS COLLECTION CREATURES: 290
 
-Vanilla Standard Creatures: 119
-- Animals: 31
+Vanilla Standard Creatures: 118
+- Animals: 30
   - Phrak
   - Phrak Piercer
   - Snapper
@@ -23,7 +23,6 @@ Vanilla Standard Creatures: 119
   - Lectar
   - Swamp Stinger
   - Mangler
-  - Forest Phrak
   - Googore Grub
   - Sea Mangler
   - Giant Wasp

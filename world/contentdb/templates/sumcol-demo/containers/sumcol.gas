@@ -28,7 +28,6 @@
             il_main = spell_summon_lectar;
             il_main = spell_summon_swamp_stinger;
             il_main = spell_summon_mangler;
-            il_main = spell_summon_forest_phrak;
             il_main = spell_summon_googore_grub;
             il_main = spell_summon_sea_mangler;
             il_main = spell_summon_giant_wasp;
