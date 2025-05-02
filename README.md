@@ -51,7 +51,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ## Creatures
 
-Almost 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE, UP & LoA.\
+Almost 300 creatures are available for summoning. The Summons Collection now features almost all (normal & suitable) enemies from KoE, UP & LoA.\
 For a list of all supported creatures, see CREATURES.md.
 
 
