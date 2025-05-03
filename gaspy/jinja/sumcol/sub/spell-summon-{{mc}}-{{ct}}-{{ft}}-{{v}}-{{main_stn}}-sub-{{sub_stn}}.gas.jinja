@@ -26,21 +26,21 @@
 
         [enchantments]
         {
-            {% if dmg_m %}
+            {% if dmg_m != '' %}
             [*]
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = ((((((#src_combat_magic_level*4.2)*{{dmg_m | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
+                value = (((((((#src_combat_magic_level*4.2)*{{dmg_m | float}})*{{abf_m or 1}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = ((((((#src_combat_magic_level*4.2)*{{dmg_m | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
+                value = (((((((#src_combat_magic_level*4.2)*{{dmg_m | float}})*{{abf_m or 1}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
             }
             {% endif %}
-            {% if dmg_r %}
+            {% if dmg_r != '' %}
             [*]
             {
                 alteration = alter_ranged_damage_min;
@@ -54,7 +54,7 @@
                 value = (((((#src_combat_magic_level*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #ranged_damage_max) - {{wpn_dmg_max | float}});
             }
             {% endif %}
-            {% if dmg_c %}
+            {% if dmg_c != '' %}
             [*]
             {
                 alteration = alter_cmagic_damage_min;
@@ -72,7 +72,11 @@
             {
                 alteration = alter_armor;
                 duration = #infinite;
+                {% if req_lvl <= 50 %}
                 value = (((#src_combat_magic_level*4.2)*{{armor | float}}) - #base_defense);
+                {% else %}
+                value = (((#src_combat_magic_level*4.2)*{{armor | float}}*(1+((#spell_req_level-50)*0.015))) - #base_defense);
+                {% endif %}
             }
             [*]
             {
@@ -86,7 +90,7 @@
                 duration = 1.0;
                 value = (((#src_combat_magic_level*12)+(#spell_req_level*12))*{{life | float}});
             }
-            {% if dmg_m %}
+            {% if dmg_m != '' %}
             [*]
             {
                 alteration = alter_melee;
@@ -98,7 +102,7 @@
                 {% endif %}
             }
             {% endif %}
-            {% if dmg_r %}
+            {% if dmg_r != '' %}
             [*]
             {
                 alteration = alter_ranged;
@@ -110,7 +114,7 @@
                 {% endif %}
             }
             {% endif %}
-            {% if dmg_c %}
+            {% if dmg_c != '' %}
             [*]
             {
                 alteration = alter_combat_magic;
