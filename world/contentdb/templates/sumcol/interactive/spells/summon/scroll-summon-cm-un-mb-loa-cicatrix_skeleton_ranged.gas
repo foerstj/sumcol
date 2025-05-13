@@ -1,0 +1,104 @@
+[t:template,n:scroll_summon_cicatrix_skeleton_ranged] { specializes = scroll_summon_cicatrix_skeleton_ranged_base; }
+[t:template,n:scroll_summon_cicatrix_skeleton_ranged_base]
+{
+    specializes = base_scroll_sumcol_cm;
+
+    doc = "scroll Summon Cicatrix's Skeleton Ranger";
+    [aspect]
+    {
+        gold_value = 6000;
+    }
+    [common]
+    {
+        screen_name = "Summon Cicatrix's Skeleton Ranger";
+        description = "Summons a Cicatrix's Skeleton Ranger to guard the Caster.";
+    }
+    [gui]
+    {
+        active_icon =   b_gui_ig_i_ic_sc_sumcol-cm-un-mb-loa-cicatrix_skeleton_ranged;
+        inventory_icon =b_gui_ig_i_ic_sc_sumcol-cm-un-mb-loa-cicatrix_skeleton_ranged-inv;
+    }
+    [spell_summon]
+    {
+        template_name = dsx_skeleton_cicatrix_minion_ranged_summon;
+        script_params = "[scale(1.5)]";
+    }
+    [magic]
+    {
+        effect_duration = 780;
+        mana_cost = 0;
+        mana_cost_modifier = (#magic+1)*(15+1);
+        required_level = 30;
+        max_level = 50;
+
+        [enchantments]
+        {
+            [*]
+            {
+                alteration = alter_ranged_damage_min;
+                duration = #infinite;
+                value = (((((#magic*4.2)*1.2)*0.9) - #ranged_damage_min) - 32.0);
+            }
+            [*]
+            {
+                alteration = alter_ranged_damage_max;
+                duration = #infinite;
+                value = (((((#magic*4.2)*1.2)*1.1) - #ranged_damage_max) - 45.0);
+            }
+            [*]
+            {
+                alteration = alter_armor;
+                duration = #infinite;
+                value = (((#magic*4.2)*2.0) - #base_defense);
+            }
+            [*]
+            {
+                alteration = alter_max_life;
+                duration = #infinite;
+                value = ((((#magic*12)+(#spell_req_level*12))*3.0) - #maxlife);
+            }
+            [*]
+            {
+                alteration = alter_life;
+                duration = 1.0;
+                value = (((#magic*12)+(#spell_req_level*12))*3.0);
+            }
+            [*]
+            {
+                alteration = alter_ranged;
+                duration = #infinite;
+                value = ((#magic*0.85)-#ranged);
+            }
+            [*]
+            {
+                alteration = alter_strength;
+                duration = #infinite;
+                value = (((#magic*0.64)+10) - #str);
+            }
+            [*]
+            {
+                alteration = alter_dexterity;
+                duration = #infinite;
+                value = (((#magic*0.27)+10) - #dex);
+            }
+            [*]
+            {
+                alteration = alter_intelligence;
+                duration = #infinite;
+                value = (((#magic*0.09)+10) - #int);
+            }
+            [*]
+            {
+                alteration = alter_max_mana;
+                duration = #infinite;
+                value = ((#magic*19) - #maxmana);
+            }
+            [*]
+            {
+                alteration = alter_mana;
+                duration = 1.0;
+                value = (#magic*19);
+            }
+        }
+    }
+}

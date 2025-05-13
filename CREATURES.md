@@ -1,6 +1,6 @@
-SUMMONS COLLECTION CREATURES: 289
+SUMMONS COLLECTION CREATURES: 294
 
-Vanilla Standard Creatures: 118
+Vanilla Standard Creatures: 119
 - Animals: 30
   - Phrak
   - Phrak Piercer
@@ -46,7 +46,7 @@ Vanilla Standard Creatures: 118
   - Swamp Creature
   - Lava Spirit Fighter
   - Lava Beast
-- Undead: 16
+- Undead: 17
   - Skeleton Guard
   - Walking Corpse
   - Skeleton Archer
@@ -56,6 +56,7 @@ Vanilla Standard Creatures: 118
   - Zombie
   - Wraith Mage
   - Skeleton Ranger
+  - Lesser Wraith
   - Skeleton Mercenary
   - Punisher
   - Terror Wraith
@@ -298,7 +299,7 @@ LoA Standard Creatures: 97
   - Zaurask Mage
   - Goblin Headsman
 
-LoA Non-Standard Creatures: 18
+LoA Non-Standard Creatures: 22
 - Animals: 3
   - Yellow Eye
   - Jungle Skrubb
@@ -307,17 +308,21 @@ LoA Non-Standard Creatures: 18
   - Air Elemental Minion
   - Earth Elemental Minion
   - Water Elemental Minion
-- Undead: 1
+- Undead: 3
+  - Cicatrix's Skeleton Fighter
+  - Cicatrix's Skeleton Ranger
   - Krakemaw the Putrid
 - Plants: 2
   - Killer Vines
   - Mantrap
-- Demonics: 5
+- Demonics: 7
   - Twisted Mucosa Brute
   - Doppelganger Knave
   - Doppelganger
   - Doppelganger Lord
   - Shadowjumper Minion
+  - Shadow Servant
+  - Shadowjumper Lieutenant
 - Robots: 0
 - Humanoids: 4
   - Jungle Slinger Camora

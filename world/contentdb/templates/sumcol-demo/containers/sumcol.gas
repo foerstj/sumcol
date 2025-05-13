@@ -83,6 +83,7 @@
             il_main = spell_summon_zombie;
             il_main = spell_summon_wraith_mage;
             il_main = spell_summon_skeleton_ranger;
+            il_main = spell_summon_wraith_lesser;
             il_main = spell_summon_skeleton_mercenary;
             il_main = spell_summon_punisher;
             il_main = spell_summon_terror_wraith;
@@ -560,6 +561,8 @@
     {
         [other]
         {
+            il_main = scroll_summon_cicatrix_skeleton_melee;
+            il_main = scroll_summon_cicatrix_skeleton_ranged;
             il_main = scroll_summon_krakemaw_the_putrid;
         }
     }
@@ -592,6 +595,8 @@
             il_main = spell_summon_doppelganger;
             il_main = scroll_summon_doppelganger_lord;
             il_main = scroll_summon_shadowjumper_minion;
+            il_main = scroll_summon_shadow_servant;
+            il_main = scroll_summon_shadowjumper_lieutenant;
         }
     }
 }

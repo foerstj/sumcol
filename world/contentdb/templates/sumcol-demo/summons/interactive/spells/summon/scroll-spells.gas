@@ -5,6 +5,20 @@
     common:is_pcontent_allowed = false;
     magic:one_use = false;
 }
+[t:template,n:test_spell_summon_cicatrix_skeleton_melee]
+{
+    specializes = scroll_summon_cicatrix_skeleton_melee_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_cicatrix_skeleton_ranged]
+{
+    specializes = scroll_summon_cicatrix_skeleton_ranged_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
 [t:template,n:test_spell_summon_brankar]
 {
     specializes = scroll_summon_brankar_base;
@@ -236,6 +250,13 @@
     common:is_pcontent_allowed = false;
     magic:one_use = false;
 }
+[t:template,n:test_spell_summon_shadow_servant]
+{
+    specializes = scroll_summon_shadow_servant_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
 [t:template,n:test_spell_summon_enraged_gorack]
 {
     specializes = scroll_summon_enraged_gorack_base;
@@ -267,6 +288,13 @@
 [t:template,n:test_spell_summon_water_elemental_minion]
 {
     specializes = scroll_summon_water_elemental_minion_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_shadowjumper_lieutenant]
+{
+    specializes = scroll_summon_shadowjumper_lieutenant_base;
 
     common:is_pcontent_allowed = false;
     magic:one_use = false;
