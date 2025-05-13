@@ -21,7 +21,7 @@
     [spell_summon]
     {
         template_name = spider_frostnid_ranged_summon;
-        script_params = "[scale(1.0)]";
+        script_params = "[scale(1.5)]";
     }
     [magic]
     {
