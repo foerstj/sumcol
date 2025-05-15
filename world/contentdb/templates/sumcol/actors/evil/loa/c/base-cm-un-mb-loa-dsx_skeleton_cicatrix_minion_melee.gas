@@ -1,0 +1,77 @@
+// melee For the cicatrix to summon.
+[t:template,n:dsx_skeleton_cicatrix_minion_melee_base]  // = dsx_skeleton_cicatrix_minion_melee
+{
+// Balanced to level 14, medium melee
+	category_name = "1W_evil_c";
+	doc = "dsx_skeleton_cicatrix_minion_melee";
+	specializes = base_skeleton;	
+	[actor]
+	{
+		[skills]
+		{
+			strength		= 13, 0;
+			intelligence	= 8, 0;
+			dexterity		= 9, 0;
+			melee			= 9, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value 	= 0;
+		life 				= 217;
+		max_life 			= 217;
+		mana 				= 2;
+		max_mana 			= 2;
+	}
+	[attack]
+	{
+		damage_min = 45;
+		damage_max = 53;
+	}
+	[common]
+	{
+		screen_name = "Cicatrix's Skeleton";
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("dsx_skeleton_cicatrix_minion");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+		}
+	}
+	
+	[defend] { defense = 65; }
+	
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_MELEE_WEAPON;
+		[equipment]
+		{
+			es_weapon_hand = mc_dsx_cicatrix_skeleton;
+		}
+		[pcontent]
+		{
+			[oneof*] 
+			{
+				il_main=#mace/30; 
+			}			
+		}
+	}
+	[mind]
+	{
+		jat_fidget					= world\ai\jobs\common\job_fidget.skrit
+			?still					= false;
+		
+		jat_brain									= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		= true
+			&actor_creates_own_party		= false
+			&party_template				= "party_dsx_cicatrix";
+			com_channels				= dyn_party, cicatrix;
+			com_range				= 20.0;
+			melee_engage_range			= 20.0;
+			ranged_engage_range	 		= 20.0;
+			sight_range				= 20.0;
+	}
+}
