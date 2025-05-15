@@ -177,4 +177,48 @@
 		to = "Beschwört Krakemaw den Stinkenden, der den Anwender verteidigt.";
 	}
 
+	[0x0000]
+	{
+		from = "Summon Cicatrix's Skeleton Fighter";
+		to = "Cicatrix’ Skelettkämpfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Cicatrix's Skeleton Fighter to guard the Caster.";
+		to = "Beschwört einen Cicatrix’ Skelettkämpfer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Cicatrix's Skeleton Archer";
+		to = "Cicatrix’ Skelettbogenschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Cicatrix's Skeleton Archer to guard the Caster.";
+		to = "Beschwört einen Cicatrix’ Skelettbogenschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Shadow Servant";
+		to = "Schattendiener beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadow Servant to guard the Caster.";
+		to = "Beschwört einen Schattendiener, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Shadowjumper Lieutenant";
+		to = "Shadowjumper-Leutnant beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Shadowjumper Lieutenant to guard the Caster.";
+		to = "Beschwört einen Shadowjumper-Leutnant, der den Anwender verteidigt.";
+	}
+
 }

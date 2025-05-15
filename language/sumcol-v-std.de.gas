@@ -1299,4 +1299,15 @@
 		to = "Beschwört ein Riesenskelett, das den Anwender verteidigt.";
 	}
 
+	[0x0000]
+	{
+		from = "Summon Wraith";
+		to = "Gespenst beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Wraith to guard the Caster.";
+		to = "Beschwört ein Gespenst, das den Anwender verteidigt.";
+	}
+
 }
