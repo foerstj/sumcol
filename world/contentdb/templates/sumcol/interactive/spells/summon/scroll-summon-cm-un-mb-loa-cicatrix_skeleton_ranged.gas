@@ -3,15 +3,15 @@
 {
     specializes = base_scroll_sumcol_cm;
 
-    doc = "scroll Summon Cicatrix's Skeleton Ranger";
+    doc = "scroll Summon Cicatrix's Skeleton Archer";
     [aspect]
     {
         gold_value = 6000;
     }
     [common]
     {
-        screen_name = "Summon Cicatrix's Skeleton Ranger";
-        description = "Summons a Cicatrix's Skeleton Ranger to guard the Caster.";
+        screen_name = "Summon Cicatrix's Skeleton Archer";
+        description = "Summons a Cicatrix's Skeleton Archer to guard the Caster.";
     }
     [gui]
     {

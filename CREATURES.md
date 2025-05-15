@@ -310,7 +310,7 @@ LoA Non-Standard Creatures: 22
   - Water Elemental Minion
 - Undead: 3
   - Cicatrix's Skeleton Fighter
-  - Cicatrix's Skeleton Ranger
+  - Cicatrix's Skeleton Archer
   - Krakemaw the Putrid
 - Plants: 2
   - Killer Vines
