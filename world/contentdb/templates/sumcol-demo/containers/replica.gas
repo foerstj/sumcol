@@ -34,6 +34,7 @@
             il_main = spell_summon_skick_sumcol_demo;
             il_main = spell_summon_spiked_dweller_sumcol_demo;
             il_main = spell_summon_troll_forest_sumcol_demo;
+            il_main = spell_summon_troll_forest_norecov_sumcol_demo;
             il_main = spell_summon_wolf_black_sumcol_demo;
             il_main = spell_summon_wraith_sumcol_demo;
             il_main = spell_summon_wraith_archer_sumcol_demo;

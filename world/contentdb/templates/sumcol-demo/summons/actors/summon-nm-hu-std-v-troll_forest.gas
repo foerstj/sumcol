@@ -1,0 +1,30 @@
+[t:template,n:troll_forest_summon_base]  // = troll_forest_summon
+{
+	category_name = "1W_evil_d";
+	doc = "[summon] troll forest";
+	specializes = troll_forest_base;
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent]
+		{
+			[oneof*]
+			{
+            	es_weapon_hand = cb_un_2h_troll_forest;
+			}
+		}
+	}
+	mind:on_life_ratio_low_flee = false;
+}
+
+[t:template,n:troll_forest_norecov_summon]
+{
+	specializes = troll_forest_summon_base;
+
+	[aspect]
+	{
+		life_recovery_period = 0;
+		life_recovery_unit = 0;
+	}
+}

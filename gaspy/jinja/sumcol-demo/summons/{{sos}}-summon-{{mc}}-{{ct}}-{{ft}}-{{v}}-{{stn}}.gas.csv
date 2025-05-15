@@ -26,6 +26,7 @@ spell;skeleton;skeleton;summon;a;Skeleton;1;cm;un;std;v;;240;6;10;0.95;;;;;10;16
 spell;skick;skick;summon;a;Skick;1;nm;an;std;v;;15000;6;28;0.8;;;;;;;;;2;1;118
 spell;spiked_dweller;spiked_dweller;summon;a;Spiked Dweller;1.75;nm;an;std;v;;69000;5;48;;;0.95;;;;;150;165;1.5;0.8;55
 spell;troll_forest;troll_forest;summon;a;Forest Troll;1;nm;hu;std;v;x;28000;6;33;1;;;;;50;54;;;1;1;124
+spell;troll_forest_norecov;troll_forest_norecov;summon;a;Forest Troll (no recov);1;nm;hu;std;v;x;28000;6;33;1;;;;;50;54;;;1;1;124
 spell;wolf_black;wolf_black;summon;a;Black Wolf;1.75;nm;an;std;v;;38000;6;40;0.95;;;;;;;;;1;0.8;46
 spell;wraith;wraith;summon;a;Wraith;1;cm;un;std;v;;69000;6;53;1;;;;;;;;;2;0.8;136
 spell;wraith_archer;wraith_archer;summon;a;Wraith Archer;1;cm;un;std;v;;100000;5;57;;0.95;;;;94;110;;;2;0.8;139
