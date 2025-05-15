@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Dummy Wraith Mage (20-40) (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Dummy Wraith Mage (20-40) to guard the Caster.";
     }
     [gui]

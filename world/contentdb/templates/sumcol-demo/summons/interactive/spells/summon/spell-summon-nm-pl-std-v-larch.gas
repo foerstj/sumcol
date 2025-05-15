@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Larch (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Larch to guard the Caster.";
     }
     [gui]

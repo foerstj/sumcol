@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Furok (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Furok to guard the Caster.";
     }
     [gui]

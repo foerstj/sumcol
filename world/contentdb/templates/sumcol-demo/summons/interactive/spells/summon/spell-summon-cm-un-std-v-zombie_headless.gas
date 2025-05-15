@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Headless Zombie (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Headless Zombie to guard the Caster.";
     }
     [gui]

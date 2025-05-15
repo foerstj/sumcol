@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Mucosa Predator (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Mucosa Predator to guard the Caster.";
     }
     [gui]

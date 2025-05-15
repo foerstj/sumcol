@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Krug Dog Skeleton (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Krug Dog Skeleton to guard the Caster.";
     }
     [gui]

@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Cave Bear (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Cave Bear to guard the Caster.";
     }
     [gui]

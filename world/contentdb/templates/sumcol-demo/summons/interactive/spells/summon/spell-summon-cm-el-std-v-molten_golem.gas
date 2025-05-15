@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Slag (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Slag to guard the Caster.";
     }
     [gui]

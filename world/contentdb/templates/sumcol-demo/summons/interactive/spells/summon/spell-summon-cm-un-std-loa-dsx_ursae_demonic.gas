@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Ursae (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons an Ursae to guard the Caster.";
     }
     [gui]

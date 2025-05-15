@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Skick (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Skick to guard the Caster.";
     }
     [gui]

@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Rock Golem (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Rock Golem to guard the Caster.";
     }
     [gui]

@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Fire Elemental (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Fire Elemental to guard the Caster.";
     }
     [gui]

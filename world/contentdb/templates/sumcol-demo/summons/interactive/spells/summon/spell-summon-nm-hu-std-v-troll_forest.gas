@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Forest Troll (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Forest Troll to guard the Caster.";
     }
     [gui]

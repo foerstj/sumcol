@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Jade Gargoyle (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Jade Gargoyle to guard the Caster.";
     }
     [gui]

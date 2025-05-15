@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Scrub Howler (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Scrub Howler to guard the Caster.";
     }
     [gui]

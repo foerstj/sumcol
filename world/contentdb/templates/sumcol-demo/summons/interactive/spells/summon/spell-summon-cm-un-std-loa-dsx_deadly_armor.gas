@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Deadly Armor (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons Deadly Armor to guard the Caster.";
     }
     [gui]

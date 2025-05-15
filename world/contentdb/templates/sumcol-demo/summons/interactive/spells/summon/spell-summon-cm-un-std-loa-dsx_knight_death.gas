@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Death Knight (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Death Knight to guard the Caster.";
     }
     [gui]

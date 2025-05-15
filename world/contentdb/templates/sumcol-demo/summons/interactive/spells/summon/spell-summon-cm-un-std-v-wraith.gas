@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Wraith (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Wraith to guard the Caster.";
     }
     [gui]

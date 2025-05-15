@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Troll Masher (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Troll Masher to guard the Caster.";
     }
     [gui]

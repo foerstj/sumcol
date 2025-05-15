@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Zepheryl (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Zepheryl to guard the Caster.";
     }
     [gui]

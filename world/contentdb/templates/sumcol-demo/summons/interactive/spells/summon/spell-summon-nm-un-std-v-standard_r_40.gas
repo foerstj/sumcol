@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Dummy Wraith Archer (40-60) (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Dummy Wraith Archer (40-60) to guard the Caster.";
     }
     [gui]

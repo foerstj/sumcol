@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Slithermage (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Slithermage to guard the Caster.";
     }
     [gui]

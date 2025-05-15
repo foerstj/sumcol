@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Barkrunner (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Barkrunner to guard the Caster.";
     }
     [gui]

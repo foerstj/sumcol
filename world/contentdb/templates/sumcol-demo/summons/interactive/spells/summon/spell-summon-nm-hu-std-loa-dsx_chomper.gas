@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Chomper (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Chomper to guard the Caster.";
     }
     [gui]

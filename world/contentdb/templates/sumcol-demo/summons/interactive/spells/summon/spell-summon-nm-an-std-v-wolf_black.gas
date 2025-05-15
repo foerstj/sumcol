@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Black Wolf (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Black Wolf to guard the Caster.";
     }
     [gui]

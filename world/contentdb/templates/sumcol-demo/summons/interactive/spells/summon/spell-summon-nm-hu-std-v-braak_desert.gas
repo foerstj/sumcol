@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Desert Braak (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Desert Braak to guard the Caster.";
     }
     [gui]

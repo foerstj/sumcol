@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Picker (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Picker to guard the Caster.";
     }
     [gui]

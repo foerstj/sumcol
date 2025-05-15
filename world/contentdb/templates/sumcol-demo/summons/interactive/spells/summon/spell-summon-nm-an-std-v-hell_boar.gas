@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Hell Boar (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Hell Boar to guard the Caster.";
     }
     [gui]

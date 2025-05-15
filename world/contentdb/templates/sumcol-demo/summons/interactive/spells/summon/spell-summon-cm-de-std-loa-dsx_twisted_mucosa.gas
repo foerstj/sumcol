@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Twisted Mucosa (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Twisted Mucosa to guard the Caster.";
     }
     [gui]

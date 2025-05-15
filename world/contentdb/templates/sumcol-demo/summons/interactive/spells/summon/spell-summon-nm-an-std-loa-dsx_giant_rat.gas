@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Giant Rat (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Giant Rat to guard the Caster.";
     }
     [gui]

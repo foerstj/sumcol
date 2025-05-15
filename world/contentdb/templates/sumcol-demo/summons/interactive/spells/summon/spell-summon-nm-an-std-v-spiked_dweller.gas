@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Spiked Dweller (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Spiked Dweller to guard the Caster.";
     }
     [gui]

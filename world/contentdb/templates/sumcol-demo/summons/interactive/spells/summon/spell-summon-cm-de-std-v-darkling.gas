@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Darkling (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Darkling to guard the Caster.";
     }
     [gui]

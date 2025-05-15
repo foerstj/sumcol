@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Skeleton (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Skeleton to guard the Caster.";
     }
     [gui]

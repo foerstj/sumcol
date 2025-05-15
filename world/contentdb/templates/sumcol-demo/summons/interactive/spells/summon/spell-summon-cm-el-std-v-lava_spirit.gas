@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Lava Spirit (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Lava Spirit to guard the Caster.";
     }
     [gui]

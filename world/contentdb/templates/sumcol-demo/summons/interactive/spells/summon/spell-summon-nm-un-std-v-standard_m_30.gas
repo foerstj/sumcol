@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Dummy Wraith Fighter (30-50) (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Dummy Wraith Fighter (30-50) to guard the Caster.";
     }
     [gui]

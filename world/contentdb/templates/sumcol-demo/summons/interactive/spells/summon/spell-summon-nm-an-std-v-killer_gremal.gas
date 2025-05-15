@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Killer Gremal (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Killer Gremal to guard the Caster.";
     }
     [gui]

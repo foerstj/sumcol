@@ -12,9 +12,6 @@
     [common]
     {
         screen_name = "Summon Black Drake (SumCol Demo)";
-    }
-    [common]
-    {
         description = "Summons a Black Drake to guard the Caster.";
     }
     [gui]
