@@ -56,7 +56,7 @@ Vanilla Standard Creatures: 119
   - Zombie
   - Wraith Mage
   - Skeleton Ranger
-  - Lesser Wraith
+  - Wraith
   - Skeleton Mercenary
   - Punisher
   - Terror Wraith
