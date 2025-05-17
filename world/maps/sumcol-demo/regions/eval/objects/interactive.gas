@@ -1,27 +1,3 @@
-[t:sign_glb_01,n:0x00300012]
-{
-	[common]
-	{
-		screen_name = "For req.lvl 30+";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.43962,1.97229,1.56795,0xea95aff5;
-	}
-}
-[t:sign_glb_01,n:0x0030000f]
-{
-	[common]
-	{
-		screen_name = "For req.lvl 30+ (not moving)";
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.39023,1.9835,1.55582,0x815888ca;
-	}
-}
 [t:lever_glb_06,n:0x0030000a]
 {
 	[common]
@@ -48,6 +24,31 @@
 	{
 	  q orientation = 5.26838e-009,0.707107,0.707107,-3.31906e-007;
 	  p position = -1.34616,4.02659,1.97761,0xea95aff5;
+		use_point_scids = 0x00300016,0x00300015,0x00300014,0x00300013;
+	}
+}
+[t:sign_glb_01,n:0x00300012]
+{
+	[common]
+	{
+		screen_name = "For req.lvl 30+";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.43962,1.97229,1.56795,0xea95aff5;
+	}
+}
+[t:sign_glb_01,n:0x0030000f]
+{
+	[common]
+	{
+		screen_name = "For req.lvl 30+ (not moving)";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.39023,1.9835,1.55582,0x815888ca;
 	}
 }
 [t:sign_glb_01,n:0x00300010]

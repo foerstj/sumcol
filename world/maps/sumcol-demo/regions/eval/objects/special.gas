@@ -42,6 +42,20 @@
 	  p position = -0.00759315,0,-0.0204115,0x4d937798;
 	}
 }
+[t:use_point,n:0x00300015]
+{
+	[placement]
+	{
+	  p position = -1.97922,1.95,-0.0581884,0xea95aff5;
+	}
+}
+[t:use_point,n:0x00300016]
+{
+	[placement]
+	{
+	  p position = 0.00196028,1.95,1.97421,0xea95aff5;
+	}
+}
 [t:trigger_generic,n:0x0030000d]
 {
 	[common]
@@ -86,48 +100,18 @@
 	  p position = 0.0287027,0,-0.0443726,0x52774bf3;
 	}
 }
-[t:trigger_generic,n:0x0030000b]
+[t:use_point,n:0x00300013]
 {
-	[common]
-	{
-		[instance_triggers]
-		{
-			[*]
-			{
-				action* = change_actor_life(-1e+006f,0x00000000);
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_req_activate",0,"on_every_message");
-				condition* = actor_within_bounding_box(5.000000,2.000000,5.000000,"wait_for_every_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-			[*]
-			{
-				action* = call_sfx_script("arch_angel_explosion","","");
-			  b can_self_destruct = true;
-				condition* = receive_world_message("we_req_activate",0,"on_every_message");
-			  f delay = 0.000000;
-			  b flip_flop = false;
-			  b multi_player = true;
-			  b no_trig_bits = false;
-				occupants_group = ;
-			  f reset_duration = 0.000000;
-			  b single_player = true;
-			  b single_shot = false;
-			  b start_active = true;
-			}
-		}
-	}
 	[placement]
 	{
-	  p position = -0.0414848,0,0.0208912,0x2aa733c6;
+	  p position = -1.99027,1.95,-0.010727,0x7c3b31c5;
+	}
+}
+[t:use_point,n:0x00300014]
+{
+	[placement]
+	{
+	  p position = -1.99334,1.95,-0.0813813,0x05e3f4a1;
 	}
 }
 [t:trigger_generic,n:0x00300009]
@@ -172,5 +156,49 @@
 	[placement]
 	{
 	  p position = -0.00709534,0,0.00312614,0x0aa76278;
+	}
+}
+[t:trigger_generic,n:0x0030000b]
+{
+	[common]
+	{
+		[instance_triggers]
+		{
+			[*]
+			{
+				action* = change_actor_life(-1e+006f,0x00000000);
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_every_message");
+				condition* = actor_within_bounding_box(5.000000,2.000000,5.000000,"wait_for_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+			[*]
+			{
+				action* = call_sfx_script("arch_angel_explosion","","");
+			  b can_self_destruct = true;
+				condition* = receive_world_message("we_req_activate",0,"on_every_message");
+			  f delay = 0.000000;
+			  b flip_flop = false;
+			  b multi_player = true;
+			  b no_trig_bits = false;
+				occupants_group = ;
+			  f reset_duration = 0.000000;
+			  b single_player = true;
+			  b single_shot = false;
+			  b start_active = true;
+			}
+		}
+	}
+	[placement]
+	{
+	  p position = -0.0414848,0,0.0208912,0x2aa733c6;
 	}
 }
