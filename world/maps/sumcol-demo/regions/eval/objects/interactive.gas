@@ -75,3 +75,31 @@
 	  p position = -1.48303,1.99449,1.60431,0x05e3f4a1;
 	}
 }
+[t:lever_glb_06,n:0x0030001b]
+{
+	[common]
+	{
+		screen_name = "Wipe";
+	}
+	[on_off_lever]
+	{
+		off_message = we_req_activate;
+		off_message_2 = we_req_activate;
+		off_message_3 = we_req_activate;
+		off_message_4 = we_req_activate;
+	  x off_scid = 0x00300017;
+	  x off_scid_2 = 0x00300018;
+	  x off_scid_3 = 0x00300019;
+	  x off_scid_4 = 0x0030001A;
+	  x on_scid = 0x00300017;
+	  x on_scid_2 = 0x00300018;
+	  x on_scid_3 = 0x00300019;
+	  x on_scid_4 = 0x0030001A;
+	  f reset_time_2 = 1;
+	}
+	[placement]
+	{
+	  q orientation = -5.26836e-008,0.707107,0.707107,-4.84689e-007;
+	  p position = -1.99498,4.03262,1.96714,0xe8ac3139;
+	}
+}
