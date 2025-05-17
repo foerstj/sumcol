@@ -9,7 +9,7 @@
 		screen_name = "Dummy Krug";
 		membership = krug, monster;
 	}
-    //mind:movement_orders = MO_HOLD;
+    physics:explode_when_killed = true;
 
 	[body]
 	{
