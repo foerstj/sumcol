@@ -62,8 +62,9 @@
 			il_main = spell_healing_wind;
 			il_main = spell_major_heal;
 
-            // ring to increase max mana
+            // rings to boost mana
 			il_main = sumcol_ring_mana;
+			il_main = sumcol_ring_mana_regen;
         }
     }
 }

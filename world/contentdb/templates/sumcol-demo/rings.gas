@@ -1,3 +1,4 @@
+// Increases max mana, to ensure casters are able to summon humanoids
 [t:template,n:sumcol_ring_mana]
 {
 	specializes = ring;
@@ -5,7 +6,7 @@
 	common:screen_name	= "Mana Ring";
     common:is_pcontent_allowed = false;
     gui:inventory_icon = b_gui_ig_i_it_ring_005;
-    aspect:gold_value		= 220;
+    aspect:gold_value		= 1337;
 
 	[magic]
 	{
@@ -16,6 +17,33 @@
 				alteration			= alter_max_mana;
 				value				= 24;
 				description			= "Adds 24 to Mana";
+				duration			= #infinite;
+				is_permanent		= true;
+				is_single_instance	= false;
+			}
+		}
+	}
+}
+
+// Increases mana regeneration, so that non-drdeath casters don't have to drink every time
+[t:template,n:sumcol_ring_mana_regen]
+{
+	specializes = ring;
+	doc = "Mana Regeneration Ring";
+	common:screen_name	= "Mana Regeneration Ring";
+    common:is_pcontent_allowed = false;
+    gui:inventory_icon = b_gui_ig_i_it_ring_005;
+    aspect:gold_value		= 4711;
+
+	[magic]
+	{
+		[enchantments]
+		{
+			[*]
+			{
+				alteration			= alter_mana_recovery_unit;
+				value				= 24;
+				description			= "Increases Mana Regeneration";
 				duration			= #infinite;
 				is_permanent		= true;
 				is_single_instance	= false;
