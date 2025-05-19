@@ -22,6 +22,11 @@
 		jat_startup	= jat_none;
 		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
 	}
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
 
 	[body]
 	{
