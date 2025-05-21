@@ -124,7 +124,7 @@
 	}
 	[defend]
 	{
-		defense = 20;
+		defense = 20;  // total defense: + dexterity factor 3.333 = 23.333
 	}
 
     aspect:textures:0 = b_c_eam_ksv;
@@ -161,7 +161,7 @@
 	}
 	[defend]
 	{
-		defense = 50;
+		defense = 50;  // total defense: + dexterity factor 9 = 59
 	}
 }
 
@@ -196,7 +196,7 @@
 	}
 	[defend]
 	{
-		defense = 100;
+		defense = 100;  // total defense: + dexterity factor 9 = 109
 	}
 
     aspect:textures:0 = b_c_eam_ksv;
@@ -239,7 +239,7 @@
 	}
 	[defend]
 	{
-		defense = 200;
+		defense = 200;  // total defense: + dexterity factor 9 = 209
 	}
 }
 [t:template,n:sumcol_krug_dummy_100_hold]
@@ -280,7 +280,7 @@
 	}
 	[defend]
 	{
-		defense = 500;
+		defense = 500;  // total defense: + dexterity factor 79 = 579
 	}
 
     aspect:textures:0 = b_c_eam_ksv;
@@ -323,7 +323,7 @@
 	}
 	[defend]
 	{
-		defense = 1000;
+		defense = 1000;  // total defense: + dexterity factor 149 = 1149
 	}
 }
 [t:template,n:sumcol_krug_dummy_300_hold]
