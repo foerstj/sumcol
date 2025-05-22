@@ -8,13 +8,26 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_hassat_mage_fireshot;
+			il_spell_1 = dsx_spell_hassat_mage_orb_summon;
+		}
 		[pcontent]
 		{
             // ERASED
 		}
 	}
 
-    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+	[mind]
+	{
+		jat_brain = world\ai\jobs\common\brain_hero.skrit;
+
+		jat_cast			= world\ai\jobs\common\job_cast.skrit
+		?rand_spell			= true
+		&spell_chances		= "0.5, 0.5"
+		&spells				= "dsx_spell_hassat_mage_fireshot, dsx_spell_hassat_mage_orb_summon";
+	}
 }
 
 [t:template,n:dsx_hassat_mage_attacking_summon]
@@ -22,8 +35,8 @@
     specializes = dsx_hassat_mage_summon_base;
 	[inventory]
 	{
-		[other] 
-		{ 
+		[other]
+		{
 			il_active_primary_spell = dsx_spell_hassat_mage_fireshot;
 		}
     }
@@ -35,9 +48,9 @@
     specializes = dsx_hassat_mage_summon_base;
 	[inventory]
 	{
-		[other] 
-		{ 
-			il_active_primary_spell = dsx_spell_hassat_mage_orb;
+		[other]
+		{
+			il_active_primary_spell = dsx_spell_hassat_mage_orb_summon;
 		}
     }
     mind:jat_cast = world\ai\jobs\common\job_cast.skrit;

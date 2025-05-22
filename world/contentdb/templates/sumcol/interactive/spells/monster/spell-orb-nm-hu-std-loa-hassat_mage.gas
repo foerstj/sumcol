@@ -1,0 +1,25 @@
+[t:template,n:dsx_spell_hassat_mage_orb_base]  // = dsx_spell_hassat_mage_orb
+{
+	category_name = "magic";
+	doc = "dsx Spell hassat shaman orb";
+	specializes = DSX_base_spell_monster_orb;
+	[magic]
+	{
+		attack_damage_modifier_max = 9;
+		attack_damage_modifier_min = 7;
+		magic_class = mc_combat_magic;
+		skill_class = "Combat Magic";
+	}
+}
+
+[t:template,n:dsx_spell_hassat_mage_orb_summon]
+{
+	specializes = dsx_spell_hassat_mage_orb_base;
+
+	// Same damage as the Hassat Mage's main attack, for easier balancing
+	[magic]
+	{
+		attack_damage_modifier_max = 80;
+		attack_damage_modifier_min = 74;
+	}
+}

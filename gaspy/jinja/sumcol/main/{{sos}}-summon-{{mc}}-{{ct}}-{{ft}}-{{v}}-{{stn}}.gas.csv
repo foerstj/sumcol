@@ -178,9 +178,9 @@ spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;43;44000;5;0
 spell;slithermage_master;dsx_slithermage_melee;;a;Slithermage Master;2;cm;de;std;loa;x;49;72000;5;;;1.1;;;;;119;131;1.5;2;;;;
 spell;purple_shard;shard_purple;;a;Purple Shard;1.75;nm;el;std;v;;37;41000;3;;;1.1;;;;;82;88;3;1.5;;;;
 scroll;doppelganger_lord;dsx_doppelganger_boss_sumcol;;a;Doppelganger Lord;2;cm;de;mb-dop;loa;x;45;9600;15;1.2;1.2;1.2;;;;;;;5;2.5;;;;Doppelganger!
-spell;hassat_mage;dsx_hassat_mage;;a;Hassat Mage;1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.6;;;74;80;1.2;1.5;;;;Attack + Orb
-spell;hassat_mage_attacking;dsx_hassat_mage_attacking;;a;Hassat Mage (Attacking);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.6;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Orb)
-spell;hassat_mage_casting_orb;dsx_hassat_mage_casting_orb;;a;Hassat Mage (Casting Orb);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.6;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Attack)
+spell;hassat_mage;dsx_hassat_mage;;a;Hassat Mage;1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.7;;;74;80;1.2;1.5;;;;"Attack + Orb; custom orb spell"
+spell;hassat_mage_attacking;dsx_hassat_mage_attacking;;a;Hassat Mage (Attacking);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.7;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Orb)
+spell;hassat_mage_casting_orb;dsx_hassat_mage_casting_orb;;a;Hassat Mage (Casting Orb);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.7;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Attack)
 spell;zaurask_seer;dsx_zaurask_caster;;a;Zaurask Seer;1.5;nm;hu;std;loa;x;47;66000;6;;;1;;;;;76;95;1.7;1;;;;
 spell;zaurask_whacker;dsx_zaurask_whacker;;a;Zaurask Whacker;1.5;nm;hu;std;loa;x;45;48000;6;1;;;;;75;84;;;1.7;1.2;;;;
 scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;38;8700;13;;;1.2;;;;;75;80;1.5;2.4;;;;
