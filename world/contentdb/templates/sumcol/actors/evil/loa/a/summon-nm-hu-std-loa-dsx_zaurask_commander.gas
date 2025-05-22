@@ -14,4 +14,11 @@
     }
 
     mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+
+	// base template has missing semicolon - erase base damage completely for simplicity
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
 }
