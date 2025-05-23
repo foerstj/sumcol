@@ -62,7 +62,7 @@
 	[attack]
 	{
         // Edited original damage - minigun_magic.skrit doesn't take summon enchantments into account
-		damage_max = 228;  // = 57 * 4
-		damage_min = 172;  // = 43 * 4
+		damage_max = 188;  // = 57 * 3.3
+		damage_min = 142;  // = 43 * 3.3
 	}
 }
