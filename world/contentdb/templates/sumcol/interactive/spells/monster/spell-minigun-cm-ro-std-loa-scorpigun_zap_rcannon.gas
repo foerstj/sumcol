@@ -41,7 +41,7 @@
 	}
 	[magic]
 	{
-        // spell effect has trackball in addition to the damage volume
+        // spell effect has trackball in addition to the fire damage
 		attack_damage_modifier_min = ((((#combat_magic)*4.2)*0.95)*0.5)*0.9;
 		attack_damage_modifier_max = ((((#combat_magic)*4.2)*0.95)*0.5)*1.1;
 	}
