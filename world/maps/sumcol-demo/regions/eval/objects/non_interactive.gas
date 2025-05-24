@@ -1,0 +1,56 @@
+[t:seashell_glb_01,n:0x0030000f]
+{
+	[placement]
+	{
+	  p position = 2,0,2,0x4d937798;
+	}
+}
+[t:seashell_glb_01,n:0x0030000e]
+{
+	[placement]
+	{
+	  p position = -2,0,-2,0x52774bf3;
+	}
+}
+[t:seashell_glb_01,n:0x00300011]
+{
+	[placement]
+	{
+	  p position = 2,0,2,0x0aa76278;
+	}
+}
+[t:seashell_glb_01,n:0x00300010]
+{
+	[placement]
+	{
+	  p position = 2,0,2,0x2aa733c6;
+	}
+}
+[t:seashell_glb_01,n:0x00300013]
+{
+	[placement]
+	{
+	  p position = 2,0,2,0x5c1cfff6;
+	}
+}
+[t:seashell_glb_01,n:0x00300012]
+{
+	[placement]
+	{
+	  p position = -2,0,-2,0x550665df;
+	}
+}
+[t:seashell_glb_01,n:0x00300015]
+{
+	[placement]
+	{
+	  p position = 2,0,2,0x5b383bb8;
+	}
+}
+[t:seashell_glb_01,n:0x00300014]
+{
+	[placement]
+	{
+	  p position = 2,0,2,0x5c8277d4;
+	}
+}
