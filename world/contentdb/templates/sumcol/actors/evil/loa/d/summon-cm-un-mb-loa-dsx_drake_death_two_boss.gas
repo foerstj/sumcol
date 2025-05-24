@@ -8,6 +8,8 @@
     physics:explode_when_killed = false;
     [inventory]
     {
+		[other] { il_active_primary_spell = dsx_spell_drake_breath_black_mb_summon; }
+
         [pcontent] {}
     }
 }
