@@ -1,0 +1,44 @@
+[t:template,n:spell_drake_breath_molten_base]  // = spell_drake_breath_molten
+{
+	category_name = "magic";
+	doc = "Drake Fire";
+	specializes = base_spell_monster;
+	[attack]
+	{
+		damage_max = 194;
+		damage_min = 184;
+	}
+	[magic]
+	{
+		cast_range = 8;
+		cast_reload_delay = 1;
+		effect_duration = 5;
+		mana_cost = 0;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_conscious_enemy;
+		usage_context_flags = uc_offensive;
+	}
+	[spell_fire]
+	{
+		effect_script = drake_fire_molten;
+		particle_fit = 0.2;
+		watch_caster = true;
+	}
+}
+
+[t:template,n:spell_drake_breath_molten_summon]
+{
+    specializes = spell_drake_breath_molten_base;
+
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.0)*1.0)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.0)*1.0)*1.1;
+	}
+}
