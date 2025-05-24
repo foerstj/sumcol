@@ -21,8 +21,8 @@
 	[attack]
 	{
         // Edited original damage (explosion doesn't take enchantments from summon spell into account)
-		damage_max = 6300;  // = 420 * 15
-		damage_min = 5700;  // = 380 * 15
+		damage_max = 8400;  // = 420 * 20
+		damage_min = 7600;  // = 380 * 20
 	}
 }
 
