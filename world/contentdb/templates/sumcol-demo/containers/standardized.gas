@@ -1,8 +1,8 @@
-[t:template,n:sumcol_demo_barrel_standardized]
+[t:template,n:sumcol_demo_barrel_standardized_main]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Standardized Dummies";
+    common:screen_name = "Standardized Dummies (Main)";
     [inventory]
     {
         [other]
@@ -34,6 +34,19 @@
             il_main = spell_summon_standard_m_80_sumcol_demo;
             il_main = spell_summon_standard_r_80_sumcol_demo;
             il_main = spell_summon_standard_c_80_sumcol_demo;
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_barrel_standardized_special]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Standardized Dummies (Special)";
+    [inventory]
+    {
+        [other]
+        {
             il_main = spell_summon_standard_r11_0_sumcol_demo;
             il_main = spell_summon_standard_r11_50_sumcol_demo;
             il_main = spell_summon_standard_r11_80_sumcol_demo;

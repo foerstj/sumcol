@@ -228,6 +228,13 @@
 	  p position = -0.121022,0,3.35074,0x3a845ae4;
 	}
 }
+[t:sumcol_demo_barrel_standardized_special,n:0x00100032]
+{
+	[placement]
+	{
+	  p position = -0.397175,0,0.806904,0x3a845ae4;
+	}
+}
 [t:sumcol_demo_barrel_original_vanilla,n:0x00100037]
 {
 	[placement]
@@ -249,11 +256,11 @@
 	  p position = -0.522531,0,-0.927096,0x3a845ae4;
 	}
 }
-[t:sumcol_demo_barrel_standardized,n:0x0010004a]
+[t:sumcol_demo_barrel_standardized_main,n:0x0010004a]
 {
 	[placement]
 	{
-	  p position = -0.0928411,0,0.775722,0x3a845ae4;
+	  p position = 0.411804,0,0.817267,0x3a845ae4;
 	}
 }
 [t:sumcol_demo_barrel_testonly,n:0x00100055]
