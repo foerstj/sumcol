@@ -7,7 +7,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 0.137724,0,3.07366,0xa5e1a107;
+	  p position = 0,0,3,0xa5e1a107;
 	}
 }
 [t:sign_glb_no_return,n:0x00100008]
@@ -19,7 +19,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 0.0379558,0,2.97248,0x131cc381;
+	  p position = 0,0,3,0x131cc381;
 	}
 }
 [t:sign_glb_no_return,n:0x0010000a]
@@ -31,7 +31,7 @@
 	[placement]
 	{
 	  q orientation = 0,-0.707107,0,-0.707107;
-	  p position = -3.09648,0,-0.162001,0x0cb7dafa;
+	  p position = -3,0,0,0x0cb7dafa;
 	}
 }
 [t:sign_glb_no_return,n:0x0010000d]
@@ -43,6 +43,6 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,-0.707107;
-	  p position = 3.25697,0,0.102658,0xe605667a;
+	  p position = 3,0,0,0xe605667a;
 	}
 }
