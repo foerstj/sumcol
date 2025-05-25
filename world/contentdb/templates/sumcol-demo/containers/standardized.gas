@@ -37,6 +37,9 @@
             il_main = spell_summon_standard_r11_0_sumcol_demo;
             il_main = spell_summon_standard_r11_50_sumcol_demo;
             il_main = spell_summon_standard_r11_80_sumcol_demo;
+            il_main = spell_summon_standard_cmp_0_sumcol_demo;
+            il_main = spell_summon_standard_cmp_50_sumcol_demo;
+            il_main = spell_summon_standard_cmp_80_sumcol_demo;
         }
     }
 }

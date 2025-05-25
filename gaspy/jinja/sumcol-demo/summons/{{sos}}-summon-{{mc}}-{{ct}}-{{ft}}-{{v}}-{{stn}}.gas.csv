@@ -79,3 +79,6 @@ spell;standard_c_80;wraith_mage_demo;summon;a;Dummy Wraith Mage (80-100);1;nm;un
 spell;standard_r11_0;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (0-20);1;nm;un;std;v;;30;5;0;;1.1;;;;94;110;;;1;1;136;
 spell;standard_r11_50;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (50-70);1;nm;un;std;v;;75000;5;50;;1.1;;;;94;110;;;1;1;136;
 spell;standard_r11_80;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (80-100);1;nm;un;std;v;;300000;5;80;;1.1;;;;94;110;;;1;1;136;
+spell;standard_cmp_0;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (0-20);1;nm;un;std;v;;30;5;0;;;1;;0.5;;;120;140;1;1;136;
+spell;standard_cmp_50;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (50-70);1;nm;un;std;v;;75000;5;50;;;1;;0.5;;;120;140;1;1;136;
+spell;standard_cmp_80;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (80-100);1;nm;un;std;v;;300000;5;80;;;1;;0.5;;;120;140;1;1;136;
