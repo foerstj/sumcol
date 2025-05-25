@@ -1,2 +1,2 @@
 call .\cleanup.bat
-call .\build.bat release
+call .\build.bat

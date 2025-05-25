@@ -21,10 +21,6 @@ set ds=%DungeonSiege%
 :: path of TankCreator
 set tc=%TankCreator%
 
-:: param
-set mode=%1
-echo %mode%
-
 if "%target%"=="" (
   set target=loa
 )
@@ -35,40 +31,25 @@ if "%target%"=="vanilla" (
   set dest_map=Maps
 )
 
-:: Compile map file
-rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_map%\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
-if %errorlevel% neq 0 pause
-
-:: Compile all-in-one resource file
+:: Compile main resource files - split by DS version + functional type std/non-std
+call :build_partial "std-v" "Vanilla Standard"
+call :build_partial2 "v" "std" "Vanilla Non-Standard"
 if "%target%"=="loa" (
-  rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /xf *.psd /S
-  robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
-  robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /S
-  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
-  if %errorlevel% neq 0 pause
-)
-if "%target%"=="vanilla" (
-  call :build_partial "v" "Vanilla"
+  call :build_partial "std-loa" "LoA Standard"
+  call :build_partial2 "loa" "std" "LoA Non-Standard"
 )
 
-:: Compile translation resource file
+:: Compile translation all-in-one resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\language" "%tmp%\Bits\language" %res%-*.de.gas /S
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
-if "%mode%"=="release" (
-  :: by DS version + functional type std/non-std
-  call :build_partial "std-v" "Vanilla Standard"
-  call :build_partial "std-loa" "LoA Standard"
-  call :build_partial2 "v" "std" "Vanilla Non-Standard"
-  call :build_partial2 "loa" "std" "LoA Non-Standard"
-)
+:: Compile demo map file
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /S
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_map%\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+if %errorlevel% neq 0 pause
 
 :: Compile demo resource file
 rmdir /S /Q "%tmp%\Bits"
@@ -96,22 +77,6 @@ exit /b %errorlevel%
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
-  set title=%res_cs% - %name%
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
-  if %errorlevel% neq 0 pause
-exit /b 0
-
-:: build partial, excluding infix
-:build_partial_x
-  set infix=%~1
-  set name=%~2
-  echo build_partial_x %infix% %name%
-  rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" /xf *-%infix%-* /xf *.psd /S
-  robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
-  robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /xf *-%infix%-* /S
-  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /xf *-%infix%-* /S
   set title=%res_cs% - %name%
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
