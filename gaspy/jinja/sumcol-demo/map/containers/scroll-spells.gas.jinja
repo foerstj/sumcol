@@ -1,13 +1,29 @@
-[t:template,n:sumcol_demo_barrel_scroll_spells]
+[t:template,n:sumcol_demo_barrel_scroll_spells_vanilla]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Scrolls as Spells";
+    common:screen_name = "Scrolls as Spells - Vanilla";
     [inventory]
     {
         [other]
         {
-            {% for row in data if row['sos'] == 'scroll' and not row['test_only'] %}
+            {% for row in data if row['sos'] == 'scroll' and not row['test_only'] and row['v'] == 'v' %}
+            il_main = test_spell_summon_{{ row['stn'] }};
+            {% endfor %}
+        }
+    }
+}
+
+[t:template,n:sumcol_demo_barrel_scroll_spells_loa]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Scrolls as Spells - LoA";
+    [inventory]
+    {
+        [other]
+        {
+            {% for row in data if row['sos'] == 'scroll' and not row['test_only'] and row['v'] == 'loa' %}
             il_main = test_spell_summon_{{ row['stn'] }};
             {% endfor %}
         }
