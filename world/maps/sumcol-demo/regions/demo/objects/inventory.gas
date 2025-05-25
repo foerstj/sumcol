@@ -3,7 +3,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 1.61458,0,0.460702,0x9d9c2a2d;
+	  p position = 2,0,0.5,0x9d9c2a2d;
 	}
 }
 [t:potion_mana_super,n:0x00100002]
@@ -11,7 +11,7 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 1.63451,0,-0.497226,0x9d9c2a2d;
+	  p position = 2,0,-0.5,0x9d9c2a2d;
 	}
 }
 [t:gold,n:0x00100003]
@@ -23,6 +23,6 @@
 	[placement]
 	{
 	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 1.42236,0,0.00518675,0x9d9c2a2d;
+	  p position = 2,0,0,0x9d9c2a2d;
 	}
 }
