@@ -1,12 +1,12 @@
-[t:template,n:dsx_spell_scorpigun_lcannon_base]  // = dsx_spell_scorpigun_lcannon
+[t:template,n:spell_ancient_scorpiot_scorpigun_lcannon_base]  // = dsx_spell_rusted_scorpigun_lcannon
 {
 	category_name = "magic";
-	doc = "Scorpiot Left Minigun";
+	doc = "Scorpiot Rusted Minigun Left";
 	specializes = base_spell_monster;
 	[attack]
 	{
-		damage_max = 73;
-		damage_min = 65;
+		damage_max = 45;
+		damage_min = 30;
 		area_damage_radius = 1.5;
 	}
 	[magic]
@@ -31,9 +31,9 @@
 	}
 }
 
-[t:template,n:dsx_spell_scorpigun_lcannon_summon]
+[t:template,n:spell_ancient_scorpiot_scorpigun_lcannon_summon]
 {
-    specializes = dsx_spell_scorpigun_lcannon_base;
+    specializes = spell_ancient_scorpiot_scorpigun_lcannon_base;
 
 	[attack]
 	{
@@ -42,7 +42,7 @@
 	}
 	[magic]
 	{
-		attack_damage_modifier_min = ((((#combat_magic)*4.2)*0.95)*1.1)*0.9;
-		attack_damage_modifier_max = ((((#combat_magic)*4.2)*0.95)*1.1)*1.1;
+		attack_damage_modifier_min = (((#combat_magic)*4.2)*0.9)*0.9;
+		attack_damage_modifier_max = (((#combat_magic)*4.2)*0.9)*1.1;
 	}
 }

@@ -40,9 +40,9 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = dsx_spell_scorpigun_laser_summon;
-			il_spell_1 = dsx_spell_scorpigun_lcannon_summon;
-			il_spell_2 = dsx_spell_scorpigun_zap_rcannon_summon;
+			il_active_primary_spell = spell_scorpiot_gunner_scorpigun_laser_summon;
+			il_spell_1 = spell_scorpiot_gunner_scorpigun_lcannon_summon;
+			il_spell_2 = spell_scorpiot_gunner_scorpigun_zap_rcannon_summon;
 		}
 	}
 }
@@ -54,7 +54,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = dsx_spell_scorpigun_laser_summon;
+			il_active_primary_spell = spell_scorpiot_gunner_scorpigun_laser_summon;
 		}
 	}
 }
@@ -66,7 +66,7 @@
 	{
 		[other]
 		{
-			il_spell_1 = dsx_spell_scorpigun_lcannon_summon;
+			il_spell_1 = spell_scorpiot_gunner_scorpigun_lcannon_summon;
 		}
 	}
 }
@@ -78,7 +78,7 @@
 	{
 		[other]
 		{
-			il_spell_2 = dsx_spell_scorpigun_zap_rcannon_summon;
+			il_spell_2 = spell_scorpiot_gunner_scorpigun_zap_rcannon_summon;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-[t:template,n:dsx_spell_scorpigun_zap_rcannon_base]  // = dsx_spell_scorpigun_zap_rcannon
+[t:template,n:spell_scorpiot_gunner_scorpigun_zap_rcannon_base]  // = dsx_spell_scorpigun_zap_rcannon
 {
 	category_name = "magic";
 	doc = "Scorpiot Right Minigun";
@@ -30,9 +30,9 @@
 	}
 }
 
-[t:template,n:dsx_spell_scorpigun_zap_rcannon_summon]
+[t:template,n:spell_scorpiot_gunner_scorpigun_zap_rcannon_summon]
 {
-    specializes = dsx_spell_scorpigun_zap_rcannon_base;
+    specializes = spell_scorpiot_gunner_scorpigun_zap_rcannon_base;
 
 	[attack]
 	{
