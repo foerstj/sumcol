@@ -14,7 +14,7 @@
 
 		[other] 
 		{ 
-			il_active_primary_spell = dsx_spell_golem_frost_blast_summon;
+			il_active_primary_spell = spell_frost_golem_blast_summon;
 		}
 	}
 }

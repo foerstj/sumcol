@@ -7,7 +7,7 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
-        [other] { il_active_primary_spell=spell_frostnid_freeze_summon; }
+        [other] { il_active_primary_spell = spell_frost_spitter_freeze_summon; }
 		[pcontent]
 		{
             // ERASED
