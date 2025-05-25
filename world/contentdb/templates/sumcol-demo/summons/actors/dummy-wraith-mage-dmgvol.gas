@@ -12,7 +12,7 @@
 	aspect:experience_value = 0;
 	[inventory]
 	{
-		[other] { il_active_primary_spell = dsx_spell_golem_frost_blast_demo_summon; }
+		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon; }
 
 		spew_equipped_kill_count = <ignore>;
 		[pcontent]
