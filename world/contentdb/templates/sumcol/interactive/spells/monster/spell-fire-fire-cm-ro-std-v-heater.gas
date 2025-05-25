@@ -1,43 +1,15 @@
-[t:template,n:spell_heater_fire_base]  // = spell_heater_fire
-{
-	category_name = "magic";
-	doc = "Heater Fire";
-	specializes = base_spell_monster;
-	[attack]
-	{
-		damage_max = 130;
-		damage_min = 120;
-	}
-	[magic]
-	{
-		cast_range = 10;
-		cast_reload_delay = 1;
-		effect_duration = 2;
-		mana_cost = 0;
-		requires_line_of_sight = true;
-		speed_bias = 1;
-		target_type_flags = tt_conscious_enemy;
-		usage_context_flags = uc_offensive;
-	}
-	[spell_fire]
-	{
-		effect_script = heater_fire;
-		particle_fit = 0.01;
-	}
-}
-
 [t:template,n:spell_heater_fire_summon]
 {
-    specializes = spell_heater_fire_base;
+	specializes = spell_heater_fire_base;
 
 	[attack]
 	{
-		damage_max = 0;
 		damage_min = 0;
+		damage_max = 0;
 	}
 	[magic]
 	{
-		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.1)*0.45)*0.9;
-		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.1)*0.45)*1.1;
+		attack_damage_modifier_min = ((((#combat_magic/0.7625)*4.2)*1.1)*0.35)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic/0.7625)*4.2)*1.1)*0.35)*1.1;
 	}
 }

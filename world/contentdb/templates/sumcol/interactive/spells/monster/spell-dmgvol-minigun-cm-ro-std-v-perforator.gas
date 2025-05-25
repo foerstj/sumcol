@@ -1,36 +1,6 @@
-[t:template,n:spell_perforator_minigun_base]  // = spell_perforator_minigun
-{
-	category_name = "magic";
-	doc = "Perforator Minigun";
-	specializes = base_spell_monster;
-	[attack]
-	{
-		damage_max = 88;
-		damage_min = 82;
-		area_damage_radius = 1.5;
-	}
-	[magic]
-	{
-		cast_range = 12;
-		cast_reload_delay = 0;
-		effect_duration = 1;
-		mana_cost = 0;
-		requires_line_of_sight = true;
-		speed_bias = 1;
-		target_type_flags = tt_conscious_enemy;
-		usage_context_flags = uc_offensive;
-	}
-	[spell_damage_volume]
-	{
-		effect_script = perforator_attack;
-		start_radius = .75;
-		length = 13.0;
-	}
-}
-
 [t:template,n:spell_perforator_minigun_summon]
 {
-    specializes = spell_perforator_minigun_base;
+	specializes = spell_perforator_minigun_base;
 
 	[attack]
 	{
@@ -39,7 +9,7 @@
 	}
 	[magic]
 	{
-		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.05)*1.1)*0.9;
-		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.05)*1.1)*1.1;
+		attack_damage_modifier_min = ((((#combat_magic/0.76)*4.2)*1.05)*0.8)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic/0.76)*4.2)*1.05)*0.8)*1.1;
 	}
 }

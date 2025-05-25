@@ -4,4 +4,7 @@ dmgvol;blast;earth_elemental_minion;nm;el;mb;loa;50;1.3;0.5
 dmgvol;blast;lava_beast;cm;el;std;v;83;1.1;0.5
 dmgvol;blast;magma_beast;cm;el;mb;v;85;1.3;0.5
 dmgvol;blast;frost_golem;nm;el;std;loa;5;1;0.8
+dmgvol;minigun;perforator;cm;ro;std;v;54;1.05;0.8
+dmgvol;zap1;fury_spawn;cm;de;mb;v;65;1.3;0.5
 fire;freeze;frost_spitter;nm;an;std;v;24;0.85;2.4
+fire;fire;heater;cm;ro;std;v;55;1.1;0.35
