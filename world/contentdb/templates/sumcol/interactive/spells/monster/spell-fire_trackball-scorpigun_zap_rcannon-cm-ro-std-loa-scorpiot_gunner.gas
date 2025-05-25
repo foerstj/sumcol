@@ -1,35 +1,3 @@
-[t:template,n:spell_scorpiot_gunner_scorpigun_zap_rcannon_base]  // = dsx_spell_scorpigun_zap_rcannon
-{
-	category_name = "magic";
-	doc = "Scorpiot Right Minigun";
-	specializes = base_spell_monster;
-	[attack]
-	{
-		damage_max = 73;
-		damage_min = 65;
-		area_damage_radius = 1.5;
-	}
-	[magic]
-	{
-		cast_sub_animation = 2;
-		cast_range = 12;
-		cast_reload_delay = 0;
-		effect_duration = 1;
-		mana_cost = 0;
-		requires_line_of_sight = true;
-		speed_bias = 1;
-		target_type_flags = tt_conscious_enemy;
-		usage_context_flags = uc_offensive;
-		magic_class = mc_combat_magic;
-		skill_class = "Combat Magic";
-	}
-	[spell_fire]
-	{
-		effect_script = scorpiot_zap_rcannon;
-		ignite = false;
-	}
-}
-
 [t:template,n:spell_scorpiot_gunner_scorpigun_zap_rcannon_summon]
 {
     specializes = spell_scorpiot_gunner_scorpigun_zap_rcannon_base;

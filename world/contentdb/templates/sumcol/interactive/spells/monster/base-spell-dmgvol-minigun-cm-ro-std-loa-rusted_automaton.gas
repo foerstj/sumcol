@@ -1,0 +1,32 @@
+[t:template,n:spell_rusted_automaton_minigun_base]  // = dsx_spell_rusted_automoton_minigun
+{
+	category_name = "magic";
+	doc = "Rusted Automoton Minigun";
+	specializes = base_spell_monster;
+	[attack]
+	{
+		damage_max = 35;
+		damage_min = 28;
+		area_damage_radius = 1.5;
+	}
+	[magic]
+	{
+		cast_sub_animation = 1;
+		cast_range = 12;
+		cast_reload_delay = 0;
+		effect_duration = 1;
+		mana_cost = 0;
+		requires_line_of_sight = true;
+		speed_bias = 1;
+		target_type_flags = tt_conscious_enemy;
+		usage_context_flags = uc_offensive;
+		magic_class = mc_combat_magic;
+		skill_class = "Combat Magic";
+	}
+	[spell_damage_volume]
+	{
+		effect_script = rusted_automoton_minigun;
+		start_radius = .75;
+		length = 13.0;
+	}
+}

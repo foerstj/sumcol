@@ -32,7 +32,7 @@
 	{
 		[other] 
 		{ 
-			il_active_primary_spell   = dsx_spell_rusted_automoton_minigun_summon; 
+			il_active_primary_spell   = spell_rusted_automaton_minigun_summon; 
 		}		
 	}
 }
