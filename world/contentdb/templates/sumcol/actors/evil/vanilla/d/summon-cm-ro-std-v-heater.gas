@@ -7,6 +7,8 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
+		[other] { il_active_primary_spell = spell_heater_fire_summon; }
+
 		[pcontent]
 		{
             // ERASED
