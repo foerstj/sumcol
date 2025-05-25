@@ -82,6 +82,7 @@ rmdir /S /Q "%tmp%\Bits"
 
 exit /b %errorlevel%
 
+
 :: Subroutines
 
 :: build partial, including infix
@@ -95,7 +96,8 @@ exit /b %errorlevel%
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  set title=%res_cs% - %name%
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
@@ -110,7 +112,8 @@ exit /b 0
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" /xf *-%infix%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" /xf *-%infix%-* /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  set title=%res_cs% - %name%
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
 
@@ -126,6 +129,7 @@ exit /b 0
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /S
-  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs% - %name%.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+  set title=%res_cs% - %name%
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
