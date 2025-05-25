@@ -7,7 +7,7 @@
     physics:explode_when_killed = false;
    	[inventory]
 	{
-		[other] { il_active_primary_spell=spell_lava_beast_blast_summon; }
+		[other] { il_active_primary_spell = spell_lava_beast_blast_summon; }
 		[pcontent]
 		{
 		}

@@ -1,4 +1,4 @@
-[t:template,n:dsx_spell_earth_elemental_blast_base]  // = dsx_spell_earth_elemental_blast
+[t:template,n:spell_earth_elemental_minion_blast_base]  // = dsx_spell_earth_elemental_blast
 {
 	category_name = "magic";
 	doc = "dsx_spell_earth_elemental_blast";

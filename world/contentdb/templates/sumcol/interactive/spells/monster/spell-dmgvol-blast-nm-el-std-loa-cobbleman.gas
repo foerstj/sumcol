@@ -1,6 +1,6 @@
-[t:template,n:spell_rock_beast_blast_dsx_summon]
+[t:template,n:spell_cobbleman_blast_summon]
 {
-    specializes = spell_rock_beast_blast_dsx_base;
+	specializes = spell_cobbleman_blast_base;
 
 	[attack]
 	{
@@ -9,7 +9,7 @@
 	}
 	[magic]
 	{
-		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.2)*0.7)*0.9;
-		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.2)*0.7)*1.1;
+		attack_damage_modifier_min = ((((#combat_magic/0.84)*4.2)*1.2)*0.5)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic/0.84)*4.2)*1.2)*0.5)*1.1;
 	}
 }

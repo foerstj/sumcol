@@ -8,7 +8,7 @@
 
     [inventory]
     {
-		[other] { il_active_primary_spell = dsx_spell_earth_elemental_blast_summon; }
+		[other] { il_active_primary_spell = spell_earth_elemental_minion_blast_summon; }
         [pcontent] {}
     }
 }
