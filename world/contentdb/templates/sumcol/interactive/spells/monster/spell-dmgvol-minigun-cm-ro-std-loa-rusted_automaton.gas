@@ -1,6 +1,6 @@
 [t:template,n:spell_rusted_automaton_minigun_summon]
 {
-    specializes = spell_rusted_automaton_minigun_base;
+	specializes = spell_rusted_automaton_minigun_base;
 
 	[attack]
 	{
@@ -9,7 +9,7 @@
 	}
 	[magic]
 	{
-		attack_damage_modifier_min = (((#combat_magic)*4.2)*0.9)*0.9;
-		attack_damage_modifier_max = (((#combat_magic)*4.2)*0.9)*1.1;
+		attack_damage_modifier_min = ((((#combat_magic/0.895)*4.2)*0.9)*0.9)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic/0.895)*4.2)*0.9)*0.9)*1.1;
 	}
 }
