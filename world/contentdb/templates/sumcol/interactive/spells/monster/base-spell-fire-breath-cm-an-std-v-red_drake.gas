@@ -1,4 +1,4 @@
-[t:template,n:spell_drake_breath_red_base]  // = spell_drake_breath_red
+[t:template,n:spell_red_drake_breath_base]  // = spell_drake_breath_red
 {
 	category_name = "magic";
 	doc = "Drake Fire";
@@ -24,21 +24,5 @@
 		effect_script = drake_fire_red;
 		particle_fit = 0.2;
 		watch_caster = true;
-	}
-}
-
-[t:template,n:spell_drake_breath_red_summon]
-{
-    specializes = spell_drake_breath_red_base;
-
-	[attack]
-	{
-		damage_max = 0;
-		damage_min = 0;
-	}
-	[magic]
-	{
-		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.1)*0.4)*0.9;
-		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.1)*0.4)*1.1;
 	}
 }

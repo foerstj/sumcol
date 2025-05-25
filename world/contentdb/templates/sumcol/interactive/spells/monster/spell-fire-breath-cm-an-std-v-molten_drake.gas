@@ -1,0 +1,15 @@
+[t:template,n:spell_molten_drake_breath_summon]
+{
+    specializes = spell_molten_drake_breath_base;
+
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.0)*0.4)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.0)*0.4)*1.1;
+	}
+}

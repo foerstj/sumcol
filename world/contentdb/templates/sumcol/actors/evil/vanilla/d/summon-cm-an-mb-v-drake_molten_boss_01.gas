@@ -7,7 +7,7 @@
     physics:explode_when_killed = false;
     [inventory]
     {
-		[other] { il_active_primary_spell = spell_drake_breath_molten_mb_summon; }
+		[other] { il_active_primary_spell = spell_molten_steel_drake_breath_summon; }
 
         [pcontent] {}
     }

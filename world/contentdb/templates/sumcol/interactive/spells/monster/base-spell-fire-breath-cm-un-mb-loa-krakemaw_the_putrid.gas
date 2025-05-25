@@ -1,4 +1,4 @@
-[t:template,n:dsx_spell_drake_breath_black_mb_base]  // = dsx_spell_drake_breath_black
+[t:template,n:spell_krakemaw_the_putrid_breath_base]  // = dsx_spell_drake_breath_black
 {
 	category_name = "magic";
 	doc = "Drake Fire";
@@ -26,21 +26,5 @@
 		effect_script = drake_fire_black;
 		particle_fit = 0.2;
 		watch_caster = true;
-	}
-}
-
-[t:template,n:dsx_spell_drake_breath_black_mb_summon]
-{
-    specializes = dsx_spell_drake_breath_black_mb_base;
-
-	[attack]
-	{
-		damage_max = 0;
-		damage_min = 0;
-	}
-	[magic]
-	{
-		attack_damage_modifier_min = ((((#combat_magic)*4.2)*1.3)*0.6)*0.9;
-		attack_damage_modifier_max = ((((#combat_magic)*4.2)*1.3)*0.6)*1.1;
 	}
 }

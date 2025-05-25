@@ -7,7 +7,7 @@
     physics:explode_when_killed = false;
     [inventory]
     {
-		[other] { il_active_primary_spell = spell_drake_breath_white_summon; }
+		[other] { il_active_primary_spell = spell_frost_drake_breath_summon; }
 
         [pcontent] {}
     }
