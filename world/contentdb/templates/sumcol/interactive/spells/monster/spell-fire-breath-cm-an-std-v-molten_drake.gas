@@ -1,6 +1,6 @@
 [t:template,n:spell_molten_drake_breath_summon]
 {
-	specializes = spell_molten_drake_breath_base;
+	specializes = base_spell_molten_drake_breath_summon;
 
 	[attack]
 	{

@@ -1,6 +1,6 @@
 [t:template,n:spell_rusted_automaton_minigun_summon]
 {
-	specializes = spell_rusted_automaton_minigun_base;
+	specializes = base_spell_rusted_automaton_minigun_summon;
 
 	[attack]
 	{

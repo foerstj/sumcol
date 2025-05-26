@@ -1,6 +1,6 @@
 [t:template,n:spell_frost_spitter_freeze_summon]
 {
-	specializes = spell_frost_spitter_freeze_base;
+	specializes = base_spell_frost_spitter_freeze_summon;
 
 	[attack]
 	{

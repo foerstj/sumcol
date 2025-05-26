@@ -1,6 +1,6 @@
 [t:template,n:spell_scorpiot_gunner_scorpigun_lcannon_summon]
 {
-	specializes = spell_scorpiot_gunner_scorpigun_lcannon_base;
+	specializes = base_spell_scorpiot_gunner_scorpigun_lcannon_summon;
 
 	[attack]
 	{

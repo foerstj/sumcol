@@ -1,6 +1,6 @@
 [t:template,n:spell_heater_fire_summon]
 {
-	specializes = spell_heater_fire_base;
+	specializes = base_spell_heater_fire_summon;
 
 	[attack]
 	{

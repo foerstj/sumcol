@@ -1,4 +1,4 @@
-[t:template,n:spell_molten_drake_breath_base]  // = spell_drake_breath_molten
+[t:template,n:base_spell_molten_drake_breath_summon]  // = spell_drake_breath_molten
 {
 	category_name = "magic";
 	doc = "Drake Fire";

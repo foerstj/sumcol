@@ -1,4 +1,4 @@
-[t:template,n:spell_scorpiot_gunner_scorpigun_laser_base]  // = dsx_spell_scorpigun_laser
+[t:template,n:base_spell_scorpiot_gunner_scorpigun_laser_summon]  // = dsx_spell_scorpigun_laser
 {
 	category_name = "magic";
 	doc = "Scorpiot Laser";

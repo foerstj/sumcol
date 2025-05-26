@@ -1,6 +1,6 @@
 [t:template,n:spell_perforator_minigun_summon]
 {
-	specializes = spell_perforator_minigun_base;
+	specializes = base_spell_perforator_minigun_summon;
 
 	[attack]
 	{
