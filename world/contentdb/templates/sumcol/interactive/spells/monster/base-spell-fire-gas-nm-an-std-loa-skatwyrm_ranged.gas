@@ -30,7 +30,7 @@
 }
 
 // At least for the summon, fix the damage
-[t:template,n:base_spell_skatwyrm_gas_summon]
+[t:template,n:base_spell_skatwyrm_ranged_gas_summon]
 {
     specializes = dsx_spell_skatwyrm_gas_base;
 

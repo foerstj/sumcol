@@ -23,3 +23,6 @@ dmgvol_trackball;scorpigun_rcannon;ancient_scorpiot;cm;ro;std;loa;23;0.9;0.45
 dmgvol;scorpigun_laser;scorpiot_gunner;cm;ro;std;loa;48;0.95;0.85
 dmgvol;scorpigun_lcannon;scorpiot_gunner;cm;ro;std;loa;48;0.95;0.85
 fire_trackball;scorpigun_zap_rcannon;scorpiot_gunner;cm;ro;std;loa;48;0.95;0.4
+fire;blast;kell;cm;de;std;v;85;1.1;0.75
+fire;blast;sand_mage;cm;hu;std;v;71;0.9;0.8
+fire;gas;skatwyrm_ranged;nm;an;std;loa;36;1;2
