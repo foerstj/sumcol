@@ -21,7 +21,7 @@
     }
     [spell_summon]
     {
-        template_name = wraith_mage_demo_dv_summon;
+        template_name = wraith_mage_demo_dv_80_summon;
         script_params = "[scale(1.0)]";
     }
     [magic]

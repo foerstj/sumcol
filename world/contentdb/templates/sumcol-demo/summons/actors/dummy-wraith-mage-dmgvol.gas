@@ -5,15 +5,13 @@
 	specializes = warlock_base;
 }
 
-[t:template,n:wraith_mage_demo_dv_summon]
+[t:template,n:base_wraith_mage_demo_dv_summon]
 {
     specializes = warlock_dummy_dv_base;
 
 	aspect:experience_value = 0;
 	[inventory]
 	{
-		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon; }
-
 		spew_equipped_kill_count = <ignore>;
 		[pcontent]
 		{
@@ -28,5 +26,33 @@
 	[aspect]
 	{
 		[textures] { 0=b_c_ecm_wr; }
+	}
+}
+
+[t:template,n:wraith_mage_demo_dv_0_summon]
+{
+	specializes = base_wraith_mage_demo_dv_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon_0; }
+	}
+}
+[t:template,n:wraith_mage_demo_dv_50_summon]
+{
+	specializes = base_wraith_mage_demo_dv_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon_50; }
+	}
+}
+[t:template,n:wraith_mage_demo_dv_80_summon]
+{
+	specializes = base_wraith_mage_demo_dv_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon_80; }
 	}
 }
