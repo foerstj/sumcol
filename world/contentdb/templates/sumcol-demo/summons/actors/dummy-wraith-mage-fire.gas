@@ -1,0 +1,58 @@
+[t:template,n:warlock_dummy_fire_base]  // = warlock
+{
+	category_name = "1W_evil_c";
+	doc = "warlock";
+	specializes = warlock_base;
+}
+
+[t:template,n:base_wraith_mage_demo_fire_summon]
+{
+    specializes = warlock_dummy_fire_base;
+
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent]
+		{
+		}
+	}
+	[mind]
+	{
+		jat_startup	= jat_none;
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
+	}
+
+	[aspect]
+	{
+		[textures] { 0=b_c_ecm_wr; }
+	}
+}
+
+[t:template,n:wraith_mage_demo_fire_0_summon]
+{
+	specializes = base_wraith_mage_demo_fire_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_fire_blast_summon_0; }
+	}
+}
+[t:template,n:wraith_mage_demo_fire_50_summon]
+{
+	specializes = base_wraith_mage_demo_fire_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_fire_blast_summon_50; }
+	}
+}
+[t:template,n:wraith_mage_demo_fire_80_summon]
+{
+	specializes = base_wraith_mage_demo_fire_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_fire_blast_summon_80; }
+	}
+}

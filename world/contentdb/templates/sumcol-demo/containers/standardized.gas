@@ -56,6 +56,9 @@
             il_main = spell_summon_standard_cdv_0_sumcol_demo;
             il_main = spell_summon_standard_cdv_50_sumcol_demo;
             il_main = spell_summon_standard_cdv_80_sumcol_demo;
+            il_main = spell_summon_standard_cf_0_sumcol_demo;
+            il_main = spell_summon_standard_cf_50_sumcol_demo;
+            il_main = spell_summon_standard_cf_80_sumcol_demo;
         }
     }
 }

@@ -2,3 +2,6 @@ dmgtype;name;stn;mc;ct;ft;v;req_lvl;dmg_c;abf_c
 dmgvol;blast;dummy_wraith;nm;un;std;v;0;1;
 dmgvol;blast;dummy_wraith;nm;un;std;v;50;1;
 dmgvol;blast;dummy_wraith;nm;un;std;v;80;1;
+fire;blast;dummy_wraith;nm;un;std;v;0;1;
+fire;blast;dummy_wraith;nm;un;std;v;50;1;
+fire;blast;dummy_wraith;nm;un;std;v;80;1;
