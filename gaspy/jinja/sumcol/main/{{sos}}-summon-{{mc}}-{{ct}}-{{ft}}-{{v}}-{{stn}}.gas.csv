@@ -36,7 +36,7 @@ spell;bubber;dsx_bubber;;an;Island Lizard;1.25;nm;an;std;loa;;11;300;6;0.9;;;;;;
 spell;skeleton_archer;skeleton_archer;;a;Skeleton Archer;1.5;cm;un;std;v;;8;190;5;;0.95;;;;10;16;;;2;1;;;;
 spell;swarmling;dsx_swarmling;;a;Swarmling;1;nm;an;std;loa;;11;300;6;0.85;;;;;;;;;2;0.4;;;;
 spell;krug_raider;krug_raider;;a;Krug Raider;1.5;nm;hu;std;v;x;13;480;7;1.05;;;;;14;17;;;1.2;1;;;;
-spell;vile_mucosa;mucosa_small;;a;Vile Mucosa;1.5;cm;de;std;v;;9;240;5;;;0.95;;0.7;;;5;8;2;0.8;;;;Custom spell, spell has trackball + fire dmg
+spell;vile_mucosa;mucosa_small;;a;Vile Mucosa;1.5;cm;de;std;v;;9;240;5;;;0.95;;0;;;;;2;0.8;;;;Custom poison spell
 scroll;ancient_corpse;walking_corpse_boss_01;;an;Ancient Corpse;1.5;cm;un;mb;v;;9;38;16;1.1;;;;;;;;;0.8;3;;;;
 spell;killer_vines;dsx_vines_killer;;;Killer Vines;1.25;nm;pl;st;loa;;12;76;1;1;;;;;;;;;1.5;1.5;;un_summon_vines_killer;;
 scroll;skeleton_captain;skeleton_guard_boss_01;;a;Skeleton Captain;1.5;cm;un;mb;v;;5;15;14;1.3;;;;;14;17;;;2.5;3;;;;
@@ -136,7 +136,7 @@ spell;greater_scrub_scorpion;dsx_scorpion_lg;;a;Greater Scrub Scorpion;1.5;nm;an
 spell;shadow_angler;dsx_angler_shadow;;a;Shadow Angler;1;nm;an;std;loa;;37;33000;7;0.9;;;;;;;;;1;0.6;;;;
 spell;zaurask_fang;dsx_zaurask_fang;;a;Zaurask Fang;1.5;nm;hu;std;loa;x;36;32000;7;1.05;;;;;;;;;1.5;1.2;;;;
 spell;chitterskrag;dsx_chitterskrag_one;;a;Chitterskrag;2;nm;an;std;loa;;31;25000;6;1.1;;;;;;;;;2;1.8;;;;
-spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;;32;33000;5;;;1;;0.7;;;27;33;2;1.8;;;;Custom spell, spell has trackball + fire dmg
+spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;;32;33000;5;;;1;;0;;;;;2;1.8;;;;Custom poison spell
 spell;sandskreech;dsx_sandskreech;;a;Sandskreech;1.5;nm;an;std;loa;;39;36000;7;0.9;;;;;;;;;2;0.8;;;;
 spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;;32;33000;3;1.2;;1.2;1.3;;;;;;3;2.5;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
 scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;;28;3800;12;;1.2;;;;33;37;;;2;3.6;;;;
@@ -170,7 +170,7 @@ spell;hassat_slicer;dsx_hassat_grunt;;a;Hassat Slicer;1.5;nm;hu;std;loa;x;40;380
 scroll;rune_master;dsx_rune_master;;a;Rune Master;2;cm;hu;mb;loa;x;42;10000;13;;;1.2;;;;;60;66;1;4.5;;;;
 spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;0.9;;75;77;;;1.5;1;;;;1/5 of attacks do double damage
 spell;droc_superior;dsx_droc_commander;;a;Droc Superior;1.5;nm;hu;std;loa;x;46;50000;5;1.1;;;;;;;;;1.7;1.5;;;;
-spell;droc_spatter;dsx_droc_archer;;a;Droc Spatter;1.5;nm;hu;std;loa;x;45;60000;4;;;1;;0.8;;;40;46;1.5;1.5;;;;Custom spell, spell has trackball + fire dmg
+spell;droc_spatter;dsx_droc_archer;;a;Droc Spatter;1.5;nm;hu;std;loa;x;45;60000;4;;;1;;0;;;;;1.5;1.5;;;;Custom poison spell
 spell;droc;dsx_droc_grunt;;a;Droc;1.5;nm;hu;std;loa;x;44;46000;5;1.05;;;;;;;;;1.5;1.5;;;;
 spell;doppelganger;dsx_doppelganger_sumcol;;a;Doppelganger;1.5;cm;de;dop;loa;x;42;42000;7;1;1;1;;;;;;;5;0.8;;;;Doppelganger!
 spell;ztrool;dsx_ztrool;;a;Ztrool;1.5;nm;hu;std;loa;x;49;58000;6;1;;;;;;;;;1.5;0.8;;;;

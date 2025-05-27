@@ -26,3 +26,6 @@ fire_trackball;scorpigun_zap_rcannon;scorpiot_gunner;cm;ro;std;loa;48;0.95;0.4
 fire;blast;kell;cm;de;std;v;85;1.1;0.75
 fire;blast;sand_mage;cm;hu;std;v;71;0.9;0.8
 fire;gas;skatwyrm_ranged;nm;an;std;loa;36;1;2
+poison;poison;vile_mucosa;cm;de;std;v;9;0.95;
+poison;poison;chitterskrag_spew;nm;an;std;loa;32;1;
+poison;poison;droc_spatter;nm;hu;std;loa;45;1;

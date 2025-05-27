@@ -1,11 +1,15 @@
 [t:template,n:spell_droc_spatter_poison_summon]
 {
-    specializes = base_spell_droc_spatter_poison_summon;
+	specializes = base_spell_droc_spatter_poison_summon;
 
 	[attack]
 	{
-        // halved static spell damage (used for fire effect damage) for balancing
-		damage_max = 46;
-		damage_min = 40;
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#combat_magic/0.775)*4.2)*1.0)*1)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic/0.775)*4.2)*1.0)*1)*1.1;
 	}
 }
