@@ -78,13 +78,13 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #cmagic_damage_min) - {{spl_dmg_min | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c if abf_c is number else 1) | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #cmagic_damage_min) - {{spl_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c or 1) | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #cmagic_damage_max) - {{spl_dmg_max | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c if abf_c is number else 1) | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #cmagic_damage_max) - {{spl_dmg_max | float}});
             }
             {% endif %}
             [*]
