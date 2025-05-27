@@ -43,12 +43,30 @@
 	}
 }
 
-[t:template,n:wraith_mage_demo_poison_summon]
+[t:template,n:wraith_mage_demo_poison_0_summon]
 {
 	specializes = base_wraith_mage_demo_poison_summon;
 
 	[inventory]
 	{
-		[other] { il_active_primary_spell = spell_dummy_wraith_poison_spit_summon; }
+		[other] { il_active_primary_spell = spell_dummy_wraith_poison_spit_summon_0; }
+	}
+}
+[t:template,n:wraith_mage_demo_poison_50_summon]
+{
+	specializes = base_wraith_mage_demo_poison_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_poison_spit_summon_50; }
+	}
+}
+[t:template,n:wraith_mage_demo_poison_80_summon]
+{
+	specializes = base_wraith_mage_demo_poison_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_poison_spit_summon_80; }
 	}
 }

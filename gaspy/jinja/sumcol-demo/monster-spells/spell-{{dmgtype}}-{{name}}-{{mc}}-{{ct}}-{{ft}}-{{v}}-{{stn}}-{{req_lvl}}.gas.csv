@@ -5,3 +5,6 @@ dmgvol;blast;dummy_wraith;nm;un;std;v;80;1;
 fire;blast;dummy_wraith;nm;un;std;v;0;1;0.85
 fire;blast;dummy_wraith;nm;un;std;v;50;1;0.85
 fire;blast;dummy_wraith;nm;un;std;v;80;1;0.85
+poison;spit;dummy_wraith;nm;un;std;v;0;1;0.5
+poison;spit;dummy_wraith;nm;un;std;v;50;1;0.5
+poison;spit;dummy_wraith;nm;un;std;v;80;1;0.5
