@@ -11,7 +11,7 @@
 	}
 	[inventory]
 	{
-		[other] { il_active_primary_spell=spell_mucosa_poison_summon; }
+		[other] { il_active_primary_spell = spell_vile_mucosa_poison_summon; }
 		[pcontent]
 		{
 			// ERASED
