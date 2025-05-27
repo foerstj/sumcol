@@ -1,0 +1,54 @@
+[t:template,n:warlock_dummy_poison_base]  // = warlock
+{
+	category_name = "1W_evil_c";
+	doc = "warlock";
+	specializes = warlock_base;
+}
+
+[t:template,n:base_wraith_mage_demo_poison_summon]
+{
+    specializes = warlock_dummy_poison_base;
+
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent]
+		{
+		}
+	}
+	[mind]
+	{
+		jat_startup	= jat_none;
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
+	}
+
+	[aspect]
+	{
+		[textures] { 0=b_c_ecm_wr; }
+	}
+
+	// make mucosa poison ball appear from face, instead of right hand
+	[body]
+	{
+		[bone_translator]
+		{
+			body_anterior = head_bone;
+			body_mid = mid_torso;
+			body_posterior = spine_end;
+			kill_bone = spine_02;
+			shield_bone = shield_grip;
+			weapon_bone = head_bone;  // EDITED was weapon_grip
+		}
+	}
+}
+
+[t:template,n:wraith_mage_demo_poison_summon]
+{
+	specializes = base_wraith_mage_demo_poison_summon;
+
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dummy_wraith_poison_spit_summon; }
+	}
+}
