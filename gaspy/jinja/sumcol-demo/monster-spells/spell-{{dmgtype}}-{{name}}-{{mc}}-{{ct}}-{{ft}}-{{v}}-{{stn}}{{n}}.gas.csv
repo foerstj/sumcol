@@ -1,0 +1,13 @@
+dmgtype;name;stn;n;mc;ct;ft;v;req_lvl;dmg_c;abf_c
+dmgvol;blast;dummy_wraith;_0;nm;un;std;v;0;1;
+dmgvol;blast;dummy_wraith;_50;nm;un;std;v;50;1;
+dmgvol;blast;dummy_wraith;_80;nm;un;std;v;80;1;
+fire;blast;dummy_wraith;_0;nm;un;std;v;0;1;0.85
+fire;blast;dummy_wraith;_50;nm;un;std;v;50;1;0.85
+fire;blast;dummy_wraith;_80;nm;un;std;v;80;1;0.85
+poison;spit;dummy_wraith;_0;nm;un;std;v;0;1;0.5
+poison;spit;dummy_wraith;_50;nm;un;std;v;50;1;0.5
+poison;spit;dummy_wraith;_80;nm;un;std;v;80;1;0.5
+;;;;;;;;;;
+poison;sparkles;mucosa_predator;;cm;de;std;v;80;1.05;0.5
+poison;poison;dsx_vile_twisted_mucosa;;cm;de;std;loa;15;0.9;0.5

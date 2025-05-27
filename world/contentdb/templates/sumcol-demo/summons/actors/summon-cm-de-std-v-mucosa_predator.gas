@@ -1,0 +1,19 @@
+[t:template,n:mucosa_predator_sumcol]
+{
+	category_name = "1W_evil_d";
+	doc = "[summon] mucosa_predator";
+	specializes = mucosa_predator_base;
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell = spell_mucosa_predator_poison_sparkles_summon; }  // EDITED
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+}
