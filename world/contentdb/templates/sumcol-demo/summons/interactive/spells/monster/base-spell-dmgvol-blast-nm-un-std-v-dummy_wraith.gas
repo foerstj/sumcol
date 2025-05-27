@@ -29,7 +29,7 @@
 	}
 }
 
-[t:template,n:base_spell_dummy_wraith_blast_summon]
+[t:template,n:base_spell_dummy_wraith_dmgvol_blast_summon]
 {
 	specializes = dsx_spell_golem_frost_blast_demo_base;
 

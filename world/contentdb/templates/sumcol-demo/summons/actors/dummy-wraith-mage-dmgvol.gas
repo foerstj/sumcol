@@ -35,7 +35,7 @@
 
 	[inventory]
 	{
-		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon_0; }
+		[other] { il_active_primary_spell = spell_dummy_wraith_dmgvol_blast_summon_0; }
 	}
 }
 [t:template,n:wraith_mage_demo_dv_50_summon]
@@ -44,7 +44,7 @@
 
 	[inventory]
 	{
-		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon_50; }
+		[other] { il_active_primary_spell = spell_dummy_wraith_dmgvol_blast_summon_50; }
 	}
 }
 [t:template,n:wraith_mage_demo_dv_80_summon]
@@ -53,6 +53,6 @@
 
 	[inventory]
 	{
-		[other] { il_active_primary_spell = spell_dummy_wraith_blast_summon_80; }
+		[other] { il_active_primary_spell = spell_dummy_wraith_dmgvol_blast_summon_80; }
 	}
 }
