@@ -1,0 +1,19 @@
+[t:template,n:drake_black_sumcol]
+{
+	category_name = "1W_evil_d";
+	doc = "[summon] drake_black";
+	specializes = drake_black_base;
+	aspect:experience_value = 0;
+	[inventory]
+	{
+    	selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell = spell_drake_black_fire_breath_summon; }  // EDITED
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+}

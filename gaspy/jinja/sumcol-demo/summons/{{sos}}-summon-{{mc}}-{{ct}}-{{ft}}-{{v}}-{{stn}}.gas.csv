@@ -2,8 +2,8 @@ sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;gold;dur_min;req_lvl;dmg_m;dmg
 spell;braak_desert;braak_desert;summon;a;Desert Braak;1;nm;hu;std;v;x;180000;5;69;;;0.9;;;;;184;204;1;1.2;175;
 spell;cave_giant;cave_giant;summon;a;Cave Giant;1.75;nm;hu;std;v;x;24000;6;30;1.05;;;;;;;;;1;2;33;
 spell;darkling;darkling;summon;a;Darkling;1;cm;de;std;v;;3800;5;21;;;0.9;;;;;20;24;1;0.8;112;
-spell;drake_black;drake_black;summon;a;Black Drake;1;cm;an;std;v;;520000;4;92;1.1;;1.1;;;;;190;220;1.5;1.8;173;
-spell;drake_green;drake_green;summon;a;Green Drake;1.75;nm;an;std;v;;400000;4;86;1.1;;1.1;;;;;205;215;1.5;2.5;72;
+spell;drake_black;drake_black;sumcol;a;Black Drake;1;cm;an;std;v;;520000;4;92;1.1;;1.1;;;;;;;1.5;1.8;173;Custom fire spell
+spell;drake_green;drake_green;sumcol;a;Green Drake;1.75;nm;an;std;v;;400000;4;86;1.1;;1.1;;;;;;;1.5;2.5;72;Custom fire spell
 spell;fire_elemental;fire_elemental;;a;Fire Elemental;1;cm;el;std;v;;420000;4;92;1;;;;;;;;;2;1;178;
 spell;forest_klaw;forest_klaw;summon;a;Forest Klaw;1.75;nm;an;std;v;;30000;6;35;1.05;;;;;;;;;1;1.8;40;
 spell;furok;furok;summon;a;Furok;1.75;nm;an;std;v;;3800;7;22;1.1;;;;;;;;;1;1.8;28;

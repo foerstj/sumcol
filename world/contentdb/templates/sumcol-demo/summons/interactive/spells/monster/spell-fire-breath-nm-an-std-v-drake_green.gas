@@ -1,0 +1,15 @@
+[t:template,n:spell_drake_green_fire_breath_summon]
+{
+	specializes = base_spell_drake_green_fire_breath_summon;
+
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#combat_magic/0.84)*4.2)*1.1)*1)*0.9;
+		attack_damage_modifier_max = ((((#combat_magic/0.84)*4.2)*1.1)*1)*1.1;
+	}
+}
