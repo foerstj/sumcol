@@ -59,11 +59,4 @@
 [t:template,n:minigun_dragon_sumcol_base]
 {
     specializes = base_minigun_dragon_sumcol;
-
-	[attack]
-	{
-        // Edited original damage - minigun_magic.skrit doesn't take summon enchantments into account
-		damage_max = 187;  // = 75 * 2.5
-		damage_min = 170;  // = 68 * 2.5
-	}
 }
