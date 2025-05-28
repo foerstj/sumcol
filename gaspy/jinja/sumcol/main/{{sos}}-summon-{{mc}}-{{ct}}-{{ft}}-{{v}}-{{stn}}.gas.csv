@@ -1,324 +1,324 @@
-sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;req_lvl;gold;dur_min;dmg_m;dmg_r;dmg_c;abf_m;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;effect_script;end_script;test_only;comment
-spell;tesla_coil;coil_gob_01;;a;Tesla Coil;2.5;cm;ro;st;v;;51;16000;0.5;;;0.95;;;;;2;3;3;1.8;;;;
-spell;tesla_coil_heal;coil_gob_03;;a;Tesla Heal Coil;2.5;cm;ro;st-heal;v;;54;18000;1;;;1;;;;;;;3;2.5;;;;Healer
-scroll;yellow_eye;dsx_bear_snow;;;Yellow Eye;2.5;nm;an;mb;loa;;4;12;13;1.3;;;;;;;;;1;4.5;;;;
-scroll;cicatrix_skeleton_melee;dsx_skeleton_cicatrix_minion_melee;;a;Cicatrix's Skeleton Fighter;1.5;cm;un;mb;loa;;30;4800;14;1.2;;;;;55;63;;;2;3;;;;
-scroll;cicatrix_skeleton_ranged;dsx_skeleton_cicatrix_minion_ranged;;a;Cicatrix's Skeleton Archer;1.5;cm;un;mb;loa;;30;6000;13;;1.2;;;;32;45;;;2;3;;;;
-spell;phrak;phrak;;a;Phrak;0.75;nm;an;std;v;;1;30;6;0.85;;;;;;;;;2;0.4;;;;
-spell;krug_scavenger;krug_scavenger;;a;Krug Scavenger;1.5;nm;hu;std;v;x;6;96;7;0.95;;;;;2;5;;;1;0.9;;;;
-spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;;2;48;6;;;0.8;;;;;3;5;2;0.4;;;;
-spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;;2;38;7;0.9;;;;;;;;;1;0.6;;;;
-spell;yellow_spider;spider_adolescent_yellow;;a;Yellow Spider;0.75;nm;an;std;v;;1;30;7;0.8;;;;;;;;;2;0.4;;;;
-spell;farm_skrubb;skrubb_farm;;a;Farm Skrubb;1;nm;an;st;v;;2;10;1;;;0.9;;;;;3;6;1.5;0.8;;;;
-spell;ice_grub;dsx_grub;;an;Ice Grub;1;nm;an;std;loa;;1;30;9;0.8;;;;;;;;;1;0.4;;;;
-spell;ice_moth;dsx_moth;;an;Ice Moth;1.5;nm;an;std;loa;;2;48;6;;;0.8;;;;;4;8;2;0.3;;;;
-spell;krug_scout;krug_scout;;a;Krug Scout;1.5;nm;hu;std;v;x;7;120;6;1;;;;;2;5;;;1;1;;;;
-spell;gargoyle_melee;gargoyle;;a;Gargoyle;0.75;cm;el;std;v;;4;60;6;0.9;;;;;;;;;3;0.4;;;;
-spell;krug_dog;krug_dog;;a;Krug Dog;1.25;nm;an;std;v;;3;48;6;1;;;;;;;;;1;0.8;;;;
-scroll;brankar;krug_scavenger_boss_01;;;Brankar the Scavenger;1.75;nm;hu;mb;v;x;9;38;16;1.15;;;;;2;5;;;1;2.7;;;;
-scroll;phrak_ballista;phrak_piercer_boss_01;;a;Phrak Ballista;1;nm;an;mb;v;;3;12;14;;;1;;;;;3;5;2;1.2;;;;
-spell;varg;dsx_wolf_white_punk-ass;;a;Varg;1;nm;an;std;loa;;3;48;6;0.95;;;;;;;;;1;0.6;;;;
-spell;gray_wolf;wolf_gray;;a;Gray Wolf;1.5;nm;an;std;v;;4;60;6;1;;;;;;;;;1;0.8;;;;
-spell;krug_apprentice;krug_apprentice;;a;Krug Apprentice;1.5;nm;hu;std;v;x;8;190;6;0.95;;0.95;;;;;13;37;1;1;;;;
-spell;snow_boar;dsx_boar;;a;Snow Boar;1.5;nm;an;std;loa;;4;60;6;1;;;;;;;;;1;1;;;;
-spell;krug_shaman;krug_shaman;;a;Krug Shaman;1.5;nm;hu;res;v;x;10;300;6;1;;1;;;;;13;37;1;1;;;;
-spell;krug_grunt;krug_grunt;;a;Krug Grunt;1.5;nm;hu;std;v;x;10;240;7;1;;;;;3;7;;;1;1;;;;
-scroll;alpha_wolf;wolf_gray_boss_01;;an;Alpha Wolf;1.75;nm;an;mb;v;;5;15;14;1.2;;;;;;;;;1;2.4;;;;
-spell;black_skrubb;skrubb_small;;a;Black Skrubb;2;nm;an;st;v;;6;24;0.5;;;1;;;;;28;30;1.5;1.8;;;;
-scroll;klandank;krug_scout_boss_01;;;Klandank the Krug;1.75;nm;hu;mb;v;x;9;38;14;1.2;;;;;2;5;;;1;3;;;;
-spell;skeleton_guard;skeleton_guard;;a;Skeleton Guard;1.5;cm;un;std;v;;4;60;6;1.1;;;;;14;17;;;2.5;1;;;;
-spell;walking_corpse;walking_corpse;;a;Walking Corpse;1.5;cm;un;std;v;;8;150;7;0.9;;;;;;;;;0.8;1;;;;
-spell;frost_golem;dsx_golem_frost_ranged;;a;Frost Golem;1.25;nm;el;std;loa;;5;95;5;1;;1;0.7;;;;;;2.5;1;;;;"Custom dmgvol spell; melee hit_multiple"
-spell;krug_chucker;krug_throw;;a;Krug Chucker;1.5;nm;hu;std;v;x;13;600;6;;1;;;;11;12;;;1;1;;;;
-spell;widow_spider;dsx_spider_red_black;;a;Widow Spider;1;nm;an;std;loa;;4;60;7;0.95;;;;;;;;;2;0.6;;;;
-spell;arakun_spider;spider_adolescent;;an;Arakun Spider;1.25;nm;an;std;v;;8;150;7;0.9;;;;;;;;;2;0.7;;;;
-spell;bubber;dsx_bubber;;an;Island Lizard;1.25;nm;an;std;loa;;11;300;6;0.9;;;;;;;;;1.5;0.6;;;;
-spell;skeleton_archer;skeleton_archer;;a;Skeleton Archer;1.5;cm;un;std;v;;8;190;5;;0.95;;;;10;16;;;2;1;;;;
-spell;swarmling;dsx_swarmling;;a;Swarmling;1;nm;an;std;loa;;11;300;6;0.85;;;;;;;;;2;0.4;;;;
-spell;krug_raider;krug_raider;;a;Krug Raider;1.5;nm;hu;std;v;x;13;480;7;1.05;;;;;14;17;;;1.2;1;;;;
-spell;vile_mucosa;mucosa_small;;a;Vile Mucosa;1.5;cm;de;std;v;;9;240;5;;;0.95;;0;;;;;2;0.8;;;;Custom poison spell
-scroll;ancient_corpse;walking_corpse_boss_01;;an;Ancient Corpse;1.5;cm;un;mb;v;;9;38;16;1.1;;;;;;;;;0.8;3;;;;
-spell;killer_vines;dsx_vines_killer;;;Killer Vines;1.25;nm;pl;st;loa;;12;76;1;1;;;;;;;;;1.5;1.5;;un_summon_vines_killer;;
-scroll;skeleton_captain;skeleton_guard_boss_01;;a;Skeleton Captain;1.5;cm;un;mb;v;;5;15;14;1.3;;;;;14;17;;;2.5;3;;;;
-spell;angler;dsx_angler;;an;Angler;1;nm;an;std;loa;;11;300;7;0.9;;;;;;;;;1;0.6;;;;
-spell;rector;rector;;a;Rector;1.5;cm;un;std;v;;8;190;5;;;0.9;;;;;17;22;2;0.8;;;;
-spell;slime_zombie;dsx_slime_zombie;;a;Slime Zombie;1.5;cm;un;std;loa;;4;60;7;0.9;;;;;;;;;0.8;1;;;;
-spell;krug_killer_dog;krug_dog_killer;;a;Krug Killer Dog;1.5;nm;an;std;v;;16;960;6;1.1;;;;;;;;;1;0.8;;;;
-spell;emerald_spider;dsx_spider_emerald;;an;Emerald Spider;1.5;nm;an;std;loa;;4;60;6;0.9;;;;;;;;;2;1.2;;;;
-scroll;hulking_gremal;gremal_boss_01;;a;Hulking Gremal;1;nm;an;mb;v;;8;30;14;1.2;;;;;;;;;1;2.4;;;;
-spell;large_twisted_mucosa;dsx_twisted_mucosa_large;;a;Large Twisted Mucosa;2;cm;de;std;loa;;9;190;5;1.05;;;;;;;;;2;1.2;;;;
-spell;tortured_corpse;tortured_corpse;;a;Tortured Corpse;1;cm;un;std;v;;8;150;7;0.9;;;;;;;;;0.8;0.8;;;;
-spell;giant_moth;moth;;a;Giant Moth;1;nm;an;std;v;;17;1500;5;;;0.85;;;;;30;34;2;0.6;;;;
-spell;mhulliq;dsx_mhulliq_one;;a;Mhulliq;1.5;nm;an;std;loa;;11;300;6;1;;;;;;;;;1;1;;;;
-spell;jungle_slinger;dsx_jungle_slinger;;a;Jungle Slinger;1.5;nm;hu;std;loa;x;16;1200;6;;;0.9;;;;;23;17;1;0.6;;;;Yes min 23 max 17
-scroll;jungle_slinger_camora;dsx_jungle_slinger_boss;;a;Jungle Slinger Camora;2;nm;hu;mb;loa;x;19;480;15;;;1.1;;;;;20;25;1;3;;;;
-spell;dark_mucosa;mucosa_large;;a;Dark Mucosa;2;cm;de;std;v;;9;190;5;1.1;;;;;;;;;2;1.2;;;;
-spell;krug_guard;krug_guard;;a;Krug Guard;1.5;nm;hu;std;v;x;21;3000;7;1;;;;;14;17;;;1.2;1;;;;
-scroll;twisted_mucosa_brute;dsx_twisted_mucosa_boss;;a;Twisted Mucosa Brute;2;cm;de;mb;loa;;10;48;13;1.2;;;;;;;;;2;3;;;;
-scroll;mucosa_brute;mucosa_boss_01;;a;Mucosa Brute;2;cm;de;mb;v;;14;120;13;1.2;;;;;;;;;2;3;;;;
-spell;jungle_skrubb;dsx_skrubb_jungle;;a;Jungle Skrubb;1.5;nm;an;st;loa;;11;76;1;;;0.9;;;;;15;19;1.5;1;;;;
-spell;mine_worm;mine_worm;;a;Mine Worm;2;nm;an;st;v;;16;240;0.5;0.9;;0.9;;0.2;;;22;24;1;2.5;;;;Spell shoots 5 arrows
-spell;braak_mage;braak_magic;;a;Braak Mage;1.2;nm;hu;std;v;x;26;12000;7;;;0.85;;0.4;;;19;21;1;0.9;;;;Spell shoots 3 projectiles, but bonus for poor logistics
-scroll;huskar;krug_shaman_boss_01;;;Huskar the Shaman;1.75;nm;hu;mb-res;v;x;11;76;14;1.2;;1.2;;;;;13;37;1;3;;;;
-spell;white_wolf;wolf_white;;a;White Wolf;1.5;nm;an;std;v;;21;3000;6;0.95;;;;;;;;;1;0.8;;;;
-spell;bookas;dsx_bookas;;a;Bookas;1.5;cm;de;std;loa;x;23;6000;5;;;0.9;;;;;25;45;1;1;;;;
-spell;gulik;dsx_pygmy;;a;Gulik;1.5;nm;hu;std;loa;x;22;3800;6;0.9;;;;;;;;;1;0.8;;;;
-scroll;futak;krug_grunt_boss_01;;;Futak the Trainer;1.75;nm;hu;mb;v;x;11;60;15;1.2;;;;;3;7;;;1;3;;;;
-spell;jungle_angler;dsx_angler_jungle;;a;Jungle Angler;1.5;nm;an;std;loa;;13;480;7;0.9;;;;;;;;;1;0.6;;;;
-spell;rusted_automaton;dsx_automaton_rusted;;a;Rusted Automaton;1.75;cm;ro;std;loa;;21;3800;5;;;0.9;;;;;;;2.5;1.2;;;;Custom dmgvol spell
-spell;weathered_automaton;dsx_automaton_weathered;;a;Weathered Automaton;1.75;cm;ro;std;loa;;21;3000;6;0.95;;;;;;;;;2.5;1.2;;;;
-spell;braak;braak;;a;Braak;1.5;nm;hu;std;v;x;28;15000;7;1;;;;;;;;;1;1;;;;
-spell;ice_fly;ice_fly;;an;Ice Fly;0.75;nm;el;std;v;;25;7600;6;0.9;;;;;;;;;2;0.4;;;;
-spell;leetch;dsx_leetch;;a;Leetch;1;nm;an;std;loa;;24;6000;7;0.85;;;;;;;;;1;0.6;;;;
-spell;zaurask_archer;dsx_zaurask_spitter;;a;Zaurask Archer;2;nm;hu;std;loa;x;19;2400;6;;1;;;;62;70;;;1.7;1;;;;
-spell;zaurask_claw;dsx_zaurask_claw;;a;Zaurask Claw;2;nm;hu;std;loa;x;18;1500;7;1.1;;;;;;;;;1.5;1.2;;;;
-spell;zaurask_incanter;dsx_zaurask_apprentice;;a;Zaurask Incanter;2;nm;hu;std;loa;x;20;3000;6;;;1;;;;;50;60;1.5;1;;;;
-spell;klaw;klaw;;a;Klaw;1.5;nm;an;std;v;;21;3000;6;1.05;;;;;;;;;1;1.2;;;;
-scroll;venom_fiend;scorpion_boss_01;;a;Venom Fiend;2;nm;an;mb;v;;17;240;13;1.25;;;;;;;;;2;3.6;;;;
-spell;hassat_hunter;dsx_hassat_bowman;;a;Hassat Hunter;2;nm;hu;std;loa;x;23;6000;5;;1;;;;26;36;;;1.2;1;;;;
-spell;horrid;horrid;;a;Horrid;1.75;cm;de;std;v;x;21;3000;6;1.1;;;;;29;31;;;1;1.2;;;;
-spell;krug_commander;krug_commander;;a;Krug Commander;1.5;nm;hu;std;v;x;24;6000;7;1.1;;;;;40;50;;;1.5;1;;;;
-spell;hassat_shaman;dsx_hassat_shaman;;a;Hassat Shaman;2;nm;hu;std;loa;x;26;12000;6;;;1.1;;;;;35;45;1;1.2;;;;
-spell;ancient_scorpiot;dsx_scorpiot_ranged_rusted;;an;Ancient Scorpiot;2;cm;ro;std;loa;;23;6000;6;;;0.9;;0.1;;;;;2;0.9;;;;Custom dmgvol spells, one also has a trackball (double dmg)
-spell;ancient_scorpiot_lcannon;dsx_scorpiot_ranged_rusted_lcannon;;an;Ancient Scorpiot (LCannon);2;cm;ro;std;loa;;23;6000;6;;;0.9;;0.1;;;;;2;0.9;;;ancient_scorpiot;Custom dmgvol spell
-spell;ancient_scorpiot_rcannon;dsx_scorpiot_ranged_rusted_rcannon;;an;Ancient Scorpiot (RCannon);2;cm;ro;std;loa;;23;6000;6;;;0.9;;0.1;;;;;2;0.9;;;ancient_scorpiot;Custom dmgvol spell + trackball
-spell;whelnars_eyes;dsx_eyes_whelnar;;;Whelnar's Eyes;0.75;cm;de;std;loa;;28;19000;7;;;0.8;;;;;58;68;2;0.4;summon_eyes_whelnar;;;
-spell;hassat_runner;dsx_hassat_scavenger;;a;Hassat Runner;2;nm;hu;std;loa;x;22;3800;6;1.05;;;;;;;;;1.2;1.2;;;;
-scroll;pitiful_braak;braak_boss_01;;the;Pitiful Braak;1.5;nm;hu;mb;v;x;29;3800;15;1.2;;;;;;;;;1;3;;;;
-spell;bog_beast;dsx_bog_beast;;a;Bog Beast;2.5;nm;el;std;loa;;24;6000;7;1.1;;;;;;;;;0.8;1.8;;;;
-spell;mantrap;dsx_mantrap;;a;Mantrap;2;nm;pl;st;loa;;24;1500;0.5;0.95;;0.95;;0.2;;;40;50;1;2.5;;;;Spell shoots 5 arrows
-scroll;dark_klaw;klaw_boss_01;;a;Dark Klaw;2;nm;an;mb;v;;22;760;14;1.3;;;;;;;;;1;3.6;;;;
-spell;frost_spitter;spider_frostnid_ranged;;a;Frost Spitter;1.5;nm;an;std;v;;24;7500;6;;;0.85;;2.5;;;;;2;0.8;;;;Custom fire spell
-spell;thunder_lizard;dsx_lizard_thunder;;a;Thunder Lizard;1.5;nm;an;std;loa;;37;33000;7;1;;;;;;;;;1.5;0.8;;;;
-spell;hassat_panther;dsx_hassat_panther;;a;Hassat Panther;2;nm;hu;std;loa;x;25;7600;6;1.1;;;;;;;;;1.2;1.2;;;;
-spell;jungle_spiker;dsx_spiked_dweller;;a;Jungle Spiker;1;nm;an;std;loa;;17;1500;5;;;0.95;;;;;55;70;1.5;0.8;;;;
-spell;living_dead;dsx_zombie_pudgy;;a;Living Dead;1.5;cm;un;std;loa;;24;6000;7;0.95;;;;;;;;;0.8;1;;;;
-scroll;hassat_commander;dsx_hassat_commander;;a;Hassat Commander;2.5;nm;hu;mb;loa;x;27;2400;13;1.35;;;0.25;;50;58;;;1.2;4.5;;;;Attack anims with lots of attacks
-spell;dark_acolyte;dsx_acolyte_dark;;a;Dark Acolyte;1.5;cm;un;std;loa;;24;6000;6;1.1;;;;;;;;;2.5;0.8;;;;
-spell;frostnid;spider_frostnid;;a;Frostnid;1.5;nm;an;std;v;;25;7600;7;0.95;;;;;;;;;2;0.8;;;;
-spell;mummy;dsx_mummy;;a;Mummy;1.5;cm;un;std;loa;;28;15000;7;0.9;;;;;;;;;0.8;1;;;;
-spell;rending_mhulliq;dsx_mhulliq_two;;a;Rending Mhulliq;1.5;nm;an;std;loa;;31;25000;6;1;;;;;;;;;1;1;;;;
-scroll;grizzly_furok;furok_boss_01;;a;Grizzly Furok;2;nm;an;mb;v;;22;760;15;1.3;;;;;;;;;1;3.6;;;;
-spell;ice_archer;ice_archer;good;an;Ice Archer;1.5;nm;el;std;v;;25;9500;4;;1;;;;33;37;;;2;1.2;;;;
-spell;ice_mage;ice_mage;;an;Ice Mage;1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;0.25;;;27;29;1;0.9;;;;Spell shoots 5 arrows, but bonus for poor logistics
-spell;ice_mage_attacking;ice_mage_attacking;;an;Ice Mage (Attacking);1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;0.25;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows, but bonus for poor logistics
-spell;ice_mage_summoning_ice_warrior;ice_mage_summoning_ice_warrior;;an;Ice Mage (Summoning Ice Warrior);1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;0.25;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows, but bonus for poor logistics
-spell;ice_mage_summoning_ice_archer;ice_mage_summoning_ice_archer;;an;Ice Mage (Summoning Ice Archer);1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;0.25;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows, but bonus for poor logistics
-spell;chitterskrag_baby;dsx_chitterskrag_baby;;an;Immature Chitterskrag;0.75;nm;an;std;loa;;31;25000;6;0.9;;;;;;;;;2;0.6;;;;
-spell;furok_slasher;furok_slasher;;a;Furok Slasher;2;nm;an;std;v;;23;4800;7;1.1;;;;;;;;;1;1.2;;;;
-spell;slarg;slarg;;a;Slarg;0.75;nm;an;std;v;;31;25000;7;0.85;;;;;;;;;1;0.6;;;;
-spell;goblin_grunt;goblin_grunt;;a;Goblin Grunt;1.5;cm;hu;std;v;x;56;79000;7;0.9;;;;;2;4;;;1;0.9;;;;
-spell;monstrous_rat;dsx_giant_rat_monstrous;;a;Monstrous Rat;1;nm;an;std;loa;;33;28000;6;0.95;;;;;;;;;1;0.8;;;;
-spell;ghastly_necron;dsx_necron_ghastly;;a;Ghastly Necron;1.5;cm;un;std;loa;;28;15000;6;1;;;;;70;76;;;0.8;1;;;;
-spell;teal_shard;shard_teal;;a;Teal Shard;0.75;nm;el;std;v;;31;31000;5;;;0.9;;;;;41;45;3;0.6;;;;
-spell;ice_warrior;ice_warrior;good;an;Ice Warrior;1.5;nm;el;std;v;;25;7600;6;1.05;;;;;40;48;;;2;1.2;;;;
-spell;kikclaw_small;dsx_kikclaw_2;;a;Skitterling;1;nm;an;std;loa;;35;30000;7;0.8;;;;;;;;;1;0.8;;;;
-spell;skatwyrm_melee;dsx_skatwyrm;;a;Swarmling Drone;1;nm;an;std;loa;;36;32000;7;0.9;;;;;;;;;2;0.8;;;;
-spell;skatwyrm_ranged;dsx_skatwyrm_r;;a;Swarmling Queen;1;nm;an;std;loa;;36;40000;6;1;;1;0.7;2.5;;;;;2;0.8;;;;"Custom fire spell & effect; melee: hit_multiple"
-spell;swirling_midges;dsx_midge_swirling;;;Swirling Midges;0.5;nm;an;std;loa;;35;38000;7;;;0.8;;;;;110;88;2;0.4;;;;Yes min 110 max 88
-spell;frost_drake;drake_white;;a;Frost Drake;2;nm;an;std;v;;29;24000;4;1.1;;1.1;;;;;70;74;1.5;2.5;;;;
-scroll;krakemaw_the_putrid;dsx_drake_death_two_boss;;;Krakemaw the Putrid;2.5;cm;un;mb;loa;;30;6000;11;1.3;;1.3;;;;;80;90;1.5;7.5;;;;
-scroll;krakemaw_the_putrid_small;dsx_drake_death_two_boss_small;;;Krakemaw the Putrid (small);2.5;cm;un;mb;loa;;30;6000;11;1.3;;1.3;;;;;80;90;1.5;7.5;;;krakemaw_the_putrid;
-spell;rahk;dsx_drake_death_one;;a;Rahk;2.5;cm;un;std;loa;;29;24000;4;1.1;;1.1;;;;;80;90;1.5;2.5;;;;
-spell;scaly_rahk;dsx_drake_death_two;;a;Scaly Rahk;2.5;cm;un;std;loa;;29;24000;4;1.1;;1.1;;;;;80;90;1.5;2.5;;;;
-spell;dark_caster;dark_caster;;a;Dark Caster;1;nm;hu;std;v;x;38;43000;6;;;0.85;;;;;72;78;1;0.6;;;;
-spell;dark_slinger;dark_slinger;;a;Dark Slinger;1;nm;hu;std;v;x;38;43000;7;;;0.8;;;;;49;51;1;0.6;;;;
-spell;green_shard;shard_green;;a;Green Shard;1;nm;el;std;v;;33;34000;4;;;0.95;;;;;56;62;3;0.8;;;;
-spell;stalagnid;spider_stalagnid;;a;Stalagnid;1;nm;an;std;v;;33;28000;7;0.9;;;;;;;;;2;0.8;;;;
-spell;dark_lunger;dark_lunger;;a;Dark Lunger;1;nm;hu;std;v;x;36;32000;7;0.9;;;;;;;;;1;0.6;;;;
-spell;trog;trog;;a;Trog;1.5;nm;hu;std;v;x;38;35000;7;1;;;;;31;57;;;1.2;1;;;;
-spell;zaurask_adept;dsx_zaurask_adept;;a;Zaurask Adept;1.5;nm;hu;std;loa;x;37;41000;6;;;1;;;;;58;68;1.5;1;;;;
-spell;zaurask_spine;dsx_zaurask_spine;;a;Zaurask Spine;1.5;nm;hu;std;loa;x;37;41000;6;;1;;;;45;57;;;1.7;1;;;;
-spell;flying_gritch;dsx_flying_gritch;;a;Flying Gritch;1;nm;an;std;loa;;37;33000;8;0.8;;;;;;;;;1;0.5;;;;
-scroll;frost_mage;ice_mage_boss_01;;a;Frost Mage;1.5;nm;hu;mb-su;v;x;31;6300;14;;;1.1;;0.25;;;27;29;1;2.7;;;;Spell shoots 5 arrows, but bonus for poor logistics
-scroll;frost_mage_attacking;ice_mage_boss_01_attacking;;a;Frost Mage (Attacking);1.5;nm;hu;mb-su;v;x;31;6300;14;;;1.1;;0.25;;;27;29;1;2.7;;;frost_mage;Spell shoots 5 arrows, but bonus for poor logistics
-spell;greater_scrub_scorpion;dsx_scorpion_lg;;a;Greater Scrub Scorpion;1.5;nm;an;std;loa;;37;33000;6;0.85;;;;;;;;;2;0.8;;;;
-spell;shadow_angler;dsx_angler_shadow;;a;Shadow Angler;1;nm;an;std;loa;;37;33000;7;0.9;;;;;;;;;1;0.6;;;;
-spell;zaurask_fang;dsx_zaurask_fang;;a;Zaurask Fang;1.5;nm;hu;std;loa;x;36;32000;7;1.05;;;;;;;;;1.5;1.2;;;;
-spell;chitterskrag;dsx_chitterskrag_one;;a;Chitterskrag;2;nm;an;std;loa;;31;25000;6;1.1;;;;;;;;;2;1.8;;;;
-spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;;32;33000;5;;;1;;0;;;;;2;1.8;;;;Custom poison spell
-spell;sandskreech;dsx_sandskreech;;a;Sandskreech;1.5;nm;an;std;loa;;39;36000;7;0.9;;;;;;;;;2;0.8;;;;
-spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;;32;33000;3;1.2;;1.2;1.3;;;;;;3;2.5;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
-scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;;28;3800;12;;1.2;;;;33;37;;;2;3.6;;;;
-spell;proxo;proxo;;a;Proxo;2;cm;ro;ex;v;;52;13000;1;1;;;;;;;;;2.5;1;;;;Custom spell skrit
-spell;proxo_hold;proxo_hold;;a;Proxo (hold);2;cm;ro;ex;v;;52;13000;1;1;;;;;;;;;2.5;1;;;proxo;Custom spell skrit
-spell;blue_shard;shard_blue;;a;Blue Shard;1.25;nm;el;std;v;;35;38000;4;;;1;;;;;58;64;3;1;;;;
-spell;spiked_maw;spiked_maw;;a;Spiked Maw;1.5;nm;an;std;v;;37;41000;5;;;1;;;;;75;80;1.5;0.8;;;;
-spell;zaurask_slavemaster;dsx_zaurask_commander;;a;Zaurask Slavemaster;1.5;nm;hu;std;loa;x;38;35000;6;1.15;;;;;82;100;;;1.7;1.2;;;;
-spell;rune_caster;dsx_rune_caster;;a;Rune Caster;1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;44;50;1;0.9;;;;
-spell;rune_caster_attacking;dsx_rune_caster_attacking;;a;Rune Caster (Attacking);1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;44;50;1;0.9;;;rune_caster;
-spell;rune_caster_summoning_beast;dsx_rune_caster_summoning_dsx_rune_guardian;;a;Rune Caster (Summoning Beast);1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;44;50;1;0.9;;;rune_caster;
-spell;rune_caster_summoning_fiend;dsx_rune_caster_summoning_dsx_rune_guardian_r;;a;Rune Caster (Summoning Fiend);1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;44;50;1;0.9;;;rune_caster;
-spell;rune_fiend;dsx_rune_guardian_r;;a;Rune Fiend;1.5;cm;de;std;loa;;37;41000;6;;;1;;;;;44;55;1;1.2;;;;
-spell;kikclaw_large;dsx_kikclaw;;a;Skitterclaw;1.5;nm;an;std;loa;;36;32000;6;0.9;;;;;;;;;1;1;;;;
-spell;hassat_archer;dsx_hassat_archer;;a;Hassat Archer;1.5;nm;hu;std;loa;x;41;50000;5;;1;;;;54;60;;;1.2;1;;;;
-spell;hassat_caster;dsx_hassat_caster;;a;Hassat Caster;1.5;nm;hu;std;loa;x;42;52000;6;;;1;;;;;64;72;1.2;1.5;;;;
-scroll;frost_warrior;ice_warrior_boss_01;;a;Frost Warrior;1.5;nm;el;mb;v;;26;1900;14;1.25;;;;;40;48;;;2;3.6;;;;
-spell;lesser_scrub_scorpion;dsx_scorpion_sm;;a;Lesser Scrub Scorpion;1;nm;an;std;loa;;39;36000;6;0.9;;;;;;;;;2;0.6;;;;
-spell;trog_warrior;trog_warrior;;a;Trog Warrior;1.5;nm;hu;std;v;x;39;36000;7;1.05;;;;;40;59;;;1.5;1;;;;
-spell;blue_noctiss;dsx_noctiss_2;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.9;;;;;66;84;2;1;;;;
-spell;red_noctiss;dsx_noctiss;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.85;;;;;56;64;2;1;;;;
-scroll;giant_chitterskrag;dsx_chitterskrag_boss;;a;Giant Chitterskrag;2;nm;an;mb;loa;;34;5800;13;1.3;;;;;;;;;2;5.4;;;;
-spell;marble_golem;dsx_golem_marble;;a;Marble Golem;1.5;nm;el;std;loa;;33;28000;6;1.1;;;;;;;;;3;1;;;;
-spell;zaurask_lightning;dsx_zaurask_archer;;a;Zaurask Lightning;1.5;nm;hu;std;loa;x;46;63000;6;;1;;;;84;93;;;1.7;1;;;;
-spell;lectar;lectar;;a;Lectar;1;nm;an;std;v;;31;25000;7;0.9;;;;;;;;;1.5;0.6;;;;
-scroll;shadow_lunger;dark_lunger_boss_01;;a;Shadow Lunger;1;nm;hu;mb;v;x;39;7300;17;1.1;;;;;;;;;1;1.8;;;;
-spell;doppelganger_knave;dsx_doppelganger_2_sumcol;;a;Doppelganger Knave;1.5;cm;de;dop;loa;x;44;46000;7;1.1;1.1;1.1;;;;;;;5;1;;;;Doppelganger!
-spell;hassat_fighter;dsx_hassat_fighter;;a;Hassat Fighter;1.5;nm;hu;std;loa;x;44;46000;6;1;;;;;84;95;;;1.2;1;;;;
-spell;hassat_ranger;dsx_hassat_ranger;;a;Hassat Ranger;1.5;nm;hu;std;loa;x;45;60000;5;;1;;;;58;66;;;1.2;1;;;;
-spell;hassat_slicer;dsx_hassat_grunt;;a;Hassat Slicer;1.5;nm;hu;std;loa;x;40;38000;6;1;;;;;76;82;;;1.2;1;;;;
-scroll;rune_master;dsx_rune_master;;a;Rune Master;2;cm;hu;mb;loa;x;42;10000;13;;;1.2;;;;;60;66;1;4.5;;;;
-spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;0.9;;75;77;;;1.5;1;;;;1/5 of attacks do double damage
-spell;droc_superior;dsx_droc_commander;;a;Droc Superior;1.5;nm;hu;std;loa;x;46;50000;5;1.1;;;;;;;;;1.7;1.5;;;;
-spell;droc_spatter;dsx_droc_archer;;a;Droc Spatter;1.5;nm;hu;std;loa;x;45;60000;4;;;1;;0;;;;;1.5;1.5;;;;Custom poison spell
-spell;droc;dsx_droc_grunt;;a;Droc;1.5;nm;hu;std;loa;x;44;46000;5;1.05;;;;;;;;;1.5;1.5;;;;
-spell;doppelganger;dsx_doppelganger_sumcol;;a;Doppelganger;1.5;cm;de;dop;loa;x;42;42000;7;1;1;1;;;;;;;5;0.8;;;;Doppelganger!
-spell;ztrool;dsx_ztrool;;a;Ztrool;1.5;nm;hu;std;loa;x;49;58000;6;1;;;;;;;;;1.5;0.8;;;;
-spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;43;44000;5;0.95;;;;;;;;;2;1;;;;
-spell;slithermage_master;dsx_slithermage_melee;;a;Slithermage Master;2;cm;de;std;loa;x;49;72000;5;;;1.1;;;;;119;131;1.5;2;;;;
-spell;purple_shard;shard_purple;;a;Purple Shard;1.75;nm;el;std;v;;37;41000;3;;;1.1;;;;;82;88;3;1.5;;;;
-scroll;doppelganger_lord;dsx_doppelganger_boss_sumcol;;a;Doppelganger Lord;2;cm;de;mb-dop;loa;x;45;9600;15;1.2;1.2;1.2;;;;;;;5;2.5;;;;Doppelganger!
-spell;hassat_mage;dsx_hassat_mage;;a;Hassat Mage;1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.7;;;74;80;1.2;1.5;;;;"Attack + Orb; custom orb spell"
-spell;hassat_mage_attacking;dsx_hassat_mage_attacking;;a;Hassat Mage (Attacking);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.7;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Orb)
-spell;hassat_mage_casting_orb;dsx_hassat_mage_casting_orb;;a;Hassat Mage (Casting Orb);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;0.7;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Attack)
-spell;zaurask_seer;dsx_zaurask_caster;;a;Zaurask Seer;1.5;nm;hu;std;loa;x;47;66000;6;;;1;;;;;76;95;1.7;1;;;;
-spell;zaurask_whacker;dsx_zaurask_whacker;;a;Zaurask Whacker;1.5;nm;hu;std;loa;x;45;48000;6;1;;;;;75;84;;;1.7;1.2;;;;
-scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;38;8700;13;;;1.2;;;;;75;80;1.5;2.4;;;;
-spell;bandit_archer;bandit_ranged;;a;Bandit Archer;1.5;nm;hu;std;v;x;44;57000;5;;1;;;;65;93;;;1.2;1;;;;
-spell;gobbot_igniter_emarard;dsx_gobbot_flamethrower;;a;Gobbot Igniter;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
-scroll;great_trog_warrior;trog_warrior_boss_01;;a;Great Trog Warrior;1.5;nm;hu;mb;v;x;40;7600;14;1.25;;;;;40;59;;;1.5;3;;;;
-spell;mechanized_wasp;dsx_automaton_flying_one;;a;Mechanized Wasp;1.5;cm;ro;std;loa;;48;55000;6;0.85;;;;;;;;;3;0.6;;;;
-spell;gobbot_sleeper_emarard;dsx_gobbot_minigun;;a;Gobbot Sleeper;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
-scroll;shadowjumper_minion;dsx_shadow_jumper_minion_one;;a;Shadowjumper Minion;1.5;cm;de;mb;loa;x;29;3800;15;1.3;;;;;50;55;;;1;3.6;;;;
-spell;zaurask_slasher;dsx_zaurask_slasher;;a;Zaurask Slasher;1.5;nm;hu;std;loa;x;48;55000;6;1;;;;;99;118;;;1.7;1.2;;;;
-spell;zaurask_ranger;dsx_zaurask_ranger;;a;Zaurask Ranger;1.5;nm;hu;std;loa;x;49;72000;5;;1;;;;91;100;;;1.7;1.2;;;;
-spell;zaurask_leader;dsx_zaurask_chieftain;;a;Zaurask Leader;1.5;nm;hu;std;loa;x;48;55000;6;1.1;;;;;125;145;;;1.7;1.8;;;;
-spell;bandit;bandit_melee;;a;Bandit;1.5;nm;hu;std;v;x;44;46000;6;1.1;;;;;24;32;;;1.5;1;;;;
-spell;mangler;mangler;;a;Mangler;1;nm;an;std;v;;43;44000;7;0.9;;;;;;;;;1;0.8;;;;
-spell;gorack;gorack;;a;Gorack;2;nm;hu;std;v;x;44;46000;6;1.1;;;;;;;;;1;1.2;;;;
-spell;gobbot_grenadier_emarard;dsx_gobbot_grenade;;a;Gobbot Grenadier;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
-scroll;dark_wolf;wolf_black_boss_01;;a;Dark Wolf;1.75;cm;un;mb;v;;57;17000;14;1.2;;;;;;;;;1;2.7;;;;
-spell;goblin_blackguard;dsx_goblin_blackguard;;a;Goblin Blackguard;1.5;cm;hu;std;loa;x;50;60000;7;0.9;;;;;85;95;;;1.5;0.8;;;;
-spell;mountain_troll;dsx_troll_mountain;;a;Mountain Troll;1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;86;92;;;1;0.8;;;;
-spell;mountain_troll_norecov;dsx_troll_mountain_norecov;;a;Mountain Troll (no recov);1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;86;92;;;1;0.8;;;mountain_troll;
-spell;mutant_goblin_hurler;dsx_goblin_mutant_hurler;;a;Mutant Goblin Hurler;2;cm;hu;std;loa;x;51;79000;6;;1;;;;88;102;;;1.5;1.2;;;;
-spell;mutant_goblin_warrior;dsx_goblin_mutant;;a;Mutated Goblin Warrior;2;cm;hu;std;loa;x;50;60000;7;1.1;;;;;108;115;;;1.2;1.2;;;;
-spell;tretch;tretch;;a;Tretch;2;nm;pl;st;v;;43;8700;0.5;1;;;;;;;;;2;2.5;;;;
-spell;goo_walker;goo_walker;;a;Goo Walker;1.5;cm;un;std;v;;43;55000;6;;;0.85;;;;;72;78;0.8;1;;;;
-spell;zombie;zombie_01;;a;Zombie;1.5;cm;un;std;v;;43;44000;7;0.9;;;;;;;;;0.8;1;;;;
-spell;zaurask_fighter;dsx_zaurask_fighter;;a;Zaurask Fighter;1.5;nm;hu;std;loa;x;48;55000;6;1;;;;;115;124;;;1.7;1.2;;;;
-spell;swamp_slinger;swamp_slinger;good;a;Swamp Slinger;1.5;nm;el;std;v;;44;57000;6;;;0.95;;;;;65;67;0.8;1;;;;
-scroll;muong_troll;troll_forest_boss_01;;a;Muong Troll;1.5;nm;hu;mb;v;x;43;8700;14;1.2;;;;;50;54;;;1;3;;;;
-scroll;muong_troll_norecov;troll_forest_boss_01_norecov;;a;Muong Troll (no recov);1.5;nm;hu;mb;v;x;43;8700;14;1.2;;;;;50;54;;;1;3;;;muong_troll;
-spell;zaurask_mage;dsx_zaurask_mage;;a;Zaurask Mage;1.5;nm;hu;std;loa;x;50;75000;6;;;1;;;;;103;112;1.7;1;;;;
-scroll;shadow_servant;dsx_shadow_jumper_minion_two;;a;Shadow Servant;1.5;cm;de;mb;loa;x;49;14000;14;;1.3;;;;105;112;;;1;3.6;;;;
-spell;swamp_witch;swamp_witch;;a;Swamp Witch;1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;;
-spell;swamp_witch_attacking;swamp_witch_attacking;;a;Swamp Witch (Attacking);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
-spell;swamp_witch_summoning_swamp_creature;swamp_witch_summoning_swamp_creature;;a;Swamp Witch (Summoning Creature);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
-spell;swamp_witch_summoning_swamp_slinger;swamp_witch_summoning_swamp_slinger;;a;Swamp Witch (Summoning Slinger);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;95;99;1;0.9;;;swamp_witch;
-spell;scorpiot_gunner;dsx_scorpiot_ranged;;a;Scorpiot Gunner;2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;;Custom dmgvol & fire spells, one also has a trackball (double dmg)
-spell;scorpiot_gunner_laser;dsx_scorpiot_ranged_laser;;a;Scorpiot Gunner (Laser);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
-spell;scorpiot_gunner_lcannon;dsx_scorpiot_ranged_lcannon;;a;Scorpiot Gunner (LCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
-spell;scorpiot_gunner_zap_rcannon;dsx_scorpiot_ranged_zap_rcannon;;a;Scorpiot Gunner (Zap RCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom fire spell + trackball
-spell;stingbot;dsx_automaton_flying_two;;a;Stingbot;1.5;cm;ro;std;loa;;49;58000;5;0.9;;;;;;;;;3;0.8;;;;
-spell;goblin_headsman;dsx_goblin_guard;;a;Goblin Headsman;1.5;cm;hu;std;loa;x;52;66000;6;0.95;;;;;85;91;;;1.5;0.8;;;;
-spell;googore_grub;googore_grub;;a;Googore Grub;0.75;nm;an;std;v;;63;110000;9;0.8;;;;;;;;;1;0.4;;;;
-spell;goblin_guard;goblin_guard;;a;Goblin Guard;1.5;cm;hu;std;v;x;57;83000;6;1;;;;;16;29;;;1.5;0.9;;;;Always equipped with shortsword
-spell;automaton_mech;dsx_automaton_two;;an;Automaton Mech;2.5;cm;ro;std;loa;;49;72000;5;;;1;;;;;;;3;1.2;;;;Custom dmgvol spell
-spell;hunter;hunter;;a;Hunter;1;cm;ro;std;v;;53;69000;7;0.95;;;;;;;;;3;0.6;;;;
-spell;kill_bot;kill_bot;;a;Kill Bot;1;cm;ro;std;v;;50;60000;7;0.9;;;;;;;;;2.5;0.6;;;;
-scroll;enraged_gorack;gorack_boss_01;;an;Enraged Gorack;2;nm;hu;mb;v;x;45;9600;14;1.3;;;;;;;;;1;3.6;;;;
-spell;bronze_gargoyle;gargoyle_bronze;;a;Bronze Gargoyle;0.75;cm;el;std;v;;43;55000;5;;;0.9;;;;;74;76;3;0.4;;;;
-scroll;rogue_bandit;bandit_melee_boss_01;;a;Rogue Bandit;1.5;nm;hu;mb;v;x;45;9600;14;1.3;;;;;24;32;;;1.2;3;;;;
-spell;scorpiot_slasher;dsx_scorpiot_melee;;a;Scorpiot Slasher;2.5;cm;ro;std;loa;;49;58000;6;1;;;;;;;;;2.5;1.2;;;;
-spell;automaton_blade;dsx_automaton_one;;an;Automaton Blade;2.5;cm;ro;std;loa;;49;58000;6;1.05;;;;;;;;;3;1.2;;;;
-spell;copter;copter;;a;Copter;1;cm;ro;std;v;;51;79000;5;;;0.85;;;;;82;88;2.5;0.4;summon_copter;;;
-spell;swamp_creature;swamp_creature;good;a;Swamp Creature;2.5;nm;el;std;v;;44;46000;6;1.1;;;;;;;;;0.8;2.5;;;;
-spell;swamp_troll;troll_swamp;;a;Swamp Troll;1.5;nm;hu;std;v;x;48;55000;6;1;;;;;75;85;;;1;0.8;;;;
-spell;swamp_troll_norecov;troll_swamp_norecov;;a;Swamp Troll (no recov);1.5;nm;hu;std;v;x;48;55000;6;1;;;;;75;85;;;1;0.8;;;swamp_troll;
-scroll;air_elemental_minion;dsx_elemental_air_minion;;an;Air Elemental Minion;2;nm;el;mb;loa;;50;12000;14;1.2;;;;;;;;;2;3.6;;;;
-scroll;earth_elemental_minion;dsx_elemental_earth_minion;;an;Earth Elemental Minion;3;nm;el;mb;loa;;50;15000;12;1.3;;1.3;1.3;;;;;;2;4.5;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
-scroll;water_elemental_minion;dsx_elemental_water_minion;;a;Water Elemental Minion;1.5;nm;el;mb;loa;;50;12000;17;1.1;;;;;;;;;1;1.8;;;;
-spell;clockwork_automaton;dsx_golem_clockwork;;a;Clockwork Automaton;3;cm;ro;std;loa;;50;60000;3;1.2;;;;;;;;;3;1.8;;;;
-spell;gobbot_general;dsx_gobbot_general;;a;Gobbot General;1.5;cm;ro;std;loa;x;50;75000;6;;1.1;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
-scroll;shadowjumper_lieutenant;dsx_shadow_jumper_boss;;a;Shadowjumper Lieutenant;2;cm;de;mb;loa;x;55;15000;12;1.4;;;;;100;130;;;1.5;3.6;;;;
-scroll;skank_witch;swamp_witch_boss_01;;a;Skank Witch;1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;95;99;1;2.7;;;;
-scroll;skank_witch_attacking;swamp_witch_boss_01_attacking;;a;Skank Witch (Attacking);1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;95;99;1;2.7;;;skank_witch;
-scroll;wretched_zombie;zombie_02_boss_01;;a;Wretched Zombie;1.5;cm;un;mb;v;;44;9100;16;1.1;;;;;;;;;0.8;3;;;;
-spell;heater;heater;;a;Heater;2.5;cm;ro;std;v;;55;95000;4;;;1.1;;;;;120;130;2.5;2;;;;
-scroll;bandit_boss;bandit_boss;;a;Bandit Boss;1.5;nm;hu;mb;v;x;46;10000;13;1.35;;;;;27;33;;;1.5;3;;;;
-scroll;lost_witch;swamp_witch_boss_02;;the;Lost Witch;1.5;nm;hu;mb-su;v;x;50;15000;14;;;1.2;;;;;95;99;1;2.7;;;;
-scroll;lost_witch_attacking;swamp_witch_boss_02_attacking;;the;Lost Witch (Attacking);1.5;nm;hu;mb-su;v;x;50;15000;14;;;1.2;;;;;95;99;1;2.7;;;lost_witch;
-spell;gobbot_grenadier;gobbot_grenade;;a;Gobbot Grenadier;1;cm;ro;std;v;;53;87000;6;;1;;;;100;109;;;2.5;0.6;;;;
-spell;gobbot_gunner;gobbot_minigun;;a;Gobbot Gunner;1;cm;ro;std;v;;53;87000;6;;1;;;;68;75;;;2.5;0.6;;;;
-spell;gobbot_igniter;gobbot_flamethrower;;a;Gobbot Igniter;1;cm;ro;std;v;;52;83000;6;;1;;;;110;135;;;2.5;0.6;;;;
-spell;gobbot_shocker;gobbot_lightning;;a;Gobbot Shocker;1;cm;ro;std;v;;52;83000;6;;1;;;;69;77;;;2.5;0.6;;;;
-scroll;rotten_troll;troll_swamp_boss_01;;a;Rotten Troll;1.5;nm;hu;mb;v;x;51;13000;14;1.2;;;;;75;85;;;1;2.4;;;;
-scroll;rotten_troll_norecov;troll_swamp_boss_01_norecov;;a;Rotten Troll (no recov);1.5;nm;hu;mb;v;x;51;13000;14;1.2;;;;;75;85;;;1;2.4;;;rotten_troll;
-spell;perforator;perforator;;a;Perforator;1.5;cm;ro;std;v;;54;91000;4;;;1.05;;;;;;;2;1.2;;;;Custom dmgvol spell
-scroll;swamp_abomination;swamp_creature_boss_01;;a;Swamp Abomination;2.5;nm;el;mb;v;;48;11000;14;1.3;;;;;;;;;0.8;7.5;;;;
-spell;blaster;blaster;;a;Blaster;2.5;cm;ro;std;v;;55;95000;3;;;1.2;;;;;108;130;2.5;2;;;;
-spell;water_slinger;water_slinger;;a;Water Slinger;1.5;nm;hu;std;v;x;65;150000;6;;;0.9;;;;;105;115;1;0.8;;;;
-spell;sea_mangler;mangler_sea;;a;Sea Mangler;1;nm;an;std;v;;56;79000;7;0.9;;;;;;;;;1;0.8;;;;
-spell;giant_wasp;wasped;;a;Giant Wasp;0.75;nm;an;std;v;;65;120000;6;0.95;;;;;;;;;2;0.6;;;;
-spell;wraith_mage;wraith_mage;;a;Wraith Mage;1.25;cm;un;std;v;;63;140000;5;;;0.95;;0.5;;;120;140;2;0.8;;;;Spell shoots 2 trackballs
-spell;water_lunger;water_lunger;;a;Water Lunger;1.5;nm;hu;std;v;x;64;110000;7;0.9;;;;;;;;;1;0.8;;;;
-spell;soul_stinger;soul_stinger;;a;Soul Stinger;1;nm;an;std;v;;68;140000;6;0.95;;;;;;;;;2;0.6;;;;
-spell;skeleton_ranger;skeleton_mercenary_archer;good;a;Skeleton Ranger;1.5;cm;un;std;v;;65;150000;5;;1;;;;94;110;;;2.5;1;;;;
-spell;forest_darkling;darkling_forest;;a;Forest Darkling;1.5;cm;de;std;v;;56;99000;5;;;0.9;;;;;120;140;1;0.9;;;;
-spell;cyclops;cyclops;;a;Cyclops;2.5;nm;hu;std;v;x;61;100000;6;1.1;;;;;115;125;;;1;2;;;;Always equipped with club
-spell;wraith_lesser;wraith_lesser;;a;Wraith;2.5;cm;un;std;v;;56;79000;6;0.95;;;;;58;74;;;2;0.8;;;;
-spell;googore;googore;;a;Googore;2;nm;an;st;v;;63;27000;0.5;0.9;;0.9;;;;;170;180;1;2.5;;;;
-scroll;fury_spawn;fury_lesser_01;;a;Fury Spawn;2;cm;de;mb;v;;65;30000;13;;;1.3;;0.7;;;;;1;2.7;;;;Custom dmgvol spell
-spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;;65;120000;6;1.05;;;;;35;58;;;2.5;1;;;;
-spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;2;0.8;;;;Custom spell skrit
-spell;blazing_elemental_hold;suicide_elemental_hold;good;a;Blazing Elemental (hold);1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;2;0.8;;;blazing_elemental;Custom spell skrit
-spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;;56;99000;4;1.1;;1.1;;;;;145;155;1.5;2.5;;;;
-scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;;55;15000;13;1.35;;;;;;;;;2;7.5;;;;
-scroll;dark_wraith_mage;wraith_mage_boss_01;;a;Dark Wraith Mage;1.5;cm;un;mb;v;;64;29000;13;;;1.15;;0.5;;;120;140;2.2;2.4;;;;Spell shoots 2 trackballs
-spell;sand_ripper;sand_ripper;;a;Sand Ripper;1;cm;hu;std;v;x;70;150000;6;0.9;;;;;;;;;2;0.6;;;;
-scroll;bile_lunger;water_lunger_boss_01;;a;Bile Lunger;1.5;nm;hu;mb;v;x;65;24000;16;1.1;;;;;;;;;1;2.4;;;;
-spell;sand_mage;sand_mage;;a;Sand Mage;1;cm;hu;std;v;x;71;200000;5;;;0.9;;;;;;;2;0.6;;;;Custom fire spell
-scroll;warrior_wraith;wraith_boss_01;;a;Warrior Wraith;1.5;cm;un;mb;v;;62;21000;13;1.2;;;;;;;;;2.2;2.4;;;;
-spell;sand_basher;sand_basher;;a;Sand Basher;1;cm;hu;std;v;x;73;170000;6;0.95;;;;;;;;;2;0.6;;;;
-spell;droog_archer;droog_archer;;a;Droog Archer;1.5;nm;hu;std;v;x;71;200000;6;;1;;;;100;140;;;1;1;;;;
-spell;droog_mage;droog_mage;;a;Droog Mage;1.5;nm;hu;std;v;x;72;210000;6;;;1;;;;;135;150;1;1;;;;
-spell;giant_lizard;giant_lizard;;a;Giant Lizard;2;nm;an;std;v;;68;140000;7;0.95;;;;;;;;;1.5;0.8;;;;
-spell;synged;synged;;a;Synged;1;cm;de;std;v;;80;240000;6;0.9;;;;;;;;;1;0.8;;;;
-spell;punisher;punisher;good;a;Punisher;1.5;cm;un;std;v;;75;240000;4;;;1;;;;;260;300;2;1;;;;
-scroll;skeleton_mercenary_captain;skeleton_mercenary_boss_01;;a;Skeleton Mercenary Captain;1.5;cm;un;mb;v;;66;25000;14;1.25;;;;;35;58;;;2.5;3;;;;
-spell;droog_grunt;droog_grunt;;a;Droog Grunt;1.5;nm;hu;std;v;x;70;150000;7;1;;;;;90;130;;;1;1;;;;
-spell;toreck;toreck;;a;Toreck;1.75;cm;de;std;v;x;84;290000;6;1;;;;;130;150;;;1;1.2;;;;
-spell;terror_wraith;wraith_terror;;a;Terror Wraith;2.5;cm;un;std;v;;77;210000;6;0.95;;;;;82;112;;;2;0.8;;;;
-spell;giant_skeleton;skeleton_large;;a;Giant Skeleton;2;cm;un;std;v;;75;190000;6;1.1;;;;;50;76;;;2;1.2;;;;
-scroll;giant_skeleton_stalker;skeleton_large_boss_01;;a;Giant Skeleton Stalker;2;cm;un;mb;v;;76;40000;14;1.3;;;;;50;76;;;2;3.6;;;;
-spell;mucosa_raider;mucosa_raider;;a;Mucosa Raider;2.5;cm;de;std;v;;75;190000;5;1;;;;;;;;;2;1;;;;
-spell;seck_mage;seck_mage;;a;Seck Mage;1.5;cm;de;std;v;x;82;330000;4;;;1;;;;;13;37;2;1.2;;;;
-scroll;droog_captain;droog_grunt_boss_01;;a;Droog Captain;1.5;nm;hu;mb;v;x;77;42000;15;1.2;;;;;90;130;;;1;3;;;;
-spell;ghost;ghost;;a;Ghost;1.5;cm;un;std;v;;75;240000;6;;;0.8;;;;;170;190;2;1;;;;
-spell;seck_elite_archer;seck_archer_elite;;a;Seck Elite Archer;1.5;cm;de;std;v;x;85;380000;4;;1.1;;;;140;180;;;2;1.2;;;;
-spell;seck_archer;seck_archer;;a;Seck Archer;1.5;cm;de;std;v;x;81;310000;4;;1.05;;;;121;149;;;2;1.2;;;;
-scroll;ferocious_braak;braak_desert_boss_01;;the;Ferocious Braak;1.5;nm;hu;mb;v;x;81;63000;14;;;1.15;;;;;184;204;1;3;;;;
-spell;wraith_piercer;wraith_piercer;;a;Wraith Piercer;2.5;cm;un;std;v;;77;260000;5;;0.9;;;;121;149;;;2;0.8;;;;
-spell;wraith_warlock;warlock;;a;Wraith Warlock;3;cm;un;std;v;;80;300000;5;;;1;;;;;180;200;2.2;0.8;;;;
-spell;seck_grunt;seck_grunt;;a;Seck Grunt;1.5;cm;de;std;v;x;80;240000;5;1.1;;;;;135;165;;;2;1.2;;;;
-spell;lava_imp;lava_imp_01;;a;Lava Imp;1;cm;de;std;v;x;85;300000;6;0.95;;;;;;;;;2;0.6;;;;
-spell;lava_runner;lava_imp_02;;a;Lava Runner;1;cm;de;std;v;x;86;400000;5;;;0.9;;0.5;;;170;190;2;0.6;;;;Spell shoots 2 trackballs
-scroll;maljin_jolt;maljin_ranged;;a;Maljin Jolt;1.5;cm;de;mb;v;x;91;100000;12;;;1.3;;;;;135;155;2;3;;;;
-scroll;maljin_phantom;maljin_magic;;a;Maljin Phantom;1.5;cm;de;mb;v;x;92;100000;12;;;1.3;;;;;135;165;2;3;;;;
-scroll;maljin_stalker;maljin_melee;;a;Maljin Stalker;1.5;cm;de;mb;v;x;90;76000;13;1.3;;;;;;;;;2;3;;;;
-spell;kell;kell;;a;Kell;2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;220;240;1;1.2;;;;Multiple spells (220-240, 220-240, 240-280)
-spell;kell_shot;kell_shot;;a;Kell (Shot);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;220;240;1;1.2;;;kell;Shot (220-240)
-spell;kell_blast;kell_blast;;a;Kell (Blast);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;220;240;1;1.2;;;kell;Blast (actually 240-280) (fire spell)
-spell;kell_bolt;kell_bolt;;a;Kell (Bolt);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;220;240;1;1.2;;;kell;Bolt (220-240)
-spell;lava_horror;lava_imp_04;good;a;Lava Horror;1;cm;de;std;v;x;87;330000;6;0.95;;;;;;;;;2;0.6;;;;
-spell;lava_mage;lava_imp_03;good;a;Lava Mage;1;cm;de;std;v;x;88;430000;5;;;1;;;;;160;200;2;0.6;;;;
-spell;quadscale;quadscale;;a;Quadscale;1.5;nm;an;std;v;;84;290000;7;0.85;;;;;;;;;2;0.8;;;;
-spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;2;cm;el;std;v;;84;290000;7;1;;;;;;;;;2;0.8;;;;
-spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;;83;340000;4;1.1;;1.1;1.3;;;;;;3;2;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
-spell;seck_high_mage;seck_mage_high;;a;Seck High Mage;1.5;cm;de;std;v;x;88;430000;3;;;1.2;;;;;13;37;2;1.2;;;;
-spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;;83;340000;4;1.1;;1.1;;;;;160;200;1.5;2.5;;;;
-spell;seck_elite_guard;seck_guard_elite;;a;Seck Elite Guard;1.5;cm;de;std;v;x;84;290000;5;1.15;;;;;160;195;;;2;1.2;;;;
-spell;molten_drake;drake_molten;;a;Molten Drake;2.5;cm;an;std;v;;84;360000;5;1;;1;;;;;184;194;1.5;1;;;;
-scroll;magma_beast;lava_beast_boss_01;;a;Magma Beast;2.5;cm;el;mb;v;;85;76000;11;1.3;;1.3;1.3;;;;;;2;9;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
-scroll;molten_steel_drake;drake_molten_boss_01;;a;Molten Steel Drake;2.5;cm;an;mb;v;;85;76000;12;1.2;;1.2;;;;;184;194;1.5;3;;;;
+sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;req_lvl;gold;dur_min;dmg_m;dmg_r;dmg_c;abf_m;abf_r;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;effect_script;end_script;test_only;comment
+spell;tesla_coil;coil_gob_01;;a;Tesla Coil;2.5;cm;ro;st;v;;51;16000;0.5;;;0.95;;;;;;2;3;3;1.8;;;;
+spell;tesla_coil_heal;coil_gob_03;;a;Tesla Heal Coil;2.5;cm;ro;st-heal;v;;54;18000;1;;;1;;;;;;;;3;2.5;;;;Healer
+scroll;yellow_eye;dsx_bear_snow;;;Yellow Eye;2.5;nm;an;mb;loa;;4;12;13;1.3;;;;;;;;;;1;4.5;;;;
+scroll;cicatrix_skeleton_melee;dsx_skeleton_cicatrix_minion_melee;;a;Cicatrix's Skeleton Fighter;1.5;cm;un;mb;loa;;30;4800;14;1.2;;;;;;55;63;;;2;3;;;;
+scroll;cicatrix_skeleton_ranged;dsx_skeleton_cicatrix_minion_ranged;;a;Cicatrix's Skeleton Archer;1.5;cm;un;mb;loa;;30;6000;13;;1.2;;;;;32;45;;;2;3;;;;
+spell;phrak;phrak;;a;Phrak;0.75;nm;an;std;v;;1;30;6;0.85;;;;;;;;;;2;0.4;;;;
+spell;krug_scavenger;krug_scavenger;;a;Krug Scavenger;1.5;nm;hu;std;v;x;6;96;7;0.95;;;;;;2;5;;;1;0.9;;;;
+spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;;2;48;6;;;0.8;;;;;;3;5;2;0.4;;;;
+spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;;2;38;7;0.9;;;;;;;;;;1;0.6;;;;
+spell;yellow_spider;spider_adolescent_yellow;;a;Yellow Spider;0.75;nm;an;std;v;;1;30;7;0.8;;;;;;;;;;2;0.4;;;;
+spell;farm_skrubb;skrubb_farm;;a;Farm Skrubb;1;nm;an;st;v;;2;10;1;;;0.9;;;;;;3;6;1.5;0.8;;;;
+spell;ice_grub;dsx_grub;;an;Ice Grub;1;nm;an;std;loa;;1;30;9;0.8;;;;;;;;;;1;0.4;;;;
+spell;ice_moth;dsx_moth;;an;Ice Moth;1.5;nm;an;std;loa;;2;48;6;;;0.8;;;;;;4;8;2;0.3;;;;
+spell;krug_scout;krug_scout;;a;Krug Scout;1.5;nm;hu;std;v;x;7;120;6;1;;;;;;2;5;;;1;1;;;;
+spell;gargoyle_melee;gargoyle;;a;Gargoyle;0.75;cm;el;std;v;;4;60;6;0.9;;;;;;;;;;3;0.4;;;;
+spell;krug_dog;krug_dog;;a;Krug Dog;1.25;nm;an;std;v;;3;48;6;1;;;;;;;;;;1;0.8;;;;
+scroll;brankar;krug_scavenger_boss_01;;;Brankar the Scavenger;1.75;nm;hu;mb;v;x;9;38;16;1.15;;;;;;2;5;;;1;2.7;;;;
+scroll;phrak_ballista;phrak_piercer_boss_01;;a;Phrak Ballista;1;nm;an;mb;v;;3;12;14;;;1;;;;;;3;5;2;1.2;;;;
+spell;varg;dsx_wolf_white_punk-ass;;a;Varg;1;nm;an;std;loa;;3;48;6;0.95;;;;;;;;;;1;0.6;;;;
+spell;gray_wolf;wolf_gray;;a;Gray Wolf;1.5;nm;an;std;v;;4;60;6;1;;;;;;;;;;1;0.8;;;;
+spell;krug_apprentice;krug_apprentice;;a;Krug Apprentice;1.5;nm;hu;std;v;x;8;190;6;0.95;;0.95;;;;;;13;37;1;1;;;;
+spell;snow_boar;dsx_boar;;a;Snow Boar;1.5;nm;an;std;loa;;4;60;6;1;;;;;;;;;;1;1;;;;
+spell;krug_shaman;krug_shaman;;a;Krug Shaman;1.5;nm;hu;res;v;x;10;300;6;1;;1;;;;;;13;37;1;1;;;;
+spell;krug_grunt;krug_grunt;;a;Krug Grunt;1.5;nm;hu;std;v;x;10;240;7;1;;;;;;3;7;;;1;1;;;;
+scroll;alpha_wolf;wolf_gray_boss_01;;an;Alpha Wolf;1.75;nm;an;mb;v;;5;15;14;1.2;;;;;;;;;;1;2.4;;;;
+spell;black_skrubb;skrubb_small;;a;Black Skrubb;2;nm;an;st;v;;6;24;0.5;;;1;;;;;;28;30;1.5;1.8;;;;
+scroll;klandank;krug_scout_boss_01;;;Klandank the Krug;1.75;nm;hu;mb;v;x;9;38;14;1.2;;;;;;2;5;;;1;3;;;;
+spell;skeleton_guard;skeleton_guard;;a;Skeleton Guard;1.5;cm;un;std;v;;4;60;6;1.1;;;;;;14;17;;;2.5;1;;;;
+spell;walking_corpse;walking_corpse;;a;Walking Corpse;1.5;cm;un;std;v;;8;150;7;0.9;;;;;;;;;;0.8;1;;;;
+spell;frost_golem;dsx_golem_frost_ranged;;a;Frost Golem;1.25;nm;el;std;loa;;5;95;5;1;;1;0.7;;;;;;;2.5;1;;;;"Custom dmgvol spell; melee hit_multiple"
+spell;krug_chucker;krug_throw;;a;Krug Chucker;1.5;nm;hu;std;v;x;13;600;6;;1;;;;;11;12;;;1;1;;;;
+spell;widow_spider;dsx_spider_red_black;;a;Widow Spider;1;nm;an;std;loa;;4;60;7;0.95;;;;;;;;;;2;0.6;;;;
+spell;arakun_spider;spider_adolescent;;an;Arakun Spider;1.25;nm;an;std;v;;8;150;7;0.9;;;;;;;;;;2;0.7;;;;
+spell;bubber;dsx_bubber;;an;Island Lizard;1.25;nm;an;std;loa;;11;300;6;0.9;;;;;;;;;;1.5;0.6;;;;
+spell;skeleton_archer;skeleton_archer;;a;Skeleton Archer;1.5;cm;un;std;v;;8;190;5;;0.95;;;;;10;16;;;2;1;;;;
+spell;swarmling;dsx_swarmling;;a;Swarmling;1;nm;an;std;loa;;11;300;6;0.85;;;;;;;;;;2;0.4;;;;
+spell;krug_raider;krug_raider;;a;Krug Raider;1.5;nm;hu;std;v;x;13;480;7;1.05;;;;;;14;17;;;1.2;1;;;;
+spell;vile_mucosa;mucosa_small;;a;Vile Mucosa;1.5;cm;de;std;v;;9;240;5;;;0.95;;;0;;;;;2;0.8;;;;Custom poison spell
+scroll;ancient_corpse;walking_corpse_boss_01;;an;Ancient Corpse;1.5;cm;un;mb;v;;9;38;16;1.1;;;;;;;;;;0.8;3;;;;
+spell;killer_vines;dsx_vines_killer;;;Killer Vines;1.25;nm;pl;st;loa;;12;76;1;1;;;;;;;;;;1.5;1.5;;un_summon_vines_killer;;
+scroll;skeleton_captain;skeleton_guard_boss_01;;a;Skeleton Captain;1.5;cm;un;mb;v;;5;15;14;1.3;;;;;;14;17;;;2.5;3;;;;
+spell;angler;dsx_angler;;an;Angler;1;nm;an;std;loa;;11;300;7;0.9;;;;;;;;;;1;0.6;;;;
+spell;rector;rector;;a;Rector;1.5;cm;un;std;v;;8;190;5;;;0.9;;;;;;17;22;2;0.8;;;;
+spell;slime_zombie;dsx_slime_zombie;;a;Slime Zombie;1.5;cm;un;std;loa;;4;60;7;0.9;;;;;;;;;;0.8;1;;;;
+spell;krug_killer_dog;krug_dog_killer;;a;Krug Killer Dog;1.5;nm;an;std;v;;16;960;6;1.1;;;;;;;;;;1;0.8;;;;
+spell;emerald_spider;dsx_spider_emerald;;an;Emerald Spider;1.5;nm;an;std;loa;;4;60;6;0.9;;;;;;;;;;2;1.2;;;;
+scroll;hulking_gremal;gremal_boss_01;;a;Hulking Gremal;1;nm;an;mb;v;;8;30;14;1.2;;;;;;;;;;1;2.4;;;;
+spell;large_twisted_mucosa;dsx_twisted_mucosa_large;;a;Large Twisted Mucosa;2;cm;de;std;loa;;9;190;5;1.05;;;;;;;;;;2;1.2;;;;
+spell;tortured_corpse;tortured_corpse;;a;Tortured Corpse;1;cm;un;std;v;;8;150;7;0.9;;;;;;;;;;0.8;0.8;;;;
+spell;giant_moth;moth;;a;Giant Moth;1;nm;an;std;v;;17;1500;5;;;0.85;;;;;;30;34;2;0.6;;;;
+spell;mhulliq;dsx_mhulliq_one;;a;Mhulliq;1.5;nm;an;std;loa;;11;300;6;1;;;;;;;;;;1;1;;;;
+spell;jungle_slinger;dsx_jungle_slinger;;a;Jungle Slinger;1.5;nm;hu;std;loa;x;16;1200;6;;;0.9;;;;;;23;17;1;0.6;;;;Yes min 23 max 17
+scroll;jungle_slinger_camora;dsx_jungle_slinger_boss;;a;Jungle Slinger Camora;2;nm;hu;mb;loa;x;19;480;15;;;1.1;;;;;;20;25;1;3;;;;
+spell;dark_mucosa;mucosa_large;;a;Dark Mucosa;2;cm;de;std;v;;9;190;5;1.1;;;;;;;;;;2;1.2;;;;
+spell;krug_guard;krug_guard;;a;Krug Guard;1.5;nm;hu;std;v;x;21;3000;7;1;;;;;;14;17;;;1.2;1;;;;
+scroll;twisted_mucosa_brute;dsx_twisted_mucosa_boss;;a;Twisted Mucosa Brute;2;cm;de;mb;loa;;10;48;13;1.2;;;;;;;;;;2;3;;;;
+scroll;mucosa_brute;mucosa_boss_01;;a;Mucosa Brute;2;cm;de;mb;v;;14;120;13;1.2;;;;;;;;;;2;3;;;;
+spell;jungle_skrubb;dsx_skrubb_jungle;;a;Jungle Skrubb;1.5;nm;an;st;loa;;11;76;1;;;0.9;;;;;;15;19;1.5;1;;;;
+spell;mine_worm;mine_worm;;a;Mine Worm;2;nm;an;st;v;;16;240;0.5;0.9;;0.9;;;0.2;;;22;24;1;2.5;;;;Spell shoots 5 arrows
+spell;braak_mage;braak_magic;;a;Braak Mage;1.2;nm;hu;std;v;x;26;12000;7;;;0.85;;;0.4;;;19;21;1;0.9;;;;Spell shoots 3 projectiles, but bonus for poor logistics
+scroll;huskar;krug_shaman_boss_01;;;Huskar the Shaman;1.75;nm;hu;mb-res;v;x;11;76;14;1.2;;1.2;;;;;;13;37;1;3;;;;
+spell;white_wolf;wolf_white;;a;White Wolf;1.5;nm;an;std;v;;21;3000;6;0.95;;;;;;;;;;1;0.8;;;;
+spell;bookas;dsx_bookas;;a;Bookas;1.5;cm;de;std;loa;x;23;6000;5;;;0.9;;;;;;25;45;1;1;;;;
+spell;gulik;dsx_pygmy;;a;Gulik;1.5;nm;hu;std;loa;x;22;3800;6;0.9;;;;;;;;;;1;0.8;;;;
+scroll;futak;krug_grunt_boss_01;;;Futak the Trainer;1.75;nm;hu;mb;v;x;11;60;15;1.2;;;;;;3;7;;;1;3;;;;
+spell;jungle_angler;dsx_angler_jungle;;a;Jungle Angler;1.5;nm;an;std;loa;;13;480;7;0.9;;;;;;;;;;1;0.6;;;;
+spell;rusted_automaton;dsx_automaton_rusted;;a;Rusted Automaton;1.75;cm;ro;std;loa;;21;3800;5;;;0.9;;;;;;;;2.5;1.2;;;;Custom dmgvol spell
+spell;weathered_automaton;dsx_automaton_weathered;;a;Weathered Automaton;1.75;cm;ro;std;loa;;21;3000;6;0.95;;;;;;;;;;2.5;1.2;;;;
+spell;braak;braak;;a;Braak;1.5;nm;hu;std;v;x;28;15000;7;1;;;;;;;;;;1;1;;;;
+spell;ice_fly;ice_fly;;an;Ice Fly;0.75;nm;el;std;v;;25;7600;6;0.9;;;;;;;;;;2;0.4;;;;
+spell;leetch;dsx_leetch;;a;Leetch;1;nm;an;std;loa;;24;6000;7;0.85;;;;;;;;;;1;0.6;;;;
+spell;zaurask_archer;dsx_zaurask_spitter;;a;Zaurask Archer;2;nm;hu;std;loa;x;19;2400;6;;1;;;;;62;70;;;1.7;1;;;;
+spell;zaurask_claw;dsx_zaurask_claw;;a;Zaurask Claw;2;nm;hu;std;loa;x;18;1500;7;1.1;;;;;;;;;;1.5;1.2;;;;
+spell;zaurask_incanter;dsx_zaurask_apprentice;;a;Zaurask Incanter;2;nm;hu;std;loa;x;20;3000;6;;;1;;;;;;50;60;1.5;1;;;;
+spell;klaw;klaw;;a;Klaw;1.5;nm;an;std;v;;21;3000;6;1.05;;;;;;;;;;1;1.2;;;;
+scroll;venom_fiend;scorpion_boss_01;;a;Venom Fiend;2;nm;an;mb;v;;17;240;13;1.25;;;;;;;;;;2;3.6;;;;
+spell;hassat_hunter;dsx_hassat_bowman;;a;Hassat Hunter;2;nm;hu;std;loa;x;23;6000;5;;1;;;;;26;36;;;1.2;1;;;;
+spell;horrid;horrid;;a;Horrid;1.75;cm;de;std;v;x;21;3000;6;1.1;;;;;;29;31;;;1;1.2;;;;
+spell;krug_commander;krug_commander;;a;Krug Commander;1.5;nm;hu;std;v;x;24;6000;7;1.1;;;;;;40;50;;;1.5;1;;;;
+spell;hassat_shaman;dsx_hassat_shaman;;a;Hassat Shaman;2;nm;hu;std;loa;x;26;12000;6;;;1.1;;;;;;35;45;1;1.2;;;;
+spell;ancient_scorpiot;dsx_scorpiot_ranged_rusted;;an;Ancient Scorpiot;2;cm;ro;std;loa;;23;6000;6;;;0.9;;;0.1;;;;;2;0.9;;;;Custom dmgvol spells, one also has a trackball (double dmg)
+spell;ancient_scorpiot_lcannon;dsx_scorpiot_ranged_rusted_lcannon;;an;Ancient Scorpiot (LCannon);2;cm;ro;std;loa;;23;6000;6;;;0.9;;;0.1;;;;;2;0.9;;;ancient_scorpiot;Custom dmgvol spell
+spell;ancient_scorpiot_rcannon;dsx_scorpiot_ranged_rusted_rcannon;;an;Ancient Scorpiot (RCannon);2;cm;ro;std;loa;;23;6000;6;;;0.9;;;0.1;;;;;2;0.9;;;ancient_scorpiot;Custom dmgvol spell + trackball
+spell;whelnars_eyes;dsx_eyes_whelnar;;;Whelnar's Eyes;0.75;cm;de;std;loa;;28;19000;7;;;0.8;;;;;;58;68;2;0.4;summon_eyes_whelnar;;;
+spell;hassat_runner;dsx_hassat_scavenger;;a;Hassat Runner;2;nm;hu;std;loa;x;22;3800;6;1.05;;;;;;;;;;1.2;1.2;;;;
+scroll;pitiful_braak;braak_boss_01;;the;Pitiful Braak;1.5;nm;hu;mb;v;x;29;3800;15;1.2;;;;;;;;;;1;3;;;;
+spell;bog_beast;dsx_bog_beast;;a;Bog Beast;2.5;nm;el;std;loa;;24;6000;7;1.1;;;;;;;;;;0.8;1.8;;;;
+spell;mantrap;dsx_mantrap;;a;Mantrap;2;nm;pl;st;loa;;24;1500;0.5;0.95;;0.95;;;0.2;;;40;50;1;2.5;;;;Spell shoots 5 arrows
+scroll;dark_klaw;klaw_boss_01;;a;Dark Klaw;2;nm;an;mb;v;;22;760;14;1.3;;;;;;;;;;1;3.6;;;;
+spell;frost_spitter;spider_frostnid_ranged;;a;Frost Spitter;1.5;nm;an;std;v;;24;7500;6;;;0.85;;;2.5;;;;;2;0.8;;;;Custom fire spell
+spell;thunder_lizard;dsx_lizard_thunder;;a;Thunder Lizard;1.5;nm;an;std;loa;;37;33000;7;1;;;;;;;;;;1.5;0.8;;;;
+spell;hassat_panther;dsx_hassat_panther;;a;Hassat Panther;2;nm;hu;std;loa;x;25;7600;6;1.1;;;;;;;;;;1.2;1.2;;;;
+spell;jungle_spiker;dsx_spiked_dweller;;a;Jungle Spiker;1;nm;an;std;loa;;17;1500;5;;;0.95;;;;;;55;70;1.5;0.8;;;;
+spell;living_dead;dsx_zombie_pudgy;;a;Living Dead;1.5;cm;un;std;loa;;24;6000;7;0.95;;;;;;;;;;0.8;1;;;;
+scroll;hassat_commander;dsx_hassat_commander;;a;Hassat Commander;2.5;nm;hu;mb;loa;x;27;2400;13;1.35;;;0.25;;;50;58;;;1.2;4.5;;;;Attack anims with lots of attacks
+spell;dark_acolyte;dsx_acolyte_dark;;a;Dark Acolyte;1.5;cm;un;std;loa;;24;6000;6;1.1;;;;;;;;;;2.5;0.8;;;;
+spell;frostnid;spider_frostnid;;a;Frostnid;1.5;nm;an;std;v;;25;7600;7;0.95;;;;;;;;;;2;0.8;;;;
+spell;mummy;dsx_mummy;;a;Mummy;1.5;cm;un;std;loa;;28;15000;7;0.9;;;;;;;;;;0.8;1;;;;
+spell;rending_mhulliq;dsx_mhulliq_two;;a;Rending Mhulliq;1.5;nm;an;std;loa;;31;25000;6;1;;;;;;;;;;1;1;;;;
+scroll;grizzly_furok;furok_boss_01;;a;Grizzly Furok;2;nm;an;mb;v;;22;760;15;1.3;;;;;;;;;;1;3.6;;;;
+spell;ice_archer;ice_archer;good;an;Ice Archer;1.5;nm;el;std;v;;25;9500;4;;1;;;;;33;37;;;2;1.2;;;;
+spell;ice_mage;ice_mage;;an;Ice Mage;1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;;0.25;;;27;29;1;0.9;;;;Spell shoots 5 arrows, but bonus for poor logistics
+spell;ice_mage_attacking;ice_mage_attacking;;an;Ice Mage (Attacking);1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;;0.25;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows, but bonus for poor logistics
+spell;ice_mage_summoning_ice_warrior;ice_mage_summoning_ice_warrior;;an;Ice Mage (Summoning Ice Warrior);1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;;0.25;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows, but bonus for poor logistics
+spell;ice_mage_summoning_ice_archer;ice_mage_summoning_ice_archer;;an;Ice Mage (Summoning Ice Archer);1.5;nm;hu;su;v;x;30;30000;6;;;0.9;;;0.25;;;27;29;1;0.9;;;ice_mage;Spell shoots 5 arrows, but bonus for poor logistics
+spell;chitterskrag_baby;dsx_chitterskrag_baby;;an;Immature Chitterskrag;0.75;nm;an;std;loa;;31;25000;6;0.9;;;;;;;;;;2;0.6;;;;
+spell;furok_slasher;furok_slasher;;a;Furok Slasher;2;nm;an;std;v;;23;4800;7;1.1;;;;;;;;;;1;1.2;;;;
+spell;slarg;slarg;;a;Slarg;0.75;nm;an;std;v;;31;25000;7;0.85;;;;;;;;;;1;0.6;;;;
+spell;goblin_grunt;goblin_grunt;;a;Goblin Grunt;1.5;cm;hu;std;v;x;56;79000;7;0.9;;;;;;2;4;;;1;0.9;;;;
+spell;monstrous_rat;dsx_giant_rat_monstrous;;a;Monstrous Rat;1;nm;an;std;loa;;33;28000;6;0.95;;;;;;;;;;1;0.8;;;;
+spell;ghastly_necron;dsx_necron_ghastly;;a;Ghastly Necron;1.5;cm;un;std;loa;;28;15000;6;1;;;;;;70;76;;;0.8;1;;;;
+spell;teal_shard;shard_teal;;a;Teal Shard;0.75;nm;el;std;v;;31;31000;5;;;0.9;;;;;;41;45;3;0.6;;;;
+spell;ice_warrior;ice_warrior;good;an;Ice Warrior;1.5;nm;el;std;v;;25;7600;6;1.05;;;;;;40;48;;;2;1.2;;;;
+spell;kikclaw_small;dsx_kikclaw_2;;a;Skitterling;1;nm;an;std;loa;;35;30000;7;0.8;;;;;;;;;;1;0.8;;;;
+spell;skatwyrm_melee;dsx_skatwyrm;;a;Swarmling Drone;1;nm;an;std;loa;;36;32000;7;0.9;;;;;;;;;;2;0.8;;;;
+spell;skatwyrm_ranged;dsx_skatwyrm_r;;a;Swarmling Queen;1;nm;an;std;loa;;36;40000;6;1;;1;0.7;;2.5;;;;;2;0.8;;;;"Custom fire spell & effect; melee: hit_multiple"
+spell;swirling_midges;dsx_midge_swirling;;;Swirling Midges;0.5;nm;an;std;loa;;35;38000;7;;;0.8;;;;;;110;88;2;0.4;;;;Yes min 110 max 88
+spell;frost_drake;drake_white;;a;Frost Drake;2;nm;an;std;v;;29;24000;4;1.1;;1.1;;;;;;70;74;1.5;2.5;;;;
+scroll;krakemaw_the_putrid;dsx_drake_death_two_boss;;;Krakemaw the Putrid;2.5;cm;un;mb;loa;;30;6000;11;1.3;;1.3;;;;;;80;90;1.5;7.5;;;;
+scroll;krakemaw_the_putrid_small;dsx_drake_death_two_boss_small;;;Krakemaw the Putrid (small);2.5;cm;un;mb;loa;;30;6000;11;1.3;;1.3;;;;;;80;90;1.5;7.5;;;krakemaw_the_putrid;
+spell;rahk;dsx_drake_death_one;;a;Rahk;2.5;cm;un;std;loa;;29;24000;4;1.1;;1.1;;;;;;80;90;1.5;2.5;;;;
+spell;scaly_rahk;dsx_drake_death_two;;a;Scaly Rahk;2.5;cm;un;std;loa;;29;24000;4;1.1;;1.1;;;;;;80;90;1.5;2.5;;;;
+spell;dark_caster;dark_caster;;a;Dark Caster;1;nm;hu;std;v;x;38;43000;6;;;0.85;;;;;;72;78;1;0.6;;;;
+spell;dark_slinger;dark_slinger;;a;Dark Slinger;1;nm;hu;std;v;x;38;43000;7;;;0.8;;;;;;49;51;1;0.6;;;;
+spell;green_shard;shard_green;;a;Green Shard;1;nm;el;std;v;;33;34000;4;;;0.95;;;;;;56;62;3;0.8;;;;
+spell;stalagnid;spider_stalagnid;;a;Stalagnid;1;nm;an;std;v;;33;28000;7;0.9;;;;;;;;;;2;0.8;;;;
+spell;dark_lunger;dark_lunger;;a;Dark Lunger;1;nm;hu;std;v;x;36;32000;7;0.9;;;;;;;;;;1;0.6;;;;
+spell;trog;trog;;a;Trog;1.5;nm;hu;std;v;x;38;35000;7;1;;;;;;31;57;;;1.2;1;;;;
+spell;zaurask_adept;dsx_zaurask_adept;;a;Zaurask Adept;1.5;nm;hu;std;loa;x;37;41000;6;;;1;;;;;;58;68;1.5;1;;;;
+spell;zaurask_spine;dsx_zaurask_spine;;a;Zaurask Spine;1.5;nm;hu;std;loa;x;37;41000;6;;1;;;;;45;57;;;1.7;1;;;;
+spell;flying_gritch;dsx_flying_gritch;;a;Flying Gritch;1;nm;an;std;loa;;37;33000;8;0.8;;;;;;;;;;1;0.5;;;;
+scroll;frost_mage;ice_mage_boss_01;;a;Frost Mage;1.5;nm;hu;mb-su;v;x;31;6300;14;;;1.1;;;0.25;;;27;29;1;2.7;;;;Spell shoots 5 arrows, but bonus for poor logistics
+scroll;frost_mage_attacking;ice_mage_boss_01_attacking;;a;Frost Mage (Attacking);1.5;nm;hu;mb-su;v;x;31;6300;14;;;1.1;;;0.25;;;27;29;1;2.7;;;frost_mage;Spell shoots 5 arrows, but bonus for poor logistics
+spell;greater_scrub_scorpion;dsx_scorpion_lg;;a;Greater Scrub Scorpion;1.5;nm;an;std;loa;;37;33000;6;0.85;;;;;;;;;;2;0.8;;;;
+spell;shadow_angler;dsx_angler_shadow;;a;Shadow Angler;1;nm;an;std;loa;;37;33000;7;0.9;;;;;;;;;;1;0.6;;;;
+spell;zaurask_fang;dsx_zaurask_fang;;a;Zaurask Fang;1.5;nm;hu;std;loa;x;36;32000;7;1.05;;;;;;;;;;1.5;1.2;;;;
+spell;chitterskrag;dsx_chitterskrag_one;;a;Chitterskrag;2;nm;an;std;loa;;31;25000;6;1.1;;;;;;;;;;2;1.8;;;;
+spell;chitterskrag_spew;dsx_chitterskrag_two;;a;Spewing Chitterskrag;2;nm;an;std;loa;;32;33000;5;;;1;;;0;;;;;2;1.8;;;;Custom poison spell
+spell;sandskreech;dsx_sandskreech;;a;Sandskreech;1.5;nm;an;std;loa;;39;36000;7;0.9;;;;;;;;;;2;0.8;;;;
+spell;cobbleman;dsx_golem_cobbleman;;a;Cobble Man;2.5;nm;el;std;loa;;32;33000;3;1.2;;1.2;1.3;;;;;;;3;2.5;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
+scroll;frost_archer;ice_archer_boss_01;;a;Frost Archer;1.5;nm;el;mb;v;;28;3800;12;;1.2;;;;;33;37;;;2;3.6;;;;
+spell;proxo;proxo;;a;Proxo;2;cm;ro;ex;v;;52;13000;1;1;;;;;;;;;;2.5;1;;;;Custom spell skrit
+spell;proxo_hold;proxo_hold;;a;Proxo (hold);2;cm;ro;ex;v;;52;13000;1;1;;;;;;;;;;2.5;1;;;proxo;Custom spell skrit
+spell;blue_shard;shard_blue;;a;Blue Shard;1.25;nm;el;std;v;;35;38000;4;;;1;;;;;;58;64;3;1;;;;
+spell;spiked_maw;spiked_maw;;a;Spiked Maw;1.5;nm;an;std;v;;37;41000;5;;;1;;;;;;75;80;1.5;0.8;;;;
+spell;zaurask_slavemaster;dsx_zaurask_commander;;a;Zaurask Slavemaster;1.5;nm;hu;std;loa;x;38;35000;6;1.15;;;;;;82;100;;;1.7;1.2;;;;
+spell;rune_caster;dsx_rune_caster;;a;Rune Caster;1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;;44;50;1;0.9;;;;
+spell;rune_caster_attacking;dsx_rune_caster_attacking;;a;Rune Caster (Attacking);1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;;44;50;1;0.9;;;rune_caster;
+spell;rune_caster_summoning_beast;dsx_rune_caster_summoning_dsx_rune_guardian;;a;Rune Caster (Summoning Beast);1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;;44;50;1;0.9;;;rune_caster;
+spell;rune_caster_summoning_fiend;dsx_rune_caster_summoning_dsx_rune_guardian_r;;a;Rune Caster (Summoning Fiend);1.5;cm;hu;su;loa;;41;50000;6;;;0.9;;;;;;44;50;1;0.9;;;rune_caster;
+spell;rune_fiend;dsx_rune_guardian_r;;a;Rune Fiend;1.5;cm;de;std;loa;;37;41000;6;;;1;;;;;;44;55;1;1.2;;;;
+spell;kikclaw_large;dsx_kikclaw;;a;Skitterclaw;1.5;nm;an;std;loa;;36;32000;6;0.9;;;;;;;;;;1;1;;;;
+spell;hassat_archer;dsx_hassat_archer;;a;Hassat Archer;1.5;nm;hu;std;loa;x;41;50000;5;;1;;;;;54;60;;;1.2;1;;;;
+spell;hassat_caster;dsx_hassat_caster;;a;Hassat Caster;1.5;nm;hu;std;loa;x;42;52000;6;;;1;;;;;;64;72;1.2;1.5;;;;
+scroll;frost_warrior;ice_warrior_boss_01;;a;Frost Warrior;1.5;nm;el;mb;v;;26;1900;14;1.25;;;;;;40;48;;;2;3.6;;;;
+spell;lesser_scrub_scorpion;dsx_scorpion_sm;;a;Lesser Scrub Scorpion;1;nm;an;std;loa;;39;36000;6;0.9;;;;;;;;;;2;0.6;;;;
+spell;trog_warrior;trog_warrior;;a;Trog Warrior;1.5;nm;hu;std;v;x;39;36000;7;1.05;;;;;;40;59;;;1.5;1;;;;
+spell;blue_noctiss;dsx_noctiss_2;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.9;;;;;;66;84;2;1;;;;
+spell;red_noctiss;dsx_noctiss;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.85;;;;;;56;64;2;1;;;;
+scroll;giant_chitterskrag;dsx_chitterskrag_boss;;a;Giant Chitterskrag;2;nm;an;mb;loa;;34;5800;13;1.3;;;;;;;;;;2;5.4;;;;
+spell;marble_golem;dsx_golem_marble;;a;Marble Golem;1.5;nm;el;std;loa;;33;28000;6;1.1;;;;;;;;;;3;1;;;;
+spell;zaurask_lightning;dsx_zaurask_archer;;a;Zaurask Lightning;1.5;nm;hu;std;loa;x;46;63000;6;;1;;;;;84;93;;;1.7;1;;;;
+spell;lectar;lectar;;a;Lectar;1;nm;an;std;v;;31;25000;7;0.9;;;;;;;;;;1.5;0.6;;;;
+scroll;shadow_lunger;dark_lunger_boss_01;;a;Shadow Lunger;1;nm;hu;mb;v;x;39;7300;17;1.1;;;;;;;;;;1;1.8;;;;
+spell;doppelganger_knave;dsx_doppelganger_2_sumcol;;a;Doppelganger Knave;1.5;cm;de;dop;loa;x;44;46000;7;1.1;1.1;1.1;;;;;;;;5;1;;;;Doppelganger!
+spell;hassat_fighter;dsx_hassat_fighter;;a;Hassat Fighter;1.5;nm;hu;std;loa;x;44;46000;6;1;;;;;;84;95;;;1.2;1;;;;
+spell;hassat_ranger;dsx_hassat_ranger;;a;Hassat Ranger;1.5;nm;hu;std;loa;x;45;60000;5;;1;;;;;58;66;;;1.2;1;;;;
+spell;hassat_slicer;dsx_hassat_grunt;;a;Hassat Slicer;1.5;nm;hu;std;loa;x;40;38000;6;1;;;;;;76;82;;;1.2;1;;;;
+scroll;rune_master;dsx_rune_master;;a;Rune Master;2;cm;hu;mb;loa;x;42;10000;13;;;1.2;;;;;;60;66;1;4.5;;;;
+spell;trog_knight;trog_knight;;a;Trog Knight;1.5;nm;hu;std;v;x;40;38000;7;1.1;;;0.9;;;75;77;;;1.5;1;;;;1/5 of attacks do double damage
+spell;droc_superior;dsx_droc_commander;;a;Droc Superior;1.5;nm;hu;std;loa;x;46;50000;5;1.1;;;;;;;;;;1.7;1.5;;;;
+spell;droc_spatter;dsx_droc_archer;;a;Droc Spatter;1.5;nm;hu;std;loa;x;45;60000;4;;;1;;;0;;;;;1.5;1.5;;;;Custom poison spell
+spell;droc;dsx_droc_grunt;;a;Droc;1.5;nm;hu;std;loa;x;44;46000;5;1.05;;;;;;;;;;1.5;1.5;;;;
+spell;doppelganger;dsx_doppelganger_sumcol;;a;Doppelganger;1.5;cm;de;dop;loa;x;42;42000;7;1;1;1;;;;;;;;5;0.8;;;;Doppelganger!
+spell;ztrool;dsx_ztrool;;a;Ztrool;1.5;nm;hu;std;loa;x;49;58000;6;1;;;;;;;;;;1.5;0.8;;;;
+spell;swamp_stinger;swamp_stinger;;a;Swamp Stinger;1.5;nm;an;std;v;;43;44000;5;0.95;;;;;;;;;;2;1;;;;
+spell;slithermage_master;dsx_slithermage_melee;;a;Slithermage Master;2;cm;de;std;loa;x;49;72000;5;;;1.1;;;;;;119;131;1.5;2;;;;
+spell;purple_shard;shard_purple;;a;Purple Shard;1.75;nm;el;std;v;;37;41000;3;;;1.1;;;;;;82;88;3;1.5;;;;
+scroll;doppelganger_lord;dsx_doppelganger_boss_sumcol;;a;Doppelganger Lord;2;cm;de;mb-dop;loa;x;45;9600;15;1.2;1.2;1.2;;;;;;;;5;2.5;;;;Doppelganger!
+spell;hassat_mage;dsx_hassat_mage;;a;Hassat Mage;1.5;nm;hu;std;loa;x;46;63000;6;;;1;;;0.7;;;74;80;1.2;1.5;;;;"Attack + Orb; custom orb spell"
+spell;hassat_mage_attacking;dsx_hassat_mage_attacking;;a;Hassat Mage (Attacking);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;;0.7;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Orb)
+spell;hassat_mage_casting_orb;dsx_hassat_mage_casting_orb;;a;Hassat Mage (Casting Orb);1.5;nm;hu;std;loa;x;46;63000;6;;;1;;;0.7;;;74;80;1.2;1.5;;;hassat_mage;Attack + Orb (without Attack)
+spell;zaurask_seer;dsx_zaurask_caster;;a;Zaurask Seer;1.5;nm;hu;std;loa;x;47;66000;6;;;1;;;;;;76;95;1.7;1;;;;
+spell;zaurask_whacker;dsx_zaurask_whacker;;a;Zaurask Whacker;1.5;nm;hu;std;loa;x;45;48000;6;1;;;;;;75;84;;;1.7;1.2;;;;
+scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;38;8700;13;;;1.2;;;;;;75;80;1.5;2.4;;;;
+spell;bandit_archer;bandit_ranged;;a;Bandit Archer;1.5;nm;hu;std;v;x;44;57000;5;;1;;;;;65;93;;;1.2;1;;;;
+spell;gobbot_igniter_emarard;dsx_gobbot_flamethrower;;a;Gobbot Igniter;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
+scroll;great_trog_warrior;trog_warrior_boss_01;;a;Great Trog Warrior;1.5;nm;hu;mb;v;x;40;7600;14;1.25;;;;;;40;59;;;1.5;3;;;;
+spell;mechanized_wasp;dsx_automaton_flying_one;;a;Mechanized Wasp;1.5;cm;ro;std;loa;;48;55000;6;0.85;;;;;;;;;;3;0.6;;;;
+spell;gobbot_sleeper_emarard;dsx_gobbot_minigun;;a;Gobbot Sleeper;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
+scroll;shadowjumper_minion;dsx_shadow_jumper_minion_one;;a;Shadowjumper Minion;1.5;cm;de;mb;loa;x;29;3800;15;1.3;;;;;;50;55;;;1;3.6;;;;
+spell;zaurask_slasher;dsx_zaurask_slasher;;a;Zaurask Slasher;1.5;nm;hu;std;loa;x;48;55000;6;1;;;;;;99;118;;;1.7;1.2;;;;
+spell;zaurask_ranger;dsx_zaurask_ranger;;a;Zaurask Ranger;1.5;nm;hu;std;loa;x;49;72000;5;;1;;;;;91;100;;;1.7;1.2;;;;
+spell;zaurask_leader;dsx_zaurask_chieftain;;a;Zaurask Leader;1.5;nm;hu;std;loa;x;48;55000;6;1.1;;;;;;125;145;;;1.7;1.8;;;;
+spell;bandit;bandit_melee;;a;Bandit;1.5;nm;hu;std;v;x;44;46000;6;1.1;;;;;;24;32;;;1.5;1;;;;
+spell;mangler;mangler;;a;Mangler;1;nm;an;std;v;;43;44000;7;0.9;;;;;;;;;;1;0.8;;;;
+spell;gorack;gorack;;a;Gorack;2;nm;hu;std;v;x;44;46000;6;1.1;;;;;;;;;;1;1.2;;;;
+spell;gobbot_grenadier_emarard;dsx_gobbot_grenade;;a;Gobbot Grenadier;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
+scroll;dark_wolf;wolf_black_boss_01;;a;Dark Wolf;1.75;cm;un;mb;v;;57;17000;14;1.2;;;;;;;;;;1;2.7;;;;
+spell;goblin_blackguard;dsx_goblin_blackguard;;a;Goblin Blackguard;1.5;cm;hu;std;loa;x;50;60000;7;0.9;;;;;;85;95;;;1.5;0.8;;;;
+spell;mountain_troll;dsx_troll_mountain;;a;Mountain Troll;1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;;86;92;;;1;0.8;;;;
+spell;mountain_troll_norecov;dsx_troll_mountain_norecov;;a;Mountain Troll (no recov);1.5;nm;hu;std;loa;x;51;63000;6;0.95;;;;;;86;92;;;1;0.8;;;mountain_troll;
+spell;mutant_goblin_hurler;dsx_goblin_mutant_hurler;;a;Mutant Goblin Hurler;2;cm;hu;std;loa;x;51;79000;6;;1;;;;;88;102;;;1.5;1.2;;;;
+spell;mutant_goblin_warrior;dsx_goblin_mutant;;a;Mutated Goblin Warrior;2;cm;hu;std;loa;x;50;60000;7;1.1;;;;;;108;115;;;1.2;1.2;;;;
+spell;tretch;tretch;;a;Tretch;2;nm;pl;st;v;;43;8700;0.5;1;;;;;;;;;;2;2.5;;;;
+spell;goo_walker;goo_walker;;a;Goo Walker;1.5;cm;un;std;v;;43;55000;6;;;0.85;;;;;;72;78;0.8;1;;;;
+spell;zombie;zombie_01;;a;Zombie;1.5;cm;un;std;v;;43;44000;7;0.9;;;;;;;;;;0.8;1;;;;
+spell;zaurask_fighter;dsx_zaurask_fighter;;a;Zaurask Fighter;1.5;nm;hu;std;loa;x;48;55000;6;1;;;;;;115;124;;;1.7;1.2;;;;
+spell;swamp_slinger;swamp_slinger;good;a;Swamp Slinger;1.5;nm;el;std;v;;44;57000;6;;;0.95;;;;;;65;67;0.8;1;;;;
+scroll;muong_troll;troll_forest_boss_01;;a;Muong Troll;1.5;nm;hu;mb;v;x;43;8700;14;1.2;;;;;;50;54;;;1;3;;;;
+scroll;muong_troll_norecov;troll_forest_boss_01_norecov;;a;Muong Troll (no recov);1.5;nm;hu;mb;v;x;43;8700;14;1.2;;;;;;50;54;;;1;3;;;muong_troll;
+spell;zaurask_mage;dsx_zaurask_mage;;a;Zaurask Mage;1.5;nm;hu;std;loa;x;50;75000;6;;;1;;;;;;103;112;1.7;1;;;;
+scroll;shadow_servant;dsx_shadow_jumper_minion_two;;a;Shadow Servant;1.5;cm;de;mb;loa;x;49;14000;14;;1.3;;;;;105;112;;;1;3.6;;;;
+spell;swamp_witch;swamp_witch;;a;Swamp Witch;1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;;95;99;1;0.9;;;;
+spell;swamp_witch_attacking;swamp_witch_attacking;;a;Swamp Witch (Attacking);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;;95;99;1;0.9;;;swamp_witch;
+spell;swamp_witch_summoning_swamp_creature;swamp_witch_summoning_swamp_creature;;a;Swamp Witch (Summoning Creature);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;;95;99;1;0.9;;;swamp_witch;
+spell;swamp_witch_summoning_swamp_slinger;swamp_witch_summoning_swamp_slinger;;a;Swamp Witch (Summoning Slinger);1.5;nm;hu;su;v;x;48;69000;6;;;0.9;;;;;;95;99;1;0.9;;;swamp_witch;
+spell;scorpiot_gunner;dsx_scorpiot_ranged;;a;Scorpiot Gunner;2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;0.5;;;;;2.5;1.2;;;;Custom dmgvol & fire spells, one also has a trackball (double dmg)
+spell;scorpiot_gunner_laser;dsx_scorpiot_ranged_laser;;a;Scorpiot Gunner (Laser);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
+spell;scorpiot_gunner_lcannon;dsx_scorpiot_ranged_lcannon;;a;Scorpiot Gunner (LCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom dmgvol spell
+spell;scorpiot_gunner_zap_rcannon;dsx_scorpiot_ranged_zap_rcannon;;a;Scorpiot Gunner (Zap RCannon);2.5;cm;ro;std;loa;;48;69000;5;;;0.95;;;0.5;;;;;2.5;1.2;;;scorpiot_gunner;Custom fire spell + trackball
+spell;stingbot;dsx_automaton_flying_two;;a;Stingbot;1.5;cm;ro;std;loa;;49;58000;5;0.9;;;;;;;;;;3;0.8;;;;
+spell;goblin_headsman;dsx_goblin_guard;;a;Goblin Headsman;1.5;cm;hu;std;loa;x;52;66000;6;0.95;;;;;;85;91;;;1.5;0.8;;;;
+spell;googore_grub;googore_grub;;a;Googore Grub;0.75;nm;an;std;v;;63;110000;9;0.8;;;;;;;;;;1;0.4;;;;
+spell;goblin_guard;goblin_guard;;a;Goblin Guard;1.5;cm;hu;std;v;x;57;83000;6;1;;;;;;16;29;;;1.5;0.9;;;;Always equipped with shortsword
+spell;automaton_mech;dsx_automaton_two;;an;Automaton Mech;2.5;cm;ro;std;loa;;49;72000;5;;;1;;;;;;;;3;1.2;;;;Custom dmgvol spell
+spell;hunter;hunter;;a;Hunter;1;cm;ro;std;v;;53;69000;7;0.95;;;;;;;;;;3;0.6;;;;
+spell;kill_bot;kill_bot;;a;Kill Bot;1;cm;ro;std;v;;50;60000;7;0.9;;;;;;;;;;2.5;0.6;;;;
+scroll;enraged_gorack;gorack_boss_01;;an;Enraged Gorack;2;nm;hu;mb;v;x;45;9600;14;1.3;;;;;;;;;;1;3.6;;;;
+spell;bronze_gargoyle;gargoyle_bronze;;a;Bronze Gargoyle;0.75;cm;el;std;v;;43;55000;5;;;0.9;;;;;;74;76;3;0.4;;;;
+scroll;rogue_bandit;bandit_melee_boss_01;;a;Rogue Bandit;1.5;nm;hu;mb;v;x;45;9600;14;1.3;;;;;;24;32;;;1.2;3;;;;
+spell;scorpiot_slasher;dsx_scorpiot_melee;;a;Scorpiot Slasher;2.5;cm;ro;std;loa;;49;58000;6;1;;;;;;;;;;2.5;1.2;;;;
+spell;automaton_blade;dsx_automaton_one;;an;Automaton Blade;2.5;cm;ro;std;loa;;49;58000;6;1.05;;;;;;;;;;3;1.2;;;;
+spell;copter;copter;;a;Copter;1;cm;ro;std;v;;51;79000;5;;;0.85;;;;;;82;88;2.5;0.4;summon_copter;;;
+spell;swamp_creature;swamp_creature;good;a;Swamp Creature;2.5;nm;el;std;v;;44;46000;6;1.1;;;;;;;;;;0.8;2.5;;;;
+spell;swamp_troll;troll_swamp;;a;Swamp Troll;1.5;nm;hu;std;v;x;48;55000;6;1;;;;;;75;85;;;1;0.8;;;;
+spell;swamp_troll_norecov;troll_swamp_norecov;;a;Swamp Troll (no recov);1.5;nm;hu;std;v;x;48;55000;6;1;;;;;;75;85;;;1;0.8;;;swamp_troll;
+scroll;air_elemental_minion;dsx_elemental_air_minion;;an;Air Elemental Minion;2;nm;el;mb;loa;;50;12000;14;1.2;;;;;;;;;;2;3.6;;;;
+scroll;earth_elemental_minion;dsx_elemental_earth_minion;;an;Earth Elemental Minion;3;nm;el;mb;loa;;50;15000;12;1.3;;1.3;1.3;;;;;;;2;4.5;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
+scroll;water_elemental_minion;dsx_elemental_water_minion;;a;Water Elemental Minion;1.5;nm;el;mb;loa;;50;12000;17;1.1;;;;;;;;;;1;1.8;;;;
+spell;clockwork_automaton;dsx_golem_clockwork;;a;Clockwork Automaton;3;cm;ro;std;loa;;50;60000;3;1.2;;;;;;;;;;3;1.8;;;;
+spell;gobbot_general;dsx_gobbot_general;;a;Gobbot General;1.5;cm;ro;std;loa;x;50;75000;6;;1.1;;;;;;;;;3;0.6;;;;Custom minigun (fixed damage)
+scroll;shadowjumper_lieutenant;dsx_shadow_jumper_boss;;a;Shadowjumper Lieutenant;2;cm;de;mb;loa;x;55;15000;12;1.4;;;;;;100;130;;;1.5;3.6;;;;
+scroll;skank_witch;swamp_witch_boss_01;;a;Skank Witch;1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;;95;99;1;2.7;;;;
+scroll;skank_witch_attacking;swamp_witch_boss_01_attacking;;a;Skank Witch (Attacking);1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;;95;99;1;2.7;;;skank_witch;
+scroll;wretched_zombie;zombie_02_boss_01;;a;Wretched Zombie;1.5;cm;un;mb;v;;44;9100;16;1.1;;;;;;;;;;0.8;3;;;;
+spell;heater;heater;;a;Heater;2.5;cm;ro;std;v;;55;95000;4;;;1.1;;;;;;120;130;2.5;2;;;;
+scroll;bandit_boss;bandit_boss;;a;Bandit Boss;1.5;nm;hu;mb;v;x;46;10000;13;1.35;;;;;;27;33;;;1.5;3;;;;
+scroll;lost_witch;swamp_witch_boss_02;;the;Lost Witch;1.5;nm;hu;mb-su;v;x;50;15000;14;;;1.2;;;;;;95;99;1;2.7;;;;
+scroll;lost_witch_attacking;swamp_witch_boss_02_attacking;;the;Lost Witch (Attacking);1.5;nm;hu;mb-su;v;x;50;15000;14;;;1.2;;;;;;95;99;1;2.7;;;lost_witch;
+spell;gobbot_grenadier;gobbot_grenade;;a;Gobbot Grenadier;1;cm;ro;std;v;;53;87000;6;;1;;;;;100;109;;;2.5;0.6;;;;
+spell;gobbot_gunner;gobbot_minigun;;a;Gobbot Gunner;1;cm;ro;std;v;;53;87000;6;;1;;;;;68;75;;;2.5;0.6;;;;Custom minigun skrit
+spell;gobbot_igniter;gobbot_flamethrower;;a;Gobbot Igniter;1;cm;ro;std;v;;52;83000;6;;1;;;;;110;135;;;2.5;0.6;;;;Custom minigun skrit
+spell;gobbot_shocker;gobbot_lightning;;a;Gobbot Shocker;1;cm;ro;std;v;;52;83000;6;;1;;;;;69;77;;;2.5;0.6;;;;
+scroll;rotten_troll;troll_swamp_boss_01;;a;Rotten Troll;1.5;nm;hu;mb;v;x;51;13000;14;1.2;;;;;;75;85;;;1;2.4;;;;
+scroll;rotten_troll_norecov;troll_swamp_boss_01_norecov;;a;Rotten Troll (no recov);1.5;nm;hu;mb;v;x;51;13000;14;1.2;;;;;;75;85;;;1;2.4;;;rotten_troll;
+spell;perforator;perforator;;a;Perforator;1.5;cm;ro;std;v;;54;91000;4;;;1.05;;;;;;;;2;1.2;;;;Custom dmgvol spell
+scroll;swamp_abomination;swamp_creature_boss_01;;a;Swamp Abomination;2.5;nm;el;mb;v;;48;11000;14;1.3;;;;;;;;;;0.8;7.5;;;;
+spell;blaster;blaster;;a;Blaster;2.5;cm;ro;std;v;;55;95000;3;;;1.2;;;;;;108;130;2.5;2;;;;
+spell;water_slinger;water_slinger;;a;Water Slinger;1.5;nm;hu;std;v;x;65;150000;6;;;0.9;;;;;;105;115;1;0.8;;;;
+spell;sea_mangler;mangler_sea;;a;Sea Mangler;1;nm;an;std;v;;56;79000;7;0.9;;;;;;;;;;1;0.8;;;;
+spell;giant_wasp;wasped;;a;Giant Wasp;0.75;nm;an;std;v;;65;120000;6;0.95;;;;;;;;;;2;0.6;;;;
+spell;wraith_mage;wraith_mage;;a;Wraith Mage;1.25;cm;un;std;v;;63;140000;5;;;0.95;;;0.5;;;120;140;2;0.8;;;;Spell shoots 2 trackballs
+spell;water_lunger;water_lunger;;a;Water Lunger;1.5;nm;hu;std;v;x;64;110000;7;0.9;;;;;;;;;;1;0.8;;;;
+spell;soul_stinger;soul_stinger;;a;Soul Stinger;1;nm;an;std;v;;68;140000;6;0.95;;;;;;;;;;2;0.6;;;;
+spell;skeleton_ranger;skeleton_mercenary_archer;good;a;Skeleton Ranger;1.5;cm;un;std;v;;65;150000;5;;1;;;;;94;110;;;2.5;1;;;;
+spell;forest_darkling;darkling_forest;;a;Forest Darkling;1.5;cm;de;std;v;;56;99000;5;;;0.9;;;;;;120;140;1;0.9;;;;
+spell;cyclops;cyclops;;a;Cyclops;2.5;nm;hu;std;v;x;61;100000;6;1.1;;;;;;115;125;;;1;2;;;;Always equipped with club
+spell;wraith_lesser;wraith_lesser;;a;Wraith;2.5;cm;un;std;v;;56;79000;6;0.95;;;;;;58;74;;;2;0.8;;;;
+spell;googore;googore;;a;Googore;2;nm;an;st;v;;63;27000;0.5;0.9;;0.9;;;;;;170;180;1;2.5;;;;
+scroll;fury_spawn;fury_lesser_01;;a;Fury Spawn;2;cm;de;mb;v;;65;30000;13;;;1.3;;;0.7;;;;;1;2.7;;;;Custom dmgvol spell
+spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;;65;120000;6;1.05;;;;;;35;58;;;2.5;1;;;;
+spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;;2;0.8;;;;Custom spell skrit
+spell;blazing_elemental_hold;suicide_elemental_hold;good;a;Blazing Elemental (hold);1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;;2;0.8;;;blazing_elemental;Custom spell skrit
+spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;;56;99000;4;1.1;;1.1;;;;;;145;155;1.5;2.5;;;;
+scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;;55;15000;13;1.35;;;;;;;;;;2;7.5;;;;
+scroll;dark_wraith_mage;wraith_mage_boss_01;;a;Dark Wraith Mage;1.5;cm;un;mb;v;;64;29000;13;;;1.15;;;0.5;;;120;140;2.2;2.4;;;;Spell shoots 2 trackballs
+spell;sand_ripper;sand_ripper;;a;Sand Ripper;1;cm;hu;std;v;x;70;150000;6;0.9;;;;;;;;;;2;0.6;;;;
+scroll;bile_lunger;water_lunger_boss_01;;a;Bile Lunger;1.5;nm;hu;mb;v;x;65;24000;16;1.1;;;;;;;;;;1;2.4;;;;
+spell;sand_mage;sand_mage;;a;Sand Mage;1;cm;hu;std;v;x;71;200000;5;;;0.9;;;;;;;;2;0.6;;;;Custom fire spell
+scroll;warrior_wraith;wraith_boss_01;;a;Warrior Wraith;1.5;cm;un;mb;v;;62;21000;13;1.2;;;;;;;;;;2.2;2.4;;;;
+spell;sand_basher;sand_basher;;a;Sand Basher;1;cm;hu;std;v;x;73;170000;6;0.95;;;;;;;;;;2;0.6;;;;
+spell;droog_archer;droog_archer;;a;Droog Archer;1.5;nm;hu;std;v;x;71;200000;6;;1;;;;;100;140;;;1;1;;;;
+spell;droog_mage;droog_mage;;a;Droog Mage;1.5;nm;hu;std;v;x;72;210000;6;;;1;;;;;;135;150;1;1;;;;
+spell;giant_lizard;giant_lizard;;a;Giant Lizard;2;nm;an;std;v;;68;140000;7;0.95;;;;;;;;;;1.5;0.8;;;;
+spell;synged;synged;;a;Synged;1;cm;de;std;v;;80;240000;6;0.9;;;;;;;;;;1;0.8;;;;
+spell;punisher;punisher;good;a;Punisher;1.5;cm;un;std;v;;75;240000;4;;;1;;;;;;260;300;2;1;;;;
+scroll;skeleton_mercenary_captain;skeleton_mercenary_boss_01;;a;Skeleton Mercenary Captain;1.5;cm;un;mb;v;;66;25000;14;1.25;;;;;;35;58;;;2.5;3;;;;
+spell;droog_grunt;droog_grunt;;a;Droog Grunt;1.5;nm;hu;std;v;x;70;150000;7;1;;;;;;90;130;;;1;1;;;;
+spell;toreck;toreck;;a;Toreck;1.75;cm;de;std;v;x;84;290000;6;1;;;;;;130;150;;;1;1.2;;;;
+spell;terror_wraith;wraith_terror;;a;Terror Wraith;2.5;cm;un;std;v;;77;210000;6;0.95;;;;;;82;112;;;2;0.8;;;;
+spell;giant_skeleton;skeleton_large;;a;Giant Skeleton;2;cm;un;std;v;;75;190000;6;1.1;;;;;;50;76;;;2;1.2;;;;
+scroll;giant_skeleton_stalker;skeleton_large_boss_01;;a;Giant Skeleton Stalker;2;cm;un;mb;v;;76;40000;14;1.3;;;;;;50;76;;;2;3.6;;;;
+spell;mucosa_raider;mucosa_raider;;a;Mucosa Raider;2.5;cm;de;std;v;;75;190000;5;1;;;;;;;;;;2;1;;;;
+spell;seck_mage;seck_mage;;a;Seck Mage;1.5;cm;de;std;v;x;82;330000;4;;;1;;;;;;13;37;2;1.2;;;;
+scroll;droog_captain;droog_grunt_boss_01;;a;Droog Captain;1.5;nm;hu;mb;v;x;77;42000;15;1.2;;;;;;90;130;;;1;3;;;;
+spell;ghost;ghost;;a;Ghost;1.5;cm;un;std;v;;75;240000;6;;;0.8;;;;;;170;190;2;1;;;;
+spell;seck_elite_archer;seck_archer_elite;;a;Seck Elite Archer;1.5;cm;de;std;v;x;85;380000;4;;1.1;;;;;140;180;;;2;1.2;;;;
+spell;seck_archer;seck_archer;;a;Seck Archer;1.5;cm;de;std;v;x;81;310000;4;;1.05;;;;;121;149;;;2;1.2;;;;
+scroll;ferocious_braak;braak_desert_boss_01;;the;Ferocious Braak;1.5;nm;hu;mb;v;x;81;63000;14;;;1.15;;;;;;184;204;1;3;;;;
+spell;wraith_piercer;wraith_piercer;;a;Wraith Piercer;2.5;cm;un;std;v;;77;260000;5;;0.9;;;;;121;149;;;2;0.8;;;;
+spell;wraith_warlock;warlock;;a;Wraith Warlock;3;cm;un;std;v;;80;300000;5;;;1;;;;;;180;200;2.2;0.8;;;;
+spell;seck_grunt;seck_grunt;;a;Seck Grunt;1.5;cm;de;std;v;x;80;240000;5;1.1;;;;;;135;165;;;2;1.2;;;;
+spell;lava_imp;lava_imp_01;;a;Lava Imp;1;cm;de;std;v;x;85;300000;6;0.95;;;;;;;;;;2;0.6;;;;
+spell;lava_runner;lava_imp_02;;a;Lava Runner;1;cm;de;std;v;x;86;400000;5;;;0.9;;;0.5;;;170;190;2;0.6;;;;Spell shoots 2 trackballs
+scroll;maljin_jolt;maljin_ranged;;a;Maljin Jolt;1.5;cm;de;mb;v;x;91;100000;12;;;1.3;;;;;;135;155;2;3;;;;
+scroll;maljin_phantom;maljin_magic;;a;Maljin Phantom;1.5;cm;de;mb;v;x;92;100000;12;;;1.3;;;;;;135;165;2;3;;;;
+scroll;maljin_stalker;maljin_melee;;a;Maljin Stalker;1.5;cm;de;mb;v;x;90;76000;13;1.3;;;;;;;;;;2;3;;;;
+spell;kell;kell;;a;Kell;2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;;220;240;1;1.2;;;;Multiple spells (220-240, 220-240, 240-280)
+spell;kell_shot;kell_shot;;a;Kell (Shot);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;;220;240;1;1.2;;;kell;Shot (220-240)
+spell;kell_blast;kell_blast;;a;Kell (Blast);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;;220;240;1;1.2;;;kell;Blast (actually 240-280) (fire spell)
+spell;kell_bolt;kell_bolt;;a;Kell (Bolt);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;;;220;240;1;1.2;;;kell;Bolt (220-240)
+spell;lava_horror;lava_imp_04;good;a;Lava Horror;1;cm;de;std;v;x;87;330000;6;0.95;;;;;;;;;;2;0.6;;;;
+spell;lava_mage;lava_imp_03;good;a;Lava Mage;1;cm;de;std;v;x;88;430000;5;;;1;;;;;;160;200;2;0.6;;;;
+spell;quadscale;quadscale;;a;Quadscale;1.5;nm;an;std;v;;84;290000;7;0.85;;;;;;;;;;2;0.8;;;;
+spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;2;cm;el;std;v;;84;290000;7;1;;;;;;;;;;2;0.8;;;;
+spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;;83;340000;4;1.1;;1.1;1.3;;;;;;;3;2;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
+spell;seck_high_mage;seck_mage_high;;a;Seck High Mage;1.5;cm;de;std;v;x;88;430000;3;;;1.2;;;;;;13;37;2;1.2;;;;
+spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;;83;340000;4;1.1;;1.1;;;;;;160;200;1.5;2.5;;;;
+spell;seck_elite_guard;seck_guard_elite;;a;Seck Elite Guard;1.5;cm;de;std;v;x;84;290000;5;1.15;;;;;;160;195;;;2;1.2;;;;
+spell;molten_drake;drake_molten;;a;Molten Drake;2.5;cm;an;std;v;;84;360000;5;1;;1;;;;;;184;194;1.5;1;;;;
+scroll;magma_beast;lava_beast_boss_01;;a;Magma Beast;2.5;cm;el;mb;v;;85;76000;11;1.3;;1.3;1.3;;;;;;;2;9;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
+scroll;molten_steel_drake;drake_molten_boss_01;;a;Molten Steel Drake;2.5;cm;an;mb;v;;85;76000;12;1.2;;1.2;;;;;;184;194;1.5;3;;;;
