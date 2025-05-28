@@ -1,7 +1,8 @@
-[t:template,n:minigun_dragon_base]  // = minigun_dragon
+[t:template,n:base_minigun_dragon_sumcol]  // ~ minigun_dragon, but using own minigun magic component
 {
-	doc = "Dragon Minigun";
 	specializes = base_projectile;
+
+	doc = "Dragon Minigun";
 	[aspect]
 	{
 		mana = 100;
@@ -41,7 +42,8 @@
 		inventory_icon = b_gui_ig_i_w_msc_009;
 		inventory_width = 2;
 	}
-	[minigun_magic]
+
+	[minigun_magic_sumcol]
 	{
 		animate_weapon = true;
 		create_damage_volume = true;
@@ -56,7 +58,7 @@
 [t:template,n:minigun_dragon_sumcol] { specializes = minigun_dragon_sumcol_base; }
 [t:template,n:minigun_dragon_sumcol_base]
 {
-    specializes = minigun_dragon_base;
+    specializes = base_minigun_dragon_sumcol;
 
 	[attack]
 	{
