@@ -1,29 +1,73 @@
-[t:template,n:dsx_minigun_gas_monster_base]  // = dsx_minigun_gas_monster
+[t:template,n:base_minigun_gas_sumcol]  // ~ base_minigun_gas, but using own minigun magic component
 {
+	specializes = dsx_base_projectile;
+
+	doc = "DSX Base Gas Gun";
+	[aspect]
+	{
+		mana = 100;
+		mana_recovery_period = 1;
+		mana_recovery_unit = 13;
+		max_mana = 100;
+		model = m_w_misc_301;
+		[voice]
+		{
+			[put_down]
+			{
+				* = s_e_gui_put_down_bow;
+			}
+		}
+	}
+	[attack]
+	{
+		area_damage_radius = 1.0;
+		attack_range = 15;
+		f damage_max = 100.0;
+		f damage_min = 85.0;
+		reload_delay = .5;
+	}
+	[common]
+	{
+		is_pcontent_allowed = false;
+	}
+	[gui]
+	{
+		active_icon = b_gui_ig_i_ic_msc_001;
+		equip_requirements = strength:15,dexterity:22;
+		inventory_icon = b_gui_ig_i_w_msc_301;
+		inventory_height = 3;
+		inventory_width = 2;
+	}
+
+	[minigun_magic_sumcol]
+	{
+		create_damage_volume = true;
+		effect_name = "minigun_gas";
+		mana_per_shot = 17;
+		shot_life = 2.0;
+		total_effects = 10;
+		use_mana = true;
+	}
+}
+
+[t:template,n:base_dsx_minigun_gas_monster_sumcol]  // ~ dsx_minigun_gas_monster
+{
+	specializes = base_minigun_gas_sumcol;
+
 	doc = "DSX MONSTER Gas Gun";
-	specializes = base_minigun_gas;
-	
 	[attack]
 	{
 		f damage_max = 100.0;
 		f damage_min = 90.0;
 	}
-	
+
 	common:screen_name = "Goblin's Gas Gun";
-	
+
 	// monster only, shouldn't drop
 	gui:is_droppable = false;		
 }
 
-[t:template,n:dsx_minigun_gas_monster_sumcol] { specializes = dsx_minigun_gas_monster_sumcol_base; }
-[t:template,n:dsx_minigun_gas_monster_sumcol_base]
+[t:template,n:dsx_minigun_gas_monster_sumcol]
 {
-    specializes = dsx_minigun_gas_monster_base;
-
-	[attack]
-	{
-        // Edited original damage - minigun_magic.skrit doesn't take summon enchantments into account
-		damage_max = 220;  // = 100 * 2.2
-		damage_min = 198;  // = 90 * 2.2
-	}
+    specializes = base_dsx_minigun_gas_monster_sumcol;
 }

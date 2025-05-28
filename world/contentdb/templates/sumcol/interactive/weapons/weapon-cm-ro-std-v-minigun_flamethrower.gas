@@ -45,8 +45,7 @@
 	}
 }
 
-[t:template,n:minigun_flamethrower_sumcol] { specializes = minigun_flamethrower_sumcol_base; }
-[t:template,n:minigun_flamethrower_sumcol_base]
+[t:template,n:minigun_flamethrower_sumcol]
 {
     specializes = base_minigun_flamethrower_sumcol;
 }

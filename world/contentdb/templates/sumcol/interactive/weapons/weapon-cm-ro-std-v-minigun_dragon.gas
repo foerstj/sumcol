@@ -55,8 +55,7 @@
 	}
 }
 
-[t:template,n:minigun_dragon_sumcol] { specializes = minigun_dragon_sumcol_base; }
-[t:template,n:minigun_dragon_sumcol_base]
+[t:template,n:minigun_dragon_sumcol]
 {
     specializes = base_minigun_dragon_sumcol;
 }
