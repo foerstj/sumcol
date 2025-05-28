@@ -102,9 +102,13 @@ state Fire$
 		{
 			if(active_effects$ < total_effects$)
 			{
+				Go parent$ = m_Weapon$.Go.GetParent();  // ADDED
+
 				if( create_damage_volume$)
 				{
-					float damage$ = Math.RandomFloat( owner.Go.Attack.DamageMin, owner.Go.Attack.DamageMax );
+					// EDITED
+					//float damage$ = Math.RandomFloat( owner.Go.Attack.DamageMin, owner.Go.Attack.DamageMax );
+					float damage$ = Math.RandomFloat( Rules.GetDamageMin( parent$.Goid, owner.Goid ), Rules.GetDamageMax( parent$.Goid, owner.Goid ) );
 					
 					Physics.CreateDamageVolume( m_Weapon$, target$, owner.Go.Attack.AttackRange + 2.0 , m_Weapon$.Go.Attack.AreaDamageRadius / 2.0 ,m_Weapon$.Go.Attack.AreaDamageRadius, damage$, m_Weapon$.Go.Attack.ReloadDelay, owner.Go.Parent.goid, m_Weapon$ );
 				}
@@ -116,7 +120,10 @@ state Fire$
 				if( do_fire_damage$ )
 				{
 					// [1] - fire damage
-					StringTool.AppendF( params$, "[ignite()fdamage(%g,%g,%g)]", m_Weapon$.Go.Attack.DamageMin, m_Weapon$.Go.Attack.DamageMax, particle_fit$ );
+
+					// EDITED
+					//StringTool.AppendF( params$, "[ignite()fdamage(%g,%g,%g)]", m_Weapon$.Go.Attack.DamageMin, m_Weapon$.Go.Attack.DamageMax, particle_fit$ );
+					StringTool.AppendF( params$, "[ignite()fdamage(%g,%g,%g)]", Rules.GetDamageMin( parent$.Goid, m_Weapon$ ), Rules.GetDamageMax( parent$.Goid, m_Weapon$ ), particle_fit$ );
 				}
 
 //				report.genericf("%s\n",params$);
