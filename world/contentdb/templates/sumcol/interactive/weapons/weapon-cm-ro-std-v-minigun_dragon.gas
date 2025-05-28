@@ -41,7 +41,7 @@
 		inventory_icon = b_gui_ig_i_w_msc_009;
 		inventory_width = 2;
 	}
-	[minigun_magic]
+	[minigun_magic_sumcol]
 	{
 		animate_weapon = true;
 		create_damage_volume = true;
@@ -60,8 +60,12 @@
 
 	[attack]
 	{
-        // Edited original damage - minigun_magic.skrit doesn't take summon enchantments into account
-		damage_max = 187;  // = 75 * 2.5
-		damage_min = 170;  // = 68 * 2.5
+		damage_min = 13;
+		damage_max = 37;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#src_ranged/0.7575)*4.2)*1.0)*0.83)*0.9 - 13;
+		attack_damage_modifier_max = ((((#src_ranged/0.7575)*4.2)*1.0)*0.83)*1.1 - 37;
 	}
 }
