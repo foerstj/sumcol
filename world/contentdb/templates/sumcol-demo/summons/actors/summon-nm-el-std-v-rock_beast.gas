@@ -7,7 +7,7 @@
 	[inventory]
 	{
 		selected_active_location = il_active_primary_spell;
-		[other] { il_active_primary_spell = spell_rock_beast_dmgvol_blast_sumcol; }  // EDITED
+		[other] { il_active_primary_spell = spell_rock_beast_dmgvol_blast_summon; }  // EDITED
 		[pcontent]
 		{
 			[gold*]

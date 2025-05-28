@@ -11,6 +11,6 @@ poison;spit;dummy_wraith;_80;nm;un;std;v;80;1;0.5
 ;;;;;;;;;;
 poison;sparkles;mucosa_predator;;cm;de;std;v;80;1.05;0.5
 poison;poison;dsx_vile_twisted_mucosa;;cm;de;std;loa;15;0.9;0.5
-dmgvol;blast;rock_beast;;nm;el;std;v;92;1;
-fire;breath;drake_green;;nm;an;std;v;86;1.1;
-fire;breath;drake_black;;cm;an;std;v;92;1.1;
+dmgvol;blast;rock_beast;;nm;el;std;v;92;1;0.5
+fire;breath;drake_green;;nm;an;std;v;86;1.1;0.35
+fire;breath;drake_black;;cm;an;std;v;92;1.1;0.35
