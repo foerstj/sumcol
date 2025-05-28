@@ -185,10 +185,10 @@ spell;zaurask_seer;dsx_zaurask_caster;;a;Zaurask Seer;1.5;nm;hu;std;loa;x;47;660
 spell;zaurask_whacker;dsx_zaurask_whacker;;a;Zaurask Whacker;1.5;nm;hu;std;loa;x;45;48000;6;1;;;;;;75;84;;;1.7;1.2;;;;
 scroll;rabid_spiked_maw;spiked_maw_boss_01;;a;Rabid Spiked Maw;1.5;nm;an;mb;v;;38;8700;13;;;1.2;;;;;;75;80;1.5;2.4;;;;
 spell;bandit_archer;bandit_ranged;;a;Bandit Archer;1.5;nm;hu;std;v;x;44;57000;5;;1;;;;;65;93;;;1.2;1;;;;
-spell;gobbot_igniter_emarard;dsx_gobbot_flamethrower;;a;Gobbot Igniter;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;140;178;;;3;0.6;;;;
+spell;gobbot_igniter_emarard;dsx_gobbot_flamethrower;;a;Gobbot Igniter;1.5;cm;ro;std;loa;;45;60000;6;;1;;;1.33;;140;178;;;3;0.6;;;;
 scroll;great_trog_warrior;trog_warrior_boss_01;;a;Great Trog Warrior;1.5;nm;hu;mb;v;x;40;7600;14;1.25;;;;;;40;59;;;1.5;3;;;;
 spell;mechanized_wasp;dsx_automaton_flying_one;;a;Mechanized Wasp;1.5;cm;ro;std;loa;;48;55000;6;0.85;;;;;;;;;;3;0.6;;;;
-spell;gobbot_sleeper_emarard;dsx_gobbot_minigun;;a;Gobbot Sleeper;1.5;cm;ro;std;loa;;45;60000;6;;1;;;;;43;57;;;3;0.6;;;;Custom minigun skrit
+spell;gobbot_sleeper_emarard;dsx_gobbot_minigun;;a;Gobbot Sleeper;1.5;cm;ro;std;loa;;45;60000;6;;1;;;0.83;;43;57;;;3;0.6;;;;Custom minigun skrit
 scroll;shadowjumper_minion;dsx_shadow_jumper_minion_one;;a;Shadowjumper Minion;1.5;cm;de;mb;loa;x;29;3800;15;1.3;;;;;;50;55;;;1;3.6;;;;
 spell;zaurask_slasher;dsx_zaurask_slasher;;a;Zaurask Slasher;1.5;nm;hu;std;loa;x;48;55000;6;1;;;;;;99;118;;;1.7;1.2;;;;
 spell;zaurask_ranger;dsx_zaurask_ranger;;a;Zaurask Ranger;1.5;nm;hu;std;loa;x;49;72000;5;;1;;;;;91;100;;;1.7;1.2;;;;
@@ -240,7 +240,7 @@ scroll;air_elemental_minion;dsx_elemental_air_minion;;an;Air Elemental Minion;2;
 scroll;earth_elemental_minion;dsx_elemental_earth_minion;;an;Earth Elemental Minion;3;nm;el;mb;loa;;50;15000;12;1.3;;1.3;1.3;;;;;;;2;4.5;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
 scroll;water_elemental_minion;dsx_elemental_water_minion;;a;Water Elemental Minion;1.5;nm;el;mb;loa;;50;12000;17;1.1;;;;;;;;;;1;1.8;;;;
 spell;clockwork_automaton;dsx_golem_clockwork;;a;Clockwork Automaton;3;cm;ro;std;loa;;50;60000;3;1.2;;;;;;;;;;3;1.8;;;;
-spell;gobbot_general;dsx_gobbot_general;;a;Gobbot General;1.5;cm;ro;std;loa;x;50;75000;6;;1.1;;;;;90;100;;;3;0.6;;;;Custom minigun skrit
+spell;gobbot_general;dsx_gobbot_general;;a;Gobbot General;1.5;cm;ro;std;loa;x;50;75000;6;;1.1;;;0.83;;90;100;;;3;0.6;;;;Custom minigun skrit
 scroll;shadowjumper_lieutenant;dsx_shadow_jumper_boss;;a;Shadowjumper Lieutenant;2;cm;de;mb;loa;x;55;15000;12;1.4;;;;;;100;130;;;1.5;3.6;;;;
 scroll;skank_witch;swamp_witch_boss_01;;a;Skank Witch;1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;;95;99;1;2.7;;;;
 scroll;skank_witch_attacking;swamp_witch_boss_01_attacking;;a;Skank Witch (Attacking);1.5;nm;hu;mb-su;v;x;49;14000;15;;;1.1;;;;;;95;99;1;2.7;;;skank_witch;
