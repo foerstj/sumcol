@@ -1,7 +1,6 @@
-[t:template,n:minigun_dragon_summon] { specializes = minigun_dragon_summon_base; }
-[t:template,n:minigun_dragon_summon_base]
+[t:template,n:minigun_dragon_summon]
 {
-    specializes = base_minigun_dragon_summon;
+	specializes = base_minigun_dragon_summon;
 
 	[attack]
 	{

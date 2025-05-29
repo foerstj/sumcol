@@ -1,0 +1,15 @@
+[t:template,n:{{name}}_summon]
+{
+	specializes = base_{{name}}_summon;
+
+	[attack]
+	{
+		damage_min = 13;
+		damage_max = 37;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#src_ranged/{% if req_lvl <= 50 %}{{ '%0.5g' | format(1 - req_lvl/200) }}{% else %}{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }}{% endif %})*4.2)*{{dmg_r | float}})*{{abf_r or 1}})*{% if stable %}1.0{% else %}0.9{% endif %} - 13;
+		attack_damage_modifier_max = ((((#src_ranged/{% if req_lvl <= 50 %}{{ '%0.5g' | format(1 - req_lvl/200) }}{% else %}{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }}{% endif %})*4.2)*{{dmg_r | float}})*{{abf_r or 1}})*{% if stable %}1.0{% else %}1.1{% endif %} - 37;
+	}
+}

@@ -1,7 +1,6 @@
-[t:template,n:minigun_flamethrower_summon] { specializes = minigun_flamethrower_summon_base; }
-[t:template,n:minigun_flamethrower_summon_base]
+[t:template,n:minigun_flamethrower_summon]
 {
-    specializes = base_minigun_flamethrower_summon;
+	specializes = base_minigun_flamethrower_summon;
 
 	[attack]
 	{
