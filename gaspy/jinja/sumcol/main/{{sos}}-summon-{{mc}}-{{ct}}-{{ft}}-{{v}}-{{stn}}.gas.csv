@@ -250,8 +250,8 @@ scroll;bandit_boss;bandit_boss;;a;Bandit Boss;1.5;nm;hu;mb;v;x;46;10000;13;1.35;
 scroll;lost_witch;swamp_witch_boss_02;;the;Lost Witch;1.5;nm;hu;mb-su;v;x;50;15000;14;;;1.2;;;;;95;99;1;2.7;;;;
 scroll;lost_witch_attacking;swamp_witch_boss_02_attacking;;the;Lost Witch (Attacking);1.5;nm;hu;mb-su;v;x;50;15000;14;;;1.2;;;;;95;99;1;2.7;;;lost_witch;
 spell;gobbot_grenadier;gobbot_grenade;;a;Gobbot Grenadier;1;cm;ro;std;v;;53;87000;6;;1;;;;100;109;;;2.5;0.6;;;;
-spell;gobbot_gunner;gobbot_minigun;;a;Gobbot Gunner;1;cm;ro;std;v;;53;87000;6;;1;;;;68;75;;;2.5;0.6;;;;
-spell;gobbot_igniter;gobbot_flamethrower;;a;Gobbot Igniter;1;cm;ro;std;v;;52;83000;6;;1;;;;110;135;;;2.5;0.6;;;;
+spell;gobbot_gunner;gobbot_minigun;;a;Gobbot Gunner;1;cm;ro;std;v;;53;87000;6;;1;;;;;;;;2.5;0.6;;;;Custom minigun skrit
+spell;gobbot_igniter;gobbot_flamethrower;;a;Gobbot Igniter;1;cm;ro;std;v;;52;83000;6;;1;;;;;;;;2.5;0.6;;;;Custom minigun skrit
 spell;gobbot_shocker;gobbot_lightning;;a;Gobbot Shocker;1;cm;ro;std;v;;52;83000;6;;1;;;;69;77;;;2.5;0.6;;;;
 scroll;rotten_troll;troll_swamp_boss_01;;a;Rotten Troll;1.5;nm;hu;mb;v;x;51;13000;14;1.2;;;;;75;85;;;1;2.4;;;;
 scroll;rotten_troll_norecov;troll_swamp_boss_01_norecov;;a;Rotten Troll (no recov);1.5;nm;hu;mb;v;x;51;13000;14;1.2;;;;;75;85;;;1;2.4;;;rotten_troll;
