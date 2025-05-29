@@ -1,7 +1,8 @@
-[t:template,n:minigun_flamethrower_base]  // = minigun_flamethrower
+[t:template,n:base_minigun_flamethrower_summon]  // ~ minigun_flamethrower, but with custom skrit
 {
-	doc = "Flamethrower";
 	specializes = base_projectile;
+
+	doc = "Flamethrower";
 	[aspect]
 	{
 		mana = 100;
@@ -31,7 +32,8 @@
 		inventory_width = 2;
 	}
 	[magic] {}
-	[minigun_magic]
+
+	[minigun_magic_sumcol]
 	{
 		do_fire_damage = true;
 		mana_per_shot = 35.0;
