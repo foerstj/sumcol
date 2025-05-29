@@ -37,13 +37,13 @@
             {
                 alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = (((((#magic*4.2)*0.9)*0.9) - #ranged_damage_min) - 121.0);
+                value = ((((((#magic*4.2)*0.9)*1)*0.9) - #ranged_damage_min) - 121.0);
             }
             [*]
             {
                 alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = (((((#magic*4.2)*0.9)*1.1) - #ranged_damage_max) - 149.0);
+                value = ((((((#magic*4.2)*0.9)*1)*1.1) - #ranged_damage_max) - 149.0);
             }
             [*]
             {
