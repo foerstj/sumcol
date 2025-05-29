@@ -1,4 +1,4 @@
-// similar to spell_zap, but no mana cost, and with flat values for easier balancing
+// similar to spell_apprentice_zap, but no mana cost, and with flat values for easier balancing
 [t:template,n:spell_apprentice_zap_summon]
 {
 	specializes = base_spell_monster;
