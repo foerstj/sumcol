@@ -1,7 +1,8 @@
-[t:template,n:dsx_minigun_dragon_base]  // = dsx_minigun_dragon
+[t:template,n:base_dsx_minigun_dragon_summon]  // ~ dsx_minigun_dragon, but with custom skrit
 {
-	doc = "DSX Dragon Minigun";
 	specializes = base_projectile;
+
+	doc = "DSX Dragon Minigun";
 	[aspect]
 	{
 		mana = 100;
@@ -41,7 +42,8 @@
 		inventory_icon = b_gui_ig_i_w_msc_009;
 		inventory_width = 2;
 	}
-	[minigun_magic]
+
+	[minigun_magic_sumcol]
 	{
 		animate_weapon = true;
 		create_damage_volume = true;
@@ -50,19 +52,5 @@
 		shot_life = 2.0;
 		total_effects = 10;
 		use_mana = true;
-	}
-}
-
-
-[t:template,n:dsx_minigun_dragon_sumcol] { specializes = dsx_minigun_dragon_sumcol_base; }
-[t:template,n:dsx_minigun_dragon_sumcol_base]
-{
-    specializes = dsx_minigun_dragon_base;
-
-	[attack]
-	{
-        // Edited original damage - minigun_magic.skrit doesn't take summon enchantments into account
-		damage_max = 188;  // = 57 * 3.3
-		damage_min = 142;  // = 43 * 3.3
 	}
 }

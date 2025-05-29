@@ -1,0 +1,15 @@
+[t:template,n:dsx_minigun_dragon_summon]
+{
+	specializes = base_dsx_minigun_dragon_summon;
+
+	[attack]
+	{
+		damage_min = 13;
+		damage_max = 37;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#src_ranged/0.775)*4.2)*1.0)*0.83)*0.9 - 13;
+		attack_damage_modifier_max = ((((#src_ranged/0.775)*4.2)*1.0)*0.83)*1.1 - 37;
+	}
+}
