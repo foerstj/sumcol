@@ -13,6 +13,8 @@
 		damage_max = 2880;  // = 240 * 12
 		damage_min = 2640;  // = 220 * 12
 	}
+
+	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
 }
 
 [t:template,n:proxo_hold_summon]

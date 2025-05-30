@@ -24,6 +24,8 @@
 		damage_max = 8400;  // = 420 * 20
 		damage_min = 7600;  // = 380 * 20
 	}
+
+	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
 }
 
 [t:template,n:suicide_elemental_hold_good_summon]
