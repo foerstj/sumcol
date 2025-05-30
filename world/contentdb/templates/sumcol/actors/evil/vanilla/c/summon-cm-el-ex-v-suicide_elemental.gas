@@ -18,13 +18,17 @@
 	{
 		delete_time = -1;  // Disabling automatic explosion after 15s.
 	}
+
 	[attack]
 	{
-        // Edited original damage (explosion doesn't take enchantments from summon spell into account)
-		damage_max = 8400;  // = 420 * 20
-		damage_min = 7600;  // = 380 * 20
+		damage_min = 0;
+		damage_max = 0;
 	}
-
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#src_melee/0.835)*4.2)*1.0)*1)*0.9;
+		attack_damage_modifier_max = ((((#src_melee/0.835)*4.2)*1.0)*1)*1.1;
+	}
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
 }
 
