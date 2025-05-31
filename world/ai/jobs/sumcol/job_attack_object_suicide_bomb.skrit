@@ -99,6 +99,12 @@ state Exploding$
 {
 	event OnEnterState$
 	{
+		float damageMin$ = m_Go$.Attack.DamageMin + m_Go$.Magic.EvaluateAttackDamageModifierMin(m_Go$, m_Go$);
+		float damageMax$ = m_Go$.Attack.DamageMax + m_Go$.Magic.EvaluateAttackDamageModifierMax(m_Go$, m_Go$);
+		float damage$ = Math.RandomFloat( damageMin$, damageMax$ );
+		report.genericf("Exploding with damage %g\n", damage$);
+		Physics.CreateExplosion( m_Go$.placement.position, m_Go$.Attack.AreaDamageRadius, m_Go$.Physics.ExplosionMagnitude, damage$, m_Go$.Goid, m_Go$.Goid );
+
 		Physics.ExplodeGoWithDamage( m_Go$.Goid, m_Go$.Goid, m_Go$.Goid );
 	}
 }
