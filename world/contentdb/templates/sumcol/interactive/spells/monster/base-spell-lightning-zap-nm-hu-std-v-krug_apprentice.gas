@@ -1,0 +1,41 @@
+[t:template,n:base_spell_apprentice_zap]  // = spell_apprentice_zap
+{
+	category_name = "magic";
+	doc = "spell zap";
+	specializes = base_spell_monster;
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_max = (#magic+1) * 4.1 + 0.9;
+		attack_damage_modifier_min = (#magic+1) * 3.4 + 0.7;
+		cast_range = 8;
+		cast_reload_delay = 1.0;
+		mana_cost = 1;
+        max_level = 67;
+		mana_cost_modifier = (#magic*0.7);
+		requires_line_of_sight = true;
+		speed_bias = 2;
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_breakable;
+		usage_context_flags = uc_offensive;
+	}
+	[spell_lightning]
+	{
+		effect_script	= zap;
+		dur				= 0.15;
+	}
+}
+
+[t:template,n:base_spell_krug_apprentice_zap_summon]
+{
+	specializes = base_spell_apprentice_zap;
+
+	[magic]
+	{
+		mana_cost = 0;
+		mana_cost_modifier =;
+	}
+}

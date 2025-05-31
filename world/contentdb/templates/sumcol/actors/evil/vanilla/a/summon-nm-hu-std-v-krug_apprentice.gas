@@ -9,7 +9,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = spell_apprentice_zap_summon;
+			il_active_primary_spell = spell_krug_apprentice_zap_summon;
 		}
 		[pcontent]
 		{
