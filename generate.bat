@@ -7,11 +7,11 @@ set bits=%~dp0.
 pushd "%GasPy%"
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-weapons world\contentdb\templates\sumcol\interactive\weapons --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-weapons world\contentdb\templates\sumcol\interactive\weapons --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\sub world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\sub world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\readme "" --for-all gaspy\jinja\sumcol\main --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause

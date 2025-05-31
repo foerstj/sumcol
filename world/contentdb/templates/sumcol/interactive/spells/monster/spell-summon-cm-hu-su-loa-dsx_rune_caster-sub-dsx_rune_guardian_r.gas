@@ -30,13 +30,13 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#src_combat_magic_level*4.2)*1.0)*1.0)*0.9) - #cmagic_damage_min) - 44.0);
+                value = ((((((#src_combat_magic_level*4.2)*1.0)*1)*0.9) - #cmagic_damage_min) - 44.0);
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((((#src_combat_magic_level*4.2)*1.0)*1.0)*1.1) - #cmagic_damage_max) - 55.0);
+                value = ((((((#src_combat_magic_level*4.2)*1.0)*1)*1.1) - #cmagic_damage_max) - 55.0);
             }
             [*]
             {
