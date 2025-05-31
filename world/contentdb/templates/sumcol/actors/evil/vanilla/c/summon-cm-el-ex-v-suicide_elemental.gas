@@ -5,7 +5,7 @@
 
     doc = "[summon] suicide_elemental (good)";
 	aspect:experience_value = 0;
-    //physics:explode_when_killed = false;
+    physics:explode_when_killed = false;
 	[inventory]
 	{
 		[pcontent]
@@ -30,6 +30,7 @@
 		attack_damage_modifier_max = ((((#src_melee/0.835)*4.2)*1.0)*1)*1.1;
 	}
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
+	mind:jat_die = world\ai\jobs\sumcol\job_die_explode.skrit;
 }
 
 [t:template,n:suicide_elemental_hold_good_summon]
