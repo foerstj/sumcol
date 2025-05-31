@@ -55,6 +55,13 @@ state Collapsing$
 
 	event OnEnterState$
 	{
+		// do it here - in state Explode$ it's too late to calculate these properly
+		float damageMin$ = m_Go$.Attack.DamageMin + m_Go$.Magic.EvaluateAttackDamageModifierMin(m_Go$, m_Go$);
+		float damageMax$ = m_Go$.Attack.DamageMax + m_Go$.Magic.EvaluateAttackDamageModifierMax(m_Go$, m_Go$);
+		float damage$ = Math.RandomFloat( damageMin$, damageMax$ );
+		report.genericf("Exploding on killed with damage %g\n", damage$);
+		Physics.CreateExplosion( m_Go$.placement.position, m_Go$.Attack.AreaDamageRadius, m_Go$.Physics.ExplosionMagnitude, damage$, m_Go$.Goid, m_Go$.Goid );
+
 		// Pick a Random animation to used
 		eAnimStance stance$ = m_Go$.inventory.animstance;
 		int subanim$ = m_Go$.Aspect.AspectHandle.Blender.GetNumSubAnims(CHORE_DIE,stance$);
