@@ -1,8 +1,8 @@
-[t:template,n:sumcol_demo_barrel_redone_vanilla]
+[t:template,n:sumcol_demo_barrel_replica_vanilla]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Redone - Vanilla";
+    common:screen_name = "Replica - Vanilla";
     [inventory]
     {
         [other]
@@ -87,11 +87,11 @@
         }
     }
 }
-[t:template,n:sumcol_demo_barrel_redone_loa]
+[t:template,n:sumcol_demo_barrel_replica_loa]
 {
     specializes = sumcol_demo_base_barrel;
 
-    common:screen_name = "Redone - LoA";
+    common:screen_name = "Replica - LoA";
     [inventory]
     {
         [other]
