@@ -45,13 +45,13 @@
             {
                 alteration = alter_melee_damage_min;
                 duration = #infinite;
-                value = (((((((#magic*4.2)*{{dmg_m | float}})*{{abf_m or 1}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
+                value = (((((((#magic*4.2)*{{dmg_m | float}})*{{'%0.3g' | format(abf_m | sqrt_if(vanilla) if abf_m is number else 1)}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #melee_damage_min) - #base_damage) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_melee_damage_max;
                 duration = #infinite;
-                value = (((((((#magic*4.2)*{{dmg_m | float}})*{{abf_m or 1}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
+                value = (((((((#magic*4.2)*{{dmg_m | float}})*{{'%0.3g' | format(abf_m | sqrt_if(vanilla) if abf_m is number else 1)}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #melee_damage_max) - #base_damage) - {{wpn_dmg_max | float}});
             }
             {% endif %}
             {% if dmg_r != '' %}
@@ -59,13 +59,13 @@
             {
                 alteration = alter_ranged_damage_min;
                 duration = #infinite;
-                value = (((((#magic*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #ranged_damage_min) - {{wpn_dmg_min | float}});
+                value = ((((((#magic*4.2)*{{dmg_r | float}})*{{'%0.3g' | format(abf_r | sqrt_if(vanilla) if abf_r is number else 1)}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #ranged_damage_min) - {{wpn_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_ranged_damage_max;
                 duration = #infinite;
-                value = (((((#magic*4.2)*{{dmg_r | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #ranged_damage_max) - {{wpn_dmg_max | float}});
+                value = ((((((#magic*4.2)*{{dmg_r | float}})*{{'%0.3g' | format(abf_r | sqrt_if(vanilla) if abf_r is number else 1)}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #ranged_damage_max) - {{wpn_dmg_max | float}});
             }
             {% endif %}
             {% if dmg_c != '' %}
@@ -73,13 +73,13 @@
             {
                 alteration = alter_cmagic_damage_min;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c if abf_c is number else 1) | float}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #cmagic_damage_min) - {{spl_dmg_min | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}0.9{% endif %}) - #cmagic_damage_min) - {{spl_dmg_min | float}});
             }
             [*]
             {
                 alteration = alter_cmagic_damage_max;
                 duration = #infinite;
-                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{(abf_c if abf_c is number else 1) | float}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #cmagic_damage_max) - {{spl_dmg_max | float}});
+                value = ((((((#magic*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}1.1{% endif %}) - #cmagic_damage_max) - {{spl_dmg_max | float}});
             }
             {% endif %}
             [*]
