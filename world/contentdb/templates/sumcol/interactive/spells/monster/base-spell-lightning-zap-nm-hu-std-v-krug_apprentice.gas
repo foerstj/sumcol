@@ -37,5 +37,8 @@
 	{
 		mana_cost = 0;
 		mana_cost_modifier =;
+
+		attack_damage_modifier_max =;
+		attack_damage_modifier_min =;
 	}
 }

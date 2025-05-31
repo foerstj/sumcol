@@ -2,6 +2,7 @@
 {
 	specializes = base_spell_{{stn}}_{{name}}_summon;
 
+	{% if dmgtype != 'lightning' or vanilla %}
 	[attack]
 	{
 		damage_min = 0;
@@ -12,4 +13,7 @@
 		attack_damage_modifier_min = ((((#combat_magic/{% if req_lvl <= 50 %}{{ '%0.5g' | format(1 - req_lvl/200) }}{% else %}{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }}{% endif %})*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}0.9{% endif %};
 		attack_damage_modifier_max = ((((#combat_magic/{% if req_lvl <= 50 %}{{ '%0.5g' | format(1 - req_lvl/200) }}{% else %}{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }}{% endif %})*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}1.1{% endif %};
 	}
+	{% else %}
+	// Using summon enchantments in LoA
+	{% endif %}
 }
