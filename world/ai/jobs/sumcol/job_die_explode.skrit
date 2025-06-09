@@ -98,7 +98,7 @@ state Exploding$
 			GoDb.SMarkGoAndChildrenForDeletion( m_Go$.GetGoid );
 		}
 
-		this.CreateTimer( 1, 5.0 );  // Give the explosion a little more time to do its damage
+		this.CreateTimer( 1, 1.0 );  // Give the explosion a little time to do its damage
 	}
 
 	transition -> Exiting$: OnTimer( 1 );

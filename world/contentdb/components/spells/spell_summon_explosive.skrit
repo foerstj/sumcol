@@ -60,13 +60,13 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
 			}		
 		}
-		this.CreateTimer( 2, 5.0 );  // Give the explosion a little more time to do its damage
+		this.CreateTimer( 2, 1.1 );  // Give the explosion a little time to do its damage
 	}
 	if( ( e$ == WE_EXPLODED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
 	{
 		report.generic("SSE: we_exploded\n");
 		// Don't do the un-summon effect here
-		this.CreateTimer( 2, 5.0 );  // Give the explosion a little more time to do its damage
+		this.CreateTimer( 2, 1.1 );  // Give the explosion a little time to do its damage
 	}
 }
 
