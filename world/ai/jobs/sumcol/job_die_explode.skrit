@@ -60,6 +60,8 @@ state Collapsing$
 
 	event OnEnterState$
 	{
+		report.generic("JDE: Collapsing\n");
+
 		// do it here - in state Exploding$ it's too late to calculate these properly
 		float damageMin$ = m_Go$.Attack.DamageMin + m_Go$.Magic.EvaluateAttackDamageModifierMin(m_Go$, m_Go$);
 		float damageMax$ = m_Go$.Attack.DamageMax + m_Go$.Magic.EvaluateAttackDamageModifierMax(m_Go$, m_Go$);
@@ -91,6 +93,7 @@ state Exploding$
 		// this is for the visual, and to remove the actor
 		if (!Physics.ExplodeGoWithDamage( m_Go$.GetGoid, m_Go$.GetGoid, m_Go$.GetGoid ))
 		{
+			report.generic("JDE: ExplodeGoWithDamage failed\n");
 			GoDb.SMarkGoAndChildrenForDeletion( m_Go$.GetGoid );
 		}
 
@@ -104,6 +107,7 @@ state Exiting$
 {
 	event OnEnterState$
 	{
+		report.generic("JDE: Exiting\n");
 		SiegeFx.ClearVariables( m_Go$.goid );
 
 		m_Job$.MarkForDeletion();

@@ -81,6 +81,8 @@ state RequestAction$
 
 	event OnEnterState$
 	{
+		report.generic("JAOSB: RequestAction\n");
+
 		float m_RangeToTarget$ = m_Go$.mind.PersonalSpaceRange + m_Go$.Attack.AttackRange;
 		m_RangeToTarget$ += m_Target$.go.HasMind() ? m_Target$.go.mind.PersonalSpaceRange : m_Target$.go.aspect.BoundingSphereRadius;
 		
@@ -118,7 +120,11 @@ state Exploding$
 
 		// doing f*ckall damage as damage is set to 0 in actor's [attack]
 		// this is for the visual, and to remove the actor
-		Physics.ExplodeGoWithDamage( m_Go$.Goid, m_Go$.Goid, m_Go$.Goid );
+		if (!Physics.ExplodeGoWithDamage( m_Go$.Goid, m_Go$.Goid, m_Go$.Goid ))
+		{
+			report.generic("JAOSB: ExplodeGoWithDamage failed\n");
+			GoDb.SMarkGoAndChildrenForDeletion( m_Go$.GetGoid );
+		}
 
 		this.CreateTimer( 1, 5.0 );  // Give the explosion a little more time to do its damage
 	}
@@ -131,6 +137,7 @@ state Exiting$
 {
 	event OnEnterState$
 	{
+		report.generic("JAOSB: Exiting\n");
 		SiegeFx.ClearVariables( m_Go$.goid );
 
 		m_Job$.MarkForDeletion();
