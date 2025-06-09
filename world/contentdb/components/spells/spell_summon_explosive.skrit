@@ -34,6 +34,7 @@ Goid summoned_goid$;
 Goid target$;
 Goid caster$;
 float summon_duration$;
+bool removed_caster_state$ = false;
 
 trigger OnGoPreload$
 {
@@ -47,7 +48,12 @@ trigger OnTimer$( 2 )
 {
 	report.generic("SSE: on timer 2\n");
 	SetState CleanUp$;
-} 
+}
+trigger OnTimer$( 4 )
+{
+	report.generic("SSE: on timer 4\n");
+	SetState Exploding$;
+}
 
 event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
@@ -58,15 +64,15 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 		{
 			if ( end_script$ != "" ) {
 				SiegeFx.SRunScript( end_script$, summoned_goid$, summoned_goid$, script_params$, owner.Goid, WE_KILLED );
-			}		
+			}
 		}
-		this.CreateTimer( 2, 1.1 );  // Give the explosion a little time to do its damage
+		this.CreateTimer( 4, .1 );  // forward to Exploding$
 	}
 	if( ( e$ == WE_EXPLODED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
 	{
 		report.generic("SSE: we_exploded\n");
 		// Don't do the un-summon effect here
-		this.CreateTimer( 2, 1.1 );  // Give the explosion a little time to do its damage
+		this.CreateTimer( 4, .1 );  // forward to Exploding$
 	}
 }
 
@@ -224,8 +230,7 @@ state SummonGo$
 		// delete normal version of the spell.
 		SetState Finished$;
 	}
-}							 
-
+}
 
 state ControlSummoned$
 {
@@ -337,6 +342,28 @@ state ControlSummoned$
 	}
 }
 
+state Exploding$
+{
+	event OnEnterState$
+	{
+		report.generic("SSE: Exploding\n");
+
+		// When the summon explodes, remove the generic state right away,
+		// so the caster can summon again.
+		if ( !removed_caster_state$ )
+		{
+			if( caster$.IsValid )
+			{
+				caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
+			}
+		}
+		removed_caster_state$ = true;
+
+		// forward to state CleanUp$
+		this.CreateTimer( 2, 1.0 );  // Give the explosion a little time to do its damage
+	}
+}
+
 state CleanUp$
 {
 	////////////////////
@@ -348,11 +375,15 @@ state CleanUp$
 	{
 		report.generic("SSE: CleanUp\n");
 
-		if( caster$.IsValid )
+		if ( !removed_caster_state$ )
 		{
-			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
+			if( caster$.IsValid )
+			{
+				caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
+			}
 		}
-				
+		removed_caster_state$ = true;
+
 		if( summoned_goid$.isvalid) 
 		{	
 			GoDb.StopWatching( owner.Goid, summoned_goid$);
