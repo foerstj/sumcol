@@ -20,6 +20,9 @@ GoMind	m_Mind$;
 GoBody  m_Body$;
 Job		m_Job$;
 
+int explosion_pos$;
+float damage$;
+
 
 startup state STARTUP$
 {
@@ -58,9 +61,9 @@ state Collapsing$
 		// do it here - in state Explode$ it's too late to calculate these properly
 		float damageMin$ = m_Go$.Attack.DamageMin + m_Go$.Magic.EvaluateAttackDamageModifierMin(m_Go$, m_Go$);
 		float damageMax$ = m_Go$.Attack.DamageMax + m_Go$.Magic.EvaluateAttackDamageModifierMax(m_Go$, m_Go$);
-		float damage$ = Math.RandomFloat( damageMin$, damageMax$ );
+		damage$ = Math.RandomFloat( damageMin$, damageMax$ );
 		report.genericf("Exploding on killed with damage %g\n", damage$);
-		Physics.CreateExplosion( m_Go$.placement.position, m_Go$.Attack.AreaDamageRadius, m_Go$.Physics.ExplosionMagnitude, damage$, m_Go$.Goid, m_Go$.Goid );
+		explosion_pos$ = SiegeFX.AddVariable( m_Go$.placement.position, m_Go$.Goid );  // preserving pos after go is gone
 
 		// Pick a Random animation to used
 		eAnimStance stance$ = m_Go$.inventory.animstance;
@@ -76,12 +79,29 @@ state Explode$
 {
 	event OnEnterState$
 	{
+		// create the explosion to damage the surrounding enemies
+		Physics.CreateExplosion( SiegeFX.GetVariable(explosion_pos$, m_Go$.Goid), m_Go$.Attack.AreaDamageRadius, m_Go$.Physics.ExplosionMagnitude, damage$, m_Go$.Goid, m_Go$.Goid );
+
 		m_Mind$.Clear();
+		// doing f*ckall damage as damage is set to 0 in actor's [attack]
+		// this is for the visual, and to remove the actor
 		if (!Physics.ExplodeGoWithDamage( m_Go$.GetGoid, m_Go$.GetGoid, m_Go$.GetGoid ))
 		{
-			GoDb.SMarkGoAndChildrenForDeletion( m_Go$.GetGoid );	
+			GoDb.SMarkGoAndChildrenForDeletion( m_Go$.GetGoid );
 		}
+
+		this.CreateTimer( 1, 5.0 );  // Give the explosion a little more time to do its damage
+	}
+
+	transition -> Finish$: OnTimer( 1 );
+}
+
+state Finish$
+{
+	event OnEnterState$
+	{
+		SiegeFx.ClearVariables( m_Go$.goid );
+
 		m_Job$.MarkForDeletion();
 	}
 }
-
