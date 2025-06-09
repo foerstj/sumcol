@@ -99,6 +99,7 @@ state Exploding$
 		}
 
 		this.CreateTimer( 1, 1.0 );  // Give the explosion a little time to do its damage
+		// 1s is sufficient for both Proxo and Blazing Elemental (duration = radius / magnitude)
 	}
 
 	transition -> Exiting$: OnTimer( 1 );
