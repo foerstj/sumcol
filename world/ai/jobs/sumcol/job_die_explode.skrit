@@ -62,7 +62,7 @@ state Collapsing$
 	{
 		report.generic("JDE: Collapsing\n");
 
-		// do it here - in state Exploding$ it's too late to calculate these properly
+		// do it here - in state Exploding$ it's too late(?) to calculate these properly
 		float damageMin$ = m_Go$.Attack.DamageMin + m_Go$.Magic.EvaluateAttackDamageModifierMin(m_Go$, m_Go$);
 		float damageMax$ = m_Go$.Attack.DamageMax + m_Go$.Magic.EvaluateAttackDamageModifierMax(m_Go$, m_Go$);
 		damage$ = Math.RandomFloat( damageMin$, damageMax$ );
@@ -84,6 +84,7 @@ state Exploding$
 {
 	event OnEnterState$
 	{
+		report.generic("JDE: Exploding\n");
 		// create the explosion to damage the surrounding enemies
 		report.genericf("Exploding on killed with damage %g, radius %g, magnitude %g\n", damage$, radius$, magnitude$);
 		Physics.CreateExplosion( SiegeFX.GetVariable(explosion_pos$, m_Go$.Goid), radius$, magnitude$, damage$, m_Go$.Goid, m_Go$.Goid );
