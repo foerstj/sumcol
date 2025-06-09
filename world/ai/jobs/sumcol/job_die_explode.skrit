@@ -54,13 +54,13 @@ state Collapsing$
 {
 	transition
 	{
-		-> Explode$:	OnWorldMessage( WE_ANIM_DONE );
-		-> Explode$:	OnWorldMessage( WE_ANIM_DIE );
+		-> Exploding$:	OnWorldMessage( WE_ANIM_DONE );
+		-> Exploding$:	OnWorldMessage( WE_ANIM_DIE );
 	}
 
 	event OnEnterState$
 	{
-		// do it here - in state Explode$ it's too late to calculate these properly
+		// do it here - in state Exploding$ it's too late to calculate these properly
 		float damageMin$ = m_Go$.Attack.DamageMin + m_Go$.Magic.EvaluateAttackDamageModifierMin(m_Go$, m_Go$);
 		float damageMax$ = m_Go$.Attack.DamageMax + m_Go$.Magic.EvaluateAttackDamageModifierMax(m_Go$, m_Go$);
 		damage$ = Math.RandomFloat( damageMin$, damageMax$ );
@@ -78,7 +78,7 @@ state Collapsing$
 	}
 }
 
-state Explode$
+state Exploding$
 {
 	event OnEnterState$
 	{
@@ -97,10 +97,10 @@ state Explode$
 		this.CreateTimer( 1, 5.0 );  // Give the explosion a little more time to do its damage
 	}
 
-	transition -> Finish$: OnTimer( 1 );
+	transition -> Exiting$: OnTimer( 1 );
 }
 
-state Finish$
+state Exiting$
 {
 	event OnEnterState$
 	{
