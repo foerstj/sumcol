@@ -45,6 +45,7 @@ trigger OnGoPreload$
 
 trigger OnTimer$( 2 )
 {
+	report.generic("SSE: on timer 2\n");
 	SetState CleanUp$;
 } 
 
@@ -52,6 +53,7 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 {
 	if( ( e$ == WE_KILLED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
 	{
+		report.generic("SSE: we_killed\n");
 		if( summoned_goid$.IsValidMp) 
 		{
 			if ( end_script$ != "" ) {
@@ -62,6 +64,7 @@ event OnGoHandleCcMessage$( eWorldEvent e$, WorldMessage msg$ )
 	}
 	if( ( e$ == WE_EXPLODED ) && ( summoned_goid$ == msg$.GetSendTo() ) ) 
 	{
+		report.generic("SSE: we_exploded\n");
 		// Don't do the un-summon effect here
 		this.CreateTimer( 2, 5.0 );  // Give the explosion a little more time to do its damage
 	}
@@ -231,6 +234,7 @@ state ControlSummoned$
 	
 	trigger OnGoHandleMessage$( WE_SPELL_EXPIRATION_TIMER_RESET )
 	{
+		report.generic("SSE: we_spell_expiration_timer_reset\n");
 		if( summoned_goid$.IsValidMp) 
 		{
 			if ( end_script$ != "" ) {
@@ -245,6 +249,7 @@ state ControlSummoned$
 	// kill the spell in MP when the client presses the unsummon button without errors occurring.
 	trigger OnGoHandleMessage$( WE_REQ_DEACTIVATE )
 	{
+		report.generic("SSE: we_req_deactivate\n");
 		if( summoned_goid$.IsValidMp) 
 		{
 			if ( end_script$ != "" ) {
@@ -256,6 +261,7 @@ state ControlSummoned$
 	
 	trigger OnTimer$ ( 1 )
 	{
+		report.generic("SSE: on timer 1\n");
 		if( summoned_goid$.IsValidMp) 
 		{
 			if ( end_script$ != "" ) {
@@ -290,6 +296,7 @@ state ControlSummoned$
 
 	event OnEnterState$
 	{
+		report.generic("SSE: ControlSummoned\n");
 		if( !summoned_goid$.isvalid )
 		{
 			SetState CleanUp$;
@@ -339,6 +346,8 @@ state CleanUp$
 	
 	event OnEnterState$
 	{
+		report.generic("SSE: CleanUp\n");
+
 		if( caster$.IsValid )
 		{
 			caster$.Go.Actor.SRemoveGenericState( owner.Go.Magic.CasterStateName );	
@@ -400,6 +409,8 @@ state FinishedOmni$
 	
 	event OnEnterState$
 	{
+		report.generic("SSE: FinishedOmni\n");
+
 		// Get rid of any temporary storage
 		SiegeFx.ClearVariables( owner.goid );
 	
