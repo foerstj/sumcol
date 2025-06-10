@@ -1,0 +1,21 @@
+[t:template,n:sumcol_demo_barrel_current]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Current";
+    [inventory]
+    {
+        [other]
+        {
+            // Standard
+
+            // Non-Standard
+			// elemental
+			il_main = spell_summon_blazing_elemental;
+			il_main = spell_summon_blazing_elemental_hold;
+			// robots
+			il_main = spell_summon_proxo;
+			il_main = spell_summon_proxo_hold;
+        }
+    }
+}

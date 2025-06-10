@@ -6,12 +6,8 @@
 	  p position = 3,0,0,0x9d9c2a2d;
 	}
 }
-[t:sumcol_demo_barrel_new,n:0x0010004e]
+[t:sumcol_demo_barrel_current,n:0x0010004e]
 {
-	[aspect]
-	{
-	  f scale_multiplier = 0.904696;
-	}
 	[placement]
 	{
 	  q orientation = 0,-0.842703,0,0.538378;
