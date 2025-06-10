@@ -1,7 +1,21 @@
+[t:template,n:base_suicide_elemental_good_summon]
+{
+	[attack]
+	{
+		damage_min = 0;
+		damage_max = 0;
+	}
+	[magic]
+	{
+		attack_damage_modifier_min = ((((#src_melee/0.835)*4.2)*1.0)*1)*0.9;
+		attack_damage_modifier_max = ((((#src_melee/0.835)*4.2)*1.0)*1)*1.1;
+	}
+}
+
 [t:template,n:suicide_elemental_good_summon] { specializes = suicide_elemental_good_summon_base; }
 [t:template,n:suicide_elemental_good_summon_base]
 {
-    specializes = suicide_elemental_base;
+    specializes = base_suicide_elemental_good_summon;
 
     doc = "[summon] suicide_elemental (good)";
 	aspect:experience_value = 0;
@@ -19,16 +33,6 @@
 		delete_time = -1;  // Disabling automatic explosion after 15s.
 	}
 
-	[attack]
-	{
-		damage_min = 0;
-		damage_max = 0;
-	}
-	[magic]
-	{
-		attack_damage_modifier_min = ((((#src_melee/0.835)*4.2)*1.0)*1)*0.9;
-		attack_damage_modifier_max = ((((#src_melee/0.835)*4.2)*1.0)*1)*1.1;
-	}
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
 	mind:jat_die = world\ai\jobs\sumcol\job_die_explode.skrit;
 }

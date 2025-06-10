@@ -1,11 +1,6 @@
-[t:template,n:proxo_summon] { specializes = proxo_summon_base; }
-[t:template,n:proxo_summon_base]
+[t:template,n:base_proxo_summon]
 {
 	specializes = proxo_base;
-
-	doc = "[summon] robot_proxo";
-	aspect:experience_value = 0;
-	physics:explode_when_killed = false;
 
 	[attack]
 	{
@@ -17,6 +12,17 @@
 		attack_damage_modifier_min = ((((#src_melee/0.755)*4.2)*1.0)*5.0)*1;
 		attack_damage_modifier_max = ((((#src_melee/0.755)*4.2)*1.0)*5.0)*1;
 	}
+}
+
+[t:template,n:proxo_summon] { specializes = proxo_summon_base; }
+[t:template,n:proxo_summon_base]
+{
+	specializes = base_proxo_summon;
+
+	doc = "[summon] robot_proxo";
+	aspect:experience_value = 0;
+	physics:explode_when_killed = false;
+
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit?damage_all=true;
 	mind:jat_die = world\ai\jobs\sumcol\job_die_explode.skrit?damage_all=true;
 }
