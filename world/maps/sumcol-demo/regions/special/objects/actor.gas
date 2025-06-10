@@ -29,6 +29,22 @@
 	  p position = -2.07579,-9.53674e-007,-0.148937,0x5f07aa31;
 	}
 }
+[t:sumcol_krug_dummy_300,n:0x0050000b]
+{
+	[aspect]
+	{
+	  b is_invincible = true;
+	}
+	[mind]
+	{
+		movement_orders = mo_hold;
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 2,0,0,0x79a2fc28;
+	}
+}
 [t:tree_of_xp_1m,n:0x00500007]
 {
 	[placement]
