@@ -117,7 +117,8 @@ state Exploding$
 
 		// create the explosion to damage the surrounding enemies
 		report.genericf("Exploding to attack with damage %g, radius %g, magnitude %g\n", damage$, radius$, magnitude$);
-		Physics.CreateExplosion( SiegeFX.GetVariable(explosion_pos$, m_Go$.Goid), radius$, magnitude$, damage$, m_Go$.Goid, m_Go$.Goid );
+		int explosion$ = Physics.CreateExplosion( SiegeFX.GetVariable(explosion_pos$, m_Go$.Goid), radius$, magnitude$, damage$, m_Go$.Goid, m_Go$.Goid );
+		Physics.SetDamageAll( explosion$, true );
 
 		// doing f*ckall damage as damage is set to 0 in actor's [attack]
 		// this is for the visual, and to remove the actor
