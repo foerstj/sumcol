@@ -1,4 +1,4 @@
-[t:template,n:base_suicide_elemental_good_summon]
+[t:template,n:base_suicide_elemental_summon]
 {
 	specializes = suicide_elemental_base;
 

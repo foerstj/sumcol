@@ -1,7 +1,7 @@
 [t:template,n:suicide_elemental_good_summon] { specializes = suicide_elemental_good_summon_base; }
 [t:template,n:suicide_elemental_good_summon_base]
 {
-    specializes = base_suicide_elemental_good_summon;
+    specializes = base_suicide_elemental_summon;
 
     doc = "[summon] suicide_elemental (good)";
 	aspect:experience_value = 0;
