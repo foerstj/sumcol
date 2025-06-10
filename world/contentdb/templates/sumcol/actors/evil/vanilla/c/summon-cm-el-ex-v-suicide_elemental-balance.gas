@@ -1,5 +1,7 @@
 [t:template,n:base_suicide_elemental_good_summon]
 {
+	specializes = suicide_elemental_base;
+
 	[attack]
 	{
 		damage_min = 0;
