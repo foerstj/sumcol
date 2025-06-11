@@ -18,6 +18,62 @@
 	{
 		delete_time = -1;  // Disabling automatic explosion after 15s.
 	}
+	[body]
+	{
+		avg_move_velocity = 6.140000;
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_ecm_fe_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] 
+				{ 
+					00 = at; 
+					01 = at-02;
+				}
+				[anim_durations]
+				{
+					fs0 = 0.125;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=ds; }  // EDITED was 00=di - don't want death animation before exploding on killed
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	[actor]
+	{
+		[skills]
+		{
+			strength =  23, 0;
+			intelligence =  15, 0;
+			dexterity =  30, 0;
+            melee =         70, 0;  // EDITED was 30, 0 - better damage in LoA when exploding on killed
+		}
+	}
 
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
 	mind:jat_die = world\ai\jobs\sumcol\job_die_explode.skrit;

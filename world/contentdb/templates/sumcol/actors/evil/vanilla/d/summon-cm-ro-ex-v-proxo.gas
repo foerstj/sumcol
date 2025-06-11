@@ -7,6 +7,17 @@
 	aspect:experience_value = 0;
 	physics:explode_when_killed = false;
 
+	[actor]
+	{
+		[skills]
+		{
+			strength =  	7, 0;
+			intelligence =  	2, 0;
+			dexterity =  	3, 0;
+			melee =  		40,  0;  // EDITED was 3, 0 - better damage in LoA when exploding on killed
+		}
+	}
+
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit?damage_all=true;
 	mind:jat_die = world\ai\jobs\sumcol\job_die_explode.skrit?damage_all=true;
 }
