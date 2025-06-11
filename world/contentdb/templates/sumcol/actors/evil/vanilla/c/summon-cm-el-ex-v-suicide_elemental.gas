@@ -74,6 +74,10 @@
             melee =         70, 0;  // EDITED was 30, 0 - better damage in LoA when exploding on killed
 		}
 	}
+	[aspect]
+	{
+		[voice] { /* ERASE DEFAULT DIE VOICE */ }
+	}
 
 	mind:jat_attack_object_melee = world\ai\jobs\sumcol\job_attack_object_suicide_bomb.skrit;
 	mind:jat_die = world\ai\jobs\sumcol\job_die_explode.skrit;
