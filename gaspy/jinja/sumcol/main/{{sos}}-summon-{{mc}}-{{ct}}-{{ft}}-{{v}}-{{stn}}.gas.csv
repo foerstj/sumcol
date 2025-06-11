@@ -272,7 +272,7 @@ spell;googore;googore;;a;Googore;2;nm;an;st;v;;63;27000;0.5;0.9;;0.9;;;;;;170;18
 scroll;fury_spawn;fury_lesser_01;;a;Fury Spawn;2;cm;de;mb;v;;65;30000;13;;;1.3;;;0.7;;;;;1;2.7;;;;Custom dmgvol spell
 spell;skeleton_mercenary;skeleton_mercenary;good;a;Skeleton Mercenary;1.5;cm;un;std;v;;65;120000;6;1.05;;;;;;35;58;;;2.5;1;;;;
 spell;blazing_elemental;suicide_elemental;good;a;Blazing Elemental;1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;;2;0.8;;;;Custom spell skrit
-spell;blazing_elemental_hold;suicide_elemental_hold;good;a;Blazing Elemental (hold);1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;;2;0.8;;;blazing_elemental;Custom spell skrit
+spell;blazing_elemental_hold;suicide_elemental_hold;good;a;Blazing Elemental (hold);1.5;cm;el;ex;v;;84;58000;1;1;;;;;;;;;;2;0.1;;;blazing_elemental;Custom spell skrit
 spell;blue_drake;drake_blue;;a;Blue Drake;2;nm;an;std;v;;56;99000;4;1.1;;1.1;;;;;;145;155;1.5;2.5;;;;
 scroll;infested_larch;larch_boss_01;;an;Infested Larch;2;nm;pl;mb;v;;55;15000;13;1.35;;;;;;;;;;2;7.5;;;;
 scroll;dark_wraith_mage;wraith_mage_boss_01;;a;Dark Wraith Mage;1.5;cm;un;mb;v;;64;29000;13;;;1.15;;;0.5;;;120;140;2.2;2.4;;;;Spell shoots 2 trackballs
