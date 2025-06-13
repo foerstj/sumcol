@@ -6,8 +6,8 @@
 
 	[frustum]
 	{
-		frustum_width		= 70.0f;
-		frustum_height		= 70.0f;
+		frustum_width		= 60.0f;
+		frustum_height		= 60.0f;
 	}
 
 	[fog]
