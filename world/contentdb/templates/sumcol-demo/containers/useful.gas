@@ -61,10 +61,19 @@
 			il_main = spell_healing_hands;
 			il_main = spell_healing_wind;
 			il_main = spell_major_heal;
+			il_main = spell_battle_healing;
 
             // rings to boost mana
 			il_main = sumcol_ring_mana;
 			il_main = sumcol_ring_mana_regen;
         }
+		[pcontent]
+		{
+			[gold*]
+			{
+				max = 9999999;
+				min = 9999999;
+			}
+		}
     }
 }
