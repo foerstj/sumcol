@@ -49,7 +49,8 @@
 			{
 				alteration = alter_life;
 				description = "coil heal spell";
-				value = (19+((#combat_magic+1)*6))*0.8;  // from spell_battle_healing
+				// twice as much as spell_battle_healing - the coil's anim is slow
+				value = ((19+((#combat_magic+1)*6))*0.8)*2;
 			}
 		}
     }
