@@ -1,10 +1,14 @@
 [t:template,n:coil_gob_03_summon]
 {
-    specializes = coil_gob_03_base;
+	specializes = coil_gob_03_base;
 
 	doc = "[summon] coil_gob_03";
 	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
+	physics:explode_when_killed = false;
+	[generator_in_object]
+	{
+		spawn_chance = 0.0;
+	}
 
 	[inventory]
 	{
@@ -19,5 +23,5 @@
 		jat_cast	    				= world\ai\jobs\common\job_cast.skrit
 			?no_moveturn				= true;
 		jat_fidget = world\ai\jobs\sumcol\job_fidget_stationary_heal.skrit;  // use the heal spell
-    }
+	}
 }
