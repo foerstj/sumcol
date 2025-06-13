@@ -49,8 +49,7 @@
 			{
 				alteration = alter_life;
 				description = "coil heal spell";
-				value = ((#magic+4)*12);
-                duration = 1.0;
+				value = (19+((#combat_magic+1)*6))*0.8;  // from spell_battle_healing
 			}
 		}
     }
