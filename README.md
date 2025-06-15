@@ -16,23 +16,23 @@ Assignment to Nature vs. Combat Magic is done based on the creature, roughly fol
 
 ## Installation
 
-If you use DSLOA, simply put the "Summons Collection.dsres" file into the DSLOA folder. It contains all summons.
+If you use DSLOA, put the "Summons Collection LoA" files into the DSLOA folder. They are split by functional type (Standard / Non-Standard) and by DS version of the creatures (Vanilla = creatures from the Kingdom of Ehb & the Utraean Peninsula / LoA = creatures from the LoA map).
 
-*Alternatively,* pick from the partial .dsres files, which are split by functional type (standard / non-standard) and by DS version (vanilla / LoA).
+If you use vanilla DS1, put the "Summons Collection Vanilla" files into the Resources folder. They contain the Vanilla creatures (from the Kingdom of Ehb & the Utraean Peninsula), and are split by functional type (Standard / Non-Standard).
 
-If you use vanilla DS, use the partial .dsres files to only install the vanilla summons.
+Don't use both at the same time, and don't use the LoA builds with vanilla DS1. The builds are different because the engines calculate damage differently
 
 Spells are added to PContent, which means they appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
 ### Compatibility
-- If you play with vanilla DS, use only the vanilla dsres - LoA summons will not work properly.
-- This mod is compatible with Unlimited Summons, except for the explosive summons (Proxo) and the Doppelgangers, which can still only be summoned once at a time.
+- If you play with vanilla DS, use only the Vanilla builds - LoA creatures would not work properly, and balancing of KoE+UP creatures would be off.
+- This mod is compatible with Unlimited Summons, except for the explosive summons (Proxo & Blazing Elemental) and the Doppelgangers, which can still only be summoned once at a time.
 
 
 ## Features
 
-- DS Versions: Both Vanilla and LoA
+- DS Versions: Both Vanilla and LoA (incl. separate builds for proper balancing)
 - Magic Classes: Both Combat Magic and Nature Magic
 - Creature Types: All sorts of creatures are supported - humanoids, animals, demonic creatures, plants, elementals, robots, and undead.
   Water creatures were omitted because summoning a Shrack or Hydrack on land would be weird.
@@ -79,6 +79,11 @@ Level (melee/ranged/CM): based on caster's level, with a dip around level 50, to
 Strength/Dexterity/Intelligence: based on caster's level.\
 Mana: based on caster's level.
 
+LoA vs. Vanilla builds:\
+Some creatures have an additional attack balancing factor to counter certain properties of their attacks. For example, the Ice Mage's attack shoots 3 ice shards, each of which deals the configured damage. So their damage is multiplied by 1/3, to match the intended damage per attack.\
+However, the Vanilla engine would apply these factors two times, resulting in the Ice Mage dealing only 1/3 of the intended damage per attack.\
+So, different builds are required to make the balancing work for both. In the Vanilla build, the square roots of the attack balancing factors are applied, and in the LoA builds, the factors are applied directly.
+
 
 ## Note
 
@@ -88,4 +93,4 @@ But fear not, I made a fix for it! Have a look at the minimod "no xp limits - fi
 
 ## Attribution
 
-Made by me with lots of testing support from Estaf.
+Made by me with lots of testing support from Estaf, and lots of help from the modders on the Kingdom of Ehb Discord.
