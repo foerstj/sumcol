@@ -16,11 +16,11 @@ Assignment to Nature vs. Combat Magic is done based on the creature, roughly fol
 
 ## Installation
 
-If you use DSLOA, put the "Summons Collection LoA" files into the DSLOA folder. They are split by functional type (Standard / Non-Standard) and by DS version of the creatures (Vanilla = creatures from the Kingdom of Ehb & the Utraean Peninsula / LoA = creatures from the LoA map).
+If you use DSLOA, put the "Summons Collection LoA" files into the DSLOA folder. They are split by functional type (Standard / Non-Standard) and by DS version of the creatures (KoE+UP = creatures from the Kingdom of Ehb & the Utraean Peninsula / LoA = creatures from the LoA map).
 
 If you use vanilla DS1, put the "Summons Collection Vanilla" files into the Resources folder. They contain the Vanilla creatures (from the Kingdom of Ehb & the Utraean Peninsula), and are split by functional type (Standard / Non-Standard).
 
-Don't use both at the same time, and don't use the LoA builds with vanilla DS1. The builds are different because the engines calculate damage differently
+Don't use both at the same time, and don't use the LoA builds with vanilla DS1. The builds are different because the engines calculate damage differently.
 
 Spells are added to PContent, which means they appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
