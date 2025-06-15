@@ -31,9 +31,17 @@ if "%target%"=="vanilla" (
   set dest_map=Maps
 )
 
+set target_cs=
+if "%target%"=="vanilla" (
+  set target_cs=Vanilla
+)
+if "%target%"=="loa" (
+  set target_cs=LoA
+)
+
 :: Compile main resource files - split by DS version + functional type std/non-std
-call :build_partial "std-v" "Vanilla Standard"
-call :build_partial2 "v" "std" "Vanilla Non-Standard"
+call :build_partial "std-v" "KoE+UP Standard"
+call :build_partial2 "v" "std" "KoE+UP Non-Standard"
 if "%target%"=="loa" (
   call :build_partial "std-loa" "LoA Standard"
   call :build_partial2 "loa" "std" "LoA Non-Standard"
@@ -77,7 +85,7 @@ exit /b %errorlevel%
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
-  set title=%res_cs% - %name%
+  set title=%res_cs% %target_cs% - %name% Creatures
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
@@ -94,7 +102,7 @@ exit /b 0
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /S
-  set title=%res_cs% - %name%
+  set title=%res_cs% %target_cs% - %name% Creatures
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
