@@ -9,23 +9,19 @@ set res_cs=Summons Collection
 set ds=%DungeonSiege%
 
 :: Cleanup resources so as not to confuse Siege Editor
-:: all-in-one dsres
-del "%ds%\DSLOA\%res_cs%.dsres"
+:: partial builds
+del "%ds%\DSLOA\%res_cs% LoA - *.dsres"
 :: translation
 del "%ds%\DSLOA\%res_cs%.*.dsres"
-:: partial builds
-del "%ds%\DSLOA\%res_cs% - *.dsres"
 :: demo map
 del "%ds%\DSLOA\%map_cs%.dsres"
 del "%ds%\DSLOA\%map_cs%.dsmap"
 
 :: Same for Vanilla
-:: all-in-one dsres
-del "%ds%\Resources\%res_cs%.dsres"
+:: partial builds
+del "%ds%\Resources\%res_cs% Vanilla - *.dsres"
 :: translation
 del "%ds%\Resources\%res_cs%.*.dsres"
-:: partial builds
-del "%ds%\Resources\%res_cs% - *.dsres"
 :: demo map
 del "%ds%\Resources\%map_cs%.dsres"
 del "%ds%\Maps\%map_cs%.dsmap"
