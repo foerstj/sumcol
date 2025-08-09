@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Gray Wolf";
         description = "Summons a Gray Wolf to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

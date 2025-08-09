@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Phrak Ballista";
         description = "Summons a Phrak Ballista to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

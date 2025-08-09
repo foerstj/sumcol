@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Cicatrix's Skeleton Fighter";
         description = "Summons a Cicatrix's Skeleton Fighter to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

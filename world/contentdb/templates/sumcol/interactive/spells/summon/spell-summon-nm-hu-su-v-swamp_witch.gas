@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Swamp Witch";
         description = "Summons a Swamp Witch to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

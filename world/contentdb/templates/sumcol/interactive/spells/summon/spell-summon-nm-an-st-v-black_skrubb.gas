@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Black Skrubb";
         description = "Summons a Black Skrubb to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

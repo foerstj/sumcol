@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Braak Mage";
         description = "Summons a Braak Mage to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Stalagnid";
         description = "Summons a Stalagnid to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

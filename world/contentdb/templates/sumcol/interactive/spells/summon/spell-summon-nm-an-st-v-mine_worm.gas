@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Mine Worm";
         description = "Summons a Mine Worm to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

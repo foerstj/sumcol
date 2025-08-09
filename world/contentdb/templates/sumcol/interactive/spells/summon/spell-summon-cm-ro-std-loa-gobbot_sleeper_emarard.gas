@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Gobbot Sleeper";
         description = "Summons a Gobbot Sleeper to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

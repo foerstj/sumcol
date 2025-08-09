@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Seck Grunt";
         description = "Summons a Seck Grunt to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

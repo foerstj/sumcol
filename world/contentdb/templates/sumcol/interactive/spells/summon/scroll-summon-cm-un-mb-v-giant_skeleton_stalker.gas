@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Giant Skeleton Stalker";
         description = "Summons a Giant Skeleton Stalker to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

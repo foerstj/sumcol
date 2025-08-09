@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Swirling Midges";
         description = "Summons Swirling Midges to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

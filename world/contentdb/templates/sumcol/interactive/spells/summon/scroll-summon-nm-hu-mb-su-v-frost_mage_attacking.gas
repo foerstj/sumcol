@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Frost Mage (Attacking)";
         description = "Summons a Frost Mage (Attacking) to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

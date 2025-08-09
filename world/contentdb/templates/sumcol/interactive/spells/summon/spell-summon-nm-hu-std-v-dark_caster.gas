@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Dark Caster";
         description = "Summons a Dark Caster to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

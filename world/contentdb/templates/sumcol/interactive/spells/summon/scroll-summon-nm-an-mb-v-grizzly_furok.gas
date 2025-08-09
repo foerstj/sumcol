@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Grizzly Furok";
         description = "Summons a Grizzly Furok to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

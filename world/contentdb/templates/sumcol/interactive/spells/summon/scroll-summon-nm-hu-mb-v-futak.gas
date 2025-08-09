@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Futak the Trainer";
         description = "Summons Futak the Trainer to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

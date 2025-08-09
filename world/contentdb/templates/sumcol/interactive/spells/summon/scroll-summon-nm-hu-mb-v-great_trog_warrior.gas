@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Great Trog Warrior";
         description = "Summons a Great Trog Warrior to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

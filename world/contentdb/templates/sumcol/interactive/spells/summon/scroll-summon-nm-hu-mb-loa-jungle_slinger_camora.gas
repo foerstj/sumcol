@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Jungle Slinger Camora";
         description = "Summons a Jungle Slinger Camora to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

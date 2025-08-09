@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Bog Beast";
         description = "Summons a Bog Beast to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

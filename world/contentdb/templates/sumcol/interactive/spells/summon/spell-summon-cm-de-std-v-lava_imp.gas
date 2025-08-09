@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Lava Imp";
         description = "Summons a Lava Imp to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

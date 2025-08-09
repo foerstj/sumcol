@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Automaton Blade";
         description = "Summons an Automaton Blade to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

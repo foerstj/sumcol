@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Hassat Caster";
         description = "Summons a Hassat Caster to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

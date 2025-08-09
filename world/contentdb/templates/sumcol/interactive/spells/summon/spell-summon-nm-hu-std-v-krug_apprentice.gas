@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Krug Apprentice";
         description = "Summons a Krug Apprentice to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

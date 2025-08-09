@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Green Shard";
         description = "Summons a Green Shard to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

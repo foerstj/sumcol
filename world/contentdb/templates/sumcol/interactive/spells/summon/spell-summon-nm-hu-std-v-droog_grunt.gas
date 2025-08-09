@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Droog Grunt";
         description = "Summons a Droog Grunt to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

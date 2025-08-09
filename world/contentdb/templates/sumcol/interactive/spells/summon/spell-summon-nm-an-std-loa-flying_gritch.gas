@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Flying Gritch";
         description = "Summons a Flying Gritch to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

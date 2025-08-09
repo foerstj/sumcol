@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Spewing Chitterskrag";
         description = "Summons a Spewing Chitterskrag to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

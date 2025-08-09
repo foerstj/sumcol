@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Farm Skrubb";
         description = "Summons a Farm Skrubb to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

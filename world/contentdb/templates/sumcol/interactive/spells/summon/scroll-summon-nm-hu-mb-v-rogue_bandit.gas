@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Rogue Bandit";
         description = "Summons a Rogue Bandit to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

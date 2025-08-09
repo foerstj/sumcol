@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Weathered Automaton";
         description = "Summons a Weathered Automaton to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

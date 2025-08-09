@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Skeleton Ranger";
         description = "Summons a Skeleton Ranger to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

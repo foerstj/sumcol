@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Gobbot Igniter";
         description = "Summons a Gobbot Igniter to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

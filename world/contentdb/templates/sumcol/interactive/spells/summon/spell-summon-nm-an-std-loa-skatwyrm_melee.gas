@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Swarmling Drone";
         description = "Summons a Swarmling Drone to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

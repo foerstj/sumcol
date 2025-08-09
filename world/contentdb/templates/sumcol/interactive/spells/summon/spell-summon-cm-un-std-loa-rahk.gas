@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Rahk";
         description = "Summons a Rahk to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

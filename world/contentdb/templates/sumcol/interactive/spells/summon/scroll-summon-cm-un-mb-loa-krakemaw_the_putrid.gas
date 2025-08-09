@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Krakemaw the Putrid";
         description = "Summons Krakemaw the Putrid to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

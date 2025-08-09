@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Mhulliq";
         description = "Summons a Mhulliq to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

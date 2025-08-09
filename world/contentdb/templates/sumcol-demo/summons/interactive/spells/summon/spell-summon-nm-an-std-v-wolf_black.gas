@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Black Wolf (SumCol Demo)";
         description = "Summons a Black Wolf to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

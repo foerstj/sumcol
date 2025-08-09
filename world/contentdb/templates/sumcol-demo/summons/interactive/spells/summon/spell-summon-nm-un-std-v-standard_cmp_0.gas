@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Dummy Wraith Mage Multi-Projectile (0-20) (SumCol Demo)";
         description = "Summons a Dummy Wraith Mage Multi-Projectile (0-20) to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

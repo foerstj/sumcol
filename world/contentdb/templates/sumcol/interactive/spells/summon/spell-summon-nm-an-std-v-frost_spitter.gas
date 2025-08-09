@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Frost Spitter";
         description = "Summons a Frost Spitter to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

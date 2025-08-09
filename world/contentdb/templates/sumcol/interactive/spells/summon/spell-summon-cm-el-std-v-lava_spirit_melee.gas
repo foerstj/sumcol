@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Lava Spirit Fighter";
         description = "Summons a Lava Spirit Fighter to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

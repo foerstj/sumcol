@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Mucosa Predator (SumCol Demo)";
         description = "Summons a Mucosa Predator to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

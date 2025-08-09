@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Molten Drake";
         description = "Summons a Molten Drake to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

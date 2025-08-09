@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Skeleton Mercenary";
         description = "Summons a Skeleton Mercenary to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Scorpiot Slasher";
         description = "Summons a Scorpiot Slasher to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

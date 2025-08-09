@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Large Twisted Mucosa";
         description = "Summons a Large Twisted Mucosa to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

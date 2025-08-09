@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Scorpiot Gunner (Zap RCannon)";
         description = "Summons a Scorpiot Gunner (Zap RCannon) to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

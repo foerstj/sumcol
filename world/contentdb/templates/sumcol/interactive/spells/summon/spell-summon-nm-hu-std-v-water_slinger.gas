@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Water Slinger";
         description = "Summons a Water Slinger to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

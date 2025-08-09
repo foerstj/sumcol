@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Swarmling Queen";
         description = "Summons a Swarmling Queen to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

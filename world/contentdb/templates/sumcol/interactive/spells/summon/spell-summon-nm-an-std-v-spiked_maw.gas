@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Spiked Maw";
         description = "Summons a Spiked Maw to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

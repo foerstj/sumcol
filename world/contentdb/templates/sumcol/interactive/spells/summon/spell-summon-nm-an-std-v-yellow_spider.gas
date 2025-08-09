@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Yellow Spider";
         description = "Summons a Yellow Spider to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

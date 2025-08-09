@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Hulking Gremal";
         description = "Summons a Hulking Gremal to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

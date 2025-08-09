@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Proxo";
         description = "Summons a Proxo to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Zaurask Seer";
         description = "Summons a Zaurask Seer to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

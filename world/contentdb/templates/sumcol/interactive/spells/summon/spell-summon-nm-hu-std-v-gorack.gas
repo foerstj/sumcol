@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Gorack";
         description = "Summons a Gorack to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

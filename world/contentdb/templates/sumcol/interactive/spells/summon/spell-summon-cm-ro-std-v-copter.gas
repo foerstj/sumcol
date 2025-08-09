@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Copter";
         description = "Summons a Copter to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

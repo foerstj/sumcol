@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Seck High Mage";
         description = "Summons a Seck High Mage to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

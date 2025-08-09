@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Blazing Elemental (hold)";
         description = "Summons a Blazing Elemental (hold) to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

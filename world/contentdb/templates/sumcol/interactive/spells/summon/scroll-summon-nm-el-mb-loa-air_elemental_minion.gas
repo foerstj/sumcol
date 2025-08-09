@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Air Elemental Minion";
         description = "Summons an Air Elemental Minion to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

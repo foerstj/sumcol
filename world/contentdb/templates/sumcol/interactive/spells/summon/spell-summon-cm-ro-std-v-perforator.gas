@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Perforator";
         description = "Summons a Perforator to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

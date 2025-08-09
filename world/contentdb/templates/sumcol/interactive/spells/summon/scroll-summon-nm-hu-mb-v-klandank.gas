@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Klandank the Krug";
         description = "Summons Klandank the Krug to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

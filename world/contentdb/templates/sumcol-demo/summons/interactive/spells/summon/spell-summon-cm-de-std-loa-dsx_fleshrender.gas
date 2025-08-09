@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Fleshrender (SumCol Demo)";
         description = "Summons a Fleshrender to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

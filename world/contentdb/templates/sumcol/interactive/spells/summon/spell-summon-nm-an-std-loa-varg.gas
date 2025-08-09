@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Varg";
         description = "Summons a Varg to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

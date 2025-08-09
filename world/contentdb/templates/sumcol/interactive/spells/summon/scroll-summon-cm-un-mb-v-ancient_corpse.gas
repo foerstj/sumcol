@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Ancient Corpse";
         description = "Summons an Ancient Corpse to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

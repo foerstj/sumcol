@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Ice Warrior";
         description = "Summons an Ice Warrior to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

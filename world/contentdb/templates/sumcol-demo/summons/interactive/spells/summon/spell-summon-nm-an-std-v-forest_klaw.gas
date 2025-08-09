@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Forest Klaw (SumCol Demo)";
         description = "Summons a Forest Klaw to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,6 +12,7 @@
     {
         screen_name = "Summon Googore Grub";
         description = "Summons a Googore Grub to guard the Caster.";
+        membership = spells_summon;  // for imbued spellbook support
     }
     [gui]
     {
