@@ -90,7 +90,7 @@ So, different builds are required to make the balancing work for both. In the Va
 The functionality for gaining experience from the summon's damage is broken in the Siege Engine. Over-simplified, it only works for Combat Magic summons with ranged attacks, e.g. Jade Gargoyle. Which sucks, especially for Nature Mages - and also prohibits using this mod to play a campaign as a "summoner".\
 But fear not, I made a fix for it! Have a look at the minimod "no xp limits - fixes summons xp".
 
-LoA features imbued spell books with bonuses for certain spell categories, like for example the Spell Book of Convening which reduces the mana cost of summon spells by 10%. The spells of each category are specified explicitly, which is why they don't work for custom spells.
+LoA features imbued spell books with bonuses for certain spell categories, like for example the Spell Book of Convening which reduces the mana cost of summon spells by 10%. The spells of each category are specified explicitly, which is why they don't work for custom spells.\
 But fear not, I made a fix for it! Have a look at the minimod "extended-imbued-spellbook-support".
 
 
