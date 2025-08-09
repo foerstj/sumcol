@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Skick (SumCol Demo)";
         description = "Summons a Skick to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

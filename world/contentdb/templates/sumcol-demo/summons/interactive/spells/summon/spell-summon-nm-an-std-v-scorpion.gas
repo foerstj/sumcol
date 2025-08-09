@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Scorpion (SumCol Demo)";
         description = "Summons a Scorpion to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

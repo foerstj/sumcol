@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Dummy Wraith Archer (70-90) (SumCol Demo)";
         description = "Summons a Dummy Wraith Archer (70-90) to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

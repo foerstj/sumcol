@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Zepheryl (SumCol Demo)";
         description = "Summons a Zepheryl to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Green Drake (SumCol Demo)";
         description = "Summons a Green Drake to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

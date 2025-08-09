@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Slag (SumCol Demo)";
         description = "Summons a Slag to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

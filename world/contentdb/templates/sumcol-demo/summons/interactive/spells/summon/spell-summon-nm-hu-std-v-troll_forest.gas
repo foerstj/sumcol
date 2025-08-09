@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Forest Troll (SumCol Demo)";
         description = "Summons a Forest Troll to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

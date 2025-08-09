@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Fire Elemental (SumCol Demo)";
         description = "Summons a Fire Elemental to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

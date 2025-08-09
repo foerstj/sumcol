@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Dummy Wraith Fighter (20-40) (SumCol Demo)";
         description = "Summons a Dummy Wraith Fighter (20-40) to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

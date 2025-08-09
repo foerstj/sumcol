@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Lava Spirit (SumCol Demo)";
         description = "Summons a Lava Spirit to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

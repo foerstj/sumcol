@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Jade Gargoyle (SumCol Demo)";
         description = "Summons a Jade Gargoyle to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

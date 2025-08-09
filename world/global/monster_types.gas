@@ -399,7 +399,10 @@
 	[group*]
 		{
 			name="spells_summon";
-			[membership] {}
+			[membership]
+			{
+				* = spells_summon;  // ADDED: SumCol
+			}
 			[templates]
 				{
 					* = spell_summon_clone;

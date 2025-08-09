@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Deadly Armor (SumCol Demo)";
         description = "Summons Deadly Armor to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {

@@ -13,6 +13,7 @@
     {
         screen_name = "Summon Krug Dog Skeleton (SumCol Demo)";
         description = "Summons a Krug Dog Skeleton to guard the Caster.";
+        membership = spells_summon;
     }
     [gui]
     {
