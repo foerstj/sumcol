@@ -37,7 +37,7 @@
     {
         [other]
         {
-            // some additional potions
+			// some additional potions
 			il_main = potion_health_super;
 			il_main = potion_health_super;
 			il_main = potion_health_super;
@@ -49,7 +49,7 @@
 			il_main = potion_mana_super;
 			il_main = potion_mana_super;
 
-            // best-of-breed attack spells
+			// best-of-breed attack spells
 			il_main = spell_flash;
 			il_main = spell_iceblast;
 			il_main = spell_icefury;
@@ -57,15 +57,18 @@
 			il_main = spell_fireball;
 			il_main = spell_bomb;
 
-            // healing spells
+			// healing spells
 			il_main = spell_healing_hands;
 			il_main = spell_healing_wind;
 			il_main = spell_major_heal;
 			il_main = spell_battle_healing;
 
-            // rings to boost mana
+			// rings to boost mana
 			il_main = sumcol_ring_mana;
 			il_main = sumcol_ring_mana_regen;
+
+			// spellbook
+			il_main = #spellbook/+ofsummoning;
         }
 		[pcontent]
 		{
