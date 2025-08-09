@@ -45,6 +45,7 @@ call :build_partial2 "v" "std" "KoE+UP Non-Standard"
 if "%target%"=="loa" (
   call :build_partial "std-loa" "LoA Standard"
   call :build_partial2 "loa" "std" "LoA Non-Standard"
+  call .\build-loa-spellbook.bat
 )
 
 :: Compile translation all-in-one resource file
