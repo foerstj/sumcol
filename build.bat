@@ -42,6 +42,7 @@ if "%target%"=="loa" (
 :: Compile main resource files - split by DS version + functional type std/non-std
 call :build_partial "std-v" "KoE+UP Standard"
 call :build_partial2 "v" "std" "KoE+UP Non-Standard"
+call :build_partial "yh" "Yesterhaven"
 if "%target%"=="loa" (
   call :build_partial "std-loa" "LoA Standard"
   call :build_partial2 "loa" "std" "LoA Non-Standard"
