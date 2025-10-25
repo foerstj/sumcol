@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 294
+SUMMONS COLLECTION CREATURES: 297
 
 Vanilla Standard Creatures: 119
 - Animals: 30
@@ -192,6 +192,27 @@ Vanilla Non-Standard Creatures: 56
   - Bile Lunger
   - Droog Captain
   - Ferocious Braak
+
+Yesterhaven Standard Creatures: 2
+- Animals: 2
+  - Alpine Phrak
+  - Ice Phrak
+- Elementals: 0
+- Undead: 0
+- Plants: 0
+- Demonics: 0
+- Robots: 0
+- Humanoids: 0
+
+Yesterhaven Non-Standard Creatures: 1
+- Animals: 1
+  - Ice Phrak Terror
+- Elementals: 0
+- Undead: 0
+- Plants: 0
+- Demonics: 0
+- Robots: 0
+- Humanoids: 0
 
 LoA Standard Creatures: 97
 - Animals: 29

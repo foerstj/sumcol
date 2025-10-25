@@ -55,6 +55,20 @@
     }
 }
 
+[t:template,n:sumcol_demo_barrel_scroll_spells_yesterhaven]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Scrolls as Spells - Yesterhaven";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = test_spell_summon_ice_phrak_terror;
+        }
+    }
+}
+
 [t:template,n:sumcol_demo_barrel_scroll_spells_loa]
 {
     specializes = sumcol_demo_base_barrel;

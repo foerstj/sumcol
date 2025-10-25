@@ -5,8 +5,10 @@ scroll;yellow_eye;dsx_bear_snow;;;Yellow Eye;2.5;nm;an;mb;loa;;4;12;13;1.3;;;;;;
 scroll;cicatrix_skeleton_melee;dsx_skeleton_cicatrix_minion_melee;;a;Cicatrix's Skeleton Fighter;1.5;cm;un;mb;loa;;30;4800;14;1.2;;;;;;55;63;;;2;3;;;;
 scroll;cicatrix_skeleton_ranged;dsx_skeleton_cicatrix_minion_ranged;;a;Cicatrix's Skeleton Archer;1.5;cm;un;mb;loa;;30;6000;13;;1.2;;;;;32;45;;;2;3;;;;
 spell;phrak;phrak;;a;Phrak;0.75;nm;an;std;v;;1;30;6;0.85;;;;;;;;;;2;0.4;;;;
+spell;alpine_phrak;gpg_phrak;;an;Alpine Phrak;0.75;nm;an;std;yh;;1;30;6;0.85;;;;;;;;;;2;0.4;;;;
 spell;krug_scavenger;krug_scavenger;;a;Krug Scavenger;1.5;nm;hu;std;v;x;6;96;7;0.95;;;;;;2;5;;;1;0.9;;;;
 spell;phrak_piercer;phrak_piercer;;a;Phrak Piercer;0.75;nm;an;std;v;;2;48;6;;;0.8;;;;;;3;5;2;0.4;;;;
+spell;ice_phrak;gpg_phrak_piercer;;an;Ice Phrak;0.75;nm;an;std;yh;;5;95;6;;;0.8;;;;;;3;5;2;0.4;;;;
 spell;snapper;snapper;;a;Snapper;1;nm;an;std;v;;2;38;7;0.9;;;;;;;;;;1;0.6;;;;
 spell;yellow_spider;spider_adolescent_yellow;;a;Yellow Spider;0.75;nm;an;std;v;;1;30;7;0.8;;;;;;;;;;2;0.4;;;;
 spell;farm_skrubb;skrubb_farm;;a;Farm Skrubb;1;nm;an;st;v;;2;10;1;;;0.9;;;;;;3;6;1.5;0.8;;;;
@@ -17,6 +19,7 @@ spell;gargoyle_melee;gargoyle;;a;Gargoyle;0.75;cm;el;std;v;;4;60;6;0.9;;;;;;;;;;
 spell;krug_dog;krug_dog;;a;Krug Dog;1.25;nm;an;std;v;;3;48;6;1;;;;;;;;;;1;0.8;;;;
 scroll;brankar;krug_scavenger_boss_01;;;Brankar the Scavenger;1.75;nm;hu;mb;v;x;9;38;16;1.15;;;;;;2;5;;;1;2.7;;;;
 scroll;phrak_ballista;phrak_piercer_boss_01;;a;Phrak Ballista;1;nm;an;mb;v;;3;12;14;;;1;;;;;;3;5;2;1.2;;;;
+scroll;ice_phrak_terror;gpg_phrak_piercer_boss_01;;an;Ice Phrak Terror;1;nm;an;mb;yh;;9;48;14;;;1;;;;;;3;5;2;1.2;;;;
 spell;varg;dsx_wolf_white_punk-ass;;a;Varg;1;nm;an;std;loa;;3;48;6;0.95;;;;;;;;;;1;0.6;;;;
 spell;gray_wolf;wolf_gray;;a;Gray Wolf;1.5;nm;an;std;v;;4;60;6;1;;;;;;;;;;1;0.8;;;;
 spell;krug_apprentice;krug_apprentice;;a;Krug Apprentice;1.5;nm;hu;std;v;x;8;190;6;0.95;;0.95;;;;;;;;1;1;;;;Custom lightning spell because Vanilla

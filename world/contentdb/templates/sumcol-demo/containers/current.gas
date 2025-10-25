@@ -8,14 +8,11 @@
         [other]
         {
             // Standard
+			il_main = spell_summon_alpine_phrak;
+			il_main = spell_summon_ice_phrak;
 
             // Non-Standard
-			// elemental
-			il_main = spell_summon_blazing_elemental;
-			il_main = spell_summon_blazing_elemental_hold;
-			// robots
-			il_main = spell_summon_proxo;
-			il_main = spell_summon_proxo_hold;
+			il_main = scroll_summon_ice_phrak_terror;
         }
     }
 }

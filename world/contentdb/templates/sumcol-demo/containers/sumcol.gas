@@ -341,6 +341,177 @@
         }
     }
 }
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_animals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Animals - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = spell_summon_alpine_phrak;
+            il_main = spell_summon_ice_phrak;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_elementals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Elementals - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_undead]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Undead - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_plants]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Plants - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_demonics]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Demonics - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_robots]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Robots - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_standard_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids - Yesterhaven Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_animals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Animals - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+            il_main = scroll_summon_ice_phrak_terror;
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_elementals]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Elementals - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_undead]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Undead - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_plants]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Plants - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_demonics]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Demonics - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_robots]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Robots - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
+[t:template,n:sumcol_demo_barrel_yesterhaven_nonstandard_humanoids]
+{
+    specializes = sumcol_demo_base_barrel;
+
+    common:screen_name = "Humanoids - Yesterhaven Non-Standard";
+    [inventory]
+    {
+        [other]
+        {
+        }
+    }
+}
 [t:template,n:sumcol_demo_barrel_loa_standard_animals]
 {
     specializes = sumcol_demo_base_barrel;

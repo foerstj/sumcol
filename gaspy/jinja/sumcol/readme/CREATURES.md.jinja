@@ -1,6 +1,6 @@
 {% set creatures = data | rejectattr('test_only') | list %}
 SUMMONS COLLECTION CREATURES: {{ creatures | length }}
-{% for v, V in {'v': 'Vanilla', 'loa': 'LoA'}.items() %}
+{% for v, V in {'v': 'Vanilla', 'yh': 'Yesterhaven', 'loa': 'LoA'}.items() %}
 {% for std, Std in {'std': 'Standard', 'nstd': 'Non-Standard'}.items() %}
 {% set creatures_v_std = [row for row in creatures if row['v'] == v and (row['ft'] == 'std') == (std == 'std')] %}
 
