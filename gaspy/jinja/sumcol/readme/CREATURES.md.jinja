@@ -7,10 +7,12 @@ SUMMONS COLLECTION CREATURES: {{ creatures | length }}
 {{ V }} {{ Std }} Creatures: {{ creatures_v_std | length }}
 {% for ct, Ct in {'an': 'Animals', 'el': 'Elementals', 'un': 'Undead', 'pl': 'Plants', 'de': 'Demonics', 'ro': 'Robots', 'hu': 'Humanoids'}.items() %}
 {% set creatures_v_std_ct = [row for row in creatures_v_std if row['ct'] == ct] %}
+{% if creatures_v_std_ct | length %}
 - {{ Ct }}: {{ creatures_v_std_ct | length }}
   {% for row in creatures_v_std_ct %}
   - {{ row['csn'] }}
   {% endfor %}
+{% endif %}
 {% endfor %}
 {% endfor %}
 {% endfor %}

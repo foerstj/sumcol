@@ -64,7 +64,6 @@ Vanilla Standard Creatures: 119
   - Ghost
   - Wraith Piercer
   - Wraith Warlock
-- Plants: 0
 - Demonics: 18
   - Vile Mucosa
   - Dark Mucosa
@@ -197,22 +196,10 @@ Yesterhaven Standard Creatures: 2
 - Animals: 2
   - Alpine Phrak
   - Ice Phrak
-- Elementals: 0
-- Undead: 0
-- Plants: 0
-- Demonics: 0
-- Robots: 0
-- Humanoids: 0
 
 Yesterhaven Non-Standard Creatures: 1
 - Animals: 1
   - Ice Phrak Terror
-- Elementals: 0
-- Undead: 0
-- Plants: 0
-- Demonics: 0
-- Robots: 0
-- Humanoids: 0
 
 LoA Standard Creatures: 97
 - Animals: 29
@@ -260,7 +247,6 @@ LoA Standard Creatures: 97
   - Scaly Rahk
   - Noctiss
   - Noctiss
-- Plants: 0
 - Demonics: 5
   - Large Twisted Mucosa
   - Bookas
@@ -344,7 +330,6 @@ LoA Non-Standard Creatures: 22
   - Shadowjumper Minion
   - Shadow Servant
   - Shadowjumper Lieutenant
-- Robots: 0
 - Humanoids: 4
   - Jungle Slinger Camora
   - Hassat Commander
