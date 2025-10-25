@@ -1,0 +1,15 @@
+[t:template,n:gpg_phrak_piercer_boss_01_summon]
+{
+    specializes = gpg_phrak_piercer_boss_01_base;
+
+    doc = "[summon] phrak piercer boss snow";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

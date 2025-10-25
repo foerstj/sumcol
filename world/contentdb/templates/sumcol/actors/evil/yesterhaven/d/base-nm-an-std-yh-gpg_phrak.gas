@@ -1,0 +1,18 @@
+[t:template,n:gpg_phrak_base]  // = gpg_phrak
+{
+	category_name = "1W_evil_d";
+	doc = "phrak snow";
+	specializes = gpg_base_phrak;
+
+	[common]
+	{
+		membership = phrak,monster;
+	}
+	[mind]
+	{
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party		= true
+			&guard							= true
+			&friends						= phrak;
+	}
+}

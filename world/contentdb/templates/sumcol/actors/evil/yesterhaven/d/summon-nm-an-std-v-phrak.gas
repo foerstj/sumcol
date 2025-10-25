@@ -1,0 +1,9 @@
+[t:template,n:gpg_phrak_summon]
+{
+    specializes = gpg_phrak_base;
+
+    doc = "[summon] phrak snow";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}
