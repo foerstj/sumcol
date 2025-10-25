@@ -14,6 +14,28 @@
 	  p position = -2,0,0,0x9d9c2a2d;
 	}
 }
+[t:sumcol_demo_barrel_yesterhaven_standard_animals,n:0x00100002]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,-3,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_animals,n:0x00100003]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,-3,0xf00cc9f1;
+	}
+}
 [t:sumcol_demo_barrel_vanilla_standard_animals,n:0x00100004]
 {
 	[placement]
@@ -208,6 +230,17 @@
 	[placement]
 	{
 	  p position = 2.5,0,3,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_scroll_spells_yesterhaven,n:0x00100001]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.5,0,3.5,0x3a845ae4;
 	}
 }
 [t:sumcol_demo_barrel_replica_vanilla,n:0x00100022]
