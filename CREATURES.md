@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 300
+SUMMONS COLLECTION CREATURES: 307
 
 Vanilla Standard Creatures: 119
 - Animals: 30
@@ -192,7 +192,7 @@ Vanilla Non-Standard Creatures: 56
   - Droog Captain
   - Ferocious Braak
 
-Yesterhaven Standard Creatures: 5
+Yesterhaven Standard Creatures: 10
 - Animals: 3
   - Alpine Phrak
   - Ice Phrak
@@ -200,10 +200,19 @@ Yesterhaven Standard Creatures: 5
 - Elementals: 2
   - Frost Guardian
   - Ice Guardian
+- Humanoids: 5
+  - Krug Forager
+  - Krug Tracker
+  - Krug Growler
+  - Krug Hunter
+  - Krug Icepelter
 
-Yesterhaven Non-Standard Creatures: 1
+Yesterhaven Non-Standard Creatures: 3
 - Animals: 1
   - Ice Phrak Terror
+- Humanoids: 2
+  - Braagdak the Growler
+  - Gragba the Trapper
 
 LoA Standard Creatures: 97
 - Animals: 29

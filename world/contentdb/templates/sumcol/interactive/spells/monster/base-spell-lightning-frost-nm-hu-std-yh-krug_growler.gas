@@ -1,0 +1,55 @@
+[t:template,n:base_gpg_spell_apprentice_frost]  // = gpg_spell_apprentice_frost
+{
+	category_name = "magic";
+	doc = "w3 apprentice frost spell";
+	specializes = base_spell_monster;
+	[attack]
+	{
+		damage_max = 0;
+		damage_min = 0;
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script( "apprentice_frost_charge" );
+				condition* = receive_world_message("we_req_cast_charge");
+			}
+		}
+	}
+	[magic]
+	{
+		attack_damage_modifier_max = (#magic+1) * 4.1 + 0.9;
+		attack_damage_modifier_min = (#magic+1) * 3.4 + 0.7;
+		cast_range = 8;
+		cast_reload_delay = 1.0;
+		mana_cost = 1;
+        max_level = 67;
+		mana_cost_modifier = (#magic*0.7);
+		requires_line_of_sight = true;
+		speed_bias = 2;
+		target_type_flags = tt_conscious_enemy | tt_unconscious_enemy | tt_breakable;
+		usage_context_flags = uc_offensive;
+	}
+	[spell_lightning]
+	{
+		effect_script	= apprentice_frost;
+		dur				= 0.15;
+	}
+}
+
+[t:template,n:base_gpg_spell_krug_apprentice_frost_summon]
+{
+	specializes = base_gpg_spell_apprentice_frost;
+
+	[magic]
+	{
+		mana_cost = 0;
+		mana_cost_modifier =;
+
+		attack_damage_modifier_max =;
+		attack_damage_modifier_min =;
+	}
+}

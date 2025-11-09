@@ -64,7 +64,9 @@
     {
         [other]
         {
+            il_main = test_spell_summon_braagdak;
             il_main = test_spell_summon_ice_phrak_terror;
+            il_main = test_spell_summon_gragba;
         }
     }
 }

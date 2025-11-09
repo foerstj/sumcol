@@ -1,0 +1,18 @@
+[t:template,n:gpg_krug_apprentice_snow_summon]
+{
+    specializes = gpg_krug_apprentice_snow;
+
+    doc = "[summon] krug Apprentice snow";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[other]
+		{
+			il_active_primary_spell = gpg_spell_apprentice_frost_summon;
+		}
+		[pcontent]
+		{
+        }
+    }
+}

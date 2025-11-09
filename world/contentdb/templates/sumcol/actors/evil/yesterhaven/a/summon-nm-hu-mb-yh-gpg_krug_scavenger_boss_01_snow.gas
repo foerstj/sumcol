@@ -1,0 +1,18 @@
+[t:template,n:gpg_krug_scavenger_boss_01_snow_summon]
+{
+    specializes = gpg_krug_scavenger_boss_01_snow_base;
+
+    doc = "[summon] krug scavenger boss 01 snow";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = #club/2-3;
+			}
+        }
+    }
+}

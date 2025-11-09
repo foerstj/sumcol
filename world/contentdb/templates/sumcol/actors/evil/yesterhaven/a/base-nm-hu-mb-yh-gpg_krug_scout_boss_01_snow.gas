@@ -1,0 +1,198 @@
+[t:template,n:gpg_krug_scout_boss_01_snow_base]  // = gpg_krug_scout_boss_01_snow
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug scout boss 01 snow";
+	  specializes = gpg_base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 5, 0;
+			  intelligence = 4, 0;
+			  strength = 8, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 20;
+		  life = 28;
+		  mana = 6;
+		  max_life = 28;
+		  max_mana = 6;
+		  scale_base = 1.15;
+		  selection_indicator_scale = 0.85;
+		[textures]
+		{
+			0 = b_c_eam_kg-05;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 6;
+		  damage_min = 4;
+	}
+	[body]
+	{
+		min_move_velocity = 2.500;
+		avg_move_velocity = 3.10;
+		max_move_velocity = 4.8;
+		[bone_translator]
+		{
+			  body_anterior  = bip01_head;
+			  body_mid       = Bip01_Spine3;
+			  body_posterior = bip01_pelvis;
+			  kill_bone      = Bip01_Spine3;
+			  shield_bone    = shield_grip;
+			  weapon_bone    = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			  chore_prefix = a_c_eam_kg_fs;
+			[chore_attack]
+			{
+				  chore_stances = 0,1;
+				  skrit = select_attack;
+				[anim_files]
+				{
+					  00 = at;
+					  01 = at-04;
+					  02 = at-02;
+					  03 = at-03;
+					  qffg = dff;
+				}
+			}
+			[chore_default]
+			{
+				  chore_stances = 0,1;
+				  skrit = infinite_loop;
+				[anim_files]
+				{
+					  00 = dfs;
+				}
+			}
+			[chore_die]
+			{
+				  chore_stances = 0,1;
+				  skrit = select_transition;
+				[anim_files]
+				{
+					  00 = di;
+					  01 = di-02;
+					  02 = di-03;
+					  03 = di-04;
+				}
+			}
+			[chore_fidget]
+			{
+				  chore_stances = 0,1;
+				  skrit = select_fidget;
+				[anim_files]
+				{
+					  00 = dsf;
+					  01 = dsf-02;
+					  02 = dsf-03;
+				}
+			}
+			[chore_magic]
+			{
+				  chore_stances = 0;
+				  skrit = select_attack;
+				[anim_files]
+				{
+					  00 = mg;
+				}
+			}
+			[chore_misc]
+			{
+				  chore_stances = 1;
+				  skrit = select_transition;
+				[anim_files]
+				{
+					  chrg = hit;
+				}
+			}
+			[chore_walk]
+			{
+				  chore_stances = 0,1;
+				  skrit = select_walk;
+				[anim_files]
+				{
+					  00 = rl;
+				}
+			}
+		}
+	}
+	[common]
+	{
+		  screen_name = "Gragba the Trapper";
+		  membership = krug,monster,immune_charm,immune_control,immune_freeze,immune_polymorph,immune_align_change,immune_explode;
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+				no_trig_bits = true;
+				action* = call_sfx_script("unique_ray_green(sgx)");
+			}
+		}
+	}
+	[defend]
+	{
+		  defense = 45;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = dg_g_c_1h_fun;
+			}
+    		[all*]
+			{
+				[all*]
+				{
+					[gold*]
+					{
+                		max = 80;
+						min = 60;
+						min_pile = 11;
+						piles = 3 - 4;
+					}
+				}
+				[all*]
+				{
+                    il_main = #bow/6-7;
+            	    il_main = #body,f/6-8;
+				}
+
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends 		= true;
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_creates_own_party		= true
+			&party_template					= "party_krug_scout_boss";
+		jat_attack_object_melee 			= world\ai\jobs\common\job_attack_object_melee.skrit
+			?run_chance 					= 1.0;
+	}
+	[physics]
+	{
+		break_sound = s_e_meat_explosion;
+		explosion_magnitude = 1.5;
+		[break_particulate]
+		{
+			gpg_frag_glb_krug_scout_boss_snow_01 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_02 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_03 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_04 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_05 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_06 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_07 = 1;
+			gpg_frag_glb_krug_scout_boss_snow_08 = 1;
+		}
+	}
+}

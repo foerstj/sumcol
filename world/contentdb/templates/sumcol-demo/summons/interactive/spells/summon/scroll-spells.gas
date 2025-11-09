@@ -26,6 +26,13 @@
     common:is_pcontent_allowed = false;
     magic:one_use = false;
 }
+[t:template,n:test_spell_summon_braagdak]
+{
+    specializes = scroll_summon_braagdak_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
 [t:template,n:test_spell_summon_phrak_ballista]
 {
     specializes = scroll_summon_phrak_ballista_base;
@@ -50,6 +57,13 @@
 [t:template,n:test_spell_summon_klandank]
 {
     specializes = scroll_summon_klandank_base;
+
+    common:is_pcontent_allowed = false;
+    magic:one_use = false;
+}
+[t:template,n:test_spell_summon_gragba]
+{
+    specializes = scroll_summon_gragba_base;
 
     common:is_pcontent_allowed = false;
     magic:one_use = false;

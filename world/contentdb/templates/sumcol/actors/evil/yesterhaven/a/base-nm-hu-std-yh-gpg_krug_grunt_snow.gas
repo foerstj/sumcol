@@ -1,0 +1,98 @@
+[t:template,n:gpg_krug_grunt_snow_base]  // = gpg_krug_grunt_snow
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug grunt snow";
+	  specializes = gpg_base_krug;
+	[actor]
+	{
+		[skills]
+		{
+			  dexterity = 6, 0;
+			  intelligence = 4, 0;
+			  melee = 4,  0;
+			  strength = 9, 0;
+		}
+	}
+	[aspect]
+	{
+		  experience_value = 19;
+		  life = 28;
+		  mana = 8;
+		  max_life = 28;
+		  max_mana = 8;
+		  selection_indicator_scale = 0.85;
+		[textures]
+		{
+			0 = b_c_eam_kg-02;
+		}
+	}
+	[attack]
+	{
+		  damage_max = 17;
+		  damage_min = 15;
+	}
+	[common]
+	{
+		  screen_name = "Krug Hunter";
+		  membership = krug, party_krug_grunt_boss, monster;
+	}
+	[defend]
+	{
+		  defense = 30;
+	}
+	[inventory]
+	{
+		[pcontent]
+		{
+			[oneof*]
+			{
+				  es_weapon_hand = ax_d_d_1h1b_avg;
+			}
+    		[oneof*]
+			{
+				[gold*]
+				{
+					  chance = 0.2;
+					  max = 29;
+					  min = 11;
+				}
+				[all*]
+				{
+       				chance = 0.05;
+   	        	    il_main = #spell/2-5;
+				}
+				[oneof*]
+				{
+	    		    chance = 0.15;
+       		   	    il_main = #weapon/12-17;
+           		    il_main = #armor/6-29;
+   					il_main = potion_mana_small;
+					il_main = potion_health_small;
+                }
+			}
+		}
+	}
+	[mind]
+	{
+		on_enemy_spotted_alert_friends 		= true;
+		jat_brain							= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party			= true;
+		jat_fidget							= world\ai\jobs\common\job_fidget.skrit
+			?social								= 0.35
+			&still								= false;
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			gpg_frag_glb_krug_grunt_snow_01 = 1;
+			gpg_frag_glb_krug_grunt_snow_02 = 1;
+			gpg_frag_glb_krug_grunt_snow_03 = 1;
+			gpg_frag_glb_krug_grunt_snow_04 = 1;
+			gpg_frag_glb_krug_grunt_snow_05 = 1;
+			gpg_frag_glb_krug_grunt_snow_06 = 1;
+			gpg_frag_glb_krug_grunt_snow_07 = 1;
+			gpg_frag_glb_krug_grunt_snow_08 = 1;
+		}
+	}
+}

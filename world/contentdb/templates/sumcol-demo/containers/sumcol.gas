@@ -427,6 +427,11 @@
     {
         [other]
         {
+            il_main = spell_summon_krug_forager;
+            il_main = spell_summon_krug_tracker;
+            il_main = spell_summon_krug_growler;
+            il_main = spell_summon_krug_hunter;
+            il_main = spell_summon_krug_icepelter;
         }
     }
 }
@@ -512,6 +517,8 @@
     {
         [other]
         {
+            il_main = scroll_summon_braagdak;
+            il_main = scroll_summon_gragba;
         }
     }
 }

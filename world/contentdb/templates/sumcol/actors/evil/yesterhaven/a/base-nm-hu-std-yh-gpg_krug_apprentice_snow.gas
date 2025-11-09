@@ -1,0 +1,91 @@
+[t:template,n:gpg_krug_apprentice_snow_base]  // = gpg_krug_apprentice_snow
+{
+	  category_name = "1W_evil_a";
+	  doc = "krug Apprentice snow";
+	  specializes = gpg_krug_shaman_base;
+	[actor]
+	{
+		[skills]
+		{
+			  combat_magic = 1, 0;
+			  dexterity = 4, 0;
+			  intelligence = 8, 0;
+			  melee = 1, 0;
+			  strength = 8, 0;
+		}
+	}
+	[aspect]
+	{
+		  textures:0 = b_c_eam_ks-05; 
+		  experience_value = 12;
+		  life = 12;
+		  mana = 81;
+		  max_life = 12;
+		  max_mana = 81;
+	}
+	[attack]
+	{
+		  damage_max = 7;
+		  damage_min = 4;
+	}
+	[common]
+	{
+		  screen_name = "Krug Growler";
+	}
+	[defend]
+	{
+		  defense = 12;
+	}
+	[inventory]
+	{
+		  selected_active_location = il_active_primary_spell;
+		[other]
+		{
+			  il_active_primary_spell   = gpg_spell_apprentice_frost;
+		}
+		[pcontent]
+		{
+			[oneof*]
+			{
+				[gold*]
+				{
+					  chance = 0.3;
+					  max = 21;
+					  min = 14;
+				}
+				[oneof*]
+				{
+					  il_main = potion_mana_small;
+					  il_main = potion_health_small;
+					  max = 2;
+					  min = 1;
+                      chance = 0.3;
+				}
+				[oneof*]
+				{
+					  chance = 0.1;
+					  il_main = book_glb_magic_01;
+   					  il_main = #body,ro/12-17;
+				}
+			}
+		}
+	}
+	[mind]
+	{
+		jat_brain							 = world\ai\jobs\common\brain_hero.skrit;
+	}
+	[physics]
+	{
+		[break_particulate]
+		{
+			gpg_frag_glb_krug_apprentice_snow_01 = 1;
+			gpg_frag_glb_krug_apprentice_snow_02 = 1;
+			gpg_frag_glb_krug_apprentice_snow_03 = 1;
+			gpg_frag_glb_krug_apprentice_snow_04 = 1;
+			gpg_frag_glb_krug_apprentice_snow_05 = 1;
+			gpg_frag_glb_krug_apprentice_snow_06 = 1;
+			gpg_frag_glb_krug_apprentice_snow_07 = 1;
+			gpg_frag_glb_krug_apprentice_snow_08 = 1;
+		}
+	}
+}
