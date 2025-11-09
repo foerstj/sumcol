@@ -23,6 +23,7 @@
     {
         template_name = gargoyle_summon;
         script_params = "[scale(0.75)]";
+        effect_script = "summon_gargoyle";
     }
     [magic]
     {

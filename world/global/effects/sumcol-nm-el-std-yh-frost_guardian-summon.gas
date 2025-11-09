@@ -1,0 +1,73 @@
+[effect_script*]
+{
+	name	=summon_frost_guardian;
+
+    // Based on summon. Shifted 1.5m up because reference point of gargoyle is on ground.
+	script	=[[
+
+			call eball;
+			waitfor script #PEEK #DEFAULT_TIMEOUT;
+
+			sound play s_e_spell_summon_01_cast at #TARGET_POSITION;
+			
+			set $speed 3;
+            set $up 1.5;
+
+			sfx create cylinder #TARGET
+				"rp0(0,.5,1)rp1(0,.5,1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
+                offset(0,$up,0)
+				spin(-10)dur(1.5)tin(1.5)delay(.2)[0]";
+				 
+			sfx create cylinder #TARGET
+				"rp0(0,.5,1)rp1(0,.5,1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
+                offset(0,$up,0)
+				spin(-10)dur(1.5)tin(1.5)delay(.4)[0]";
+				 
+			sfx create cylinder #TARGET
+				"rp0(0,.5,1)rp1(0,.5,1)texture(b_sfx_cyl_03)color0(.40,.40,.61)
+                offset(0,$up,0)
+				spin(-10)dur(1.5)tin(1.5)delay(.6)[0]";
+				 
+			sfx start #POP;
+			sfx start #POP;
+			sfx start #POP;
+
+			sfx create cylinder #TARGET
+				"hp0(-1.5,1.5,$speed)hp1(-.5,1.5,$speed)
+                offset(0,$up,0)
+				texture(b_sfx_cyl_03)color0(.25,.25,.61)spin(10)dur(1.5)
+				[0]";
+				 
+
+			set $master #POP;
+
+			sfx create cylinder #TARGET
+				"hp0(-1.5,1.5,$speed)hp1(-.5,1.5,$speed)
+                offset(0,$up,0)
+				texture(b_sfx_cyl_03)color0(.30,.30,.61)spin(-10)dur(1.5)
+				delay(.2)[0]";
+				 
+			sfx create cylinder #TARGET
+				"hp0(-1.5,1.5,$speed)hp1(-.5,1.5,$speed)
+                offset(0,$up,0)
+				texture(b_sfx_cyl_03)color0(.35,.35,.61)spin(10)dur(1.5)
+				delay(.4)[0]";
+				 
+			sfx create cylinder #TARGET
+				"hp0(-1.5,1.5,$speed)hp1(-.5,1.5,$speed)
+                offset(0,$up,0)
+				texture(b_sfx_cyl_03)color0(.40,.40,.61)spin(-10)dur(1.25)
+				delay(.6)[0]";
+				 
+
+			sfx attach $master #POP;
+			sfx attach $master #POP;
+			sfx attach $master #POP;
+
+			sfx start $master;
+			pause 0.65;
+
+			worldmsg WE_SPELL_SYNC_MID #INVALID_GOID #OWNER_GOID #TARGET_GOID;
+
+			]];
+}

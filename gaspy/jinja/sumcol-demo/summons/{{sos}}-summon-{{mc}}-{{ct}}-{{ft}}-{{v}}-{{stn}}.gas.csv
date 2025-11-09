@@ -1,93 +1,93 @@
-sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;abf_m;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;icon;comment
-spell;braak_desert;braak_desert;summon;a;Desert Braak;1;nm;hu;std;v;x;180000;5;69;;;0.9;;;;;184;204;1;1.2;175;
-spell;cave_giant;cave_giant;summon;a;Cave Giant;1.75;nm;hu;std;v;x;24000;6;30;1.05;;;;;;;;;1;2;33;
-spell;darkling;darkling;summon;a;Darkling;1;cm;de;std;v;;3800;5;21;;;0.9;;;;;20;24;1;0.8;112;
-spell;drake_black;drake_black;sumcol;a;Black Drake;1;cm;an;std;v;;520000;4;92;1.1;;1.1;;;;;;;1.5;1.8;173;Custom fire spell
-spell;drake_green;drake_green;sumcol;a;Green Drake;1.75;nm;an;std;v;;400000;4;86;1.1;;1.1;;;;;;;1.5;2.5;72;Custom fire spell
-spell;fire_elemental;fire_elemental;;a;Fire Elemental;1;cm;el;std;v;;420000;4;92;1;;;;;;;;;2;1;178;
-spell;forest_klaw;forest_klaw;summon;a;Forest Klaw;1.75;nm;an;std;v;;30000;6;35;1.05;;;;;;;;;1;1.8;40;
-spell;furok;furok;summon;a;Furok;1.75;nm;an;std;v;;3800;7;22;1.1;;;;;;;;;1;1.8;28;
-spell;gargoyle;gargoyle_ranged;summon;a;Jade Gargoyle;0.75;cm;el;std;v;;120;5;6;;;0.85;;;;;8;10;3;0.4;84;
-spell;golem_frost;golem_frost;summon;a;Frost Golem;1.75;nm;el;std;v;;420000;7;92;0.9;;;;;;;;;2;0.8;76;
-spell;hell_boar;hell_boar;summon;a;Hell Boar;1.75;nm;an;std;v;;36000;6;39;1;;;;;;;;;1;1;127;
-spell;impaler;impaler;summon;an;Impaler;1;nm;an;std;v;;190000;6;75;1.1;;;;;;;;;2;1.5;176;
-spell;killer_gremal;gremal_killer;summon;a;Killer Gremal;2.75;nm;an;std;v;;1200;6;17;0.9;;;;;;;;;1;0.8;8;
-spell;krug_dog_skeleton;krug_dog_skeleton;sumcol;a;Krug Dog Skeleton;1;cm;un;std;v;;100000;6;61;0.9;;;;;;;;;2;0.5;141;
-spell;larch;larch;summon;a;Larch;1.75;nm;pl;std;v;;96000;4;60;1.2;;;;;;;;;2;2.5;66;
-spell;lava_spirit;lava_spirit_magic;summon;a;Lava Spirit;1;cm;el;std;v;;400000;6;86;;;0.95;;0.5;;;205;245;2;0.8;172;spell fires two trackballs
-spell;molten_golem;molten_golem;;a;Slag;1.75;cm;el;std;v;;420000;7;92;0.9;;;;;;;;;2;0.8;174;
-spell;mucosa;mucosa;summon;a;Mucosa;1;cm;de;std;v;;960;5;16;1;;;;;;;;;2;1.5;103;
-spell;mucosa_predator;mucosa_predator;sumcol;a;Mucosa Predator;1;cm;de;std;v;;300000;4;80;;;1.05;;0;;;;;2;1.2;171;Custom poison spell
-spell;picker;picker;summon;a;Picker;1;nm;an;std;v;;55000;7;48;0.95;;;;;;;;;2;0.8;133;
-spell;rock_golem;rock_golem;;a;Rock Golem;1.75;nm;el;std;v;;420000;6;92;1;;;;;;;;;3;0.8;169;
-spell;rock_beast;rock_beast;sumcol;a;Rock Beast;1.75;nm;el;std;v;;520000;2;92;1.3;;1;;;;;;;3;3;170;Custom dmgvol spell
-spell;scorpion;scorpion;summon;a;Scorpion;1.75;nm;an;std;v;;760;5;15;1;;;;;;;;;2;1.2;18;
-spell;skeleton;skeleton;summon;a;Skeleton;1;cm;un;std;v;;240;6;10;0.95;;;;;10;16;;;2;1;91;
-spell;skick;skick;summon;a;Skick;1;nm;an;std;v;;15000;6;28;0.8;;;;;;;;;2;1;118;
-spell;spiked_dweller;spiked_dweller;summon;a;Spiked Dweller;1.75;nm;an;std;v;;69000;5;48;;;0.95;;;;;150;165;1.5;0.8;55;
-spell;troll_forest;troll_forest;summon;a;Forest Troll;1;nm;hu;std;v;x;28000;6;33;1;;;;;50;54;;;1;1;124;
-spell;troll_forest_norecov;troll_forest_norecov;summon;a;Forest Troll (no recov);1;nm;hu;std;v;x;28000;6;33;1;;;;;50;54;;;1;1;124;
-spell;wolf_black;wolf_black;summon;a;Black Wolf;1.75;nm;an;std;v;;38000;6;40;0.95;;;;;;;;;1;0.8;46;
-spell;wraith;wraith;summon;a;Wraith;1;cm;un;std;v;;69000;6;53;1;;;;;;;;;2;0.8;136;
-spell;wraith_archer;wraith_archer;summon;a;Wraith Archer;1;cm;un;std;v;;100000;5;57;;0.95;;;;94;110;;;2;0.8;139;
-spell;zombie_headless;zombie_headless;summon;a;Headless Zombie;1;cm;un;std;v;;44000;7;43;0.9;;;;;;;;;0.8;1;130;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;
-spell;dsx_twisted_mucosa;dsx_twisted_mucosa;summon;a;Twisted Mucosa;2;cm;de;std;loa;;240;5;10;0.9;;;;;;;;;2;1.5;221;
-spell;dsx_vile_twisted_mucosa;dsx_vile_twisted_mucosa;sumcol;a;Vile Twisted Mucosa;2;cm;de;std;loa;;950;4;15;;;0.9;;0;;;;;2;1.2;222;Custom poison spell
-spell;dsx_giant_rat;dsx_giant_rat;summon;a;Giant Rat;1.75;nm;an;std;loa;;76;6;5;0.85;;;;;;;;;1;0.8;250;
-spell;dsx_deadly_armor;dsx_deadly_armor;summon;;Deadly Armor;1;cm;un;std;loa;;32000;6;36;1;;;;;;;;;3;1;215;
-spell;dsx_ursae_demonic;dsx_ursae_demonic;summon;an;Ursae;3;cm;un;std;loa;;24000;7;30;1.1;;;;;;;;;0.8;2;217;
-spell;dsx_rune_guardian;dsx_rune_guardian;summon;a;Rune Beast;2;cm;de;std;loa;;190000;7;75;1;;;;;;;;;1;1.2;219;
-spell;dsx_barkrunner;dsx_barkrunner;summon;a;Barkrunner;2.25;nm;pl;std;loa;;2400;6;20;1.1;;;;;;;;;2;1.5;247;
-spell;dsx_scrub_howler;dsx_scrub_howler;summon;a;Scrub Howler;2.25;nm;hu;std;loa;x;42000;6;42;1;;;;;74;90;;;1;1.5;251;
-spell;dsx_bear;dsx_bear;summon;a;Cave Bear;3;nm;an;std;loa;;48;6;3;1.1;;;;;;;;;1;1.8;248;
-spell;dsx_zepheryl_dark;dsx_zepheryl_dark;summon;a;Dark Zepheryl;3;nm;el;std;loa;;38000;4;35;;;1;;;;;64;98;2;1;252;
-spell;dsx_fleshrender;dsx_fleshrender;summon;a;Fleshrender;1.25;cm;de;std;loa;;100000;7;61;0.95;;;;;;;;;1;1;218;
-spell;dsx_knight_death;dsx_knight_death;summon;a;Death Knight;1.25;cm;un;std;loa;;7600;6;25;1.05;;;;;68;78;;;2;1;216;
-spell;dsx_slithermage;dsx_slithermage;summon;a;Slithermage;2.4;cm;de;std;loa;x;500000;6;91;;;1.05;;;;;68;77;1;1.2;220;
-spell;dsx_chomper;dsx_chomper;summon;a;Chomper;1.5;nm;hu;std;loa;x;600;6;14;0.95;;;;;;;;;1;1;249;
-spell;dsx_troll_masher;dsx_troll_masher;summon;a;Troll Masher;1.5;nm;hu;std;loa;x;170000;6;73;1.15;;;;;;;;;1;2;253;
-spell;dsx_zepheryl;dsx_zepheryl;summon;a;Zepheryl;1.5;nm;el;std;loa;;30000;5;30;;;0.95;;;;;57;82;2;0.8;271;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;
-spell;standard_m_0;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (0-20);1;nm;un;std;v;;24;6;0;1;;;;;;;;;1;1;136;
-spell;standard_r_0;wraith_archer_demo;summon;a;Dummy Wraith Archer (0-20);1;nm;un;std;v;;30;5;0;;1;;;;94;110;;;1;1;136;
-spell;standard_c_0;wraith_mage_demo;summon;a;Dummy Wraith Mage (0-20);1;nm;un;std;v;;30;5;0;;;1;;;;;180;200;1;1;136;
-spell;standard_m_10;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (10-30);1;nm;un;std;v;;240;6;10;1;;;;;;;;;1;1;136;
-spell;standard_r_10;wraith_archer_demo;summon;a;Dummy Wraith Archer (10-30);1;nm;un;std;v;;300;5;10;;1;;;;94;110;;;1;1;136;
-spell;standard_c_10;wraith_mage_demo;summon;a;Dummy Wraith Mage (10-30);1;nm;un;std;v;;300;5;10;;;1;;;;;180;200;1;1;136;
-spell;standard_m_20;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (20-40);1;nm;un;std;v;;2400;6;20;1;;;;;;;;;1;1;136;
-spell;standard_r_20;wraith_archer_demo;summon;a;Dummy Wraith Archer (20-40);1;nm;un;std;v;;3000;5;20;;1;;;;94;110;;;1;1;136;
-spell;standard_c_20;wraith_mage_demo;summon;a;Dummy Wraith Mage (20-40);1;nm;un;std;v;;3000;5;20;;;1;;;;;180;200;1;1;136;
-spell;standard_m_30;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (30-50);1;nm;un;std;v;;24000;6;30;1;;;;;;;;;1;1;136;
-spell;standard_r_30;wraith_archer_demo;summon;a;Dummy Wraith Archer (30-50);1;nm;un;std;v;;30000;5;30;;1;;;;94;110;;;1;1;136;
-spell;standard_c_30;wraith_mage_demo;summon;a;Dummy Wraith Mage (30-50);1;nm;un;std;v;;30000;5;30;;;1;;;;;180;200;1;1;136;
-spell;standard_m_40;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (40-60);1;nm;un;std;v;;38000;6;40;1;;;;;;;;;1;1;136;
-spell;standard_r_40;wraith_archer_demo;summon;a;Dummy Wraith Archer (40-60);1;nm;un;std;v;;48000;5;40;;1;;;;94;110;;;1;1;136;
-spell;standard_c_40;wraith_mage_demo;summon;a;Dummy Wraith Mage (40-60);1;nm;un;std;v;;48000;5;40;;;1;;;;;180;200;1;1;136;
-spell;standard_m_50;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (50-70);1;nm;un;std;v;;60000;6;50;1;;;;;;;;;1;1;136;
-spell;standard_r_50;wraith_archer_demo;summon;a;Dummy Wraith Archer (50-70);1;nm;un;std;v;;75000;5;50;;1;;;;94;110;;;1;1;136;
-spell;standard_c_50;wraith_mage_demo;summon;a;Dummy Wraith Mage (50-70);1;nm;un;std;v;;75000;5;50;;;1;;;;;180;200;1;1;136;
-spell;standard_m_60;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (60-80);1;nm;un;std;v;;96000;6;60;1;;;;;;;;;1;1;136;
-spell;standard_r_60;wraith_archer_demo;summon;a;Dummy Wraith Archer (60-80);1;nm;un;std;v;;120000;5;60;;1;;;;94;110;;;1;1;136;
-spell;standard_c_60;wraith_mage_demo;summon;a;Dummy Wraith Mage (60-80);1;nm;un;std;v;;120000;5;60;;;1;;;;;180;200;1;1;136;
-spell;standard_m_70;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (70-90);1;nm;un;std;v;;150000;6;70;1;;;;;;;;;1;1;136;
-spell;standard_r_70;wraith_archer_demo;summon;a;Dummy Wraith Archer (70-90);1;nm;un;std;v;;190000;5;70;;1;;;;94;110;;;1;1;136;
-spell;standard_c_70;wraith_mage_demo;summon;a;Dummy Wraith Mage (70-90);1;nm;un;std;v;;190000;5;70;;;1;;;;;180;200;1;1;136;
-spell;standard_m_80;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (80-100);1;nm;un;std;v;;240000;6;80;1;;;;;;;;;1;1;136;
-spell;standard_r_80;wraith_archer_demo;summon;a;Dummy Wraith Archer (80-100);1;nm;un;std;v;;300000;5;80;;1;;;;94;110;;;1;1;136;
-spell;standard_c_80;wraith_mage_demo;summon;a;Dummy Wraith Mage (80-100);1;nm;un;std;v;;300000;5;80;;;1;;;;;180;200;1;1;136;
-spell;standard_r11_0;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (0-20);1;nm;un;std;v;;30;5;0;;1.1;;;;94;110;;;1;1;136;
-spell;standard_r11_50;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (50-70);1;nm;un;std;v;;75000;5;50;;1.1;;;;94;110;;;1;1;136;
-spell;standard_r11_80;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (80-100);1;nm;un;std;v;;300000;5;80;;1.1;;;;94;110;;;1;1;136;
-spell;standard_cmp_0;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (0-20);1;nm;un;std;v;;30;5;0;;;1;;0.5;;;120;140;1;1;136;
-spell;standard_cmp_50;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (50-70);1;nm;un;std;v;;75000;5;50;;;1;;0.5;;;120;140;1;1;136;
-spell;standard_cmp_80;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (80-100);1;nm;un;std;v;;300000;5;80;;;1;;0.5;;;120;140;1;1;136;
-spell;standard_cdv_0;wraith_mage_demo_dv_0;summon;a;Dummy Wraith Mage DmgVol (0-20);1;nm;un;std;v;;30;5;0;;;1;;;;;;;1;1;136;Custom dmgvol spell
-spell;standard_cdv_50;wraith_mage_demo_dv_50;summon;a;Dummy Wraith Mage DmgVol (50-70);1;nm;un;std;v;;75000;5;50;;;1;;;;;;;1;1;136;Custom dmgvol spell
-spell;standard_cdv_80;wraith_mage_demo_dv_80;summon;a;Dummy Wraith Mage DmgVol (80-100);1;nm;un;std;v;;300000;5;80;;;1;;;;;;;1;1;136;Custom dmgvol spell
-spell;standard_cf_0;wraith_mage_demo_fire_0;summon;a;Dummy Wraith Mage Fire (0-20);1;nm;un;std;v;;30;5;0;;;1;;;;;;;1;1;136;Custom fire spell
-spell;standard_cf_50;wraith_mage_demo_fire_50;summon;a;Dummy Wraith Mage Fire (50-70);1;nm;un;std;v;;75000;5;50;;;1;;;;;;;1;1;136;Custom fire spell
-spell;standard_cf_80;wraith_mage_demo_fire_80;summon;a;Dummy Wraith Mage Fire (80-100);1;nm;un;std;v;;300000;5;80;;;1;;;;;;;1;1;136;Custom fire spell
-spell;standard_cp_0;wraith_mage_demo_poison_0;summon;a;Dummy Wraith Mage Poison (0-20);1;nm;un;std;v;;30;5;0;;;1;;0;;;;;1;1;136;Custom poison spell
-spell;standard_cp_50;wraith_mage_demo_poison_50;summon;a;Dummy Wraith Mage Poison (50-70);1;nm;un;std;v;;75000;5;50;;;1;;0;;;;;1;1;136;Custom poison spell
-spell;standard_cp_80;wraith_mage_demo_poison_80;summon;a;Dummy Wraith Mage Poison (80-100);1;nm;un;std;v;;300000;5;80;;;1;;0;;;;;1;1;136;Custom poison spell
+sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;gold;dur_min;req_lvl;dmg_m;dmg_r;dmg_c;abf_m;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;icon;effect_script;comment
+spell;braak_desert;braak_desert;summon;a;Desert Braak;1;nm;hu;std;v;x;180000;5;69;;;0.9;;;;;184;204;1;1.2;175;;
+spell;cave_giant;cave_giant;summon;a;Cave Giant;1.75;nm;hu;std;v;x;24000;6;30;1.05;;;;;;;;;1;2;33;;
+spell;darkling;darkling;summon;a;Darkling;1;cm;de;std;v;;3800;5;21;;;0.9;;;;;20;24;1;0.8;112;;
+spell;drake_black;drake_black;sumcol;a;Black Drake;1;cm;an;std;v;;520000;4;92;1.1;;1.1;;;;;;;1.5;1.8;173;;Custom fire spell
+spell;drake_green;drake_green;sumcol;a;Green Drake;1.75;nm;an;std;v;;400000;4;86;1.1;;1.1;;;;;;;1.5;2.5;72;;Custom fire spell
+spell;fire_elemental;fire_elemental;;a;Fire Elemental;1;cm;el;std;v;;420000;4;92;1;;;;;;;;;2;1;178;;
+spell;forest_klaw;forest_klaw;summon;a;Forest Klaw;1.75;nm;an;std;v;;30000;6;35;1.05;;;;;;;;;1;1.8;40;;
+spell;furok;furok;summon;a;Furok;1.75;nm;an;std;v;;3800;7;22;1.1;;;;;;;;;1;1.8;28;;
+spell;gargoyle;gargoyle_ranged;summon;a;Jade Gargoyle;0.75;cm;el;std;v;;120;5;6;;;0.85;;;;;8;10;3;0.4;84;summon_gargoyle;
+spell;golem_frost;golem_frost;summon;a;Frost Golem;1.75;nm;el;std;v;;420000;7;92;0.9;;;;;;;;;2;0.8;76;;
+spell;hell_boar;hell_boar;summon;a;Hell Boar;1.75;nm;an;std;v;;36000;6;39;1;;;;;;;;;1;1;127;;
+spell;impaler;impaler;summon;an;Impaler;1;nm;an;std;v;;190000;6;75;1.1;;;;;;;;;2;1.5;176;;
+spell;killer_gremal;gremal_killer;summon;a;Killer Gremal;2.75;nm;an;std;v;;1200;6;17;0.9;;;;;;;;;1;0.8;8;;
+spell;krug_dog_skeleton;krug_dog_skeleton;sumcol;a;Krug Dog Skeleton;1;cm;un;std;v;;100000;6;61;0.9;;;;;;;;;2;0.5;141;;
+spell;larch;larch;summon;a;Larch;1.75;nm;pl;std;v;;96000;4;60;1.2;;;;;;;;;2;2.5;66;;
+spell;lava_spirit;lava_spirit_magic;summon;a;Lava Spirit;1;cm;el;std;v;;400000;6;86;;;0.95;;0.5;;;205;245;2;0.8;172;;spell fires two trackballs
+spell;molten_golem;molten_golem;;a;Slag;1.75;cm;el;std;v;;420000;7;92;0.9;;;;;;;;;2;0.8;174;;
+spell;mucosa;mucosa;summon;a;Mucosa;1;cm;de;std;v;;960;5;16;1;;;;;;;;;2;1.5;103;;
+spell;mucosa_predator;mucosa_predator;sumcol;a;Mucosa Predator;1;cm;de;std;v;;300000;4;80;;;1.05;;0;;;;;2;1.2;171;;Custom poison spell
+spell;picker;picker;summon;a;Picker;1;nm;an;std;v;;55000;7;48;0.95;;;;;;;;;2;0.8;133;;
+spell;rock_golem;rock_golem;;a;Rock Golem;1.75;nm;el;std;v;;420000;6;92;1;;;;;;;;;3;0.8;169;;
+spell;rock_beast;rock_beast;sumcol;a;Rock Beast;1.75;nm;el;std;v;;520000;2;92;1.3;;1;;;;;;;3;3;170;;Custom dmgvol spell
+spell;scorpion;scorpion;summon;a;Scorpion;1.75;nm;an;std;v;;760;5;15;1;;;;;;;;;2;1.2;18;;
+spell;skeleton;skeleton;summon;a;Skeleton;1;cm;un;std;v;;240;6;10;0.95;;;;;10;16;;;2;1;91;;
+spell;skick;skick;summon;a;Skick;1;nm;an;std;v;;15000;6;28;0.8;;;;;;;;;2;1;118;;
+spell;spiked_dweller;spiked_dweller;summon;a;Spiked Dweller;1.75;nm;an;std;v;;69000;5;48;;;0.95;;;;;150;165;1.5;0.8;55;;
+spell;troll_forest;troll_forest;summon;a;Forest Troll;1;nm;hu;std;v;x;28000;6;33;1;;;;;50;54;;;1;1;124;;
+spell;troll_forest_norecov;troll_forest_norecov;summon;a;Forest Troll (no recov);1;nm;hu;std;v;x;28000;6;33;1;;;;;50;54;;;1;1;124;;
+spell;wolf_black;wolf_black;summon;a;Black Wolf;1.75;nm;an;std;v;;38000;6;40;0.95;;;;;;;;;1;0.8;46;;
+spell;wraith;wraith;summon;a;Wraith;1;cm;un;std;v;;69000;6;53;1;;;;;;;;;2;0.8;136;;
+spell;wraith_archer;wraith_archer;summon;a;Wraith Archer;1;cm;un;std;v;;100000;5;57;;0.95;;;;94;110;;;2;0.8;139;;
+spell;zombie_headless;zombie_headless;summon;a;Headless Zombie;1;cm;un;std;v;;44000;7;43;0.9;;;;;;;;;0.8;1;130;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+spell;dsx_twisted_mucosa;dsx_twisted_mucosa;summon;a;Twisted Mucosa;2;cm;de;std;loa;;240;5;10;0.9;;;;;;;;;2;1.5;221;;
+spell;dsx_vile_twisted_mucosa;dsx_vile_twisted_mucosa;sumcol;a;Vile Twisted Mucosa;2;cm;de;std;loa;;950;4;15;;;0.9;;0;;;;;2;1.2;222;;Custom poison spell
+spell;dsx_giant_rat;dsx_giant_rat;summon;a;Giant Rat;1.75;nm;an;std;loa;;76;6;5;0.85;;;;;;;;;1;0.8;250;;
+spell;dsx_deadly_armor;dsx_deadly_armor;summon;;Deadly Armor;1;cm;un;std;loa;;32000;6;36;1;;;;;;;;;3;1;215;;
+spell;dsx_ursae_demonic;dsx_ursae_demonic;summon;an;Ursae;3;cm;un;std;loa;;24000;7;30;1.1;;;;;;;;;0.8;2;217;;
+spell;dsx_rune_guardian;dsx_rune_guardian;summon;a;Rune Beast;2;cm;de;std;loa;;190000;7;75;1;;;;;;;;;1;1.2;219;;
+spell;dsx_barkrunner;dsx_barkrunner;summon;a;Barkrunner;2.25;nm;pl;std;loa;;2400;6;20;1.1;;;;;;;;;2;1.5;247;;
+spell;dsx_scrub_howler;dsx_scrub_howler;summon;a;Scrub Howler;2.25;nm;hu;std;loa;x;42000;6;42;1;;;;;74;90;;;1;1.5;251;;
+spell;dsx_bear;dsx_bear;summon;a;Cave Bear;3;nm;an;std;loa;;48;6;3;1.1;;;;;;;;;1;1.8;248;;
+spell;dsx_zepheryl_dark;dsx_zepheryl_dark;summon;a;Dark Zepheryl;3;nm;el;std;loa;;38000;4;35;;;1;;;;;64;98;2;1;252;;
+spell;dsx_fleshrender;dsx_fleshrender;summon;a;Fleshrender;1.25;cm;de;std;loa;;100000;7;61;0.95;;;;;;;;;1;1;218;;
+spell;dsx_knight_death;dsx_knight_death;summon;a;Death Knight;1.25;cm;un;std;loa;;7600;6;25;1.05;;;;;68;78;;;2;1;216;;
+spell;dsx_slithermage;dsx_slithermage;summon;a;Slithermage;2.4;cm;de;std;loa;x;500000;6;91;;;1.05;;;;;68;77;1;1.2;220;;
+spell;dsx_chomper;dsx_chomper;summon;a;Chomper;1.5;nm;hu;std;loa;x;600;6;14;0.95;;;;;;;;;1;1;249;;
+spell;dsx_troll_masher;dsx_troll_masher;summon;a;Troll Masher;1.5;nm;hu;std;loa;x;170000;6;73;1.15;;;;;;;;;1;2;253;;
+spell;dsx_zepheryl;dsx_zepheryl;summon;a;Zepheryl;1.5;nm;el;std;loa;;30000;5;30;;;0.95;;;;;57;82;2;0.8;271;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+spell;standard_m_0;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (0-20);1;nm;un;std;v;;24;6;0;1;;;;;;;;;1;1;136;;
+spell;standard_r_0;wraith_archer_demo;summon;a;Dummy Wraith Archer (0-20);1;nm;un;std;v;;30;5;0;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_0;wraith_mage_demo;summon;a;Dummy Wraith Mage (0-20);1;nm;un;std;v;;30;5;0;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_10;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (10-30);1;nm;un;std;v;;240;6;10;1;;;;;;;;;1;1;136;;
+spell;standard_r_10;wraith_archer_demo;summon;a;Dummy Wraith Archer (10-30);1;nm;un;std;v;;300;5;10;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_10;wraith_mage_demo;summon;a;Dummy Wraith Mage (10-30);1;nm;un;std;v;;300;5;10;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_20;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (20-40);1;nm;un;std;v;;2400;6;20;1;;;;;;;;;1;1;136;;
+spell;standard_r_20;wraith_archer_demo;summon;a;Dummy Wraith Archer (20-40);1;nm;un;std;v;;3000;5;20;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_20;wraith_mage_demo;summon;a;Dummy Wraith Mage (20-40);1;nm;un;std;v;;3000;5;20;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_30;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (30-50);1;nm;un;std;v;;24000;6;30;1;;;;;;;;;1;1;136;;
+spell;standard_r_30;wraith_archer_demo;summon;a;Dummy Wraith Archer (30-50);1;nm;un;std;v;;30000;5;30;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_30;wraith_mage_demo;summon;a;Dummy Wraith Mage (30-50);1;nm;un;std;v;;30000;5;30;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_40;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (40-60);1;nm;un;std;v;;38000;6;40;1;;;;;;;;;1;1;136;;
+spell;standard_r_40;wraith_archer_demo;summon;a;Dummy Wraith Archer (40-60);1;nm;un;std;v;;48000;5;40;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_40;wraith_mage_demo;summon;a;Dummy Wraith Mage (40-60);1;nm;un;std;v;;48000;5;40;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_50;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (50-70);1;nm;un;std;v;;60000;6;50;1;;;;;;;;;1;1;136;;
+spell;standard_r_50;wraith_archer_demo;summon;a;Dummy Wraith Archer (50-70);1;nm;un;std;v;;75000;5;50;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_50;wraith_mage_demo;summon;a;Dummy Wraith Mage (50-70);1;nm;un;std;v;;75000;5;50;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_60;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (60-80);1;nm;un;std;v;;96000;6;60;1;;;;;;;;;1;1;136;;
+spell;standard_r_60;wraith_archer_demo;summon;a;Dummy Wraith Archer (60-80);1;nm;un;std;v;;120000;5;60;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_60;wraith_mage_demo;summon;a;Dummy Wraith Mage (60-80);1;nm;un;std;v;;120000;5;60;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_70;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (70-90);1;nm;un;std;v;;150000;6;70;1;;;;;;;;;1;1;136;;
+spell;standard_r_70;wraith_archer_demo;summon;a;Dummy Wraith Archer (70-90);1;nm;un;std;v;;190000;5;70;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_70;wraith_mage_demo;summon;a;Dummy Wraith Mage (70-90);1;nm;un;std;v;;190000;5;70;;;1;;;;;180;200;1;1;136;;
+spell;standard_m_80;wraith_fighter_demo;summon;a;Dummy Wraith Fighter (80-100);1;nm;un;std;v;;240000;6;80;1;;;;;;;;;1;1;136;;
+spell;standard_r_80;wraith_archer_demo;summon;a;Dummy Wraith Archer (80-100);1;nm;un;std;v;;300000;5;80;;1;;;;94;110;;;1;1;136;;
+spell;standard_c_80;wraith_mage_demo;summon;a;Dummy Wraith Mage (80-100);1;nm;un;std;v;;300000;5;80;;;1;;;;;180;200;1;1;136;;
+spell;standard_r11_0;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (0-20);1;nm;un;std;v;;30;5;0;;1.1;;;;94;110;;;1;1;136;;
+spell;standard_r11_50;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (50-70);1;nm;un;std;v;;75000;5;50;;1.1;;;;94;110;;;1;1;136;;
+spell;standard_r11_80;wraith_archer_demo;summon;a;Dummy Wraith Archer 1.1 (80-100);1;nm;un;std;v;;300000;5;80;;1.1;;;;94;110;;;1;1;136;;
+spell;standard_cmp_0;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (0-20);1;nm;un;std;v;;30;5;0;;;1;;0.5;;;120;140;1;1;136;;
+spell;standard_cmp_50;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (50-70);1;nm;un;std;v;;75000;5;50;;;1;;0.5;;;120;140;1;1;136;;
+spell;standard_cmp_80;wraith_mage_demo_mp;summon;a;Dummy Wraith Mage Multi-Projectile (80-100);1;nm;un;std;v;;300000;5;80;;;1;;0.5;;;120;140;1;1;136;;
+spell;standard_cdv_0;wraith_mage_demo_dv_0;summon;a;Dummy Wraith Mage DmgVol (0-20);1;nm;un;std;v;;30;5;0;;;1;;;;;;;1;1;136;;Custom dmgvol spell
+spell;standard_cdv_50;wraith_mage_demo_dv_50;summon;a;Dummy Wraith Mage DmgVol (50-70);1;nm;un;std;v;;75000;5;50;;;1;;;;;;;1;1;136;;Custom dmgvol spell
+spell;standard_cdv_80;wraith_mage_demo_dv_80;summon;a;Dummy Wraith Mage DmgVol (80-100);1;nm;un;std;v;;300000;5;80;;;1;;;;;;;1;1;136;;Custom dmgvol spell
+spell;standard_cf_0;wraith_mage_demo_fire_0;summon;a;Dummy Wraith Mage Fire (0-20);1;nm;un;std;v;;30;5;0;;;1;;;;;;;1;1;136;;Custom fire spell
+spell;standard_cf_50;wraith_mage_demo_fire_50;summon;a;Dummy Wraith Mage Fire (50-70);1;nm;un;std;v;;75000;5;50;;;1;;;;;;;1;1;136;;Custom fire spell
+spell;standard_cf_80;wraith_mage_demo_fire_80;summon;a;Dummy Wraith Mage Fire (80-100);1;nm;un;std;v;;300000;5;80;;;1;;;;;;;1;1;136;;Custom fire spell
+spell;standard_cp_0;wraith_mage_demo_poison_0;summon;a;Dummy Wraith Mage Poison (0-20);1;nm;un;std;v;;30;5;0;;;1;;0;;;;;1;1;136;;Custom poison spell
+spell;standard_cp_50;wraith_mage_demo_poison_50;summon;a;Dummy Wraith Mage Poison (50-70);1;nm;un;std;v;;75000;5;50;;;1;;0;;;;;1;1;136;;Custom poison spell
+spell;standard_cp_80;wraith_mage_demo_poison_80;summon;a;Dummy Wraith Mage Poison (80-100);1;nm;un;std;v;;300000;5;80;;;1;;0;;;;;1;1;136;;Custom poison spell
