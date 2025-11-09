@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Tesla Heal Coil";
         description = "Summons a Tesla Heal Coil to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

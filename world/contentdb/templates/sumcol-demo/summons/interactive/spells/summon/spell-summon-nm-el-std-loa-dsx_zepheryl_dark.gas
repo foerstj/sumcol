@@ -13,7 +13,7 @@
     {
         screen_name = "Summon Dark Zepheryl (SumCol Demo)";
         description = "Summons a Dark Zepheryl to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

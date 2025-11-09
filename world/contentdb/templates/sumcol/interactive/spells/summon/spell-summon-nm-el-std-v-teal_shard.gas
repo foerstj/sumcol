@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Teal Shard";
         description = "Summons a Teal Shard to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

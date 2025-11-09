@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Shadow Lunger";
         description = "Summons a Shadow Lunger to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

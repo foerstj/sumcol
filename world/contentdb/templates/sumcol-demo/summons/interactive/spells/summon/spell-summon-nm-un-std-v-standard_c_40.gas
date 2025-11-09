@@ -13,7 +13,7 @@
     {
         screen_name = "Summon Dummy Wraith Mage (40-60) (SumCol Demo)";
         description = "Summons a Dummy Wraith Mage (40-60) to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

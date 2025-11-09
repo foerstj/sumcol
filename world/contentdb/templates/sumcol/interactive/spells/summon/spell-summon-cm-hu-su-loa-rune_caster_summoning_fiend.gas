@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Rune Caster (Summoning Fiend)";
         description = "Summons a Rune Caster (Summoning Fiend) to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_combat;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

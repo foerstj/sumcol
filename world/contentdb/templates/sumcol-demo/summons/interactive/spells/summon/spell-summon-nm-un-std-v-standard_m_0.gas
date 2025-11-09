@@ -13,7 +13,7 @@
     {
         screen_name = "Summon Dummy Wraith Fighter (0-20) (SumCol Demo)";
         description = "Summons a Dummy Wraith Fighter (0-20) to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

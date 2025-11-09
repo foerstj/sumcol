@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Swamp Stinger";
         description = "Summons a Swamp Stinger to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Ancient Scorpiot";
         description = "Summons an Ancient Scorpiot to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

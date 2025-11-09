@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Hassat Mage (Casting Orb)";
         description = "Summons a Hassat Mage (Casting Orb) to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

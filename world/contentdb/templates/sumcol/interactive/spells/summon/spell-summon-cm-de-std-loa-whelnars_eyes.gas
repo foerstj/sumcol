@@ -12,7 +12,7 @@
     {
         screen_name = "Summon Whelnar's Eyes";
         description = "Summons Whelnar's Eyes to guard the Caster.";
-        membership = spells_summon;  // for imbued spellbook support
+        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {
