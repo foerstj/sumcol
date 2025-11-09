@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Forest Troll (no recov) (SumCol Demo)";
         description = "Summons a Forest Troll (no recov) to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Seck Elite Guard";
         description = "Summons a Seck Elite Guard to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

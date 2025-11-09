@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Chomper (SumCol Demo)";
         description = "Summons a Chomper to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

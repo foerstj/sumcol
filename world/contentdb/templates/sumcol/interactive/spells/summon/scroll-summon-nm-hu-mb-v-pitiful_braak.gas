@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Pitiful Braak";
         description = "Summons the Pitiful Braak to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

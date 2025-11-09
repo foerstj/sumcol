@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Goblin Guard";
         description = "Summons a Goblin Guard to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Mucosa (SumCol Demo)";
         description = "Summons a Mucosa to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

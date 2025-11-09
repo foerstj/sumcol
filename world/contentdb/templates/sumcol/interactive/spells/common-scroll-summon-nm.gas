@@ -145,6 +145,7 @@
 				condition* = receive_world_message("we_dropped");
 			}
 		}
+        membership = spells_summon, spells_nature;  // for imbued spellbook support
 	}
 	[magic]
 	{

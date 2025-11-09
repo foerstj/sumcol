@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Hassat Fighter";
         description = "Summons a Hassat Fighter to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

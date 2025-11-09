@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Rune Beast (SumCol Demo)";
         description = "Summons a Rune Beast to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

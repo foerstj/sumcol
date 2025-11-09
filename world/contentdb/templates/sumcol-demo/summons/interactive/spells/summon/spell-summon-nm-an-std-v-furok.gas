@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Furok (SumCol Demo)";
         description = "Summons a Furok to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

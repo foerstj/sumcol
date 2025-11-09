@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Mutant Goblin Hurler";
         description = "Summons a Mutant Goblin Hurler to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

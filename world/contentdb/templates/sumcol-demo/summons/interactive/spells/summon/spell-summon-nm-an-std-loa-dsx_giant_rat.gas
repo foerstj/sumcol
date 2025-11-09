@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Giant Rat (SumCol Demo)";
         description = "Summons a Giant Rat to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

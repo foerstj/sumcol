@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Dark Acolyte";
         description = "Summons a Dark Acolyte to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

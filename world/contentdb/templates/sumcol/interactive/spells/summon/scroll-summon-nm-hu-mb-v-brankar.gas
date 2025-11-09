@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Brankar the Scavenger";
         description = "Summons Brankar the Scavenger to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

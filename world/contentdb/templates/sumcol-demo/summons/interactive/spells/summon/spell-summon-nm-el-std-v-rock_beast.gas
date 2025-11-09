@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Rock Beast (SumCol Demo)";
         description = "Summons a Rock Beast to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

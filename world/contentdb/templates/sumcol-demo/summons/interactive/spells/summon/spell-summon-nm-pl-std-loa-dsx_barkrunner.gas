@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Barkrunner (SumCol Demo)";
         description = "Summons a Barkrunner to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

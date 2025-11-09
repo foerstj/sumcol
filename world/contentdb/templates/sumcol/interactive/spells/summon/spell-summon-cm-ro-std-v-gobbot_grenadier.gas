@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Gobbot Grenadier";
         description = "Summons a Gobbot Grenadier to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

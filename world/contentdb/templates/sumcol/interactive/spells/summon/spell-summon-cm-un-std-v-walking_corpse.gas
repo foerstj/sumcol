@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Walking Corpse";
         description = "Summons a Walking Corpse to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

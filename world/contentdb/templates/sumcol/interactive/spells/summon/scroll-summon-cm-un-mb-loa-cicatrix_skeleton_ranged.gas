@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Cicatrix's Skeleton Archer";
         description = "Summons a Cicatrix's Skeleton Archer to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

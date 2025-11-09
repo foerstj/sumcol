@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Larch (SumCol Demo)";
         description = "Summons a Larch to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

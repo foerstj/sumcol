@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Killer Gremal (SumCol Demo)";
         description = "Summons a Killer Gremal to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

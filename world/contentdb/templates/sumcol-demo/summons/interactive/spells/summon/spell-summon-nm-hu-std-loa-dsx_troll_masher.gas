@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Troll Masher (SumCol Demo)";
         description = "Summons a Troll Masher to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

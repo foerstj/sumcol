@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Mucosa Raider";
         description = "Summons a Mucosa Raider to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

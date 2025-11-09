@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Red Drake";
         description = "Summons a Red Drake to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

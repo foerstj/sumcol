@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Zaurask Fighter";
         description = "Summons a Zaurask Fighter to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Frost Guardian";
         description = "Summons a Frost Guardian to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

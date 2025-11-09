@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Desert Braak (SumCol Demo)";
         description = "Summons a Desert Braak to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

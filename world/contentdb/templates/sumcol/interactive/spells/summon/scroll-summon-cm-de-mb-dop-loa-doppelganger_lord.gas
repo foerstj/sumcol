@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Doppelganger Lord";
         description = "Summons a Doppelganger Lord to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

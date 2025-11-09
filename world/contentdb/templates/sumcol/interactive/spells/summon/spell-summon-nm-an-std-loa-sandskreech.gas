@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Sandskreech";
         description = "Summons a Sandskreech to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

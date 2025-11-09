@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Dark Lunger";
         description = "Summons a Dark Lunger to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

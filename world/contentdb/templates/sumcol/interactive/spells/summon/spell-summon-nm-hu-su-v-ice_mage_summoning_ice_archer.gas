@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Ice Mage (Summoning Ice Archer)";
         description = "Summons an Ice Mage (Summoning Ice Archer) to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

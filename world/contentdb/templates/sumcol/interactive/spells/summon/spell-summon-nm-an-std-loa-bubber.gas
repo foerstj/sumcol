@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Island Lizard";
         description = "Summons an Island Lizard to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

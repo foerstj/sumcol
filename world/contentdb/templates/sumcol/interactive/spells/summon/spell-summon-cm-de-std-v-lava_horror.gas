@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Lava Horror";
         description = "Summons a Lava Horror to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

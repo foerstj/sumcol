@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Jungle Skrubb";
         description = "Summons a Jungle Skrubb to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

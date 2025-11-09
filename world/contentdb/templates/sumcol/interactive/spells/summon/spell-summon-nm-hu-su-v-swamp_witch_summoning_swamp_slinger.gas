@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Swamp Witch (Summoning Slinger)";
         description = "Summons a Swamp Witch (Summoning Slinger) to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
         is_pcontent_allowed = false;
     }
     [gui]

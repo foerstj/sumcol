@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Phrak Piercer";
         description = "Summons a Phrak Piercer to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

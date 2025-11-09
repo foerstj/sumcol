@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Slime Zombie";
         description = "Summons a Slime Zombie to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

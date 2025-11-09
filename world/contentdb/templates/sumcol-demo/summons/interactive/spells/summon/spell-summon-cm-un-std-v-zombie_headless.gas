@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Headless Zombie (SumCol Demo)";
         description = "Summons a Headless Zombie to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

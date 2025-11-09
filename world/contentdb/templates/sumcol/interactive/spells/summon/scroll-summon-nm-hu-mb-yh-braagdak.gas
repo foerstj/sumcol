@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Braagdak the Growler";
         description = "Summons Braagdak the Growler to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

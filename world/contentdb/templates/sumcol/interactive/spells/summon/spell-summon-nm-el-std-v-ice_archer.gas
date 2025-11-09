@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Ice Archer";
         description = "Summons an Ice Archer to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

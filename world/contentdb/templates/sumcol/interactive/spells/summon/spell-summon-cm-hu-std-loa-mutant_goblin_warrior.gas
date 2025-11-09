@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Mutated Goblin Warrior";
         description = "Summons a Mutated Goblin Warrior to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Lesser Scrub Scorpion";
         description = "Summons a Lesser Scrub Scorpion to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Warrior Wraith";
         description = "Summons a Warrior Wraith to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

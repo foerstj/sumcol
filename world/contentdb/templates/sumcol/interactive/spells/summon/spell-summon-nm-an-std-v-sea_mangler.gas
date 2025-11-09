@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Sea Mangler";
         description = "Summons a Sea Mangler to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Zaurask Fang";
         description = "Summons a Zaurask Fang to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

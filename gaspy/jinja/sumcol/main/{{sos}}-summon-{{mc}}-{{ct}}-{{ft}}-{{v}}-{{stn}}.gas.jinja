@@ -12,7 +12,6 @@
     {
         screen_name = "Summon {{csn}}";
         description = "Summons {{ [a, csn] | join(' ') | trim }} to guard the Caster.";
-        membership = spells_summon, spells_{{ 'nature' if mc == 'nm' else 'combat' }};  // for imbued spellbook support
         {% if test_only %}
         is_pcontent_allowed = false;
         {% endif %}

@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Vile Mucosa";
         description = "Summons a Vile Mucosa to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {

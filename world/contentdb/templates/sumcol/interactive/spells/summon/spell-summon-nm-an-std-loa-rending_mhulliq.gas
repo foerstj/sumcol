@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Rending Mhulliq";
         description = "Summons a Rending Mhulliq to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

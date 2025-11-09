@@ -13,7 +13,6 @@
     {
         screen_name = "Summon Cave Bear (SumCol Demo)";
         description = "Summons a Cave Bear to guard the Caster.";
-        membership = spells_summon, spells_nature;  // for imbued spellbook support
     }
     [gui]
     {

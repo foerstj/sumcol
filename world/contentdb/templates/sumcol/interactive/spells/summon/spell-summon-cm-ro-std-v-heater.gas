@@ -12,7 +12,6 @@
     {
         screen_name = "Summon Heater";
         description = "Summons a Heater to guard the Caster.";
-        membership = spells_summon, spells_combat;  // for imbued spellbook support
     }
     [gui]
     {
