@@ -1,6 +1,6 @@
-[t:template,n:gpg_spell_apprentice_frost_summon]
+[t:template,n:spell_krug_growler_frost_summon]
 {
-	specializes = base_gpg_spell_apprentice_frost_summon;
+	specializes = base_spell_krug_growler_frost_summon;
 
 	// Using summon enchantments in LoA
 }

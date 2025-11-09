@@ -9,7 +9,7 @@
 	{
 		[other]
 		{
-			il_active_primary_spell = gpg_spell_apprentice_frost_summon;
+			il_active_primary_spell = spell_krug_growler_frost_summon;
 		}
 		[pcontent]
 		{
