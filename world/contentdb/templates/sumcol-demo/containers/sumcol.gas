@@ -352,6 +352,7 @@
         {
             il_main = spell_summon_alpine_phrak;
             il_main = spell_summon_ice_phrak;
+            il_main = spell_summon_polar_bear;
         }
     }
 }
@@ -364,6 +365,8 @@
     {
         [other]
         {
+            il_main = spell_summon_frost_guardian;
+            il_main = spell_summon_ice_guardian;
         }
     }
 }

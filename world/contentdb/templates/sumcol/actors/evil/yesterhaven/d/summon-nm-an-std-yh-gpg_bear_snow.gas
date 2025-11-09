@@ -1,0 +1,7 @@
+[t:template,n:gpg_bear_snow_summon]
+{
+    specializes = gpg_bear_snow_base;
+
+    doc = "[summon] bear_snow";
+	aspect:experience_value = 0;
+}

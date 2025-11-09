@@ -10,6 +10,9 @@
             // Standard
 			il_main = spell_summon_alpine_phrak;
 			il_main = spell_summon_ice_phrak;
+			il_main = spell_summon_frost_guardian;
+			il_main = spell_summon_ice_guardian;
+			il_main = spell_summon_polar_bear;
 
             // Non-Standard
 			il_main = scroll_summon_ice_phrak_terror;

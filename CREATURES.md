@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 297
+SUMMONS COLLECTION CREATURES: 300
 
 Vanilla Standard Creatures: 119
 - Animals: 30
@@ -192,10 +192,14 @@ Vanilla Non-Standard Creatures: 56
   - Droog Captain
   - Ferocious Braak
 
-Yesterhaven Standard Creatures: 2
-- Animals: 2
+Yesterhaven Standard Creatures: 5
+- Animals: 3
   - Alpine Phrak
   - Ice Phrak
+  - Polar Bear
+- Elementals: 2
+  - Frost Guardian
+  - Ice Guardian
 
 Yesterhaven Non-Standard Creatures: 1
 - Animals: 1
