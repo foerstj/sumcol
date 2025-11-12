@@ -1,14 +1,14 @@
 [t:template,n:gpg_krug_throw_snow_summon]
 {
-    specializes = gpg_krug_throw_snow_base;
+	specializes = gpg_krug_throw_snow_base;
 
-    doc = "[summon] krug snow, snowball thrower";
+	doc = "[summon] krug snow, snowball thrower";
 	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
+	physics:explode_when_killed = false;
 	[inventory]
 	{
 		[pcontent]
 		{
-        }
-    }
+		}
+	}
 }

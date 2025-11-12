@@ -1,10 +1,10 @@
 [t:template,n:gpg_krug_apprentice_snow_summon]
 {
-    specializes = gpg_krug_apprentice_snow;
+	specializes = gpg_krug_apprentice_snow_base;
 
-    doc = "[summon] krug Apprentice snow";
+	doc = "[summon] krug Apprentice snow";
 	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
+	physics:explode_when_killed = false;
 	[inventory]
 	{
 		[other]
@@ -13,6 +13,6 @@
 		}
 		[pcontent]
 		{
-        }
-    }
+		}
+	}
 }

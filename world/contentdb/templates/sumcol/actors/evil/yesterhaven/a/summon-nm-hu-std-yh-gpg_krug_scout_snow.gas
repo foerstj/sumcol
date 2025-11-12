@@ -1,10 +1,10 @@
 [t:template,n:gpg_krug_scout_snow_summon]
 {
-    specializes = gpg_krug_scout_snow_base;
+	specializes = gpg_krug_scout_snow_base;
 
-    doc = "[summon] krug scout snow";
+	doc = "[summon] krug scout snow";
 	aspect:experience_value = 0;
-    physics:explode_when_killed = false;
+	physics:explode_when_killed = false;
 	[inventory]
 	{
 		[pcontent]
@@ -13,6 +13,6 @@
 			{
 				  es_weapon_hand = dg_g_c_1h_fun;
 			}
-        }
-    }
+		}
+	}
 }
