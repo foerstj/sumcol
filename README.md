@@ -22,6 +22,9 @@ If you use vanilla DS1, put the "Summons Collection Vanilla" files into the Reso
 
 Don't use both at the same time, and don't use the LoA builds with vanilla DS1. The builds are different because the engines calculate damage differently.
 
+To use the Yesterhaven summons, you also need Yesterhaven installed (specifically, you need the Yesterhaven.dsres file).
+
+### Effects
 Spells are added to PContent, which means they appear in shops & drops with some probability.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
@@ -33,6 +36,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 ## Features
 
 - DS Versions: Both Vanilla and LoA (incl. separate builds for proper balancing)
+  - Maps: creatures from KoE+UP, from LoA, and from Yesterhaven
 - Magic Classes: Both Combat Magic and Nature Magic
 - Creature Types: All sorts of creatures are supported - humanoids, animals, demonic creatures, plants, elementals, robots, and undead.
   Water creatures were omitted because summoning a Shrack or Hydrack on land would be weird.
@@ -51,7 +55,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ## Creatures
 
-Almost 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE, UP & LoA.\
+Almost 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE+UP, LoA, and Yesterhaven.\
 For a list of all supported creatures, see CREATURES.md.
 
 
