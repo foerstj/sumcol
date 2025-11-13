@@ -1,0 +1,147 @@
+[t:0x0407,n:text]
+{
+
+	[0x0000]
+	{
+		from = "Summon Alpine Phrak";
+		to = "Bergphrak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Alpine Phrak to guard the Caster.";
+		to = "Beschwört einen Bergphrak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Forager";
+		to = "Krug-Wildbeuter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Forager to guard the Caster.";
+		to = "Beschwört einen Krug-Wildbeuter, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ice Phrak";
+		to = "Eisphrak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ice Phrak to guard the Caster.";
+		to = "Beschwört einen Eisphrak, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Tracker";
+		to = "Krug-Fährtenleser beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Tracker to guard the Caster.";
+		to = "Beschwört einen Krug-Fährtenleser, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Frost Guardian";
+		to = "Frostwächter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Frost Guardian to guard the Caster.";
+		to = "Beschwört einen Frostwächter, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ice Guardian";
+		to = "Eiswächter beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ice Guardian to guard the Caster.";
+		to = "Beschwört einen Eiswächter, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Braagdak the Growler";
+		to = "Braagdak den Knurrer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Braagdak the Growler to guard the Caster.";
+		to = "Beschwört Braagdak den Knurrer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Ice Phrak Terror";
+		to = "Eisphrak-Schrecken beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Ice Phrak Terror to guard the Caster.";
+		to = "Beschwört einen Eisphrak-Schrecken, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Growler";
+		to = "Krug-Knurrer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Growler to guard the Caster.";
+		to = "Beschwört einen Krug-Knurrer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Hunter";
+		to = "Krug-Jäger beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Hunter to guard the Caster.";
+		to = "Beschwört eine Krug-Jäger, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Gragba the Trapper";
+		to = "Gragba den Fallensteller beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons Gragba the Trapper to guard the Caster.";
+		to = "Beschwört Gragba den Fallensteller, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Polar Bear";
+		to = "Eisbär beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Polar Bear to guard the Caster.";
+		to = "Beschwört einen Eisbär, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Icepelter";
+		to = "Krug-Eiswerfer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Icepelter to guard the Caster.";
+		to = "Beschwört einen Krug-Eiswerfer, der den Anwender verteidigt.";
+	}
+
+}

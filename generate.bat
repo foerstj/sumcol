@@ -26,6 +26,8 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gasp
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gaspy\jinja\sumcol\language\sumcol-v-std.de.gas.csv --value v=v --value ft=std --bits "%bits%"
 if %errorlevel% neq 0 pause
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gaspy\jinja\sumcol\language\sumcol-yh-all.de.gas.csv --value v=yh --value ft=all --bits "%bits%"
+if %errorlevel% neq 0 pause
 
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
