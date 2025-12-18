@@ -15,8 +15,8 @@
     }
     [gui]
     {
-        active_icon =   b_gui_ig_i_ic_sp_sumcol-nm-hu-std-v-elddim_guard_melee;
-        inventory_icon =b_gui_ig_i_ic_sp_sumcol-nm-hu-std-v-elddim_guard_melee-inv;
+        active_icon =   b_gui_ig_i_ic_sp_sumcol-x-guards-nm-hu-std-v-elddim_guard_melee;
+        inventory_icon =b_gui_ig_i_ic_sp_sumcol-x-guards-nm-hu-std-v-elddim_guard_melee-inv;
     }
     [spell_summon]
     {

@@ -8,7 +8,7 @@ pushd "%GasPy%"
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\x\guards\interactive\spells\summon "{{sos}}-summon-x-guards-{{mc}}-{{ct}}-{{ft}}-{{v}}-{{stn}}.gas" --for-each gaspy\jinja\sumcol\main\x-guards.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\x\guards\interactive\spells\summon "{{sos}}-summon-x-{{x}}-{{mc}}-{{ct}}-{{ft}}-{{v}}-{{stn}}.gas" --for-each gaspy\jinja\sumcol\main\x-guards.csv --value x=guards --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 pause
 
