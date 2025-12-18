@@ -5,12 +5,13 @@ set vanilla=%2
 set bits=%~dp0.
 
 pushd "%GasPy%"
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\x\guards\interactive\spells\summon --for-each gaspy\jinja\sumcol\main\x-guards.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+if %errorlevel% neq 0 pause
+
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\x\guards\interactive\spells\summon "{{sos}}-summon-x-guards-{{mc}}-{{ct}}-{{ft}}-{{v}}-{{stn}}.gas" --for-each gaspy\jinja\sumcol\main\x-guards.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 pause
 
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
-if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-weapons world\contentdb\templates\sumcol\interactive\weapons --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
