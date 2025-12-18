@@ -1,4 +1,4 @@
-[t:template,n:sumcol_guard]
+[t:template,n:sumcol_guard_summon]
 {
 	specializes = base_guard;
 
