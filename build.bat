@@ -47,6 +47,8 @@ if "%target%"=="loa" (
   call :build_partial "std-loa" "LoA Standard"
   call :build_partial2 "loa" "std" "LoA Non-Standard"
 )
+:: extensions
+call :build_partial_x "guards" "Guards"
 
 :: Compile translation all-in-one resource file
 rmdir /S /Q "%tmp%\Bits"
@@ -104,6 +106,22 @@ exit /b 0
   robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /xd x /xf *-x-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *-x-* /S
   set title=%res_cs% %target_cs% - %name% Creatures
+  "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
+  if %errorlevel% neq 0 pause
+exit /b 0
+
+:: build extension
+:build_partial_x
+  set infix_x=%~1
+  set name_x=%~2
+  echo build_partial_x %infix_x% %name_x%
+  rmdir /S /Q "%tmp%\Bits"
+  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-x-%infix_x%-* /xf *.psd /S
+  robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
+  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-x-%infix_x%-* /S
+  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-x-%infix_x%-* /S
+  set title=%res_cs% %target_cs% Extension - %name_x%
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
