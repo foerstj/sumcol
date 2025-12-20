@@ -1,0 +1,25 @@
+[t:template,n:sumcol_guard_captain_fallraen_summon]
+{
+	specializes = base_guard_ranged;
+
+	aspect:experience_value = 0;
+	aspect:draw_selection_indicator = false;
+    physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+
+	// from the actor.gas
+	[common]
+	{
+		screen_name = "Guard Captain of Fallraen";
+	}
+	[inventory]
+	{
+		[equipment]
+		{
+			es_chest = bd_un_pl_f_g_c_avg;
+			es_feet = bo_bo_ch_f_g_c_avg;
+			es_head = he_op_pl_roman;
+			es_shield_hand = bw_g_c_s_m_c_avg;
+		}
+	}
+}
