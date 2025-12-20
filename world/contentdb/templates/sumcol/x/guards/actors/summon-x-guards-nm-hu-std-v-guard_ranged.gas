@@ -1,0 +1,9 @@
+[t:template,n:sumcol_guard_ranged_summon]
+{
+	specializes = base_guard_ranged;
+
+	aspect:experience_value = 0;
+	aspect:draw_selection_indicator = false;
+    physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}

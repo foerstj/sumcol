@@ -1,2 +1,4 @@
 sos;stn;ctn;ctn_suffix;a;csn;scale;mc;ct;ft;v;int;req_lvl;gold;dur_min;dmg_m;dmg_r;dmg_c;abf_m;abf_r;abf_c;wpn_dmg_min;wpn_dmg_max;spl_dmg_min;spl_dmg_max;armor;life;effect_script;end_script;test_only;comment
 spell;elddim_guard_melee;sumcol_guard;;a;Legionnaire Guard from Elddim;1.5;nm;hu;std;v;x;10;240;6;1;;;;;;57;85;;;1.5;1;;;;
+spell;elddim_guard_ranged;sumcol_guard_ranged;;a;Legionnaire Archer from Elddim;1.5;nm;hu;std;v;x;12;480;5;;1;;;;;19;29;;;1.5;1;;;;
+spell;fallraen_guard_ranged;sumcol_guard_ranged;;a;Legionnaire Archer from Fallraen;1.5;nm;hu;std;v;x;37;41000;5;;1;;;;;19;29;;;1.5;1;;;;

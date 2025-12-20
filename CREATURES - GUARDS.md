@@ -1,5 +1,7 @@
-SUMMONS COLLECTION CREATURES - GUARDS: 1
+SUMMONS COLLECTION CREATURES - GUARDS: 3
 
-Vanilla Standard Creatures: 1
-- Humanoids: 1
+Vanilla Standard Creatures: 3
+- Humanoids: 3
   - Legionnaire Guard from Elddim
+  - Legionnaire Archer from Elddim
+  - Legionnaire Archer from Fallraen
