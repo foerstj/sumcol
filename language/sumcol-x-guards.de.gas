@@ -34,4 +34,70 @@
 		to = "Beschwört den Wachhauptmann von Elddim, der den Anwender verteidigt.";
 	}
 
+	[0x0000]
+	{
+		from = "Summon Legionnaire Guard from Crystwind";
+		to = "Legionswächter aus Kristallwind beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Guard from Crystwind to guard the Caster.";
+		to = "Beschwört einen Legionswächter aus Kristallwind, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Legionnaire Archer from Crystwind";
+		to = "Bogenschützen der Legion aus Kristallwind beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Archer from Crystwind to guard the Caster.";
+		to = "Beschwört einen Bogenschützen der Legion aus Kristallwind, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Guard Captain of Crystwind";
+		to = "Wachhauptmann von Kristallwind beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Guard Captain of Crystwind to guard the Caster.";
+		to = "Beschwört den Wachhauptmann von Kristallwind, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Legionnaire Guard from Fallraen";
+		to = "Legionswächter aus Fallraen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Guard from Fallraen to guard the Caster.";
+		to = "Beschwört einen Legionswächter aus Fallraen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Legionnaire Archer from Fallraen";
+		to = "Bogenschützen der Legion aus Fallraen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Archer from Fallraen to guard the Caster.";
+		to = "Beschwört einen Bogenschützen der Legion aus Fallraen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Guard Captain of Fallraen";
+		to = "Wachhauptmann von Fallraen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Guard Captain of Fallraen to guard the Caster.";
+		to = "Beschwört den Wachhauptmann von Fallraen, der den Anwender verteidigt.";
+	}
+
 }
