@@ -81,11 +81,11 @@ exit /b %errorlevel%
   set name=%~2
   echo build_partial %infix% %name%
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix%-* /xf *.psd /S
+  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix%-* /xf *-x-* /xf *.psd /S
   robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /S
-  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /S
+  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /xd x /xf *-x-* /S
+  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /xf *-x-* /S
   set title=%res_cs% %target_cs% - %name% Creatures
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
@@ -98,11 +98,11 @@ exit /b 0
   set name=%~3
   echo build_partial2 %infix_incl% %infix_excl% %name%
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *.psd /S
+  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *-x-* /xf *.psd /S
   robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /S
-  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /S
+  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /xd x /xf *-x-* /S
+  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *-x-* /S
   set title=%res_cs% %target_cs% - %name% Creatures
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
