@@ -7,22 +7,7 @@
     {
         [other]
         {
-            // Standard
-			il_main = spell_summon_alpine_phrak;
-			il_main = spell_summon_ice_phrak;
-			il_main = spell_summon_frost_guardian;
-			il_main = spell_summon_ice_guardian;
-			il_main = spell_summon_polar_bear;
-            il_main = spell_summon_krug_forager;
-            il_main = spell_summon_krug_tracker;
-            il_main = spell_summon_krug_growler;
-            il_main = spell_summon_krug_hunter;
-            il_main = spell_summon_krug_icepelter;
-
-            // Non-Standard
-			il_main = scroll_summon_ice_phrak_terror;
-            il_main = scroll_summon_braagdak;
-            il_main = scroll_summon_gragba;
+			il_main = spell_summon_elddim_guard_melee;
         }
     }
 }
