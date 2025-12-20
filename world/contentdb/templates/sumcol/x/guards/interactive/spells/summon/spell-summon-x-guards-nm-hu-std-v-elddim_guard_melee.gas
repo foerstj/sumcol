@@ -3,15 +3,15 @@
 {
     specializes = base_spell_sumcol_nm;
 
-    doc = "spell Summon Elddim Legionnaire Guard";
+    doc = "spell Summon Legionnaire Guard from Elddim";
     [aspect]
     {
         gold_value = 240;
     }
     [common]
     {
-        screen_name = "Summon Elddim Legionnaire Guard";
-        description = "Summons an Elddim Legionnaire Guard to guard the Caster.";
+        screen_name = "Summon Legionnaire Guard from Elddim";
+        description = "Summons a Legionnaire Guard from Elddim to guard the Caster.";
     }
     [gui]
     {

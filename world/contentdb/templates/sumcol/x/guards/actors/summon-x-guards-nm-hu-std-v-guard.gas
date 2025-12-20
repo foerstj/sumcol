@@ -11,5 +11,5 @@
 [t:template,n:elddim_guard_melee_summon]
 {
 	specializes = sumcol_guard_summon_base;
-	common:screen_name = "Elddim Legionnaire Guard";
+	common:screen_name = "Legionnaire Guard from Elddim";
 }

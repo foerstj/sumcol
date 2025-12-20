@@ -1,0 +1,37 @@
+[t:0x0407,n:text]
+{
+
+	[0x0000]
+	{
+		from = "Summon Legionnaire Guard from Elddim";
+		to = "Legionswächter aus Elddim beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Guard from Elddim to guard the Caster.";
+		to = "Beschwört einen Legionswächter aus Elddim, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Legionnaire Archer from Elddim";
+		to = "Bogenschützen der Legion aus Elddim beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Legionnaire Archer from Elddim to guard the Caster.";
+		to = "Beschwört einen Bogenschützen der Legion aus Elddim, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Guard Captain of Elddim";
+		to = "Wachhauptmann von Elddim beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons the Guard Captain of Elddim to guard the Caster.";
+		to = "Beschwört den Wachhauptmann von Elddim, der den Anwender verteidigt.";
+	}
+
+}
