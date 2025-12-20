@@ -1,6 +1,6 @@
 [t:template,n:sumcol_guard_04_summon]
 {
-	specializes = base_guard_04;
+	specializes = guard_04_base;
 
 	common:screen_name = "Barracks Guard";
 	aspect:experience_value = 0;
