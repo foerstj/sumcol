@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES - GUARDS: 6
+SUMMONS COLLECTION CREATURES - GUARDS: 7
 
 Vanilla Standard Creatures: 5
 - Humanoids: 5
@@ -8,6 +8,7 @@ Vanilla Standard Creatures: 5
   - Legionnaire Archer from Crystwind
   - Legionnaire Archer from Fallraen
 
-Vanilla Non-Standard Creatures: 1
-- Humanoids: 1
+Vanilla Non-Standard Creatures: 2
+- Humanoids: 2
   - Guard Captain of Elddim
+  - Guard Captain of Crystwind

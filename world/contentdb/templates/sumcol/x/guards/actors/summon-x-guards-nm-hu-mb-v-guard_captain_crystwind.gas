@@ -1,0 +1,24 @@
+[t:template,n:sumcol_guard_captain_crystwind_summon]
+{
+	specializes = base_guard_captain_crystwind;
+
+	aspect:experience_value = 0;
+	aspect:draw_selection_indicator = false;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[other] {}
+		[pcontent] {}
+
+		// from the actor.gas
+		[equipment]
+		{
+			es_chest = bd_un_pl_f_g_c_avg;
+			es_feet = bo_bo_ch_f_g_c_avg;
+			es_forearms = gl_ga_bl_f_g_c_avg;
+			es_head = he_op_pl_roman;
+			es_weapon_hand = ax_g_c_2h1b_avg;
+		}
+	}
+}
