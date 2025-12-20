@@ -20,7 +20,7 @@
     }
     [spell_summon]
     {
-        template_name = elddim_guard_melee_summon;
+        template_name = sumcol_guard_summon;
         script_params = "[scale(1.5)]";
     }
     [magic]
