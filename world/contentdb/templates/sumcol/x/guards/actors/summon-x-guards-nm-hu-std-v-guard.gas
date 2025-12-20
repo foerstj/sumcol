@@ -1,8 +1,15 @@
-[t:template,n:sumcol_guard_summon]
+[t:template,n:sumcol_guard_summon_base]
 {
 	specializes = base_guard;
 
 	aspect:experience_value = 0;
+	aspect:draw_selection_indicator = false;
     physics:explode_when_killed = false;
 	inventory:spew_equipped_kill_count = <ignore>;
+}
+
+[t:template,n:elddim_guard_melee_summon]
+{
+	specializes = sumcol_guard_summon_base;
+	common:screen_name = "Elddim Legionnaire Guard";
 }
