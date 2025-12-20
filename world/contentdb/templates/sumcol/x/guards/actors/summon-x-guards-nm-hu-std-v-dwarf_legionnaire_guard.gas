@@ -1,0 +1,9 @@
+[t:template,n:dwarf_legionnaire_guard_summon]
+{
+	specializes = dwarf_legionnaire_guard_base;
+
+	aspect:experience_value = 0;
+	aspect:draw_selection_indicator = false;
+    physics:explode_when_killed = false;
+	inventory:spew_equipped_kill_count = <ignore>;
+}
