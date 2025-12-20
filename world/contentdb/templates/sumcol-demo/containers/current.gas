@@ -8,6 +8,14 @@
         [other]
         {
 			il_main = spell_summon_elddim_guard_melee;
+			il_main = spell_summon_elddim_guard_ranged;
+			il_main =scroll_summon_elddim_guard_captain;
+			il_main = spell_summon_crystwind_guard_melee;
+			il_main = spell_summon_crystwind_guard_ranged;
+			il_main =scroll_summon_crystwind_guard_captain;
+			il_main = spell_summon_fallraen_guard_melee;
+			il_main = spell_summon_fallraen_guard_ranged;
+			il_main =scroll_summon_fallraen_guard_captain;
         }
     }
 }
