@@ -51,12 +51,13 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 	- Healing summons: The Tesla Heal Coil will heal you, instead of attacking enemies.
 	- Doppelganger summons: You summon a white cloud, which will turn into the first enemy it sees.
 	  Note: This is the most experimental of all non-standard categories. The Doppelganger will behave weirdly in a different way for each new enemy type. Health of the doppel is based on the enemy.
+- Extensions: Guards
 
 
 ## Creatures
 
-Almost 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE+UP, LoA, and Yesterhaven.\
-For a list of all supported creatures, see CREATURES.md.
+Around 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE+UP, LoA, and Yesterhaven.\
+For a list of all supported creatures, see the CREATURES.md files.
 
 
 ## Balancing
