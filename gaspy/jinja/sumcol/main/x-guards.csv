@@ -3,4 +3,5 @@ spell;elddim_guard_melee;sumcol_guard;;a;Legionnaire Guard from Elddim;1.5;nm;hu
 spell;elddim_guard_ranged;sumcol_guard_ranged;;a;Legionnaire Archer from Elddim;1.5;nm;hu;std;v;x;12;480;5;;1;;;;;19;29;;;1.5;1;;;;
 scroll;elddim_guard_captain;sumcol_guard_captain_elddim;;the;Guard Captain of Elddim;1.5;nm;hu;mb;v;x;15;150;13;1;;;;;;74;111;;;1.5;3;;;;
 spell;crystwind_guard_melee;dwarf_legionnaire_guard;;a;Legionnaire Guard from Crystwind;1.5;nm;hu;std;v;x;25;7600;6;1;;;;;;58;74;;;1.5;1;;;;
+spell;crystwind_guard_ranged;dwarf_legionnaire_archer;;a;Legionnaire Archer from Crystwind;1.5;nm;hu;std;v;x;27;15000;5;;1;;;;;19;29;;;1.5;1;;;;
 spell;fallraen_guard_ranged;sumcol_guard_ranged;;a;Legionnaire Archer from Fallraen;1.5;nm;hu;std;v;x;37;41000;5;;1;;;;;19;29;;;1.5;1;;;;
