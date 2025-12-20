@@ -1,8 +1,9 @@
 [t:template,n:base_guard_ranged]  // ~ guard_ranged but without [conversation] (and without the [check_level] of mp_guard_ranged)
 {
+	specializes = base_npc_fb;
+
 	category_name = "1W_character";
 	doc = "guard_ranged";
-	specializes = base_npc_fb;
 	[actor]
 	{
 		[skills]
@@ -17,7 +18,7 @@
 	{
 		draw_selection_indicator = true;
 		is_collidable = true;
-        [textures]
+		[textures]
 		{
 			0 = b_c_gah_fb_skin_004;
 		}
@@ -29,10 +30,6 @@
 	//[conversation]
 	//{
 	//}
-	[guts_manager]
-	{
-		effect_name = melee_hit_2;
-	}
 	[inventory]
 	{
 		selected_active_location = il_active_ranged_weapon;
@@ -47,7 +44,11 @@
 	[mind]
 	{
 		actor_may_attack = true;
-        actor_may_be_attacked = true;
+		actor_may_be_attacked = true;
 		jat_talk = world\ai\jobs\common\job_talk.skrit;
+	}
+	[guts_manager]
+	{
+		effect_name = melee_hit_2;
 	}
 }

@@ -1,0 +1,13 @@
+[t:template,n:sumcol_guard_captain_elddim_summon]
+{
+	specializes = base_guard_captain_elddim;
+
+	aspect:experience_value = 0;
+	aspect:draw_selection_indicator = false;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent] {}
+	}
+}
