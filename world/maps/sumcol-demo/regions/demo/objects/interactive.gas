@@ -1,25 +1,13 @@
-[t:sign_glb_no_return,n:0x00100051]
+[t:sign_glb_no_return,n:0x0010000d]
 {
 	[common]
 	{
-		screen_name = "Special Testing";
+		screen_name = "General Testing";
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 0,0,3,0xa5e1a107;
-	}
-}
-[t:sign_glb_no_return,n:0x00100008]
-{
-	[common]
-	{
-		screen_name = "Evaluation";
-	}
-	[placement]
-	{
-	  q orientation = 0,1,0,2.98023e-008;
-	  p position = 0,0,3,0x131cc381;
+	  q orientation = 0,-0.707107,0,0.707107;
+	  p position = 0,0,0,0x623b4f55;
 	}
 }
 [t:sign_glb_no_return,n:0x0010000a]
@@ -30,19 +18,31 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,-0.707107;
-	  p position = -3,0,0,0x0cb7dafa;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0,0,0,0xa964680d;
 	}
 }
-[t:sign_glb_no_return,n:0x0010000d]
+[t:sign_glb_no_return,n:0x00100008]
 {
 	[common]
 	{
-		screen_name = "General Testing";
+		screen_name = "Evaluation";
 	}
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,-0.707107;
-	  p position = 3,0,0,0xe605667a;
+	  q orientation = 0,-2.98023e-008,0,1;
+	  p position = 0,0,0,0xa8870747;
+	}
+}
+[t:sign_glb_no_return,n:0x00100051]
+{
+	[common]
+	{
+		screen_name = "Special Testing";
+	}
+	[placement]
+	{
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 0,0,0,0xe0d23e5f;
 	}
 }
