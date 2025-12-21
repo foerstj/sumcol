@@ -2,9 +2,7 @@
 {
 	specializes = base_guard_captain_crystwind;
 
-	aspect:experience_value = 0;
 	aspect:draw_selection_indicator = false;
-    physics:explode_when_killed = false;
 	[inventory]
 	{
 		spew_equipped_kill_count = <ignore>;
@@ -21,4 +19,8 @@
 			es_weapon_hand = ax_g_c_2h1b_avg;
 		}
 	}
+	[actor] { [skills] {} }
+
+	aspect:experience_value = 0;
+	physics:explode_when_killed = false;
 }

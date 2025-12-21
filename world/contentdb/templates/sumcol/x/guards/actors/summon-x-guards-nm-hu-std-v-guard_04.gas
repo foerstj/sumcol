@@ -3,8 +3,10 @@
 	specializes = guard_04_base;
 
 	common:screen_name = "Barracks Guard";
-	aspect:experience_value = 0;
 	aspect:draw_selection_indicator = false;
-    physics:explode_when_killed = false;
 	inventory:spew_equipped_kill_count = <ignore>;
+	[actor] { [skills] {} }
+
+	aspect:experience_value = 0;
+	physics:explode_when_killed = false;
 }
