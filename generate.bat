@@ -39,6 +39,10 @@ if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\readme "" "CREATURES - {{x | upper}}.md" --for-all gaspy\jinja\sumcol\main\x-guards.csv --value x=guards --bits "%bits%"
 if %errorlevel% neq 0 pause
 
+:: SumCol Mart map
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart world\contentdb\templates\sumcol-mart --for-all gaspy\jinja\sumcol\main\main.csv --bits "%bits%"
+if %errorlevel% neq 0 pause
+
 :: SumCol demo/test map
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause

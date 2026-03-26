@@ -1,0 +1,22 @@
+{% for ct, Ct in {'an': 'Animals', 'el': 'Elementals', 'un': 'Undead', 'pl': 'Plants', 'de': 'Demonics', 'ro': 'Robots', 'hu': 'Humanoids'}.items() %}
+[t:template,n:sumcol_mart_merchant_{{Ct.lower()}}_content]
+{
+    specializes = sumcol_mart_merchant_{{Ct.lower()}}_content_base;
+
+	common:screen_name = "{{Ct}}";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+			full_ratio = 0;
+
+			[all*]
+			{
+				{% for row in data if row['ct'] == ct and not row['test_only'] %}
+				il_main = {{ row['sos'] }}_summon_{{ row['stn'] }};
+				{% endfor %}
+			}
+        }
+    }
+}
+{% endfor %}
