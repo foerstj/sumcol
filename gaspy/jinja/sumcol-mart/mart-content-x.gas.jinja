@@ -1,0 +1,20 @@
+[t:template,n:sumcol_mart_merchant_x_{{x}}_content]
+{
+    specializes = sumcol_mart_merchant_x_{{x}}_content_base;
+
+	//common:screen_name = "{{x}}";
+    [inventory]
+    {
+        [store_pcontent]
+        {
+			full_ratio = 0;
+
+			[all*]
+			{
+				{% for row in data if not row['test_only'] %}
+				il_main = {{ row['sos'] }}_summon_{{ row['stn'] }};
+				{% endfor %}
+			}
+        }
+    }
+}

@@ -40,8 +40,14 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\readme "" "CREATURES - {{x | upp
 if %errorlevel% neq 0 pause
 
 :: SumCol Mart map
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart world\contentdb\templates\sumcol-mart --for-all gaspy\jinja\sumcol\main\main.csv --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart\mart-content.gas.jinja world\contentdb\templates\sumcol-mart --for-all gaspy\jinja\sumcol\main\main.csv --bits "%bits%"
 if %errorlevel% neq 0 pause
+setlocal enableDelayedExpansion
+for %%x in (guards) do (
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart\mart-content-x.gas.jinja world\contentdb\templates\sumcol-mart "mart-content-x-{{x}}.gas" --for-all gaspy\jinja\sumcol\main\x-%%x.csv --value "x=%%x" --bits "%bits%"
+  if !errorlevel! neq 0 pause
+)
+endlocal
 
 :: SumCol demo/test map
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
