@@ -1,5 +1,5 @@
 :: name of map
-set map=sumcol-demo
+set map=sumcol-mart
 
 :: path of Bits dir
 set bits=%~dp0.

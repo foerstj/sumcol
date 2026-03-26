@@ -1,16 +1,20 @@
 chcp 65001
 
-:: name of map
-set map=sumcol-demo
-:: name of map, case-sensitive
-set map_cs=Summons Collection Demo
-:: name of resources
-set res=sumcol
-:: name of resources, case-sensitive
-set res_cs=Summons Collection
+:: name of mod
+set mod=sumcol
+:: name of mod, case-sensitive
+set mod_cs=Summons Collection
+:: name of mart map
+set mart_map=%mod%-mart
+:: name of mart map, case-sensitive
+set mart_map_cs=%mod_cs% Mart
+:: name of demo map
+set demo_map=%mod%-demo
+:: name of demo map, case-sensitive
+set demo_map_cs=%mod_cs% Demo
 
 :: tank properties
-set year=2025
+set year=2026
 set copyright=CC-BY-SA %year%
 set author=Johannes Förstner
 
@@ -52,21 +56,31 @@ call :build_partial_x "guards" "Guards"
 
 :: Compile translation all-in-one resource file
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\language" "%tmp%\Bits\language" %res%-*.de.gas /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%res_cs%.de.dsres" -copyright "%copyright%" -title "%res_cs%" -author "%author%"
+robocopy "%bits%\language" "%tmp%\Bits\language" %mod%-*.de.gas /S
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%mod_cs%.de.dsres" -copyright "%copyright%" -title "%mod_cs%" -author "%author%"
+if %errorlevel% neq 0 pause
+
+:: Compile mart map file
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\world\maps\%mart_map%" "%tmp%\Bits\world\maps\%mart_map%" /S
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_map%\%mart_map_cs%.dsmap" -copyright "%copyright%" -title "%mart_map_cs%" -author "%author%"
+if %errorlevel% neq 0 pause
+:: Compile mart resource file
+rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\world\contentdb\templates\%mart_map%" "%tmp%\Bits\world\contentdb\templates\%mart_map%" /S
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%mart_map_cs%.dsres" -copyright "%copyright%" -title "%mart_map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Compile demo map file
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\maps\%map%" "%tmp%\Bits\world\maps\%map%" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_map%\%map_cs%.dsmap" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+robocopy "%bits%\world\maps\%demo_map%" "%tmp%\Bits\world\maps\%demo_map%" /S
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_map%\%demo_map_cs%.dsmap" -copyright "%copyright%" -title "%demo_map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
-
 :: Compile demo resource file
 rmdir /S /Q "%tmp%\Bits"
-robocopy "%bits%\world\contentdb\templates\%res%-demo" "%tmp%\Bits\world\contentdb\templates\%res%-demo" /S
+robocopy "%bits%\world\contentdb\templates\%demo_map%" "%tmp%\Bits\world\contentdb\templates\%demo_map%" /S
 robocopy "%bits%\world\global\moods" "%tmp%\Bits\world\global\moods" /S
-"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%map_cs%.dsres" -copyright "%copyright%" -title "%map_cs%" -author "%author%"
+"%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%demo_map_cs%.dsres" -copyright "%copyright%" -title "%demo_map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
 :: Cleanup
@@ -84,11 +98,11 @@ exit /b %errorlevel%
   echo build_partial %infix% %name%
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix%-* /xf *-x-* /xf *.psd /S
-  robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%bits%\world\ai\jobs\%mod%" "%tmp%\Bits\world\ai\jobs\%mod%" /S
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix%-* /xd x /xf *-x-* /S
+  robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-%infix%-* /xd x /xf *-x-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix%-* /xf *-x-* /S
-  set title=%res_cs% %target_cs% - %name% Creatures
+  set title=%mod_cs% %target_cs% - %name% Creatures
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
@@ -101,11 +115,11 @@ exit /b 0
   echo build_partial2 %infix_incl% %infix_excl% %name%
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *-x-* /xf *.psd /S
-  robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%bits%\world\ai\jobs\%mod%" "%tmp%\Bits\world\ai\jobs\%mod%" /S
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /xd x /xf *-x-* /S
+  robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-%infix_incl%-* /xf *-%infix_excl%-* /xd x /xf *-x-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-%infix_incl%-* /xf *-%infix_excl%-* /xf *-x-* /S
-  set title=%res_cs% %target_cs% - %name% Creatures
+  set title=%mod_cs% %target_cs% - %name% Creatures
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0
@@ -117,11 +131,11 @@ exit /b 0
   echo build_partial_x %infix_x% %name_x%
   rmdir /S /Q "%tmp%\Bits"
   robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-x-%infix_x%-* /xf *.psd /S
-  robocopy "%bits%\world\ai\jobs\%res%" "%tmp%\Bits\world\ai\jobs\%res%" /S
+  robocopy "%bits%\world\ai\jobs\%mod%" "%tmp%\Bits\world\ai\jobs\%mod%" /S
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%res%" "%tmp%\Bits\world\contentdb\templates\%res%" common-* *-x-%infix_x%-* /S
+  robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-x-%infix_x%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-x-%infix_x%-* /S
-  set title=%res_cs% %target_cs% Extension - %name_x%
+  set title=%mod_cs% %target_cs% Extension - %name_x%
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
 exit /b 0

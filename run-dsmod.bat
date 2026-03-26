@@ -1,5 +1,3 @@
-chcp 65001
-
 :: name of map
 set map=sumcol-demo
 
