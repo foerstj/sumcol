@@ -1,48 +1,3 @@
-[t:sumcol_mart_merchant_animals,n:0x00100002]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_animals;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.89546,0,0.415972,0x8876e269;
-	}
-}
-[t:sumcol_mart_merchant_demonics,n:0x00100003]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_demonics;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.382683,0,0.92388;
-	  p position = -2.03876,0,-1.60278,0x8876e269;
-	}
-}
-[t:sumcol_mart_merchant_elementals,n:0x00100004]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_elementals;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,-0.382683,0,0.92388;
-	  p position = 2.32975,0,-1.9066,0x8876e269;
-	}
-}
 [t:sumcol_mart_merchant_humanoids,n:0x00100005]
 {
 	[conversation]
@@ -54,22 +9,23 @@
 	}
 	[placement]
 	{
-	  p position = -0.118543,0,-2.48526,0x8876e269;
+	  q orientation = 0,0.382683,0,0.92388;
+	  p position = -1.93859,1,1.60661,0x87391932;
 	}
 }
-[t:sumcol_mart_merchant_plants,n:0x00100006]
+[t:sumcol_mart_merchant_animals,n:0x00100002]
 {
 	[conversation]
 	{
 		[conversations]
 		{
-			* = shop_plants;
+			* = shop_animals;
 		}
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.707107,0,0.707107;
-	  p position = 2.95199,0,0.269539,0x8876e269;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.85093,1,-1.3375,0x61c156be;
 	}
 }
 [t:sumcol_mart_merchant_undead,n:0x00100007]
@@ -84,7 +40,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.83385,-9.53674e-007,2.2955,0x8876e269;
+	  p position = -5.74523,-0.45,-1.93773,0x18a3a9e4;
 	}
 }
 [t:sumcol_mart_merchant_robots,n:0x00100008]
@@ -98,8 +54,38 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,1,0,-1.66939e-007;
-	  p position = 0.181598,0,3.03263,0x8876e269;
+	  q orientation = 0,1,0,1.78814e-007;
+	  p position = 1.52747,0.55,1.69541,0x003a3c5b;
+	}
+}
+[t:sumcol_mart_merchant_plants,n:0x00100006]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_plants;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-2.98023e-008;
+	  p position = 0.281006,0,0.192301,0xc51fbece;
+	}
+}
+[t:sumcol_mart_merchant_demonics,n:0x00100003]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_demonics;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.923879,0,0.382684;
+	  p position = -1.42952,-0.45,-1.56292,0xe600f5d2;
 	}
 }
 [t:sumcol_mart_merchant_x_guards,n:0x00100009]
@@ -113,7 +99,22 @@
 	}
 	[placement]
 	{
-	  q orientation = 0,-0.92388,0,0.382683;
-	  p position = 2.17324,0,2.26427,0x8876e269;
+	  q orientation = 0,3.48491e-007,0,-1;
+	  p position = -0.658921,0,0.288795,0xa976cd46;
+	}
+}
+[t:sumcol_mart_merchant_elementals,n:0x00100004]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_elementals;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = 0.796189,1.55,-0.407604,0x11fe74c3;
 	}
 }
