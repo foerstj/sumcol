@@ -4,7 +4,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_animals;
 		}
 	}
 	[placement]
@@ -19,7 +19,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_demonics;
 		}
 	}
 	[placement]
@@ -34,7 +34,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_elementals;
 		}
 	}
 	[placement]
@@ -49,7 +49,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_humanoids;
 		}
 	}
 	[placement]
@@ -63,7 +63,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_plants;
 		}
 	}
 	[placement]
@@ -78,7 +78,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_undead;
 		}
 	}
 	[placement]
@@ -93,7 +93,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_robots;
 		}
 	}
 	[placement]
@@ -108,7 +108,7 @@
 	{
 		[conversations]
 		{
-			* = shop;
+			* = shop_x_guards;
 		}
 	}
 	[placement]
