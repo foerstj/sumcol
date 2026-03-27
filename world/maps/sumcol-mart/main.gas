@@ -10,7 +10,7 @@
   f world_interest_radius = 4.000000;
 	[camera]
 	{
-	  f azimuth = 70.000000;
+	  f azimuth = 45.000000;
 	  f distance = 8.000000;
 	  f farclip = 70.000000;
 	  f fov = 60.000000;
