@@ -5,7 +5,6 @@
 	// from base_wolf
 	[aspect]
 	{
-		material = teeth;
 		model = m_c_edm_wf_pos_1;
 		selection_indicator_scale=0.85;
 	}
@@ -65,10 +64,6 @@
 				[anim_files] { 00=wl-02; }
 			}
 		}
-	}
-	[guts_manager]
-	{
-		effect_name = melee_hit_2;
 	}
 	// from wolf_white
 	[aspect]

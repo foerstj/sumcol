@@ -1,4 +1,80 @@
-[t:template,n:base_sumcol_mart_merchant_demonics] { specializes = base_sumcol_mart_merchant_tmp2; }
+[t:template,n:base_sumcol_mart_merchant_demonics]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from base_mucosa
+	[aspect]
+	{
+		model = m_c_edm_mu_pos_1;
+	}
+	[body]
+	{
+		min_move_velocity = 2.2;
+		avg_move_velocity = 3;
+		[bone_translator]
+		{
+			body_anterior = jawbone;
+			body_mid = spine1;
+			body_posterior = abdomen_upper;
+			kill_bone = abdomen_upper;
+			shield_bone = lt_pincher;
+			weapon_bone = rt_pincher;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_mu_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_magic]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at-02;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=rl; }
+			}
+		}
+	}
+	// from mucosa_small
+	[aspect]
+	{
+		scale_base = 0.80;
+		textures:0 = b_c_edm_mu-02;
+	}
+}
 
 [t:template,n:sumcol_mart_merchant_demonics_content_base] { specializes = base_sumcol_mart_merchant_demonics; }
 [t:template,n:sumcol_mart_merchant_demonics] { specializes = sumcol_mart_merchant_demonics_content; }
