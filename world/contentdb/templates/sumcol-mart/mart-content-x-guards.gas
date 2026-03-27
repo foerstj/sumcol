@@ -1,12 +1,12 @@
 [t:template,n:sumcol_mart_merchant_x_guards_content]
 {
-    specializes = sumcol_mart_merchant_x_guards_content_base;
+	specializes = sumcol_mart_merchant_x_guards_content_base;
 
 	//common:screen_name = "guards";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			spell_summon_elddim_guard_melee = 1;
 			spell_summon_elddim_guard_ranged = 1;
 			scroll_summon_elddim_guard_captain = 1;
@@ -16,6 +16,6 @@
 			spell_summon_fallraen_guard_melee = 1;
 			spell_summon_fallraen_guard_ranged = 1;
 			scroll_summon_fallraen_guard_captain = 1;
-        }
-    }
+		}
+	}
 }

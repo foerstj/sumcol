@@ -1,15 +1,15 @@
 [t:template,n:sumcol_demo_barrel_scroll_spells_x]
 {
-    specializes = sumcol_demo_base_barrel_x;
+	specializes = sumcol_demo_base_barrel_x;
 
-    common:screen_name = "Scrolls as Spells - Extensions";
-    [inventory]
-    {
-        [other]
-        {
-            il_main = test_spell_summon_elddim_guard_captain;
-            il_main = test_spell_summon_crystwind_guard_captain;
-            il_main = test_spell_summon_fallraen_guard_captain;
-        }
-    }
+	common:screen_name = "Scrolls as Spells - Extensions";
+	[inventory]
+	{
+		[other]
+		{
+			il_main = test_spell_summon_elddim_guard_captain;
+			il_main = test_spell_summon_crystwind_guard_captain;
+			il_main = test_spell_summon_fallraen_guard_captain;
+		}
+	}
 }

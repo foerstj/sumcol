@@ -1,97 +1,97 @@
 [t:template,n:spell_ice_mage_summon_ice_archer] { specializes = spell_ice_mage_summon_ice_archer_base; }
 [t:template,n:spell_ice_mage_summon_ice_archer_base]
 {
-    specializes = base_spell_summon_sub;
+	specializes = base_spell_summon_sub;
 
-    doc = "spell ice_mage sub-summon ice_archer";
+	doc = "spell ice_mage sub-summon ice_archer";
 	[inventory]
 	{
 		[delayed_pcontent]
 		{
-            il_main = ice_archer_good_sub_summon;
+			il_main = ice_archer_good_sub_summon;
 		}
 	}
-    [common]
-    {
-        screen_name = "Sub-Summon ice_archer";
-    }
-    [spell_summon_sub_random]
-    {
-        script_params = "[scale(1.5)]";
-    }
-    [magic]
-    {
-        required_level = 25;
-        max_level = 45;
+	[common]
+	{
+		screen_name = "Sub-Summon ice_archer";
+	}
+	[spell_summon_sub_random]
+	{
+		script_params = "[scale(1.5)]";
+	}
+	[magic]
+	{
+		required_level = 25;
+		max_level = 45;
 
-        [enchantments]
-        {
-            [*]
-            {
-                alteration = alter_ranged_damage_min;
-                duration = #infinite;
-                value = ((((((#src_combat_magic_level*4.2)*1.0)*1)*0.9) - #ranged_damage_min) - 33.0);
-            }
-            [*]
-            {
-                alteration = alter_ranged_damage_max;
-                duration = #infinite;
-                value = ((((((#src_combat_magic_level*4.2)*1.0)*1)*1.1) - #ranged_damage_max) - 37.0);
-            }
-            [*]
-            {
-                alteration = alter_armor;
-                duration = #infinite;
-                value = (((#src_combat_magic_level*4.2)*2.0) - #base_defense);
-            }
-            [*]
-            {
-                alteration = alter_max_life;
-                duration = #infinite;
-                value = ((((#src_combat_magic_level*12)+(#spell_req_level*12))*1.2) - #maxlife);
-            }
-            [*]
-            {
-                alteration = alter_life;
-                duration = 1.0;
-                value = (((#src_combat_magic_level*12)+(#spell_req_level*12))*1.2);
-            }
-            [*]
-            {
-                alteration = alter_ranged;
-                duration = #infinite;
-                value = ((#src_combat_magic_level*0.875)-#ranged);
-            }
-            [*]
-            {
-                alteration = alter_strength;
-                duration = #infinite;
-                value = (((#src_combat_magic_level*0.64)+10) - #str);
-            }
-            [*]
-            {
-                alteration = alter_dexterity;
-                duration = #infinite;
-                value = (((#src_combat_magic_level*0.27)+10) - #dex);
-            }
-            [*]
-            {
-                alteration = alter_intelligence;
-                duration = #infinite;
-                value = (((#src_combat_magic_level*0.09)+10) - #int);
-            }
-            [*]
-            {
-                alteration = alter_max_mana;
-                duration = #infinite;
-                value = ((#src_combat_magic_level*19) - #maxmana);
-            }
-            [*]
-            {
-                alteration = alter_mana;
-                duration = 1.0;
-                value = (#src_combat_magic_level*19);
-            }
-        }
-    }
+		[enchantments]
+		{
+			[*]
+			{
+				alteration = alter_ranged_damage_min;
+				duration = #infinite;
+				value = ((((((#src_combat_magic_level*4.2)*1.0)*1)*0.9) - #ranged_damage_min) - 33.0);
+			}
+			[*]
+			{
+				alteration = alter_ranged_damage_max;
+				duration = #infinite;
+				value = ((((((#src_combat_magic_level*4.2)*1.0)*1)*1.1) - #ranged_damage_max) - 37.0);
+			}
+			[*]
+			{
+				alteration = alter_armor;
+				duration = #infinite;
+				value = (((#src_combat_magic_level*4.2)*2.0) - #base_defense);
+			}
+			[*]
+			{
+				alteration = alter_max_life;
+				duration = #infinite;
+				value = ((((#src_combat_magic_level*12)+(#spell_req_level*12))*1.2) - #maxlife);
+			}
+			[*]
+			{
+				alteration = alter_life;
+				duration = 1.0;
+				value = (((#src_combat_magic_level*12)+(#spell_req_level*12))*1.2);
+			}
+			[*]
+			{
+				alteration = alter_ranged;
+				duration = #infinite;
+				value = ((#src_combat_magic_level*0.875)-#ranged);
+			}
+			[*]
+			{
+				alteration = alter_strength;
+				duration = #infinite;
+				value = (((#src_combat_magic_level*0.64)+10) - #str);
+			}
+			[*]
+			{
+				alteration = alter_dexterity;
+				duration = #infinite;
+				value = (((#src_combat_magic_level*0.27)+10) - #dex);
+			}
+			[*]
+			{
+				alteration = alter_intelligence;
+				duration = #infinite;
+				value = (((#src_combat_magic_level*0.09)+10) - #int);
+			}
+			[*]
+			{
+				alteration = alter_max_mana;
+				duration = #infinite;
+				value = ((#src_combat_magic_level*19) - #maxmana);
+			}
+			[*]
+			{
+				alteration = alter_mana;
+				duration = 1.0;
+				value = (#src_combat_magic_level*19);
+			}
+		}
+	}
 }

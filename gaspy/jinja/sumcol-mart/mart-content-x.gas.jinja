@@ -1,15 +1,15 @@
 [t:template,n:sumcol_mart_merchant_x_{{x}}_content]
 {
-    specializes = sumcol_mart_merchant_x_{{x}}_content_base;
+	specializes = sumcol_mart_merchant_x_{{x}}_content_base;
 
 	//common:screen_name = "{{x}}";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			{% for row in data if not row['test_only'] %}
 			{{ row['sos'] }}_summon_{{ row['stn'] }} = 1;
 			{% endfor %}
-        }
-    }
+		}
+	}
 }

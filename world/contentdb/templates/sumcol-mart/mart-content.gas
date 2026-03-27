@@ -1,12 +1,12 @@
 [t:template,n:sumcol_mart_merchant_animals_content]
 {
-    specializes = sumcol_mart_merchant_animals_content_base;
+	specializes = sumcol_mart_merchant_animals_content_base;
 
 	common:screen_name = "Animals";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			scroll_summon_yellow_eye = 1;
 			spell_summon_phrak = 1;
 			spell_summon_alpine_phrak = 1;
@@ -85,18 +85,18 @@
 			spell_summon_red_drake = 1;
 			spell_summon_molten_drake = 1;
 			scroll_summon_molten_steel_drake = 1;
-        }
-    }
+		}
+	}
 }
 [t:template,n:sumcol_mart_merchant_elementals_content]
 {
-    specializes = sumcol_mart_merchant_elementals_content_base;
+	specializes = sumcol_mart_merchant_elementals_content_base;
 
 	common:screen_name = "Elementals";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			spell_summon_gargoyle_melee = 1;
 			spell_summon_frost_guardian = 1;
 			spell_summon_ice_guardian = 1;
@@ -124,18 +124,18 @@
 			spell_summon_lava_spirit_melee = 1;
 			spell_summon_lava_beast = 1;
 			scroll_summon_magma_beast = 1;
-        }
-    }
+		}
+	}
 }
 [t:template,n:sumcol_mart_merchant_undead_content]
 {
-    specializes = sumcol_mart_merchant_undead_content_base;
+	specializes = sumcol_mart_merchant_undead_content_base;
 
 	common:screen_name = "Undead";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			scroll_summon_cicatrix_skeleton_melee = 1;
 			scroll_summon_cicatrix_skeleton_ranged = 1;
 			spell_summon_skeleton_guard = 1;
@@ -173,34 +173,34 @@
 			spell_summon_ghost = 1;
 			spell_summon_wraith_piercer = 1;
 			spell_summon_wraith_warlock = 1;
-        }
-    }
+		}
+	}
 }
 [t:template,n:sumcol_mart_merchant_plants_content]
 {
-    specializes = sumcol_mart_merchant_plants_content_base;
+	specializes = sumcol_mart_merchant_plants_content_base;
 
 	common:screen_name = "Plants";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			spell_summon_killer_vines = 1;
 			spell_summon_mantrap = 1;
 			spell_summon_tretch = 1;
 			scroll_summon_infested_larch = 1;
-        }
-    }
+		}
+	}
 }
 [t:template,n:sumcol_mart_merchant_demonics_content]
 {
-    specializes = sumcol_mart_merchant_demonics_content_base;
+	specializes = sumcol_mart_merchant_demonics_content_base;
 
 	common:screen_name = "Demonics";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			spell_summon_vile_mucosa = 1;
 			spell_summon_large_twisted_mucosa = 1;
 			spell_summon_dark_mucosa = 1;
@@ -236,18 +236,18 @@
 			spell_summon_lava_mage = 1;
 			spell_summon_seck_high_mage = 1;
 			spell_summon_seck_elite_guard = 1;
-        }
-    }
+		}
+	}
 }
 [t:template,n:sumcol_mart_merchant_robots_content]
 {
-    specializes = sumcol_mart_merchant_robots_content_base;
+	specializes = sumcol_mart_merchant_robots_content_base;
 
 	common:screen_name = "Robots";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			spell_summon_tesla_coil = 1;
 			spell_summon_tesla_coil_heal = 1;
 			spell_summon_rusted_automaton = 1;
@@ -275,18 +275,18 @@
 			spell_summon_gobbot_shocker = 1;
 			spell_summon_perforator = 1;
 			spell_summon_blaster = 1;
-        }
-    }
+		}
+	}
 }
 [t:template,n:sumcol_mart_merchant_humanoids_content]
 {
-    specializes = sumcol_mart_merchant_humanoids_content_base;
+	specializes = sumcol_mart_merchant_humanoids_content_base;
 
 	common:screen_name = "Humanoids";
-    [store]
-    {
-        [item_restock]
-        {
+	[store]
+	{
+		[item_restock]
+		{
 			spell_summon_krug_scavenger = 1;
 			spell_summon_krug_forager = 1;
 			spell_summon_krug_scout = 1;
@@ -386,6 +386,6 @@
 			spell_summon_droog_grunt = 1;
 			scroll_summon_droog_captain = 1;
 			scroll_summon_ferocious_braak = 1;
-        }
-    }
+		}
+	}
 }
