@@ -3,24 +3,19 @@
     specializes = sumcol_mart_merchant_x_guards_content_base;
 
 	//common:screen_name = "guards";
-    [inventory]
+    [store]
     {
-        [store_pcontent]
+        [item_restock]
         {
-			full_ratio = 0;
-
-			[all*]
-			{
-				il_main = spell_summon_elddim_guard_melee;
-				il_main = spell_summon_elddim_guard_ranged;
-				il_main = scroll_summon_elddim_guard_captain;
-				il_main = spell_summon_crystwind_guard_melee;
-				il_main = spell_summon_crystwind_guard_ranged;
-				il_main = scroll_summon_crystwind_guard_captain;
-				il_main = spell_summon_fallraen_guard_melee;
-				il_main = spell_summon_fallraen_guard_ranged;
-				il_main = scroll_summon_fallraen_guard_captain;
-			}
+			spell_summon_elddim_guard_melee = 1;
+			spell_summon_elddim_guard_ranged = 1;
+			scroll_summon_elddim_guard_captain = 1;
+			spell_summon_crystwind_guard_melee = 1;
+			spell_summon_crystwind_guard_ranged = 1;
+			scroll_summon_crystwind_guard_captain = 1;
+			spell_summon_fallraen_guard_melee = 1;
+			spell_summon_fallraen_guard_ranged = 1;
+			scroll_summon_fallraen_guard_captain = 1;
         }
     }
 }
