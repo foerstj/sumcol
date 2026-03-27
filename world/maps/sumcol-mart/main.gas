@@ -1,6 +1,6 @@
 [t:map,n:map]
 {
-	description = "Buy Summons Here!";
+	description = "Buy Summons here!";
   b dev_only = false;
 	screen_name = "Summons Collection Mart";
 	timeofday = 0h0m;

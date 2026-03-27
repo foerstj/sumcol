@@ -3,10 +3,10 @@
 	[t:start_group,n:default]
 	{
 	  b default = true;
-		description = "This is the default group.";
+		description = "Buy Summons here!";
 	  b dev_only = false;
 	  i id = 0;
-		screen_name = "";
+		screen_name = "Mart";
 		[start_position]
 		{
 		  i id = 1;
