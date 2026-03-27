@@ -1,4 +1,126 @@
-[t:template,n:base_sumcol_mart_merchant_humanoids] { specializes = base_sumcol_mart_merchant_tmp2; }
+[t:template,n:base_sumcol_mart_merchant_humanoids]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from base_krug
+	[aspect]
+	{
+		model = m_c_eam_kg_pos_1;
+	}
+	[body]
+	{
+		min_move_velocity = 1.500;
+		avg_move_velocity = 2.100;
+		max_move_velocity = 2.700;
+		[bone_translator]
+		{
+			  body_anterior  = bip01_head;
+			  body_mid       = Bip01_Spine3;
+			  body_posterior = bip01_pelvis;
+			  kill_bone      = Bip01_Spine3;
+			  shield_bone    = shield_grip;
+			  weapon_bone    = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			  chore_prefix = a_c_eam_kg_fs;
+			[chore_attack]
+			{
+				  chore_stances = 0,1,3,6;
+				  skrit = select_attack;
+				[anim_files]
+				{
+					  00 = at;
+					  01 = at-04;
+					  02 = at-02;
+					  03 = at-03;
+					  qffg = dff;
+				}
+			}
+			[chore_default]
+			{
+				  chore_stances = 0,1,3,6;
+				  skrit = infinite_loop;
+				[anim_files]
+				{
+					  00 = dfs;
+				}
+			}
+			[chore_die]
+			{
+				  chore_stances = 0,1,3,6;
+				  skrit = select_transition;
+				[anim_files]
+				{
+					  00 = di;
+					  01 = di-02;
+					  02 = di-03;
+					  03 = di-04;
+				}
+			}
+			[chore_fidget]
+			{
+				  chore_stances = 0,1,3,6;
+				  skrit = select_fidget;
+				[anim_files]
+				{
+					  00 = dsf;
+					  01 = dsf-02;
+					  02 = dsf-03;
+				}
+			}
+			[chore_magic]
+			{
+				  chore_stances = 0;
+				  skrit = select_attack;
+				[anim_files]
+				{
+					  00 = mg;
+				}
+			}
+			[chore_misc]
+			{
+				  chore_stances = 1;
+				  skrit = select_transition;
+				[anim_files]
+				{
+					  chrg = hit;
+				}
+			}
+			[chore_walk]
+			{
+				  chore_stances = 0,1,3,6;
+				  skrit = select_walk;
+				[anim_files]
+				{
+					  00 = wl;
+				}
+			}
+		}
+	}
+	// from krug_shaman_base
+	[aspect]
+	{
+		  model = m_c_eam_ks_pos_1;
+		  selection_indicator_scale = 0.85;
+	}
+	[body]
+	{
+		min_move_velocity = 1.00;
+		avg_move_velocity = 1.16;
+		max_move_velocity = 1.50;
+
+		[bone_translator]
+		{
+			  body_anterior = bip01_head;
+			  body_mid = bip01_spine2;
+			  body_posterior = bip01_pelvis;
+			  kill_bone = bip01_spine2;
+			  shield_bone = weapon_grip;
+			  weapon_bone = shield_grip;
+		}
+	}
+}
 
 [t:template,n:sumcol_mart_merchant_humanoids_content_base] { specializes = base_sumcol_mart_merchant_humanoids; }
 [t:template,n:sumcol_mart_merchant_humanoids] { specializes = sumcol_mart_merchant_humanoids_content; }

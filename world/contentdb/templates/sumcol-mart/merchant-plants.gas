@@ -1,4 +1,73 @@
-[t:template,n:base_sumcol_mart_merchant_plants] { specializes = base_sumcol_mart_merchant_tmp2; }
+[t:template,n:base_sumcol_mart_merchant_plants]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from tretch
+	[aspect]
+	{
+		draw_shadow = false;
+		model = m_c_edm_tr_pos_1;
+	}
+	[body]
+	{
+		avg_move_velocity = 0.000000;
+		[bone_translator]
+		{
+			body_anterior = bone01;
+			body_mid = bone01;
+			body_posterior = bone01;
+			kill_bone = eye3_base;
+			shield_bone = bone01;
+			weapon_bone = bone01;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_tr_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=at; }
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=ds; }
+			}
+		}
+	}
+	[mind]
+	{
+		jat_attack_object_melee = world\ai\jobs\common\job_attack_object_melee.skrit
+			?no_turn			= true;
+
+		jat_flee_from_object	= jat_none;
+		jat_guard         		= jat_none;
+		jat_move          		= jat_none;
+		jat_patrol         		= jat_none;
+
+		movement_orders			= mo_hold;
+	}
+}
 
 [t:template,n:sumcol_mart_merchant_plants_content_base] { specializes = base_sumcol_mart_merchant_plants; }
 [t:template,n:sumcol_mart_merchant_plants] { specializes = sumcol_mart_merchant_plants_content; }

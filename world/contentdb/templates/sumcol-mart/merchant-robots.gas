@@ -1,4 +1,101 @@
-[t:template,n:base_sumcol_mart_merchant_robots] { specializes = base_sumcol_mart_merchant_tmp2; }
+[t:template,n:base_sumcol_mart_merchant_robots]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from base_gobbot
+	[aspect]
+	{
+		model = m_c_edm_go_pos_1;
+	}
+	[body]
+	{
+		min_move_velocity = 1.8;
+		avg_move_velocity = 2.7;
+		[bone_translator]
+		{
+			body_anterior = Bip01_Head;
+			body_mid = Bip01_Spine;
+			body_posterior = Bip01_Pelvis;
+			kill_bone = Bip01_Spine;
+			shield_bone = shield_grip;
+			weapon_bone = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_go_fs;
+			[chore_attack]
+			{
+				chore_stances = 7;
+				skrit = select_attack;
+				[anim_files] { 00=at; }
+			}
+			[chore_default]
+			{
+				chore_stances = 7;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 7;
+				skrit = select_transition;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 7;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_misc]
+			{
+				chore_stances = ignore;
+				skrit = select_transition;
+				[anim_files]
+				{
+					froz = a_c_edm_go_fs7_ds;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 7;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+		[weapon_scales]
+		{
+			as_minigun			= 0.8, 0.8, 0.8;
+		}
+	}
+	[effect_manager]
+	{
+		start_msg = WE_ENTERED_WORLD;
+		stop_msg = WE_LEFT_WORLD;
+		stop_msg2 = WE_KILLED;
+
+		effect_name = "";
+		rep_effect_name = "gobbot_blink";
+
+		repeat_rate = .3;
+		repeat_rate_max = .3;
+
+		run_once = true;
+	}
+	// from gobbot_flamethrower
+	[inventory]
+	{
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+
+		[pcontent]
+		{
+			[oneof*]
+			{
+				ES_WEAPON_HAND = minigun_flamethrower;
+			}
+		}
+	}
+}
 
 [t:template,n:sumcol_mart_merchant_robots_content_base] { specializes = base_sumcol_mart_merchant_robots; }
 [t:template,n:sumcol_mart_merchant_robots] { specializes = sumcol_mart_merchant_robots_content; }

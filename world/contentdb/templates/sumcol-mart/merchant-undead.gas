@@ -1,4 +1,107 @@
-[t:template,n:base_sumcol_mart_merchant_undead] { specializes = base_sumcol_mart_merchant_tmp2; }
+[t:template,n:base_sumcol_mart_merchant_undead]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from base_skeleton
+	[aspect]
+	{
+		model=m_c_ecm_sk_pos_1;
+	}
+	[body]
+	{
+		armor_version = ecm_sk;
+		avg_move_velocity = 1.000000;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine2;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine;
+			shield_bone = shield_grip;
+			weapon_bone = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_ecm_sk_fs;
+			[chore_attack]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					02 = at-03;
+					04 = at-05;
+					05 = at-06;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = infinite_loop;
+				[anim_files] { 00=dfs; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_misc]
+			{
+				chore_stances = ignore;
+				skrit = select_transition;
+				[anim_files]
+				{
+					slp0 = a_c_ecm_sk_fs0_ds-02;
+					slp1 = a_c_ecm_sk_fs1_ds-02;
+					slp2 = a_c_ecm_sk_fs2_ds-02;
+					slp3 = a_c_ecm_sk_fs3_ds-02;
+					slp4 = a_c_ecm_sk_fs4_ds-02;
+					slp5 = a_c_ecm_sk_fs5_ds-02;
+					slp6 = a_c_ecm_sk_fs6_ds-02;
+					wak0 = a_c_ecm_sk_fs0_rv;
+					wak1 = a_c_ecm_sk_fs1_rv;
+					wak2 = a_c_ecm_sk_fs2_rv;
+					wak3 = a_c_ecm_sk_fs3_rv;
+					wak4 = a_c_ecm_sk_fs4_rv;
+					wak5 = a_c_ecm_sk_fs5_rv;
+					wak6 = a_c_ecm_sk_fs6_rv;
+				}
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_fidget;
+				[anim_files]
+				{
+					00 = dff;
+					01 = dff-02;
+					02 = dff-03;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	// from skeleton_guard
+	[aspect]
+	{
+		model = m_c_ecm_sk_pos_2;
+	}
+	[inventory]
+	{
+		[pcontent]
+        {
+			[oneof*] { es_shield_hand = sh_m_g_c_r_s_avg; }
+            [oneof*] { es_weapon_hand = ax_d_c_1h1b_avg; }
+		}
+	}
+}
 
 [t:template,n:sumcol_mart_merchant_undead_content_base] { specializes = base_sumcol_mart_merchant_undead; }
 [t:template,n:sumcol_mart_merchant_undead] { specializes = sumcol_mart_merchant_undead_content; }
