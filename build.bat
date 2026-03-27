@@ -67,6 +67,7 @@ robocopy "%bits%\world\maps\%mart_map%" "%tmp%\Bits\world\maps\%mart_map%" /S
 if %errorlevel% neq 0 pause
 :: Compile mart resource file
 rmdir /S /Q "%tmp%\Bits"
+robocopy "%bits%\world\ai\jobs\minibits" "%tmp%\Bits\world\ai\jobs\minibits" /S
 robocopy "%bits%\world\contentdb\templates\%mart_map%" "%tmp%\Bits\world\contentdb\templates\%mart_map%" /S
 robocopy "%bits%\world\global\moods\%mart_map%" "%tmp%\Bits\world\global\moods\%mart_map%" /S
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%mart_map_cs%.dsres" -copyright "%copyright%" -title "%mart_map_cs%" -author "%author%"
