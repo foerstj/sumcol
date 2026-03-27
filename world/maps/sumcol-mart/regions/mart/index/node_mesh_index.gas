@@ -1,5 +1,9 @@
 [node_mesh_index]
 {
+	0x001004dd = t_xxx_brdg_pillar-stg-top-3;
+	0x001004f5 = t_xxx_brdg_stg-16;
+	0x001004f6 = t_xxx_brdg_stg-20;
+	0x001004f7 = t_xxx_brdg_tx-rck-ramp;
 	0x0010053f = t_xxx_cnr_04-ccav;
 	0x00100541 = t_xxx_cnr_08-ccav;
 	0x00100543 = t_xxx_cnr_12-ccav;
@@ -22,6 +26,7 @@
 	0x001005e2 = t_xxx_dgn_flr_stair-thin-a;
 	0x001006a5 = t_xxx_flr_04x04-v0;
 	0x001006a9 = t_xxx_flr_04x08-v0;
+	0x001006aa = t_xxx_flr_08x08-v0;
 	0x001007f1 = t_xxx_ledg_08-cnr-ccav-b;
 	0x001007f2 = t_xxx_ledg_08-cnr-ccav-t;
 	0x001007f9 = t_xxx_ledg_08-thck-b;
@@ -46,6 +51,7 @@
 	0x0010082b = t_xxx_ledg_tx-wal-12-r-b;
 	0x0010082c = t_xxx_ledg_tx-wal-12-r-t;
 	0x0010082d = t_xxx_ledg_tx-wal-12-r;
+	0x001009fa = t_xxx_wal_04-thck;
 	0x00100a05 = t_xxx_wal_08-diag-thick-l;
 	0x00100a06 = t_xxx_wal_08-diag-thick-r;
 	0x00100a10 = t_xxx_wal_08-thin;

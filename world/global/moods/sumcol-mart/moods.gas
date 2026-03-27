@@ -1,0 +1,36 @@
+[mood_setting*]
+{
+	mood_name				= sumcol-mart;
+	transition_time			= 2.0f;
+	interior				= false;
+
+	[fog]
+	{
+		fog_near_dist		= 30.0f;
+		fog_far_dist		= 50.0f;
+		fog_lowdetail_near_dist		= 30.0f;
+		fog_lowdetail_far_dist		= 45.0f;
+		fog_color			= 0xFF646464;
+		fog_density			= 0.5f;
+	}
+
+	[rain]
+	{
+		rain_density		= 500.0f;
+		lightning			= false;
+	}
+	
+	[wind]
+	{
+		wind_velocity		= 0.5f;
+		wind_direction		= 0.0f;
+	}
+
+	[music]
+	{
+		ambient_track		= "";
+		standard_repeat_delay = 10.0f;
+		standard_track		= "s_m_Farmhouse_02";
+		room_type			= rt_generic;
+	}
+}

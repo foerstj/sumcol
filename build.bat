@@ -68,6 +68,7 @@ if %errorlevel% neq 0 pause
 :: Compile mart resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\contentdb\templates\%mart_map%" "%tmp%\Bits\world\contentdb\templates\%mart_map%" /S
+robocopy "%bits%\world\global\moods\%mart_map%" "%tmp%\Bits\world\global\moods\%mart_map%" /S
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%mart_map_cs%.dsres" -copyright "%copyright%" -title "%mart_map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 
@@ -79,7 +80,7 @@ if %errorlevel% neq 0 pause
 :: Compile demo resource file
 rmdir /S /Q "%tmp%\Bits"
 robocopy "%bits%\world\contentdb\templates\%demo_map%" "%tmp%\Bits\world\contentdb\templates\%demo_map%" /S
-robocopy "%bits%\world\global\moods" "%tmp%\Bits\world\global\moods" /S
+robocopy "%bits%\world\global\moods\%demo_map%" "%tmp%\Bits\world\global\moods\%demo_map%" /S
 "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%demo_map_cs%.dsres" -copyright "%copyright%" -title "%demo_map_cs%" -author "%author%"
 if %errorlevel% neq 0 pause
 

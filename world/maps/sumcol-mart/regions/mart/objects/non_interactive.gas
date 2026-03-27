@@ -1,0 +1,15 @@
+[t:pupod_01,n:0x0010000a]
+{
+	[placement]
+	{
+	  q orientation = 0,2.98023e-008,0,1;
+	  p position = 1.99441,1.55,1.30586,0xa3931b47;
+	}
+}
+[t:pupod_02,n:0x0010000b]
+{
+	[placement]
+	{
+	  p position = -1.90545,1.00615,-1.88153,0x5ec95a3a;
+	}
+}
