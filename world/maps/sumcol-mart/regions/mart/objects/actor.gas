@@ -28,6 +28,34 @@
 	  p position = -1.93859,1,1.60661,0x87391932;
 	}
 }
+[t:rat,n:0x00100016]
+{
+	[placement]
+	{
+	  p position = -0.576777,0.999996,1.38761,0x06012655;
+	}
+}
+[t:rat,n:0x00100013]
+{
+	[placement]
+	{
+	  p position = -0.690463,-0.450001,-0.823085,0xfd25b0b9;
+	}
+}
+[t:rat,n:0x00100015]
+{
+	[placement]
+	{
+	  p position = 1.64742,-0.450001,-1.92859,0xac1baa90;
+	}
+}
+[t:rat,n:0x00100017]
+{
+	[placement]
+	{
+	  p position = -0.265716,-3.8147e-006,-0.377741,0x1c747008;
+	}
+}
 [t:sumcol_mart_merchant_plants,n:0x00100006]
 {
 	[conversation]
@@ -37,55 +65,14 @@
 			* = shop_plants;
 		}
 	}
+	[mind]
+	{
+		jat_talk = world\ai\jobs\minibits\generic-talk-skrits\job_talk_npc.skrit?face_player=false;
+	}
 	[placement]
 	{
 	  q orientation = 0,1,0,-2.98023e-008;
-	  p position = 0.281006,0,0.192301,0xc51fbece;
-	}
-}
-[t:sumcol_mart_merchant_animals,n:0x00100002]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_animals;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.85093,1,-1.3375,0x61c156be;
-	}
-}
-[t:sumcol_mart_merchant_x_guards,n:0x00100009]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_x_guards;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,3.48491e-007,0,-1;
-	  p position = -0.658921,0,0.288795,0xa976cd46;
-	}
-}
-[t:sumcol_mart_merchant_undead,n:0x00100007]
-{
-	[conversation]
-	{
-		[conversations]
-		{
-			* = shop_undead;
-		}
-	}
-	[placement]
-	{
-	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -5.74523,-0.45,-1.93773,0x18a3a9e4;
+	  p position = 0.263044,0,0.199409,0xc51fbece;
 	}
 }
 [t:sumcol_mart_merchant_demonics,n:0x00100003]
@@ -103,6 +90,20 @@
 	  p position = -1.40843,-0.45,-1.48518,0xe600f5d2;
 	}
 }
+[t:rat,n:0x00100010]
+{
+	[placement]
+	{
+	  p position = 0.634008,-0.450001,-0.0528064,0x2baddb75;
+	}
+}
+[t:rat,n:0x0010000d]
+{
+	[placement]
+	{
+	  p position = 1.86007,-3.8147e-006,0.0613232,0xadd7ba41;
+	}
+}
 [t:sumcol_mart_merchant_robots,n:0x00100008]
 {
 	[conversation]
@@ -118,19 +119,11 @@
 	  p position = 3.27244,0,1.29807,0x8bf91dd5;
 	}
 }
-[t:rat,n:0x0010000c]
+[t:rat,n:0x0010000f]
 {
 	[placement]
 	{
-	  q orientation = 0,0.707107,0,0.707107;
-	  p position = 1.10718,-0.45,-1.55725,0x1e3bf2e1;
-	}
-}
-[t:rat,n:0x0010000d]
-{
-	[placement]
-	{
-	  p position = 1.86007,-3.8147e-006,0.0613232,0xadd7ba41;
+	  p position = 1.38379,-3.8147e-006,0.670132,0x8bf91dd5;
 	}
 }
 [t:rat,n:0x0010000e]
@@ -140,39 +133,12 @@
 	  p position = 0.822099,-0.450005,-0.51864,0x1fae56fb;
 	}
 }
-[t:rat,n:0x0010000f]
+[t:rat,n:0x0010000c]
 {
 	[placement]
 	{
-	  p position = 1.38379,-3.8147e-006,0.670132,0x8bf91dd5;
-	}
-}
-[t:rat,n:0x00100010]
-{
-	[placement]
-	{
-	  p position = 0.634008,-0.450001,-0.0528064,0x2baddb75;
-	}
-}
-[t:rat,n:0x00100011]
-{
-	[placement]
-	{
-	  p position = 0.157449,-0.450001,-0.960285,0x3a0657bd;
-	}
-}
-[t:rat,n:0x00100012]
-{
-	[placement]
-	{
-	  p position = -2.66714,0.550003,1.86156,0x18a3a9e4;
-	}
-}
-[t:rat,n:0x00100013]
-{
-	[placement]
-	{
-	  p position = -0.690463,-0.450001,-0.823085,0xfd25b0b9;
+	  q orientation = 0,0.707107,0,0.707107;
+	  p position = 1.10718,-0.45,-1.55725,0x1e3bf2e1;
 	}
 }
 [t:rat,n:0x00100014]
@@ -182,24 +148,62 @@
 	  p position = 1.78874,-0.450001,-1.72868,0x88101d13;
 	}
 }
-[t:rat,n:0x00100015]
+[t:sumcol_mart_merchant_animals,n:0x00100002]
 {
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_animals;
+		}
+	}
 	[placement]
 	{
-	  p position = 1.64742,-0.450001,-1.92859,0xac1baa90;
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -1.85093,1,-1.3375,0x61c156be;
 	}
 }
-[t:rat,n:0x00100016]
+[t:rat,n:0x00100011]
 {
 	[placement]
 	{
-	  p position = -0.576777,0.999996,1.38761,0x06012655;
+	  p position = 0.157449,-0.450001,-0.960285,0x3a0657bd;
 	}
 }
-[t:rat,n:0x00100017]
+[t:sumcol_mart_merchant_undead,n:0x00100007]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_undead;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.92388,0,0.382683;
+	  p position = -5.74523,-0.45,-1.93773,0x18a3a9e4;
+	}
+}
+[t:rat,n:0x00100012]
 {
 	[placement]
 	{
-	  p position = -0.265716,-3.8147e-006,-0.377741,0x1c747008;
+	  p position = -2.66714,0.550003,1.86156,0x18a3a9e4;
+	}
+}
+[t:sumcol_mart_merchant_x_guards,n:0x00100009]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_x_guards;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,3.48491e-007,0,-1;
+	  p position = -0.658921,0,0.288795,0xa976cd46;
 	}
 }

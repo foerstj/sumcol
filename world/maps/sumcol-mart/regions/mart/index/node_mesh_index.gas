@@ -1,6 +1,5 @@
 [node_mesh_index]
 {
-	0x001004dd = t_xxx_brdg_pillar-stg-top-3;
 	0x001004f5 = t_xxx_brdg_stg-16;
 	0x001004f6 = t_xxx_brdg_stg-20;
 	0x001004f7 = t_xxx_brdg_tx-rck-ramp;
