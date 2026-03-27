@@ -1,4 +1,4 @@
-[t:template,n:base_sumcol_mart_merchant_robots] { specializes = base_sumcol_mart_merchant; }
+[t:template,n:base_sumcol_mart_merchant_robots] { specializes = base_sumcol_mart_merchant_tmp2; }
 
 [t:template,n:sumcol_mart_merchant_robots_content_base] { specializes = base_sumcol_mart_merchant_robots; }
 [t:template,n:sumcol_mart_merchant_robots] { specializes = sumcol_mart_merchant_robots_content; }

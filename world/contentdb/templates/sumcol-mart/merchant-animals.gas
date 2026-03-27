@@ -1,4 +1,82 @@
-[t:template,n:base_sumcol_mart_merchant_animals] { specializes = base_sumcol_mart_merchant; }
+[t:template,n:base_sumcol_mart_merchant_animals]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from base_wolf
+	[aspect]
+	{
+		material = teeth;
+		model = m_c_edm_wf_pos_1;
+		selection_indicator_scale=0.85;
+	}
+	[body]
+	{
+		min_move_velocity = 2.0;
+		avg_move_velocity = 3.60000;
+		[bone_translator]
+		{
+			body_anterior = Neck1;
+			body_mid = Shoulder_spine;
+			body_posterior = Tail1;
+			kill_bone = Shoulder_spine;
+			shield_bone = Neck1;
+			weapon_bone = Neck1;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_wf_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+//					01 = at-02;
+					02 = at-03;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files]
+				{
+					00 = dsf;
+					01 = dsf-02;
+					02 = dsf-03;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl-02; }
+			}
+		}
+	}
+	[guts_manager]
+	{
+		effect_name = melee_hit_2;
+	}
+	// from wolf_white
+	[aspect]
+	{
+        textures:0 = b_c_edm_wf-03;
+        scale_base = 0.75;
+	}
+}
 
 [t:template,n:sumcol_mart_merchant_animals_content_base] { specializes = base_sumcol_mart_merchant_animals; }
 [t:template,n:sumcol_mart_merchant_animals] { specializes = sumcol_mart_merchant_animals_content; }

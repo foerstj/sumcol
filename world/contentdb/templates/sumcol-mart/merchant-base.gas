@@ -1,8 +1,9 @@
 [t:template,n:base_sumcol_mart_merchant]
 {
-	specializes = base_npc_fg;
+	specializes = npc;
 	category_name = "1W_shopkeep";
-	doc = "adwana";
+	doc = "sumcol mart merchant";
+
 	[actor]
 	{
 		portrait_icon = b_gui_ig_i_ic_c_adwana;
@@ -11,31 +12,23 @@
 	{
 		draw_selection_indicator = TRUE;
 		is_ghost_usable = TRUE;
-		model = m_c_gah_fg_pos_a7;
 		use_range = 1;
-		[textures]
-		{
-			0 = b_c_gah_fg_skin_12;
-			1 = b_c_pos_a7_018;
-		}
 	}
 	[common]
 	{
-		screen_name = "Adwana";
+		screen_name = "Summons Merchant";
 	}
 	[conversation]
 	{
 	}
 	[inventory]
 	{
-		custom_head = m_c_gah_fg_hlmt_head-02;
-		[equipment]
-		{
-			es_feet = bo_bo_le_light;
-		}
 	}
 	[mind]
 	{
+		actor_may_attack = false;
+        actor_may_be_attacked = false;
+
 		jat_talk = world\ai\jobs\common\job_talk.skrit;
 	}
 	[respawn_shrine]
@@ -44,5 +37,99 @@
 	[store]
 	{
 		item_markup = 2;
+	}
+}
+[t:template,n:base_sumcol_mart_merchant_tmp2]
+{
+	specializes = base_sumcol_mart_merchant;
+	[aspect]
+	{
+		model = m_c_gah_fg_pos_a7;
+		[textures]
+		{
+			0 = b_c_gah_fg_skin_12;
+			1 = b_c_pos_a7_018;
+		}
+	}
+	[body]
+	{
+		armor_version = gah_fg;
+		avg_move_velocity = 4.500000;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine2;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine2;
+			shield_bone = shield_grip;
+			weapon_bone = weapon_grip;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_gah_fg_fs;
+			[chore_attack]
+			{
+				chore_stances = 0,1,2,3,4,5,6,7;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0,1,2,3,4,5,6,7;
+				skrit = infinite_loop;
+				[anim_files]
+				{
+					00 = ds;
+				}
+			}
+			[chore_die]
+			{
+				chore_stances = 0,1,2,3,4,5,6,7;
+				skrit = select_transition;
+				[anim_files]
+				{
+					00 = di;
+				}
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0,1,2,3,4,5,6,7;
+				skrit = select_fidget;
+				[anim_files]
+				{
+					00 = dsf;
+					01 = dsf-02;
+				}
+			}
+			[chore_misc]
+			{
+				chore_stances = ignore;
+				skrit = select_transition;
+				[anim_files]
+				{
+					sit1 = a_c_gah_fg_fs0_dsf-08;
+				}
+			}
+			[chore_walk]
+			{
+				chore_stances = 0,1,2,3,4,5,6;
+				skrit = select_walk;
+				[anim_files]
+				{
+					00 = rl;
+				}
+			}
+		}
+	}
+	[inventory]
+	{
+		custom_head = m_c_gah_fg_hlmt_head-02;
+		[equipment]
+		{
+			es_feet = bo_bo_le_light;
+		}
 	}
 }
