@@ -67,6 +67,9 @@
 
 		movement_orders			= mo_hold;
 	}
+
+	// custom
+	mind:jat_talk = world\ai\jobs\minibits\generic-talk-skrits\job_talk_npc.skrit?talk_anim=&face_player=false;
 }
 
 [t:template,n:sumcol_mart_merchant_plants_content_base] { specializes = base_sumcol_mart_merchant_plants; }

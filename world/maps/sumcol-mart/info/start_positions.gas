@@ -19,6 +19,90 @@
 				position = 0.489261,1.550000,-1.033627,0xA3931B47;
 			}
 		}
+		[start_position]
+		{
+		  i id = 2;
+			position = -0.445759,1.000002,1.729721,0x42F4C3EB;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = -0.445759,1.000002,1.729721,0x42F4C3EB;
+			}
+		}
+		[start_position]
+		{
+		  i id = 3;
+			position = 0.660629,0.000000,-0.161927,0xADD7BA41;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = 0.660629,0.000000,-0.161927,0xADD7BA41;
+			}
+		}
+		[start_position]
+		{
+		  i id = 4;
+			position = -0.063813,-0.450001,-1.790714,0xFD25B0B9;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = -0.063813,-0.450001,-1.790714,0xFD25B0B9;
+			}
+		}
+		[start_position]
+		{
+		  i id = 5;
+			position = -0.993061,-0.608767,-0.128268,0x250263E7;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = -0.993061,-0.608767,-0.128268,0x250263E7;
+			}
+		}
+		[start_position]
+		{
+		  i id = 6;
+			position = 1.649590,1.650000,1.923573,0xE9018356;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = 1.649590,1.650000,1.923573,0xE9018356;
+			}
+		}
+		[start_position]
+		{
+		  i id = 7;
+			position = -1.406278,1.000000,0.655699,0x06012655;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = -1.406278,1.000000,0.655699,0x06012655;
+			}
+		}
+		[start_position]
+		{
+		  i id = 8;
+			position = -1.432722,1.000002,0.282679,0xAFC2BEB6;
+			[camera]
+			{
+			  f azimuth = 0.500000;
+			  f distance = 20.000000;
+			  f orbit = 0.000000;
+				position = -1.432722,1.000002,0.282679,0xAFC2BEB6;
+			}
+		}
 		[world_levels]
 		{
 		}

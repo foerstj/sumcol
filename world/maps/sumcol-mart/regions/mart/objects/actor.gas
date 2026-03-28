@@ -30,6 +30,10 @@
 }
 [t:rat,n:0x00100016]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = -0.576777,0.999996,1.38761,0x06012655;
@@ -37,6 +41,10 @@
 }
 [t:rat,n:0x00100013]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = -0.690463,-0.450001,-0.823085,0xfd25b0b9;
@@ -44,6 +52,10 @@
 }
 [t:rat,n:0x00100015]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 1.64742,-0.450001,-1.92859,0xac1baa90;
@@ -51,6 +63,10 @@
 }
 [t:rat,n:0x00100017]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = -0.265716,-3.8147e-006,-0.377741,0x1c747008;
@@ -64,10 +80,6 @@
 		{
 			* = shop_plants;
 		}
-	}
-	[mind]
-	{
-		jat_talk = world\ai\jobs\minibits\generic-talk-skrits\job_talk_npc.skrit?talk_anim=&face_player=false;
 	}
 	[placement]
 	{
@@ -92,6 +104,10 @@
 }
 [t:rat,n:0x00100010]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 0.634008,-0.450001,-0.0528064,0x2baddb75;
@@ -99,6 +115,10 @@
 }
 [t:rat,n:0x0010000d]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 1.86007,-3.8147e-006,0.0613232,0xadd7ba41;
@@ -121,6 +141,10 @@
 }
 [t:rat,n:0x0010000f]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 1.38379,-3.8147e-006,0.670132,0x8bf91dd5;
@@ -128,6 +152,10 @@
 }
 [t:rat,n:0x0010000e]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 0.822099,-0.450005,-0.51864,0x1fae56fb;
@@ -135,6 +163,10 @@
 }
 [t:rat,n:0x0010000c]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
@@ -143,6 +175,10 @@
 }
 [t:rat,n:0x00100014]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 1.78874,-0.450001,-1.72868,0x88101d13;
@@ -165,6 +201,10 @@
 }
 [t:rat,n:0x00100011]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = 0.157449,-0.450001,-0.960285,0x3a0657bd;
@@ -187,6 +227,10 @@
 }
 [t:rat,n:0x00100012]
 {
+	[common]
+	{
+	  b is_multi_player = true;
+	}
 	[placement]
 	{
 	  p position = -2.66714,0.550003,1.86156,0x18a3a9e4;

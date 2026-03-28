@@ -124,6 +124,9 @@
 			es_weapon_hand = #sd_g_c_st_1h_avg:o_avg;
 		}
 	}
+
+	// custom
+	common:screen_name = "Guards Extension";
 }
 
 [t:template,n:sumcol_mart_merchant_x_guards_content_base] { specializes = base_sumcol_mart_merchant_x_guards; }
