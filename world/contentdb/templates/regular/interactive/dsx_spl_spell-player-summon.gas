@@ -9,6 +9,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Twisted Mucosa to guard the Caster.";
 			screen_name = "Summon Twisted Mucosa";
 		}
@@ -157,6 +158,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Vile Twisted Mucosa to guard the Caster.";
 			screen_name = "Summon Vile Twisted Mucosa";
 		}
@@ -304,6 +306,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Giant Rat to guard the Caster.";
 			screen_name = "Summon Giant Rat";
 			[template_triggers]
@@ -431,6 +434,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons Deadly Armor to guard the Caster.";
 			screen_name = "Summon Deadly Armor";
 		}
@@ -560,6 +564,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons an Ursae to guard the Caster.";
 			screen_name = "Summon Ursae";
 		}
@@ -689,6 +694,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Rune Guardian to guard the Caster.";
 			screen_name = "Summon Rune Guardian";
 		}
@@ -818,6 +824,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Barkrunner to guard the Caster.";
 			screen_name = "Summon Barkrunner";
 			[template_triggers]
@@ -944,6 +951,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Scrub Howler to guard the Caster.";
 			screen_name = "Summon Scrub Howler";
 			[template_triggers]
@@ -1070,6 +1078,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Cave Bear to guard the Caster.";
 			screen_name = "Summon Cave Bear";
 			[template_triggers]
@@ -1196,6 +1205,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Dark Zepheryl to guard the Caster.";
 			screen_name = "Summon Dark Zepheryl";
 			[template_triggers]
@@ -1323,6 +1333,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Fleshrender to guard the Caster.";
 			screen_name = "Summon Fleshrender";
 		}
@@ -1452,6 +1463,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Death Knight to guard the Caster.";
 			screen_name = "Summon Death Knight";
 		}
@@ -1582,6 +1594,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Slithermage to guard the Caster.";
 			screen_name = "Summon Slithermage";
 		}
@@ -1713,6 +1726,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Chomper to guard the Caster.";
 			screen_name = "Summon Chomper";
 			[template_triggers]
@@ -1841,6 +1855,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Troll Masher to guard the Caster.";
 			screen_name = "Summon Troll Masher";
 			[template_triggers]
@@ -1969,6 +1984,7 @@
 		}
 	[common]
 		{
+			is_pcontent_allowed = false;  // ADDED
 			description = "Summons a Zepheryl to guard the Caster.";
 			screen_name = "Summon Zepheryl";
 			[template_triggers]
