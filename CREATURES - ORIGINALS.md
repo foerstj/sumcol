@@ -46,15 +46,15 @@ LoA Standard Creatures: 16
 - Elementals: 2
   - Dark Zepheryl
   - Zepheryl
-- Undead: 3
-  - Deadly Armor
+- Undead: 2
   - Ursae
   - Death Knight
 - Plants: 1
   - Barkrunner
-- Demonics: 5
+- Demonics: 6
   - Twisted Mucosa
   - Vile Twisted Mucosa
+  - Deadly Armor
   - Rune Beast
   - Fleshrender
   - Slithermage
