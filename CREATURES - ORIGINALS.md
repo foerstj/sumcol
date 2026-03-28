@@ -1,0 +1,64 @@
+SUMMONS COLLECTION CREATURES - ORIGINALS: 47
+
+Vanilla Standard Creatures: 31
+- Animals: 12
+  - Black Drake
+  - Green Drake
+  - Forest Klaw
+  - Furok
+  - Hell Boar
+  - Impaler
+  - Killer Gremal
+  - Picker
+  - Scorpion
+  - Skick
+  - Spiked Dweller
+  - Black Wolf
+- Elementals: 7
+  - Fire Elemental
+  - Jade Gargoyle
+  - Frost Golem
+  - Lava Spirit
+  - Slag
+  - Rock Golem
+  - Rock Beast
+- Undead: 5
+  - Krug Dog Skeleton
+  - Skeleton
+  - Wraith
+  - Wraith Archer
+  - Headless Zombie
+- Plants: 1
+  - Larch
+- Demonics: 3
+  - Darkling
+  - Mucosa
+  - Mucosa Predator
+- Humanoids: 3
+  - Desert Braak
+  - Cave Giant
+  - Forest Troll
+
+LoA Standard Creatures: 16
+- Animals: 2
+  - Giant Rat
+  - Cave Bear
+- Elementals: 2
+  - Dark Zepheryl
+  - Zepheryl
+- Undead: 3
+  - Deadly Armor
+  - Ursae
+  - Death Knight
+- Plants: 1
+  - Barkrunner
+- Demonics: 5
+  - Twisted Mucosa
+  - Vile Twisted Mucosa
+  - Rune Beast
+  - Fleshrender
+  - Slithermage
+- Humanoids: 3
+  - Scrub Howler
+  - Chomper
+  - Troll Masher

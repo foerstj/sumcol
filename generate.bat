@@ -32,12 +32,16 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gasp
 if %errorlevel% neq 0 pause
 
 :: SumCol extensions
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\x\guards\interactive\spells\summon "{{sos}}-summon-x-{{x}}-{{mc}}-{{ct}}-{{ft}}-{{v}}-{{stn}}.gas" --for-each gaspy\jinja\sumcol\main\x-guards.csv --value x=guards --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
-if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language "sumcol-x-{{x}}.de.gas" --for-all gaspy\jinja\sumcol\language\sumcol-x-guards.de.gas.csv --value x=guards --bits "%bits%"
-if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\readme "" "CREATURES - {{x | upper}}.md" --for-all gaspy\jinja\sumcol\main\x-guards.csv --value x=guards --bits "%bits%"
-if %errorlevel% neq 0 pause
+setlocal enableDelayedExpansion
+for %%x in (guards originals) do (
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\x\%%x\interactive\spells\summon "{{sos}}-summon-x-{{x}}-{{mc}}-{{ct}}-{{ft}}-{{v}}-{{stn}}.gas" --for-each gaspy\jinja\sumcol\main\x-%%x.csv --value x=%%x --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+  if !errorlevel! neq 0 pause
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language "sumcol-x-{{x}}.de.gas" --for-all gaspy\jinja\sumcol\language\sumcol-x-%%x.de.gas.csv --value x=%%x --bits "%bits%"
+  if !errorlevel! neq 0 pause
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol\readme "" "CREATURES - {{x | upper}}.md" --for-all gaspy\jinja\sumcol\main\x-%%x.csv --value x=%%x --bits "%bits%"
+  if !errorlevel! neq 0 pause
+)
+endlocal
 
 :: SumCol Mart map
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart\mart-content.gas.jinja world\contentdb\templates\sumcol-mart --for-all gaspy\jinja\sumcol\main\main.csv --bits "%bits%"
