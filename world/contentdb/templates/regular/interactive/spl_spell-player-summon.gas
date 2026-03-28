@@ -269,6 +269,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -397,6 +398,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -1063,6 +1065,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Jade Gargoyle to guard the Caster.";
 		[template_triggers]
 		{
@@ -1808,6 +1811,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2062,6 +2066,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2316,6 +2321,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2444,6 +2450,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2572,6 +2579,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2700,6 +2708,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3081,6 +3090,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3209,6 +3219,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3463,6 +3474,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3717,6 +3729,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3845,6 +3858,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3973,6 +3987,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
