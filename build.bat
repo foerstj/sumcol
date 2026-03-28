@@ -53,6 +53,7 @@ if "%target%"=="loa" (
 )
 :: extensions
 call :build_partial_x "guards" "Guards"
+call :build_partial_x "originals" "Originals"
 
 :: Compile translation all-in-one resource file
 rmdir /S /Q "%tmp%\Bits"
@@ -137,6 +138,9 @@ exit /b 0
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-x-%infix_x%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-x-%infix_x%-* /S
+  if "%infix_x%"=="originals" (
+    robocopy "%bits%\world\contentdb\templates\regular" "%tmp%\Bits\world\contentdb\templates\regular" /S
+  )
   set title=%mod_cs% %target_cs% Extension - %name_x%
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
