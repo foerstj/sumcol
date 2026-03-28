@@ -266,3 +266,18 @@
 	  p position = -0.658921,0,0.288795,0xa976cd46;
 	}
 }
+[t:sumcol_mart_merchant_x_originals,n:0x00100046]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_originals;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-0.382683,0,0.92388;
+	  p position = 1.19066,0,0.843765,0xa976cd46;
+	}
+}

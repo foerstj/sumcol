@@ -47,7 +47,7 @@ endlocal
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart\mart-content.gas.jinja world\contentdb\templates\sumcol-mart --for-all gaspy\jinja\sumcol\main\main.csv --bits "%bits%"
 if %errorlevel% neq 0 pause
 setlocal enableDelayedExpansion
-for %%x in (guards) do (
+for %%x in (guards originals) do (
   venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart\mart-content-x.gas.jinja world\contentdb\templates\sumcol-mart "mart-content-x-{{x}}.gas" --for-all gaspy\jinja\sumcol\main\x-%%x.csv --value "x=%%x" --bits "%bits%"
   if !errorlevel! neq 0 pause
 )
