@@ -11,6 +11,8 @@ set ds=%DungeonSiege%
 :: Cleanup resources so as not to confuse Siege Editor
 :: partial builds
 del "%ds%\DSLOA\%mod_cs% LoA - *.dsres"
+:: extensions
+del "%ds%\DSLOA\%mod_cs% LoA Extension - *.dsres"
 :: translation
 del "%ds%\DSLOA\%mod_cs%.*.dsres"
 :: mart map
@@ -23,6 +25,8 @@ del "%ds%\DSLOA\%demo_map_cs%.dsmap"
 :: Same for Vanilla
 :: partial builds
 del "%ds%\Resources\%mod_cs% Vanilla - *.dsres"
+:: extensions
+del "%ds%\Resources\%mod_cs% Vanilla Extension - *.dsres"
 :: translation
 del "%ds%\Resources\%mod_cs%.*.dsres"
 :: mart map
