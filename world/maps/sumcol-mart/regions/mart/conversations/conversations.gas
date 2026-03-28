@@ -1,105 +1,118 @@
 [shop_animals]
 {
+	[goodbye*]
+	{
+		sample = s_v_cf_beuwel2;
+	}
 	[text*]
 	{
 		choice = shop;
-		sample = s_v_bt_adwana3;
-		screen_text = "How may this servant of Azunai assist you today?";
-	}
-	[goodbye*]
-	{
-		sample = s_v_bt_adwana2;
+		sample = s_v_cf_beuwel3;
+		screen_text = "You know the drill. Just let me know when you've found something you want.";
 	}
 }
 [shop_demonics]
 {
+	[goodbye*]
+	{
+		sample = s_v_path2dm_bodrus2;
+		screen_text = "A pleasure doing business with you.";
+	}
 	[text*]
 	{
 		choice = shop;
 		sample = s_v_path2dm_bodrus3;
 		screen_text = "Ahh! How good to see you again! Is there some magical artifact you might bear to part with?";
 	}
-	[goodbye*]
-	{
-		sample = s_v_path2dm_bodrus2;
-		screen_text = "A pleasure doing business with you.";
-	}
 }
 [shop_elementals]
 {
+	[goodbye*]
+	{
+		sample = s_v_mm_jeriah2;
+	}
 	[text*]
 	{
 		choice = shop;
 		sample = s_v_mm_jeriah3;
 		screen_text = "You're about as welcome here as a badger in a stone cold outhouse, you know that?";
 	}
-	[goodbye*]
-	{
-		sample = s_v_mm_jeriah2;
-	}
 }
 [shop_humanoids]
 {
+	[goodbye*]
+	{
+		sample = s_v_cd_hein2;
+	}
 	[text*]
 	{
 		choice = shop;
 		sample = s_v_cd_hein3;
 		screen_text = "Come back for more, 'ave you? Everybody always do. So what's it going to be this time, eh?";
 	}
-	[goodbye*]
-	{
-		sample = s_v_cd_hein2;
-	}
 }
 [shop_plants]
 {
+	[goodbye*]
+	{
+		sample = s_v_df_yadze2;
+	}
 	[text*]
 	{
 		choice = shop;
 		sample = s_v_df_yadze3;
 		screen_text = "Ve haf enticed you beck to our camp? Very good. Vat may I do for you today?";
 	}
-	[goodbye*]
-	{
-		sample = s_v_df_yadze2;
-	}
-}
-[shop_undead]
-{
-	[text*]
-	{
-		choice = shop;
-		sample = s_v_tr_thayne3;
-		screen_text = "Welcome back. We're always glad to have a future supplier in the store.";
-	}
-	[goodbye*]
-	{
-		sample = s_v_tr_thayne2; // "I'm very sure I shall be seeing you again."
-	}
 }
 [shop_robots]
 {
+	[goodbye*]
+	{
+		sample = s_v_dc_nonataya2;
+	}
 	[text*]
 	{
 		choice = shop;
 		sample = s_v_dc_nonataya3;
 		screen_text = "Do you require additional supplies?";
 	}
+}
+[shop_undead]
+{
 	[goodbye*]
 	{
-		sample = s_v_dc_nonataya2;
+		sample = s_v_tr_thayne2;
+	}
+	[text*]
+	{
+		choice = shop;
+		sample = s_v_tr_thayne3;
+		screen_text = "Welcome back. We're always glad to have a future supplier in the store.";
 	}
 }
 [shop_x_guards]
 {
+	[goodbye*]
+	{
+		sample = s_v_bt_jonn2;
+	}
 	[text*]
 	{
 		choice = shop;
 		sample = s_v_bt_jonn3;
 		screen_text = "What can I show you today?";
 	}
+}
+[shop_originals]
+{
 	[goodbye*]
 	{
-		sample = s_v_bt_jonn2;
+		sample = s_v_bt_adwana2;
+	}
+	[text*]
+	{
+		choice = shop;
+		sample = s_v_bt_adwana3;
+		screen_text = "How may this servant of Azunai assist you today?";
 	}
 }

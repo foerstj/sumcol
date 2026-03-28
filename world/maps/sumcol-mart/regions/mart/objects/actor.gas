@@ -113,6 +113,21 @@
 	  p position = 0.634008,-0.450001,-0.0528064,0x2baddb75;
 	}
 }
+[t:sumcol_mart_merchant_animals,n:0x00100002]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop_animals;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,0.382684,0,0.923879;
+	  p position = 2.72068,0,-0.352625,0xadd7ba41;
+	}
+}
 [t:rat,n:0x0010000d]
 {
 	[common]
@@ -184,19 +199,19 @@
 	  p position = 1.78874,-0.450001,-1.72868,0x88101d13;
 	}
 }
-[t:sumcol_mart_merchant_animals,n:0x00100002]
+[t:sumcol_mart_merchant_originals,n:0x00100047]
 {
 	[conversation]
 	{
 		[conversations]
 		{
-			* = shop_animals;
+			* = shop_originals;
 		}
 	}
 	[placement]
 	{
 	  q orientation = 0,0.92388,0,0.382683;
-	  p position = -1.85093,1,-1.3375,0x61c156be;
+	  p position = -1.5008,1,-1.52236,0x61c156be;
 	}
 }
 [t:rat,n:0x00100011]

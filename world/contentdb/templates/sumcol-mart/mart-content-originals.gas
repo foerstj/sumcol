@@ -1,0 +1,60 @@
+[t:template,n:sumcol_mart_merchant_originals_content]
+{
+	specializes = sumcol_mart_merchant_originals_content_base;
+
+	common:screen_name = "Originals";
+	[store]
+	{
+		[item_restock]
+		{
+			spell_summon_braak_desert = 1;
+			spell_summon_cave_giant = 1;
+			spell_summon_darkling = 1;
+			spell_summon_drake_black = 1;
+			spell_summon_drake_green = 1;
+			spell_summon_fire_elemental = 1;
+			spell_summon_forest_klaw = 1;
+			spell_summon_furok = 1;
+			spell_summon_gargoyle = 1;
+			spell_summon_golem_frost = 1;
+			spell_summon_hell_boar = 1;
+			spell_summon_impaler = 1;
+			spell_summon_killer_gremal = 1;
+			spell_summon_krug_dog_skeleton = 1;
+			spell_summon_larch = 1;
+			spell_summon_lava_spirit = 1;
+			spell_summon_molten_golem = 1;
+			spell_summon_mucosa = 1;
+			spell_summon_mucosa_predator = 1;
+			spell_summon_picker = 1;
+			spell_summon_rock_golem = 1;
+			spell_summon_rock_beast = 1;
+			spell_summon_scorpion = 1;
+			spell_summon_skeleton = 1;
+			spell_summon_skick = 1;
+			spell_summon_spiked_dweller = 1;
+			spell_summon_troll_forest = 1;
+			spell_summon_troll_forest_norecov = 1;
+			spell_summon_wolf_black = 1;
+			spell_summon_wraith = 1;
+			spell_summon_wraith_archer = 1;
+			spell_summon_zombie_headless = 1;
+			spell_summon_dsx_twisted_mucosa = 1;
+			spell_summon_dsx_vile_twisted_mucosa = 1;
+			spell_summon_dsx_giant_rat = 1;
+			spell_summon_dsx_deadly_armor = 1;
+			spell_summon_dsx_ursae_demonic = 1;
+			spell_summon_dsx_rune_guardian = 1;
+			spell_summon_dsx_barkrunner = 1;
+			spell_summon_dsx_scrub_howler = 1;
+			spell_summon_dsx_bear = 1;
+			spell_summon_dsx_zepheryl_dark = 1;
+			spell_summon_dsx_fleshrender = 1;
+			spell_summon_dsx_knight_death = 1;
+			spell_summon_dsx_slithermage = 1;
+			spell_summon_dsx_chomper = 1;
+			spell_summon_dsx_troll_masher = 1;
+			spell_summon_dsx_zepheryl = 1;
+		}
+	}
+}

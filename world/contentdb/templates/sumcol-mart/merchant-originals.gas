@@ -1,0 +1,62 @@
+[t:template,n:base_sumcol_mart_merchant_originals]
+{
+	specializes = base_sumcol_mart_merchant;
+
+	// from base_gremal
+	[body]
+	{
+		avg_move_velocity = 3.630000;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = bip01_spine1;
+			body_posterior = bip01_pelvis;
+			kill_bone = bip01_spine;
+			shield_bone = bip01_l_hand;
+			weapon_bone = bip01_r_hand;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_gm_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files] { 00=at; }
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dff; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	// from gremal_killer_base
+	[aspect]
+	{
+		model = m_c_edm_gm_pos_1;
+		[textures] { 0=b_c_edm_gm-02; }
+	}
+}
+
+[t:template,n:sumcol_mart_merchant_originals_content_base] { specializes = base_sumcol_mart_merchant_originals; }
+[t:template,n:sumcol_mart_merchant_originals] { specializes = sumcol_mart_merchant_originals_content; }

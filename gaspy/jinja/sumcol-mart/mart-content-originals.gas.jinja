@@ -1,0 +1,15 @@
+[t:template,n:sumcol_mart_merchant_originals_content]
+{
+	specializes = sumcol_mart_merchant_originals_content_base;
+
+	common:screen_name = "Originals";
+	[store]
+	{
+		[item_restock]
+		{
+			{% for row in data %}
+			spell_summon_{{ row['stn'] }} = 1;
+			{% endfor %}
+		}
+	}
+}

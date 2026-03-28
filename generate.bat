@@ -48,6 +48,8 @@ for %%x in (guards) do (
   if !errorlevel! neq 0 pause
 )
 endlocal
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-mart\mart-content-originals.gas.jinja world\contentdb\templates\sumcol-mart --for-all gaspy\jinja\sumcol-mart\originals.csv --bits "%bits%"
+if %errorlevel% neq 0 pause
 
 :: SumCol demo/test map
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
