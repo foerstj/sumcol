@@ -1,0 +1,5 @@
+// Hook file to make the mart merchant appear
+[t:template,n:base_sumcol_mart_merchant_x_guards_hook]
+{
+	specializes = base_sumcol_mart_merchant_x_guards;
+}

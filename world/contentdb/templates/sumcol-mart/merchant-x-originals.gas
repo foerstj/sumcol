@@ -6,5 +6,5 @@
 	common:screen_name = "Originals Extension";
 }
 
-[t:template,n:sumcol_mart_merchant_x_originals_content_base] { specializes = base_sumcol_mart_merchant_x_originals; }
+[t:template,n:sumcol_mart_merchant_x_originals_content_base] { specializes = base_sumcol_mart_merchant_x_originals_hook; }
 [t:template,n:sumcol_mart_merchant_x_originals] { specializes = sumcol_mart_merchant_x_originals_content; }

@@ -129,5 +129,5 @@
 	common:screen_name = "Guards Extension";
 }
 
-[t:template,n:sumcol_mart_merchant_x_guards_content_base] { specializes = base_sumcol_mart_merchant_x_guards; }
+[t:template,n:sumcol_mart_merchant_x_guards_content_base] { specializes = base_sumcol_mart_merchant_x_guards_hook; }
 [t:template,n:sumcol_mart_merchant_x_guards] { specializes = sumcol_mart_merchant_x_guards_content; }
