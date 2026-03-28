@@ -27,3 +27,34 @@
 		room_type			= rt_generic;
 	}
 }
+
+// used that for photoshooting once
+[mood_setting*]
+{
+	mood_name				= sumcol-demo-black;
+	transition_time			= 1.0f;
+	interior				= true;  // no day-night cycle
+
+	[frustum]
+	{
+		frustum_width		= 60.0f;
+		frustum_height		= 60.0f;
+	}
+
+	[fog]
+	{
+		fog_near_dist		= 40.0f;
+		fog_far_dist		= 60.0f;
+		fog_lowdetail_near_dist		= 30.0f;
+		fog_lowdetail_far_dist		= 45.0f;
+		fog_color			= 0xFF000000;
+		fog_density			= 0.5f;
+	}
+
+	[music]
+	{
+		ambient_track		= "";
+		standard_track		= "";
+		room_type			= rt_generic;
+	}
+}
