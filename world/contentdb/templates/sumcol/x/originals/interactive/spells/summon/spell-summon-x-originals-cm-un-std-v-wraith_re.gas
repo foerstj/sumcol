@@ -20,7 +20,7 @@
 	}
 	[spell_summon]
 	{
-		template_name = wraith_summon_summon;
+		template_name = wraith_re_summon;
 		script_params = "[scale(1.0)]";
 	}
 	[magic]

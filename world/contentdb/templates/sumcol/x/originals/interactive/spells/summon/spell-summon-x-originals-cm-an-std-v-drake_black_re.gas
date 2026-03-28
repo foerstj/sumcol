@@ -20,7 +20,7 @@
 	}
 	[spell_summon]
 	{
-		template_name = drake_black_sumcol_summon;
+		template_name = drake_black_re_summon;
 		script_params = "[scale(1.0)]";
 	}
 	[magic]

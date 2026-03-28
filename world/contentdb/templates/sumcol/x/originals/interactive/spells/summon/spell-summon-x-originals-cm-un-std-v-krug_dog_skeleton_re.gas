@@ -20,7 +20,7 @@
 	}
 	[spell_summon]
 	{
-		template_name = krug_dog_skeleton_sumcol_summon;
+		template_name = krug_dog_skeleton_re_summon;
 		script_params = "[scale(1.0)]";
 	}
 	[magic]

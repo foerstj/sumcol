@@ -20,7 +20,7 @@
 	}
 	[spell_summon]
 	{
-		template_name = molten_golem_summon;
+		template_name = molten_golem_re_summon;
 		script_params = "[scale(1.75)]";
 	}
 	[magic]
