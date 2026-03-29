@@ -35,7 +35,7 @@
 			il_main = spell_summon_skick_re;
 			il_main = spell_summon_spiked_dweller_re;
 			il_main = spell_summon_troll_forest_re;
-			il_main = spell_summon_troll_forest_re_norecov;
+			//il_main = spell_summon_troll_forest_re_norecov;
 			il_main = spell_summon_wolf_black_re;
 			il_main = spell_summon_wraith_re;
 			il_main = spell_summon_wraith_archer_re;
