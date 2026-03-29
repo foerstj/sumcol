@@ -12,7 +12,7 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\t
 if %errorlevel% neq 0 pause
 setlocal enableDelayedExpansion
 for %%x in (originals) do (
-  venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\x\%%x\interactive\spells\monster --for-each gaspy\jinja\sumcol\monster-spells\x-%%x.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\x\%%x\interactive\spells\monster "spell-x-{{x}}-{{dmgtype}}-{{name}}-{{mc}}-{{ct}}-{{ft}}-{{v}}-{{stn}}.gas" --for-each gaspy\jinja\sumcol\monster-spells\x-%%x.csv --value x=%%x --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
   if !errorlevel! neq 0 pause
 )
 endlocal

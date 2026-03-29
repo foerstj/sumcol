@@ -7,7 +7,7 @@
 	[inventory]
 	{
     	selected_active_location = il_active_primary_spell;
-		[other] { il_active_primary_spell = spell_drake_green_fire_breath_summon; }  // EDITED
+		[other] { il_active_primary_spell = spell_drake_green_breath_summon; }  // EDITED
 		[pcontent]
 		{
 			[gold*]

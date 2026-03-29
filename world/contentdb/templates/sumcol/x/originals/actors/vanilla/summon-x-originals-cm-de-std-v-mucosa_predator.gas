@@ -8,7 +8,7 @@
 	[inventory]
 	{
 		selected_active_location = il_active_primary_spell;
-		[other] { il_active_primary_spell = spell_mucosa_predator_poison_sparkles_summon; }  // EDITED
+		[other] { il_active_primary_spell = spell_mucosa_predator_sparkles_summon; }  // EDITED
 		[pcontent]
 		{
 			[gold*]

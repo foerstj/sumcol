@@ -7,7 +7,7 @@
     physics:explode_when_killed = false;
 	[inventory]
 	{
-		[other] { il_active_primary_spell = spell_dsx_vile_twisted_mucosa_poison_poison_summon; }  // EDITED
+		[other] { il_active_primary_spell = spell_dsx_vile_twisted_mucosa_poison_summon; }  // EDITED
 		[pcontent] { /* ERASED */ }
 	}
 	[generator_in_object]
