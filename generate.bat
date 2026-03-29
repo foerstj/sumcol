@@ -62,7 +62,7 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\monster-spells world\conten
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\scroll-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\scroll-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon "scroll-spells-x.gas" --for-all gaspy\jinja\sumcol\main\x-guards.csv --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\scroll-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon "scroll-spells-x.gas" --for-all gaspy\jinja\sumcol\main\x-guards.csv gaspy\jinja\sumcol\main\x-originals.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\companions world\contentdb\templates\sumcol-demo --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
@@ -70,7 +70,7 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\sumcol.gas.j
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spells.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spells-x.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\x-guards.csv --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spells-x.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\x-guards.csv gaspy\jinja\sumcol\main\x-originals.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\test-only.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
