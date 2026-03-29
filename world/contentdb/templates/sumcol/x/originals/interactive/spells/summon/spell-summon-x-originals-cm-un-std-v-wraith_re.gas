@@ -3,15 +3,15 @@
 {
 	specializes = base_spell_sumcol_cm;
 
-	doc = "spell Summon Wraith";
+	doc = "spell Summon Battle Wraith";
 	[aspect]
 	{
 		gold_value = 69000;
 	}
 	[common]
 	{
-		screen_name = "Summon Wraith";
-		description = "Summons a Wraith to guard the Caster.";
+		screen_name = "Summon Battle Wraith";
+		description = "Summons a Battle Wraith to guard the Caster.";
 	}
 	[gui]
 	{

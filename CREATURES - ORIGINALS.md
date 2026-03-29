@@ -18,14 +18,14 @@ Vanilla Standard Creatures: 31
   - Fire Elemental
   - Jade Gargoyle
   - Frost Golem
-  - Lava Spirit
+  - Lava Spirit Mage
   - Slag
   - Rock Golem
   - Rock Beast
 - Undead: 5
   - Krug Dog Skeleton
   - Skeleton
-  - Wraith
+  - Battle Wraith
   - Wraith Archer
   - Headless Zombie
 - Plants: 1
