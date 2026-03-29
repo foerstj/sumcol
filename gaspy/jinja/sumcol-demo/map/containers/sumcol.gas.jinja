@@ -11,7 +11,7 @@
 		[other]
 		{
 			{% for row in data if row['v'] == v and row['ct'] == ct and (row['ft'] == 'std') == (std == 'std') and not row['test_only'] %}
-			il_main = {{ 'spell' if not row['ft'].startswith('mb') else 'scroll' }}_summon_{{ row['stn'] }};
+			il_main = {{ row['sos'] }}_summon_{{ row['stn'] }};
 			{% endfor %}
 		}
 	}
