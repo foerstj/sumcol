@@ -1,0 +1,8 @@
+[t:template,n:gremal_killer_re_summon]
+{
+	specializes = gremal_killer_base;
+
+	doc = "[summon] Killer Gremal";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}
