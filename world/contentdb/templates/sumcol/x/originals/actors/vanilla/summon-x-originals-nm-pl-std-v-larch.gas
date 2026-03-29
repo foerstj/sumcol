@@ -1,0 +1,8 @@
+[t:template,n:larch_re_summon]
+{
+	specializes = larch_base;
+
+	doc = "[summon] larch";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

@@ -1,0 +1,8 @@
+[t:template,n:forest_klaw_re_summon]
+{
+	specializes = forest_klaw_base;
+
+	doc = "[summon] forest klaw";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

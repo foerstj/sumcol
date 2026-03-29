@@ -1,0 +1,9 @@
+[t:template,n:impaler_re_summon]
+{
+	specializes = impaler_base;
+
+	doc = "[summon] impaler";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

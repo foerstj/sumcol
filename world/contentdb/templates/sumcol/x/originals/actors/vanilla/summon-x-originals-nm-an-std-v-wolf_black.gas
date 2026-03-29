@@ -1,0 +1,8 @@
+[t:template,n:wolf_black_re_summon]
+{
+	specializes = wolf_black_base;
+
+	doc = "[summon] wolf_black";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

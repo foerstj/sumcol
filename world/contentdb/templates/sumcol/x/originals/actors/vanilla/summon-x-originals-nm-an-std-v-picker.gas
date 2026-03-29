@@ -1,0 +1,9 @@
+[t:template,n:picker_re_summon]
+{
+	specializes = picker_base;
+
+	doc = "[summon] picker";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

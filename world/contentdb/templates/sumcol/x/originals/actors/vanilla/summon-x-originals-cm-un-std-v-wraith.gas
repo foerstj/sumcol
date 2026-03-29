@@ -1,0 +1,14 @@
+[t:template,n:wraith_re_summon]
+{
+	specializes = base_battle_wraith;
+
+	doc = "[summon] wraith";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+	[mind]
+	{
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
+		jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+	}
+}

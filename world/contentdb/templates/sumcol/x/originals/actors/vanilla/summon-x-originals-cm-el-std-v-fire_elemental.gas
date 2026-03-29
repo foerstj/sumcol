@@ -1,0 +1,4 @@
+[t:template,n:fire_elemental_re_summon]
+{
+	specializes = fire_elemental_sumcol_base;
+}

@@ -1,0 +1,7 @@
+[t:template,n:cave_giant_re_summon]
+{
+	specializes = cave_giant_base;
+
+	doc = "[summon] cave_giant";
+	aspect:experience_value = 0;
+}

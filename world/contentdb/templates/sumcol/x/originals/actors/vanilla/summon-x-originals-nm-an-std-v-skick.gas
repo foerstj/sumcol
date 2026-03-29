@@ -1,0 +1,9 @@
+[t:template,n:skick_re_summon]
+{
+	specializes = skick_base;
+
+	doc = "[summon] skick";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

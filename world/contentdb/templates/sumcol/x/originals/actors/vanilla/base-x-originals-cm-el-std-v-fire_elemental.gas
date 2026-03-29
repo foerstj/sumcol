@@ -1,0 +1,32 @@
+[t:template,n:fire_elemental_sumcol_base]  // = fire_elemental
+{
+	category_name = "1W_evil_c";
+	doc = "fire_elemental";
+	specializes = fire_elemental_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength =  23, 0;
+			intelligence =  18, 0;
+			dexterity =  30, 0;
+            melee =         36, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 0;
+		life = 1160;
+		max_life = 1160;
+		mana = 660;
+		max_mana = 660;
+	}
+    [defend] { defense=300; }
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 270;
+		damage_min = 240;
+		reload_delay = 0;
+	}
+}

@@ -1,0 +1,9 @@
+[t:template,n:golem_frost_re_summon]
+{
+	specializes = golem_frost_base;
+
+	doc = "[summon] golem_frost";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

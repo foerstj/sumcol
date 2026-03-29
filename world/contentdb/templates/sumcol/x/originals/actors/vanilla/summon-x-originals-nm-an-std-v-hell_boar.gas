@@ -1,0 +1,8 @@
+[t:template,n:hell_boar_re_summon]
+{
+	specializes = hell_boar_base;
+
+	doc = "[summon] hell_boar";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

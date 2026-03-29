@@ -1,0 +1,9 @@
+[t:template,n:scorpion_re_summon]
+{
+	specializes = scorpion_base;
+
+	doc = "[summon] scorpion";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

@@ -1,0 +1,54 @@
+[t:template,n:rock_golem_base]  // = rock_golem
+{
+	category_name = "1W_evil_d";
+	doc = "rock_golem";
+	specializes = base_golem;
+	[actor]
+	{
+		[skills]
+		{
+			strength = 		47, 0;
+			intelligence = 	12, 0;
+			dexterity = 		16, 0;
+            melee =         48, 0;
+		}
+	}
+	[aspect]
+	{
+		experience_value = 1000;
+		life = 1040;
+		max_life = 1040;
+		mana = 990;
+        max_mana = 990;
+		textures:0	= b_c_edm_rg-04;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 230;
+		damage_min = 200;
+		reload_delay = 0;
+	}
+	[common] { screen_name="Rock Golem"; }
+    [defend] { defense=548; }
+	[mind]
+	{
+		jat_guard = world\ai\jobs\common\job_guard.skrit;
+		melee_engage_range = 14;
+		personal_space_range = 0.7;
+		ranged_engage_range = 14.0;
+		sight_range = 14.0;
+	}
+	[physics]
+	{
+		break_effect = mine_worm_die_dust;
+		[break_particulate]
+		{
+			frag_glb_rock_golem_01 = 1;
+			frag_glb_rock_golem_02 = 6;
+			frag_glb_rock_golem_03 = 1;
+			frag_glb_rock_golem_04 = 2;
+			frag_glb_rock_golem_05 = 1;
+		}
+	}
+}

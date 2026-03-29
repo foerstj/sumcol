@@ -1,0 +1,12 @@
+[t:template,n:zombie_headless_re_summon]
+{
+	specializes = base_zombie_headless;
+
+	doc = "[summon] zombie_headless";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+	[mind]
+	{
+		jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+	}
+}
