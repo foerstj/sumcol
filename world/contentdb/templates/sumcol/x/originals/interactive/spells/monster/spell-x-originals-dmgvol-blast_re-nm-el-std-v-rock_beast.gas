@@ -1,6 +1,6 @@
-[t:template,n:spell_rock_beast_blast_summon]
+[t:template,n:spell_rock_beast_blast_re_summon]
 {
-	specializes = base_spell_rock_beast_blast_summon;
+	specializes = base_spell_rock_beast_blast_re_summon;
 
 	[attack]
 	{

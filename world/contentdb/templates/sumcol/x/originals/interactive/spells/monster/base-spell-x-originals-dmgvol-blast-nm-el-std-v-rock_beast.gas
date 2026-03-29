@@ -1,4 +1,4 @@
-[t:template,n:base_spell_rock_beast_blast_summon]  // = spell_rock_beast_blast
+[t:template,n:base_spell_rock_beast_blast_re_summon]  // = spell_rock_beast_blast
 {
 	category_name = "magic";
 	doc = "Rock Beast Blast";
