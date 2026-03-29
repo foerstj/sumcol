@@ -66,6 +66,9 @@
 		textures:0 = b_c_edm_la-03;
         scale_base = 0.55;
 	}
+
+	// custom
+	actor:portrait_icon = b_gui_ig_i_ic_c_sumcolmart-elementals;
 }
 
 [t:template,n:sumcol_mart_merchant_elementals_content_base] { specializes = base_sumcol_mart_merchant_elementals; }
