@@ -1,0 +1,15 @@
+[t:template,n:sumcol_demo_barrel_x_{{x}}]
+{
+	specializes = sumcol_demo_base_barrel_x;
+
+	common:screen_name = "{{x | capitalize}} Extension";
+	[inventory]
+	{
+		[other]
+		{
+			{% for row in data if not row['test_only'] %}
+			il_main = {{ row['sos'] }}_summon_{{ row['stn'] }};
+			{% endfor %}
+		}
+	}
+}

@@ -14,6 +14,20 @@
 	  p position = -2,0,0,0x9d9c2a2d;
 	}
 }
+[t:sumcol_demo_barrel_x_guards,n:0x00100045]
+{
+	[placement]
+	{
+	  p position = 2,0,-3,0x0cb7dafa;
+	}
+}
+[t:sumcol_demo_barrel_x_originals,n:0x00100046]
+{
+	[placement]
+	{
+	  p position = 0,0,-3,0x0cb7dafa;
+	}
+}
 [t:sumcol_demo_barrel_yesterhaven_standard_animals,n:0x00100002]
 {
 	[aspect]

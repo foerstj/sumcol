@@ -68,6 +68,12 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\companions world\conten
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\sumcol.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
+setlocal enableDelayedExpansion
+for %%x in (guards originals) do (
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\sumcol-x.gas.jinja world\contentdb\templates\sumcol-demo\containers "sumcol-x-{{x}}.gas" --for-all gaspy\jinja\sumcol\main\x-%%x.csv --value "x=%%x" --bits "%bits%"
+  if !errorlevel! neq 0 pause
+)
+endlocal
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spells.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spells-x.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\x-guards.csv gaspy\jinja\sumcol\main\x-originals.csv --value stable=%stable% --bits "%bits%"
