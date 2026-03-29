@@ -14,7 +14,7 @@ spell;impaler_re;impaler;re;an;Impaler;1;nm;an;std;v;;75;190000;6;1.1;;;;;;;;;;2
 spell;killer_gremal_re;gremal_killer;re;a;Killer Gremal;2.75;nm;an;std;v;;17;1200;6;0.9;;;;;;;;;;1;0.8;;;;
 spell;krug_dog_skeleton_re;krug_dog_skeleton;re;a;Krug Dog Skeleton;1;cm;un;std;v;;61;100000;6;0.9;;;;;;;;;;2;0.5;;;;
 spell;larch_re;larch;re;a;Larch;1.75;nm;pl;std;v;;60;96000;4;1.2;;;;;;;;;;2;2.5;;;;
-spell;lava_spirit_re;lava_spirit_magic;re;a;Lava Spirit Mage;1;cm;el;std;v;;86;400000;6;;;0.95;;;0.5;;;205;245;2;0.8;;;;spell fires two trackballs
+spell;lava_spirit_re;lava_spirit_magic;re;a;Lava Spirit;1;cm;el;std;v;;86;400000;6;;;0.95;;;0.5;;;205;245;2;0.8;;;;spell fires two trackballs
 spell;molten_golem_re;molten_golem;re;a;Slag;1.75;cm;el;std;v;;92;420000;7;0.9;;;;;;;;;;2;0.8;;;;
 spell;mucosa_re;mucosa;re;a;Mucosa;1;cm;de;std;v;;16;960;5;1;;;;;;;;;;2;1.5;;;;
 spell;mucosa_predator_re;mucosa_predator;re;a;Mucosa Predator;1;cm;de;std;v;;80;300000;4;;;1.05;;;0;;;;;2;1.2;;;;Custom poison spell

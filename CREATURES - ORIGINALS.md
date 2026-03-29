@@ -18,7 +18,7 @@ Vanilla Standard Creatures: 31
   - Fire Elemental
   - Jade Gargoyle
   - Frost Golem
-  - Lava Spirit Mage
+  - Lava Spirit
   - Slag
   - Rock Golem
   - Rock Beast

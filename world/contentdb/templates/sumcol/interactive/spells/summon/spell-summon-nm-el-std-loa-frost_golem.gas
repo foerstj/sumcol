@@ -3,15 +3,15 @@
 {
 	specializes = base_spell_sumcol_nm;
 
-	doc = "spell Summon Frost Golem";
+	doc = "spell Summon Frost Golem (Ranged)";
 	[aspect]
 	{
 		gold_value = 95;
 	}
 	[common]
 	{
-		screen_name = "Summon Frost Golem";
-		description = "Summons a Frost Golem to guard the Caster.";
+		screen_name = "Summon Frost Golem (Ranged)";
+		description = "Summons a Frost Golem (Ranged) to guard the Caster.";
 	}
 	[gui]
 	{

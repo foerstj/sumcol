@@ -3,15 +3,15 @@
 {
 	specializes = base_spell_sumcol_cm;
 
-	doc = "spell Summon Lava Spirit Fighter";
+	doc = "spell Summon Lava Spirit (Fighter)";
 	[aspect]
 	{
 		gold_value = 290000;
 	}
 	[common]
 	{
-		screen_name = "Summon Lava Spirit Fighter";
-		description = "Summons a Lava Spirit Fighter to guard the Caster.";
+		screen_name = "Summon Lava Spirit (Fighter)";
+		description = "Summons a Lava Spirit (Fighter) to guard the Caster.";
 	}
 	[gui]
 	{

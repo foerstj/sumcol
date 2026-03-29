@@ -44,7 +44,7 @@ Vanilla Standard Creatures: 119
   - Swamp Slinger
   - Bronze Gargoyle
   - Swamp Creature
-  - Lava Spirit Fighter
+  - Lava Spirit (Fighter)
   - Lava Beast
 - Undead: 17
   - Skeleton Guard
@@ -246,7 +246,7 @@ LoA Standard Creatures: 97
   - Skitterclaw
   - Lesser Scrub Scorpion
 - Elementals: 4
-  - Frost Golem
+  - Frost Golem (Ranged)
   - Bog Beast
   - Cobble Man
   - Marble Golem

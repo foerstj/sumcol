@@ -39,7 +39,7 @@ scroll;klandank;krug_scout_boss_01;;;Klandank the Krug;1.75;nm;hu;mb;v;x;9;38;14
 scroll;gragba;gpg_krug_scout_boss_01_snow;;;Gragba the Trapper;1.75;nm;hu;mb;yh;x;9;38;14;1.2;;;;;;2;5;;;1;3;;;;
 spell;skeleton_guard;skeleton_guard;;a;Skeleton Guard;1.5;cm;un;std;v;;4;60;6;1.1;;;;;;14;17;;;2.5;1;;;;
 spell;walking_corpse;walking_corpse;;a;Walking Corpse;1.5;cm;un;std;v;;8;150;7;0.9;;;;;;;;;;0.8;1;;;;
-spell;frost_golem;dsx_golem_frost_ranged;;a;Frost Golem;1.25;nm;el;std;loa;;5;95;5;1;;1;0.7;;;;;;;2.5;1;;;;"Custom dmgvol spell; melee hit_multiple"
+spell;frost_golem;dsx_golem_frost_ranged;;a;Frost Golem (Ranged);1.25;nm;el;std;loa;;5;95;5;1;;1;0.7;;;;;;;2.5;1;;;;"Custom dmgvol spell; melee hit_multiple"
 spell;polar_bear;gpg_bear_snow;;a;Polar Bear;2.5;nm;an;std;yh;;4;60;6;1.2;;;;;;;;;;1;1.5;;;;
 spell;krug_chucker;krug_throw;;a;Krug Chucker;1.5;nm;hu;std;v;x;13;600;6;;1;;;;;11;12;;;1;1;;;;
 spell;krug_icepelter;gpg_krug_throw_snow;;a;Krug Icepelter;1.5;nm;hu;std;yh;x;13;600;6;;0.9;;;;;11;12;;;1;1;;;;
@@ -327,7 +327,7 @@ spell;kell_bolt;kell_bolt;;a;Kell (Bolt);2.5;cm;de;std;v;x;85;380000;6;;;1.1;;;;
 spell;lava_horror;lava_imp_04;good;a;Lava Horror;1;cm;de;std;v;x;87;330000;6;0.95;;;;;;;;;;2;0.6;;;;
 spell;lava_mage;lava_imp_03;good;a;Lava Mage;1;cm;de;std;v;x;88;430000;5;;;1;;;;;;160;200;2;0.6;;;;
 spell;quadscale;quadscale;;a;Quadscale;1.5;nm;an;std;v;;84;290000;7;0.85;;;;;;;;;;2;0.8;;;;
-spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit Fighter;2;cm;el;std;v;;84;290000;7;1;;;;;;;;;;2;0.8;;;;
+spell;lava_spirit_melee;lava_spirit;;a;Lava Spirit (Fighter);2;cm;el;std;v;;84;290000;7;1;;;;;;;;;;2;0.8;;;;
 spell;lava_beast;lava_beast;;a;Lava Beast;2.5;cm;el;std;v;;83;340000;4;1.1;;1.1;1.3;;;;;;;3;2;;;;"Custom dmgvol spell; melee hit_multiple but slow attack"
 spell;seck_high_mage;seck_mage_high;;a;Seck High Mage;1.5;cm;de;std;v;x;88;430000;3;;;1.2;;;;;;13;37;2;1.2;;;;
 spell;red_drake;drake_red;;a;Red Drake;2;cm;an;std;v;;83;340000;4;1.1;;1.1;;;;;;160;200;1.5;2.5;;;;
