@@ -1,0 +1,8 @@
+[t:template,n:dsx_troll_masher_re_summon]
+{
+	specializes = dsx_troll_masher_base;
+
+	doc = "dsx_summon_troll_masher";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

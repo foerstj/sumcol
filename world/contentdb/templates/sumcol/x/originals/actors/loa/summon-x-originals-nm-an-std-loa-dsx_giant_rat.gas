@@ -1,0 +1,8 @@
+[t:template,n:dsx_giant_rat_re_summon]
+{
+	specializes = dsx_giant_rat_base;
+
+	doc = "[summon] dsx_giant_rat";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

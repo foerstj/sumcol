@@ -1,0 +1,8 @@
+[t:template,n:dsx_ursae_demonic_re_summon]
+{
+	specializes = dsx_ursae_demonic_base;
+
+	doc = "[summon] dsx_ursae_demonic";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

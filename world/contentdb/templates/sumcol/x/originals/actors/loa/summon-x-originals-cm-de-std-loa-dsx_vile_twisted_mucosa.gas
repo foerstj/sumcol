@@ -1,0 +1,17 @@
+[t:template,n:dsx_vile_twisted_mucosa_re_summon]
+{
+	specializes = vile_twisted_mucosa_base;
+
+	doc = "dsx_vile_twisted_mucosa_summon";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_dsx_vile_twisted_mucosa_poison_poison_summon; }  // EDITED
+		[pcontent] { /* ERASED */ }
+	}
+	[generator_in_object]
+	{
+		spawn_chance = 0;
+	}
+}

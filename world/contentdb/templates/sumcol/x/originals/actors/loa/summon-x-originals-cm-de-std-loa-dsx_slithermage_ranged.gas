@@ -1,0 +1,8 @@
+[t:template,n:dsx_slithermage_ranged_re_summon]
+{
+	specializes = dsx_slithermage_ranged_base;
+
+	doc = "[summon] dsx_slithermage_ranged";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

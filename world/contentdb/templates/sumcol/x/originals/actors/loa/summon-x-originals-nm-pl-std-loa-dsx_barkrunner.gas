@@ -1,0 +1,8 @@
+[t:template,n:dsx_barkrunner_re_summon]
+{
+	specializes = dsx_barkrunner_base;
+
+	doc = "[summon] dsx_barkrunner";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

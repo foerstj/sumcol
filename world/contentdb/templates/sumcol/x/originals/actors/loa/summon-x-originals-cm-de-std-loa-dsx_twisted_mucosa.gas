@@ -1,0 +1,13 @@
+[t:template,n:dsx_twisted_mucosa_re_summon]
+{
+	specializes = twisted_mucosa_base;
+
+	doc = "dsx_twisted_mucosa_summon";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+	[generator_in_object]
+	{
+		spawn_chance = 0;
+	}
+}

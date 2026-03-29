@@ -1,0 +1,12 @@
+[t:template,n:dsx_armor_deadly_re_summon]
+{
+	specializes = dsx_armor_deadly_base;
+
+	doc = "[summon] dsx_armor_deadly";
+	aspect:experience_value = 0;
+    [inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent] { /* ERASED */ }
+	}
+}

@@ -1,0 +1,8 @@
+[t:template,n:dsx_chomper_re_summon]
+{
+	specializes = dsx_chomper_base;
+
+	doc = "[summon] dsx_chomper";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

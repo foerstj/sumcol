@@ -4,6 +4,7 @@
 
 	doc = "[summon] rock_beast";
 	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
 	[inventory]
 	{
 		selected_active_location = il_active_primary_spell;

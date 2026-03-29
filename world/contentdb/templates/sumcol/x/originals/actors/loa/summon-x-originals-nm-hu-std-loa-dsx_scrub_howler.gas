@@ -1,0 +1,16 @@
+[t:template,n:dsx_scrub_howler_re_summon]
+{
+	specializes = dsx_scrub_howler_base;
+
+	doc = "[summon] dsx_scrub_howler";
+	aspect:experience_value = 0;
+    [inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand = st_un_toreck_dsx;
+		}
+		[pcontent] { /* ERASED */ }
+	}
+}
