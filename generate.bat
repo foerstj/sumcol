@@ -8,8 +8,14 @@ pushd "%GasPy%"
 :: SumCol main
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\sumcol\interactive\spells\summon --for-each gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\interactive\spells\monster --for-each gaspy\jinja\sumcol\monster-spells\main.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
+setlocal enableDelayedExpansion
+for %%x in (originals) do (
+  venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\x\%%x\interactive\spells\monster --for-each gaspy\jinja\sumcol\monster-spells\x-%%x.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+  if !errorlevel! neq 0 pause
+)
+endlocal
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-weapons world\contentdb\templates\sumcol\interactive\weapons --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-actors world\contentdb\templates\sumcol\actors\evil --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
