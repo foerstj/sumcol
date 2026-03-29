@@ -74,4 +74,6 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\scroll-spell
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\test-only.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\test-only-x.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\x-guards.csv gaspy\jinja\sumcol\main\x-originals.csv --value stable=%stable% --bits "%bits%"
+if %errorlevel% neq 0 pause
 popd

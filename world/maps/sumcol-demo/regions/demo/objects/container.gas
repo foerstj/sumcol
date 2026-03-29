@@ -292,6 +292,13 @@
 	  p position = -2.5,0,3,0x3a845ae4;
 	}
 }
+[t:sumcol_demo_barrel_testonly_x,n:0x00100044]
+{
+	[placement]
+	{
+	  p position = -2.5,0,2,0x3a845ae4;
+	}
+}
 [t:sumcol_demo_barrel_replica_loa,n:0x00100049]
 {
 	[placement]
