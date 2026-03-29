@@ -1,0 +1,9 @@
+[t:template,n:braak_desert_re_summon]
+{
+	specializes = braak_desert_base;
+
+	doc = "[summon] braak_desert";
+	aspect:experience_value = 0;
+    [inventory] { [pcontent] { /* ERASED */ } }
+	mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}

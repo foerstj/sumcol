@@ -1,0 +1,19 @@
+[t:template,n:rock_beast_re_summon]
+{
+	specializes = rock_beast_base;
+
+	doc = "[summon] rock_beast";
+	aspect:experience_value = 0;
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell = spell_rock_beast_dmgvol_blast_summon; }  // EDITED
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+}

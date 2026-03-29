@@ -1,0 +1,24 @@
+[t:template,n:mucosa_predator_re_summon]
+{
+	specializes = mucosa_predator_base;
+
+	doc = "[summon] mucosa_predator";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		selected_active_location = il_active_primary_spell;
+		[other] { il_active_primary_spell = spell_mucosa_predator_poison_sparkles_summon; }  // EDITED
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+	[generator_in_object]
+	{
+		spawn_chance = 0;
+	}
+}

@@ -1,0 +1,19 @@
+[t:template,n:krug_dog_skeleton_re_summon]
+{
+	specializes = krug_dog_skeleton_base;
+
+	doc = "[summon] krug_dog_skeleton";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+			[gold*]
+			{
+				chance = 0;
+			}
+		}
+	}
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;  // ADDED to remove ?guard=true in base
+}

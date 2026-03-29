@@ -1,0 +1,13 @@
+[t:template,n:lava_spirit_magic_re_summon]
+{
+	specializes = lava_spirit_magic_base;
+
+	doc = "[summon] lava_spirit_magic";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+	[mind]
+	{
+		jat_startup = world\ai\jobs\sumcol\job_startup_reveal.skrit;
+	}
+}

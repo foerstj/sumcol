@@ -1,0 +1,9 @@
+[t:template,n:darkling_re_summon]
+{
+	specializes = darkling_base;
+
+	doc = "[summon] darkling";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}

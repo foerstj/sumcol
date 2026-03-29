@@ -1,0 +1,20 @@
+[t:template,n:skeleton_re_summon]
+{
+	specializes = skeleton_base;
+
+	doc = "[summon] skeleton";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[pcontent]
+		{
+			[oneof*] { es_weapon_hand=#mace/9; }
+		}
+	}
+	[mind]
+	{
+		jat_brain	= world\ai\jobs\common\brain_hero.skrit;
+	}
+}

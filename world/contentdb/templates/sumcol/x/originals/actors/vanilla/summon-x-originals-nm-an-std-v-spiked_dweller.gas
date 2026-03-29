@@ -1,0 +1,9 @@
+[t:template,n:spiked_dweller_re_summon]
+{
+	specializes = spiked_dweller_base;
+
+	doc = "[summon] spiked_dweller";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory] { [pcontent] { /* ERASED */ } }
+}
