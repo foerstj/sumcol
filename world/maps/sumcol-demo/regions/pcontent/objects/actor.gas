@@ -155,7 +155,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -2.8977,0,3.1172,0x4f5fa0af;
+	  p position = 0.214961,0,3.14635,0x4f5fa0af;
 	}
 }
 [t:dsx_laeta,n:0x00400012]
@@ -174,7 +174,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.20177,0,1.49301,0x4f5fa0af;
+	  p position = -0.0891085,0,1.52216,0x4f5fa0af;
 	}
 }
 [t:tass,n:0x00400013]
@@ -193,7 +193,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.14307,0,-0.0595355,0x4f5fa0af;
+	  p position = -0.0304089,0,-0.0303835,0x4f5fa0af;
 	}
 }
 [t:ohna,n:0x00400014]
@@ -212,7 +212,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.2295,0,-1.76223,0x4f5fa0af;
+	  p position = -0.116838,0,-1.73308,0x4f5fa0af;
 	}
 }
 [t:neener,n:0x00400015]
@@ -231,7 +231,7 @@
 	[placement]
 	{
 	  q orientation = 0,0.707107,0,0.707107;
-	  p position = -3.33573,0,-3.48136,0x4f5fa0af;
+	  p position = -0.223067,0,-3.45221,0x4f5fa0af;
 	}
 }
 [t:adwana,n:0x00400000]
@@ -466,6 +466,156 @@
 	{
 	  q orientation = 0,-0.707107,0,0.707107;
 	  p position = 2.51992,0,-0.943862,0x598274a0;
+	}
+}
+[t:sumcol_mart_merchant_animals,n:0x00400022]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 3.32553,0,0.206802,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_demonics,n:0x00400023]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 2.10407,0,0.0594826,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_elementals,n:0x00400024]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 0.872784,0,0.00725174,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_humanoids,n:0x00400025]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -0.0429734,0,0.0232754,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_plants,n:0x00400026]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -1.29902,0,0.141926,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_robots,n:0x00400027]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,-1,0,3.12407e-007;
+	  p position = -2.30777,0,0.0446053,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_undead,n:0x00400028]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -3.24312,0,-0.150845,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_x_guards,n:0x00400029]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 0.929248,0,2.05122,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_x_originals,n:0x0040002a]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,0;
+	  p position = -0.969976,0,2.25984,0x15d03158;
+	}
+}
+[t:sumcol_mart_merchant_originals,n:0x0040002b]
+{
+	[conversation]
+	{
+		[conversations]
+		{
+			* = shop;
+		}
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 0.0137073,0,-2.06693,0x15d03158;
 	}
 }
 [t:magus_jardaranz,n:0x00400008]
