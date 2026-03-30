@@ -27,6 +27,13 @@
 
     aspect:does_block_path = false;
 }
+[t:template,n:sumcol_demo_base_barrel_demo]
+{
+    specializes = sumcol_demo_base_barrel;
+
+	aspect:model = m_i_swp_barrel-01;
+    aspect:textures:0	= b_i_swp_barrel-01;
+}
 
 
 [t:template,n:barrel_glb_floating_04_base]  // = barrel_glb_floating_04

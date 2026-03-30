@@ -1,6 +1,6 @@
 [t:template,n:sumcol_demo_barrel_pcontent]
 {
-    specializes = sumcol_demo_base_barrel;
+    specializes = sumcol_demo_base_barrel_demo;
 
     common:screen_name = "PContent";
     [inventory]

@@ -1,6 +1,6 @@
 [t:template,n:sumcol_demo_barrel_replica_vanilla]
 {
-    specializes = sumcol_demo_base_barrel;
+    specializes = sumcol_demo_base_barrel_demo;
 
     common:screen_name = "Replica - Vanilla";
     [inventory]
@@ -44,7 +44,7 @@
 }
 [t:template,n:sumcol_demo_barrel_original_vanilla]
 {
-    specializes = sumcol_demo_base_barrel;
+    specializes = sumcol_demo_base_barrel_demo;
 
     common:screen_name = "Originals - Vanilla";
     [inventory]
@@ -89,7 +89,7 @@
 }
 [t:template,n:sumcol_demo_barrel_replica_loa]
 {
-    specializes = sumcol_demo_base_barrel;
+    specializes = sumcol_demo_base_barrel_demo;
 
     common:screen_name = "Replica - LoA";
     [inventory]
@@ -117,7 +117,7 @@
 }
 [t:template,n:sumcol_demo_barrel_original_loa]
 {
-    specializes = sumcol_demo_base_barrel;
+    specializes = sumcol_demo_base_barrel_demo;
 
     common:screen_name = "Originals - LoA";
     [inventory]

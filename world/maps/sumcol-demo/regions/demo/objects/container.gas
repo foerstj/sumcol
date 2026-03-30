@@ -275,7 +275,7 @@
 {
 	[placement]
 	{
-	  p position = -0.5,0,1,0x3a845ae4;
+	  p position = -0.5,0,0,0x3a845ae4;
 	}
 }
 [t:sumcol_demo_barrel_scroll_spells_loa,n:0x00100033]
@@ -324,7 +324,7 @@
 {
 	[placement]
 	{
-	  p position = 0.5,0,1,0x3a845ae4;
+	  p position = 0.5,0,0,0x3a845ae4;
 	}
 }
 [t:sumcol_demo_barrel_testonly,n:0x00100055]
