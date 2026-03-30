@@ -11,4 +11,12 @@
 			0x00500002 = 0x1B397B71,6;
 		}
 	}
+	[t:stitch_editor,n:photo-booth]
+	{
+		dest_region = photo-booth;
+		[node_ids]
+		{
+			0x00800001 = 0x7526ED27,7;
+		}
+	}
 }

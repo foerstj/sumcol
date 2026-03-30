@@ -1,0 +1,6 @@
+[node_mesh_index]
+{
+	0x008004ec = t_xxx_brdg_rop-08;
+	0x008004fc = t_xxx_brdg_tx-rop-wal-08;
+	0x008006aa = t_xxx_flr_08x08-v0;
+}

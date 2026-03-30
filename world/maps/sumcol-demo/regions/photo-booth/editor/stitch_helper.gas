@@ -1,0 +1,13 @@
+[stitch_helper_data]
+{
+	source_region_guid = 0x00000008;
+	source_region_name = photo-booth;
+	[t:stitch_editor,n:special]
+	{
+		dest_region = special;
+		[node_ids]
+		{
+			0x00800001 = 0xBE1DE992,1;
+		}
+	}
+}

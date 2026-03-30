@@ -1,0 +1,24 @@
+[t:sign_glb_no_return,n:0x0050000f]
+{
+	[common]
+	{
+		screen_name = "Photo Booth This Way!";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = -1.9612,0,1.9466,0x15b84498;
+	}
+}
+[t:sign_glb_01,n:0x00500011]
+{
+	[common]
+	{
+		screen_name = "Photo Booth";
+	}
+	[placement]
+	{
+	  q orientation = 0,1,0,-1.66939e-007;
+	  p position = 1.44849,4,0.112099,0x7526ed27;
+	}
+}

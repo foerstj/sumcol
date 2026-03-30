@@ -1,0 +1,22 @@
+[t:dsx_zepheryl,n:0x00800001]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[placement]
+	{
+	  p position = -1.5109,0,-3.32025,0xc3b4631f;
+	}
+}
+[t:dsx_zepheryl_dark,n:0x00800002]
+{
+	[actor]
+	{
+		alignment = aa_neutral;
+	}
+	[placement]
+	{
+	  p position = 1.797,0,-3.40419,0xc3b4631f;
+	}
+}
