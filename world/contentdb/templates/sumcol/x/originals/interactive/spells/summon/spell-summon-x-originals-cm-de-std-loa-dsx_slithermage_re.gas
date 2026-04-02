@@ -6,7 +6,7 @@
 	doc = "spell Summon Slithermage";
 	[aspect]
 	{
-		gold_value = 500000;
+		gold_value = 72000;
 	}
 	[common]
 	{
@@ -28,8 +28,8 @@
 		effect_duration = 360;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*(18+0);
-		required_level = 91;
-		max_level = 111;
+		required_level = 49;
+		max_level = 69;
 
 		[enchantments]
 		{
@@ -37,37 +37,37 @@
 			{
 				alteration = alter_cmagic_damage_min;
 				duration = #infinite;
-				value = ((((((#magic*4.2)*1.05)*1)*0.9) - #cmagic_damage_min) - 68.0);
+				value = ((((((#magic*4.2)*1.1)*1)*0.9) - #cmagic_damage_min) - 68.0);
 			}
 			[*]
 			{
 				alteration = alter_cmagic_damage_max;
 				duration = #infinite;
-				value = ((((((#magic*4.2)*1.05)*1)*1.1) - #cmagic_damage_max) - 77.0);
+				value = ((((((#magic*4.2)*1.1)*1)*1.1) - #cmagic_damage_max) - 77.0);
 			}
 			[*]
 			{
 				alteration = alter_armor;
 				duration = #infinite;
-				value = (((#magic*4.2)*1.0*(1+((#spell_req_level-50)*0.015))) - #base_defense);
+				value = (((#magic*4.2)*1.0) - #base_defense);
 			}
 			[*]
 			{
 				alteration = alter_max_life;
 				duration = #infinite;
-				value = ((((#magic*12)+(#spell_req_level*12))*1.2) - #maxlife);
+				value = ((((#magic*12)+(#spell_req_level*12))*1.0) - #maxlife);
 			}
 			[*]
 			{
 				alteration = alter_life;
 				duration = 1.0;
-				value = (((#magic*12)+(#spell_req_level*12))*1.2);
+				value = (((#magic*12)+(#spell_req_level*12))*1.0);
 			}
 			[*]
 			{
 				alteration = alter_combat_magic;
 				duration = #infinite;
-				value = ((#magic*0.8525)-#combat_magic_level);
+				value = ((#magic*0.755)-#combat_magic_level);
 			}
 			[*]
 			{

@@ -54,7 +54,7 @@ LoA Standard Creatures: 16
 - Demonics: 6
   - Twisted Mucosa
   - Vile Twisted Mucosa
-  - Deadly Armor
+  - Possessed Armor
   - Rune Beast
   - Fleshrender
   - Slithermage

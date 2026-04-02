@@ -6,7 +6,7 @@
 	doc = "spell Summon Cave Bear";
 	[aspect]
 	{
-		gold_value = 48;
+		gold_value = 76;
 	}
 	[common]
 	{
@@ -25,11 +25,11 @@
 	}
 	[magic]
 	{
-		effect_duration = 360;
+		effect_duration = 300;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*(15+0);
-		required_level = 3;
-		max_level = 23;
+		required_level = 5;
+		max_level = 25;
 
 		[enchantments]
 		{
@@ -37,13 +37,13 @@
 			{
 				alteration = alter_melee_damage_min;
 				duration = #infinite;
-				value = (((((((#magic*4.2)*1.1)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+				value = (((((((#magic*4.2)*1.2)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
 			}
 			[*]
 			{
 				alteration = alter_melee_damage_max;
 				duration = #infinite;
-				value = (((((((#magic*4.2)*1.1)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+				value = (((((((#magic*4.2)*1.2)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
 			}
 			[*]
 			{
@@ -55,19 +55,19 @@
 			{
 				alteration = alter_max_life;
 				duration = #infinite;
-				value = ((((#magic*12)+(#spell_req_level*12))*1.8) - #maxlife);
+				value = ((((#magic*12)+(#spell_req_level*12))*1.5) - #maxlife);
 			}
 			[*]
 			{
 				alteration = alter_life;
 				duration = 1.0;
-				value = (((#magic*12)+(#spell_req_level*12))*1.8);
+				value = (((#magic*12)+(#spell_req_level*12))*1.5);
 			}
 			[*]
 			{
 				alteration = alter_melee;
 				duration = #infinite;
-				value = ((#magic*0.985)-#melee);
+				value = ((#magic*0.975)-#melee);
 			}
 			[*]
 			{

@@ -6,7 +6,7 @@
 	doc = "spell Summon Rune Beast";
 	[aspect]
 	{
-		gold_value = 190000;
+		gold_value = 32000;
 	}
 	[common]
 	{
@@ -28,8 +28,8 @@
 		effect_duration = 420;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*(15+0);
-		required_level = 75;
-		max_level = 95;
+		required_level = 36;
+		max_level = 56;
 
 		[enchantments]
 		{
@@ -49,7 +49,7 @@
 			{
 				alteration = alter_armor;
 				duration = #infinite;
-				value = (((#magic*4.2)*1.0*(1+((#spell_req_level-50)*0.015))) - #base_defense);
+				value = (((#magic*4.2)*1.0) - #base_defense);
 			}
 			[*]
 			{
@@ -67,7 +67,7 @@
 			{
 				alteration = alter_melee;
 				duration = #infinite;
-				value = ((#magic*0.8125)-#melee);
+				value = ((#magic*0.82)-#melee);
 			}
 			[*]
 			{

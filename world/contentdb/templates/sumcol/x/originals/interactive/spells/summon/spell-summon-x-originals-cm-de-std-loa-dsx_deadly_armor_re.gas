@@ -3,15 +3,15 @@
 {
 	specializes = base_spell_sumcol_cm;
 
-	doc = "spell Summon Deadly Armor";
+	doc = "spell Summon Possessed Armor";
 	[aspect]
 	{
-		gold_value = 32000;
+		gold_value = 15000;
 	}
 	[common]
 	{
-		screen_name = "Summon Deadly Armor";
-		description = "Summons Deadly Armor to guard the Caster.";
+		screen_name = "Summon Possessed Armor";
+		description = "Summons Possessed Armor to guard the Caster.";
 	}
 	[gui]
 	{
@@ -28,8 +28,8 @@
 		effect_duration = 360;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*(15+0);
-		required_level = 36;
-		max_level = 56;
+		required_level = 28;
+		max_level = 48;
 
 		[enchantments]
 		{
@@ -37,19 +37,19 @@
 			{
 				alteration = alter_melee_damage_min;
 				duration = #infinite;
-				value = (((((((#magic*4.2)*1.0)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+				value = (((((((#magic*4.2)*0.9)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
 			}
 			[*]
 			{
 				alteration = alter_melee_damage_max;
 				duration = #infinite;
-				value = (((((((#magic*4.2)*1.0)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+				value = (((((((#magic*4.2)*0.9)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
 			}
 			[*]
 			{
 				alteration = alter_armor;
 				duration = #infinite;
-				value = (((#magic*4.2)*3.0) - #base_defense);
+				value = (((#magic*4.2)*2.5) - #base_defense);
 			}
 			[*]
 			{
@@ -67,7 +67,7 @@
 			{
 				alteration = alter_melee;
 				duration = #infinite;
-				value = ((#magic*0.82)-#melee);
+				value = ((#magic*0.86)-#melee);
 			}
 			[*]
 			{

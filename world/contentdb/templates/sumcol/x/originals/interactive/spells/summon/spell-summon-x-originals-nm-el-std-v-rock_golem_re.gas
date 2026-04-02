@@ -6,7 +6,7 @@
 	doc = "spell Summon Rock Golem";
 	[aspect]
 	{
-		gold_value = 420000;
+		gold_value = 42000;
 	}
 	[common]
 	{
@@ -28,8 +28,8 @@
 		effect_duration = 360;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*(15+0);
-		required_level = 92;
-		max_level = 112;
+		required_level = 42;
+		max_level = 62;
 
 		[enchantments]
 		{
@@ -37,37 +37,37 @@
 			{
 				alteration = alter_melee_damage_min;
 				duration = #infinite;
-				value = (((((((#magic*4.2)*1.0)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
+				value = (((((((#magic*4.2)*1.1)*1)*0.9) - #melee_damage_min) - #base_damage) - 0.0);
 			}
 			[*]
 			{
 				alteration = alter_melee_damage_max;
 				duration = #infinite;
-				value = (((((((#magic*4.2)*1.0)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
+				value = (((((((#magic*4.2)*1.1)*1)*1.1) - #melee_damage_max) - #base_damage) - 0.0);
 			}
 			[*]
 			{
 				alteration = alter_armor;
 				duration = #infinite;
-				value = (((#magic*4.2)*3.0*(1+((#spell_req_level-50)*0.015))) - #base_defense);
+				value = (((#magic*4.2)*3.0) - #base_defense);
 			}
 			[*]
 			{
 				alteration = alter_max_life;
 				duration = #infinite;
-				value = ((((#magic*12)+(#spell_req_level*12))*0.8) - #maxlife);
+				value = ((((#magic*12)+(#spell_req_level*12))*1.0) - #maxlife);
 			}
 			[*]
 			{
 				alteration = alter_life;
 				duration = 1.0;
-				value = (((#magic*12)+(#spell_req_level*12))*0.8);
+				value = (((#magic*12)+(#spell_req_level*12))*1.0);
 			}
 			[*]
 			{
 				alteration = alter_melee;
 				duration = #infinite;
-				value = ((#magic*0.855)-#melee);
+				value = ((#magic*0.79)-#melee);
 			}
 			[*]
 			{

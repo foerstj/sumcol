@@ -6,7 +6,7 @@
 	doc = "spell Summon Desert Braak";
 	[aspect]
 	{
-		gold_value = 180000;
+		gold_value = 250000;
 	}
 	[common]
 	{
@@ -28,8 +28,8 @@
 		effect_duration = 300;
 		mana_cost = 0;
 		mana_cost_modifier = (#magic+1)*(18+0);
-		required_level = 69;
-		max_level = 89;
+		required_level = 76;
+		max_level = 96;
 
 		[enchantments]
 		{
@@ -55,19 +55,19 @@
 			{
 				alteration = alter_max_life;
 				duration = #infinite;
-				value = ((((#magic*12)+(#spell_req_level*12))*1.2) - #maxlife);
+				value = ((((#magic*12)+(#spell_req_level*12))*1.0) - #maxlife);
 			}
 			[*]
 			{
 				alteration = alter_life;
 				duration = 1.0;
-				value = (((#magic*12)+(#spell_req_level*12))*1.2);
+				value = (((#magic*12)+(#spell_req_level*12))*1.0);
 			}
 			[*]
 			{
 				alteration = alter_combat_magic;
 				duration = #infinite;
-				value = ((#magic*0.7975)-#combat_magic_level);
+				value = ((#magic*0.815)-#combat_magic_level);
 			}
 			[*]
 			{
