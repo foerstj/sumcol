@@ -1,0 +1,11 @@
+[light_locks]
+{
+  b 0x3e06bc93 = false;
+  b 0x5484d149 = false;
+  b 0x7346fbbd = false;
+  b 0xb68b8e8d = false;
+  b 0xb892b3c9 = false;
+  b 0xc5f9d661 = false;
+  b 0xf8f2fd6e = false;
+  b 0xfb2b22ee = false;
+}
