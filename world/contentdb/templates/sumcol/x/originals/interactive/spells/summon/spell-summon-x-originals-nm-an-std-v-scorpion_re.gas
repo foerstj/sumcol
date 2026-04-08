@@ -21,7 +21,7 @@
 	[spell_summon]
 	{
 		template_name = scorpion_re_summon;
-		script_params = "[scale(2.0)]";
+		script_params = "[scale(2.25)]";
 	}
 	[magic]
 	{

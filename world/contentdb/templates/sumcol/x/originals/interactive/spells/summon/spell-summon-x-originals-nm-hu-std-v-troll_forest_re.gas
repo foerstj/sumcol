@@ -21,7 +21,7 @@
 	[spell_summon]
 	{
 		template_name = troll_forest_re_summon;
-		script_params = "[scale(1.25)]";
+		script_params = "[scale(1.5)]";
 	}
 	[magic]
 	{
