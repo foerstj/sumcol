@@ -7,3 +7,5 @@
 *.exe
 
 /art/bitmaps/new
+
+*.csv#
