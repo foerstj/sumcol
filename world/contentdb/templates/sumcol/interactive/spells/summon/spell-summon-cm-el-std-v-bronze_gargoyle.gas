@@ -21,7 +21,7 @@
 	[spell_summon]
 	{
 		template_name = gargoyle_bronze_summon;
-		script_params = "[scale(0.75)]";
+		script_params = "[scale(1.0)]";
 		effect_script = "summon_gargoyle";
 	}
 	[magic]
