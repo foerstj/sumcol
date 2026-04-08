@@ -146,7 +146,6 @@ exit /b 0
       set templates_replace=templates-replace-vanilla
 	)
     robocopy "%bits%\world\contentdb\!templates_replace!\regular" "%tmp%\Bits\world\contentdb\templates\regular" /S
-	pause
   )
   endlocal
   set title=%mod_cs% %target_cs% Extension - %name_x%
