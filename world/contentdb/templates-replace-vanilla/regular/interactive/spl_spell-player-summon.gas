@@ -14,6 +14,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -136,6 +137,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Cave Giant to guard the Caster.";
 		screen_name = "Summon Cave Giant";
 		[template_triggers]
@@ -261,11 +263,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Darkling to guard the Caster.";
 		screen_name = "Summon Darkling";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -388,11 +392,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Black Drake to guard the Caster.";
 		screen_name = "Summon Black Drake";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -533,6 +539,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Green Drake to guard the Caster.";
 		screen_name = "Summon Green Drake";
 		[template_triggers]
@@ -676,6 +683,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Fire Elemental to guard the Caster.";
 		screen_name = "Summon Fire Elemental";
 		[template_triggers]
@@ -800,6 +808,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Forest Klaw to guard the Caster.";
 		screen_name = "Summon Forest Klaw";
 		[template_triggers]
@@ -925,6 +934,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Furok to guard the Caster.";
 		screen_name = "Summon Furok";
 		[template_triggers]
@@ -1050,10 +1060,12 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		screen_name = "Summon Jade Gargoyle";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Jade Gargoyle to guard the Caster.";
 		[template_triggers]
 		{
@@ -1177,6 +1189,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Frost Golem to guard the Caster.";
 		screen_name = "Summon Frost Golem";
 		[template_triggers]
@@ -1302,6 +1315,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Hell Boar to guard the Caster.";
 		screen_name = "Summon Hell Boar";
 		[template_triggers]
@@ -1540,6 +1554,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons an Impaler to guard the Caster.";
 		screen_name = "Summon Impaler";
 		[template_triggers]
@@ -1664,6 +1679,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		screen_name = "Summon Killer Gremal";
 		description = "Summons a Killer Gremal to guard the Caster.";
 		[template_triggers]
@@ -1789,11 +1805,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Skeleton Krug Dog to guard the Caster.";
 		screen_name = "Summon Skeleton Krug Dog";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -1916,6 +1934,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Larch to guard the Caster.";
 		screen_name = "Summon Larch";
 		[template_triggers]
@@ -2041,11 +2060,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Lava Spirit to guard the Caster.";
 		screen_name = "Summon Lava Spirit";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2157,7 +2178,6 @@
 		caster_description = "Controlling Summoned";
 	}
 }
-
 [t:template,n:spell_summon_molten_golem]
 {
 	category_name = "magic";
@@ -2169,6 +2189,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Molten Golem to guard the Caster.";
 		screen_name = "Summon Slag";
 		[template_triggers]
@@ -2294,11 +2315,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Mucosa to guard the Caster.";
 		screen_name = "Summon Mucosa";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2421,11 +2444,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Mucosa Predator to guard the Caster.";
 		screen_name = "Summon Mucosa Predator";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2548,11 +2573,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Picker to guard the Caster.";
 		screen_name = "Summon Picker";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2675,11 +2702,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Rock Golem to guard the Caster.";
 		screen_name = "Summon Rock Golem";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -2803,6 +2832,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Rock Beast to guard the Caster.";
 		screen_name = "Summon Rock Beast";
 		[template_triggers]
@@ -2928,6 +2958,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Scorpion to guard the Caster.";
 		screen_name = "Summon Scorpion";
 		[template_triggers]
@@ -3053,11 +3084,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Skeleton to guard the Caster.";
 		screen_name = "Summon Skeleton";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3180,11 +3213,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Skick to guard the Caster.";
 		screen_name = "Summon Skick";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3307,6 +3342,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Spiked Dweller to guard the Caster.";
 		screen_name = "Summon Spiked Dweller";
 		[template_triggers]
@@ -3432,11 +3468,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Forest Troll to guard the Caster.";
 		screen_name = "Summon Forest Troll";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3559,6 +3597,7 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Black Wolf to guard the Caster.";
 		screen_name = "Summon Black Wolf";
 		[template_triggers]
@@ -3684,11 +3723,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Wraith to guard the Caster.";
 		screen_name = "Summon Wraith";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3811,11 +3852,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Wraith Archer to guard the Caster.";
 		screen_name = "Summon Wraith Archer";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
@@ -3938,11 +3981,13 @@
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		description = "Summons a Zombie to guard the Caster.";
 		screen_name = "Summon Zombie";
 	}
 	[common]
 	{
+		is_pcontent_allowed = false;  // ADDED
 		[template_triggers]
 		{
 			[*]
