@@ -139,9 +139,16 @@ exit /b 0
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
   robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-x-%infix_x%-* /S
   robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-x-%infix_x%-* /S
+  setlocal enableDelayedExpansion
   if "%infix_x%"=="originals" (
-    robocopy "%bits%\world\contentdb\templates\regular" "%tmp%\Bits\world\contentdb\templates\regular" /S
+    set templates_replace=templates-replace-loa
+	if "%target%"=="vanilla" (
+      set templates_replace=templates-replace-vanilla
+	)
+    robocopy "%bits%\world\contentdb\!templates_replace!\regular" "%tmp%\Bits\world\contentdb\templates\regular" /S
+	pause
   )
+  endlocal
   set title=%mod_cs% %target_cs% Extension - %name_x%
   "%tc%\RTC.exe" -source "%tmp%\Bits" -out "%ds%\%dest_res%\%title%.dsres" -copyright "%copyright%" -title "%title%" -author "%author%"
   if %errorlevel% neq 0 pause
