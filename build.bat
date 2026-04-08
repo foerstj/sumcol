@@ -133,12 +133,16 @@ exit /b 0
   set infix_x=%~1
   set name_x=%~2
   echo build_partial_x %infix_x% %name_x%
+  set xf_loa=
+  if "%target%"=="vanilla" (
+    set xf_loa=/xf *-loa-*
+  )
   rmdir /S /Q "%tmp%\Bits"
-  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-x-%infix_x%-* /xf *.psd /S
+  robocopy "%bits%\art\bitmaps\gui" "%tmp%\Bits\art\bitmaps\gui" *-x-%infix_x%-* %xf_loa% /xf *.psd /S
   robocopy "%bits%\world\ai\jobs\%mod%" "%tmp%\Bits\world\ai\jobs\%mod%" /S
   robocopy "%bits%\world\contentdb\components" "%tmp%\Bits\world\contentdb\components" /S
-  robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-x-%infix_x%-* /S
-  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-x-%infix_x%-* /S
+  robocopy "%bits%\world\contentdb\templates\%mod%" "%tmp%\Bits\world\contentdb\templates\%mod%" common-* *-x-%infix_x%-* %xf_loa% /S
+  robocopy "%bits%\world\global\effects" "%tmp%\Bits\world\global\effects" *-x-%infix_x%-* %xf_loa% /S
   setlocal enableDelayedExpansion
   if "%infix_x%"=="originals" (
     set templates_replace=templates-replace-loa
