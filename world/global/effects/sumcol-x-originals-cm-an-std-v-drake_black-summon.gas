@@ -1,0 +1,10 @@
+[effect_script*]
+{
+	name = summon_drake_black;
+
+	// Shifted 1m up because reference point of drake is on ground
+	script =[[
+		set $up 1.0;
+		call summon "[0]offset(0,$up,0)";
+	]];
+}

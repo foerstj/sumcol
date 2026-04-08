@@ -21,7 +21,8 @@
 	[spell_summon]
 	{
 		template_name = drake_black_re_summon;
-		script_params = "[scale(2.0)]";
+		script_params = "[scale(2.5)]";
+		effect_script = "summon_drake_black";
 	}
 	[magic]
 	{
