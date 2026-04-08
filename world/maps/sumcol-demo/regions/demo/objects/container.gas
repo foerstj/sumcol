@@ -85,6 +85,17 @@
 	  p position = -2.5,0,1,0xf00cc9f1;
 	}
 }
+[t:sumcol_demo_barrel_yesterhaven_standard_demonics,n:0x00100047]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,-2,0xf00cc9f1;
+	}
+}
 [t:sumcol_demo_barrel_vanilla_standard_robots,n:0x0010004b]
 {
 	[placement]
@@ -104,6 +115,72 @@
 	[placement]
 	{
 	  p position = -1.5,0,-3,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_standard_elementals,n:0x0010004f]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,-1,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_standard_humanoids,n:0x00100050]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,0,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_standard_plants,n:0x00100052]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,1,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_standard_robots,n:0x00100053]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,2,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_standard_undead,n:0x00100054]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = -0.25,0,3,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_demonics,n:0x00100056]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,-2,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_vanilla_nonstandard_demonics,n:0x00100057]
@@ -244,6 +321,61 @@
 	[placement]
 	{
 	  p position = 2.5,0,3,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_elementals,n:0x0010006b]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,-1,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_humanoids,n:0x0010006c]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,0,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_plants,n:0x0010006d]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,1,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_robots,n:0x0010006e]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,2,0xf00cc9f1;
+	}
+}
+[t:sumcol_demo_barrel_yesterhaven_nonstandard_undead,n:0x0010006f]
+{
+	[aspect]
+	{
+	  f scale_multiplier = 0.666;
+	}
+	[placement]
+	{
+	  p position = 0.25,0,3,0xf00cc9f1;
 	}
 }
 [t:sumcol_demo_barrel_scroll_spells_yesterhaven,n:0x00100001]
