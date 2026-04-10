@@ -91,6 +91,22 @@
 			}
 		}
 	}
+
+    aspect:textures:0 = b_c_eam_ksc;
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_krug_scout_01 = 1;
+			frag_glb_krug_scout_02 = 1;
+			frag_glb_krug_scout_03 = 1;
+			frag_glb_krug_scout_04 = 1;
+			frag_glb_krug_scout_05 = 1;
+			frag_glb_krug_scout_06 = 1;
+			frag_glb_krug_scout_07 = 1;
+			frag_glb_krug_scout_08 = 1;
+		}
+	}
 }
 
 // ~ Gray Wolf
@@ -128,6 +144,20 @@
 	}
 
     aspect:textures:0 = b_c_eam_ksv;
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_krug_scavenger_01 = 1;
+			frag_glb_krug_scavenger_02 = 1;
+			frag_glb_krug_scavenger_03 = 1;
+			frag_glb_krug_scavenger_04 = 1;
+			frag_glb_krug_scavenger_05 = 1;
+			frag_glb_krug_scavenger_06 = 1;
+			frag_glb_krug_scavenger_07 = 1;
+			frag_glb_krug_scavenger_08 = 1;
+		}
+	}
 }
 
 // ~ Mucosa
@@ -200,6 +230,20 @@
 	}
 
     aspect:textures:0 = b_c_eam_ksv;
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_krug_scavenger_01 = 1;
+			frag_glb_krug_scavenger_02 = 1;
+			frag_glb_krug_scavenger_03 = 1;
+			frag_glb_krug_scavenger_04 = 1;
+			frag_glb_krug_scavenger_05 = 1;
+			frag_glb_krug_scavenger_06 = 1;
+			frag_glb_krug_scavenger_07 = 1;
+			frag_glb_krug_scavenger_08 = 1;
+		}
+	}
 }
 [t:template,n:sumcol_krug_dummy_50_hold]
 {
@@ -284,6 +328,20 @@
 	}
 
     aspect:textures:0 = b_c_eam_ksv;
+	[physics]
+	{
+		[break_particulate]
+		{
+			frag_glb_krug_scavenger_01 = 1;
+			frag_glb_krug_scavenger_02 = 1;
+			frag_glb_krug_scavenger_03 = 1;
+			frag_glb_krug_scavenger_04 = 1;
+			frag_glb_krug_scavenger_05 = 1;
+			frag_glb_krug_scavenger_06 = 1;
+			frag_glb_krug_scavenger_07 = 1;
+			frag_glb_krug_scavenger_08 = 1;
+		}
+	}
 }
 [t:template,n:sumcol_krug_dummy_200_hold]
 {
