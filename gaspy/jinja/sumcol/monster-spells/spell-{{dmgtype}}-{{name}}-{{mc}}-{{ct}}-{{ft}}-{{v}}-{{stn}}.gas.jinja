@@ -10,9 +10,9 @@
 	}
 	[magic]
 	{
-		{% set req_lvl_factor = 1 - req_lvl/200 if req_lvl <= 50 else 0.75 + (req_lvl-50)/400 %}
-		attack_damage_modifier_min = ((((#combat_magic/{{ '%0.5g' | format(req_lvl_factor) }})*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}0.9{% endif %}{%if damage_min %} - {{damage_min}}{% endif %};
-		attack_damage_modifier_max = ((((#combat_magic/{{ '%0.5g' | format(req_lvl_factor) }})*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}1.1{% endif %}{%if damage_max %} - {{damage_max}}{% endif %};
+		{% set skill_factor = 1 - req_lvl/200 if req_lvl <= 50 else 0.75 + (req_lvl-50)/400 %}
+		attack_damage_modifier_min = ((((#combat_magic/{{ '%0.5g' | format(skill_factor) }})*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}0.9{% endif %}{%if damage_min %} - {{damage_min}}{% endif %};
+		attack_damage_modifier_max = ((((#combat_magic/{{ '%0.5g' | format(skill_factor) }})*4.2)*{{dmg_c | float}})*{{'%0.3g' | format(abf_c | sqrt_if(vanilla) if abf_c is number else 1)}})*{% if stable %}1.0{% else %}1.1{% endif %}{%if damage_max %} - {{damage_max}}{% endif %};
 	}
 	{% else %}
 	// Using summon enchantments in LoA
