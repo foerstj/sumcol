@@ -1,4 +1,59 @@
 [t:0x0407,n:text]
 {
 
+	[0x0000]
+	{
+		from = "Summon Headless Zombie";
+		to = "Kopflosen Zombie beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Headless Zombie to guard the Caster.";
+		to = "Beschwört einen Kopflosen Zombie, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Krug Dog Skeleton";
+		to = "Krug-Hundeskelett beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Krug Dog Skeleton to guard the Caster.";
+		to = "Beschwört ein Krug-Hundeskelett, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Battle Wraith";
+		to = "Kampfgespenst beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Battle Wraith to guard the Caster.";
+		to = "Beschwört ein Kampfgespenst, das den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Possessed Armor";
+		to = "Besessene Rüstung beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Possessed Armor to guard the Caster.";
+		to = "Beschwört eine Besessene Rüstung, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Rune Beast";
+		to = "Runenbestie beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Rune Beast to guard the Caster.";
+		to = "Beschwört eine Runenbestie, die den Anwender verteidigt.";
+	}
+
 }
