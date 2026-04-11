@@ -26,6 +26,7 @@ To use the Yesterhaven summons, you also need Yesterhaven installed (specificall
 
 ### Effects
 Spells are added to PContent, which means they appear in shops & drops with some probability.\
+For multiplayer characters, there's also a convenient mart map where you can buy the spells and scrolls.\
 Note: unfortunately, scrolls are excluded from PContent, so they won't appear on original maps without mods. See my minimod scrolls-in-shops for a solution.
 
 ### Compatibility
@@ -51,7 +52,9 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 	- Healing summons: The Tesla Heal Coil will heal you, instead of attacking enemies.
 	- Doppelganger summons: You summon a white cloud, which will turn into the first enemy it sees.
 	  Note: This is the most experimental of all non-standard categories. The Doppelganger will behave weirdly in a different way for each new enemy type. Health of the doppel is based on the enemy.
-- Extensions: Guards
+- Extensions:
+  - Guards: Summon Guards based on the Utraean Peninsula towns.
+  - Originals: Replace original summons with remade ones. Apart from improved balancing and minor fixes, these also have different level requirements, and some have been reassigned to Nature Magic. The original spells aren't overwritten, just removed from PContent.
 
 
 ## Creatures
