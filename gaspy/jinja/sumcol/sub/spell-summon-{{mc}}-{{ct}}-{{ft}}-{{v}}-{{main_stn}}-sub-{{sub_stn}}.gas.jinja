@@ -24,6 +24,7 @@
 		required_level = {{req_lvl}};
 		max_level = {{ req_lvl + 20 }};
 
+		{% set skill_factor = 1 - req_lvl/200 if req_lvl <= 50 else 0.75 + (req_lvl-50)/400 %}
 		[enchantments]
 		{
 			{% if dmg_m != '' %}
@@ -95,11 +96,7 @@
 			{
 				alteration = alter_melee;
 				duration = #infinite;
-				{% if req_lvl <= 50 %}
-				value = ((#src_combat_magic_level*{{ '%0.5g' | format(1 - req_lvl/200) }})-#melee);
-				{% else %}
-				value = ((#src_combat_magic_level*{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }})-#melee);
-				{% endif %}
+				value = ((#src_combat_magic_level*{{ '%0.5g' | format(skill_factor) }})-#melee);
 			}
 			{% endif %}
 			{% if dmg_r != '' %}
@@ -107,11 +104,7 @@
 			{
 				alteration = alter_ranged;
 				duration = #infinite;
-				{% if req_lvl <= 50 %}
-				value = ((#src_combat_magic_level*{{ '%0.5g' | format(1 - req_lvl/200) }})-#ranged);
-				{% else %}
-				value = ((#src_combat_magic_level*{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }})-#ranged);
-				{% endif %}
+				value = ((#src_combat_magic_level*{{ '%0.5g' | format(skill_factor) }})-#ranged);
 			}
 			{% endif %}
 			{% if dmg_c != '' %}
@@ -119,11 +112,7 @@
 			{
 				alteration = alter_combat_magic;
 				duration = #infinite;
-				{% if req_lvl <= 50 %}
-				value = ((#src_combat_magic_level*{{ '%0.5g' | format(1 - req_lvl/200) }})-#combat_magic_level);
-				{% else %}
-				value = ((#src_combat_magic_level*{{ '%0.5g' | format(0.75 + (req_lvl-50)/400) }})-#combat_magic_level);
-				{% endif %}
+				value = ((#src_combat_magic_level*{{ '%0.5g' | format(skill_factor) }})-#combat_magic_level);
 			}
 			{% endif %}
 			[*]
