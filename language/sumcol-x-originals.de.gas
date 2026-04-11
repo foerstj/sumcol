@@ -36,12 +36,23 @@
 
 	[0x0000]
 	{
+		from = "Summon Slag";
+		to = "Magmagolem beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Slag to guard the Caster.";
+		to = "Beschwört einen Magmagolem, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
 		from = "Summon Possessed Armor";
 		to = "Besessene Rüstung beschwören";
 	}
 	[0x0000]
 	{
-		from = "Summons a Possessed Armor to guard the Caster.";
+		from = "Summons Possessed Armor to guard the Caster.";
 		to = "Beschwört eine Besessene Rüstung, die den Anwender verteidigt.";
 	}
 
