@@ -9,7 +9,8 @@
 		screen_name = "Dummy Krug";
 		membership = krug, monster;
 	}
-    physics:explode_when_killed = true;
+    physics:explode_when_killed = true;  // keep pits clean
+	physics:fire_burn_threshold = 9999;  // evaluate without fire-ignite effect
 
 	[body]
 	{
