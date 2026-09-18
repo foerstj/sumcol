@@ -2,6 +2,7 @@
 {
 	description = "Buy Summons here!";
   b dev_only = false;
+	multiplayer_only = true;
 	screen_name = "Summons Collection Mart";
 	timeofday = 20h0m;
   b use_node_mesh_index = true;
