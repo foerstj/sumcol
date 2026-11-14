@@ -715,6 +715,7 @@
 			il_main = scroll_summon_yellow_eye;
 			il_main = spell_summon_jungle_skrubb;
 			il_main = scroll_summon_giant_chitterskrag;
+			il_main = spell_summon_octodrak;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 307
+SUMMONS COLLECTION CREATURES: 308
 
 Vanilla Standard Creatures: 119
 - Animals: 30
@@ -319,11 +319,12 @@ LoA Standard Creatures: 97
   - Zaurask Mage
   - Goblin Headsman
 
-LoA Non-Standard Creatures: 22
-- Animals: 3
+LoA Non-Standard Creatures: 23
+- Animals: 4
   - Yellow Eye
   - Jungle Skrubb
   - Giant Chitterskrag
+  - Octodrak
 - Elementals: 3
   - Air Elemental Minion
   - Earth Elemental Minion

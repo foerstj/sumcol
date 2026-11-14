@@ -1,0 +1,48 @@
+[t:template,n:dsx_octodrak_summon]
+{
+	specializes = dsx_octodrak_base;
+
+	doc = "[summon] dsx_octodrak";
+	aspect:experience_value = 0;
+	physics:explode_when_killed = false;
+
+	[aspect]
+	{
+		[voice]
+		{
+			[attack]		{ 					* = s_e_attack_whip;		}
+			[die]			{ priority = high;	* = s_e_die_unguis;			}
+			//[enemy_spotted]	{ priority = high;	* = s_e_ground_burst_SED;	}  // REMOVED
+			[hit_critical]	{ priority = low;	* = s_e_hit_unguis_SED;		}
+			[hit_glance]	{ priority = low;	* = s_e_hit_unguis_SED;		}
+			[hit_solid]		{ priority = low;	* = s_e_hit_unguis_SED;		}
+		}
+	}
+	[common]
+	{
+		[template_triggers]
+		{
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");  // EDITED - changed from we_enemy_spotted
+				action* = call_sfx_script("octodrak_dust");
+				//one_shot = true;
+			}
+			// ADDED:
+			[*]
+			{
+				condition* = receive_world_message("we_entered_world");
+				action* = call_sfx_script("sumcol_octodrak_ground_burst");
+			}
+		}
+	}
+	[generator_in_object]
+	{
+		spawn_event = WE_ENTERED_WORLD;  // EDITED - changed from WE_ENEMY_SPOTTED
+	}
+	[mind]
+	{
+		jat_startup 	= world\ai\jobs\sumcol\job_startup_reveal.skrit
+			?invisible 	= true;
+	}
+}

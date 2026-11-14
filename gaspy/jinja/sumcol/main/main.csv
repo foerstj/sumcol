@@ -173,6 +173,7 @@ spell;blue_noctiss;dsx_noctiss_2;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.9;
 spell;red_noctiss;dsx_noctiss;;a;Noctiss;1.5;cm;un;std;loa;;37;41000;5;;;0.85;;;;;;56;64;2;1;;;;
 scroll;giant_chitterskrag;dsx_chitterskrag_boss;;a;Giant Chitterskrag;2;nm;an;mb;loa;;34;5800;13;1.3;;;;;;;;;;2;5.4;;;;
 spell;marble_golem;dsx_golem_marble;;a;Marble Golem;1.5;nm;el;std;loa;;33;28000;6;1.1;;;;;;;;;;3;1;;;;
+spell;octodrak;dsx_octodrak;;an;Octodrak;1.25;nm;an;st;loa;;37;6600;1;0.9;;;;;;;;;;1.5;1.5;;un_summon_octodrak;;
 spell;zaurask_lightning;dsx_zaurask_archer;;a;Zaurask Lightning;1.5;nm;hu;std;loa;x;46;63000;6;;1;;;;;84;93;;;1.7;1;;;;
 spell;lectar;lectar;;a;Lectar;1;nm;an;std;v;;31;25000;7;0.9;;;;;;;;;;1.5;0.6;;;;
 scroll;shadow_lunger;dark_lunger_boss_01;;a;Shadow Lunger;1;nm;hu;mb;v;x;39;7300;17;1.1;;;;;;;;;;1;1.8;;;;

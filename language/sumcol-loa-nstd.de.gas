@@ -221,4 +221,15 @@
 		to = "Beschwört einen Shadowjumper-Leutnant, der den Anwender verteidigt.";
 	}
 
+	[0x0000]
+	{
+		from = "Summon Octodrak";
+		to = "Octodrak beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Octodrak to guard the Caster.";
+		to = "Beschwört einen Octodrak, der den Anwender verteidigt.";
+	}
+
 }

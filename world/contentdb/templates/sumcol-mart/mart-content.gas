@@ -70,6 +70,7 @@
 			spell_summon_kikclaw_large = 1;
 			spell_summon_lesser_scrub_scorpion = 1;
 			scroll_summon_giant_chitterskrag = 1;
+			spell_summon_octodrak = 1;
 			spell_summon_lectar = 1;
 			spell_summon_swamp_stinger = 1;
 			scroll_summon_rabid_spiked_maw = 1;

@@ -1,0 +1,10 @@
+[effect_script*]
+{
+	name = un_summon_octodrak;
+
+    // Shifted 2m up because reference point of the tentacle is below ground
+	script =[[
+		set $up 2.0;
+		call un_summon "[0]offset(0,$up,0)";
+	]];
+}
