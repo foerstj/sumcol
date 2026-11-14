@@ -9,3 +9,5 @@
 /art/bitmaps/new
 
 *.csv#
+
+/dsdll_log.txt
