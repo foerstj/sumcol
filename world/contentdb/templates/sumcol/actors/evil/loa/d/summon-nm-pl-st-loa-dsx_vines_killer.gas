@@ -10,12 +10,9 @@
     {
 		[voice]
 		{
-	      	[voice]
-		    {
-				[attack]		{ priority = always;	* = s_e_attack_whip;	}
-				[die]			{ priority = high;	* = s_e_die_vines;		}
-				//[enemy_spotted]	{ priority = high; * = s_e_ground_burst_SED;}  // REMOVED
-			}
+			[attack]		{ priority = always;	* = s_e_attack_whip;	}
+			[die]			{ priority = high;	* = s_e_die_vines;		}
+			//[enemy_spotted]	{ priority = high; * = s_e_ground_burst_SED;}  // REMOVED
 		}
     }
     [common]
