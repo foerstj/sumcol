@@ -11,11 +11,11 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\main world\contentdb\templates\s
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-spells world\contentdb\templates\sumcol\interactive\spells\monster --for-each gaspy\jinja\sumcol\monster-spells\main.csv --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-weapons world\contentdb\templates\sumcol\interactive\weapons --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-weapons world\contentdb\templates\sumcol\interactive\weapons --for-each gaspy\jinja\sumcol\monster-weapons --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-actors world\contentdb\templates\sumcol\actors\evil --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\monster-actors world\contentdb\templates\sumcol\actors\evil --for-each gaspy\jinja\sumcol\monster-actors --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol\sub world\contentdb\templates\sumcol\interactive\spells\monster --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\sub world\contentdb\templates\sumcol\interactive\spells\monster --for-each gaspy\jinja\sumcol\sub --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 :: readme
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\readme "" --for-all gaspy\jinja\sumcol\main\main.csv --bits "%bits%"
@@ -65,15 +65,15 @@ if %errorlevel% neq 0 pause
 
 
 :: SumCol demo/test map
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\summons world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --for-each gaspy\jinja\sumcol-demo\summons  --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\monster-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\monster --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\monster-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\monster --for-each gaspy\jinja\sumcol-demo\monster-spells  --value stable=%stable% --value vanilla=%vanilla% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\scroll-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\scroll-spells world\contentdb\templates\sumcol-demo\summons\interactive\spells\summon "scroll-spells-x.gas" --for-all gaspy\jinja\sumcol\main\x-guards.csv gaspy\jinja\sumcol\main\x-originals.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
-venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\companions world\contentdb\templates\sumcol-demo --value stable=%stable% --bits "%bits%"
+venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\companions world\contentdb\templates\sumcol-demo --for-each gaspy\jinja\sumcol-demo\map\companions --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol-demo\map\containers\sumcol.gas.jinja world\contentdb\templates\sumcol-demo\containers --for-all gaspy\jinja\sumcol\main\main.csv --value stable=%stable% --bits "%bits%"
 if %errorlevel% neq 0 pause
