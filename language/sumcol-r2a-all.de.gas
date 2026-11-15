@@ -1,0 +1,125 @@
+[t:0x0407,n:text]
+{
+
+	[0x0000]
+	{
+		from = "Summon Immature Chitterskrag (R2A)";
+		to = "Unreifen Chitterskrag (R2A) beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons an Immature Chitterskrag (R2A) to guard the Caster.";
+		to = "Beschwört einen Unreifen Chitterskrag (R2A), der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Spewing Chitterskrag (R2A)";
+		to = "Spuckenden Chitterskrag (R2A) beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Spewing Chitterskrag (R2A) to guard the Caster.";
+		to = "Beschwört einen Spuckenden Chitterskrag (R2A), der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Chitterskrag (R2A)";
+		to = "Chitterskrag (R2A) beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Chitterskrag (R2A) to guard the Caster.";
+		to = "Beschwört einen Chitterskrag (R2A), der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Werewolf";
+		to = "Werwolf beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Werewolf to guard the Caster.";
+		to = "Beschwört einen Werwolf, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Zombie";
+		to = "Zauraskerzombie beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Zombie to guard the Caster.";
+		to = "Beschwört einen Zauraskerzombie, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Zombie Archer";
+		to = "Zauraskerzombieschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Zombie Archer to guard the Caster.";
+		to = "Beschwört einen Zauraskerzombieschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Zaurask Zombie Stinger";
+		to = "Zauraskerzombiestecher beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Zaurask Zombie Stinger to guard the Caster.";
+		to = "Beschwört einen Zauraskerzombiestecher, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Salamander Claw";
+		to = "Salamanderklaue beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Salamander Claw to guard the Caster.";
+		to = "Beschwört eine Salamanderklaue, die den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Salamander Archer";
+		to = "Salamanderschützen beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Salamander Archer to guard the Caster.";
+		to = "Beschwört einen Salamanderschützen, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Salamander Caster";
+		to = "Salamander-Hexer beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Salamander Caster to guard the Caster.";
+		to = "Beschwört einen Salamander-Hexer, der den Anwender verteidigt.";
+	}
+
+	[0x0000]
+	{
+		from = "Summon Braak Lurker";
+		to = "Braak-Schleicher beschwören";
+	}
+	[0x0000]
+	{
+		from = "Summons a Braak Lurker to guard the Caster.";
+		to = "Beschwört einen Braak-Schleicher, der den Anwender verteidigt.";
+	}
+
+}

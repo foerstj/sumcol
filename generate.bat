@@ -31,6 +31,8 @@ venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gasp
 if %errorlevel% neq 0 pause
 venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gaspy\jinja\sumcol\language\sumcol-yh-all.de.gas.csv --value v=yh --value ft=all --bits "%bits%"
 if %errorlevel% neq 0 pause
+venv\Scripts\python -m jinja gaspy\jinja\sumcol\language language --for-all gaspy\jinja\sumcol\language\sumcol-r2a-all.de.gas.csv --value v=r2a --value ft=all --bits "%bits%"
+if %errorlevel% neq 0 pause
 
 :: SumCol extensions
 setlocal enableDelayedExpansion
