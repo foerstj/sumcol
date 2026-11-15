@@ -1,0 +1,15 @@
+[t:template,n:xp_chitterskrag_melee_summon]
+{
+    specializes = xp_chitterskrag_melee_base;
+
+	doc = "[summon] xp_chitterskrag_melee";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

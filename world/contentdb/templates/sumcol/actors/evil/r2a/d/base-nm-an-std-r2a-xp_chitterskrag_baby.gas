@@ -1,0 +1,51 @@
+[t:template,n:xp_chitterskrag_baby_base]  // = xp_chitterskrag_baby
+{
+	category_name = "1W_evil_d";
+	doc = "xp_chitterskrag_baby";
+	specializes = dsx_chitterskrag_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 12, 0;
+			intelligence 	=  7, 0;
+			dexterity 		=  8, 0;
+			melee 			=  8, 0;
+		}
+	}
+	[aspect]
+	{
+		model 				= m_c_edm_chs_pos_1;
+		textures:0 			= b_c_edm_chs_xp;
+		experience_value 	= 78;
+		life             	= 82;
+		max_life         	= 82;
+		scale_base 			= 0.35;
+		[voice]
+		{
+			[die]			{ priority = high;	* = s_e_die_baby_chitterskrag_SED;		}
+			[enemy_spotted]	{ priority = high; * = s_e_call_baby_chitterskrag_SED; }
+		}
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 39;
+		damage_min = 31;
+	}
+	[common]
+	{
+		screen_name = "Immature Chitterskrag";
+		membership = monster;
+	}
+	[defend] { defense = 55; }
+	[body]
+	{
+		avg_move_velocity = 5;
+	}
+	[inventory]
+	{
+		drop_at_use_point = true;
+		[pcontent]{}
+	}
+}

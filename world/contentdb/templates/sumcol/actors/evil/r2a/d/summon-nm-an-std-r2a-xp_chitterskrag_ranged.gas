@@ -1,0 +1,16 @@
+[t:template,n:xp_chitterskrag_ranged_summon]
+{
+    specializes = xp_chitterskrag_ranged_base;
+
+	doc = "[summon] xp_chitterskrag_ranged";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[other] { il_active_primary_spell = spell_chitterskrag_ranged_poison_summon; }
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+}

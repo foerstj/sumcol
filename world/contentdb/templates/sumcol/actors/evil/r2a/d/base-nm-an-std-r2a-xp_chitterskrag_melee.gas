@@ -1,0 +1,41 @@
+[t:template,n:xp_chitterskrag_melee_base]  // = xp_chitterskrag_melee
+{
+	category_name = "1W_evil_d";
+	doc = "xp_chitterskrag_melee";
+	specializes = dsx_chitterskrag_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 12, 0;
+			intelligence 	=  7, 0;
+			dexterity 		=  8, 0;
+			melee 			=  8, 0;
+		}
+	}
+	[aspect]
+	{
+		model 				= m_c_edm_chs_pos_1;
+		textures:0 			= b_c_edm_chs_xp;
+		experience_value 	= 156;
+		life             	= 238;
+		max_life         	= 238;
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max 	= 51; 
+		damage_min 	= 41;
+	}
+	[common]
+	{
+		screen_name = "Chitterskrag";
+		membership = monster;
+	}
+	[defend] { defense = 100; }
+	[inventory]
+	{
+		drop_at_use_point = true;
+		[pcontent]{}
+	}
+}

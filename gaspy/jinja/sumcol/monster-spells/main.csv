@@ -28,6 +28,7 @@ fire;blast;sand_mage;cm;hu;std;v;71;0.9;0.8;;
 fire;gas;skatwyrm_ranged;nm;an;std;loa;36;1;2;;
 poison;poison;vile_mucosa;cm;de;std;v;9;0.95;0.35;;
 poison;poison;chitterskrag_spew;nm;an;std;loa;32;1;0.35;;
+poison;poison;chitterskrag_ranged;nm;an;std;r2a;14;1;0.35;;
 poison;poison;droc_spatter;nm;hu;std;loa;45;1;0.5;;
 lightning;zap;krug_apprentice;nm;hu;std;v;8;0.95;;;
 lightning;bolt;kell;cm;de;std;v;85;1.1;;220;240
