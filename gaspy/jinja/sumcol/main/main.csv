@@ -102,7 +102,7 @@ spell;ancient_scorpiot_lcannon;dsx_scorpiot_ranged_rusted_lcannon;;an;Ancient Sc
 spell;ancient_scorpiot_rcannon;dsx_scorpiot_ranged_rusted_rcannon;;an;Ancient Scorpiot (RCannon);2;cm;ro;std;loa;;23;6000;6;;;0.9;;;0.1;;;;;2;0.9;;;ancient_scorpiot;Custom dmgvol spell + trackball
 spell;chitterskrag_r2a;xp_chitterskrag_melee;;a;Chitterskrag (R2A);2;nm;an;std;r2a;;13;480;6;1.1;;;;;;;;;;2;1.8;;;;
 spell;zaurask_zombie_stinger;xp_zombie_sword;;a;Zaurask Zombie Stinger;2;cm;un;std;r2a;;14;600;7;1.05;;;;;;31;51;;;0.8;1;;;;
-spell;salamander_archer;xp_salamander_blue;;a;Salamander Archer;2;nm;hu;std;r2a;x;19;2400;6;;1;;;;;;;28;36;1.5;1;;;;
+spell;salamander_archer;xp_salamander_blue;;a;Salamander Archer;2;nm;hu;std;r2a;x;19;2400;6;;1;;;;;28;36;;;1.5;1;;;;
 spell;werewolf;xp_werewolf;;a;Werewolf;1.5;nm;an;std;r2a;;13;480;7;1;;;;;;;;;;1;1;;;;
 spell;whelnars_eyes;dsx_eyes_whelnar;;;Whelnar's Eyes;0.75;cm;de;std;loa;;28;19000;7;;;0.8;;;;;;58;68;2;0.4;summon_eyes_whelnar;;;
 spell;hassat_runner;dsx_hassat_scavenger;;a;Hassat Runner;2;nm;hu;std;loa;x;22;3800;6;1.05;;;;;;;;;;1.2;1.2;;;;
