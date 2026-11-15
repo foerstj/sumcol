@@ -1,0 +1,91 @@
+// Ranged Salamander
+[t:template,n:xp_salamander_blue_base]  // = xp_salamander_blue
+{
+	category_name 	= "1W_evil_a";
+	doc 			= "xp_salamander_blue";
+	specializes 	= zaurask_ranged_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength     = 12, 0;
+			intelligence =  8, 0;
+			dexterity    =  9, 0;
+			ranged	     =  8, 0;
+		}
+	}
+	[aspect]
+	{
+		scale_base		 = 1.0;		
+		experience_value = 163;
+		life			 = 176;
+		max_life		 = 176;
+		[textures] { 0=b_c_edm_zaurask_salimander-03; }
+
+	}
+	[attack]
+	{
+		attack_range 	= 0.5;
+		damage_max 		= 36;
+		damage_min 		= 28;
+	}
+	[common] {screen_name = "Salamander Archer"; }
+	[defend] { defense = 71; }
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+			es_shield_hand = bw_xp_salamander; 
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 11, Strong */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 127;
+					max = 253;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/25-33;
+					il_main = #armor/12-71;
+					il_main = #*/25-33;
+				}
+				[oneof*]
+				{
+					chance = 0.01;
+					il_main = #weapon/-rare(1)/33-41;
+					il_main = #armor/-rare(1)/43-109;
+					il_main = #*/-rare(1)/33-41;
+				}
+				[oneof*]
+				{
+					chance = 0.005;
+					il_main = #weapon/-unique(2)/33-41;
+					il_main = #armor/-unique(2)/43-109;
+					il_main = #*/-unique(2)/33-41;
+				}			
+			}
+		}
+	}
+	[mind]
+	{
+		actor_auto_switches_to_melee	= false;
+		actor_auto_switches_to_ranged	= true;
+		actor_auto_uses_stored_items	= false;
+		actor_weapon_preference			= WP_RANGED;
+	}
+}

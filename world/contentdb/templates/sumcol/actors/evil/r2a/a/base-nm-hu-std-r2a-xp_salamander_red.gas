@@ -1,0 +1,85 @@
+// Melee Salamander
+[t:template,n:xp_salamander_red_base]  // = xp_salamander_red
+{
+	category_name 	= "1W_evil_a";
+	doc 			= "xp_salamander_red";
+	specializes 	= zaurask_ranged_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength     = 12, 0;
+			intelligence =  8, 0;
+			dexterity    =  9, 0;
+			melee	     =  8, 0;
+		}
+	}
+	[aspect]
+	{
+		scale_base		 = 1.0;		
+		experience_value = 183;
+		life			 = 265;
+		max_life		 = 265;
+		[textures] { 0=b_c_edm_zaurask_salimander-01; }
+
+	}
+	[attack]
+	{
+		attack_range 	= 0.5;
+		damage_max 		= 58;
+		damage_min 		= 50;
+	}
+	[common] {screen_name = "Salamander Claw"; }
+	[defend] { defense = 109; }
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		selected_active_location = IL_ACTIVE_RANGED_WEAPON;
+		[equipment]
+		{
+//			Needs a sword equipped and the correct FS selected			
+//			es_shield_hand = bw_dsx_zau_2_a;
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 11, Medium */
+			[oneof*]
+			{
+				[gold*]
+				{
+					chance = 0.2;
+					min = 127;
+					max = 253;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_small;
+					il_main = potion_health_small;
+				}
+				[oneof*]
+				{
+					chance = 0.15;
+					il_main = #weapon/22-30;
+					il_main = #armor/7-62;
+					il_main = #*/22-30;
+				}
+				[oneof*]
+				{
+					chance = 0.0075;
+					il_main = #weapon/-rare(1)/25-36;
+					il_main = #armor/-rare(1)/34-100;
+					il_main = #*/-rare(1)/25-36;
+				}	
+			}
+		}	
+	}
+	[mind]
+	{
+//		actor_auto_switches_to_melee	= true;
+//		actor_auto_switches_to_ranged	= false;
+//		actor_auto_uses_stored_items	= false;
+//		actor_weapon_preference			= WP_RANGED;
+	}
+}
