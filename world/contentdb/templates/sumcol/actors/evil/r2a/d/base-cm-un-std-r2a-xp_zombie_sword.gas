@@ -1,0 +1,120 @@
+[t:template,n:xp_zombie_sword_base]  // = xp_zombie_sword
+{
+	category_name = "1W_evil_d";
+	doc = "xp_zombie_sword";
+	specializes = xp_zombie_base;
+	[actor]
+	{
+		[skills]
+		{
+			strength 		= 12, 0;
+			intelligence 	=  7, 0;
+			dexterity 		=  8, 0;
+			melee 			=  8, 0;
+		}
+	}
+	[aspect]
+	{
+		textures:0 			= b_c_eam_zzomb;
+		experience_value 	= 156;
+		life			 	= 247;
+		max_life		 	= 247;
+		scale_base		 	= 1;
+		material 			= flesh;
+		[voice]
+		{
+			[die]			{ priority = high; * = s_e_die_zaurask_zombie_02_SED;	 }
+			[enemy_spotted]	{ priority = high; * = s_e_call_zaurask_zombie_02_SED; }
+			[hit_solid]		{ priority = low; * = s_e_hit_zaurask_zombie_2_SED;	}
+		}	
+	}
+	[attack]
+	{
+		attack_range = 0.5;
+		damage_max = 61; 
+		damage_min = 41;
+	}
+	[body]
+	{
+		avg_move_velocity = 1.2;
+		[weapon_scales]
+		{
+			as_single_melee = 1.15, 1.15, 1.15;
+		}
+	}
+	[common]
+	{
+		screen_name = "Zaurask Zombie Stinger";
+		membership = monster;
+		[template_triggers]
+		{
+			[*]
+			{
+				action* = call_sfx_script("zaurask_zombie_sword");
+				condition* = receive_world_message("WE_ENTERED_WORLD");
+				single_shot = true;
+			}
+			[*]
+			{
+				action* = call_sfx_script("zaurask_zombie_sword_die");
+				condition* = receive_world_message("WE_KILLED");
+				single_shot = true;
+			}
+		}
+	}
+	[defend] { defense = 90; }
+	[inventory]
+	{
+		spew_equipped_kill_count = <ignore>;
+		[equipment]
+		{
+			es_weapon_hand=ss_g_c_bl_1h_fun_zaur_xp;
+		}
+		[pcontent]
+		{
+			/* Generated: Tue Jun 17 11:13:15 2003
+			Level 10, Strong altered */
+			[oneof*]
+			{
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = potion_mana_medium;
+					il_main = potion_health_medium;
+				}
+				[oneof*]
+				{
+					chance = 0.4;
+					il_main = #weapon/22-30;
+					il_main = #armor/10-62;
+					il_main = #*/22-30;
+				}
+				[oneof*]
+				{
+					chance = 0.2;
+					il_main = #weapon/-rare(1)/30-39;
+					il_main = #armor/-rare(1)/43-100;
+					il_main = #*/-rare(1)/30-39;
+				}
+				[oneof*]
+				{
+					chance = 0.05;
+					il_main = #weapon/-unique(2)/30-39;
+					il_main = #armor/-unique(2)/43-100;
+					il_main = #*/-unique(2)/30-39;
+				}			
+			}
+		}
+	}
+	[mind]
+	{
+		jat_brain						= world\ai\jobs\common\brain_hero.skrit
+			?actor_joins_existing_party	= true;		
+		jat_fidget						= world\ai\jobs\common\job_fidget.skrit;
+		
+		melee_engage_range 		= 14;
+		personal_space_range 	= 0.7;
+		ranged_engage_range 	= 14.0;
+		sight_range 			= 14.0;
+	}
+}

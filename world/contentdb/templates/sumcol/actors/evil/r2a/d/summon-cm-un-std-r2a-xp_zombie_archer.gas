@@ -1,0 +1,17 @@
+[t:template,n:xp_zombie_archer_summon]
+{
+    specializes = xp_zombie_archer_base;
+
+	doc = "[summon] xp_zombie_archer";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+	[inventory]
+	{
+		[pcontent]
+		{
+            // ERASED
+		}
+	}
+
+    mind:jat_brain = world\ai\jobs\common\brain_hero.skrit;
+}
