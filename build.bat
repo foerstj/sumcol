@@ -50,6 +50,7 @@ call :build_partial "yh" "Yesterhaven"
 if "%target%"=="loa" (
   call :build_partial "std-loa" "LoA Standard"
   call :build_partial2 "loa" "std" "LoA Non-Standard"
+  call :build_partial "r2a" "Return to Arhok"
 )
 :: extensions
 call :build_partial_x "guards" "Guards"

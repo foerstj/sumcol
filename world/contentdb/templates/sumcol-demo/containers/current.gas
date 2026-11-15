@@ -8,6 +8,19 @@
         [other]
         {
 			il_main = spell_summon_octodrak;
+
+			// R2A
+			il_main = spell_summon_chitterskrag_baby_r2a;
+			il_main = spell_summon_chitterskrag_spew_r2a;
+			il_main = spell_summon_chitterskrag_r2a;
+			il_main = spell_summon_werewolf;
+			il_main = spell_summon_zaurask_zombie_karate;
+			il_main = spell_summon_zaurask_zombie_archer;
+			il_main = spell_summon_zaurask_zombie_stinger;
+			il_main = spell_summon_salamander_caster;
+			il_main = spell_summon_salamander_archer;
+			il_main = spell_summon_salamander_claw;
+			il_main = spell_summon_braak_lurker;
         }
     }
 }

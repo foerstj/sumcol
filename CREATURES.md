@@ -1,4 +1,4 @@
-SUMMONS COLLECTION CREATURES: 308
+SUMMONS COLLECTION CREATURES: 319
 
 Vanilla Standard Creatures: 119
 - Animals: 30
@@ -349,3 +349,19 @@ LoA Non-Standard Creatures: 23
   - Hassat Commander
   - Rune Caster
   - Rune Master
+
+Return to Arhok Standard Creatures: 11
+- Animals: 4
+  - Immature Chitterskrag (R2A)
+  - Spewing Chitterskrag (R2A)
+  - Chitterskrag (R2A)
+  - Werewolf
+- Undead: 3
+  - Zaurask Zombie
+  - Zaurask Zombie Archer
+  - Zaurask Zombie Stinger
+- Humanoids: 4
+  - Salamander Caster
+  - Salamander Archer
+  - Salamander Claw
+  - Braak Lurker
