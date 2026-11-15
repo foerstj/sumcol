@@ -1,0 +1,115 @@
+[t:template,n:xp_werewolf_base]  // = xp_werewolf
+{
+	category_name = "1W_evil_d";
+	doc = "xp_werewolf";
+	specializes = actor_evil;
+	[actor]
+	{
+		[skills]
+		{
+			strength     = 12, 0;
+			intelligence =  8, 0;
+			dexterity    =  9, 0;
+			melee        =  8, 0;
+		}
+	}
+	[aspect]
+	{
+		model 				= m_c_edm_ww_pos_1;
+		textures:0 			= b_c_edm_arctic_werewolf;
+		experience_value 	= 163;
+		life             	= 233;
+		max_life         	= 233;
+		material 			= flesh;
+		draw_shadow 		= false;
+		[voice]
+		{
+			[die] 			{ priority = high; * = s_e_die_wolf;		}
+			[enemy_spotted] { priority = high;	* = s_e_call_zombie_ground_SED;	}
+			[hit_critical]	{ priority = low; * = s_e_hit_wolf_SED;			}
+			[hit_glance]	{ priority = low; * = s_e_hit_wolf_SED;			}
+			[hit_solid]		{ priority = low; * = s_e_hit_wolf_SED;			}
+		}
+
+	}
+	[attack]
+	{
+		attack_range 	= 0.5;
+		damage_max 		= 37;
+		damage_min 		= 27; 
+	}
+	[body]
+	{
+		avg_move_velocity = 2.5;
+		[bone_translator]
+		{
+			body_anterior = bip01_head;
+			body_mid = Bip01_Spine1;
+			body_posterior = bip01_pelvis;
+			kill_bone = Bip01_Spine1;
+			//shield_bone = shield_grip;
+			//weapon_bone = weapon_grip;
+		}
+		[weapon_scales]
+		{
+			as_single_melee = 1.5, 1.5, 1.5;
+		}
+		[chore_dictionary]
+		{
+			chore_prefix = a_c_edm_ww_fs;
+			[chore_attack]
+			{
+				chore_stances = 0;
+				skrit = select_attack;
+				[anim_files]
+				{
+					00 = at;
+					01 = at-02;
+				}
+			}
+			[chore_default]
+			{
+				chore_stances = 0;
+				skrit = infinite_loop;
+				[anim_files] { 00=ds; }
+			}
+			[chore_die]
+			{
+				chore_stances = 0;
+				skrit = select_transition;
+				[anim_files] { 00=di; }
+			}
+			[chore_fidget]
+			{
+				chore_stances = 0;
+				skrit = select_fidget;
+				[anim_files] { 00=dsf; }
+			}
+			[chore_walk]
+			{
+				chore_stances = 0;
+				skrit = select_walk;
+				[anim_files] { 00=wl; }
+			}
+		}
+	}
+	[common]
+	{
+		screen_name = "Werewolf";
+		membership = monster;
+	}
+
+	[defend] { defense = 71; }
+
+	[mind]
+	{
+		jat_brain  = world\ai\jobs\common\brain_hero.skrit
+			? actor_joins_existing_party	= true;
+
+		jat_fidget = world\ai\jobs\common\job_fidget.skrit;
+		melee_engage_range 		= 14;
+		personal_space_range 	= 0.7;
+		ranged_engage_range 	= 14.0;
+		sight_range 			= 14.0;
+	}
+}
