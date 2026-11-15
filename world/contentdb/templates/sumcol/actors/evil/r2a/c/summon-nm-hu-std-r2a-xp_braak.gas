@@ -1,0 +1,15 @@
+[t:template,n:xp_braak_summon]
+{
+    specializes = xp_braak_base;
+
+    doc = "[summon] xp_braak";
+	aspect:experience_value = 0;
+    physics:explode_when_killed = false;
+    [inventory]
+    {
+    	[pcontent]
+		{
+            // ERASED
+        }
+    }
+}
