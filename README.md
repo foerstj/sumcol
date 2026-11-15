@@ -22,7 +22,7 @@ If you use vanilla DS1, put the "Summons Collection Vanilla" files into the Reso
 
 Don't use both at the same time, and don't use the LoA builds with vanilla DS1. The builds are different because the engines calculate damage differently.
 
-To use the Yesterhaven summons, you also need Yesterhaven installed (specifically, you need the Yesterhaven.dsres file).
+To use the Yesterhaven summons, you also need Yesterhaven installed (specifically, you need the Yesterhaven.dsres file). Likewise for the R2A (Return to Arhok) summons, you need the R2A resources.
 
 ### Effects
 Spells are added to PContent, which means they appear in shops & drops with some probability.\
@@ -37,7 +37,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 ## Features
 
 - DS Versions: Both Vanilla and LoA (incl. separate builds for proper balancing)
-  - Maps: creatures from KoE+UP, from LoA, and from Yesterhaven
+  - Maps: creatures from KoE+UP, from LoA, from Yesterhaven & from R2A
 - Magic Classes: Both Combat Magic and Nature Magic
 - Creature Types: All sorts of creatures are supported - humanoids, animals, demonic creatures, plants, elementals, robots, and undead.
   Water creatures were omitted because summoning a Shrack or Hydrack on land would be weird.
@@ -59,7 +59,7 @@ Note: unfortunately, scrolls are excluded from PContent, so they won't appear on
 
 ## Creatures
 
-Around 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE+UP, LoA, and Yesterhaven.\
+Around 300 creatures are available for summoning. The Summons Collection now features all (normal & suitable) enemies from KoE+UP, LoA, Yesterhaven & R2A.\
 For a list of all supported creatures, see the CREATURES.md files.
 
 
@@ -104,4 +104,4 @@ But fear not, I made a fix for it! Have a look at the minimod "extended-imbued-s
 
 ## Attribution
 
-Made by me with lots of testing support from Estaf, and lots of help from the modders on the Kingdom of Ehb Discord.
+Made by me with lots of testing support from Estaf, and lots of help from the modders on the Kingdom of Ehb Discord (now Dungeon Siege Time).
